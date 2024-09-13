@@ -1,0 +1,1139 @@
+<script type="text/javascript" data-cfasync="false">
+'use strict';
+//STYLING.MOBILE VIEW
+//load
+jQuery(function(){
+	//functions
+	var hmenu_fonts = [
+		'fontBarFamily',
+		'fontMobileFamily'
+	];
+	hmenu_populate_fonts(hmenu_fonts);
+	//set data
+	hmenu_set_main_styles();	
+	hmenu_find_toggle_elements();
+	hmenu_find_small_toggle_elements();
+	hmenu_find_image_toggle();
+	hmenu_set_current_header_label('Currently Editing:',hmenu_global_menu_obj.menu.name);
+	hmenu_set_mobile_menu_icon();
+
+});
+
+function hmenu_set_mobile_menu_icon(){
+	var current_icon;
+	jQuery('.icon_select_option').on('click', function(){
+		var selected_icon = jQuery(this).data('icon');
+
+		jQuery('#hero_mobile_menu_icon').html('<div class="icon_select_option icon_font_mobile_icon_'+selected_icon+'" data-icon="'+selected_icon+'" style="color:'+hmenu_global_menu_obj.mobile_styles[0].menuBarbuttonColor+'"></div>');
+		jQuery('#menuBarMobileIcon').val(selected_icon);
+
+		hmenu_global_menu_obj.mobile_styles[0].menuBarMobileIcon = selected_icon;
+		hmenu_flag_save_required('hmenu_save_clicked');
+	})
+
+	jQuery('.hero_open_mobile_icons').on('click', function(){
+		jQuery('.hmenu_mobile_icon_select').toggleClass('open');
+	})
+}
+
+//set dropdown standard styles
+function hmenu_set_main_styles(){
+	
+	//page variables	
+	var mb_bar_start_color = hmenu_global_menu_obj.mobile_styles[0].bgBarStartColor;
+	var mb_bar_gradient = hmenu_global_menu_obj.mobile_styles[0].bgBarGradient;
+	var mb_bar_end_color = hmenu_global_menu_obj.mobile_styles[0].bgBarEndColor;
+	var mb_bar_gradient_path = hmenu_global_menu_obj.mobile_styles[0].bgBarGradientPath;
+	var mb_bar_transparency = hmenu_global_menu_obj.mobile_styles[0].bgBarTransparency;
+	
+	var mb_bar_font_family = hmenu_global_menu_obj.mobile_styles[0].fontBarFamily;
+	var mb_bar_font_color = hmenu_global_menu_obj.mobile_styles[0].fontBarColor;
+	var mb_bar_font_size = hmenu_global_menu_obj.mobile_styles[0].fontBarSize;
+	var mb_bar_font_sizing = hmenu_global_menu_obj.mobile_styles[0].fontBarSizing;
+	var mb_bar_font_weight = hmenu_global_menu_obj.mobile_styles[0].fontBarWeight;
+
+	var mb_bar_bar_height = hmenu_global_menu_obj.mobile_styles[0].menuBarHeightMobile;
+	var mb_bar_button_size = hmenu_global_menu_obj.mobile_styles[0].menuBarbuttonSize;
+	var mb_bar_button_position = hmenu_global_menu_obj.mobile_styles[0].menuBarbuttonPosition;
+	var mb_bar_button_color = hmenu_global_menu_obj.mobile_styles[0].menuBarbuttonColor;
+	var mb_bar_button_icon = hmenu_global_menu_obj.mobile_styles[0].menuBarMobileIcon;
+	var mb_bar_button_padding_left = hmenu_global_menu_obj.mobile_styles[0].menuBarMobileIconPaddingLeft;
+	var mb_bar_button_padding_right = hmenu_global_menu_obj.mobile_styles[0].menuBarMobileIconPaddingRight;
+	
+	var mb_menu_start_color = hmenu_global_menu_obj.mobile_styles[0].bgMenuStartColor;
+	var mb_menu_gradient = hmenu_global_menu_obj.mobile_styles[0].bgMenuGradient;
+	var mb_menu_end_color = hmenu_global_menu_obj.mobile_styles[0].bgMenuEndColor;
+	var mb_menu_gradient_path = hmenu_global_menu_obj.mobile_styles[0].bgMenuGradientPath;
+	var mb_menu_transparency = hmenu_global_menu_obj.mobile_styles[0].bgMenuTransparency;
+	
+	var mb_menu_hover_start_color = hmenu_global_menu_obj.mobile_styles[0].bgHoverStartColor;
+	var mb_menu_hover_gradient = hmenu_global_menu_obj.mobile_styles[0].bgHoverGradient;
+	var mb_menu_hover_end_color = hmenu_global_menu_obj.mobile_styles[0].bgHoverEndColor;
+	var mb_menu_hover_gradient_path = hmenu_global_menu_obj.mobile_styles[0].bgHoverGradientPath;
+	var mb_menu_hover_transparency = hmenu_global_menu_obj.mobile_styles[0].bgHoverTransparency;
+	
+	var mb_mobile_font_family = hmenu_global_menu_obj.mobile_styles[0].fontMobileFamily;
+	var mb_mobile_font_color = hmenu_global_menu_obj.mobile_styles[0].fontMobileColor;
+	var mb_mobile_font_size = hmenu_global_menu_obj.mobile_styles[0].fontMobileSize;
+	var mb_mobile_font_sizing = hmenu_global_menu_obj.mobile_styles[0].fontMobileSizing;
+	var mb_mobile_font_weight = hmenu_global_menu_obj.mobile_styles[0].fontMobileWeight;
+	var mb_mobile_font_hover_color = hmenu_global_menu_obj.mobile_styles[0].fontMobileHoverColor;
+	
+	var mb_tablet_font_family = hmenu_global_menu_obj.mobile_styles[0].fontTabletFamily;
+	var mb_tablet_font_color = hmenu_global_menu_obj.mobile_styles[0].fontTabletColor;
+	var mb_tablet_font_size = hmenu_global_menu_obj.mobile_styles[0].fontTabletSize;
+	var mb_tablet_font_sizing = hmenu_global_menu_obj.mobile_styles[0].fontTabletSizing;
+	var mb_tablet_font_weight = hmenu_global_menu_obj.mobile_styles[0].fontTabletWeight;
+	var mb_tablet_font_hover_color = hmenu_global_menu_obj.mobile_styles[0].fontTabletHoverColor;
+	
+	var mb_padding_left = hmenu_global_menu_obj.mobile_styles[0].paddingLeft;
+	var mb_padding_right = hmenu_global_menu_obj.mobile_styles[0].paddingRight;
+	
+	//MAIN BAR
+	///////////////////////////////////////////////////
+	
+	//set drop down gradient
+	if(mb_bar_gradient){
+		if(jQuery('#bgBarGradient').val() == mb_bar_gradient){ 
+			jQuery('#bgBarGradient').attr('checked', 'checked');
+		}
+	}
+	
+	//set drop down color
+	if(mb_bar_start_color){
+		jQuery('#bgBarStartColor').val(mb_bar_start_color);
+	}
+	
+	//set drop down end color
+	if(mb_bar_end_color){
+		jQuery('#bgBarEndColor').val(mb_bar_end_color);
+	}
+	
+	//set drop down gradient path
+	if(mb_bar_gradient_path){
+		jQuery('#bgBarGradientPath option').each(function(index, element) {
+           if(jQuery(this).val() == mb_bar_gradient_path){
+			   jQuery(this).attr('selected', 'selected')
+		   }
+        });
+	}
+	
+	//set drop down transparency
+	if(mb_bar_transparency){
+		jQuery('#bgBarTransparency option').each(function(index, element) {
+           if(jQuery(this).val() == mb_bar_transparency){
+			   jQuery(this).attr('selected', 'selected')
+		   }
+        });
+	}
+	
+	//FONTS
+	///////////////////////////////////////////////////
+	
+	//set font family
+	if(mb_bar_font_family){
+		jQuery('#fontBarFamily option').each(function(index, element) {
+           if(jQuery(this).val() == mb_bar_font_family){
+			   jQuery(this).attr('selected', 'selected')
+		   }
+        });
+	}
+	
+	hmenu_update_select_component(jQuery('#fontBarFamily'));
+	
+	//set font color
+	if(mb_bar_font_color){
+		jQuery('#fontBarColor').val(mb_bar_font_color);
+	}
+	
+	//set font size
+	if(mb_bar_font_size){
+		jQuery('#fontBarSize').val(mb_bar_font_size);
+	}
+	
+	//set font sizing
+	if(mb_bar_font_sizing){
+		jQuery('#fontBarSizing option').each(function(index, element) {
+           if(jQuery(this).val() == mb_bar_font_sizing){
+			   jQuery(this).attr('selected', 'selected')
+		   }
+        });
+	}
+	
+	//set font weight
+	if(mb_bar_font_weight){
+		jQuery('#fontBarWeight option').each(function(index, element) {
+           if(jQuery(this).val() == mb_bar_font_weight){
+			   jQuery(this).attr('selected', 'selected')
+		   }
+        });
+	}
+	
+	//MOBILE MAIN MENU
+	///////////////////////////////////////////////////
+	
+	//set drop down gradient
+	if(mb_menu_gradient){
+		if(jQuery('#bgMenuGradient').val() == mb_menu_gradient){ 
+			jQuery('#bgMenuGradient').attr('checked', 'checked');
+		}
+	}
+	
+	//set drop down color
+	if(mb_menu_start_color){
+		jQuery('#bgMenuStartColor').val(mb_menu_start_color);
+	}
+	
+	//set drop down end color
+	if(mb_menu_end_color){
+		jQuery('#bgMenuEndColor').val(mb_menu_end_color);
+	}
+	
+	//set drop down gradient path
+	if(mb_menu_gradient_path){
+		jQuery('#bgMenuGradientPath option').each(function(index, element) {
+           if(jQuery(this).val() == mb_menu_gradient_path){
+			   jQuery(this).attr('selected', 'selected')
+		   }
+        });
+	}
+	
+	//set drop down transparency
+	if(mb_menu_transparency){
+		jQuery('#bgMenuTransparency option').each(function(index, element) {
+           if(jQuery(this).val() == mb_menu_transparency){
+			   jQuery(this).attr('selected', 'selected')
+		   }
+        });
+	}
+
+	//set bar height
+	if(mb_bar_bar_height){
+		jQuery('#menuBarHeightMobile').val(mb_bar_bar_height);
+	}
+	
+	//set hambureger size
+	if(mb_bar_button_size){
+		jQuery('#menuBarbuttonSize').val(mb_bar_button_size);
+	}
+
+	if(mb_bar_button_padding_left){
+		jQuery('#menuBarMobileIconPaddingLeft').val(mb_bar_button_padding_left);
+	}
+
+	if(mb_bar_button_padding_right){
+		jQuery('#menuBarMobileIconPaddingRight').val(mb_bar_button_padding_right);
+	}
+	
+	if(mb_bar_button_color){
+		jQuery('#mobile_menu_button_color').val(mb_bar_button_color);
+		jQuery('#hero_mobile_menu_icon div').css('color', mb_bar_button_color);
+		jQuery('.icon_select_option').css('color', mb_bar_button_color);
+	} else {
+		jQuery('#mobile_menu_button_color').val(mb_bar_font_color);
+		jQuery('#hero_mobile_menu_icon div').css('color', mb_bar_font_color);
+	}
+
+	if(mb_bar_button_icon){
+		jQuery('#menuBarMobileIcon').val(mb_bar_button_icon);
+		jQuery('#hero_mobile_menu_icon div').addClass('icon_font_mobile_icon_'+mb_bar_button_icon+'');
+		
+	}
+
+	if (mb_bar_button_position) {
+		if (jQuery('#mobile_menu_button_position_left').val() == mb_bar_button_position) {
+			jQuery('#mobile_menu_button_position_left').attr('checked', 'checked');
+			hmenu_switch_class('left');
+		}
+		if (jQuery('#mobile_menu_button_position_right').val() == mb_bar_button_position) {
+			jQuery('#mobile_menu_button_position_right').attr('checked', 'checked');
+			hmenu_switch_class('right');
+		}
+	}
+
+	//MOBILE MAIN MENU HOVER
+	///////////////////////////////////////////////////
+	
+	//set drop down gradient
+	if(mb_menu_hover_gradient){
+		if(jQuery('#bgHoverGradient').val() == mb_menu_hover_gradient){ 
+			jQuery('#bgHoverGradient').attr('checked', 'checked');
+		}
+	}
+	
+	//set drop down color
+	if(mb_menu_hover_start_color){
+		jQuery('#bgHoverStartColor').val(mb_menu_hover_start_color);
+	}
+	
+	//set drop down end color
+	if(mb_menu_hover_end_color){
+		jQuery('#bgHoverEndColor').val(mb_menu_hover_end_color);
+	}
+	
+	//set drop down gradient path
+	if(mb_menu_hover_gradient_path){
+		jQuery('#bgHoverGradientPath option').each(function(index, element) {
+           if(jQuery(this).val() == mb_menu_hover_gradient_path){
+			   jQuery(this).attr('selected', 'selected')
+		   }
+        });
+	}
+	
+	//set drop down transparency
+	if(mb_menu_hover_transparency){
+		jQuery('#bgHoverTransparency option').each(function(index, element) {
+           if(jQuery(this).val() == mb_menu_hover_transparency){
+			   jQuery(this).attr('selected', 'selected')
+		   }
+        });
+	}
+	
+	//MOBILE FONTS
+	///////////////////////////////////////////////////
+	
+	//set font family
+	if(mb_mobile_font_family){
+		jQuery('#fontMobileFamily option').each(function(index, element) {
+           if(jQuery(this).val() == mb_mobile_font_family){
+			   jQuery(this).attr('selected', 'selected')
+		   }
+        });
+	}
+	
+	hmenu_update_select_component(jQuery('#fontMobileFamily'));
+	
+	//set font color
+	if(mb_mobile_font_color){
+		jQuery('#fontMobileColor').val(mb_mobile_font_color);
+	}
+	
+	//set font size
+	if(mb_mobile_font_size){
+		jQuery('#fontMobileSize').val(mb_mobile_font_size);
+	}
+	
+	//set font sizing
+	if(mb_mobile_font_sizing){
+		jQuery('#fontMobileSizing option').each(function(index, element) {
+           if(jQuery(this).val() == mb_mobile_font_sizing){
+			   jQuery(this).attr('selected', 'selected')
+		   }
+        });
+	}
+	
+	//set font weight
+	if(mb_mobile_font_weight){
+		jQuery('#fontMobileWeight option').each(function(index, element) {
+           if(jQuery(this).val() == mb_mobile_font_weight){
+			   jQuery(this).attr('selected', 'selected')
+		   }
+        });
+	}
+	
+	//set hover font color
+	if(mb_mobile_font_hover_color){
+		jQuery('#fontMobileHoverColor').val(mb_mobile_font_hover_color);
+	}
+	
+	//TABLET FONTS
+	///////////////////////////////////////////////////
+	
+	//set font family
+	if(mb_tablet_font_family){
+		jQuery('#fontTabletFamily option').each(function(index, element) {
+           if(jQuery(this).val() == mb_tablet_font_family){
+			   jQuery(this).attr('selected', 'selected')
+		   }
+        });
+	}
+	
+	hmenu_update_select_component(jQuery('#fontTabletFamily'));
+	
+	//set font color
+	if(mb_tablet_font_color){
+		jQuery('#fontTabletColor').val(mb_tablet_font_color);
+	}
+	
+	//set font size
+	if(mb_tablet_font_size){
+		jQuery('#fontTabletSize').val(mb_tablet_font_size);
+	}
+	
+	//set font sizing
+	if(mb_tablet_font_sizing){
+		jQuery('#fontTabletSizing option').each(function(index, element) {
+           if(jQuery(this).val() == mb_tablet_font_sizing){
+			   jQuery(this).attr('selected', 'selected')
+		   }
+        });
+	}
+	
+	//set font weight
+	if(mb_tablet_font_weight){
+		jQuery('#fontTabletWeight option').each(function(index, element) {
+           if(jQuery(this).val() == mb_tablet_font_weight){
+			   jQuery(this).attr('selected', 'selected')
+		   }
+        });
+	}
+	
+	//set hover font color
+	if(mb_tablet_font_hover_color){
+		jQuery('#fontTabletHoverColor').val(mb_tablet_font_hover_color);
+	}
+	
+	//MOBILE PADDING
+	///////////////////////////////////////////////////
+	
+	//padding
+	if(mb_padding_left){
+		jQuery('#paddingLeft').val(mb_padding_left);
+	}	
+	
+	if(mb_padding_right){
+		jQuery('#paddingRight').val(mb_padding_right);
+	}	
+	
+	//switch components
+	hmenu_switch_components();
+	
+	//enable update settings
+	hmenu_enable_update_settings();
+}
+
+//enable update settings
+function hmenu_enable_update_settings(){
+
+	var control_bar_bar_height = jQuery('#menuBarHeightMobile');
+	var control_bar_bar_button_size = jQuery('#menuBarbuttonSize');
+	var control_bar_button_position_left = jQuery('#mobile_menu_button_position_left');
+	var control_bar_button_position_right = jQuery('#mobile_menu_button_position_right');
+	var control_bar_button_color = jQuery('#mobile_menu_button_color');
+	var control_bar_button_padding_left = jQuery('#menuBarMobileIconPaddingLeft');
+	var control_bar_button_padding_right = jQuery('#menuBarMobileIconPaddingRight');
+
+	jQuery(control_bar_bar_height).on('change keyup', function(){
+		hmenu_global_menu_obj.mobile_styles[0].menuBarHeightMobile = jQuery(this).val();
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});
+
+	jQuery(control_bar_bar_button_size).on('change keyup', function(){
+		hmenu_global_menu_obj.mobile_styles[0].menuBarbuttonSize = jQuery(this).val();
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});
+
+	jQuery(control_bar_button_padding_left).on('change keyup', function(){
+		hmenu_global_menu_obj.mobile_styles[0].menuBarMobileIconPaddingLeft = jQuery(this).val();
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});
+
+	jQuery(control_bar_button_padding_right).on('change keyup', function(){
+		hmenu_global_menu_obj.mobile_styles[0].menuBarMobileIconPaddingRight = jQuery(this).val();
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});
+
+	//change: left
+	jQuery(control_bar_button_position_left).on('change', function () {
+		hmenu_global_menu_obj.mobile_styles[0].menuBarbuttonPosition = jQuery(this).val();
+		hmenu_switch_class(jQuery(this).val());
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});
+	//change: right
+	jQuery(control_bar_button_position_right).on('change', function () {
+		hmenu_global_menu_obj.mobile_styles[0].menuBarbuttonPosition = jQuery(this).val();
+		hmenu_switch_class(jQuery(this).val());
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});	
+
+	//change: color
+	jQuery(control_bar_button_color).on('change keyup', function(){
+		hmenu_global_menu_obj.mobile_styles[0].menuBarbuttonColor = jQuery(this).val();
+		jQuery('#hero_mobile_menu_icon div').css('color', jQuery(this).val());
+		jQuery('.icon_select_option').css('color', jQuery(this).val());
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});
+	
+	var control_bar_gradient = jQuery('#bgBarGradient');
+	var control_bar_start = jQuery('#bgBarStartColor');
+	var control_bar_end = jQuery('#bgBarEndColor');
+	var control_bar_path = jQuery('#bgBarGradientPath');
+	var control_bar_transparency = jQuery('#bgBarTransparency');
+	
+	//change: gradient bg
+	jQuery(control_bar_gradient).on('change', function(){
+		jQuery(this).prop('checked') ? hmenu_global_menu_obj.mobile_styles[0].bgBarGradient = jQuery(this).val() : hmenu_global_menu_obj.mobile_styles[0].bgBarGradient = 0;
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});
+	
+	//change: start color
+	jQuery(control_bar_start).on('change keyup', function(){
+		hmenu_global_menu_obj.mobile_styles[0].bgBarStartColor = jQuery(this).val();
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});
+	
+	//change: end color
+	jQuery(control_bar_end).on('change keyup', function(){
+		hmenu_global_menu_obj.mobile_styles[0].bgBarEndColor = jQuery(this).val();
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});
+	
+	//change: gradient path
+	jQuery('.bgBarGradientPath .hero_dropdown .hero_drop_row').on('click', function(){
+		jQuery(control_bar_path).trigger('change');		
+	});	
+	jQuery(control_bar_path).on('change', function(){
+		hmenu_global_menu_obj.mobile_styles[0].bgBarGradientPath = jQuery(this).children('option:selected').val();
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});		
+	
+	//change: gradient path
+	jQuery('.bgBarTransparency .hero_dropdown .hero_drop_row').on('click', function(){
+		jQuery(control_bar_transparency).trigger('change');		
+	});		
+	jQuery(control_bar_transparency).on('change', function(){
+		hmenu_global_menu_obj.mobile_styles[0].bgBarTransparency = jQuery(this).children('option:selected').val();
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});	
+	
+	var control_bar_font_family = jQuery('#fontBarFamily');
+	var control_bar_font_weight = jQuery('#fontBarWeight');
+	var control_bar_font_size = jQuery('#fontBarSize');
+	var control_bar_font_sizing = jQuery('#fontBarSizing');
+	var control_bar_font_color = jQuery('#fontBarColor');
+	
+	//change: font family
+	jQuery('.fontBarFamily .hero_dropdown .hero_drop_row').on('click', function(){
+		jQuery(control_bar_font_family).trigger('change');		
+	});	
+	jQuery(control_bar_font_family).on('change', function(){
+		hmenu_global_menu_obj.mobile_styles[0].fontBarFamily = jQuery(this).children('option:selected').val();
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});	
+	
+	//change: font weight
+	jQuery('.fontBarWeight .hero_dropdown .hero_drop_row').on('click', function(){
+		jQuery(control_bar_font_weight).trigger('change');		
+	});	
+	jQuery(control_bar_font_weight).on('change', function(){
+		hmenu_global_menu_obj.mobile_styles[0].fontBarWeight = jQuery(this).children('option:selected').val();
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});	
+	
+	//change: font size
+	jQuery(control_bar_font_size).on('change keyup', function(){
+		hmenu_global_menu_obj.mobile_styles[0].fontBarSize = jQuery(this).val();
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});
+	
+	//change: font sizing
+	jQuery('.fontBarSizing .hero_dropdown .hero_drop_row').on('click', function(){
+		jQuery(control_bar_font_sizing).trigger('change');		
+	});	
+	jQuery(control_bar_font_sizing).on('change', function(){
+		hmenu_global_menu_obj.mobile_styles[0].fontBarSizing = jQuery(this).children('option:selected').val();
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});
+	
+	//change: font color
+	jQuery(control_bar_font_color).on('change keyup', function(){
+		hmenu_global_menu_obj.mobile_styles[0].fontBarColor = jQuery(this).val();
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});
+	
+	var control_menu_gradient = jQuery('#bgMenuGradient');
+	var control_menu_start = jQuery('#bgMenuStartColor');
+	var control_menu_end = jQuery('#bgMenuEndColor');
+	var control_menu_path = jQuery('#bgMenuGradientPath');
+	var control_menu_transparency = jQuery('#bgMenuTransparency');
+	
+	//change: gradient bg
+	jQuery(control_menu_gradient).on('change', function(){
+		jQuery(this).prop('checked') ? hmenu_global_menu_obj.mobile_styles[0].bgMenuGradient = jQuery(this).val() : hmenu_global_menu_obj.mobile_styles[0].bgMenuGradient = 0;
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});
+	
+	//change: start color
+	jQuery(control_menu_start).on('change keyup', function(){
+		hmenu_global_menu_obj.mobile_styles[0].bgMenuStartColor = jQuery(this).val();
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});
+	
+	//change: end color
+	jQuery(control_menu_end).on('change keyup', function(){
+		hmenu_global_menu_obj.mobile_styles[0].bgMenuEndColor = jQuery(this).val();
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});
+	
+	//change: gradient path
+	jQuery('.bgMenuGradientPath .hero_dropdown .hero_drop_row').on('click', function(){
+		jQuery(control_menu_path).trigger('change');		
+	});	
+	jQuery(control_menu_path).on('change', function(){
+		hmenu_global_menu_obj.mobile_styles[0].bgMenuGradientPath = jQuery(this).children('option:selected').val();
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});		
+	
+	//change: gradient path
+	jQuery('.bgMenuTransparency .hero_dropdown .hero_drop_row').on('click', function(){
+		jQuery(control_menu_transparency).trigger('change');		
+	});		
+	jQuery(control_menu_transparency).on('change', function(){
+		hmenu_global_menu_obj.mobile_styles[0].bgMenuTransparency = jQuery(this).children('option:selected').val();
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});	
+	
+	var control_menu_hover_gradient = jQuery('#bgHoverGradient');
+	var control_menu_hover_start = jQuery('#bgHoverStartColor');
+	var control_menu_hover_end = jQuery('#bgHoverEndColor');
+	var control_menu_hover_path = jQuery('#bgHoverGradientPath');
+	var control_menu_hover_transparency = jQuery('#bgHoverTransparency');
+	
+	//change: gradient bg
+	jQuery(control_menu_hover_gradient).on('change', function(){
+		jQuery(this).prop('checked') ? hmenu_global_menu_obj.mobile_styles[0].bgHoverGradient = jQuery(this).val() : hmenu_global_menu_obj.mobile_styles[0].bgHoverGradient = 0;
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});
+	
+	//change: start color
+	jQuery(control_menu_hover_start).on('change keyup', function(){
+		hmenu_global_menu_obj.mobile_styles[0].bgHoverStartColor = jQuery(this).val();
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});
+	
+	//change: end color
+	jQuery(control_menu_hover_end).on('change keyup', function(){
+		hmenu_global_menu_obj.mobile_styles[0].bgHoverEndColor = jQuery(this).val();
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});
+	
+	//change: gradient path
+	jQuery('.bgHoverGradientPath .hero_dropdown .hero_drop_row').on('click', function(){
+		jQuery(control_menu_hover_path).trigger('change');		
+	});	
+	jQuery(control_menu_hover_path).on('change', function(){
+		hmenu_global_menu_obj.mobile_styles[0].bgHoverGradientPath = jQuery(this).children('option:selected').val();
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});		
+	
+	//change: gradient path
+	jQuery('.bgHoverTransparency .hero_dropdown .hero_drop_row').on('click', function(){
+		jQuery(control_menu_hover_transparency).trigger('change');		
+	});		
+	jQuery(control_menu_hover_transparency).on('change', function(){
+		hmenu_global_menu_obj.mobile_styles[0].bgHoverTransparency = jQuery(this).children('option:selected').val();
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});	
+	
+	var control_mobile_font_family = jQuery('#fontMobileFamily');
+	var control_mobile_font_weight = jQuery('#fontMobileWeight');
+	var control_mobile_font_size = jQuery('#fontMobileSize');
+	var control_mobile_font_sizing = jQuery('#fontMobileSizing');
+	var control_mobile_font_color = jQuery('#fontMobileColor');
+	var control_mobile_font_hover_color = jQuery('#fontMobileHoverColor');	
+	
+	//change: font family
+	jQuery('.fontMobileFamily .hero_dropdown .hero_drop_row').on('click', function(){
+		jQuery(control_mobile_font_family).trigger('change');		
+	});	
+	jQuery(control_mobile_font_family).on('change', function(){
+		hmenu_global_menu_obj.mobile_styles[0].fontMobileFamily = jQuery(this).children('option:selected').val();
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});	
+	
+	//change: font weight
+	jQuery('.fontMobileWeight .hero_dropdown .hero_drop_row').on('click', function(){
+		jQuery(control_mobile_font_weight).trigger('change');		
+	});	
+	jQuery(control_mobile_font_weight).on('change', function(){
+		hmenu_global_menu_obj.mobile_styles[0].fontMobileWeight = jQuery(this).children('option:selected').val();
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});	
+	
+	//change: font size
+	jQuery(control_mobile_font_size).on('change keyup', function(){
+		hmenu_global_menu_obj.mobile_styles[0].fontMobileSize = jQuery(this).val();
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});
+	
+	//change: font sizing
+	jQuery('.fontMobileSizing .hero_dropdown .hero_drop_row').on('click', function(){
+		jQuery(control_mobile_font_sizing).trigger('change');		
+	});	
+	jQuery(control_mobile_font_sizing).on('change', function(){
+		hmenu_global_menu_obj.mobile_styles[0].fontMobileSizing = jQuery(this).children('option:selected').val();
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});
+	
+	//change: font color
+	jQuery(control_mobile_font_color).on('change keyup', function(){
+		hmenu_global_menu_obj.mobile_styles[0].fontMobileColor = jQuery(this).val();
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});
+	
+	//change: font hover color
+	jQuery(control_mobile_font_hover_color).on('change keyup', function(){
+		hmenu_global_menu_obj.mobile_styles[0].fontMobileHoverColor = jQuery(this).val();
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});
+	
+	var control_tablet_font_family = jQuery('#fontTabletFamily');
+	var control_tablet_font_weight = jQuery('#fontTabletWeight');
+	var control_tablet_font_size = jQuery('#fontTabletSize');
+	var control_tablet_font_sizing = jQuery('#fontTabletSizing');
+	var control_tablet_font_color = jQuery('#fontTabletColor');
+	var control_tablet_font_hover_color = jQuery('#fontTabletHoverColor');	
+	
+	//change: font family
+	jQuery('.fontTabletFamily .hero_dropdown .hero_drop_row').on('click', function(){
+		jQuery(control_tablet_font_family).trigger('change');		
+	});	
+	jQuery(control_tablet_font_family).on('change', function(){
+		hmenu_global_menu_obj.mobile_styles[0].fontTabletFamily = jQuery(this).children('option:selected').val();
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});	
+	
+	//change: font weight
+	jQuery('.fontTabletWeight .hero_dropdown .hero_drop_row').on('click', function(){
+		jQuery(control_tablet_font_weight).trigger('change');		
+	});	
+	jQuery(control_tablet_font_weight).on('change', function(){
+		hmenu_global_menu_obj.mobile_styles[0].fontTabletWeight = jQuery(this).children('option:selected').val();
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});	
+	
+	//change: font size
+	jQuery(control_tablet_font_size).on('change keyup', function(){
+		hmenu_global_menu_obj.mobile_styles[0].fontTabletSize = jQuery(this).val();
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});
+	
+	//change: font sizing
+	jQuery('.fontTabletSizing .hero_dropdown .hero_drop_row').on('click', function(){
+		jQuery(control_tablet_font_sizing).trigger('change');		
+	});	
+	jQuery(control_tablet_font_sizing).on('change', function(){
+		hmenu_global_menu_obj.mobile_styles[0].fontTabletSizing = jQuery(this).children('option:selected').val();
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});
+	
+	//change: font color
+	jQuery(control_tablet_font_color).on('change keyup', function(){
+		hmenu_global_menu_obj.mobile_styles[0].fontTabletColor = jQuery(this).val();
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});
+	
+	//change: font hover color
+	jQuery(control_tablet_font_hover_color).on('change keyup', function(){
+		hmenu_global_menu_obj.mobile_styles[0].fontTabletHoverColor = jQuery(this).val();
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});
+	
+	var control_padding_left = jQuery('#paddingLeft');
+	var control_padding_right = jQuery('#paddingRight');
+	
+	//change: font color
+	jQuery(control_padding_left).on('change keyup', function(){
+		hmenu_global_menu_obj.mobile_styles[0].paddingLeft = jQuery(this).val();
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});
+	
+	//change: font color
+	jQuery(control_padding_right).on('change keyup', function(){
+		hmenu_global_menu_obj.mobile_styles[0].paddingRight = jQuery(this).val();
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});
+	
+}
+
+</script>
+<div class="hero_views">
+    <div class="hero_col_12">
+    	<h2 class="hero_red size_18 weight_600">
+            Main Navigation<br />
+            <strong class="size_11 hero_grey">Set the styling for your mobile devices.</strong>
+        </h2>
+        <!-- START: FORM -->
+            <form>  
+            	<!-- START: ACTIVATION -->
+                    <div class="hero_section_holder hero_grey size_14"> 
+                    	<div class="hero_col_12">
+                            <h2 class="size_18 hero_red weight_600">Mobile menu bar background color</h2>
+                        </div>                   	
+                        <label><h2 class="size_14 hero_green">Default background color | Gradients</h2></label><div class="hero_switch_position"><input type="checkbox" data-size="sml" id="bgBarGradient" name="bgBarGradient" value="1" data-smltoggler="barGradientToggle"></div>
+                        <p class="size_12 hero_grey">This will be the mobile menu background color.</p>
+                        <div class="hero_col_12">
+                            <div class="hero_col_2">
+                                <label>Start color</label>
+                            	<input type="text" id="bgBarStartColor" class="color_picker" name="bgMenuStartColor" value="#DC4551">
+                            </div>
+                            <div class="barGradientToggle">
+                                <div class="hero_col_2">
+                                	<label>End color</label>
+                                    <input type="text" id="bgBarEndColor" class="color_picker" name="bgBarEndColor" value="#DC4551">
+                                </div>
+                                <div class="hero_col_3">                                
+                                	<label>Gradient direction</label>
+                                    <select data-size="lrg" id="bgBarGradientPath" name="bgBarGradientPath">
+                                        <option value="vertical">Vertical</option>
+                                        <option value="horizontal">Horizontal</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="hero_col_2">
+                                <label>Transparency</label>
+                            	<select data-size="lrg" id="bgBarTransparency" name="bgBarTransparency">
+                                 	<option value="0.0">0%</option>
+                                    <option value="0.1">10%</option>
+                                    <option value="0.2">20%</option>
+                                    <option value="0.3">30%</option>
+                                    <option value="0.4">40%</option>
+                                    <option value="0.5">50%</option>
+                                    <option value="0.6">60%</option>
+                                    <option value="0.7">70%</option>
+                                    <option value="0.8">80%</option>
+                                    <option value="0.9">90%</option>
+                                    <option value="1.0">100%</option>
+                                </select>
+                            </div>
+                        </div>                      
+                    </div>
+                <!-- END: ACTIVATION --> 
+                <!-- START: ACTIVATION -->
+                    <div class="hero_section_holder hero_grey size_14">
+                    	<div class="hero_col_12">
+                            <h2 class="size_18 hero_red weight_600">Mobile menu bar font</h2>
+                        </div>  
+                    	<label><h2 class="size_14 hero_green">Font size and color</h2></label>
+                        <p class="size_12 hero_grey">This will style the main mobile menu navigation items.</p>
+                        <div class="hero_col_12">
+                            <div class="hero_col_3">
+                             	<label>Font family</label>
+                            	<select data-size="lrg" id="fontBarFamily" name="fontBarFamily" data-height="200">
+                                    <option value="arial">Arial</option>
+                                </select>
+                            </div>
+                             <div class="hero_col_2">
+                             	<label>Font weight</label>
+                            	<select data-size="lrg" id="fontBarWeight" name="fontBarWeight">
+                                    <option value="bold">Bold</option>
+                                    <option value="lighter">Lighter</option>
+                                    <option value="inherit">Inherit</option>
+                                    <option value="normal">Normal</option>
+                                </select>
+                            </div>
+                             <div class="hero_col_2">
+                             	<label>Font size</label>
+                            	<input type="text" data-size="lrg" class="hero_int_only" maxlength="2" id="fontBarSize" name="fontBarSize">
+                            </div>
+                             <div class="hero_col_2">
+                             	<label>Font sizing</label>
+                            	<select data-size="lrg" id="fontBarSizing" name="fontBarSizing">
+                                    <option>px</option>
+                                    <option>em</option>
+                                </select>
+                            </div>
+                             <div class="hero_col_2">
+                             	<label>Font color</label>
+                            	<input type="text" id="fontBarColor" class="color_picker" name="fontBarColor" value="#DC4551">
+                            </div>
+                        </div>
+                    </div>
+                <!-- END: ACTIVATION -->
+                <!-- START: ACTIVATION -->
+                <div class="hero_section_holder hero_grey size_14">
+                    <div class="hero_col_12">
+                        <h2 class="size_18 hero_red weight_600">Mobile menu bar layout</h2>
+                    </div>  
+                    <label><h2 class="size_14 hero_green">Menu bar height</h2></label>
+                    
+                    <div class="hero_col_12">                                           
+                        <div class="hero_col_2">
+                            <input type="text" data-size="lrg" data-hero_type="px" class="hero_int_only" id="menuBarHeightMobile" name="menuBarHeightMobile" value="40">
+                        </div>   
+                    </div>
+                    <label><h2 class="size_14 hero_green">Mobile menu button size</h2></label>
+                    <p class="size_12 hero_grey">Set the size of the mobile menu button.</p>
+                    <div class="hero_col_12">
+                        <div class="hero_col_2">
+                            <input type="text" data-size="lrg" data-hero_type="px" class="hero_int_only" id="menuBarbuttonSize" name="menuBarbuttonSize" value="30">
+                        </div>     
+                    </div>   
+                    <label><h2 class="size_14 hero_green">Mobile menu button position</h2></label>
+                    <p class="size_12 hero_grey">Set the mobile menu button to be left or right aligned.</p>
+                    <div class="hero_col_12">
+                        <div class="hero_col_2">
+                            <label><h2 class="size_14 hero_green">Left</h2></label><div class="hero_switch_position"><input type="radio" data-size="sml" id="mobile_menu_button_position_left" name="mobile_menu_button_position" value="left" data-toggleimage="true"></div>
+                        </div>
+                        <div class="hero_col_2">
+                            <label><h2 class="size_14 hero_green">Right</h2></label><div class="hero_switch_position"><input type="radio" data-size="sml" id="mobile_menu_button_position_right" name="mobile_menu_button_position" value="right" data-toggleimage="true"></div>
+                        </div>    	
+                    </div>
+                    
+                    <label><h2 class="size_14 hero_green">Mobile menu button padding</h2></label>
+                    <p class="size_12 hero_grey">Set the left and right padding for the mobile menu button</p>
+                    <div class="hero_col_12">
+                        <div class="hero_col_2">
+                            <h2 class="size_14 hero_green">Left</h2>
+                            <input type="text" data-size="lrg" data-hero_type="px" class="hero_int_only" id="menuBarMobileIconPaddingLeft" name="menuBarMobileIconPaddingLeft" value="10">
+                        </div>
+                        <div class="hero_col_2">
+                            <h2 class="size_14 hero_green">Right</h2>
+                            <input type="text" data-size="lrg" data-hero_type="px" class="hero_int_only" id="menuBarMobileIconPaddingRight" name="menuBarMobileIconPaddingRight" value="10">
+                        </div>    	
+                    </div>
+                    <label><h2 class="size_14 hero_green">Mobile menu button icon and color</h2></label>
+                    <p class="size_12 hero_grey">Set the color and icon to be used for the mobile menu.</p>
+                    
+                    <div class="hero_col_12">
+                        <div class="hero_col_1">
+                            <div class="rounded_3">
+                                <div id="hero_mobile_menu_icon"><div class=""></div></div>
+                                <input type="hidden" id="menuBarMobileIcon" name="menuBarMobileIcon" value="e910">
+                            </div>
+                        </div> 
+                        <div class="hero_col_2">
+                            <input type="text" class="color_picker" id="mobile_menu_button_color" name="mobile_menu_button_color" value="#000000">
+                        </div>     
+                    </div> 
+                    <p class="size_12"><a class="hero_open_mobile_icons">Change Icon</a></p> 
+                    <div class="hero_col_12 hmenu_mobile_icon_select">
+                        <div class="icon_select_option icon_font_mobile_icon_e900" data-icon="e900"></div>
+                        <div class="icon_select_option icon_font_mobile_icon_e901" data-icon="e901"></div>
+                        <div class="icon_select_option icon_font_mobile_icon_e902" data-icon="e902"></div>
+                        <div class="icon_select_option icon_font_mobile_icon_e903" data-icon="e903"></div>
+                        <div class="icon_select_option icon_font_mobile_icon_e904" data-icon="e904"></div>
+                        <div class="icon_select_option icon_font_mobile_icon_e905" data-icon="e905"></div>
+                        <div class="icon_select_option icon_font_mobile_icon_e906" data-icon="e906"></div>
+                        <div class="icon_select_option icon_font_mobile_icon_e907" data-icon="e907"></div>
+                        <div class="icon_select_option icon_font_mobile_icon_e908" data-icon="e908"></div>
+                        <div class="icon_select_option icon_font_mobile_icon_e909" data-icon="e909"></div>
+                        <div class="icon_select_option icon_font_mobile_icon_e90a" data-icon="e90a"></div>
+                        <div class="icon_select_option icon_font_mobile_icon_e90b" data-icon="e90b"></div>
+                        <div class="icon_select_option icon_font_mobile_icon_e90c" data-icon="e90c"></div>
+                        <div class="icon_select_option icon_font_mobile_icon_e90d" data-icon="e90d"></div>
+                        <div class="icon_select_option icon_font_mobile_icon_e90e" data-icon="e90e"></div>
+                        <div class="icon_select_option icon_font_mobile_icon_e90f" data-icon="e90f"></div>
+                        <div class="icon_select_option icon_font_mobile_icon_e910" data-icon="e910"></div>
+                        <div class="icon_select_option icon_font_mobile_icon_e911" data-icon="e911"></div>
+                        <div class="icon_select_option icon_font_mobile_icon_e912" data-icon="e912"></div>
+                        <div class="icon_select_option icon_font_mobile_icon_e913" data-icon="e913"></div>
+                        <div class="icon_select_option icon_font_mobile_icon_e914" data-icon="e914"></div>
+                        <div class="icon_select_option icon_font_mobile_icon_e915" data-icon="e915"></div>
+                    </div>
+                    <p class="size_12 hero_grey"></p>
+                </div>                
+                <!-- END: ACTIVATION -->
+            	<!-- START: ACTIVATION -->
+                <div class="hero_section_holder hero_grey size_14"> 
+                    <div class="hero_col_12">
+                        <h2 class="size_18 hero_red weight_600">Mobile main navigation background color</h2>
+                    </div>                   	
+                    <label><h2 class="size_14 hero_green">Default background color | Gradients</h2></label><div class="hero_switch_position"><input type="checkbox" data-size="sml" id="bgMenuGradient" name="bgMenuGradient" value="1" data-smltoggler="menuGradientToggle"></div>
+                    <p class="size_12 hero_grey">This will be the mobile menu background color.</p>
+                    <div class="hero_col_12">
+                        <div class="hero_col_2">
+                            <label>Start color</label>
+                            <input type="text" id="bgMenuStartColor" class="color_picker" name="bgMenuStartColor" value="#DC4551">
+                        </div>
+                        <div class="menuGradientToggle">
+                            <div class="hero_col_2">
+                                <label>End color</label>
+                                <input type="text" id="bgMenuEndColor" class="color_picker" name="bgMenuEndColor" value="#DC4551">
+                            </div>
+                            <div class="hero_col_3">                                
+                                <label>Gradient direction</label>
+                                <select data-size="lrg" id="bgMenuGradientPath" name="bgMenuGradientPath">
+                                    <option value="vertical">Vertical</option>
+                                    <option value="horizontal">Horizontal</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="hero_col_2">
+                            <label>Transparency</label>
+                            <select data-size="lrg" id="bgMenuTransparency" name="bgMenuTransparency">
+                                <option value="0.0">0%</option>
+                                <option value="0.1">10%</option>
+                                <option value="0.2">20%</option>
+                                <option value="0.3">30%</option>
+                                <option value="0.4">40%</option>
+                                <option value="0.5">50%</option>
+                                <option value="0.6">60%</option>
+                                <option value="0.7">70%</option>
+                                <option value="0.8">80%</option>
+                                <option value="0.9">90%</option>
+                                <option value="1.0">100%</option>
+                            </select>
+                        </div>
+                    </div>                      
+                </div>
+                <!-- END: ACTIVATION --> 
+                <!-- START: ACTIVATION -->
+                    <div class="hero_section_holder hero_grey size_14"> 
+                    	<div class="hero_col_12">
+                            <h2 class="size_18 hero_red weight_600">Mobile main navigation hover background color</h2>
+                        </div>                   	
+                        <label><h2 class="size_14 hero_green">Default background color | Gradients</h2></label><div class="hero_switch_position"><input type="checkbox" data-size="sml" id="bgHoverGradient" name="bgHoverGradient" value="1" data-smltoggler="menuHoverGradientToggle"></div>
+                        <p class="size_12 hero_grey">This will be the mobile menu background color.</p>
+                        <div class="hero_col_12">
+                            <div class="hero_col_2">
+                                <label>Start color</label>
+                            	<input type="text" id="bgHoverStartColor" class="color_picker" name="bgHoverStartColor" value="#DC4551">
+                            </div>
+                            <div class="menuHoverGradientToggle">
+                                <div class="hero_col_2">
+                                	<label>End color</label>
+                                    <input type="text" id="bgHoverEndColor" class="color_picker" name="bgHoverEndColor" value="#DC4551">
+                                </div>
+                                <div class="hero_col_3">                                
+                                	<label>Gradient direction</label>
+                                    <select data-size="lrg" id="bgHoverGradientPath" name="bgHoverGradientPath">
+                                        <option value="vertical">Vertical</option>
+                                        <option value="horizontal">Horizontal</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="hero_col_2">
+                                <label>Transparency</label>
+                            	<select data-size="lrg" id="bgHoverTransparency" name="bgHoverTransparency">
+                                 	<option value="0.0">0%</option>
+                                    <option value="0.1">10%</option>
+                                    <option value="0.2">20%</option>
+                                    <option value="0.3">30%</option>
+                                    <option value="0.4">40%</option>
+                                    <option value="0.5">50%</option>
+                                    <option value="0.6">60%</option>
+                                    <option value="0.7">70%</option>
+                                    <option value="0.8">80%</option>
+                                    <option value="0.9">90%</option>
+                                    <option value="1.0">100%</option>
+                                </select>
+                            </div>
+                        </div>                      
+                    </div>
+                <!-- END: ACTIVATION -->
+                <!-- START: ACTIVATION -->
+                    <div class="hero_section_holder hero_grey size_14">
+                    	<div class="hero_col_12">
+                            <h2 class="size_18 hero_red weight_600">Mobile fonts</h2>
+                        </div>  
+                    	<label><h2 class="size_14 hero_green">Font size and color</h2></label>
+                        <p class="size_12 hero_grey">This will style the main mobile menu navigation items.</p>
+                        <div class="hero_col_12">
+                            <div class="hero_col_3">
+                             	<label>Font family</label>
+                            	<select data-size="lrg" id="fontMobileFamily" name="fontMobileFamily" data-height="200">
+                                    <option value="arial">Arial</option>
+                                </select>
+                            </div>
+                             <div class="hero_col_2">
+                             	<label>Font weight</label>
+                            	<select data-size="lrg" id="fontMobileWeight" name="fontMobileWeight">
+                                    <option value="bold">Bold</option>
+                                    <option value="lighter">Lighter</option>
+                                    <option value="inherit">Inherit</option>
+                                    <option value="normal">Normal</option>
+                                </select>
+                            </div>
+                             <div class="hero_col_2">
+                             	<label>Font size</label>
+                            	<input type="text" data-size="lrg" class="hero_int_only" maxlength="2" id="fontMobileSize" name="fontMobileSize">
+                            </div>
+                             <div class="hero_col_2">
+                             	<label>Font sizing</label>
+                            	<select data-size="lrg" id="fontMobileSizing" name="fontMobileSizing">
+                                    <option>px</option>
+                                    <option>em</option>
+                                </select>
+                            </div>
+                             <div class="hero_col_2">
+                             	<label>Font color</label>
+                            	<input type="text" id="fontMobileColor" class="color_picker" name="fontMobileColor" value="#DC4551">
+                            </div>
+                        </div>
+                        <label><h2 class="size_14 hero_green">Hover font color</h2></label>
+                        <p class="size_12 hero_grey">This will style the main tablet menu navigation hover text color.</p>
+                        <div class="hero_col_12">
+                            <div class="hero_col_2">
+                            	<label>Font hover color</label>
+                            	<input type="text" id="fontMobileHoverColor" class="color_picker" name="fontMobileHoverColor" value="#DC4551">
+                            </div>
+                        </div>
+                    </div>
+                <!-- END: ACTIVATION --> 
+                <!-- START: ACTIVATION -->
+                    <div class="hero_section_holder hero_grey size_14">
+                    	<div class="hero_col_12">
+                            <h2 class="size_18 hero_red weight_600">Tablet main navigation fonts</h2>
+                        </div>  
+                    	<label><h2 class="size_14 hero_green">Font size and color</h2></label>
+                        <p class="size_12 hero_grey">This will style the main tablet menu navigation items.</p>
+                        <div class="hero_col_12">
+                            <!--<div class="hero_col_3">
+                             	<label>Font family</label>
+                            	<select data-size="lrg" id="fontTabletFamily" name="fontTabletFamily" data-height="200">
+                                    <option value="arial">Arial</option>
+                                </select>
+                            </div>-->
+                            <div class="hero_col_2">
+                             	<label>Font weight</label>
+                            	<select data-size="lrg" id="fontTabletWeight" name="fontTabletWeight">
+                                    <option value="bold">Bold</option>
+                                    <option value="lighter">Lighter</option>
+                                    <option value="inherit">Inherit</option>
+                                    <option value="normal">Normal</option>
+                                </select>
+                            </div>
+                             <div class="hero_col_2">
+                             	<label>Font size</label>
+                            	<input type="text" data-size="lrg" class="hero_int_only" maxlength="2" id="fontTabletSize" name="fontTabletSize">
+                            </div>
+                             <div class="hero_col_2">
+                             	<label>Font sizing</label>
+                            	<select data-size="lrg" id="fontTabletSizing" name="fontTabletSizing">
+                                    <option>px</option>
+                                    <option>em</option>
+                                </select>
+                            </div>
+                            <!--<div class="hero_col_2">
+                             	<label>Font color</label>
+                            	<input type="text" id="fontTabletColor" class="color_picker" name="fontTabletColor" value="#DC4551">
+                            </div>-->
+                        </div>
+                        <!--<label><h2 class="size_14 hero_green">Hover font color</h2></label>
+                        <p class="size_12 hero_grey">This will style the main navigation hover text color.</p>
+                        <div class="hero_col_12">
+                            <div class="hero_col_2">
+                            	<label>Font hover color</label>
+                            	<input type="text" id="fontTabletHoverColor" class="color_picker" name="fontTabletHoverColor" value="#DC4551">
+                            </div>
+                        </div>-->
+                    </div>
+                <!-- END: ACTIVATION -->  
+                <!-- START: ACTIVATION -->
+                    <div class="hero_section_holder hero_grey size_14"> 
+                        <div class="hero_col_6">
+                            <label>
+                                <h2 class="size_18 hero_red weight_600">Tablet main menu padding</h2>
+                                <p class="size_12 hero_grey">This will add padding to the left and right of each main tablet nav item.</p>
+                            </label>
+                            <div class="hero_col_12">
+                                <div class="hero_col_3">
+                                	<label>Left</label>
+                                    <input type="text" data-size="lrg" data-hero_type="px" id="paddingLeft" name="paddingLeft">
+                                </div>
+                                <div class="hero_col_3">
+                                	<label>Right</label>
+                                    <input type="text" data-size="lrg" data-hero_type="px" id="paddingRight" name="paddingRight">
+                                </div>
+                            </div>  
+                        </div>
+                        <div class="hero_col_6">
+                            <div class="hero_padding_example"></div>
+                        </div>                                              
+                    </div>
+                <!-- END: ACTIVATION --> 
+            </form>
+        <!-- END: FORM -->
+    </div>
+</div>

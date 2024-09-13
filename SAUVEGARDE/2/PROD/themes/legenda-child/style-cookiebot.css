@@ -1,0 +1,44 @@
+/*
+ Theme Name:  Legenda Child
+ Theme URI:   http://8theme.com/
+ Description: Legenda Child Theme
+ Author:      8theme
+ Author URI:  http://8theme.com
+ Template:    legenda
+ Version:     0.0.1
+ Text Domain: legenda-child
+ Palette:orange(#F29806) rouge(#C92F00) bleu(#0B4797)
+*/
+#CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll, #CybotCookiebotDialogBodyButtonDecline, #CybotCookiebotDialogBodyLevelButtonCustomize {	width: fit-content !important;}
+#CybotCookiebotDialogBodyButtonDecline {  position: absolute;  top: -35px;  color: white !important; opacity: 1; width: 50%; right: 0; justify-content: end !important;border: 0 !important;font-size: 0.8em !important;text-transform: capitalize;}
+#CybotCookiebotDialog {	overflow: visible !important;}
+#CybotCookiebotDialog {max-height: calc(100% - 100px) !important;}
+#CybotCookiebotDialogBodyLevelButtonCustomize {border:0 !important;	text-transform: capitalize;	}
+#CybotCookiebotDialogPoweredByText a {text-align: left;	font-size: 0.7rem;}
+#CybotCookiebotDialog {max-width: 500px !important;}
+#CybotCookiebotDialogBodyButtonsWrapper {padding: 0 0 30px 0 !important;}
+#CybotCookiebotDialogPoweredByText a span {	font-size: 0.7rem;}
+#CybotCookiebotDialogBody .CybotCookiebotScrollContainer {	max-height: none !important;} 
+@media screen and (min-width: 1280px) {#CybotCookiebotDialog #CybotCookiebotDialogBody .CybotCookiebotScrollContainer {max-height: none !important;}}
+#CybotCookiebotDialog #CybotCookiebotDialogFooter #CybotCookiebotDialogBodyButtonsWrapper {	flex-direction: column-reverse; align-items: center;}
+
+/*trusted shops*/
+@media (max-width:768px) {
+div.trustedShopsWidget.trustedShopsProductWidget .product-star-widget{
+	display: flex;
+    justify-content: center;
+    font: 1em Helvetica,arial,sans-serif;
+	}
+.page-id-32869 div.trustedShopsWidget.trustedShopsProductWidget .product-star-widget{
+	margin-left: -20px;
+    margin-bottom: 10px;
+	}
+}
+
+div.trustedShopsWidget.trustedShopsProductWidget .product-star-widget{
+	display: flex;
+    justify-content: start;
+    font: 1em Helvetica,arial,sans-serif;
+}
+
+body #CookieBotWidget{left: unset!important;right: 25px!important;bottom: 30px!important;}

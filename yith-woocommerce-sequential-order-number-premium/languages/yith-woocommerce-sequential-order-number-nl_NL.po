@@ -1,0 +1,309 @@
+# Translation of YITH WooCommerce Sequential Order Number in Dutch
+# This file is distributed under the same license as the YITH WooCommerce Sequential Order Number package.
+msgid ""
+msgstr ""
+"Project-Id-Version: YITH WooCommerce Sequential Order Number\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/yith-woocommerce-"
+"sequential-order-number.premium\n"
+"POT-Creation-Date: 2023-09-15 06:55:27+00:00\n"
+"PO-Revision-Date: 2020-11-13 21:49:09+0000\n"
+"Language: nl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/3.0.0-alpha.2\n"
+
+#: includes/class.yith-sequential-order-number-admin.php:181
+msgid "Modules"
+msgstr "Modules"
+
+#: includes/class.yith-sequential-order-number-admin.php:182
+msgid "Tools"
+msgstr "Instrumenten"
+
+#: includes/class.yith-sequential-order-number-admin.php:295
+msgid "Order imported"
+msgid_plural "Orders imported"
+msgstr[0] "Geïmporteerde bestelling"
+msgstr[1] "Geïmporteerde bestellingen"
+
+#: init.php:38
+msgid ""
+"YITH WooCommerce Sequential Order Numbers is enabled but not effective. It "
+"requires WooCommerce in order to work."
+msgstr ""
+"YITH WooCommerce Sequential Order Numbers is geactiveerd, maar werkt nog "
+"niet. Het heeft WooCommerce nodig om te kunnen werken."
+
+#: plugin-options/general-options.php:17
+msgid "You can use these placeholders"
+msgstr "Je kunt deze invulvelden gebruiken"
+
+#: plugin-options/general-options.php:18
+msgid "[D] Day without leading zeros"
+msgstr "[D] Dag zonder voorloopnullen"
+
+#: plugin-options/general-options.php:19
+msgid "[DD] Day with leading zeros"
+msgstr "[DD] Dag zonder voorloopnullen"
+
+#: plugin-options/general-options.php:20
+msgid "[M] Month without leading zeros"
+msgstr "[M] Maand zonder voorloopnullen"
+
+#: plugin-options/general-options.php:21
+msgid "[MM] Month with leading zeros"
+msgstr "[MM] Maand zonder voorloopnullen"
+
+#: plugin-options/general-options.php:22
+msgid "[YY] two-digit year"
+msgstr "[JJ] tweecijferig getal jaar"
+
+#: plugin-options/general-options.php:23
+msgid "[YYYY] Full year"
+msgstr "[JJJ] Volledig jaartal"
+
+#: plugin-options/general-options.php:24
+msgid "[h] 24-hour format of an hour without leading zeros"
+msgstr "[u] 24-uurs opmaak van een uur zonder voorloopnullen"
+
+#: plugin-options/general-options.php:25
+msgid "[hh] 24-hour format of an hour with leading zeros"
+msgstr "[uu] 24-uurs opmaak van een uur met voorloopnullen"
+
+#: plugin-options/general-options.php:26
+msgid "[m] Minutes with leading zeros"
+msgstr "[m] Minuten met voorloopnullen"
+
+#: plugin-options/general-options.php:27
+msgid "[s] Seconds, with leading zeros"
+msgstr "[s] Seconden met voorloopnullen"
+
+#: plugin-options/general-options.php:32
+msgid ""
+"If you enable this option, you can use a different numeration for your "
+"quotes."
+msgstr ""
+"Als je deze optie inschakelt, kun je een andere nummering gebruiken voor je "
+"prijsopgaven."
+
+#: plugin-options/general-options.php:35
+msgid "YITH WooCommerce Request a Quote Premium"
+msgstr "YITH WooCommerce Request a Quote Premium"
+
+#: plugin-options/general-options.php:36
+msgid "(version 1.5.7 or later) is activated"
+msgstr "(versie 1.5.7 of nieuwe) is geactiveerd"
+
+#: plugin-options/general-options.php:42
+msgid "Plugin Modules"
+msgstr "Plugin modules"
+
+#: plugin-options/general-options.php:46
+msgid "Base Module"
+msgstr "Basis modules"
+
+#: plugin-options/general-options.php:54
+msgid "Numeration starting from"
+msgstr "Nummering start met"
+
+#: plugin-options/general-options.php:56
+msgid "Set the starting number for order numeration"
+msgstr "Bepaal het startnummer voor de bestellingnummering"
+
+#: plugin-options/general-options.php:62
+msgid "Order prefix"
+msgstr "Bestelling voorvoegsel"
+
+#: plugin-options/general-options.php:64
+msgid "Set a text to be used as prefix for order numbers."
+msgstr ""
+"Bepaal een tekst die wordt gebruikt als voorvoegsel voor bestellingnummers."
+
+#: plugin-options/general-options.php:70
+msgid "Order suffix"
+msgstr "Bestelling achtervoegsel"
+
+#: plugin-options/general-options.php:72
+msgid "Set a text to be used as suffix for order numbers."
+msgstr ""
+"Bepaal een tekst die wordt gebruikt als achtervoegsel voor bestellingnummers."
+
+#: plugin-options/general-options.php:81
+msgid "Free Order Module"
+msgstr "Gratis bestellingen module"
+
+#: plugin-options/general-options.php:88 plugin-options/general-options.php:140
+#: plugin-options/general-options.php:176
+msgid "Numeration starting from:"
+msgstr "Nummering start met:"
+
+#: plugin-options/general-options.php:90
+msgid "Set the starting number for free order numeration"
+msgstr "Bepaal het start nummer de nummering van gratis bestellingen"
+
+#: plugin-options/general-options.php:96
+msgid "Free order prefix"
+msgstr "Gratis bestelling voorvoegsel"
+
+#: plugin-options/general-options.php:99
+msgid "Set a text to be used as prefix for free order numbers."
+msgstr ""
+"Bepaal een tekst die wordt gebruikt als voorvoegsel voor gratis "
+"bestellingnummers."
+
+#: plugin-options/general-options.php:104
+msgid "Free order suffix"
+msgstr "Gratis bestelling achtervoegsel"
+
+#: plugin-options/general-options.php:107
+msgid "Set a text to be used as suffix for free order numbers."
+msgstr ""
+"Bepaal een tekst die wordt gebruikt als achtervoegsel voor gratis "
+"bestellingnummers."
+
+#: plugin-options/general-options.php:111
+msgid "Set your free order type"
+msgstr "Bepaal het type van je gratis bestelling"
+
+#: plugin-options/general-options.php:117
+msgid ""
+"With this option, you can choose in which way orders have to be recognized "
+"as free."
+msgstr ""
+"Met deze optie kun je kiezen hoe een bestelling wordt herkend als gratis."
+
+#: plugin-options/general-options.php:118
+msgid ""
+"Order total: your order is free if the total is 0 (coupon and shipping "
+"included)."
+msgstr ""
+"Totaal bestelling: Je bestelling is gratis als het totaal 0 is (inclusief "
+"kortingsbon en verzendkosten)."
+
+#: plugin-options/general-options.php:119
+msgid ""
+"Order products: your order is free only if all products it contains are free "
+"(coupon and shipping excluded)."
+msgstr ""
+"Bestelling producten: je bestelling is uitsluitend gratis als alle producten "
+"die het bevat gratis zijn (exclusief kortingsbon en verzendkosten)."
+
+#: plugin-options/general-options.php:123
+msgid "Order Total"
+msgstr "Totaal bestelling"
+
+#: plugin-options/general-options.php:124
+msgid "Products in Order"
+msgstr "Producten in bestelling"
+
+#: plugin-options/general-options.php:131
+msgid "Quote Module"
+msgstr "Prijsopgave module"
+
+#: plugin-options/general-options.php:132
+msgid "Available only with YITH WooCommerce Request a quote Premium"
+msgstr "Alleen beschikbaar in YITH WooCommerce Request a quote Premium"
+
+#: plugin-options/general-options.php:142
+msgid "Set the starting number for quote numeration"
+msgstr "Bepaal het startnummer voor de prijsopgave nummering"
+
+#: plugin-options/general-options.php:148
+msgid "Quote prefix"
+msgstr "Prijsopgave voorvoegsel"
+
+#: plugin-options/general-options.php:151
+msgid "Set a text to be used as prefix for quote numbers."
+msgstr ""
+"Bepaal in tekst die wordt gebruikt als voorvoegsel voor prijsopgave nummers."
+
+#: plugin-options/general-options.php:157
+msgid "Quote suffix"
+msgstr "Prijsopgave achtervoegsel"
+
+#: plugin-options/general-options.php:160
+msgid "Set a text to be used as suffix for quote numbers."
+msgstr ""
+"Bepaal de tekst die wordt gebruikt als achtervoegsel voor prijsopgave "
+"nummers."
+
+#: plugin-options/general-options.php:167
+msgid "Subscription Module"
+msgstr "Abonnement module"
+
+#: plugin-options/general-options.php:168
+msgid "Available only with YITH WooCommerce Subscription Premium"
+msgstr "Alleen beschikbaar met YITH WooCommerce Subscription Premium"
+
+#: plugin-options/general-options.php:178
+msgid "Set the starting number for subscription numeration"
+msgstr "Startnummer instellen voor abonnementsnummering"
+
+#: plugin-options/general-options.php:184
+msgid "Subscription prefix"
+msgstr "Abonnement voorvoegsel"
+
+#: plugin-options/general-options.php:187
+msgid "Set a text to be used as prefix for subscription numbers."
+msgstr "Een tekst instellen als voorvoegsel voor abonnementsnummers."
+
+#: plugin-options/general-options.php:193
+msgid "Subscription suffix"
+msgstr "Abonnement achtervoegsel"
+
+#: plugin-options/general-options.php:196
+msgid "Set a text to be used as suffix for subscription numbers."
+msgstr ""
+"Een tekst instellen die wordt gebruikt als achtervoegsel voor "
+"abonnementsnummers."
+
+#: templates/admin/tools-tab.php:15
+msgid "Select a date"
+msgstr "Selecteer een datum"
+
+#: templates/admin/tools-tab.php:22
+msgid "Import Settings"
+msgstr "Import instellingen"
+
+#: templates/admin/tools-tab.php:26
+msgid "Import from WooCommerce Sequential Order Number"
+msgstr "Importeren vanaf WooCommerce Sequential Order Number"
+
+#: templates/admin/tools-tab.php:30
+msgid "Import"
+msgstr "Importeren"
+
+#: templates/admin/tools-tab.php:31
+msgid ""
+"This tool allows importing all existing sequential order numbers created by "
+"WooCommerce Sequential Order Number. Otherwise, order numbers are assigned "
+"by the plugin."
+msgstr ""
+"Dit instrument laat je alle bestaande opeenvolgende bestelling nummers "
+"aangemaakt door WooCommerce Sequential Order Number importeren. Anders, "
+"zullen bestelling nummers worden toegewezen door de plugin."
+
+#. Description of the plugin/theme
+msgid ""
+"<code><strong>YITH WooCommerce Sequential Order Number Premium</strong></"
+"code> allows you to create sequential numbers for your orders! You can add a "
+"prefix and suffix to your orders! <a href =\"https://yithemes.com\">Get more "
+"plugins for your e-commerce shop on <strong>YITH</strong></a>"
+msgstr ""
+"<code><strong>YITH WooCommerce Sequential Order Number Premium</strong></"
+"code> laat je opeenvolgende nummers voor je bestellingen maken! Je kunt een "
+"voorvoegsel en achtervoegsel toevoegen aan je bestellingen! <a href "
+"=\"https://yithemes.com\">Verkrijg meer plugins voor je e-commerce winkel op "
+"<strong>YITH</strong></a>"
+
+#: plugin-options/general-options.php:33
+msgctxt ""
+"This option is available if YITH WooCommerce Request a Quote Premium version "
+"1.5.6 or later is activated"
+msgid "This option is available if"
+msgstr "Deze optie is beschikbaar indien"
+
+#~ msgid "Sequential Order Number"
+#~ msgstr "Opeenvolgend Ordernummer"

@@ -1,0 +1,36 @@
+body,
+#hmenu_load_1 .hmenu_navigation_holder>ul>li>a, 
+#hmenu_load_1 .hmenu_social_holder>ul>li>a, 
+#hmenu_load_1 .hmenu_product_holder>ul>li>a, 
+#hmenu_load_1 .hmenu_toggle_holder>ul>li>a,
+.largeNote,
+.largeNote p,
+body .jsWidgetLargeNote,
+body .sagInfo,
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6,
+p {
+  font-family: "open sans", "Open Sans-fallback", Arial, sans-serif !important;
+}
+
+@font-face {
+    font-family: "Open Sans-fallback";
+    size-adjust: 102.92000000000002%;
+    ascent-override: 110%;
+    src: local("Arial");
+}
+
+@font-face {
+  font-family: "open sans";
+  font-weight: 100 900;
+  font-display: swap;
+  src: url('../fonts/manrope-variable.woff2') format('woff2 supports variations'),
+  url('../fonts/manrope-variable.woff2') format("woff2-variations");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-weight: 100 900;
+  font-display: swap;
+  src: url('../fonts/manrope-variable.woff2') format('woff2 supports variations'),
+  url('../fonts/manrope-variable.woff2') format("woff2-variations");
+}

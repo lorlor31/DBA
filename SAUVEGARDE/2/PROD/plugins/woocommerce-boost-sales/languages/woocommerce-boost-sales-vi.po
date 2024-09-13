@@ -1,0 +1,1856 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WooCommerce Boost Sales Premium\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-03-23 06:52+0000\n"
+"PO-Revision-Date: 2022-10-13 04:50+0000\n"
+"Last-Translator: \n"
+"Language-Team: Vietnamese\n"
+"Language: vi\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.6.2; wp-6.0.1"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/includes/discount-bar.php:136
+msgid " off Cart"
+msgstr "trên giỏ hàng"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/includes/discount-bar.php:139
+msgid " per Product"
+msgstr "trên Sản phẩm"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/templates/upsells/upsells-list.php:80
+#, php-format
+msgid "\"%s\" has been added to your cart"
+msgstr "\"%s\" đã được thêm vào giỏ hàng của bạn"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/includes/discount-bar.php:133
+msgid "% Cart"
+msgstr "% Giỏ hàng"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/bundles.php:157
+#, php-format
+msgid "%1$s item [%2$s bundled elements]"
+msgid_plural "%1$s items [%2$s bundled elements]"
+msgstr[0] "%1$s mặt hàng [%2$s phần tử của gói]"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/zcrosssell.php:245
+#, php-format
+msgid "%s (Copy)"
+msgstr "%s (Sao chép)"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/includes/functions.php:183
+#, php-format
+msgid "%s does not exist."
+msgstr "%s không tồn tại."
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:164
+msgid ")"
+msgstr ")"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:799
+msgid "36"
+msgstr "36"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:800
+msgid "48"
+msgstr "48"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:801
+msgid "64"
+msgstr "64"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:802
+msgid "75"
+msgstr "75"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/templates/upsells/popup-main.php:79
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/templates/upsells/popup-main.php:95
+#, php-format
+msgid ""
+"<span class=\"wbs-notify_added-quantity\">%s</span>  new item has been added "
+"to your cart"
+msgid_plural ""
+"<span class=\"wbs-notify_added-quantity\">%s</span>  new items have been "
+"added to your cart"
+msgstr[0] ""
+"<span class=\"wbs-notify_added-quantity\">%s</span>  mặt hàng mới được thêm "
+"vào giỏ hàng của bạn"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:59
+msgid "<strong>Products in category</strong> if enabled"
+msgstr "Hiện sản phẩm cùng danh mục nếu bật"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:57
+#, php-format
+msgid ""
+"<strong>Products/categories</strong> you select on <a target=\"_blank\" "
+"href=\"%s\">Up-sells page</a>"
+msgstr ""
+"<strong>Sản phẩm/danh mục</strong> bạn chỉ định trên<a target=\"_blank\" "
+"href=\"%s\"> trang Up-sells</a>"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:58
+msgid "<strong>Recently Viewed Products</strong> if enabled"
+msgstr "Hiện sản phẩm vừa mới xem gần đây nếu bật"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:60
+msgid "<strong>Upsell by tags</strong> if enabled"
+msgstr "Hiện sản phẩm cùng thẻ nếu bật"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:539
+msgid "Above Description Tab"
+msgstr "Phía trên thẻ mô tả"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/upsell.php:743
+msgid "Action"
+msgstr "Hàng động"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/upsell.php:785
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/upsell.php:856
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/zcrosssell.php:1115
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/zcrosssell.php:1284
+msgid "Actions"
+msgstr "Hàng động"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:218
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/upsell.php:761
+msgid "Add"
+msgstr "Thêm"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:857
+msgid "Add bundle to cart"
+msgstr "Thêm gói vào giỏ hàng"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:976
+msgid "Add New Coupon"
+msgstr "Thêm mã ưu đãi mới"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/bundles.php:308
+msgid "Add Product"
+msgstr "Thêm sản phẩm"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:859
+msgid ""
+"Add the bundled product to cart instead of separated items if product source "
+"is cross sells and customers add all items of bundle to cart. Only work if "
+"Cross sell is enabled."
+msgstr ""
+"Thêm gói sản phẩm vào giỏ hàng thay vì mặt hàng riêng biệt nếu nguồn sản "
+"phẩm là cross sells và khách hàng thêm tất cả các mặt hàng trong gói sản "
+"phẩm vào giỏ hàng. Chỉ hoạt động nếu Cross sell đang được bật lên."
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/includes/wbs_product_bundle.php:151
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/templates/single-product/add-to-cart/add-to-cart-mobile.php:12
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/templates/single-product/add-to-cart/add-to-cart.php:9
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/templates/single-product/add-to-cart/simple-mobile.php:35
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/templates/single-product/add-to-cart/simple.php:35
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/templates/single-product/add-to-cart/variation-add-to-cart-button-mobile.php:23
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/templates/single-product/add-to-cart/variation-add-to-cart-button.php:23
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/templates/single-product/add-to-cart/wbs-bundle.php:82
+msgid "Add to cart"
+msgstr "Thêm vào giỏ hàng"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:849
+msgid "Add to cart text"
+msgstr "Nhãn thêm vào giỏ hàng"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:1233
+msgid "Add-to-cart style"
+msgstr "Kiểu thêm vào giỏ hàng"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:1257
+msgid "Add-to-cart style on mobile"
+msgstr "Kiểu thêm vào giỏ hàng trên điện thoại"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/frontend/frequently-product.php:320
+#, php-format
+msgid "Added %s product to cart"
+msgid_plural "Added %s products to cart"
+msgstr[0] "Đã thêm %s sản phẩm vào giỏ hàng"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/frontend/scripts.php:143
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/includes/cross-sells.php:111
+msgid "Added to cart"
+msgstr "Đã thêm vào giỏ hàng"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/bundles.php:185
+msgctxt "Admin: quantity of the bundled product."
+msgid "Quantity"
+msgstr "Số lượng"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/bundles.php:171
+msgctxt "Admin: type of product"
+msgid "WBS Product Bundle"
+msgstr "WBS Product Bundle"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:776
+msgid "After Add to cart form"
+msgstr "Sau Khối thêm vào giỏ hàng"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:595
+msgid "After cart"
+msgstr "Sau giỏ hàng"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:640
+msgid "After checkout"
+msgstr "Phía dưới nút thanh toán"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:917
+msgid "After product is added to cart"
+msgstr "Sau khi sản phẩm được thêm vào giỏ hàng"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:777
+msgid "After product summary"
+msgstr "Sau phần tóm tắt sản phẩm"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:778
+msgid "After product tabs"
+msgstr "Sau phần thẻ sản phẩm "
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:469
+msgid "Ajax Add To Cart"
+msgstr "Thêm vào giỏ hàng sử dụng Ajax"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:699
+msgid "Ajax add to cart for bundle"
+msgstr "Thêm gói vào giỏ hàng sử dụng Ajax"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:479
+msgid "Ajax add to cart for product on up-sell popup"
+msgstr "Sử dụng Ajax thêm vào giỏ hàng đối với các sản phẩm trên up-sell popup"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:967
+msgid ""
+"Always display discount bar if customers have not reached the minimum amount "
+"and the cart is not empty"
+msgstr ""
+"Luôn hiển thị thanh giảm giá ngay cả khi giỏ hàng của khách chưa đạt ngưỡng "
+"tối thiểu và chưa có sản phẩm trong giỏ hàng"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:813
+msgid "Always show"
+msgstr "Luôn hiển thị"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:965
+msgid "Always show discount bar"
+msgstr "Luôn hiển thị thanh giảm giá"
+
+#. Author of the plugin
+msgid "Andy Ha (villatheme.com)"
+msgstr "Andy Ha (villatheme.com)"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:766
+msgid "Any of the above"
+msgstr "Một trong những tùy chọn trên"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:906
+msgid "Attributes selection type"
+msgstr "Kiểu bộ chọn thuộc tính"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:1067
+msgid "Auto popup"
+msgstr "Tự đông hiện popup"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:1019
+msgid "Auto redirect to checkout"
+msgstr "Tự động chuyển đến trang thanh toán"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:73
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:1362
+msgid "Auto Update Key"
+msgstr "Mã tự động cập nhật"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:1130
+msgid "Background Color"
+msgstr "Màu nền"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:1129
+msgid "Background color for popup cross-sell."
+msgstr "Màu nền của cross-sells popup."
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:1137
+msgid "Background Image"
+msgstr "Ảnh nền"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:594
+msgid "Before cart"
+msgstr "Trước giỏ hàng"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:639
+msgid "Before checkout"
+msgstr "Phía trên nút thanh toán"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:538
+msgid "Below Add to cart button"
+msgstr "Dưới nút thêm vào giỏ hàng"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:540
+msgid "Below description"
+msgstr "Dưới mô tả sản phẩm"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:461
+msgid "Best Selling"
+msgstr "Sản phẩm bán chạy nhất"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:1317
+msgid "Bottom"
+msgstr "Dưới cùng"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:1121
+msgid "Bottom right"
+msgstr "Dưới cùng bên phải"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:1122
+msgid "Botton left"
+msgstr "Dưới cùng bên trái"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/upsell.php:604
+msgid "Bulk Adds Up-Sells"
+msgstr "Thêm Up-Sells hàng loạt"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:725
+msgid "Bundle categories"
+msgstr "Danh mục gói sản phẩm"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/bundles.php:223
+msgid "Bundle Options"
+msgstr "Tùy chọn gói"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:132
+msgid "Bundle Price From"
+msgstr "Phạm vi giá gói sản phẩm"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:909
+msgid "Button"
+msgstr "Nút"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:1288
+msgid "Button \"Continue Shopping\" action"
+msgstr "Hàng động khi nhấp \"Tiếp tục mua sắm\""
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:1280
+msgid "Button \"Continue Shopping\" title"
+msgstr "Tiêu đề nút \"Tiếp tục mua hàng\""
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:1044
+msgid "Button background color"
+msgstr "Màu nền của nút"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:1050
+msgid "Button background color on hovering"
+msgstr "Màu nền của nút khi di chuột"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:824
+msgid ""
+"By default, only select the first product instead of select all products"
+msgstr "Mặc định chỉ chọn sẵn sản phẩm đầu tiên thay vì chọn toàn bộ"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/frontend/frequently-product.php:325
+msgid "Cannot add product(s) to cart"
+msgstr "Không thể thêm sản phẩm vào giỏ"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/includes/fields.php:192
+msgid "Category is not found"
+msgstr "Danh mục không tìm thấy"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/templates/upsells/buttons.php:46
+msgid "Checkout"
+msgstr "Thanh toán"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:1012
+msgid "Checkout button title"
+msgstr "Tiêu đề của nút thanh toán"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:1011
+msgid "Checkout now"
+msgstr "Thanh toán ngay"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/frontend/bundles.php:896
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/frontend/bundles.php:1011
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/templates/single-product/add-to-cart/frequently-product.php:70
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/templates/single-product/add-to-cart/variable-mobile.php:31
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/templates/single-product/add-to-cart/variable.php:34
+#, php-format
+msgid "Choose %s"
+msgstr "Lựa chọn %s"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:897
+msgid "Click"
+msgstr "Nhấp"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/templates/admin/admin-bundled-product-item.php:24
+msgid "Click to toggle"
+msgstr "Nhấp vào để bật"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/includes/cross-sells.php:106
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/includes/discount-bar.php:109
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/templates/upsells/popup-main.php:73
+msgid "Close"
+msgstr "Đóng"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/bundles.php:273
+msgid "Close all"
+msgstr "Đóng tất cả"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:1324
+msgid "Color for text of process bar."
+msgstr "Màu của chữ trên thanh tiến trình"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:1337
+msgid "Color of main process bar."
+msgstr "Màu của thanh tiến trình."
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:993
+msgid "Congrats when get coupon"
+msgstr "Chúc mừng khi nhận được mã giảm giá"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:1004
+msgid "Congratulation message"
+msgstr "Nội dung thông báo chúc mừng"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:33
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:227
+msgid "Copied to clipboard"
+msgstr "Đã sao chép vào clipboard"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/zcrosssell.php:992
+msgid ""
+"Create bundle from WooCommerce cross-sells for products whose bundles are "
+"not set yet"
+msgstr ""
+"Tạo gói sản phẩm từ WooCommerce cross-sells cho các sản phẩm chưa đặt gói"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/upsell.php:608
+msgid ""
+"Create Up-sells to use with WooCommerce Boost Sales plugin from Cross-sells "
+"data in WooCommerce single product settings."
+msgstr ""
+"Tạo Up-sells để sử dụng WooCommerce Boost Sales plugin từ dữ liệu Cross-"
+"sells trên trang sửa chi tiết sản phẩm."
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/upsell.php:606
+msgid ""
+"Create Up-sells to use with WooCommerce Boost Sales plugin from Up-sells "
+"data in WooCommerce single product settings."
+msgstr ""
+"Tạo Up-sells để sử dụng WooCommerce Boost Sales plugin từ dữ liệu Up-sells "
+"trên trang sửa chi tiết sản phẩm."
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:510
+msgid "Cross sell"
+msgstr "Cross sell"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/zcrosssell.php:1131
+msgid "Cross sells"
+msgstr "Cross sells"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:762
+msgid "Cross sells - Same as Cross sells products"
+msgstr "Cross sells - Same as Cross sells products"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:1061
+msgid ""
+"Cross-sell will show with popup or gift icon. If you want to time randomly, "
+"2 numbers are separated by comma. Eg: 3,20. It is random from 3 to 20."
+msgstr ""
+"Hiện Cross-sell dưới dạng popup hoặc biểu tượng quà tặng. Nếu bạn muốn hiển "
+"thị cross-sells ngẫu nhiên, nhập 2 số khoảng thời gian cross-sell hiện ngẫu "
+"nhiên. Ví dụ: 3,20. Cross-sells sẽ hiện ngẫu nhiên trong khoảng từ 3 đến 20."
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/zcrosssell.php:966
+msgid "CROSS-SELLS"
+msgstr "CROSS-SELLS"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:1054
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/zcrosssell.php:871
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/zcrosssell.php:871
+msgid "Cross-Sells"
+msgstr "Cross-Sells"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/zcrosssell.php:1112
+msgid "Cross-sells"
+msgstr "Cross-sells"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/zcrosssell.php:968
+msgid ""
+"Cross-sells are products that instead of you buy this product you can buy "
+"bundle products contain this product, based on the current product. **For "
+"example, if you are selling a laptop, cross-sells might be a protective case "
+"or stickers or a special adapter.**"
+msgstr ""
+"Sản phẩm Cross-sells khuyến khích khách hàng thay vì mua sản phẩm đơn lẻ, họ "
+"có thể mua theo gói sản phẩm bao gồm sản phẩm hiện tại. **ví dụ, nếu bạn bán "
+"laptop, sản phẩm cross-sells có thể là vỏ hoặc miếng dán bảo vệ, hoặc bộ "
+"chuyển đổi đặc biệt cho máy.**"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:550
+msgid "Cross-sells Custom Hook"
+msgstr "Hook tùy chỉnh hiển thị Cross-sells"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:605
+msgid "Cross-sells Custom Hook on Cart page"
+msgstr "Hook tùy chỉnh hiển thị Cross-sells trên trang giỏ hàng"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:650
+msgid "Cross-sells Custom Hook on Checkout page"
+msgstr "Hook tùy chỉnh hiển thị Cross-sells trên trang thanh toán"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/zcrosssell.php:977
+msgid ""
+"Cross-sells feature is currently disabled. <a class=\"wbs-crosssells-ajax-"
+"enable button button-primary\" href=\"javascript:void(0)\">Enable now</a>"
+msgstr ""
+"Tính năng Cross-sells hiện đang tắt. <a class=\"wbs-crosssells-ajax-enable "
+"button button-primary\" href=\"javascript:void(0)\">Bật lên</a>"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/upsell.php:674
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/zcrosssell.php:1040
+msgid "Current Page"
+msgstr "Trang hiện tại"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:811
+msgid "Currently watching product"
+msgstr "Sản phẩm đang xem"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:833
+msgid "Currently watching product text"
+msgstr "Tiêu đề cho sản phẩm hiện đang xem"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:1090
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:1343
+msgid "Custom"
+msgstr "Tùy chỉnh"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:1350
+msgid "Custom CSS"
+msgstr "Tùy chỉnh CSS"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:1097
+msgid "Custom Gift Box Icon"
+msgstr "Tùy chỉnh biểu tượng hộp quà tặng"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:541
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:596
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:641
+msgid "Custom Hook"
+msgstr "Hook tùy chỉnh"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:976
+msgid "Dashboard >> WooCommerce >> Coupons >>"
+msgstr "Bảng tin >> WooCommerce >> Ưu đãi >>"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:1088
+msgid "Default"
+msgstr "Mặc định"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:726
+msgid "Default categories when you create new bundle"
+msgstr "Danh mục mặc định khi gói sản phẩm mới được tạo ra"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/upsell.php:613
+msgid "Delete configured upsells of all products"
+msgstr "Xóa cài đặt upsells của tất cả các sản phẩm"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/upsell.php:613
+msgid "Delete Upsells"
+msgstr "Xóa Upsells"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:669
+msgid "Description"
+msgstr "Mô tả trên gói sản phẩm"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:1034
+msgid "Design"
+msgstr "Thiết kế"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:1098
+msgid ""
+"Dimension should be 58x58(px). Please change \"Icon Option\" to \"Custom\""
+msgstr ""
+"Kích thước khuyến nghị 58x58(px). Vui lòng thay đổi \"Tùy chọn biểu "
+"tượng\"để \"Tùy chỉnh\""
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:948
+msgid "Discount"
+msgstr "Giảm giá"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/bundles.php:268
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/zcrosssell.php:1248
+msgid "Discount amount"
+msgstr "Lượng giảm giá"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:1307
+msgid "Discount Bar"
+msgstr "Thanh giảm giá"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:134
+msgid "Discount Type"
+msgstr "Kiểu giảm giá"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/bundles.php:261
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/zcrosssell.php:1241
+msgid "Discount type"
+msgstr "Kiểu giảm giá"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:135
+msgid "Discount Value"
+msgstr "Lượng giảm giá"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/includes/discount-bar.php:53
+msgid "Discount:"
+msgstr "Giảm giá:"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:535
+msgid "Display on"
+msgstr "Hiển thị "
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:591
+msgid "Display on(Cart)"
+msgstr "Hiển thị trên (trang giỏ hàng)"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:636
+msgid "Display on(Checkout)"
+msgstr "Hiển thị trên (trang thanh toán)"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:676
+msgid "Display saved price"
+msgstr "Hiển thị giá đã đã giảm"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:682
+msgid "Display saved price on cross-sell."
+msgstr "Hiển thị lượng giá giảm trên cross-sell."
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:698
+msgid ""
+"Do not redirect page when customers add bundle to their cart on single "
+"product page"
+msgstr ""
+"Không tải lại trang khi khách hàng thêm gói sản phẩm vào giỏ hàng trên trang "
+"chi tiết sản phẩm"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:478
+msgid ""
+"Do not redirect page when customers add up-sells products to their cart. "
+"This will override option \"Go to cart page\". This will not apply if the "
+"\"Add-to-cart style\" option is set to Theme default"
+msgstr ""
+"Không tải lại trang khi khách hàng thêm sản phẩm up-sells vào giỏ hàng. Tùy "
+"chọn này sẽ thay thế tùy chọn \"Đi tới trang giỏ hàng\". Tùy chọn sẽ không "
+"áp dụng nếu kiểu \"Thêm vào giỏ hàng\" nhận giá trị mặc định của Theme."
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:708
+msgid "Do not show crosssell if one of bundle items is out of stock"
+msgstr ""
+"Không hiển thị crosssell nếu mặt hàng nào đó trong gói sản phẩm bị hết hàng"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:501
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:919
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:932
+msgid "Do nothing"
+msgstr "Không đổi"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/zcrosssell.php:1213
+msgid "Edit product bundle"
+msgstr "Sửa gói sản phẩm"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:262
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:288
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:516
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:741
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:955
+msgid "Enable"
+msgstr "Bật"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:272
+msgid "Enable Mobile"
+msgstr "Bật trên điện thoại"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:606
+msgid "Enter a specific hook you want to show cross sells on Cart page"
+msgstr ""
+"Nhập hook phù hợp để hiện thị cross sells trên trang giỏ hàng mà bạn muốn"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:651
+msgid "Enter a specific hook you want to show cross sells on Checkout page"
+msgstr ""
+"Nhập hook phù hợp để hiện thị cross sells trên trang thanh toán mà bạn muốn"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:551
+msgid ""
+"Enter a specific hook you want to show cross sells on single product page"
+msgstr ""
+"Nhập hook phù hợp để hiện thị cross sells trên trang chi tiết đơn hàng mà "
+"bạn muốn"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:433
+msgid "Exclude categories that display in upsell popup"
+msgstr "Danh mục phẩm không hiện trên upsell"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:423
+msgid "Exclude categories to enable upsell"
+msgstr "Danh mục sản phẩm không chạy upsell"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:413
+msgid "Exclude products that display in upsell popup"
+msgstr "Sản phẩm không hiện trên upsell"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:403
+msgid "Exclude products to enable upsell"
+msgstr "Sản phẩm không chạy upsell"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/bundles.php:274
+msgid "Expand all"
+msgstr "Mở rộng tất cả"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/upsell.php:641
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/zcrosssell.php:1007
+msgid "First Page"
+msgstr "Trang đầu tiên"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:202
+msgid "Fixed"
+msgstr "Cố định"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/bundles.php:264
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/zcrosssell.php:1244
+msgid "Fixed amount"
+msgstr "Lượng cố định"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:734
+msgid "Frequently Bought Together"
+msgstr "Thường được mua cùng"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:31
+msgid "Frequently bought together shortcode:"
+msgstr "Mã ngắn cho sản phẩm thường được mua cùng"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:254
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:1038
+msgid "General"
+msgstr "Cài đặt chung"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/upsell.php:608
+msgid "Get from Woo Cross-Sells"
+msgstr "Lấy từ Woo Cross-Sells"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/upsell.php:606
+msgid "Get from Woo Up-Sells"
+msgstr "Lấy từ Woo Up-Sells"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:85
+msgid "Get Key"
+msgstr "Lấy mã"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:1089
+msgid "Gift box"
+msgstr "Hộp quà tặng"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:347
+msgid "Go to cart page"
+msgstr "Đi tới trang giỏ hàng"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:348
+msgid "Go to cart page when product is added to cart on up sells."
+msgstr "Đi tới trang trang giỏ hàng sau khi sản phẩm được thêm từ up sells."
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:1292
+msgid "Go to Home page"
+msgstr "Đi tới trang chủ"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:1291
+msgid "Go to Shop page"
+msgstr "Đi tới trang cửa hàng"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:668
+msgid "Hang on! We have this offer just for you!"
+msgstr "Chờ chút! Xem gợi ý này dành cho bạn! "
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:986
+msgid "Head line"
+msgstr "Tiêu đề"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:815
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:922
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:1235
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:1259
+msgid "Hide"
+msgstr "Ẩn"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:753
+msgid ""
+"Hide Frequently Bought Together on single product page if main product is "
+"already in the cart"
+msgstr ""
+"Ẩn Frequently Bought Together trên trang chi tiết sản phẩm nếu sản phẩm "
+"chính đã có trong giỏ hàng"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:1076
+msgid "Hide Gift Icon"
+msgstr "Ẩn biểu tượng quà tặng"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:751
+msgid "Hide if added"
+msgstr "Ẩn nếu đã được thêm"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:308
+msgid "Hide on Cart Page"
+msgstr "Ẩn trên trang giỏ hàng"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:318
+msgid "Hide on Checkout Page"
+msgstr "Ẩn trên trang thanh toán"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:298
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:526
+msgid "Hide on Single Product Page"
+msgstr "Ẩn trên trang chi tiết sản phẩm"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:709
+msgid "Hide out of stock"
+msgstr "Ẩn sản phẩm hết hàng"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:328
+msgid "Hide out-of-stock products"
+msgstr "Ẩn sản phẩm hết hàng"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:338
+msgid "Hide Products Added to Cart"
+msgstr "Ẩn sản phẩm đã được thêm vào giỏ hàng"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:1270
+msgid "Hide quantity"
+msgstr "Ẩn số lượng"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:1299
+msgid "Hide view more button"
+msgstr "Ẩn nút xem thêm"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:789
+msgid "Horizontal"
+msgstr "Kiểu ngang"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:1169
+msgid "Horizontal with checkbox"
+msgstr "Kiểu ngang với hộp kiểm"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:898
+msgid "Hover"
+msgstr "Di chuột"
+
+#. URI of the plugin
+#. Author URI of the plugin
+msgid "http://villatheme.com"
+msgstr "http://villatheme.com"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:1086
+msgid "Icon "
+msgstr "Biểu tượng"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:1112
+msgid "Icon Background Color"
+msgstr "Màu nền biểu tượng"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:1105
+msgid "Icon Color"
+msgstr "Màu biểu tượng"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:1119
+msgid "Icon Position"
+msgstr "Vị trí biểu tượng"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:976
+msgid "If 2 coupons have the name - the latest coupon will be used."
+msgstr ""
+"Nếu 2 mã giảm giá có cùng tên - mã giảm giá tạo sau cùng sẽ được sử dụng"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:810
+msgid ""
+"If Frequently Bought Together products source is Cross sells and the option "
+"\"Add bundle instead of items separately\" is on, currently watching product "
+"will always show"
+msgstr ""
+"Nếu nguồn sản phẩm thường được mua cùng là Cross sells và bật tùy chọn "
+"\"Thêm gói sản phẩm thay vì các mặt hàng riêng lẻ\", thì sản phẩm hiện đang "
+"xem sẽ luôn hiển thị trong danh sách sản phẩm thường được mua cùng "
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:877
+msgid ""
+"If product title is too long and take many lines to display, it will be cut "
+"off. Set 0 to not cut off long product title"
+msgstr ""
+"Nếu tiêu đề sản phẩm quá dài, trên nhiều hàng, tiêu đề sẽ được cắt bỏ. Đặt 0 "
+"nếu không cắt bỏ tiêu đề sản phẩm dài"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:964
+msgid ""
+"If this option is disabled, discount bar will only show each time a customer "
+"add a product to cart"
+msgstr ""
+"Nếu tắt tùy chọn này, thanh giảm giá sẽ chỉ hiện khi khách thêm sản phẩm vào "
+"giỏ hàng"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:797
+msgid "Image size(px)"
+msgstr "Kích cỡ ảnh(px)"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/templates/single-product/add-to-cart/wbs-bundle.php:54
+msgid "In stock"
+msgstr "Còn hàng"
+
+#. Description of the plugin
+msgid ""
+"Increases sales from every order by using Up-sell and Cross-sell techniques "
+"for your online store."
+msgstr ""
+"Tăng danh số cho đơn hàng sử dụng kỹ thuật Up-sell và Cross-sell trên trang "
+"cửa hàng trực tuyến của bạn."
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:1060
+msgid "Init delay"
+msgstr "Thời gian bắt đầu hiển thị"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/frontend/frequently-product.php:356
+msgid "Invalid data"
+msgstr "Dữ liệu không hợp lệ"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:499
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:930
+msgid "Item link behavior"
+msgstr "Link sản phẩm"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:1194
+msgid "Item per row"
+msgstr "Số sản phẩm trên một hàng"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:1200
+msgid "Item per row for Mobile"
+msgstr "Số sản phẩm trên một hàng trên điện thoại"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:1290
+msgid "Just close popup"
+msgstr "Đóng popup"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/upsell.php:713
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/zcrosssell.php:1079
+msgid "Last Page"
+msgstr "Trang cuối"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:867
+msgid "Load with Ajax"
+msgstr "Dùng Ajax để khởi chạy"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:561
+msgid "Make slider for cross-sells"
+msgstr "Tạo thanh trượt cho cross-sells"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:1206
+msgid "Max item"
+msgstr "Số lượng mặt hàng tối đa"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:1207
+msgid ""
+"Maximum number of upsells per product. Used only if \"Products in category\" "
+"is enabled."
+msgstr ""
+"Số lượng sản phẩm tối đa hiện trên upsell. Áp dụng nếu chọn hiển thị sản "
+"phẩm cùng danh mục."
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/zsystem.php:32
+msgid "Memory Limit"
+msgstr "Giới hạn bộ nhớ"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:841
+msgid "Message"
+msgstr "Thông báo"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:1225
+msgid "Message in popup"
+msgstr "Thông báo trên popup"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:719
+msgid ""
+"Name of product bundle when creating new bundle. {product_title} refers to "
+"the title of main product that the bundle is created for.<p>e.g when you "
+"create a bundle for product named \"Product A\", if Product bundle name is "
+"set \"Bundle of {product_title}\" then new bundle's name will be \"Bundle of "
+"Product A\"</p>"
+msgstr ""
+"Tên của gói sản phẩm khi tạo gói sản phẩm mới. {product_title} đề cập đến "
+"tiêu đề của sản phẩm chính mà gói được tạo ra <p>ví dụ khi tạo một gói cho "
+"sản phẩm có tên \"Sản phẩm A\", nếu tên của gói sản phẩm được xét là \"Gói "
+"{product_title}\" tên của gói sản phẩm sẽ là \"Gói sản phẩm A\"</p>"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/templates/upsells/popup-main.php:79
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/templates/upsells/popup-main.php:95
+msgid "New item(s) have been added to your cart."
+msgstr "Mặt hàng mới đã được thêm vào giỏ hàng của bạn"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/upsell.php:696
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/zcrosssell.php:1062
+msgid "Next Page"
+msgstr "Trang tiếp theo"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:155
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:195
+msgid "No"
+msgstr "Không"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/upsell.php:890
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/zcrosssell.php:1313
+msgid "No products found"
+msgstr "Không tìm thấy sản phẩm"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:680
+msgid "None"
+msgstr "Không hiện"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:878
+msgid "Number of lines for product title"
+msgstr "Số hàng của tiêu đề sản phẩm"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:1104
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:1111
+msgid "Only apply with Icon default"
+msgstr "Chỉ áp dụng với biểu tượng mặc định"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:390
+msgid "Only get products from current subcategory. It is the end subcategory."
+msgstr ""
+"Hiện các sản phẩm cùng danh mục con của sản phẩm được thêm vào giỏ hàng trên "
+"Upsell popup. Đó là danh mục con cuối cùng."
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:869
+msgid ""
+"Only load Frequently Bought Together products with Ajax after page is loaded."
+msgstr ""
+"Chỉ tải danh sách sản phẩm thường được mua cùng sử dụng Ajax sau khi trang "
+"được tải"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:822
+msgid "Only select the first product"
+msgstr "Chỉ chọn sẵn sản phẩm đầu tiên"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:814
+msgid "Only show if the currently watching product is not in the cart yet"
+msgstr "Chỉ hiện nếu sản phẩm đang xem không có trong giỏ hàng"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:391
+msgid "Only Subcategory"
+msgstr "Sản phẩm cùng danh mục con"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:791
+msgid ""
+"Only use Horizontal style if the container is wide enough. On Mobile, it "
+"will automatically switch to Vertical style no matter what you select."
+msgstr ""
+"Chỉ sử dụng kiểu ngang nếu khối chứa sản phẩm thường đi cùng đủ rộng. Ở chế "
+"độ điện thoại, tự động chuyển sang kiểu dọc dù bạn chọn bất kỳ kiểu hiển thị "
+"nào."
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:1269
+msgid ""
+"Only work for slider template and Add-to-cart style is \"Show on hover\" and "
+"\"Visible below product detail\". Add-to-cart button will display as text "
+"and will have full width."
+msgstr ""
+"Chỉ hoạt động với kiểu thanh trượt và kiểu Thêm vào giỏ hàng là \"Hiển thị "
+"khi di chuột\" và \"Hiển thị dưới chi tiết sản phẩm\". Nút thêm vào giỏ hàng "
+"sẽ hiển thị dưới dạng văn bản và có đủ độ rộng."
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:502
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:933
+msgid "Open in a new tab"
+msgstr "Mở tab mới"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:503
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:934
+msgid "Open in the same tab"
+msgstr "Mở ở tab hiện tại"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/upsell.php:819
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/zcrosssell.php:427
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/zcrosssell.php:495
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/zcrosssell.php:511
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/zcrosssell.php:525
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/zcrosssell.php:1188
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/frontend/bundles.php:819
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/frontend/bundles.php:933
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/includes/fields.php:246
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/templates/single-product/add-to-cart/wbs-bundle.php:56
+msgid "Out of stock"
+msgstr "Hết hàng"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:688
+msgid "Override products"
+msgstr "Ghi đè sản phẩm"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:679
+msgid "Percent"
+msgstr "Phần trăm giá giảm"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:165
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:203
+msgid "Percent(%)"
+msgstr "Phần trăm(%)"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/bundles.php:263
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/zcrosssell.php:1243
+msgid "Percentage(%)"
+msgstr "Phần trăm(%)"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/zsystem.php:27
+msgid "PHP Max Input Vars"
+msgstr "PHP Max Input Vars"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/zsystem.php:23
+msgid "PHP Time Limit"
+msgstr "PHP Time Limit"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/frontend/scripts.php:147
+msgid "Please choose product option you want to add to cart"
+msgstr "Vui lòng chọn tùy chọn sản phẩm bạn muốn để thêm vào giỏ hàng"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/includes/fields.php:338
+msgid ""
+"Please enable Coupon in WooCommerce >> Settings >> Checkout before enable "
+"Discount !"
+msgstr ""
+"Vui lòng bật mã giảm giá trong WooCommerce >> Cài đặt >> Thanh toán trước "
+"khi bật giảm giá  !"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/zcrosssell.php:1258
+msgid "Please enter the number of price"
+msgstr "Vui lòng nhập giá"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:727
+msgid "Please fill your category name"
+msgstr "Vui lòng nhập tên danh mục"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:422
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:432
+msgid "Please fill your category title"
+msgstr "Vui lòng nhập tiêu đề danh mục"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:974
+msgid "Please fill your coupon name"
+msgstr "Vui lòng nhập mã giảm giá"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:89
+msgid ""
+"Please fill your key what you get from <a target=\"_blank\" href=\"https:"
+"//villatheme.com/my-download\">Villatheme</a>. You can automatically update "
+"WooCommerce Boost Sales plugin. See guide <a target=\"_blank\" href=\"https:"
+"//villatheme.com/knowledge-base/how-to-use-auto-update-feature/\">here</a>"
+msgstr ""
+"Vui lòng nhận khóa tự động cập nhật WooCommerce Boost Sales plugin ở đây<a "
+"target=\"_blank\" href=\"https://villatheme.com/my-download\">https:"
+"//villatheme.com/my-download</a>. Để tự động cập nhật plugin bạn có thể theo "
+"dõi <a target=\"_blank\" href=\"https://villatheme.com/knowledge-base/how-to-"
+"use-auto-update-feature/\">hướng dẫn.</a>"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:402
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:412
+msgid "Please fill your product title"
+msgstr "Vui lòng nhập tiêu đề sản phẩm"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/woocommerce-boost-sales.php:41
+msgid "Please install and activate WooCommerce to use WooCommerce Boost Sales."
+msgstr ""
+"Vui lòng cài đặt và kích hoạt WooCommerce để sử dụng WooCommerce Boost Sales."
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:780
+msgid ""
+"Please select a position on single product page where you want to display "
+"Frequently Bought Together"
+msgstr ""
+"Vui lòng lựa chọn vị trí hiển thị danh sách thường mua cùng trên trang chi "
+"tiết sản phẩm "
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/frontend/frequently-product.php:242
+msgid "Please select at least 1 item"
+msgstr "Hãy chọn ít nhất 1 mục"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:537
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:593
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:638
+msgid "Popup"
+msgstr "Dạng Popup"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:1213
+msgid "Popup style"
+msgstr "Kiểu Popup"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:774
+msgid "Position"
+msgstr "Vị trí"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/upsell.php:665
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/zcrosssell.php:1031
+msgid "Previous Page"
+msgstr "Trang trước"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:678
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/zcrosssell.php:1254
+msgid "Price"
+msgstr "Lượng giá giảm"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:1151
+msgid "Price Color"
+msgstr "Màu giá"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:458
+msgid "Price highest"
+msgstr "Giá cao nhất"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:459
+msgid "Price lowest"
+msgstr "Giá thấp nhất"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/bundles.php:255
+#, php-format
+msgid "Price(%s)"
+msgstr "Giá(%s)"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/frontend/bundles.php:1079
+msgid "Price: "
+msgstr "Giá:"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:1338
+msgid "Process bar background color"
+msgstr "Màu nền của thanh tiến trình"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:1331
+msgid "Process bar main color"
+msgstr "Màu của thanh tiến trình"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:718
+msgid "Product bundle name"
+msgstr "Đặt tên gói sản phẩm"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:577
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:622
+msgid "Product bundle type"
+msgstr "Kiểu hiển thị sản phẩm trong gói"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/upsell.php:774
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/zcrosssell.php:1109
+msgid "Product Name"
+msgstr "Tên Sản phẩm"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/upsell.php:741
+msgid "Products"
+msgstr "Sản phẩm"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:368
+msgid "Products in category"
+msgstr "Sản phẩm cùng danh mục"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/templates/upsells/popup-main.php:131
+msgid "Quantity:"
+msgstr "Số lượng:"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/zcrosssell.php:1214
+msgid "Quick Edit product bundle"
+msgstr "Sửa nhanh gói sản phẩm"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:460
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:580
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:625
+msgid "Random"
+msgstr "Ngẫu nhiên"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/includes/wbs_product_bundle.php:151
+msgid "Read More"
+msgstr "Đọc thêm"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:124
+msgid "Recalculate bundle price."
+msgstr "Tính toán lại giá gói sản phẩm"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:358
+msgid "Recently Viewed Products"
+msgstr "Sản phẩm vừa xem gần đây"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:1028
+msgid "Redirect after second"
+msgstr "Chuyển hướng sau giây"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:920
+msgid "Redirect to Cart"
+msgstr "Chuyển tới trang giỏ hàng"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:921
+msgid "Redirect to Checkout"
+msgstr "Chuyển tới trang thanh toán"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/frontend/scripts.php:159
+#, php-format
+msgid "Redirect to checkout after <span>%s</span>s"
+msgstr "Chuyển tới trang thanh toán sau <span>%s</span>s"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/includes/image-field.php:36
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/templates/admin/admin-bundled-product-item.php:23
+msgid "Remove"
+msgstr "Xóa"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/upsell.php:865
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/zcrosssell.php:1289
+msgid "Remove all"
+msgstr "Hóa tất cả"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:219
+msgid "Remove last level"
+msgstr "Xóa cận giá cuối cùng "
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:692
+msgid "Remove the same products on cart when add combo."
+msgstr "Xóa sản phẩm trùng trong giỏ hàng khi thêm gói"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/upsell.php:861
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/zcrosssell.php:1288
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/frontend/frequently-product.php:579
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/includes/fields.php:432
+msgid "Save"
+msgstr "Lưu"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/includes/fields.php:436
+msgid "Save & Check Key"
+msgstr "Lưu & Kiểm tra mã"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:1158
+msgid "Save Price Color"
+msgstr "Màu của giá giảm"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/frontend/bundles.php:273
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/frontend/bundles.php:277
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/frontend/bundles.php:1108
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/frontend/bundles.php:1113
+msgid "Save: "
+msgstr "Lưu:"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:1180
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:1249
+msgid "Scroll"
+msgstr "Trượt"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/bundles.php:303
+msgid "Search for a product&hellip;"
+msgstr "Tìm kiếm sản phẩm&hellip;"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/upsell.php:726
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/upsell.php:885
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/zcrosssell.php:1092
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/zcrosssell.php:1308
+msgid "Search product"
+msgstr "Tìm kiếm sản phẩm"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:908
+msgid "Select"
+msgstr "Chọn"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/upsell.php:753
+msgid "Select all"
+msgstr "Chọn tất cả"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:977
+msgid "Select Coupon"
+msgstr "Chọn mã giảm giá"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:598
+msgid "Select how/where you want to show cross sell on Cart page"
+msgstr "Lựa chọn cách thức hiển thị cross sell trên trang giỏ hàng"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:643
+msgid "Select how/where you want to show cross sell on Checkout page"
+msgstr "Lựa chọn cách thức hiển thị cross sell trên trang thanh toán"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:543
+msgid "Select how/where you want to show cross sell on single product"
+msgstr "Lựa chọn cách thức hiển thị cross sell trên trang chi tiết sản phẩm"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/includes/image-field.php:33
+msgid "Select Image"
+msgstr "Chọn ảnh"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:1314
+msgid "Select Position"
+msgstr "Lựa chọn vị trí"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:584
+msgid "Select product bundle type on Cart page"
+msgstr "Lựa chọn kiểu hiện gói sản phẩm trên trang giỏ hàng"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:629
+msgid "Select product bundle type on Checkout page"
+msgstr "Lựa chọn kiểu hiện gói sản phẩm trên trang thanh toán"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/admin.php:68
+msgid "Settings"
+msgstr "Cài đặt"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:895
+msgid "Show attributes selection when"
+msgstr "Hiển thị bộ chọn thuộc tính"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:489
+msgid "Show if empty"
+msgstr "Hiện popup nếu không có upsell"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:568
+msgid "Show on Cart page"
+msgstr "Hiển thị ở trang giỏ hàng"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:613
+msgid "Show on Checkout page"
+msgstr "Hiển thị ở trang thanh toán"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:1236
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:1260
+msgid "Show on hover"
+msgstr "Hiển thị khi di chuột"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:885
+msgid "Show product rating"
+msgstr "Hiển thị xếp hạng sản phẩm"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:488
+msgid "Show upsell popup even if there's no upsells"
+msgstr "Luôn hiển thị upsell popup ngay khi không có sản phẩm nào"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:557
+msgid "Slide"
+msgstr "Trượt"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:1167
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:1179
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:1248
+msgid "Slider"
+msgstr "Thanh trượt"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:453
+msgid "Sort by"
+msgstr "Ưu tiên hiện sản phẩm theo"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:760
+msgid "Source"
+msgstr "Nguồn"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/includes/discount-bar.php:60
+msgid "Spend over: "
+msgstr "Sử dụng trên:"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:786
+msgid "Style"
+msgstr "Kiểu"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/frontend/frequently-product.php:354
+msgid "Successfully"
+msgstr "Thành công"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:984
+msgid ""
+"SWEET! Add more products and get {discount_amount} off on your entire order!"
+msgstr ""
+"Tuyệt quá! Thêm sản phẩm để nhận {discount_amount} giảm giá cho toàn bộ đơn "
+"hàng của bạn!"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/zcrosssell.php:992
+msgid "Sync Cross-Sells"
+msgstr "Đồng bộ Cross-Sells"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/upsell.php:622
+msgid "Sync from default language"
+msgstr "Đồng bộ từ ngôn ngữ mặc định"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/upsell.php:863
+msgid "Sync to Woo"
+msgstr "Đồng bộ sang Woo"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/upsell.php:610
+msgid "Sync to Woo Upsells"
+msgstr "Đồng bộ sang Woo Upsells"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/upsell.php:622
+msgid "Sync upsells from default language"
+msgstr "Đồng bộ upsells từ ngôn ngữ mặc định"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/zsystem.php:19
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/zsystem.php:47
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/zsystem.php:48
+msgid "System Status"
+msgstr "Trạng thái hệ thống"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:1165
+msgid "Template"
+msgstr "Kiểu"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:1177
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:1246
+msgid "Template on mobile"
+msgstr "Kiểu trên điện thoại"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:1144
+msgid "Text Color"
+msgstr "Màu chữ"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:1325
+msgid "Text color"
+msgstr "Màu chữ"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:994
+msgid "Thank You"
+msgstr "Tiêu đề Cảm ơn"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:579
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:624
+msgid "The largest quantity in order"
+msgstr "Có số lượng lớn nhất trong đơn hàng"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:581
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:626
+msgid "The most expensive"
+msgstr "Có giá đắt nhất"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:662
+msgid "The same bundle can display in cart page and checkout page."
+msgstr ""
+"Gói sản phẩm tương tự hiện trên trang chi tiết sản phẩm cũng hiện trên trang "
+"giỏ hàng và trang thanh toán."
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:658
+msgid "The same bundle in cart"
+msgstr "Hiện gói sản phẩm tượng tự trên trang giỏ hàng"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:1237
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:1261
+msgid "Theme default"
+msgstr "Mặc định của Theme"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:126
+msgid ""
+"This is to set price for a bundle when it's created, not dynamic rules that "
+"can apply to price of all bundles in the store frontend"
+msgstr ""
+"Cài đặt giá của gói sản phẩm khi gói được tạo, không phải là quy tắc giá "
+"động có thể áp dụng cho tất cả các gói sản phẩm trên cửa hàng"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:804
+msgid "This option is only used for Vertical style."
+msgstr "Tùy chọn này chỉ áp dụng cho kiểu dọc"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:894
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:905
+msgid "This option is used for variable products"
+msgstr "Tùy chọn này chỉ được sử dụng cho sản phẩm biến thể"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/zcrosssell.php:1221
+msgid "Title"
+msgstr "Tiêu đề"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:456
+msgid "Title A-Z"
+msgstr "Tiêu đề A-Z"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:457
+msgid "Title Z-A"
+msgstr "Tiêu đề Z-A"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:47
+msgid ""
+"To use this feature, please go to <a target=\"_blank\" href=\"admin.php?"
+"page=woocommerce-boost-sales-crosssell\">Cross-Sells</a> page to create "
+"bundles"
+msgstr ""
+"Để sử dụng tính năng này, vui lòng tạo các gói ở trang <a target=\"_blank\" "
+"href=\"admin.php?page=woocommerce-boost-sales-crosssell\">Cross-Sells</a>"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:1316
+msgid "Top"
+msgstr "Trên cùng"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/frontend/frequently-product.php:553
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/templates/upsells/popup-main.php:136
+msgid "Total"
+msgstr "Tổng"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/frontend/bundles.php:1095
+msgid "Total: "
+msgstr "Tổng:"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/upsell.php:742
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/upsell.php:800
+msgid "Up sells"
+msgstr "Up sells"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:763
+msgid "Up sells - Same as Up sells products"
+msgstr "Up sells - Giống cài đặt trên trang Up-sells"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/upsell.php:581
+msgid "UP-SELLS"
+msgstr "UP-SELLS"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/upsell.php:499
+msgid "Up-Sells"
+msgstr "Up-Sells"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/upsell.php:582
+msgid ""
+"Up-sells are products that you recommend instead of the currently product "
+"added to cart. They are typically products that are more profitable or "
+"better quality or more expensive"
+msgstr ""
+"Up-sells là các sản phẩm được khuyến khích mua thay vì sản phẩm đã mua trong "
+"giỏ hàng. Chúng thường là những sản phẩm đem lại nhiều lợi ích hơn, chất "
+"lượng tốt hơn hay đắt hơn."
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/upsell.php:782
+msgid "Up-sells categories"
+msgstr "Up-Sells danh mục"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/upsell.php:610
+msgid ""
+"Up-sells data in WooCommerce single product settings will be OVERRIDDEN by "
+"Up-sells data managed by WooCommerce Boost Sales plugin."
+msgstr ""
+"Dữ liệu Up-sells trên trang sửa chi tiết sản phẩm của WooCommerce sẽ bị ghi "
+"đè vởi dữ liệu Up-sells được cài đặt trong WooCommerce Boost Sales plugin."
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/upsell.php:591
+msgid ""
+"Up-sells feature is currently disabled. <a class=\"wbs-upsells-ajax-enable "
+"button button-primary\" href=\"javascript:void(0)\">Enable now</a>"
+msgstr "Tính năng Up-sells hiện đang tắt. Vui lòng bật lên để sử dụng"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/upsell.php:778
+msgid "Up-sells products"
+msgstr "Up-Sells sản phẩm"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:1355
+msgid "Update"
+msgstr "Cập nhật"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:281
+msgid "Upsell"
+msgstr "Upsell"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:442
+msgid "Upsell by tags"
+msgstr "Sản phẩm cùng thẻ"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:367
+msgid ""
+"Upsell popup will show products in the same category. Upsell products of "
+"Upsells page will not use."
+msgstr ""
+"Hiện các sản phẩm cùng danh mục với sản phẩm được thêm vào giỏ hàng trên "
+"Upsell popup. Sản phẩm Upsell được chọn trên trang Upsell sẽ không hiện."
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:357
+msgid "Upsell popup will show recently viewed products."
+msgstr "Hiện sản phẩm vừa mới xem gần đây trên Upsell popup"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:441
+msgid "Upsell products which have the same tags as the main product"
+msgstr ""
+"Hiện sản phẩm có cùng thẻ với sản phẩm chính trên Upsell popup\n"
+"\n"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:1188
+msgid "Upsells"
+msgstr "Upsells"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:55
+msgid ""
+"Upsells is a popup shown after a product is added to cart. If you limit "
+"number of items of upsells, this plugin will get upsells follow this order:"
+msgstr ""
+"Upsell hiển thị dưới dạng popup sau khi thêm sản phẩm vào giỏ hàng. Nếu muốn "
+"giới hạn số lượng mặt hàng hiển thị trên upsell, plugin sẽ hiện upsells theo "
+"thứ tự lần lượt:\n"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/zcrosssell.php:1146
+msgid "Use a bundle of another product"
+msgstr "Sử dụng gói của sản phẩm khác"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:468
+msgid "Use ajax add to cart on single product page."
+msgstr "Thêm sản phẩm sử dụng Ajax trên trang chi tiết sản phẩm."
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/bundles.php:249
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:133
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/zcrosssell.php:1233
+msgid "Use dynamic price"
+msgstr "Sử dụng quy tắc giá động"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:788
+msgid "Vertical"
+msgstr "Kiểu dọc"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:1168
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:1181
+msgid "Vertical with checkbox"
+msgstr "Kiểu dọc với hộp kiểm"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/upsell.php:859
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/zcrosssell.php:1287
+msgid "View"
+msgstr "Xem"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/frontend/scripts.php:283
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/templates/upsells/buttons.php:36
+msgid "View Cart"
+msgstr "Xem giỏ hàng"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/frontend/upsells.php:256
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/frontend/upsells.php:283
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/frontend/upsells.php:321
+msgid "View more"
+msgstr "Xem thêm"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:1238
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:1262
+msgid "Visible below product detail"
+msgstr "Hiển thị dưới chi tiết sản phẩm"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/zcrosssell.php:971
+msgid "What is CROSS-SELLS?"
+msgstr "CROSS-SELLS là gì?"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/upsell.php:585
+msgid "What is UPSELLS?"
+msgstr "Upsell là gì?"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:916
+msgid "What to do after successfully adding product(s) to cart"
+msgstr "Hành động sau khi thêm sản phẩm vào giỏ hàng thành công"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:498
+msgid "When clicking on image or title of a product in the upsell popup"
+msgstr "Khi nhấp vào ảnh hoặc tên sản phẩm ở upsell"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:929
+msgid ""
+"When clicking on image or title of an item which is not the current product"
+msgstr "Khi nhấp vào ảnh hoặc tên sản phẩm mà không phải sản phẩm chính"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:768
+msgid "Which products will be displayed in Frequently Bought Together?"
+msgstr ""
+"Sản phẩm nào sẽ được hiển thị trong danh sách sản phẩm thường mua cùng?"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:1385
+msgid "Woo Boost Sales"
+msgstr "Woo Boost Sales"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:765
+msgid ""
+"Woo Cross-sells - Products set in Edit product/Link products/Cross-sells"
+msgstr ""
+"Woo Cross-sells - Sản phẩm được xét trong trang sửa sản phẩm/ Liên kết sản "
+"phẩm/Cross-sells"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:764
+msgid "Woo Upsells - Products set in Edit product/Link products/Upsells"
+msgstr ""
+"Woo Upsells - Sản phẩm được xét trong trang sửa sản phẩm/ Liên kết sản "
+"phẩm/Upsells"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:1385
+msgid "WooCommerce Boost Sales"
+msgstr "WooCommerce Boost Sales"
+
+#. Name of the plugin
+msgid "WooCommerce Boost Sales Premium"
+msgstr "WooCommerce Boost Sales Premium"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:154
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:194
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:264
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:274
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:290
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:300
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:310
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:320
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:330
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:340
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:350
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:360
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:370
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:394
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:444
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:471
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:481
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:491
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:518
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:528
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:559
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:570
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:615
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:660
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:690
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:701
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:711
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:743
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:887
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:957
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:996
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:1021
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:1069
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:1078
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:1272
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:1301
+msgid "Yes"
+msgstr "Có"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/frontend/bundles.php:640
+msgid ""
+"You cannot add this quantity of items, because there are not enough in stock."
+msgstr "Bạn không thể thêm số lượng mặt hàng này, vì không đủ hàng trong kho"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:1002
+msgid ""
+"You have successfully reached the goal, and a {discount_amount} discount "
+"will be applied to your order."
+msgstr ""
+"Bạn đã đạt ngưỡng nhận giảm giá cho đơn hàng, và {discount_amount} sẽ được "
+"áp dụng cho đơn hàng của bạn."
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/includes/discount-bar.php:57
+msgid "Your cart have applied coupon"
+msgstr "Giỏ hàng đã áp dụng mã giảm giá"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/frontend/ajax_button.php:56
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/frontend/single_upsells.php:39
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/templates/upsells/buttons.php:57
+#, php-format
+msgid "Your current cart(%s product): %s"
+msgid_plural "Your current cart(%s products): %s"
+msgstr[0] "Giỏ hàng hiện tại(%s sản phẩm): %s"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:1003
+msgid "{discount_amount} - The number of discount"
+msgstr "{discount_amount} - Lượng chiết khấu"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:985
+msgid "{discount_amount} - The number of discount."
+msgstr "{discount_amount} - Lượng chiết khấu."
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:1224
+msgid "{name_product} - The name of product purchased"
+msgstr "{name_product} - Tên của sản phẩm đã mua"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:848
+msgid ""
+"{number_of_items}: Number of selected items when clicking Add to cart button"
+msgstr ""
+"{number_of_items}: Số lượng mặt hàng được chọn khi nhấp vào nút thêm vào giỏ "
+"hàng"
+
+#: E:/Git/2019/PREMIUM-VERSION/woocommerce-boost-sales/woocommerce-boost-sales/admin/settings.php:840
+msgid "{product_title}: Title of main product"
+msgstr "{product_title}: Tiêu đề của sản phẩm chính"

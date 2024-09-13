@@ -1,0 +1,15 @@
+/*
+ Theme Name:  Legenda Child
+ Theme URI:   http://8theme.com/
+ Description: Legenda Child Theme
+ Author:      8theme
+ Author URI:  http://8theme.com
+ Template:    legenda
+ Version:     0.0.1
+ Text Domain: legenda-child
+ Palette:orange(#F29806) rouge(#C92F00) bleu(#0B4797)
+*/
+.edit-date-liv label, .edit-date-liv span{display:inline!important;} 
+.edit-date-liv span{position:relative;top:4px} 
+#order_data .order_data_column .form-field {clear: none!important;margin-right:5px;}
+._shipping_email_field .fa.fa-info-circle{position: relative;top: -50px;left: 96%;}

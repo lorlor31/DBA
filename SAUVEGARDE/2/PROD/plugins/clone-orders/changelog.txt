@@ -1,0 +1,70 @@
+*** Clone Orders Changelog ***
+
+2023-03-16 - version 1.5.7
+* Changed - WC 7.5 compatibility
+
+2023-02-14 - version 1.5.6
+* Changed - WC 7.4 compatibility
+
+2023-01-18 - version 1.5.5
+* Fixed - Fix PHP notice for accessing non-existent property 'base'
+* Changed - WC 7.3 compatibility
+
+2022-12-12 - version 1.5.4
+* Fixed - Action icons not appearing on order edit page
+* Changed - WC 7.2 compatibility
+
+2022-11-11 - version 1.5.3
+* Fixed - HPOS compatibility
+* Changed - WC 7.1 compatibility
+
+2022-10-05 - version 1.5.2
+* Changed - WC 7.0 compatibility
+
+2022-09-29 - version 1.5.1
+* Fixed - Remove correct items from clone if 'available stock only' option is enabled
+
+2022-09-23 - version 1.5.0
+* Added - Add setting for cloning available stock only
+* Added - Add translation support with pot file
+* Added - Add settings link on plugin list
+* Fixed - Remove options on uninstall
+* Changed - WC 6.9 compatibility
+
+2021-11-12 - version 1.4.1
+* Fixed - Access meta fields settings value with correct key
+* Fixed - Allow cloning multiple meta fields with same name
+
+2021-11-11 - version 1.4.0
+* Added - Add setting for additional meta fields to clone
+* Added - Add filter to prevent cloning order date
+* Fixed - PHP 8.0 compatibility
+* Fixed - Ensure basic compatibility with WooCommerce Subscriptions
+* Changed - WC 5.9 compatibility
+
+2021-06-17 - version 1.3.1
+* Changed - WC 5.4 compatibility
+
+2021-04-27 - version 1.3.0
+* Added - Reduce stock for processing, completed and on-hold orders
+* Changed - WC 5.2 compatibility
+
+2021-02-23 - version 1.2.0
+* Changed - Default to cloning all line item meta automatically
+* Added - Add filter for updating line items before saving
+
+2021-02-17 - version 1.1.2
+* Fixed - Fix searching for clone orders by shipping or billing address
+* Changed - WC 5.0 compatibility
+
+2021-02-08 - version 1.1.1
+* Fixed - Improve support for free order prefix in Sequential Order Numbers Pro
+* Changed - WC 4.9 compatibility
+
+2020-10-28 - version 1.1.0
+* Added - Add support for Sequential Order Numbers Pro
+* Added - Add filter for cloning line items by default
+* Changed - WC 4.6 compatibility
+
+2020-09-21 - version 1.0.0
+* First Release

@@ -1,0 +1,135 @@
+/* Logo sticky, non géré avec du SVG par Hero Menu
+
+.hmenu_is_sticky .hmenu_left {
+    content: url(https://www.armoireplus.fr/wp-content/uploads/2023/09/Logo-armoire-plus.svg);
+    width: 200px;
+}
+*/
+/* Replace Hero icons with FA to prevent webfont loading */
+
+.icon_hero_default_thin_e638::before {
+	font-family: fontawesome !important;
+	content: '\f015' !important;
+}
+
+.icon_hero_default_thin_e65a::before {
+	font-family: fontawesome !important;
+	content: '\f02c' !important;
+}
+
+/* Replace Arrow icons with FA to prevent webfont loading */
+
+.flex-direction-nav .flex-next::before,
+.slider-container .owl-next:before,
+.slider-container .slider-next:before {
+	font-family: fontawesome !important;
+	content: '\f054' !important;
+}
+
+.flex-direction-nav .flex-prev::before,
+.slider-container .owl-prev:before,
+.slider-container .slider-prev:before {
+	font-family: fontawesome !important;
+	content: '\f053' !important;
+}
+
+.back-to-top::before {
+	font-family: fontawesome !important;
+	content: '\f077' !important;
+}
+
+.my-account-link::before {
+    font-family: fontawesome !important;
+	content: '\f007' !important;
+}
+
+.login-link:before {
+    font-family: fontawesome !important;
+    content: '\f090' !important;
+}
+
+.logout-link::before {
+    font-family: fontawesome !important;
+	content: '\f08b' !important;
+}
+
+/* Lazy-rendering */
+
+footer.footer,
+.prefooter,
+.copyright,
+.logo-footer-bottom,
+.hmenu_submenu {
+    content-visibility: auto;
+}
+
+footer.footer {
+    contain-intrinsic-height: 1150px;
+}
+
+.prefooter {
+    contain-intrinsic-height: 1150px;
+}
+
+.copyright {
+    contain-intrinsic-height: 100px;
+}
+
+.logo-footer-bottom {
+    contain-intrinsic-height: 82px;
+}
+
+@media(min-width: 768px) {
+    footer.footer {
+        contain-intrinsic-height: 460px;
+    }
+    
+    .prefooter {
+        contain-intrinsic-height: 400px;
+    }
+    
+    .copyright {
+        contain-intrinsic-height: 92px;
+    }
+}
+
+/* Compartimentation CSS */
+
+.main-image-slider,
+.short-description,
+.variations_form,
+.slide-item,
+.products-grid .product,
+.sidebar,
+.toolbar,
+.vc_carousel-inner,
+.banner,
+.bandeau-accueil-icones{
+	contain: content;
+}
+@media (max-width: 768px) {
+    body.tax-product_cat .sidebar {
+        contain: unset!important; /* ou une autre valeur appropriée */
+    }
+}
+
+/* Correct sliders CLS */
+
+.vc_images_carousel {
+	aspect-ratio: 82/42;
+}
+
+.woocommerce-product-gallery {
+	min-height: 462px;
+}
+
+@media(min-width: 768px) {
+    .woocommerce-product-gallery {
+        min-height: 712px;
+    }
+}
+
+.vc_images_carousel:not(.vc-build),
+.woocommerce-product-gallery:not(.shown) {
+	overflow: hidden !important;
+}

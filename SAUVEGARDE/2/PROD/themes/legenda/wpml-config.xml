@@ -1,0 +1,134 @@
+<wpml-config>
+    <custom-types>
+        <custom-type translate="0">etheme_framework</custom-type>
+        <custom-type translate="1">etheme_portfolio</custom-type>
+        <custom-type translate="1">testimonial</custom-type>
+    </custom-types>
+    <taxonomies>
+        <taxonomy translate="1">categories</taxonomy>
+        <taxonomy translate="1">testimonial-category</taxonomy>
+        <taxonomy translate="1">tag</taxonomy>
+    </taxonomies>
+    <admin-texts>
+        <key name="legenda_redux_demo">
+             <key name="product_bage_banner"/>
+             <key name="empty_cart_content"/>
+             <key name="empty_category_content"/>
+             <key name="custom_tab_title"/>
+             <key name="custom_tab"/>
+             <key name="sale_icon_url"/>
+             <key name="new_icon_url"/>
+        </key>
+    </admin-texts>
+    <shortcodes>
+        <shortcode>
+            <tag>brands</tag>
+            <attributes>
+                <attribute>title</attribute>
+            </attributes>
+        </shortcode>
+        <shortcode>
+            <tag>twitter_slider</tag>
+            <attributes>
+                <attribute>title</attribute>
+            </attributes>
+        </shortcode>
+        <shortcode>
+            <tag>teaser_box</tag>
+            <attributes>
+                <attribute>title</attribute>
+            </attributes>
+        </shortcode>
+         <shortcode>
+            <tag>etheme_products</tag>
+            <attributes>
+                <attribute>title</attribute>
+            </attributes>
+        </shortcode>
+        <shortcode>
+            <tag>etheme_product_categories</tag>
+            <attributes>
+                <attribute>title</attribute>
+            </attributes>
+        </shortcode>
+        <shortcode>
+            <tag>etheme_featured</tag>
+            <attributes>
+                <attribute>title</attribute>
+            </attributes>
+        </shortcode>
+        <shortcode>
+            <tag>etheme_new</tag>
+            <attributes>
+                <attribute>title</attribute>
+            </attributes>
+        </shortcode>
+         <shortcode>
+            <tag>recent_posts</tag>
+            <attributes>
+                <attribute>title</attribute>
+            </attributes>
+        </shortcode>
+        <shortcode>
+            <tag>button</tag>
+            <attributes>
+                <attribute>title</attribute>
+            </attributes>
+        </shortcode>
+        <shortcode>
+            <tag>alert</tag>
+            <attributes>
+                <attribute>title</attribute>
+            </attributes>
+        </shortcode>
+        <shortcode>
+            <tag>title</tag>
+            <attributes>
+                <attribute>subtitle</attribute>
+                <attribute>subtitle</attribute>
+            </attributes>
+        </shortcode>
+        <shortcode>
+            <tag>dropcap</tag>
+        </shortcode>
+        <shortcode>
+            <tag>blockquote</tag>
+        </shortcode>
+        <shortcode>
+            <tag>gmaps</tag>
+            <attributes>
+                <attribute>title</attribute>
+            </attributes>
+        </shortcode>
+        <shortcode>
+            <tag>share</tag>
+            <attributes>
+                <attribute>title</attribute>
+            </attributes>
+        </shortcode>
+        <shortcode>
+            <tag>googlechart</tag>
+            <attributes>
+                <attribute>title</attribute>
+            </attributes>
+        </shortcode>
+        <shortcode>
+            <tag>team_member</tag>
+            <attributes>
+                <attribute>title</attribute>
+            </attributes>
+        </shortcode>
+        <shortcode>
+            <tag>icon_box</tag>
+            <attributes>
+                <attribute>title</attribute>
+            </attributes>
+        </shortcode>
+        <shortcode>
+            <tag>single_post</tag>
+            <attributes>
+                <attribute>title</attribute>
+            </attributes>
+        </shortcode>
+    </shortcodes>
+</wpml-config>

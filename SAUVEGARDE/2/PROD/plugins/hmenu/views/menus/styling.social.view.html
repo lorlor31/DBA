@@ -1,0 +1,369 @@
+<script type="text/javascript" data-cfasync="false">
+    'use strict';
+//STYLING.SOCIAL VIEW
+
+//load
+jQuery(function () {
+	//functions
+	hmenu_add_more();
+	hmenu_enable_sorting();
+	hmenu_get_social_items();
+	hmenu_set_current_header_label('Currently Editing:', hmenu_global_menu_obj.menu.name);
+
+	//load static fonts
+	hmenu_load_json_font_object('social', 'normal');
+});
+
+//add more button
+function hmenu_add_more() {
+	//load core view
+	jQuery('#add_more_btn').on('click', function () {
+		hmenu_reload_sub_view('menu_sub_icons', 'menus/', 'styling.icons');
+	});
+}
+
+//load icon messages
+function hmenu_load_icon_message(msg) {
+	jQuery('.icons_load_here').html(msg);
+}
+
+//load icons click
+function hmenu_load_icons_click() {
+	var the_options = jQuery('#icon_social_set_select');
+	jQuery(the_options).each(function (index, element) {
+		jQuery(this).on('click', function () {
+			hmenu_load_icons(jQuery(this).val(), 'social');
+		});
+	});
+}
+
+//load select
+function hmenu_load_select(obj) {
+
+	var select_html = ''
+
+	jQuery(obj).each(function (index, element) {
+		//build styles
+		select_html += '<option value="' + index + '">' + element.fontPackName + '</option>';
+	});
+
+	jQuery('#icon_social_set_select').append(select_html);
+
+	hmenu_update_select_component(jQuery('#icon_social_set_select'));
+
+}
+
+//sorting
+function hmenu_enable_sorting() {
+	//sort
+	jQuery(".hero_icon_sort_holder").sortable({
+		placeholder: "list_placeholder",
+		revert: false,
+		forcePlaceholderSize: true,
+		handle: '.hero_item_drag',
+		stop: function () {
+			hmenu_set_order();
+		}
+	});
+}
+
+//set order
+function hmenu_set_order() {
+	//set positions of new order
+	jQuery('.hero_list_sort_item').each(function (index, element) {
+		var the_index = jQuery(this).data('index');
+		hmenu_global_menu_obj.social_items[the_index].order = index;
+	});
+	hmenu_flag_save_required('hmenu_save_clicked', { "status_social": true });
+}
+
+//inser new menu
+function hmenu_insert_menu_icon() {
+	var json_item;
+	//add menu click
+	jQuery('.icon_item').on('dblclick', function () {
+		var icon_data_class = jQuery(this).data('class');
+
+		if (jQuery('#' + icon_data_class).length > 0) {
+			hmenu_show_message('error', 'Error Message', 'The social icon you want to add already exists within the selected social icons.');
+		} else {
+			//social json
+			var the_length = hmenu_global_menu_obj.social_items.length;
+			json_item = '{"menuId":' + hmenu_global_menu_obj.menu.menuId + ', "name":"Social Heading", "icon":1, "iconContent":"' + icon_data_class + '", "iconSize":"small", "iconColor":"#888888", "iconHoverColor":"#DDDDDD", "link":"#", "target":"_blank", "new":1, "deleted":0, "order":' + the_length + '}';
+			hmenu_set_order();
+			var new_social_item = JSON.parse(json_item);
+			hmenu_global_menu_obj.social_items.push(new_social_item);
+			var the_new_index = hmenu_global_menu_obj.social_items.length - 1;
+			hmenu_preload_social_html(the_new_index, icon_data_class);
+			hmenu_flag_save_required('hmenu_save_clicked', { "status_social": true });
+		}
+	});
+}
+
+//sort social items
+function hmenu_sort_items_array(a, b) {
+	return a.order - b.order;
+}
+
+//get social items
+function hmenu_get_social_items() {
+	//console
+	hmenu_global_menu_obj.social_items.sort(hmenu_sort_items_array);
+	jQuery(hmenu_global_menu_obj.social_items).each(function (index, element) {
+		if (element.deleted != 1) {
+			hmenu_preload_social_html(index, element.iconContent);
+		}
+	});
+}
+
+//preload html
+function hmenu_preload_social_html(index, icon) {
+	//get social html     
+	//load the html
+	jQuery.ajax({
+		url: hmenu_ajax_url,
+		data: {
+			action: 'hmenu_load_menu_social_item_html',
+			index: index,
+			url: hmenu_core_view_path,
+			class: icon
+		},
+		async: false,
+		dataType: "html"
+	}).done(function (data) {
+		//append html
+		jQuery('.hero_icon_sort_holder').append(data);
+		hmenu_enable(index);
+	}).fail(function () {
+		//page error
+	});
+}
+
+//enable
+function hmenu_enable(index) {
+	hmenu_enable_toggle();
+	hmenu_enable_delete();
+	hmenu_set_social_data(index);
+}
+
+//setup social data
+function hmenu_set_social_data(index) {
+
+	jQuery('#social_heading_' + index).html(hmenu_global_menu_obj.social_items[index].name);
+	jQuery('#social_name_' + index).val(hmenu_global_menu_obj.social_items[index].name);
+	jQuery('#social_url_' + index).val(hmenu_global_menu_obj.social_items[index].link);
+	jQuery('#social_item_order_' + index).val(hmenu_global_menu_obj.social_items[index].order);
+
+	jQuery('#social_target_' + index + ' option').each(function (idx, el) {
+		if (jQuery(this).val() == hmenu_global_menu_obj.social_items[index].target) {
+			jQuery(this).attr('selected', 'selected')
+		}
+	});
+	jQuery('#social_icon_content_' + index).val(hmenu_global_menu_obj.social_items[index].iconContent);
+	jQuery('.hero_social_icon_display_' + index).children('#inner_icon').attr('class', hmenu_global_menu_obj.social_items[index].iconContent);
+	jQuery('#social_icon_size_' + index + ' option').each(function (idx, el) {
+		if (jQuery(this).val() == hmenu_global_menu_obj.social_items[index].iconSize) {
+			jQuery(this).attr('selected', 'selected')
+		}
+	});
+	jQuery('#social_icon_color_' + index).val(hmenu_global_menu_obj.social_items[index].iconColor);
+	jQuery('#social_icon_hover_color_' + index).val(hmenu_global_menu_obj.social_items[index].iconHoverColor);
+
+
+	//switch components
+	hmenu_switch_components();
+
+	//enable update
+	hmenu_enable_update_settings(index);
+
+}
+
+//enable update settings
+function hmenu_enable_update_settings(index) {
+
+	//change: name
+	jQuery('#social_name_' + index).on('change keyup', function () {
+		hmenu_global_menu_obj.social_items[index].name = jQuery(this).val();
+		jQuery('#social_heading_' + index).html(hmenu_global_menu_obj.social_items[index].name);
+		hmenu_flag_save_required('hmenu_save_clicked', { "status_social": true });
+	});
+	//change: url
+	jQuery('#social_url_' + index).on('change keyup', function () {
+		hmenu_global_menu_obj.social_items[index].link = jQuery(this).val();
+		hmenu_flag_save_required('hmenu_save_clicked', { "status_social": true });
+	});
+	//change: target
+	jQuery('.social_target_' + index + ' .hero_dropdown .hero_drop_row').on('click', function () {
+		jQuery('#social_target_' + index).trigger('change');
+	});
+	jQuery('#social_target_' + index).on('change', function () {
+		hmenu_global_menu_obj.social_items[index].target = jQuery(this).children('option:selected').val();
+		hmenu_flag_save_required('hmenu_save_clicked', { "status_social": true });
+	});
+	//change: icon content
+	jQuery('#social_icon_content_' + index).on('change keyup', function () {
+		hmenu_global_menu_obj.social_items[index].iconContent = jQuery(this).val();
+		hmenu_flag_save_required('hmenu_save_clicked', { "status_social": true });
+	});
+	//change: icon size
+	jQuery('.social_icon_size_' + index + ' .hero_dropdown .hero_drop_row').on('click', function () {
+		jQuery('#social_icon_size_' + index).trigger('change');
+	});
+	jQuery('#social_icon_size_' + index).on('change', function () {
+		hmenu_global_menu_obj.social_items[index].iconSize = jQuery(this).children('option:selected').val();
+		hmenu_flag_save_required('hmenu_save_clicked', { "status_social": true });
+	});
+	//change: icon color
+	jQuery('#social_icon_color_' + index).on('change keyup', function () {
+		hmenu_global_menu_obj.social_items[index].iconColor = jQuery(this).val();
+		hmenu_flag_save_required('hmenu_save_clicked', { "status_social": true });
+	});
+	//change: icon hover color
+	jQuery('#social_icon_hover_color_' + index).on('change keyup', function () {
+		hmenu_global_menu_obj.social_items[index].iconHoverColor = jQuery(this).val();
+		hmenu_flag_save_required('hmenu_save_clicked', { "status_social": true });
+	});
+
+}
+
+function hmenu_enable_delete() {
+
+	//get the delete click
+	jQuery('.hero_button_delete').off().on('click', function () {
+
+		//current item data		
+		var current_index = jQuery(this).data('index');
+
+		if (window.confirm('Are you sure you want to delete the social item?')) {
+
+			//set object
+			hmenu_global_menu_obj.social_items[current_index].deleted = 1;
+			jQuery(this).parents('.hero_list_sort_item').remove();
+			hmenu_flag_save_required('hmenu_save_clicked', { "status_social": true });
+
+		} else {
+
+		}
+
+	});
+}
+
+
+//toggle items
+function hmenu_enable_toggle() {
+
+	jQuery('.hero_item_bar').children('.hero_item_toggle ').off().on('click', function () {
+
+		//close the icon panel
+		hmenu_disable_icon_select();
+
+		var count_open = 0;
+
+		var the_item_height = jQuery(this).parents('.hero_item_wrap').children('.hero_item_content').height() + 55;
+
+		if (!jQuery(this).attr('data-nav-toggle') || jQuery(this).attr('data-nav-toggle') == 'close') {
+			//check which ones are open
+			jQuery('.hero_item_toggle ').each(function (index, element) {
+				if (jQuery(this).attr('data-nav-toggle') == 'open') {
+					//close	
+					jQuery(this).attr('data-nav-toggle', 'close');
+					jQuery(this).removeClass('hero_menu_open');
+					//close
+					jQuery(this).parents('.hero_item_wrap').css({
+						'display': 'block',
+						'overflow': 'hidden'
+					});
+					jQuery(this).parents('.hero_item_wrap').animate({
+						'height': '40px'
+					});
+					count_open++;
+				}
+			});
+			jQuery(this).attr('data-nav-toggle', 'open');
+			jQuery(this).addClass('hero_menu_open');
+			//open	
+			jQuery(this).parents('.hero_item_wrap').animate({
+				'height': the_item_height + 'px'
+			}, function () {
+				jQuery(this).css({
+					'display': 'table',
+					'overflow': 'visible',
+					'height': 'auto'
+				});
+			});
+
+		} else if (jQuery(this).attr('data-nav-toggle') == 'open') {
+			jQuery(this).attr('data-nav-toggle', 'close');
+			jQuery(this).removeClass('hero_menu_open');
+			//close
+			jQuery(this).parents('.hero_item_wrap').css({
+				'display': 'block',
+				'overflow': 'hidden'
+			});
+			jQuery(this).parents('.hero_item_wrap').animate({
+				'height': '40px'
+			});
+		}
+
+	});
+
+	//edit click
+	jQuery('.hero_button_edit').off().on('click', function () {
+		jQuery(this).parents('.hero_item_bar').children('.hero_item_toggle').trigger('click');
+	});
+
+	//title click
+	jQuery('.hero_item_heading').off().on('click', function () {
+		jQuery(this).parents('.hero_item_bar').children('.hero_item_toggle').trigger('click');
+	});
+
+}
+</script>
+<div class="hero_views">
+    <div class="hero_col_12">
+    	<h2 class="hero_red size_18 weight_600">
+            Social Icons<br />
+            <strong class="size_11 hero_grey">Social icons ready to use for your navigation.</strong>
+        </h2>
+        <!-- START: FORM -->
+            <form>      	
+                <!-- START: ACTIVATION -->
+                    <div class="hero_section_holder hero_grey size_14">
+                        <div class="hero_col_8">
+                            <label><h2 class="size_14 hero_green">Social Icon Sets</h2></label>
+                        	<p class="size_12 hero_grey">Double click an icon to add to your navigation.</p>
+                        </div>
+                        <div class="hero_col_4">
+                            <select data-size="med" id="icon_social_set_select" name="icon_social_set_select">
+                            </select>
+                        </div>
+                        <div class="hero_col_12">
+                        	<div class="icons_load_here rounded_3">
+                            	<!-- LOAD ICONS -->
+                            </div>
+                        </div>
+                    </div>
+                <!-- END: ACTIVATION -->                
+                 <!-- START: ACTIVATION -->
+                    <div class="hero_section_holder hero_grey size_14">
+                        <div class="hero_col_12">
+                            <ul class="hero_icon_sort_holder">
+                			</ul>
+                        </div>
+                    </div>
+                <!-- END: ACTIVATION -->
+                <!-- START: ACTIVATION -->
+                    <div class="hero_section_holder hero_grey size_14">
+                        <div class="hero_col_8">
+                            <label><h2 class="size_18 hero_red weight_600">Add social packs</h2></label>
+                        	<p class="size_12 hero_grey">Select a new social icon pack to use now!</p>
+                        </div>
+                        <div class="hero_col_4">
+                            <div class="hero_button_auto green_button rounded_3" id="add_more_btn">Add social pack</div>
+                        </div>
+                    </div>
+                <!-- END: ACTIVATION -->
+            </form>
+        <!-- END: FORM -->
+    </div>
+</div>

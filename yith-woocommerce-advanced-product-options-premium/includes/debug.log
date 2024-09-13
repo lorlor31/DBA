@@ -1,0 +1,1013 @@
+[27-Jul-2024 11:00:39 UTC] Erreur d’événement de replanification de tâche pour le crochet wxp_shipment_mail_event. Code d’erreur : invalid_schedule. Message d’erreur : L’évènement planifié n’existe pas.. Données : {"schedule":"wxp_shipment_event","args":{"queue":[]},"interval":900}
+[27-Jul-2024 11:00:39 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function YWRAQ_Avanced_Product_Options::request_quote_view(), 4 passed in /var/www/vhosts/armoireplus.fr/mdev.armoireplus.fr/wp-includes/class-wp-hook.php on line 310 and exactly 5 expected in /var/www/vhosts/armoireplus.fr/mdev.armoireplus.fr/wp-content/plugins/yith-woocommerce-request-a-quote-premium/includes/compatibility/yith-woocommerce-advanced-product-options.php:241
+Stack trace:
+#0 /var/www/vhosts/armoireplus.fr/mdev.armoireplus.fr/wp-includes/class-wp-hook.php(310): YWRAQ_Avanced_Product_Options->request_quote_view()
+#1 /var/www/vhosts/armoireplus.fr/mdev.armoireplus.fr/wp-includes/plugin.php(205): WP_Hook->apply_filters()
+#2 /var/www/vhosts/armoireplus.fr/mdev.armoireplus.fr/wp-content/themes/legenda-child/woocommerce/request-quote-table.php(368): apply_filters()
+#3 /var/www/vhosts/armoireplus.fr/mdev.armoireplus.fr/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include('...')
+#4 /var/www/vhosts/armoireplus.fr/mdev.armoireplus.fr/wp-content/plugins/yith-woocommerce-request-a-quote-premium/includes/class.yith-ywraq-shortcodes.php(88): wc_get_template()
+#5 /var/www/vhosts/armoireplus.fr/mdev.armoireplus.fr/wp-includes/shortcodes.php(395): YITH_YWRAQ_Shortcodes->quote_table()
+#6 [internal function]: do_shortcode_tag()
+#7 /var/www/vhosts/armoireplus.fr/mdev.armoireplus.fr/wp-includes/shortcodes.php(235): preg_replace_callback()
+#8 /var/www/vhosts/armoireplus.fr/mdev.armoireplus.fr/wp-content/plugins/yith-woocommerce-request-a-quote-premium/templates/request-quote-view.php(17): do_shortcode()
+#9 /var/www/vhosts/armoireplus.fr/mdev.armoireplus.fr/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include('...')
+#10 /var/www/vhosts/armoireplus.fr/mdev.armoireplus.fr/wp-content/plugins/yith-woocommerce-request-a-quote-premium/templates/request-quote.php(76): wc_get_template()
+#11 /var/www/vhosts/armoireplus.fr/mdev.armoireplus.fr/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include('...')
+#12 /var/www/vhosts/armoireplus.fr/mdev.armoireplus.fr/wp-content/plugins/yith-woocommerce-request-a-quote-premium/includes/class.yith-ywraq-shortcodes.php(164): wc_get_template()
+#13 /var/www/vhosts/armoireplus.fr/mdev.armoireplus.fr/wp-includes/shortcodes.php(395): YITH_YWRAQ_Shortcodes->request_quote_page()
+#14 [internal function]: do_shortcode_tag()
+#15 /var/www/vhosts/armoireplus.fr/mdev.armoireplus.fr/wp-includes/shortcodes.php(235): preg_replace_callback()
+#16 /var/www/vhosts/armoireplus.fr/mdev.armoireplus.fr/wp-includes/class-wp-hook.php(310): do_shortcode()
+#17 /var/www/vhosts/armoireplus.fr/mdev.armoireplus.fr/wp-includes/plugin.php(205): WP_Hook->apply_filters()
+#18 /var/www/vhosts/armoireplus.fr/mdev.armoireplus.fr/wp-includes/post-template.php(256): apply_filters()
+#19 /var/www/vhosts/armoireplus.fr/mdev.armoireplus.fr/wp-content/themes/legenda/page.php(31): the_content()
+#20 /var/www/vhosts/armoireplus.fr/mdev.armoireplus.fr/wp-includes/template-loader.php(106): include('...')
+#21 /var/www/vhosts/armoireplus.fr/mdev.armoireplus.fr/wp-blog-header.php(19): require_once('...')
+#22 /var/www/vhosts/armoireplus.fr/mdev.armoireplus.fr/index.php(17): require('...')
+#23 {main}
+  thrown in /var/www/vhosts/armoireplus.fr/mdev.armoireplus.fr/wp-content/plugins/yith-woocommerce-request-a-quote-premium/includes/compatibility/yith-woocommerce-advanced-product-options.php on line 241
+[27-Jul-2024 11:03:47 UTC] Erreur d’événement de replanification de tâche pour le crochet wxp_shipment_mail_event. Code d’erreur : invalid_schedule. Message d’erreur : L’évènement planifié n’existe pas.. Données : {"schedule":"wxp_shipment_event","args":{"queue":[]},"interval":900}
+[27-Jul-2024 11:03:47 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function YWRAQ_Avanced_Product_Options::request_quote_view(), 4 passed in /var/www/vhosts/armoireplus.fr/mdev.armoireplus.fr/wp-includes/class-wp-hook.php on line 310 and exactly 5 expected in /var/www/vhosts/armoireplus.fr/mdev.armoireplus.fr/wp-content/plugins/yith-woocommerce-request-a-quote-premium/includes/compatibility/yith-woocommerce-advanced-product-options.php:241
+Stack trace:
+#0 /var/www/vhosts/armoireplus.fr/mdev.armoireplus.fr/wp-includes/class-wp-hook.php(310): YWRAQ_Avanced_Product_Options->request_quote_view()
+#1 /var/www/vhosts/armoireplus.fr/mdev.armoireplus.fr/wp-includes/plugin.php(205): WP_Hook->apply_filters()
+#2 /var/www/vhosts/armoireplus.fr/mdev.armoireplus.fr/wp-content/themes/legenda-child/woocommerce/request-quote-table.php(368): apply_filters()
+#3 /var/www/vhosts/armoireplus.fr/mdev.armoireplus.fr/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include('...')
+#4 /var/www/vhosts/armoireplus.fr/mdev.armoireplus.fr/wp-content/plugins/yith-woocommerce-request-a-quote-premium/includes/class.yith-ywraq-shortcodes.php(88): wc_get_template()
+#5 /var/www/vhosts/armoireplus.fr/mdev.armoireplus.fr/wp-includes/shortcodes.php(395): YITH_YWRAQ_Shortcodes->quote_table()
+#6 [internal function]: do_shortcode_tag()
+#7 /var/www/vhosts/armoireplus.fr/mdev.armoireplus.fr/wp-includes/shortcodes.php(235): preg_replace_callback()
+#8 /var/www/vhosts/armoireplus.fr/mdev.armoireplus.fr/wp-content/plugins/yith-woocommerce-request-a-quote-premium/templates/request-quote-view.php(17): do_shortcode()
+#9 /var/www/vhosts/armoireplus.fr/mdev.armoireplus.fr/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include('...')
+#10 /var/www/vhosts/armoireplus.fr/mdev.armoireplus.fr/wp-content/plugins/yith-woocommerce-request-a-quote-premium/templates/request-quote.php(76): wc_get_template()
+#11 /var/www/vhosts/armoireplus.fr/mdev.armoireplus.fr/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include('...')
+#12 /var/www/vhosts/armoireplus.fr/mdev.armoireplus.fr/wp-content/plugins/yith-woocommerce-request-a-quote-premium/includes/class.yith-ywraq-shortcodes.php(164): wc_get_template()
+#13 /var/www/vhosts/armoireplus.fr/mdev.armoireplus.fr/wp-includes/shortcodes.php(395): YITH_YWRAQ_Shortcodes->request_quote_page()
+#14 [internal function]: do_shortcode_tag()
+#15 /var/www/vhosts/armoireplus.fr/mdev.armoireplus.fr/wp-includes/shortcodes.php(235): preg_replace_callback()
+#16 /var/www/vhosts/armoireplus.fr/mdev.armoireplus.fr/wp-includes/class-wp-hook.php(310): do_shortcode()
+#17 /var/www/vhosts/armoireplus.fr/mdev.armoireplus.fr/wp-includes/plugin.php(205): WP_Hook->apply_filters()
+#18 /var/www/vhosts/armoireplus.fr/mdev.armoireplus.fr/wp-includes/post-template.php(256): apply_filters()
+#19 /var/www/vhosts/armoireplus.fr/mdev.armoireplus.fr/wp-content/themes/legenda/page.php(31): the_content()
+#20 /var/www/vhosts/armoireplus.fr/mdev.armoireplus.fr/wp-includes/template-loader.php(106): include('...')
+#21 /var/www/vhosts/armoireplus.fr/mdev.armoireplus.fr/wp-blog-header.php(19): require_once('...')
+#22 /var/www/vhosts/armoireplus.fr/mdev.armoireplus.fr/index.php(17): require('...')
+#23 {main}
+  thrown in /var/www/vhosts/armoireplus.fr/mdev.armoireplus.fr/wp-content/plugins/yith-woocommerce-request-a-quote-premium/includes/compatibility/yith-woocommerce-advanced-product-options.php on line 241
+[27-Jul-2024 11:04:00 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function YWRAQ_Avanced_Product_Options::request_quote_view(), 4 passed in /var/www/vhosts/armoireplus.fr/mdev.armoireplus.fr/wp-includes/class-wp-hook.php on line 310 and exactly 5 expected in /var/www/vhosts/armoireplus.fr/mdev.armoireplus.fr/wp-content/plugins/yith-woocommerce-request-a-quote-premium/includes/compatibility/yith-woocommerce-advanced-product-options.php:241
+Stack trace:
+#0 /var/www/vhosts/armoireplus.fr/mdev.armoireplus.fr/wp-includes/class-wp-hook.php(310): YWRAQ_Avanced_Product_Options->request_quote_view()
+#1 /var/www/vhosts/armoireplus.fr/mdev.armoireplus.fr/wp-includes/plugin.php(205): WP_Hook->apply_filters()
+#2 /var/www/vhosts/armoireplus.fr/mdev.armoireplus.fr/wp-content/themes/legenda-child/woocommerce/request-quote-table.php(368): apply_filters()
+#3 /var/www/vhosts/armoireplus.fr/mdev.armoireplus.fr/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include('...')
+#4 /var/www/vhosts/armoireplus.fr/mdev.armoireplus.fr/wp-content/plugins/yith-woocommerce-request-a-quote-premium/includes/class.yith-ywraq-shortcodes.php(88): wc_get_template()
+#5 /var/www/vhosts/armoireplus.fr/mdev.armoireplus.fr/wp-includes/shortcodes.php(395): YITH_YWRAQ_Shortcodes->quote_table()
+#6 [internal function]: do_shortcode_tag()
+#7 /var/www/vhosts/armoireplus.fr/mdev.armoireplus.fr/wp-includes/shortcodes.php(235): preg_replace_callback()
+#8 /var/www/vhosts/armoireplus.fr/mdev.armoireplus.fr/wp-content/plugins/yith-woocommerce-request-a-quote-premium/templates/request-quote-view.php(17): do_shortcode()
+#9 /var/www/vhosts/armoireplus.fr/mdev.armoireplus.fr/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include('...')
+#10 /var/www/vhosts/armoireplus.fr/mdev.armoireplus.fr/wp-content/plugins/yith-woocommerce-request-a-quote-premium/templates/request-quote.php(76): wc_get_template()
+#11 /var/www/vhosts/armoireplus.fr/mdev.armoireplus.fr/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include('...')
+#12 /var/www/vhosts/armoireplus.fr/mdev.armoireplus.fr/wp-content/plugins/yith-woocommerce-request-a-quote-premium/includes/class.yith-ywraq-shortcodes.php(164): wc_get_template()
+#13 /var/www/vhosts/armoireplus.fr/mdev.armoireplus.fr/wp-includes/shortcodes.php(395): YITH_YWRAQ_Shortcodes->request_quote_page()
+#14 [internal function]: do_shortcode_tag()
+#15 /var/www/vhosts/armoireplus.fr/mdev.armoireplus.fr/wp-includes/shortcodes.php(235): preg_replace_callback()
+#16 /var/www/vhosts/armoireplus.fr/mdev.armoireplus.fr/wp-includes/class-wp-hook.php(310): do_shortcode()
+#17 /var/www/vhosts/armoireplus.fr/mdev.armoireplus.fr/wp-includes/plugin.php(205): WP_Hook->apply_filters()
+#18 /var/www/vhosts/armoireplus.fr/mdev.armoireplus.fr/wp-includes/post-template.php(256): apply_filters()
+#19 /var/www/vhosts/armoireplus.fr/mdev.armoireplus.fr/wp-content/themes/legenda/page.php(31): the_content()
+#20 /var/www/vhosts/armoireplus.fr/mdev.armoireplus.fr/wp-includes/template-loader.php(106): include('...')
+#21 /var/www/vhosts/armoireplus.fr/mdev.armoireplus.fr/wp-blog-header.php(19): require_once('...')
+#22 /var/www/vhosts/armoireplus.fr/mdev.armoireplus.fr/index.php(17): require('...')
+#23 {main}
+  thrown in /var/www/vhosts/armoireplus.fr/mdev.armoireplus.fr/wp-content/plugins/yith-woocommerce-request-a-quote-premium/includes/compatibility/yith-woocommerce-advanced-product-options.php on line 241
+[27-Jul-2024 11:04:09 UTC] Erreur d’événement de replanification de tâche pour le crochet wxp_shipment_mail_event. Code d’erreur : invalid_schedule. Message d’erreur : L’évènement planifié n’existe pas.. Données : {"schedule":"wxp_shipment_event","args":{"queue":[]},"interval":900}
+[27-Jul-2024 11:04:17 UTC] Erreur d’événement de replanification de tâche pour le crochet wxp_shipment_mail_event. Code d’erreur : invalid_schedule. Message d’erreur : L’évènement planifié n’existe pas.. Données : {"schedule":"wxp_shipment_event","args":{"queue":[]},"interval":900}
+[27-Jul-2024 11:04:18 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function YWRAQ_Avanced_Product_Options::request_quote_view(), 4 passed in /var/www/vhosts/armoireplus.fr/mdev.armoireplus.fr/wp-includes/class-wp-hook.php on line 310 and exactly 5 expected in /var/www/vhosts/armoireplus.fr/mdev.armoireplus.fr/wp-content/plugins/yith-woocommerce-request-a-quote-premium/includes/compatibility/yith-woocommerce-advanced-product-options.php:241
+Stack trace:
+#0 /var/www/vhosts/armoireplus.fr/mdev.armoireplus.fr/wp-includes/class-wp-hook.php(310): YWRAQ_Avanced_Product_Options->request_quote_view()
+#1 /var/www/vhosts/armoireplus.fr/mdev.armoireplus.fr/wp-includes/plugin.php(205): WP_Hook->apply_filters()
+#2 /var/www/vhosts/armoireplus.fr/mdev.armoireplus.fr/wp-content/themes/legenda-child/woocommerce/request-quote-table.php(368): apply_filters()
+#3 /var/www/vhosts/armoireplus.fr/mdev.armoireplus.fr/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include('...')
+#4 /var/www/vhosts/armoireplus.fr/mdev.armoireplus.fr/wp-content/plugins/yith-woocommerce-request-a-quote-premium/includes/class.yith-ywraq-shortcodes.php(88): wc_get_template()
+#5 /var/www/vhosts/armoireplus.fr/mdev.armoireplus.fr/wp-includes/shortcodes.php(395): YITH_YWRAQ_Shortcodes->quote_table()
+#6 [internal function]: do_shortcode_tag()
+#7 /var/www/vhosts/armoireplus.fr/mdev.armoireplus.fr/wp-includes/shortcodes.php(235): preg_replace_callback()
+#8 /var/www/vhosts/armoireplus.fr/mdev.armoireplus.fr/wp-content/plugins/yith-woocommerce-request-a-quote-premium/templates/request-quote-view.php(17): do_shortcode()
+#9 /var/www/vhosts/armoireplus.fr/mdev.armoireplus.fr/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include('...')
+#10 /var/www/vhosts/armoireplus.fr/mdev.armoireplus.fr/wp-content/plugins/yith-woocommerce-request-a-quote-premium/templates/request-quote.php(76): wc_get_template()
+#11 /var/www/vhosts/armoireplus.fr/mdev.armoireplus.fr/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include('...')
+#12 /var/www/vhosts/armoireplus.fr/mdev.armoireplus.fr/wp-content/plugins/yith-woocommerce-request-a-quote-premium/includes/class.yith-ywraq-shortcodes.php(164): wc_get_template()
+#13 /var/www/vhosts/armoireplus.fr/mdev.armoireplus.fr/wp-includes/shortcodes.php(395): YITH_YWRAQ_Shortcodes->request_quote_page()
+#14 [internal function]: do_shortcode_tag()
+#15 /var/www/vhosts/armoireplus.fr/mdev.armoireplus.fr/wp-includes/shortcodes.php(235): preg_replace_callback()
+#16 /var/www/vhosts/armoireplus.fr/mdev.armoireplus.fr/wp-includes/class-wp-hook.php(310): do_shortcode()
+#17 /var/www/vhosts/armoireplus.fr/mdev.armoireplus.fr/wp-includes/plugin.php(205): WP_Hook->apply_filters()
+#18 /var/www/vhosts/armoireplus.fr/mdev.armoireplus.fr/wp-includes/post-template.php(256): apply_filters()
+#19 /var/www/vhosts/armoireplus.fr/mdev.armoireplus.fr/wp-content/themes/legenda/page.php(31): the_content()
+#20 /var/www/vhosts/armoireplus.fr/mdev.armoireplus.fr/wp-includes/template-loader.php(106): include('...')
+#21 /var/www/vhosts/armoireplus.fr/mdev.armoireplus.fr/wp-blog-header.php(19): require_once('...')
+#22 /var/www/vhosts/armoireplus.fr/mdev.armoireplus.fr/index.php(17): require('...')
+#23 {main}
+  thrown in /var/www/vhosts/armoireplus.fr/mdev.armoireplus.fr/wp-content/plugins/yith-woocommerce-request-a-quote-premium/includes/compatibility/yith-woocommerce-advanced-product-options.php on line 241
+[27-Jul-2024 11:06:16 UTC] Erreur d’événement de replanification de tâche pour le crochet wxp_shipment_mail_event. Code d’erreur : invalid_schedule. Message d’erreur : L’évènement planifié n’existe pas.. Données : {"schedule":"wxp_shipment_event","args":{"queue":[]},"interval":900}
+[27-Jul-2024 11:06:16 UTC] ENTERED request_quote_view
+[27-Jul-2024 11:06:16 UTC] FOR EACH index 0 : Array
+(
+    [361-0] => product-3648-1
+)
+
+[27-Jul-2024 11:06:16 UTC] request_quote_view cart_item['yith_wapo_product_qty']: Array
+(
+    [361-0] => 188
+    [361-1] => 81
+)
+
+[27-Jul-2024 11:06:16 UTC] request_quote_view cart_item['yith_wapo_qty_options']: 
+[27-Jul-2024 11:06:16 UTC] ENTERED get_addon_value_on_cart with addon_id: 361, option_id: 0, key: 361-0, original_value: product-3648-1
+[27-Jul-2024 11:06:16 UTC] YITH ADDON original_value product-3648-1
+[27-Jul-2024 11:06:16 UTC] YITH ADDON cart_item yith_wapo_qty_options 
+[27-Jul-2024 11:06:16 UTC] YITH ADDON cart_item yith_wapo_product_qty Array
+(
+    [361-0] => 188
+    [361-1] => 81
+)
+
+[27-Jul-2024 11:06:16 UTC] YITH ADDON key 361-0
+[27-Jul-2024 11:06:16 UTC] YITH ADDON option_product_qty 188
+[27-Jul-2024 11:06:16 UTC] YITH ADDON final value: 188 x Dossiers Suspendus
+[27-Jul-2024 11:06:16 UTC] YITH ADDON get_addon_value_on_cart addon_id: 361, option_id: 0, key: 361-0, original_value: product-3648-1
+[27-Jul-2024 11:06:16 UTC] YITH ADDON get_addon_value_on_cart cart_item: Array
+(
+    [yith_wapo_options] => Array
+        (
+            [0] => Array
+                (
+                    [361-0] => product-3648-1
+                )
+
+            [1] => Array
+                (
+                    [361-1] => product-3650-1
+                )
+
+        )
+
+    [attribute_pa_coloris-caisson] => blanc-9010
+    [yith_wapo_product_id] => 63990
+    [yith_wapo_product_img] => 
+    [yith_wapo_is_single] => 1
+    [yith_wapo] => Array
+        (
+            [0] => Array
+                (
+                    [361-0] => product-3648-1
+                )
+
+            [1] => Array
+                (
+                    [361-1] => product-3650-1
+                )
+
+        )
+
+    [yith_wapo_product_qty] => Array
+        (
+            [361-0] => 188
+            [361-1] => 81
+        )
+
+    [quantity] => 1
+    [product_id] => 63990
+    [variation_id] => 64019
+    [context] => frontend
+    [action] => yith_ywraq_action
+    [ywraq_action] => add_item
+    [wp_nonce] => 6c06bf3339
+    [yith-add-to-cart] => 63990
+    [add-to-cart] => 63990
+    [variations] => Array
+        (
+            [attribute_pa_coloris-caisson] => blanc-9010
+        )
+
+)
+
+[27-Jul-2024 11:06:16 UTC] YITH ADDON get_addon_value_on_cart value: 188 x Dossiers Suspendus
+[27-Jul-2024 11:06:16 UTC] request_quote_view key: 361-0
+[27-Jul-2024 11:06:16 UTC] request_quote_view value: product-3648-1
+[27-Jul-2024 11:06:16 UTC] request_quote_view addon_data_name: ds
+[27-Jul-2024 11:06:16 UTC] request_quote_view addon_value BEFORE get_addon_display_on_cart: 1 x Dossiers Suspendus, Lecture: Verticale, Type: Fond V [réf.DOSUSPAVOR]
+[27-Jul-2024 11:06:16 UTC] ENTERED get_addon_display_on_cart
+[27-Jul-2024 11:06:16 UTC] get_addon_display_on_cart value: 1 x Dossiers Suspendus, Lecture: Verticale, Type: Fond V [réf.DOSUSPAVOR]
+[27-Jul-2024 11:06:16 UTC] get_addon_display_on_cart sign: +
+[27-Jul-2024 11:06:16 UTC] get_addon_display_on_cart price: 17
+[27-Jul-2024 11:06:16 UTC] get_addon_display_on_cart regular_price: 17
+[27-Jul-2024 11:06:16 UTC] get_addon_display_on_cart sale_price: 0
+[27-Jul-2024 11:06:16 UTC] get_addon_display_on_cart display before filter: 1 x Dossiers Suspendus, Lecture: Verticale, Type: Fond V [réf.DOSUSPAVOR] (+<span class="woocommerce-Price-amount amount"><bdi>17.00&nbsp;<span class="woocommerce-Price-currencySymbol">&euro;</span></bdi></span>)
+[27-Jul-2024 11:06:16 UTC] get_addon_display_on_cart display after filter: 1 x Dossiers Suspendus, Lecture: Verticale, Type: Fond V [réf.DOSUSPAVOR] (+<span class="woocommerce-Price-amount amount"><bdi>17.00&nbsp;<span class="woocommerce-Price-currencySymbol">&euro;</span></bdi></span>)
+[27-Jul-2024 11:06:16 UTC] request_quote_view addon_value AFTER get_addon_display_on_cart: 1 x Dossiers Suspendus, Lecture: Verticale, Type: Fond V [réf.DOSUSPAVOR] (+<span class="woocommerce-Price-amount amount"><bdi>17.00&nbsp;<span class="woocommerce-Price-currencySymbol">&euro;</span></bdi></span>)
+[27-Jul-2024 11:06:16 UTC] BEFORE get_addon_display_on_cart correct_addon_value: 1 x Dossiers Suspendus, Lecture: Verticale, Type: Fond V [réf.DOSUSPAVOR]
+[27-Jul-2024 11:06:16 UTC] ENTERED get_addon_display_on_cart
+[27-Jul-2024 11:06:16 UTC] get_addon_display_on_cart value: 1 x Dossiers Suspendus, Lecture: Verticale, Type: Fond V [réf.DOSUSPAVOR] (+<span class="woocommerce-Price-amount amount"><bdi>17.00&nbsp;<span class="woocommerce-Price-currencySymbol">&euro;</span></bdi></span>)
+[27-Jul-2024 11:06:16 UTC] get_addon_display_on_cart sign: +
+[27-Jul-2024 11:06:16 UTC] get_addon_display_on_cart price: 17
+[27-Jul-2024 11:06:16 UTC] get_addon_display_on_cart regular_price: 17
+[27-Jul-2024 11:06:16 UTC] get_addon_display_on_cart sale_price: 0
+[27-Jul-2024 11:06:16 UTC] get_addon_display_on_cart display before filter: 1 x Dossiers Suspendus, Lecture: Verticale, Type: Fond V [réf.DOSUSPAVOR] (+<span class="woocommerce-Price-amount amount"><bdi>17.00&nbsp;<span class="woocommerce-Price-currencySymbol">&euro;</span></bdi></span>) (+<span class="woocommerce-Price-amount amount"><bdi>17.00&nbsp;<span class="woocommerce-Price-currencySymbol">&euro;</span></bdi></span>)
+[27-Jul-2024 11:06:16 UTC] get_addon_display_on_cart display after filter: 1 x Dossiers Suspendus, Lecture: Verticale, Type: Fond V [réf.DOSUSPAVOR] (+<span class="woocommerce-Price-amount amount"><bdi>17.00&nbsp;<span class="woocommerce-Price-currencySymbol">&euro;</span></bdi></span>) (+<span class="woocommerce-Price-amount amount"><bdi>17.00&nbsp;<span class="woocommerce-Price-currencySymbol">&euro;</span></bdi></span>)
+[27-Jul-2024 11:06:16 UTC] FOR EACH index 1 : Array
+(
+    [361-1] => product-3650-1
+)
+
+[27-Jul-2024 11:06:16 UTC] request_quote_view cart_item['yith_wapo_product_qty']: Array
+(
+    [361-0] => 188
+    [361-1] => 81
+)
+
+[27-Jul-2024 11:06:16 UTC] request_quote_view cart_item['yith_wapo_qty_options']: 
+[27-Jul-2024 11:06:16 UTC] ENTERED get_addon_value_on_cart with addon_id: 361, option_id: 1, key: 361-1, original_value: product-3650-1
+[27-Jul-2024 11:06:16 UTC] YITH ADDON original_value product-3650-1
+[27-Jul-2024 11:06:16 UTC] YITH ADDON cart_item yith_wapo_qty_options 
+[27-Jul-2024 11:06:16 UTC] YITH ADDON cart_item yith_wapo_product_qty Array
+(
+    [361-0] => 188
+    [361-1] => 81
+)
+
+[27-Jul-2024 11:06:16 UTC] YITH ADDON key 361-1
+[27-Jul-2024 11:06:16 UTC] YITH ADDON option_product_qty 81
+[27-Jul-2024 11:06:16 UTC] YITH ADDON final value: 81 x Dossiers Suspendus
+[27-Jul-2024 11:06:16 UTC] YITH ADDON get_addon_value_on_cart addon_id: 361, option_id: 1, key: 361-1, original_value: product-3650-1
+[27-Jul-2024 11:06:16 UTC] YITH ADDON get_addon_value_on_cart cart_item: Array
+(
+    [yith_wapo_options] => Array
+        (
+            [0] => Array
+                (
+                    [361-0] => product-3648-1
+                )
+
+            [1] => Array
+                (
+                    [361-1] => product-3650-1
+                )
+
+        )
+
+    [attribute_pa_coloris-caisson] => blanc-9010
+    [yith_wapo_product_id] => 63990
+    [yith_wapo_product_img] => 
+    [yith_wapo_is_single] => 1
+    [yith_wapo] => Array
+        (
+            [0] => Array
+                (
+                    [361-0] => product-3648-1
+                )
+
+            [1] => Array
+                (
+                    [361-1] => product-3650-1
+                )
+
+        )
+
+    [yith_wapo_product_qty] => Array
+        (
+            [361-0] => 188
+            [361-1] => 81
+        )
+
+    [quantity] => 1
+    [product_id] => 63990
+    [variation_id] => 64019
+    [context] => frontend
+    [action] => yith_ywraq_action
+    [ywraq_action] => add_item
+    [wp_nonce] => 6c06bf3339
+    [yith-add-to-cart] => 63990
+    [add-to-cart] => 63990
+    [variations] => Array
+        (
+            [attribute_pa_coloris-caisson] => blanc-9010
+        )
+
+)
+
+[27-Jul-2024 11:06:16 UTC] YITH ADDON get_addon_value_on_cart value: 81 x Dossiers Suspendus
+[27-Jul-2024 11:06:16 UTC] request_quote_view key: 361-1
+[27-Jul-2024 11:06:16 UTC] request_quote_view value: product-3650-1
+[27-Jul-2024 11:06:16 UTC] request_quote_view addon_data_name: ds
+[27-Jul-2024 11:06:16 UTC] request_quote_view addon_value BEFORE get_addon_display_on_cart: 1 x Dossiers Suspendus, Lecture: Verticale, Type: Fond 15 [réf.DOSUSPA15OR]
+[27-Jul-2024 11:06:16 UTC] ENTERED get_addon_display_on_cart
+[27-Jul-2024 11:06:16 UTC] get_addon_display_on_cart value: 1 x Dossiers Suspendus, Lecture: Verticale, Type: Fond 15 [réf.DOSUSPA15OR]
+[27-Jul-2024 11:06:16 UTC] get_addon_display_on_cart sign: +
+[27-Jul-2024 11:06:16 UTC] get_addon_display_on_cart price: 19
+[27-Jul-2024 11:06:16 UTC] get_addon_display_on_cart regular_price: 19
+[27-Jul-2024 11:06:16 UTC] get_addon_display_on_cart sale_price: 0
+[27-Jul-2024 11:06:16 UTC] get_addon_display_on_cart display before filter: 1 x Dossiers Suspendus, Lecture: Verticale, Type: Fond 15 [réf.DOSUSPA15OR] (+<span class="woocommerce-Price-amount amount"><bdi>19.00&nbsp;<span class="woocommerce-Price-currencySymbol">&euro;</span></bdi></span>)
+[27-Jul-2024 11:06:16 UTC] get_addon_display_on_cart display after filter: 1 x Dossiers Suspendus, Lecture: Verticale, Type: Fond 15 [réf.DOSUSPA15OR] (+<span class="woocommerce-Price-amount amount"><bdi>19.00&nbsp;<span class="woocommerce-Price-currencySymbol">&euro;</span></bdi></span>)
+[27-Jul-2024 11:06:16 UTC] request_quote_view addon_value AFTER get_addon_display_on_cart: 1 x Dossiers Suspendus, Lecture: Verticale, Type: Fond 15 [réf.DOSUSPA15OR] (+<span class="woocommerce-Price-amount amount"><bdi>19.00&nbsp;<span class="woocommerce-Price-currencySymbol">&euro;</span></bdi></span>)
+[27-Jul-2024 11:06:16 UTC] BEFORE get_addon_display_on_cart correct_addon_value: 1 x Dossiers Suspendus, Lecture: Verticale, Type: Fond 15 [réf.DOSUSPA15OR]
+[27-Jul-2024 11:06:16 UTC] ENTERED get_addon_display_on_cart
+[27-Jul-2024 11:06:16 UTC] get_addon_display_on_cart value: 1 x Dossiers Suspendus, Lecture: Verticale, Type: Fond 15 [réf.DOSUSPA15OR] (+<span class="woocommerce-Price-amount amount"><bdi>19.00&nbsp;<span class="woocommerce-Price-currencySymbol">&euro;</span></bdi></span>)
+[27-Jul-2024 11:06:16 UTC] get_addon_display_on_cart sign: +
+[27-Jul-2024 11:06:16 UTC] get_addon_display_on_cart price: 19
+[27-Jul-2024 11:06:16 UTC] get_addon_display_on_cart regular_price: 19
+[27-Jul-2024 11:06:16 UTC] get_addon_display_on_cart sale_price: 0
+[27-Jul-2024 11:06:16 UTC] get_addon_display_on_cart display before filter: 1 x Dossiers Suspendus, Lecture: Verticale, Type: Fond 15 [réf.DOSUSPA15OR] (+<span class="woocommerce-Price-amount amount"><bdi>19.00&nbsp;<span class="woocommerce-Price-currencySymbol">&euro;</span></bdi></span>) (+<span class="woocommerce-Price-amount amount"><bdi>19.00&nbsp;<span class="woocommerce-Price-currencySymbol">&euro;</span></bdi></span>)
+[27-Jul-2024 11:06:16 UTC] get_addon_display_on_cart display after filter: 1 x Dossiers Suspendus, Lecture: Verticale, Type: Fond 15 [réf.DOSUSPA15OR] (+<span class="woocommerce-Price-amount amount"><bdi>19.00&nbsp;<span class="woocommerce-Price-currencySymbol">&euro;</span></bdi></span>) (+<span class="woocommerce-Price-amount amount"><bdi>19.00&nbsp;<span class="woocommerce-Price-currencySymbol">&euro;</span></bdi></span>)
+[27-Jul-2024 11:06:16 UTC] EXIT request_quote_view item_data: Array
+(
+    [0] => Array
+        (
+            [key] => Coloris
+            [value] => Blanc 9010
+        )
+
+    [1] => Array
+        (
+            [key] => ds
+            [value] => <div>1 x Dossiers Suspendus, Lecture: Verticale, Type: Fond V [réf.DOSUSPAVOR] ( <span class="woocommerce-Price-amount amount"><bdi>17.00&nbsp;<span class="woocommerce-Price-currencySymbol">&euro;</span></bdi></span>) ( <span class="woocommerce-Price-amount amount"><bdi>17.00&nbsp;<span class="woocommerce-Price-currencySymbol">&euro;</span></bdi></span>)</div><div>1 x Dossiers Suspendus, Lecture: Verticale, Type: Fond 15 [réf.DOSUSPA15OR] ( <span class="woocommerce-Price-amount amount"><bdi>19.00&nbsp;<span class="woocommerce-Price-currencySymbol">&euro;</span></bdi></span>) ( <span class="woocommerce-Price-amount amount"><bdi>19.00&nbsp;<span class="woocommerce-Price-currencySymbol">&euro;</span></bdi></span>)</div>
+        )
+
+)
+
+[27-Jul-2024 11:06:16 UTC] ENTERED request_quote_view
+[27-Jul-2024 11:06:16 UTC] FOR EACH index 0 : Array
+(
+    [361-0] => product-3648-1
+)
+
+[27-Jul-2024 11:06:16 UTC] request_quote_view cart_item['yith_wapo_product_qty']: Array
+(
+    [361-0] => 12
+    [361-1] => 21
+)
+
+[27-Jul-2024 11:06:16 UTC] request_quote_view cart_item['yith_wapo_qty_options']: 
+[27-Jul-2024 11:06:16 UTC] ENTERED get_addon_value_on_cart with addon_id: 361, option_id: 0, key: 361-0, original_value: product-3648-1
+[27-Jul-2024 11:06:16 UTC] YITH ADDON original_value product-3648-1
+[27-Jul-2024 11:06:16 UTC] YITH ADDON cart_item yith_wapo_qty_options 
+[27-Jul-2024 11:06:16 UTC] YITH ADDON cart_item yith_wapo_product_qty Array
+(
+    [361-0] => 12
+    [361-1] => 21
+)
+
+[27-Jul-2024 11:06:16 UTC] YITH ADDON key 361-0
+[27-Jul-2024 11:06:16 UTC] YITH ADDON option_product_qty 12
+[27-Jul-2024 11:06:16 UTC] YITH ADDON final value: 12 x Dossiers Suspendus
+[27-Jul-2024 11:06:16 UTC] YITH ADDON get_addon_value_on_cart addon_id: 361, option_id: 0, key: 361-0, original_value: product-3648-1
+[27-Jul-2024 11:06:16 UTC] YITH ADDON get_addon_value_on_cart cart_item: Array
+(
+    [yith_wapo_options] => Array
+        (
+            [0] => Array
+                (
+                    [361-0] => product-3648-1
+                )
+
+            [1] => Array
+                (
+                    [361-1] => product-3650-1
+                )
+
+        )
+
+    [attribute_pa_coloris-caisson] => anthracite-7016
+    [yith_wapo_product_id] => 63990
+    [yith_wapo_product_img] => 
+    [yith_wapo_is_single] => 1
+    [yith_wapo] => Array
+        (
+            [0] => Array
+                (
+                    [361-0] => product-3648-1
+                )
+
+            [1] => Array
+                (
+                    [361-1] => product-3650-1
+                )
+
+        )
+
+    [yith_wapo_product_qty] => Array
+        (
+            [361-0] => 12
+            [361-1] => 21
+        )
+
+    [quantity] => 1
+    [product_id] => 63990
+    [variation_id] => 64022
+    [context] => frontend
+    [action] => yith_ywraq_action
+    [ywraq_action] => add_item
+    [wp_nonce] => 6c06bf3339
+    [yith-add-to-cart] => 63990
+    [add-to-cart] => 63990
+    [variations] => Array
+        (
+            [attribute_pa_coloris-caisson] => anthracite-7016
+        )
+
+)
+
+[27-Jul-2024 11:06:16 UTC] YITH ADDON get_addon_value_on_cart value: 12 x Dossiers Suspendus
+[27-Jul-2024 11:06:16 UTC] request_quote_view key: 361-0
+[27-Jul-2024 11:06:16 UTC] request_quote_view value: product-3648-1
+[27-Jul-2024 11:06:16 UTC] request_quote_view addon_data_name: ds
+[27-Jul-2024 11:06:16 UTC] request_quote_view addon_value BEFORE get_addon_display_on_cart: 1 x Dossiers Suspendus, Lecture: Verticale, Type: Fond V [réf.DOSUSPAVOR]
+[27-Jul-2024 11:06:16 UTC] ENTERED get_addon_display_on_cart
+[27-Jul-2024 11:06:16 UTC] get_addon_display_on_cart value: 1 x Dossiers Suspendus, Lecture: Verticale, Type: Fond V [réf.DOSUSPAVOR]
+[27-Jul-2024 11:06:16 UTC] get_addon_display_on_cart sign: +
+[27-Jul-2024 11:06:16 UTC] get_addon_display_on_cart price: 17
+[27-Jul-2024 11:06:16 UTC] get_addon_display_on_cart regular_price: 17
+[27-Jul-2024 11:06:16 UTC] get_addon_display_on_cart sale_price: 0
+[27-Jul-2024 11:06:16 UTC] get_addon_display_on_cart display before filter: 1 x Dossiers Suspendus, Lecture: Verticale, Type: Fond V [réf.DOSUSPAVOR] (+<span class="woocommerce-Price-amount amount"><bdi>17.00&nbsp;<span class="woocommerce-Price-currencySymbol">&euro;</span></bdi></span>)
+[27-Jul-2024 11:06:16 UTC] get_addon_display_on_cart display after filter: 1 x Dossiers Suspendus, Lecture: Verticale, Type: Fond V [réf.DOSUSPAVOR] (+<span class="woocommerce-Price-amount amount"><bdi>17.00&nbsp;<span class="woocommerce-Price-currencySymbol">&euro;</span></bdi></span>)
+[27-Jul-2024 11:06:16 UTC] request_quote_view addon_value AFTER get_addon_display_on_cart: 1 x Dossiers Suspendus, Lecture: Verticale, Type: Fond V [réf.DOSUSPAVOR] (+<span class="woocommerce-Price-amount amount"><bdi>17.00&nbsp;<span class="woocommerce-Price-currencySymbol">&euro;</span></bdi></span>)
+[27-Jul-2024 11:06:16 UTC] BEFORE get_addon_display_on_cart correct_addon_value: 1 x Dossiers Suspendus, Lecture: Verticale, Type: Fond V [réf.DOSUSPAVOR]
+[27-Jul-2024 11:06:16 UTC] ENTERED get_addon_display_on_cart
+[27-Jul-2024 11:06:16 UTC] get_addon_display_on_cart value: 1 x Dossiers Suspendus, Lecture: Verticale, Type: Fond V [réf.DOSUSPAVOR] (+<span class="woocommerce-Price-amount amount"><bdi>17.00&nbsp;<span class="woocommerce-Price-currencySymbol">&euro;</span></bdi></span>)
+[27-Jul-2024 11:06:16 UTC] get_addon_display_on_cart sign: +
+[27-Jul-2024 11:06:16 UTC] get_addon_display_on_cart price: 17
+[27-Jul-2024 11:06:16 UTC] get_addon_display_on_cart regular_price: 17
+[27-Jul-2024 11:06:16 UTC] get_addon_display_on_cart sale_price: 0
+[27-Jul-2024 11:06:16 UTC] get_addon_display_on_cart display before filter: 1 x Dossiers Suspendus, Lecture: Verticale, Type: Fond V [réf.DOSUSPAVOR] (+<span class="woocommerce-Price-amount amount"><bdi>17.00&nbsp;<span class="woocommerce-Price-currencySymbol">&euro;</span></bdi></span>) (+<span class="woocommerce-Price-amount amount"><bdi>17.00&nbsp;<span class="woocommerce-Price-currencySymbol">&euro;</span></bdi></span>)
+[27-Jul-2024 11:06:16 UTC] get_addon_display_on_cart display after filter: 1 x Dossiers Suspendus, Lecture: Verticale, Type: Fond V [réf.DOSUSPAVOR] (+<span class="woocommerce-Price-amount amount"><bdi>17.00&nbsp;<span class="woocommerce-Price-currencySymbol">&euro;</span></bdi></span>) (+<span class="woocommerce-Price-amount amount"><bdi>17.00&nbsp;<span class="woocommerce-Price-currencySymbol">&euro;</span></bdi></span>)
+[27-Jul-2024 11:06:16 UTC] FOR EACH index 1 : Array
+(
+    [361-1] => product-3650-1
+)
+
+[27-Jul-2024 11:06:16 UTC] request_quote_view cart_item['yith_wapo_product_qty']: Array
+(
+    [361-0] => 12
+    [361-1] => 21
+)
+
+[27-Jul-2024 11:06:16 UTC] request_quote_view cart_item['yith_wapo_qty_options']: 
+[27-Jul-2024 11:06:16 UTC] ENTERED get_addon_value_on_cart with addon_id: 361, option_id: 1, key: 361-1, original_value: product-3650-1
+[27-Jul-2024 11:06:16 UTC] YITH ADDON original_value product-3650-1
+[27-Jul-2024 11:06:16 UTC] YITH ADDON cart_item yith_wapo_qty_options 
+[27-Jul-2024 11:06:16 UTC] YITH ADDON cart_item yith_wapo_product_qty Array
+(
+    [361-0] => 12
+    [361-1] => 21
+)
+
+[27-Jul-2024 11:06:16 UTC] YITH ADDON key 361-1
+[27-Jul-2024 11:06:16 UTC] YITH ADDON option_product_qty 21
+[27-Jul-2024 11:06:16 UTC] YITH ADDON final value: 21 x Dossiers Suspendus
+[27-Jul-2024 11:06:16 UTC] YITH ADDON get_addon_value_on_cart addon_id: 361, option_id: 1, key: 361-1, original_value: product-3650-1
+[27-Jul-2024 11:06:16 UTC] YITH ADDON get_addon_value_on_cart cart_item: Array
+(
+    [yith_wapo_options] => Array
+        (
+            [0] => Array
+                (
+                    [361-0] => product-3648-1
+                )
+
+            [1] => Array
+                (
+                    [361-1] => product-3650-1
+                )
+
+        )
+
+    [attribute_pa_coloris-caisson] => anthracite-7016
+    [yith_wapo_product_id] => 63990
+    [yith_wapo_product_img] => 
+    [yith_wapo_is_single] => 1
+    [yith_wapo] => Array
+        (
+            [0] => Array
+                (
+                    [361-0] => product-3648-1
+                )
+
+            [1] => Array
+                (
+                    [361-1] => product-3650-1
+                )
+
+        )
+
+    [yith_wapo_product_qty] => Array
+        (
+            [361-0] => 12
+            [361-1] => 21
+        )
+
+    [quantity] => 1
+    [product_id] => 63990
+    [variation_id] => 64022
+    [context] => frontend
+    [action] => yith_ywraq_action
+    [ywraq_action] => add_item
+    [wp_nonce] => 6c06bf3339
+    [yith-add-to-cart] => 63990
+    [add-to-cart] => 63990
+    [variations] => Array
+        (
+            [attribute_pa_coloris-caisson] => anthracite-7016
+        )
+
+)
+
+[27-Jul-2024 11:06:16 UTC] YITH ADDON get_addon_value_on_cart value: 21 x Dossiers Suspendus
+[27-Jul-2024 11:06:16 UTC] request_quote_view key: 361-1
+[27-Jul-2024 11:06:16 UTC] request_quote_view value: product-3650-1
+[27-Jul-2024 11:06:16 UTC] request_quote_view addon_data_name: ds
+[27-Jul-2024 11:06:16 UTC] request_quote_view addon_value BEFORE get_addon_display_on_cart: 1 x Dossiers Suspendus, Lecture: Verticale, Type: Fond 15 [réf.DOSUSPA15OR]
+[27-Jul-2024 11:06:16 UTC] ENTERED get_addon_display_on_cart
+[27-Jul-2024 11:06:16 UTC] get_addon_display_on_cart value: 1 x Dossiers Suspendus, Lecture: Verticale, Type: Fond 15 [réf.DOSUSPA15OR]
+[27-Jul-2024 11:06:16 UTC] get_addon_display_on_cart sign: +
+[27-Jul-2024 11:06:16 UTC] get_addon_display_on_cart price: 19
+[27-Jul-2024 11:06:16 UTC] get_addon_display_on_cart regular_price: 19
+[27-Jul-2024 11:06:16 UTC] get_addon_display_on_cart sale_price: 0
+[27-Jul-2024 11:06:16 UTC] get_addon_display_on_cart display before filter: 1 x Dossiers Suspendus, Lecture: Verticale, Type: Fond 15 [réf.DOSUSPA15OR] (+<span class="woocommerce-Price-amount amount"><bdi>19.00&nbsp;<span class="woocommerce-Price-currencySymbol">&euro;</span></bdi></span>)
+[27-Jul-2024 11:06:16 UTC] get_addon_display_on_cart display after filter: 1 x Dossiers Suspendus, Lecture: Verticale, Type: Fond 15 [réf.DOSUSPA15OR] (+<span class="woocommerce-Price-amount amount"><bdi>19.00&nbsp;<span class="woocommerce-Price-currencySymbol">&euro;</span></bdi></span>)
+[27-Jul-2024 11:06:16 UTC] request_quote_view addon_value AFTER get_addon_display_on_cart: 1 x Dossiers Suspendus, Lecture: Verticale, Type: Fond 15 [réf.DOSUSPA15OR] (+<span class="woocommerce-Price-amount amount"><bdi>19.00&nbsp;<span class="woocommerce-Price-currencySymbol">&euro;</span></bdi></span>)
+[27-Jul-2024 11:06:16 UTC] BEFORE get_addon_display_on_cart correct_addon_value: 1 x Dossiers Suspendus, Lecture: Verticale, Type: Fond 15 [réf.DOSUSPA15OR]
+[27-Jul-2024 11:06:16 UTC] ENTERED get_addon_display_on_cart
+[27-Jul-2024 11:06:16 UTC] get_addon_display_on_cart value: 1 x Dossiers Suspendus, Lecture: Verticale, Type: Fond 15 [réf.DOSUSPA15OR] (+<span class="woocommerce-Price-amount amount"><bdi>19.00&nbsp;<span class="woocommerce-Price-currencySymbol">&euro;</span></bdi></span>)
+[27-Jul-2024 11:06:16 UTC] get_addon_display_on_cart sign: +
+[27-Jul-2024 11:06:16 UTC] get_addon_display_on_cart price: 19
+[27-Jul-2024 11:06:16 UTC] get_addon_display_on_cart regular_price: 19
+[27-Jul-2024 11:06:16 UTC] get_addon_display_on_cart sale_price: 0
+[27-Jul-2024 11:06:16 UTC] get_addon_display_on_cart display before filter: 1 x Dossiers Suspendus, Lecture: Verticale, Type: Fond 15 [réf.DOSUSPA15OR] (+<span class="woocommerce-Price-amount amount"><bdi>19.00&nbsp;<span class="woocommerce-Price-currencySymbol">&euro;</span></bdi></span>) (+<span class="woocommerce-Price-amount amount"><bdi>19.00&nbsp;<span class="woocommerce-Price-currencySymbol">&euro;</span></bdi></span>)
+[27-Jul-2024 11:06:16 UTC] get_addon_display_on_cart display after filter: 1 x Dossiers Suspendus, Lecture: Verticale, Type: Fond 15 [réf.DOSUSPA15OR] (+<span class="woocommerce-Price-amount amount"><bdi>19.00&nbsp;<span class="woocommerce-Price-currencySymbol">&euro;</span></bdi></span>) (+<span class="woocommerce-Price-amount amount"><bdi>19.00&nbsp;<span class="woocommerce-Price-currencySymbol">&euro;</span></bdi></span>)
+[27-Jul-2024 11:06:16 UTC] EXIT request_quote_view item_data: Array
+(
+    [0] => Array
+        (
+            [key] => Coloris
+            [value] => Anthracite 7016
+        )
+
+    [1] => Array
+        (
+            [key] => ds
+            [value] => <div>1 x Dossiers Suspendus, Lecture: Verticale, Type: Fond V [réf.DOSUSPAVOR] ( <span class="woocommerce-Price-amount amount"><bdi>17.00&nbsp;<span class="woocommerce-Price-currencySymbol">&euro;</span></bdi></span>) ( <span class="woocommerce-Price-amount amount"><bdi>17.00&nbsp;<span class="woocommerce-Price-currencySymbol">&euro;</span></bdi></span>)</div><div>1 x Dossiers Suspendus, Lecture: Verticale, Type: Fond 15 [réf.DOSUSPA15OR] ( <span class="woocommerce-Price-amount amount"><bdi>19.00&nbsp;<span class="woocommerce-Price-currencySymbol">&euro;</span></bdi></span>) ( <span class="woocommerce-Price-amount amount"><bdi>19.00&nbsp;<span class="woocommerce-Price-currencySymbol">&euro;</span></bdi></span>)</div>
+        )
+
+)
+
+[27-Jul-2024 11:06:18 UTC] ENTERED request_quote_view
+[27-Jul-2024 11:06:18 UTC] FOR EACH index 0 : Array
+(
+    [361-0] => product-3648-1
+)
+
+[27-Jul-2024 11:06:18 UTC] request_quote_view cart_item['yith_wapo_product_qty']: Array
+(
+    [361-0] => 188
+    [361-1] => 81
+)
+
+[27-Jul-2024 11:06:18 UTC] request_quote_view cart_item['yith_wapo_qty_options']: 
+[27-Jul-2024 11:06:18 UTC] ENTERED get_addon_value_on_cart with addon_id: 361, option_id: 0, key: 361-0, original_value: product-3648-1
+[27-Jul-2024 11:06:18 UTC] YITH ADDON original_value product-3648-1
+[27-Jul-2024 11:06:18 UTC] YITH ADDON cart_item yith_wapo_qty_options 
+[27-Jul-2024 11:06:18 UTC] YITH ADDON cart_item yith_wapo_product_qty Array
+(
+    [361-0] => 188
+    [361-1] => 81
+)
+
+[27-Jul-2024 11:06:18 UTC] YITH ADDON key 361-0
+[27-Jul-2024 11:06:18 UTC] YITH ADDON option_product_qty 188
+[27-Jul-2024 11:06:18 UTC] YITH ADDON final value: 188 x Dossiers Suspendus
+[27-Jul-2024 11:06:18 UTC] YITH ADDON get_addon_value_on_cart addon_id: 361, option_id: 0, key: 361-0, original_value: product-3648-1
+[27-Jul-2024 11:06:18 UTC] YITH ADDON get_addon_value_on_cart cart_item: Array
+(
+    [yith_wapo_options] => Array
+        (
+            [0] => Array
+                (
+                    [361-0] => product-3648-1
+                )
+
+            [1] => Array
+                (
+                    [361-1] => product-3650-1
+                )
+
+        )
+
+    [attribute_pa_coloris-caisson] => blanc-9010
+    [yith_wapo_product_id] => 63990
+    [yith_wapo_product_img] => 
+    [yith_wapo_is_single] => 1
+    [yith_wapo] => Array
+        (
+            [0] => Array
+                (
+                    [361-0] => product-3648-1
+                )
+
+            [1] => Array
+                (
+                    [361-1] => product-3650-1
+                )
+
+        )
+
+    [yith_wapo_product_qty] => Array
+        (
+            [361-0] => 188
+            [361-1] => 81
+        )
+
+    [quantity] => 1
+    [product_id] => 63990
+    [variation_id] => 64019
+    [context] => frontend
+    [action] => yith_ywraq_action
+    [ywraq_action] => add_item
+    [wp_nonce] => 6c06bf3339
+    [yith-add-to-cart] => 63990
+    [add-to-cart] => 63990
+    [variations] => Array
+        (
+            [attribute_pa_coloris-caisson] => blanc-9010
+        )
+
+)
+
+[27-Jul-2024 11:06:18 UTC] YITH ADDON get_addon_value_on_cart value: 188 x Dossiers Suspendus
+[27-Jul-2024 11:06:18 UTC] request_quote_view key: 361-0
+[27-Jul-2024 11:06:18 UTC] request_quote_view value: product-3648-1
+[27-Jul-2024 11:06:18 UTC] request_quote_view addon_data_name: ds
+[27-Jul-2024 11:06:18 UTC] request_quote_view addon_value BEFORE get_addon_display_on_cart: 1 x Dossiers Suspendus, Lecture: Verticale, Type: Fond V [réf.DOSUSPAVOR]
+[27-Jul-2024 11:06:18 UTC] ENTERED get_addon_display_on_cart
+[27-Jul-2024 11:06:18 UTC] get_addon_display_on_cart value: 1 x Dossiers Suspendus, Lecture: Verticale, Type: Fond V [réf.DOSUSPAVOR]
+[27-Jul-2024 11:06:18 UTC] get_addon_display_on_cart sign: +
+[27-Jul-2024 11:06:18 UTC] get_addon_display_on_cart price: 17
+[27-Jul-2024 11:06:18 UTC] get_addon_display_on_cart regular_price: 17
+[27-Jul-2024 11:06:18 UTC] get_addon_display_on_cart sale_price: 0
+[27-Jul-2024 11:06:18 UTC] get_addon_display_on_cart display before filter: 1 x Dossiers Suspendus, Lecture: Verticale, Type: Fond V [réf.DOSUSPAVOR] (+<span class="woocommerce-Price-amount amount"><bdi>17.00&nbsp;<span class="woocommerce-Price-currencySymbol">&euro;</span></bdi></span>)
+[27-Jul-2024 11:06:18 UTC] get_addon_display_on_cart display after filter: 1 x Dossiers Suspendus, Lecture: Verticale, Type: Fond V [réf.DOSUSPAVOR] (+<span class="woocommerce-Price-amount amount"><bdi>17.00&nbsp;<span class="woocommerce-Price-currencySymbol">&euro;</span></bdi></span>)
+[27-Jul-2024 11:06:18 UTC] request_quote_view addon_value AFTER get_addon_display_on_cart: 1 x Dossiers Suspendus, Lecture: Verticale, Type: Fond V [réf.DOSUSPAVOR] (+<span class="woocommerce-Price-amount amount"><bdi>17.00&nbsp;<span class="woocommerce-Price-currencySymbol">&euro;</span></bdi></span>)
+[27-Jul-2024 11:06:18 UTC] BEFORE get_addon_display_on_cart correct_addon_value: 1 x Dossiers Suspendus, Lecture: Verticale, Type: Fond V [réf.DOSUSPAVOR]
+[27-Jul-2024 11:06:18 UTC] ENTERED get_addon_display_on_cart
+[27-Jul-2024 11:06:18 UTC] get_addon_display_on_cart value: 1 x Dossiers Suspendus, Lecture: Verticale, Type: Fond V [réf.DOSUSPAVOR] (+<span class="woocommerce-Price-amount amount"><bdi>17.00&nbsp;<span class="woocommerce-Price-currencySymbol">&euro;</span></bdi></span>)
+[27-Jul-2024 11:06:18 UTC] get_addon_display_on_cart sign: +
+[27-Jul-2024 11:06:18 UTC] get_addon_display_on_cart price: 17
+[27-Jul-2024 11:06:18 UTC] get_addon_display_on_cart regular_price: 17
+[27-Jul-2024 11:06:18 UTC] get_addon_display_on_cart sale_price: 0
+[27-Jul-2024 11:06:18 UTC] get_addon_display_on_cart display before filter: 1 x Dossiers Suspendus, Lecture: Verticale, Type: Fond V [réf.DOSUSPAVOR] (+<span class="woocommerce-Price-amount amount"><bdi>17.00&nbsp;<span class="woocommerce-Price-currencySymbol">&euro;</span></bdi></span>) (+<span class="woocommerce-Price-amount amount"><bdi>17.00&nbsp;<span class="woocommerce-Price-currencySymbol">&euro;</span></bdi></span>)
+[27-Jul-2024 11:06:18 UTC] get_addon_display_on_cart display after filter: 1 x Dossiers Suspendus, Lecture: Verticale, Type: Fond V [réf.DOSUSPAVOR] (+<span class="woocommerce-Price-amount amount"><bdi>17.00&nbsp;<span class="woocommerce-Price-currencySymbol">&euro;</span></bdi></span>) (+<span class="woocommerce-Price-amount amount"><bdi>17.00&nbsp;<span class="woocommerce-Price-currencySymbol">&euro;</span></bdi></span>)
+[27-Jul-2024 11:06:18 UTC] FOR EACH index 1 : Array
+(
+    [361-1] => product-3650-1
+)
+
+[27-Jul-2024 11:06:18 UTC] request_quote_view cart_item['yith_wapo_product_qty']: Array
+(
+    [361-0] => 188
+    [361-1] => 81
+)
+
+[27-Jul-2024 11:06:18 UTC] request_quote_view cart_item['yith_wapo_qty_options']: 
+[27-Jul-2024 11:06:18 UTC] ENTERED get_addon_value_on_cart with addon_id: 361, option_id: 1, key: 361-1, original_value: product-3650-1
+[27-Jul-2024 11:06:18 UTC] YITH ADDON original_value product-3650-1
+[27-Jul-2024 11:06:18 UTC] YITH ADDON cart_item yith_wapo_qty_options 
+[27-Jul-2024 11:06:18 UTC] YITH ADDON cart_item yith_wapo_product_qty Array
+(
+    [361-0] => 188
+    [361-1] => 81
+)
+
+[27-Jul-2024 11:06:18 UTC] YITH ADDON key 361-1
+[27-Jul-2024 11:06:18 UTC] YITH ADDON option_product_qty 81
+[27-Jul-2024 11:06:18 UTC] YITH ADDON final value: 81 x Dossiers Suspendus
+[27-Jul-2024 11:06:18 UTC] YITH ADDON get_addon_value_on_cart addon_id: 361, option_id: 1, key: 361-1, original_value: product-3650-1
+[27-Jul-2024 11:06:18 UTC] YITH ADDON get_addon_value_on_cart cart_item: Array
+(
+    [yith_wapo_options] => Array
+        (
+            [0] => Array
+                (
+                    [361-0] => product-3648-1
+                )
+
+            [1] => Array
+                (
+                    [361-1] => product-3650-1
+                )
+
+        )
+
+    [attribute_pa_coloris-caisson] => blanc-9010
+    [yith_wapo_product_id] => 63990
+    [yith_wapo_product_img] => 
+    [yith_wapo_is_single] => 1
+    [yith_wapo] => Array
+        (
+            [0] => Array
+                (
+                    [361-0] => product-3648-1
+                )
+
+            [1] => Array
+                (
+                    [361-1] => product-3650-1
+                )
+
+        )
+
+    [yith_wapo_product_qty] => Array
+        (
+            [361-0] => 188
+            [361-1] => 81
+        )
+
+    [quantity] => 1
+    [product_id] => 63990
+    [variation_id] => 64019
+    [context] => frontend
+    [action] => yith_ywraq_action
+    [ywraq_action] => add_item
+    [wp_nonce] => 6c06bf3339
+    [yith-add-to-cart] => 63990
+    [add-to-cart] => 63990
+    [variations] => Array
+        (
+            [attribute_pa_coloris-caisson] => blanc-9010
+        )
+
+)
+
+[27-Jul-2024 11:06:18 UTC] YITH ADDON get_addon_value_on_cart value: 81 x Dossiers Suspendus
+[27-Jul-2024 11:06:18 UTC] request_quote_view key: 361-1
+[27-Jul-2024 11:06:18 UTC] request_quote_view value: product-3650-1
+[27-Jul-2024 11:06:18 UTC] request_quote_view addon_data_name: ds
+[27-Jul-2024 11:06:18 UTC] request_quote_view addon_value BEFORE get_addon_display_on_cart: 1 x Dossiers Suspendus, Lecture: Verticale, Type: Fond 15 [réf.DOSUSPA15OR]
+[27-Jul-2024 11:06:18 UTC] ENTERED get_addon_display_on_cart
+[27-Jul-2024 11:06:18 UTC] get_addon_display_on_cart value: 1 x Dossiers Suspendus, Lecture: Verticale, Type: Fond 15 [réf.DOSUSPA15OR]
+[27-Jul-2024 11:06:18 UTC] get_addon_display_on_cart sign: +
+[27-Jul-2024 11:06:18 UTC] get_addon_display_on_cart price: 19
+[27-Jul-2024 11:06:18 UTC] get_addon_display_on_cart regular_price: 19
+[27-Jul-2024 11:06:18 UTC] get_addon_display_on_cart sale_price: 0
+[27-Jul-2024 11:06:18 UTC] get_addon_display_on_cart display before filter: 1 x Dossiers Suspendus, Lecture: Verticale, Type: Fond 15 [réf.DOSUSPA15OR] (+<span class="woocommerce-Price-amount amount"><bdi>19.00&nbsp;<span class="woocommerce-Price-currencySymbol">&euro;</span></bdi></span>)
+[27-Jul-2024 11:06:18 UTC] get_addon_display_on_cart display after filter: 1 x Dossiers Suspendus, Lecture: Verticale, Type: Fond 15 [réf.DOSUSPA15OR] (+<span class="woocommerce-Price-amount amount"><bdi>19.00&nbsp;<span class="woocommerce-Price-currencySymbol">&euro;</span></bdi></span>)
+[27-Jul-2024 11:06:18 UTC] request_quote_view addon_value AFTER get_addon_display_on_cart: 1 x Dossiers Suspendus, Lecture: Verticale, Type: Fond 15 [réf.DOSUSPA15OR] (+<span class="woocommerce-Price-amount amount"><bdi>19.00&nbsp;<span class="woocommerce-Price-currencySymbol">&euro;</span></bdi></span>)
+[27-Jul-2024 11:06:18 UTC] BEFORE get_addon_display_on_cart correct_addon_value: 1 x Dossiers Suspendus, Lecture: Verticale, Type: Fond 15 [réf.DOSUSPA15OR]
+[27-Jul-2024 11:06:18 UTC] ENTERED get_addon_display_on_cart
+[27-Jul-2024 11:06:18 UTC] get_addon_display_on_cart value: 1 x Dossiers Suspendus, Lecture: Verticale, Type: Fond 15 [réf.DOSUSPA15OR] (+<span class="woocommerce-Price-amount amount"><bdi>19.00&nbsp;<span class="woocommerce-Price-currencySymbol">&euro;</span></bdi></span>)
+[27-Jul-2024 11:06:18 UTC] get_addon_display_on_cart sign: +
+[27-Jul-2024 11:06:18 UTC] get_addon_display_on_cart price: 19
+[27-Jul-2024 11:06:18 UTC] get_addon_display_on_cart regular_price: 19
+[27-Jul-2024 11:06:18 UTC] get_addon_display_on_cart sale_price: 0
+[27-Jul-2024 11:06:18 UTC] get_addon_display_on_cart display before filter: 1 x Dossiers Suspendus, Lecture: Verticale, Type: Fond 15 [réf.DOSUSPA15OR] (+<span class="woocommerce-Price-amount amount"><bdi>19.00&nbsp;<span class="woocommerce-Price-currencySymbol">&euro;</span></bdi></span>) (+<span class="woocommerce-Price-amount amount"><bdi>19.00&nbsp;<span class="woocommerce-Price-currencySymbol">&euro;</span></bdi></span>)
+[27-Jul-2024 11:06:18 UTC] get_addon_display_on_cart display after filter: 1 x Dossiers Suspendus, Lecture: Verticale, Type: Fond 15 [réf.DOSUSPA15OR] (+<span class="woocommerce-Price-amount amount"><bdi>19.00&nbsp;<span class="woocommerce-Price-currencySymbol">&euro;</span></bdi></span>) (+<span class="woocommerce-Price-amount amount"><bdi>19.00&nbsp;<span class="woocommerce-Price-currencySymbol">&euro;</span></bdi></span>)
+[27-Jul-2024 11:06:18 UTC] EXIT request_quote_view item_data: Array
+(
+    [0] => Array
+        (
+            [key] => Coloris
+            [value] => Blanc 9010
+        )
+
+    [1] => Array
+        (
+            [key] => ds
+            [value] => <div>1 x Dossiers Suspendus, Lecture: Verticale, Type: Fond V [réf.DOSUSPAVOR] ( <span class="woocommerce-Price-amount amount"><bdi>17.00&nbsp;<span class="woocommerce-Price-currencySymbol">&euro;</span></bdi></span>) ( <span class="woocommerce-Price-amount amount"><bdi>17.00&nbsp;<span class="woocommerce-Price-currencySymbol">&euro;</span></bdi></span>)</div><div>1 x Dossiers Suspendus, Lecture: Verticale, Type: Fond 15 [réf.DOSUSPA15OR] ( <span class="woocommerce-Price-amount amount"><bdi>19.00&nbsp;<span class="woocommerce-Price-currencySymbol">&euro;</span></bdi></span>) ( <span class="woocommerce-Price-amount amount"><bdi>19.00&nbsp;<span class="woocommerce-Price-currencySymbol">&euro;</span></bdi></span>)</div>
+        )
+
+)
+
+[27-Jul-2024 11:06:18 UTC] ENTERED request_quote_view
+[27-Jul-2024 11:06:18 UTC] FOR EACH index 0 : Array
+(
+    [361-0] => product-3648-1
+)
+
+[27-Jul-2024 11:06:18 UTC] request_quote_view cart_item['yith_wapo_product_qty']: Array
+(
+    [361-0] => 12
+    [361-1] => 21
+)
+
+[27-Jul-2024 11:06:18 UTC] request_quote_view cart_item['yith_wapo_qty_options']: 
+[27-Jul-2024 11:06:18 UTC] ENTERED get_addon_value_on_cart with addon_id: 361, option_id: 0, key: 361-0, original_value: product-3648-1
+[27-Jul-2024 11:06:18 UTC] YITH ADDON original_value product-3648-1
+[27-Jul-2024 11:06:18 UTC] YITH ADDON cart_item yith_wapo_qty_options 
+[27-Jul-2024 11:06:18 UTC] YITH ADDON cart_item yith_wapo_product_qty Array
+(
+    [361-0] => 12
+    [361-1] => 21
+)
+
+[27-Jul-2024 11:06:18 UTC] YITH ADDON key 361-0
+[27-Jul-2024 11:06:18 UTC] YITH ADDON option_product_qty 12
+[27-Jul-2024 11:06:18 UTC] YITH ADDON final value: 12 x Dossiers Suspendus
+[27-Jul-2024 11:06:18 UTC] YITH ADDON get_addon_value_on_cart addon_id: 361, option_id: 0, key: 361-0, original_value: product-3648-1
+[27-Jul-2024 11:06:18 UTC] YITH ADDON get_addon_value_on_cart cart_item: Array
+(
+    [yith_wapo_options] => Array
+        (
+            [0] => Array
+                (
+                    [361-0] => product-3648-1
+                )
+
+            [1] => Array
+                (
+                    [361-1] => product-3650-1
+                )
+
+        )
+
+    [attribute_pa_coloris-caisson] => anthracite-7016
+    [yith_wapo_product_id] => 63990
+    [yith_wapo_product_img] => 
+    [yith_wapo_is_single] => 1
+    [yith_wapo] => Array
+        (
+            [0] => Array
+                (
+                    [361-0] => product-3648-1
+                )
+
+            [1] => Array
+                (
+                    [361-1] => product-3650-1
+                )
+
+        )
+
+    [yith_wapo_product_qty] => Array
+        (
+            [361-0] => 12
+            [361-1] => 21
+        )
+
+    [quantity] => 1
+    [product_id] => 63990
+    [variation_id] => 64022
+    [context] => frontend
+    [action] => yith_ywraq_action
+    [ywraq_action] => add_item
+    [wp_nonce] => 6c06bf3339
+    [yith-add-to-cart] => 63990
+    [add-to-cart] => 63990
+    [variations] => Array
+        (
+            [attribute_pa_coloris-caisson] => anthracite-7016
+        )
+
+)
+
+[27-Jul-2024 11:06:18 UTC] YITH ADDON get_addon_value_on_cart value: 12 x Dossiers Suspendus
+[27-Jul-2024 11:06:18 UTC] request_quote_view key: 361-0
+[27-Jul-2024 11:06:18 UTC] request_quote_view value: product-3648-1
+[27-Jul-2024 11:06:18 UTC] request_quote_view addon_data_name: ds
+[27-Jul-2024 11:06:18 UTC] request_quote_view addon_value BEFORE get_addon_display_on_cart: 1 x Dossiers Suspendus, Lecture: Verticale, Type: Fond V [réf.DOSUSPAVOR]
+[27-Jul-2024 11:06:18 UTC] ENTERED get_addon_display_on_cart
+[27-Jul-2024 11:06:18 UTC] get_addon_display_on_cart value: 1 x Dossiers Suspendus, Lecture: Verticale, Type: Fond V [réf.DOSUSPAVOR]
+[27-Jul-2024 11:06:18 UTC] get_addon_display_on_cart sign: +
+[27-Jul-2024 11:06:18 UTC] get_addon_display_on_cart price: 17
+[27-Jul-2024 11:06:18 UTC] get_addon_display_on_cart regular_price: 17
+[27-Jul-2024 11:06:18 UTC] get_addon_display_on_cart sale_price: 0
+[27-Jul-2024 11:06:18 UTC] get_addon_display_on_cart display before filter: 1 x Dossiers Suspendus, Lecture: Verticale, Type: Fond V [réf.DOSUSPAVOR] (+<span class="woocommerce-Price-amount amount"><bdi>17.00&nbsp;<span class="woocommerce-Price-currencySymbol">&euro;</span></bdi></span>)
+[27-Jul-2024 11:06:18 UTC] get_addon_display_on_cart display after filter: 1 x Dossiers Suspendus, Lecture: Verticale, Type: Fond V [réf.DOSUSPAVOR] (+<span class="woocommerce-Price-amount amount"><bdi>17.00&nbsp;<span class="woocommerce-Price-currencySymbol">&euro;</span></bdi></span>)
+[27-Jul-2024 11:06:18 UTC] request_quote_view addon_value AFTER get_addon_display_on_cart: 1 x Dossiers Suspendus, Lecture: Verticale, Type: Fond V [réf.DOSUSPAVOR] (+<span class="woocommerce-Price-amount amount"><bdi>17.00&nbsp;<span class="woocommerce-Price-currencySymbol">&euro;</span></bdi></span>)
+[27-Jul-2024 11:06:18 UTC] BEFORE get_addon_display_on_cart correct_addon_value: 1 x Dossiers Suspendus, Lecture: Verticale, Type: Fond V [réf.DOSUSPAVOR]
+[27-Jul-2024 11:06:18 UTC] ENTERED get_addon_display_on_cart
+[27-Jul-2024 11:06:18 UTC] get_addon_display_on_cart value: 1 x Dossiers Suspendus, Lecture: Verticale, Type: Fond V [réf.DOSUSPAVOR] (+<span class="woocommerce-Price-amount amount"><bdi>17.00&nbsp;<span class="woocommerce-Price-currencySymbol">&euro;</span></bdi></span>)
+[27-Jul-2024 11:06:18 UTC] get_addon_display_on_cart sign: +
+[27-Jul-2024 11:06:18 UTC] get_addon_display_on_cart price: 17
+[27-Jul-2024 11:06:18 UTC] get_addon_display_on_cart regular_price: 17
+[27-Jul-2024 11:06:18 UTC] get_addon_display_on_cart sale_price: 0
+[27-Jul-2024 11:06:18 UTC] get_addon_display_on_cart display before filter: 1 x Dossiers Suspendus, Lecture: Verticale, Type: Fond V [réf.DOSUSPAVOR] (+<span class="woocommerce-Price-amount amount"><bdi>17.00&nbsp;<span class="woocommerce-Price-currencySymbol">&euro;</span></bdi></span>) (+<span class="woocommerce-Price-amount amount"><bdi>17.00&nbsp;<span class="woocommerce-Price-currencySymbol">&euro;</span></bdi></span>)
+[27-Jul-2024 11:06:18 UTC] get_addon_display_on_cart display after filter: 1 x Dossiers Suspendus, Lecture: Verticale, Type: Fond V [réf.DOSUSPAVOR] (+<span class="woocommerce-Price-amount amount"><bdi>17.00&nbsp;<span class="woocommerce-Price-currencySymbol">&euro;</span></bdi></span>) (+<span class="woocommerce-Price-amount amount"><bdi>17.00&nbsp;<span class="woocommerce-Price-currencySymbol">&euro;</span></bdi></span>)
+[27-Jul-2024 11:06:18 UTC] FOR EACH index 1 : Array
+(
+    [361-1] => product-3650-1
+)
+
+[27-Jul-2024 11:06:18 UTC] request_quote_view cart_item['yith_wapo_product_qty']: Array
+(
+    [361-0] => 12
+    [361-1] => 21
+)
+
+[27-Jul-2024 11:06:18 UTC] request_quote_view cart_item['yith_wapo_qty_options']: 
+[27-Jul-2024 11:06:18 UTC] ENTERED get_addon_value_on_cart with addon_id: 361, option_id: 1, key: 361-1, original_value: product-3650-1
+[27-Jul-2024 11:06:18 UTC] YITH ADDON original_value product-3650-1
+[27-Jul-2024 11:06:18 UTC] YITH ADDON cart_item yith_wapo_qty_options 
+[27-Jul-2024 11:06:18 UTC] YITH ADDON cart_item yith_wapo_product_qty Array
+(
+    [361-0] => 12
+    [361-1] => 21
+)
+
+[27-Jul-2024 11:06:18 UTC] YITH ADDON key 361-1
+[27-Jul-2024 11:06:18 UTC] YITH ADDON option_product_qty 21
+[27-Jul-2024 11:06:18 UTC] YITH ADDON final value: 21 x Dossiers Suspendus
+[27-Jul-2024 11:06:18 UTC] YITH ADDON get_addon_value_on_cart addon_id: 361, option_id: 1, key: 361-1, original_value: product-3650-1
+[27-Jul-2024 11:06:18 UTC] YITH ADDON get_addon_value_on_cart cart_item: Array
+(
+    [yith_wapo_options] => Array
+        (
+            [0] => Array
+                (
+                    [361-0] => product-3648-1
+                )
+
+            [1] => Array
+                (
+                    [361-1] => product-3650-1
+                )
+
+        )
+
+    [attribute_pa_coloris-caisson] => anthracite-7016
+    [yith_wapo_product_id] => 63990
+    [yith_wapo_product_img] => 
+    [yith_wapo_is_single] => 1
+    [yith_wapo] => Array
+        (
+            [0] => Array
+                (
+                    [361-0] => product-3648-1
+                )
+
+            [1] => Array
+                (
+                    [361-1] => product-3650-1
+                )
+
+        )
+
+    [yith_wapo_product_qty] => Array
+        (
+            [361-0] => 12
+            [361-1] => 21
+        )
+
+    [quantity] => 1
+    [product_id] => 63990
+    [variation_id] => 64022
+    [context] => frontend
+    [action] => yith_ywraq_action
+    [ywraq_action] => add_item
+    [wp_nonce] => 6c06bf3339
+    [yith-add-to-cart] => 63990
+    [add-to-cart] => 63990
+    [variations] => Array
+        (
+            [attribute_pa_coloris-caisson] => anthracite-7016
+        )
+
+)
+
+[27-Jul-2024 11:06:18 UTC] YITH ADDON get_addon_value_on_cart value: 21 x Dossiers Suspendus
+[27-Jul-2024 11:06:18 UTC] request_quote_view key: 361-1
+[27-Jul-2024 11:06:18 UTC] request_quote_view value: product-3650-1
+[27-Jul-2024 11:06:18 UTC] request_quote_view addon_data_name: ds
+[27-Jul-2024 11:06:18 UTC] request_quote_view addon_value BEFORE get_addon_display_on_cart: 1 x Dossiers Suspendus, Lecture: Verticale, Type: Fond 15 [réf.DOSUSPA15OR]
+[27-Jul-2024 11:06:18 UTC] ENTERED get_addon_display_on_cart
+[27-Jul-2024 11:06:18 UTC] get_addon_display_on_cart value: 1 x Dossiers Suspendus, Lecture: Verticale, Type: Fond 15 [réf.DOSUSPA15OR]
+[27-Jul-2024 11:06:18 UTC] get_addon_display_on_cart sign: +
+[27-Jul-2024 11:06:18 UTC] get_addon_display_on_cart price: 19
+[27-Jul-2024 11:06:18 UTC] get_addon_display_on_cart regular_price: 19
+[27-Jul-2024 11:06:18 UTC] get_addon_display_on_cart sale_price: 0
+[27-Jul-2024 11:06:18 UTC] get_addon_display_on_cart display before filter: 1 x Dossiers Suspendus, Lecture: Verticale, Type: Fond 15 [réf.DOSUSPA15OR] (+<span class="woocommerce-Price-amount amount"><bdi>19.00&nbsp;<span class="woocommerce-Price-currencySymbol">&euro;</span></bdi></span>)
+[27-Jul-2024 11:06:18 UTC] get_addon_display_on_cart display after filter: 1 x Dossiers Suspendus, Lecture: Verticale, Type: Fond 15 [réf.DOSUSPA15OR] (+<span class="woocommerce-Price-amount amount"><bdi>19.00&nbsp;<span class="woocommerce-Price-currencySymbol">&euro;</span></bdi></span>)
+[27-Jul-2024 11:06:18 UTC] request_quote_view addon_value AFTER get_addon_display_on_cart: 1 x Dossiers Suspendus, Lecture: Verticale, Type: Fond 15 [réf.DOSUSPA15OR] (+<span class="woocommerce-Price-amount amount"><bdi>19.00&nbsp;<span class="woocommerce-Price-currencySymbol">&euro;</span></bdi></span>)
+[27-Jul-2024 11:06:18 UTC] BEFORE get_addon_display_on_cart correct_addon_value: 1 x Dossiers Suspendus, Lecture: Verticale, Type: Fond 15 [réf.DOSUSPA15OR]
+[27-Jul-2024 11:06:18 UTC] ENTERED get_addon_display_on_cart
+[27-Jul-2024 11:06:18 UTC] get_addon_display_on_cart value: 1 x Dossiers Suspendus, Lecture: Verticale, Type: Fond 15 [réf.DOSUSPA15OR] (+<span class="woocommerce-Price-amount amount"><bdi>19.00&nbsp;<span class="woocommerce-Price-currencySymbol">&euro;</span></bdi></span>)
+[27-Jul-2024 11:06:18 UTC] get_addon_display_on_cart sign: +
+[27-Jul-2024 11:06:18 UTC] get_addon_display_on_cart price: 19
+[27-Jul-2024 11:06:18 UTC] get_addon_display_on_cart regular_price: 19
+[27-Jul-2024 11:06:18 UTC] get_addon_display_on_cart sale_price: 0
+[27-Jul-2024 11:06:18 UTC] get_addon_display_on_cart display before filter: 1 x Dossiers Suspendus, Lecture: Verticale, Type: Fond 15 [réf.DOSUSPA15OR] (+<span class="woocommerce-Price-amount amount"><bdi>19.00&nbsp;<span class="woocommerce-Price-currencySymbol">&euro;</span></bdi></span>) (+<span class="woocommerce-Price-amount amount"><bdi>19.00&nbsp;<span class="woocommerce-Price-currencySymbol">&euro;</span></bdi></span>)
+[27-Jul-2024 11:06:18 UTC] get_addon_display_on_cart display after filter: 1 x Dossiers Suspendus, Lecture: Verticale, Type: Fond 15 [réf.DOSUSPA15OR] (+<span class="woocommerce-Price-amount amount"><bdi>19.00&nbsp;<span class="woocommerce-Price-currencySymbol">&euro;</span></bdi></span>) (+<span class="woocommerce-Price-amount amount"><bdi>19.00&nbsp;<span class="woocommerce-Price-currencySymbol">&euro;</span></bdi></span>)
+[27-Jul-2024 11:06:18 UTC] EXIT request_quote_view item_data: Array
+(
+    [0] => Array
+        (
+            [key] => Coloris
+            [value] => Anthracite 7016
+        )
+
+    [1] => Array
+        (
+            [key] => ds
+            [value] => <div>1 x Dossiers Suspendus, Lecture: Verticale, Type: Fond V [réf.DOSUSPAVOR] ( <span class="woocommerce-Price-amount amount"><bdi>17.00&nbsp;<span class="woocommerce-Price-currencySymbol">&euro;</span></bdi></span>) ( <span class="woocommerce-Price-amount amount"><bdi>17.00&nbsp;<span class="woocommerce-Price-currencySymbol">&euro;</span></bdi></span>)</div><div>1 x Dossiers Suspendus, Lecture: Verticale, Type: Fond 15 [réf.DOSUSPA15OR] ( <span class="woocommerce-Price-amount amount"><bdi>19.00&nbsp;<span class="woocommerce-Price-currencySymbol">&euro;</span></bdi></span>) ( <span class="woocommerce-Price-amount amount"><bdi>19.00&nbsp;<span class="woocommerce-Price-currencySymbol">&euro;</span></bdi></span>)</div>
+        )
+
+)
+

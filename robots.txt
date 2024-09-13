@@ -1,0 +1,40 @@
+User-agent: *
+Allow: /wp-admin/admin-ajax.php
+Allow: /*css?*
+Allow: /*js?*
+Disallow: /wp-admin/ 
+Disallow: *\?*
+Disallow: /staticblocks/
+Disallow: /filtre/
+Disallow: /logo-small/
+Disallow: /?attachment_id
+Disallow: /v_amb_2_3/
+Disallow: /product_variation
+Disallow: /*.pdf$
+Disallow: /author/
+Disallow: /*filter
+Disallow: */?add-to-cart=
+Disallow: /boutique/page/
+
+# Sitemap
+Sitemap:https://www.armoireplus.fr/sitemap_index.xml
+
+# ** Version DEMO **
+
+Disallow: /boutique/belts/
+Disallow: /boutique/wine/
+Disallow: /boutique/jewelry/
+Disallow: /boutique/men/
+Disallow: /categorie-produit/belts/
+Disallow: /proin-eu-massa/
+Disallow: /2013/10/proin-eu-massa/
+Disallow: /portfolio/
+Disallow: /pricing-tables/
+Disallow: /video-section/
+Disallow: /theme-features/
+Disallow: /blanck-page/
+Disallow: /bonjour-tout-le-monde-2/
+Disallow: /sidebar-16/
+Disallow: /sidebar-13/
+Disallow: /sidebar-14/
+Disallow: /our-office/

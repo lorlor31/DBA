@@ -1,0 +1,165 @@
+<script>
+   'use strict';
+//DASHBOARD VIEW CORE
+var hmenu_global_menus;
+
+//load
+jQuery(function(){
+	hmenu_populate_dashboard_containers(); //populate dashboard containers
+	hmenu_execute_menu_load();//execute menu load	
+	hmenu_get_promotion();
+	jQuery('.hero_dashboard_logo').html('<img src="'+hmenu_plugin_url+'assets/images/admin/plugin_logo.png" />');
+});
+
+//populate dashboard containers
+function hmenu_populate_dashboard_containers(){
+	jQuery('#plugin_version').html(hmenu_plugin_version);
+	jQuery('#plugin_last_update').html(hmenu_plugin_last_updated);
+	jQuery('#plugin_release_date').html(hmenu_plugin_first_release);
+	jQuery('#plugin_title').html(hmenu_plugin_friendly_name);
+	jQuery('#plugin_description').html(hmenu_plugin_friendly_description);
+}
+
+//bind dashboard button listeners
+function hmenu_execute_menu_load(){
+	jQuery.ajax({
+		url: hmenu_ajax_url,
+		type: "POST",
+		data: {
+			'action': 'hmenu_load_menus'
+		},
+		dataType: "json"
+	}).done(function(data){
+		if(data.menus.length !== 0){
+			hmenu_build_menu_html(data);
+		} else {			
+			hmenu_build_error_html();
+		}
+		hmenu_enable_delete();
+	}).fail(function(){
+	});
+}
+
+//setup menu list html
+function hmenu_build_menu_html(data){	
+	var list_html = '';
+	jQuery(data.menus).each(function(index, element) {
+		var json_object = {"menuId":element.menuId};
+        list_html += '<div class="hero_col_12 hero_menu_row" id="hero_row_item_'+element.menuId+'">';
+			list_html += '<div class="hero_col_4 hmenu_dash_name" data-json="'+ encodeURIComponent(JSON.stringify(json_object)) +'" onclick="hmenu_load_sidebar_dropdown_view(jQuery(this),\'dropdown_menus\',\'hmenu_load_edit\');"><span>'+element.name+'</span></div>';
+			list_html += '<div class="hero_col_4"><span><input class="hero_ctc hero_red" style="width:100%;" onclick="jQuery(this).select();" type="text" value="[hmenu id='+ element.menuId +']" readonly></span></div>';
+			list_html += '<div class="hero_col_4">';
+				list_html += '<div class="hero_edits rounded_20">';
+					list_html += '<div class="hero_edit_item" data-json="'+ encodeURIComponent(JSON.stringify(json_object)) +'" onclick="hmenu_load_sidebar_dropdown_view(jQuery(this),\'dropdown_menus\',\'hmenu_load_edit\');" style="background-image:url('+hmenu_plugin_url+'/assets/images/admin/edit_icon.png)"></div>';
+					list_html += '<div class="hero_edit_item hero_delete_menu" data-id="'+element.menuId+'" style="background-image:url('+hmenu_plugin_url+'/assets/images/admin/delete_icon.png)"></div>';
+				list_html += '</div>';
+			list_html += '</div>';
+		list_html += '</div>';
+    });
+	jQuery('.hero_misc_load').html(list_html);
+}
+
+function hmenu_enable_delete(){
+	
+	//get the delete click
+	jQuery('.hero_delete_menu').off().on('click', function(){
+		
+		//current item data		
+		var hmenu_menu_id = jQuery(this).data('id');
+		
+		if(window.confirm('Are you sure you want to delete the menu? Once you click "OK" all the magic you created will no longer be available!')){
+				
+			//delete menu
+			jQuery.ajax({
+				url: hmenu_ajax_url,
+				type: "POST",
+				data: {
+					'action': 'hmenu_run_delete_menu',
+					'id': hmenu_menu_id
+				},
+				dataType: "json"
+			}).done(function(data){
+				jQuery('#hero_row_item_'+data.menu_id).remove();
+				jQuery('#sub_item_row_'+data.menu_id).remove();
+				if(jQuery('.hero_menu_row').length == 0){
+					hmenu_build_error_html();
+				}
+			}).fail(function(){
+			});	
+				
+		} else {
+			//do nothing
+		}
+		
+	});
+}
+
+//setup menu list html
+function hmenu_build_error_html(){	
+	var status_html = '';
+	status_html += '<span class="hero_error_label">No menus have been found.</span>';	    
+	jQuery('.hero_misc_load').html(status_html);
+}
+
+//get promotion
+function hmenu_get_promotion() {
+	
+	hmenu_show_promotion(hmenu_plugin_url + '/assets/images/admin/default_promo.png', 'http://www.heroplugins.com');
+	
+}
+
+//show promotion
+function hmenu_show_promotion(img, img_link) {
+	if (img_link == null || img_link == '') {
+		jQuery('.promo_holder').empty().html('<img id="promo_img" src="' + img + '" />');
+	} else {
+		jQuery('.promo_holder').empty().html('<a href="' + img_link + '" target="_blank"><img id="promo_img" src="' + img + '" /></a>');
+	}
+	jQuery('#promo_img').on('load', function () {
+		jQuery('.promo_holder').css({
+			height: '0px'
+		}).fadeIn(0).animate({
+			height: jQuery('#promo_img').height() + 'px'
+		}, 400);
+	});
+}
+
+</script>
+
+<!--BEGIN: dashboard-->
+<div class="hero_top_dashboard">
+    <div class="hero_dashboard_intro">
+        <div class="hero_dashboard_logo"></div>
+    </div>
+</div>
+<div class="hero_top_version">
+    <div class="hero_version hero_white" id="plugin_version"></div>
+    <div class="hero_version_date hero_white">
+        <div class="hero_last"><span id="plugin_last_update"></span><br />Last Update</div>
+        <div class="hero_release"><span id="plugin_release_date"></span><br /> Release Date</div>
+    </div>
+</div>
+<div class="hero_views">
+	<div class="dashboard_grid">    
+    	<!--BEGIN: custom content area-->
+        <h2 class="hero_red size_18">Menu</h2>
+        <div class="hero_list_holder hero_grey size_11">
+        	<div class="hero_col_12 hero_list_heading hero_white">
+                <div class="hero_col_4"><span>Name</span></div>
+                <div class="hero_col_5"><span>Shortcode</span></div>
+            </div>
+            <div class="hero_misc_load">
+        	</div>
+        </div>
+        <!--END: custom content area-->      
+    </div>    
+    <div class="promo_expand">
+        <div class="promo_holder">
+        	<div class="promo_btn">
+                <a href="http://heroplugins.com" target="_blank">
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--END: dashboard-->

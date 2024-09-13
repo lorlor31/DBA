@@ -1,0 +1,20 @@
+#vibe-clone-orders-modal-options {
+
+	label {
+		display: block;
+		padding: 10px 0;
+	}
+}
+
+#vibe-clone-orders-modal-footer-notes {
+	margin-right: 10px;
+	line-height: 2.30769231;
+}
+
+.widefat .column-wc_actions a.clone-order::after {
+	content: "\f491";
+}
+
+.widefat .column-wc_actions a.clone-order-empty::after {
+	content: "\f498";
+}

@@ -1,0 +1,61 @@
+<!-- START | STYLES -->
+<style type="text/css">
+	.hero_form_row_full{ font-family:Arial, Helvetica, sans-serif; color:#999; font-size:12px; }
+	body{ margin:0; padding:0; }
+	input[type=file]{
+		display:none;
+	}
+	/* color buttons */
+	.green_button{ background-color:#A7CF7F; color:#FFF; }
+	.green_button:hover{ background-color:#87C04E; }
+	.hero_button_auto {
+		padding: 7px 10px;
+		text-align: center;
+		cursor: pointer;
+		display: table;
+		float: left;
+		margin: 0 10px 0 0;
+		text-transform: capitalize;
+	}
+	.rounded_3 {
+		border-radius: 3px;
+		-moz-border-radius: 3px;
+		-webkit-border-radius: 3px;
+	}
+	.size_14 {
+		font-size: 14px;
+	}
+</style>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script type="text/javascript">
+	jQuery(function(){
+		jQuery('.file-upload-btn a').off().on('click', function(){
+			jQuery('#hero_font_file').trigger('click').off().on('change', function(){
+				jQuery('#hero_font_file_form').trigger('submit');
+				console.log('upload clicked');
+				
+				jQuery.ajax({
+					url: hmenu_ajax_url,
+					type: "POST",
+					data: {
+						'action': 'hmenu_upload_menu_icon_pack'
+					}
+				}).done(function (data) {
+					console.log(data);
+				}).fail(function () {
+					//error
+				});
+
+
+			});
+		});
+	});
+</script>
+<form name="hero_font_file_form" id="hero_font_file_form" enctype="multipart/form-data" method="post">
+    <div class="hero_form_row_full">
+        <label for=""></label>
+        <input name="hero_font_file" id="hero_font_file"  type="file" value="" />
+        <div class="file-upload-btn"><a class="hero_button_auto green_button rounded_3 size_14">Select font pack</a></div>
+    </div>       
+</form>
