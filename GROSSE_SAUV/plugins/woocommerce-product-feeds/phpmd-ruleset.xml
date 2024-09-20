@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<ruleset name="laravel-friendly PHPMD rule set"
+         xmlns="http://pmd.sf.net/ruleset/1.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://pmd.sf.net/ruleset/1.0.0
+                     http://pmd.sf.net/ruleset_xml_schema.xsd"
+         xsi:noNamespaceSchemaLocation="
+                     http://pmd.sf.net/ruleset_xml_schema.xsd">
+    <description>
+        Ruleset that imports "cleancode", "naming", "design", "unusedcode" with some exclusions.
+
+        "Codesize" currently not imported as too many NPAth / Cyclomatic complexity issues.
+    </description>
+    <rule ref="rulesets/cleancode.xml">
+        <exclude name="StaticAccess"/>
+        <exclude name="ElseExpression"/>
+        <exclude name="MissingImport"/>
+        <exclude name="BooleanArgumentFlag"/>
+    </rule>
+    <rule ref="rulesets/naming.xml">
+        <exclude name="LongVariable"/>
+        <exclude name="LongClassName"/>
+    </rule>
+    <rule ref="rulesets/design.xml">
+        <exclude name="ExitExpression"/>
+        <exclude name="CouplingBetweenObjects"/>
+    </rule>
+    <rule ref="rulesets/unusedcode.xml" />
+</ruleset>

@@ -1,0 +1,225 @@
+<script type="text/javascript" data-cfasync="false">
+'use strict';
+//STYLING.ICONS VIEW
+
+//vars
+var hmenu_font_obj;
+
+//load
+jQuery(function () {
+	//functions
+	hmenu_load_iframe();
+	hmenu_set_current_header_label('Currently Editing:', hmenu_global_menu_obj.menu.name);
+	jQuery('#hero_font_file_form').on('submit', function(e){
+		e.preventDefault();
+	})
+	//load static fonts
+	hmenu_load_json_font_object('icons', 'normal');
+
+	jQuery('.file-upload-btn a').off().on('click', function(){
+			jQuery('#hero_font_file').trigger('click').off().on('change', function(){
+				jQuery('#hero_font_file_form').trigger('submit');
+				
+				var form_data = new FormData();
+				
+				var font_file = jQuery('#hero_font_file')[0].files[0];
+				
+
+				form_data.append("hero_font_file", font_file);
+				form_data.append("action", 'hmenu_upload_menu_icon_pack');
+
+
+				jQuery.ajax({
+					url: hmenu_ajax_url,
+					type: "POST",
+					data: {
+						'action': hmenu_plugin_name + '_get_security_code'
+					},
+					dataType: "json"
+				}).done(function (token) {
+
+					form_data.append("token", token);
+
+					jQuery.ajax({
+						url: hmenu_ajax_url,
+						type: "POST",
+						contentType: false,
+        				processData: false,
+						data: form_data,
+					}).done(function (data) {
+						if(data == 'true'){
+                        	window.parent.hmenu_process_font_pack('hmenu_process_complete');
+						} else {
+                        	window.parent.hmenu_error_font_process();
+						}
+						
+					}).fail(function () {
+						//error
+					});
+				});
+			});
+		});
+});
+
+//add browse trigger
+function hmenu_add_browse_trigger() {
+	//load core view
+	jQuery('#add_more_btn').on('click', function () {
+		jQuery('#iframe').contents().find('input[type=file]').trigger('click');
+	});
+}
+
+//load iframe for pack upload
+function hmenu_load_iframe() {
+	//hmenu_load_secure_iframe('inc/upload.form.html', 100, '.file_uploader');
+}
+
+//upload process complete
+function hmenu_process_complete(response) {
+	if (response) {
+		hmenu_show_message('success', 'Font Pack Added', 'The new font pack was successfully added and ready for use.');
+	} else {
+		hmenu_show_message('error', 'Error Message', 'The font pack you are trying to upload already exists.');
+	}
+	//load core view
+	hmenu_reload_sub_view('menu_sub_icons', 'menus/', 'styling.icons');
+}
+
+//error message for failed upload
+function hmenu_error_font_process() {
+	hmenu_show_message('error', 'Error Message', 'Something went wrong, please try again.');
+}
+
+//load file name
+function hmenu_load_file_name(status) {
+	jQuery('.file_upload_status').append(status);
+	if (status) {
+		hmenu_show_message('success', 'Font Pack Added', 'The new font pack was successfully added and ready for use.');
+	} else {
+		hmenu_show_message('error', 'Error Message', 'The font pack you are trying to upload already exists.');
+	}
+	//load core view
+	hmenu_reload_sub_view('menu_sub_icons', 'menus/', 'styling.icons');
+}
+
+//load icon messages
+function hmenu_load_icon_message(msg) {
+	jQuery('.icons_load_here').html(msg);
+}
+
+//load icons click
+function hmenu_load_icons_click() {
+	var the_options = jQuery('#icon_set_select');
+	jQuery(the_options).each(function (index, element) {
+		jQuery(this).on('change', function () {
+			hmenu_load_icons(jQuery(this).val(), 'icons');
+		});
+	});
+}
+
+//load select
+function hmenu_load_select(obj) {
+
+	var select_html = ''
+
+	jQuery(obj).each(function (index, element) {
+		//build styles
+		select_html += '<option value="' + index + '">' + element.fontPackName + '</option>';
+	});
+
+	jQuery('#icon_set_select').append(select_html);
+
+	hmenu_update_select_component(jQuery('#icon_set_select'));
+
+}
+</script>
+<style type="text/css">
+	.hero_form_row_full{ font-family:Arial, Helvetica, sans-serif; color:#999; font-size:12px; }
+	body{ margin:0; padding:0; }
+	input[type=file]{
+		display:none;
+	}
+	/* color buttons */
+	.hero_views .green_button{ background-color:#A7CF7F; color:#FFF; }
+	.hero_views .green_button:hover{ background-color:#87C04E;color:#FFF;text-decoration: none; }
+	.hero_button_auto {
+		padding: 7px 10px;
+		text-align: center;
+		cursor: pointer;
+		display: table;
+		float: left;
+		margin: 0 10px 0 0;
+		text-transform: capitalize;
+	}
+	.rounded_3 {
+		border-radius: 3px;
+		-moz-border-radius: 3px;
+		-webkit-border-radius: 3px;
+	}
+	.size_14 {
+		font-size: 14px;
+	}
+</style>
+<div class="hero_views">
+    <div class="hero_col_12">
+    	<h2 class="hero_red size_18 weight_600">
+            Icons<br />
+            <strong class="size_11 hero_grey">View and add more icons to your menu.</strong>
+        </h2>
+        <!-- START: FORM -->
+            <div>      	
+                <!-- START: ACTIVATION -->
+                    <div class="hero_section_holder hero_grey size_14">
+                        <div class="hero_col_8">
+                            <label><h2 class="size_14 hero_green">Icon set</h2></label>
+                        	<p class="size_12 hero_grey">Here you can view all your icons.</p>
+                        </div>
+                        <div class="hero_col_4">
+                            <select data-size="med" id="icon_set_select" name="icon_set_select">
+                            </select>
+                        </div>
+                        <div class="hero_col_12">
+                        	<div class="icons_load_here rounded_3">
+                            	<!-- LOAD ICONS -->
+                            </div>
+                        </div>
+                    </div>
+                <!-- END: ACTIVATION -->
+                <!-- START: ACTIVATION -->
+                   <!-- <div class="hero_section_holder hero_grey size_14">
+                        <div class="hero_col_8">
+                            <label><h2 class="size_18 hero_red weight_600">Buy more icons</h2></label>
+                        	<p class="size_12 hero_grey">Click to buy more icons.</p>
+                        </div>
+                        <div class="hero_col_4">
+                            <div class="hero_button_auto red_button rounded_3">BUY ICONS NOW</div>
+                        </div>
+                    </div>-->
+                <!-- END: ACTIVATION -->
+                <!-- START: ACTIVATION -->
+                    <div class="hero_section_holder hero_grey size_14">
+                        <div class="hero_col_8">
+                            <label><h2 class="size_18 hero_red weight_600">Add icon packs</h2></label>
+                        	<p class="size_12 hero_grey">Select a new icon pack to use now!</p>                            
+                            <div class="file_upload_status">
+                            	<!-- FILE STATUS HERE -->
+                            </div>
+                        </div>
+                        <div class="hero_col_4">
+                        	<div class="file_uploader">
+                            	<!-- FILE UPLOADER HERE -->
+								<form name="hero_font_file_form" id="hero_font_file_form" enctype="multipart/form-data" method="post">
+									<div class="hero_form_row_full">
+										<label for=""></label>
+										<input name="hero_font_file" id="hero_font_file"  type="file" value="" />
+										<div class="file-upload-btn"><a class="hero_button_auto green_button rounded_3 size_14">Select font pack</a></div>
+									</div>       
+								</form>
+                            </div>
+                        </div>
+                    </div>
+                <!-- END: ACTIVATION -->
+				</div>
+        <!-- END: FORM -->
+    </div>
+</div>

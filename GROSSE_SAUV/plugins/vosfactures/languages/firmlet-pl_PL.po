@@ -1,0 +1,475 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Vosfactures 1.1.7\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/src\n"
+"POT-Creation-Date: 2018-08-16 11:44:50+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2019-12-17 21:42+0100\n"
+"Language-Team: \n"
+"X-Generator: Poedit 2.2.4\n"
+"Last-Translator: \n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n"
+"%100<12 || n%100>14) ? 1 : 2);\n"
+"Language: pl_PL\n"
+
+#: firmlet.php:52
+msgid "To get started, fill in the API token of your %s account in the"
+msgstr "Aby rozpocząć wypełnij API token Twojego konta %s w"
+
+#: firmlet.php:52
+msgid "Settings page"
+msgstr "Ustawieniach"
+
+#: admin/class-firmlet-admin.php:136
+msgid "Settings"
+msgstr "Ustawienia"
+
+#: admin/class-firmlet-admin.php:156
+msgid "The \"API Token\" field is required"
+msgstr "Pole “Token API” jest wymagane"
+
+#: admin/class-firmlet-admin.php:163
+msgid ""
+"Connection test1 (checking the API token) failed - please correct the "
+"settings"
+msgstr ""
+"Test1 połączenia (sprawdzenie poprawności tokenu API) nie powiódł się - "
+"popraw dane"
+
+#: admin/class-firmlet-admin.php:167
+msgid ""
+"Connection test2 (checking the company data) failed - please fill up the "
+"data at %s account"
+msgstr ""
+"Test2 połączenia (sprawdzanie danych firmy) nie powiódł się - proszę "
+"wypełnić dane na koncie %s"
+
+#: admin/class-firmlet-admin.php:170
+msgid ""
+"Connection test2b (checking the department ID) failed - please correct the "
+"settings"
+msgstr ""
+"Test2b połączenia (sprawdzenie poprawności ID działu) nie powiódł się - "
+"popraw dane"
+
+#: admin/class-firmlet-admin.php:173
+msgid ""
+"Connection test3 (creating a test invoice) failed - please make sure your "
+"account is active and that you have permission to department"
+msgstr ""
+"Test3 połączenia (wystawienie testowej faktury) nie powiódł się - upewnij "
+"się, że konto jest aktywne i, że masz uprawieniania do działu"
+
+#: admin/class-firmlet-admin.php:180
+msgid "Additional fields: error in json syntax"
+msgstr "Pola dodatkowe: błąd w składni jsona"
+
+#: admin/class-firmlet-admin.php:183
+msgid "Additional fields: illegal parameter was defined"
+msgstr "Pola dodatkowe: zdefiniowano zabroniony parametr"
+
+#: admin/class-firmlet-admin.php:189
+msgid "Module successfully integrated."
+msgstr "Zapisano ustawienia."
+
+#: admin/class-firmlet-admin.php:307
+msgid "Invoice"
+msgstr "Faktura"
+
+#: admin/class-firmlet-admin.php:199
+msgid "There were problems when issuing invoices for the following orders:"
+msgstr "Wystąpiły problemy przy wystawianiu faktur do następujących zamówień:"
+
+#: admin/class-firmlet-admin.php:320
+msgid "The invoice has been already generated on your VosFactures account, you can cancel it or make a credit note."
+msgstr "Faktura została wygenerowana na koncie VosFactures, możesz ją anulować lub utworzyć korektę."
+
+#: admin/class-firmlet-admin.php:541 admin/class-firmlet-admin.php:560
+#: admin/class-firmlet-admin.php:566
+msgid "VAT Number"
+msgstr "Numer NIP"
+
+#: admin/class-firmlet-admin.php:594
+msgid "The \"API Token\" field is incorrect. Please, correct it."
+msgstr "Pole “Token API” jest nieprawidłowe. Popraw je."
+
+#: admin/class-firmlet-admin.php:600
+msgid ""
+"%s failed to return a response to the request. We believe that it's our "
+"issue and we'll do whatever we can to speed up the process. Please, try "
+"again later."
+msgstr ""
+"%s nie zwróciła odpowiedzi na prośbę. Najprawdopodobniej w tym momencie "
+"trwają prace konserwacyjne nad systemem. Spróbuj później."
+
+#: admin/class-firmlet-admin.php:606
+msgid "Invalid buyer tax number"
+msgstr "Błędny nr NIP nabywcy"
+
+#: admin/class-firmlet-admin.php:643
+msgid "Your account on %s is not PRO"
+msgstr "Twoje konto na %s nie jest w planie PRO"
+
+#: admin/class-firmlet-admin.php:645
+msgid "Document creation failed on %s. Please check logs for more info."
+msgstr "Utworzenie dokumentu na %s nie powiodło się. Sprawdź logi aby dowiedzieć się więcej."
+
+#: admin/partials/firmlet-admin-metabox-invoice-panel.php:14
+msgid "Integration with"
+msgstr "Integracja z"
+
+#: admin/partials/firmlet-admin-metabox-invoice-panel.php:21
+msgid "Show document on account"
+msgstr "Pokaż dokument na koncie"
+
+#: admin/partials/firmlet-admin-metabox-invoice-panel.php:22
+msgid "Download document as pdf"
+msgstr "Pobierz dokument w pdf"
+
+#: admin/partials/firmlet-admin-metabox-invoice-panel.php:23
+msgid "Remove invoice from %s"
+msgstr "Usuń fakturę z %s"
+
+#: admin/partials/firmlet-admin-metabox-invoice-panel.php:24
+msgid "Issue correction invoice"
+msgstr "Wystaw fakturę korygującą"
+
+#: admin/partials/firmlet-admin-metabox-invoice-panel.php:28
+msgid "Error while generating invoice to order: "
+msgstr "Błąd podczas generowania faktury do zamówienia: "
+
+#: admin/partials/firmlet-admin-metabox-invoice-panel.php:32
+msgid "Issue invoice"
+msgstr "Wystaw fakturę"
+
+#: admin/partials/firmlet-admin-metabox-invoice-panel.php:34
+msgid "Issue VAT/receipt (automatic choice)"
+msgstr "Wystaw fakturę/paragon (wybór automatyczny)"
+
+#: admin/partials/firmlet-admin-metabox-invoice-panel.php:35
+msgid "Issue VAT"
+msgstr "Wystaw fakturę VAT"
+
+#: admin/partials/firmlet-admin-metabox-invoice-panel.php:36
+msgid "Issue receipt"
+msgstr "Wystaw paragon"
+
+#: admin/partials/firmlet-admin-metabox-invoice-panel.php:37
+msgid "Issue proforma"
+msgstr "Wystaw fakturę Proforma"
+
+#: admin/partials/firmlet-admin-metabox-invoice-panel.php:38
+msgid "Issue estimate"
+msgstr "Wystaw kosztorys"
+
+#: admin/partials/firmlet-admin-metabox-invoice-panel.php:39
+msgid "Issue bill"
+msgstr "Wystaw rachunek"
+
+#: admin/partials/firmlet-admin-metabox-invoice-panel.php:83
+msgid "Are you sure you want to delete this document?"
+msgstr "Czy na pewno chcesz usunąć ten dokument?"
+
+#: admin/partials/firmlet-admin-metabox-invoice-panel.php:43
+msgid "Please fill out \"api token\" field in module configuration"
+msgstr "Należy uzupełnić pole \\“api token\\” w konfiguracji modułu"
+
+#: includes/class-firmlet-callbacks.php:24
+msgid "Integrates WooCommerce with your %s account"
+msgstr "Integruje WooCommerce z Twoim kontem na Fakturowni"
+
+#: includes/class-firmlet-callbacks.php:25
+msgid ""
+"The module allows you to issue documents (VAT invoices and receipts) for "
+"orders in your %s account."
+msgstr ""
+"Moduł umożliwia wystawianie dokumentów (faktur VAT i paragonów) do zamówień "
+"na Twoim koncie na %s."
+
+#: includes/class-firmlet-callbacks.php:27
+msgid "If you do not have an %s account"
+msgstr "Jeśli nie masz jeszcze konta na %s"
+
+#: includes/class-firmlet-callbacks.php:29
+msgid "Learn more"
+msgstr "Dowiedz się wiecej"
+
+#: includes/class-firmlet-callbacks.php:29
+msgid "about setting up %s"
+msgstr "o konfiguracji %s"
+
+#: includes/class-firmlet-callbacks.php:31
+msgid "Create account"
+msgstr "Załóż konto"
+
+#: includes/class-firmlet-callbacks.php:34
+msgid "Help"
+msgstr "Pomoc"
+
+#: includes/class-firmlet-integration.php:59
+msgid "Department not found - please fill up the data at %s account"
+msgstr "Nie znaleziono danych Firmy - proszę uzupełnić dane na koncie %s"
+
+#: includes/class-firmlet-container.php:67
+msgid "Connection settings"
+msgstr "Ustawienia połączenia"
+
+#: includes/class-firmlet-container.php:73
+msgid "API Token"
+msgstr "Token API"
+
+msgid "API Token description"
+msgstr "API token with prefix (from your VosFactures account : Settings > Account settings > Integration)"
+
+#: includes/class-firmlet-container.php:91
+msgid "Automatically issue a document on %s"
+msgstr "Automatyczne wystawianie dokumentu na %s"
+
+msgid "Automatically issue description"
+msgstr "Choose \"never\" if you need to configure your VosFactures account (invoice format, numbering ...) before activating automatic invoice creation"
+
+#: includes/class-firmlet-container.php:98
+msgid "Never, only manually"
+msgstr "Nigdy, tylko ręcznie"
+
+#: includes/class-firmlet-container.php:99
+msgid "After an order is created"
+msgstr "Po stworzeniu zamówienia"
+
+#: includes/class-firmlet-integration.php:108
+msgid "After an order is processing"
+msgstr "Po rozpoczęciu przetwarzania"
+
+#: includes/class-firmlet-container.php:100
+msgid "After an order is completed"
+msgstr "Po zrealizowaniu zamówienia"
+
+#: includes/class-firmlet-container.php:114
+msgid "Automatically issued document type"
+msgstr "Rodzaj automatycznie wystawianego dokumentu"
+
+#: includes/class-firmlet-container.php:121
+msgid "VAT or receipt"
+msgstr "Faktura VAT lub paragon"
+
+#: includes/class-firmlet-container.php:122
+msgid "Always VAT"
+msgstr "Zawsze faktura VAT"
+
+#: includes/class-firmlet-container.php:123
+msgid "Always receipt"
+msgstr "Zawsze paragon"
+
+#: includes/class-firmlet-container.php:124
+msgid "Always proforma"
+msgstr "Zawsze proforma"
+
+#: includes/class-firmlet-container.php:125
+msgid "Always estimate"
+msgstr "Zawsze kosztorys"
+
+#: includes/class-firmlet-container.php:126
+msgid "Always bill"
+msgstr "Zawsze rachunek"
+
+#: includes/class-firmlet-container.php:145
+msgid "Automatically send an invoice via e-mail from %s"
+msgstr "Automatyczne wysyłanie dokumentu e-mailem z %s"
+
+msgid "Automatically send description"
+msgstr "Choose if invoices should be emailed to client from VosFactures"
+
+#: includes/class-firmlet-container.php:163
+msgid "Advanced settings"
+msgstr "Ustawienia zaawansowane"
+
+#: includes/class-firmlet-container.php:169
+msgid "Department:"
+msgstr "Firma/Dział:"
+
+msgid "Department description"
+msgstr "You can create several departments on your VosFactures account to distinguish WooCommerce sales from other sales"
+
+#: includes/class-firmlet-container.php:188
+msgid "Category:"
+msgstr "Kategoria:"
+
+msgid "Category description"
+msgstr "Assign a category to WooCommerce invoices to better distinguish them from other invoices"
+
+#: includes/class-firmlet-container.php:207
+msgid "Show free delivery cost on invoice"
+msgstr "Czy załączać darmową przesyłkę na fakturze"
+
+msgid "Show free delivery description"
+msgstr "Choose to display free delivery costs on invoices"
+
+#: includes/class-firmlet-container.php:218
+msgid "Show default “Note“ on invoices"
+msgstr "Czy uzupełniać uwagi domyślne z ustawień konta"
+
+msgid "default “Note“ description"
+msgstr "The default \"Notes\" entered in your VosFactures account can be displayed on invoices"
+
+#: includes/class-firmlet-container.php:229
+msgid "Include product description on invoice"
+msgstr "Czy załączać opis produktu na fakturze"
+
+msgid "Include product description description"
+msgstr "The top \"Description\" field of WooCommerce products can be displayed on invoices, after product name"
+
+#: includes/class-firmlet-container.php:240
+msgid "Buyer name on invoice"
+msgstr "Nazwa nabywcy w fakturze"
+
+msgid "Buyer name description"
+msgstr "The module will prefer chosen option when issuing the invoice"
+
+#: includes/class-firmlet-container.php:247
+msgid "Company"
+msgstr "Firma"
+
+#: includes/class-firmlet-container.php:248
+msgid "First name and last name"
+msgstr "Imię i nazwisko"
+
+#: includes/class-firmlet-container.php:249
+msgid "Company with full name"
+msgstr "Firma oraz imię i nazwisko"
+
+#: includes/class-firmlet-container.php:263
+msgid "Additional fields"
+msgstr "Pola dodatkowe"
+
+msgid "Additional fields description"
+msgstr "This optional field can be used to modify created invoices, such as creating invoices in Italian. Contact us if needed"
+
+#: includes/class-firmlet-container.php:272
+msgid ""
+"Additional fields allows you to modify invoice before it is sent. You have "
+"to use JSON syntax to achieve it.\n"
+"Example JSON: \"kind\": \"vat\", \"exchange_currency\": \"GBP\""
+msgstr ""
+"Dodatkowe pola pozwalają na zmodyfikowanie wysyłanej faktury. Należy je "
+"ustawić w składni JSONa.\n"
+"Przykład JSONa: “kind”: “vat”, “exchange_currency”: “GBP”"
+
+#: includes/class-firmlet-invoice.php:256
+msgid "Cash on delivery"
+msgstr "Za pobraniem"
+
+#. Description of the plugin/theme
+msgid ""
+"The module allows you to issue documents (VAT invoices and receipts) for "
+"orders in your VosFactures account."
+msgstr ""
+"Moduł umożliwia wystawianie dokumentów (faktur VAT i paragonów) do zamówień "
+"na Twoim koncie na VosFactures."
+
+#: includes/class-firmlet-integration.php:167
+msgid "Show “Orders Notes“ on invoices"
+msgstr "Czy załączać notatki do zamówienia na fakturze"
+
+msgid "Show “Orders Notes“ description"
+msgstr "Order notes can be displayed on invoices"
+
+#: includes/class-firmlet-integration.php:161
+msgid "Show products variable on invoices"
+msgstr "Czy pokazywać informacje o wariantach"
+
+msgid "Show products variable description"
+msgstr "WooCommerce product variable can be displayed on invoices, after product name"
+
+msgid "Include product metadata on invoices"
+msgstr "Wstawiaj medatadata produktów w opisy pozycji"
+
+msgid "Include product metadata"
+msgstr "Dołącz metadata produktów"
+
+msgid "No"
+msgstr "Nie"
+
+msgid "Yes"
+msgstr "Tak"
+
+msgid "Failed"
+msgstr "Błąd"
+
+msgid "Number of issued invoices"
+msgstr "Liczba wystawionych faktur"
+
+msgid "Everything's ok, we did not notice any problems"
+msgstr "Wszystko ok, nie zauważyliśmy żadnych problemów"
+
+msgid "Go to orders"
+msgstr "Przejdź do zamówień"
+
+msgid "Invoice issued on VosFactures"
+msgstr "Faktura wystawiona na VosFactures"
+
+msgid "Issue invoice on VosFactures"
+msgstr "Wystaw faktury na VosFactures"
+
+#: includes/class-firmlet-integration.php:167
+msgid "Identify OSS invoices"
+msgstr "Identyfikuj faktury OSS"
+
+msgid "Identify OSS invoices description"
+msgstr "if ticked, intra-UE B2C sales invoices will be identified as “OSS sales”, allowing you to generate a report for your “VAT OSS” declarations on VosFactures. Read our Guide to understand how this works !"
+
+#: includes/class-firmlet-integration.php:167
+msgid "Force invoicing with buyer VAT"
+msgstr "Wymuszaj podatek VAT kupującego"
+
+msgid "Force invoicing with buyer VAT description"
+msgstr "Check this option if your store cannot automatically manage the VAT applicable to B2C intra-community orders : in addition to being identified as “OSS sales”, intra-EU B2C invoices will be created with the main VAT rate of buyer country (with net price recalculated). Read our Guide to understand how this works !"
+
+msgid "Plugin version: %s"
+msgstr "Wersja modułu: %s"
+
+msgid "URL of linked account:"
+msgstr "Adres URL połączonego konta:"
+
+msgid "Current plan: %s"
+msgstr "Obecny plan konta: %s"
+
+msgid "Paid to: %s"
+msgstr "Opłacone do: %s"
+
+msgid "Trial to: %s"
+msgstr "Okres próbny do: %s"
+
+msgid "Add optional order note on invoice"
+msgstr "Dodawaj opcjonalną notatkę z zamówienia na faktury"
+
+msgid "Show “Optional order note“ on invoice"
+msgstr "Pokazuj opcjonalną notatkę z zamówienia na fakturach"
+
+msgid "Always show delivery address on invoices"
+msgstr "Zawsze wyświetlaj adres dostawy na fakturach"
+
+msgid "If not checked: the delivery address is not displayed if it is the same as the billing address"
+msgstr "Jeśli nie zaznaczone: adres dostawy zostanie wyświetlony wyłącznie jeśli będzie różny od adresu rozliczeniowego"
+
+msgid "Show on invoice product description from VF"
+msgstr "Pokazuj na fakturach opis produktu z VF"
+
+msgid "Include product description from VF"
+msgstr "Pokazuj na fakturach opis produktu z VF"
+
+msgid "Invalid buyer email"
+msgstr "Błędny format adres e-mail"
+
+msgid "Database status:"
+msgstr "Status bazy danych:"
+
+msgid "valid"
+msgstr "poprawny"
+
+msgid "invalid"
+msgstr "błędny"
+
+msgid "Recreate table"
+msgstr "Odtwórz bazę danych"

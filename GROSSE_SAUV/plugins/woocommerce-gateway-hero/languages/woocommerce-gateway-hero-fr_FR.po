@@ -1,0 +1,82 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: woocommerce-gateway-hero\n"
+"POT-Creation-Date: 2021-09-28 08:29+0300\n"
+"PO-Revision-Date: 2021-09-28 09:04+0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: fr_FR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.3\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Poedit-KeywordsList: __\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: templates/completed.php:2
+msgid "Payment completed successfully"
+msgstr ""
+
+#: woocommerce-gateway-hero.php:30
+#, php-format
+msgid ""
+"Hero requires WooCommerce to be installed and active. You can download %s "
+"here."
+msgstr ""
+
+#: woocommerce-gateway-hero.php:53
+msgid "Proceed to Hero Payment"
+msgstr ""
+
+#: woocommerce-gateway-hero.php:54 woocommerce-gateway-hero.php:66
+msgid "Hero"
+msgstr ""
+
+#: woocommerce-gateway-hero.php:55 woocommerce-gateway-hero.php:67
+msgid "Hero Gateway Payment"
+msgstr "Hero - Plugin de Paiement B2B"
+
+#: woocommerce-gateway-hero.php:58
+msgid "WooCommerce Gateway Hero"
+msgstr "Hero - Paiement B2B"
+
+#: woocommerce-gateway-hero.php:59
+msgid "Take credit card payments on your store using Hero."
+msgstr "Acceptez le paiement en plusieurs fois ou à 30 jours avec Hero."
+
+#: woocommerce-gateway-hero.php:84
+msgid "Enable/Disable"
+msgstr "Activer / Désactiver"
+
+#: woocommerce-gateway-hero.php:85
+msgid "Enable Hero payments"
+msgstr "Activer les paiements via Hero"
+
+#: woocommerce-gateway-hero.php:91
+msgid "API key"
+msgstr "Clef API"
+
+#: woocommerce-gateway-hero.php:93
+msgid ""
+"Enter your Hero API key, available on your Hero dashboard (https://dashboard."
+"hero.fr/overview)"
+msgstr ""
+"Entrez votre clef d'API Hero, disponible sur votre dashboard Hero (https://"
+"dashboard.hero.fr/overview)"
+
+#: woocommerce-gateway-hero.php:244
+msgid "Payment Error"
+msgstr ""
+
+#: woocommerce-gateway-hero.php:389
+msgid ""
+"Sorry, it seems that there are no available payment methods for your state. "
+"Please contact us if you require assistance or wish to make alternate "
+"arrangements."
+msgstr ""
+
+#: woocommerce-gateway-hero.php:416
+msgid "Settings"
+msgstr "Réglages"

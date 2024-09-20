@@ -1,0 +1,971 @@
+.etheme-page-wrapper {
+    background:  #fff;
+    max-width:  1140px;
+    margin: 20px 15px 0;
+    color: #555;
+    font-size: 14px;
+    line-height: normal;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.etheme-page-header {
+    position: relative;
+    background: #222;
+    padding: 30px 60px 35px;
+}
+
+.etheme-page-header .theme-version {
+    display: block;
+    margin-top: 3px;
+    color: #fff;
+}
+
+.etheme-page-header .activate-note {
+    color: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #c62828;
+    padding: 5px;
+}
+
+.etheme-page-header .activate-note.activated {
+    background: green;
+}
+
+.etheme-page-wrapper .etheme-page-title {
+    font-size: 42px;
+    font-weight: 400;
+    margin: 0 0 4px 0;
+    color:  #fff;
+}
+
+.etheme-page-header p {
+    margin: 0;
+    font-size: 14px;
+    color: #fafafa;
+    padding-right: 30px;
+    overflow: hidden;
+}
+
+.etheme-page-header .theme-logo {
+    margin-top: 9px;
+    display: block;
+    text-align: end;
+}
+.etheme-page-nav {
+    background-color: #fafafa;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #e1e1e1;
+    border-top: 1px solid #e1e1e1;
+}
+.etheme-page-nav ul {
+    margin:  0;
+    padding:  0 60px;
+}
+
+.etheme-page-nav ul li {
+    display:  inline-block;
+    float: left;
+    margin: 0;
+}
+
+.etheme-page-nav ul li a {
+    position:  relative;
+    text-decoration:  none;
+    color: #222;
+    font-size:  14px;
+    padding: 14px 20px;
+    display:  inline-block;
+    transition: all .2s ease-in-out;
+    box-shadow: none;
+    outline: none;
+}
+
+.etheme-page-nav ul li .active,
+.etheme-page-nav ul li a:hover {
+    color: #2699d5;
+}
+
+.etheme-page-nav ul li a:after {
+    content:  '';
+    border-bottom: 2px solid #2699d5;
+    width: 100%;
+    position: absolute;
+    pointer-events: none;
+    bottom: -3px;
+    left: 0;
+    right: 0;
+    transition:  inherit;
+    opacity:  0;
+    visibility:  hidden;
+    transition: inherit;
+    z-index: 1;
+}
+
+.etheme-page-nav ul li .active:after,
+.etheme-page-nav ul li a:hover:after {
+    opacity:  1;
+    visibility:  visible;
+    bottom: -1px;
+}
+
+.etheme-page-content {
+    padding: 40px 60px;
+}
+
+.etheme-page-content p {
+    margin: 0 0 20px;
+    font-size: 14px;
+}
+
+.etheme-page-content ul {
+    font-size: 14px;
+}
+
+.etheme-page-content a{
+    box-shadow: none;
+}
+
+.etheme-page-content ul,
+.etheme-page-content ol,
+.etheme-page-content a:hover {
+    color: #888;
+}
+
+.etheme-page-content ul span,
+.etheme-page-content ol span {
+    color: #222;
+    cursor: default;
+}
+.etheme-page-content a {
+    color: #222;
+}
+
+.et-col-12 {
+    padding: 0 20px;
+}
+
+.et-col-7 {
+    position: relative;
+    width: 65.33333333%;
+    float:  left;
+    padding: 0 20px;
+    box-sizing:  border-box;
+}
+.et-col-7:after {
+    position: absolute;
+    content: '';
+    right: 0;
+    border-right: 1px solid #e1e1e1;
+    height: 100%;
+    top: 0;
+}
+
+.et-col-5 {
+    width:  34.66666667%;
+    float:  left;
+    padding:  0 20px;
+    box-sizing:  border-box;
+}
+
+.et-row {
+    margin:  0 -20px;
+    box-sizing:  border-box;
+}
+.etheme-page-nav:before,
+.etheme-page-nav:after,
+.et-row:before,
+.et-row:after,
+.etheme-videos:before,
+.etheme-videos:after {
+    content:  '';
+    display:  table;
+    clear:  both;
+}
+
+.etheme-page-wrapper h3 {
+    font-size: 22px;
+}
+
+.etheme-page-wrapper h1 {
+    font-weight: 400;
+}
+.etheme-page-wrapper h2,
+.etheme-page-wrapper h3,
+.etheme-page-wrapper h4,
+.etheme-page-wrapper h5 {
+    color: #222;
+    font-weight: 400;
+    margin: 0 0 15px;
+}
+
+/* activate - deactivate form */
+
+.etheme-page-wrapper form .button-primary {
+    border-radius: 0;
+    background: #2699d5;
+    box-shadow: none;
+    padding: 4px 20px;
+    height: auto;
+    border: none;
+    text-shadow: none;
+    transition: all .3s ease-in-out;
+    text-transform: uppercase;
+}
+
+.etheme-page-wrapper form {
+    margin-bottom: 20px;
+}
+
+.etheme-purchase span {
+    color: #222;
+    padding-left: 5px;
+    display: inline-block;
+}
+
+.etheme-page-wrapper img {
+    max-width: 100%;
+}
+
+
+
+/* System requirements */
+
+.system-requirements {
+    color: #888 !important;
+    width:  100%;
+    text-align:  start;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.system-requirements thead tr:first-child th {
+    border-bottom:  1px solid #e1e1e1;
+    font-size: 16px;
+    color:  #222;
+    padding-bottom: 12px;
+    text-align: start;
+}
+.system-requirements th,
+.system-requirements td {
+    padding: 6px 0;
+    font-weight: 400;
+}
+
+.system-requirements thead tr:first-child th {
+    padding-top:  0;
+}
+
+.system-requirements tbody tr:first-child td,
+.system-requirements tfoot tr:nth-child(2) td {
+    padding-top: 14px;
+}
+
+.system-requirements .dashicons-warning,
+.system-requirements tr.warning td:last-child {
+    color: #2799d5;
+}
+
+.system-requirements tr.warning .dashicons {
+    color: inherit;
+}
+
+.system-requirements tr.warning.min td:last-child {
+    color: #f57f17;
+}
+
+.system-requirements .dashicons-yes:not(.dashicons-warning) {
+    color: #2e7d32;
+}
+
+/* etheme video */
+
+.etheme-videos {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.etheme-video {
+    position: relative;
+    width: 33.33%;
+    float: left;
+    margin-bottom: 20px;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+.etheme-video .spinner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: none;
+}
+.etheme-video iframe {
+    max-width: 100%;
+}
+
+/* instagram */
+
+.etheme-instagram-connected input[type=text],
+.etheme-instagram-settings input[type=text],
+.etheme-instagram-settings select {
+    padding: 3px 10px;
+    border-radius: 0;
+    box-shadow: 0 0 0 #efefef;
+    height: 36px;
+    line-height: 36px;
+    margin: 0;
+    vertical-align: middle;
+    border-color: #e1e1e1;
+}
+
+.etheme-instagram-settings input[type=text] {
+    width: 120px;
+}
+
+.etheme-instagram-manual-wrapper {
+    display: inline;
+}
+
+.etheme-instagram-manual-wrapper + .et-message {
+    margin-top: 20px;
+}
+
+.etheme-instagram-manual {
+    margin-left: 10px;
+}
+
+.etheme-instagram-settings .et-button,
+.etheme-manual-btn {
+    vertical-align: middle;
+}
+
+.etheme-instagram-connected input[type=text] {
+    min-width: 280px;
+}
+
+.etheme-manual-btn,
+#instagram_time_type {
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
+.user-img, .user-info {
+    float: left;
+}
+
+.user-info {
+    padding-left: 20px;
+}
+
+.user-img img {
+    max-width: 90px;
+}
+
+.etheme-user{
+    padding-bottom: 20px!important;
+}
+
+.etheme-user:before,
+.etheme-user:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+.etheme-user + .etheme-user {
+    margin-top: 15px;
+    border-top: 1px solid #e1e1e1;
+}
+
+.etheme-user {
+    display: flex;
+    align-items: center;
+    padding: 15px 0px 0;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.user-remove {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+}
+
+.user-remove:hover {
+    color: #222;
+}
+
+.user-remove:hover:after {
+    display: block;
+}
+
+/* support includes */
+
+.red-color {
+    color: #c62828;
+}
+
+.support-blocks {
+    padding:  0;
+    margin: 50px 0;
+}
+
+.support-blocks:after {
+    display: block;
+    content: "";
+    clear: both;
+    width: 100%;
+}
+
+.support-blocks li {
+    flex:  1;
+    width:  33.33%;
+    padding: 0;
+    float: left;
+    text-align: center;
+    transition: 0.3s all ease-in-out;
+    margin-bottom:  0;
+}
+
+.support-blocks li img{
+    display: block;
+    margin: 0 auto 20px;
+}
+
+
+.support-blocks li a {
+    display:inline-block;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.support-includes:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+.support-includes {
+    display:  flex;
+    margin: 0px -5px 45px;
+}
+.support-includes > div{
+    flex:  1;
+    padding: 0 5px;
+}
+
+.support-includes ul {
+    padding: 0;
+    margin:  0;
+}
+
+.support-includes span {
+    font-size: 14px;
+}
+
+
+.support-includes p {
+    color: #222;
+    padding-bottom: 10px;
+    border-bottom:  1px solid #e1e1e1;
+    margin-bottom: 5px;
+    text-align: start;
+}
+
+/*.support-includes p span {
+    color: #d8b010;
+}*/
+
+.support-includes li {
+    padding: 5px 0;
+    margin:  0;
+    text-align: start;
+}
+
+
+.support-includes li a {
+    color: #222;
+    text-decoration: none;
+}
+
+.support-includes li:last-child {
+    border-bottom: none;
+}
+
+.support-includes strong {
+    color: #c62828;
+    text-transform: uppercase;
+}
+
+.support-includes li:before {
+    content: "\f147";
+    color: #2e7d32;
+    font: 400 20px/1 dashicons;
+    speak: none;
+    display: inline-block;
+    padding: 0 5px 0 0;
+    top: -1px;
+    position: relative;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-decoration: none !important;
+    vertical-align: top;
+}
+
+.support-includes .excludes li:before {
+    content: "\f158";
+    color: #c62828;
+}
+
+/* instagram */
+
+.etheme-instagram-connected input[type=text],
+.etheme-instagram-settings input[type=text],
+.etheme-instagram-settings select {
+    padding: 3px 10px;
+    border-radius: 0;
+    box-shadow: 0 0 0 #efefef;
+    height: 36px;
+    line-height: 36px;
+    margin: 0;
+    vertical-align: middle;
+    border-color: #e1e1e1;
+}
+
+.etheme-instagram-settings input[type=text] {
+    width: 120px;
+}
+
+.etheme-instagram-manual-wrapper {
+    display: inline;
+}
+
+.etheme-instagram-manual-wrapper + .et-message {
+    margin-top: 20px;
+}
+
+.etheme-instagram-manual {
+    margin-left: 10px;
+}
+
+.etheme-instagram-settings .et-button,
+.etheme-manual-btn {
+    vertical-align: middle;
+}
+
+.etheme-instagram-connected input[type=text] {
+    min-width: 280px;
+}
+
+.etheme-manual-btn,
+#instagram_time_type {
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
+#instagram_time_type {
+    height: auto;
+    padding: 0 24px 0 8px;
+}
+
+.user-img, .user-info {
+    float: left;
+}
+
+.user-info {
+    padding-left: 20px;
+}
+
+.user-img img {
+    max-width: 90px;
+}
+
+.etheme-user:before,
+.etheme-user:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+.etheme-user + .etheme-user {
+    margin-top: 15px;
+    border-top: 1px solid #e1e1e1;
+}
+
+.etheme-user {
+    display: flex;
+    align-items: center;
+    padding: 15px 0px 0;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.user-remove {
+    position: absolute;
+    top: 15px;
+    right: 0;
+    cursor: pointer;
+}
+
+.user-remove:hover {
+    color: #222;
+}
+
+.user-remove:hover:after {
+    display: block;
+}
+
+.etheme-instagram-manual-form{
+    margin-bottom: 10px;
+}
+
+/* etheme changelog */
+
+.version-update {
+    border:  1px solid #e1e1e1;
+    color: #888;
+    font-size: 16px;
+    padding: 20px;
+    margin-bottom: 20px;
+    display: block;
+    text-align: end;
+}
+
+.version-update h4 {
+    font-size: 18px;
+    margin:  0;
+    text-align: end;
+    float: left;
+}
+
+.version-update ul {
+    flex-basis:  100%;
+    border-top:  1px solid #e1e1e1;
+    padding-top: 17px;
+    padding-left: 0;
+    margin-bottom: 0;
+    text-align: end;
+}
+.version-update li {
+    text-align: start;
+}
+
+.version-update li:last-child,
+.version-update:last-child {
+    margin-bottom:  0;
+}
+
+/* panel popups */
+.et_panel-popup-on {
+    overflow: hidden;
+}
+
+.et_panel-popup-on:before {
+    content: '';
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,.5);
+    z-index: 9999;
+    animation: et-fadeIn .3s linear;
+}
+
+.et_panel-popup:empty {
+    border-radius: 50%;
+}
+
+.et_panel-popup:empty:not(.loading) {
+    display: none;
+}
+
+.et_panel-popup.loading:before {
+    content: '';
+    width: 16px;
+    height: 16px;
+    display: block;
+    border-radius: 50%;
+    animation: rotate .3s linear infinite;
+    border: 1px solid #888;
+    border-left-color: #e1e1e1;
+}
+
+.et_panel-popup {
+    position: fixed;
+    z-index: 10000;
+    background: #fff;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 350px;
+    text-align: center;
+    box-shadow: 1px 1px 35px rgba(0,0,0,.3);
+    transition: all .3s linear;
+    animation: et-toTopSecond .3s linear, et-fadeIn .3s linear;
+}
+
+.et_panel-popup.size-lg {
+    max-width: 500px;
+    padding: 40px;
+}
+
+.et_panel-popup.size-lg .et_popup-import-content {
+    max-height: 500px;
+    overflow: auto;
+}
+
+.et_panel-popup.size-lg ::-webkit-scrollbar {
+    display: none;
+}
+
+.et_panel-popup.auto-size {
+    max-width: unset;
+    width: auto;
+}
+
+.et_panel-popup input[type=checkbox] {
+    border-radius: 50%;
+    outline: none;
+    box-shadow: none;
+    width: 1rem;
+    height: 1rem;
+}
+
+.et_panel-popup input[type=checkbox]:checked:before {
+    color: #fff;
+    transform: scale(.75);
+    height: auto;
+    width: auto;
+    /* dark icon */
+    font-size: 21px;
+    content: "\f147";
+    margin: -3px 0 0 -4px;
+    font-family: 'dashicons';
+    line-height: 1;
+}
+
+.et_panel-popup input[type=checkbox]:checked {
+    background: #0b9f17;
+    border-color: #0b9f17;
+}
+
+.et_panel-popup .et_popup-step {
+    animation: et-fadeIn .5s linear;
+}
+
+.et-button-cancel {
+    position: fixed;
+    background-color: #fff;
+    color: #222 !important;
+    border-color: #e1e1e1;
+    left: calc(100% + 7px);
+    top: 0;
+    padding: 10px;
+    border-radius: 50%;
+    display: inline-flex;
+    font-size: 20px;
+    transform: none !important;
+}
+
+.et_panel-popup .spinner {
+    background: none;
+    margin: 0;
+    opacity: 1;
+    width: auto;
+    height: auto;
+    position: static;
+}
+
+.et_panel-popup .spinner .et-loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -12px;
+    width: 20px;
+    height: 20px;
+}
+
+.et_panel-popup img {
+    max-width: 100%;
+}
+
+.et_panel-popup .version-img {
+    border: 1px solid #e1e1e1;
+}
+
+.et_panel-popup .popup-import-head.with-bg p {
+    margin: 0;
+    font-size: 16px;
+}
+
+.et_panel-popup.size-lg .popup-import-head.with-bg p {
+    font-size: 22px;
+}
+
+.et_panel-popup .popup-import-head.with-bg {
+    margin: -20px -20px 20px;
+    background: #0073aa;
+    padding: 6px 0;
+    color: #fff;
+    border-radius: 4px 4px 0 0;
+}
+
+.et_panel-popup.size-lg .popup-import-head.with-bg {
+    margin: -41px -40px 50px;
+    padding: 8px 0;
+}
+
+.et_panel-popup .et-message {
+    animation: et-fadeIn .3s linear;
+}
+
+.et_panel-popup p, .et_panel-popup ul {
+    margin: 0 0 20px;
+    font-size: 14px;
+}
+
+.et_panel-popup ul li {
+    position: relative;
+    margin: 10px 0 0;
+    line-height: 1.8;
+    width: 100%;
+}
+
+.et_panel-popup ul li.processing > span:first-child, .et_panel-popup ul li.processing > span[data-slug] {
+    opacity: .5;
+}
+.et_panel-popup ul li:last-child {
+    margin-bottom: 0;
+}
+
+/*instagram and tooltips*/
+.et-tooltip {
+    display: inline;
+}
+
+.et-tooltip-content {
+    display: none;
+}
+
+.et-tooltip:hover .et-tooltip-content {
+    display: inline-block;
+    background-color: #fff;
+    padding: 10px;
+    position: absolute;
+    left: 0;
+    top: 60px;
+    z-index: 999;
+    width: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 2px 2px 8px 2px #e1e1e1;
+}
+
+.et-tooltip:hover:after {
+    content: "";
+    width: 100%;
+    height: 45px;
+    position: absolute;
+    display: inline-block;
+    left: 0;
+}
+
+/* new instagram API */
+.etheme-instagram-manual-form {
+    margin-bottom: 10px;
+}
+
+.etheme-user.new-api .et-tooltip {
+    display: none;
+}
+
+.etheme-user.old-api {
+    background-color: #ffd2d2;
+}
+
+a.et-facebook-corporate {
+    background: #386793;
+    color: #e9eef3;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+}
+
+.et-no-events{
+    pointer-events: none;
+}
+
+.et-help-content:not(.hidden) {
+    display: inline-block;
+}
+
+.et-help {
+    color: #1565c0;
+}
+
+.et-tooltip {
+    display: inline;
+}
+
+.et-tooltip-content {
+    display: none;
+}
+
+.et-tooltip:hover .et-tooltip-content {
+    display: inline-block;
+    background-color: #fff;
+    padding: 10px;
+    position: absolute;
+    left: 0;
+    top: 60px;
+    z-index: 999;
+    width: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 2px 2px 8px 2px #e1e1e1;
+}
+
+.et-tooltip:hover:after {
+    content: "";
+    width: 100%;
+    height: 45px;
+    position: absolute;
+    display: inline-block;
+    left: 0;
+}
+
+.et_popup-instagram-content b {
+    font-size: 18px;
+}
+.etheme-instagram-save-info:not(.hidden) {
+    width: 100%;
+    display: inline-block;
+    padding: 10px 0 0;
+}
+
+.etheme-instagram-save-info.info-success {
+    color: #0b9f17;
+}
+
+.etheme-instagram-save-info.info-error {
+    color: #c62828;
+}
+
+.etheme-instagram-settings.processing {
+    opacity: 0.3;
+    pointer-events: none;
+}
+.text-left{
+    text-align: left;
+}
+
+.last-button {
+    margin-bottom: 20px;
+}

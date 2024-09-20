@@ -1,0 +1,114 @@
+*** WooCommerce Tracking Table Changelog ***
+
+2022.07.28 - version 1.9.0
+* Change the display of the table
+
+2022.07.20 - version 1.8.9
+* Button to get the review link
+
+2022.07.05 - version 1.8.8
+* Split bookmark filters
+
+2022.06.30 - version 1.8.7
+* Fix if empty report in reporting
+
+2022.06.14 - version 1.8.6
+* Parse all id order in csv
+* Calculate delivery date with paid date
+
+2022.06.09 - version 1.8.5
+* Fix delay action with A+ date
+* Send review email in import reporting
+
+2022.06.08 - version 1.8.4
+* Update tooltip and scrollbar for notes
+* Order column by date with actions
+* Fix no-delivery-action orders
+* Remove meta if order completed
+* Add litigation in follow state
+* Add reporting csv parser
+* Add date to order completed
+* Add Vinco reference meta
+* Update parser csv
+* Fix some bugs
+
+2022.05.25 - version 1.8.3
+* Add process meta
+* Update actions
+* Update follow icon
+* Update delivery button display
+* Update parser to add date maq
+* Hide filter by method and status
+
+2022.05.24 - version 1.8.2
+* Auto-detect delimiter
+* Add note system
+* Add delivery system
+* Add action to filter no delivery
+* Update logo in template review
+* Update email template review
+
+2022.05.18 - version 1.8.1
+* Remove export csv function
+* Remove comment csv import
+* Multi-vendor compatibility
+* Add follow system
+* Change filter by actions
+
+2022.05.05 - version 1.8.0
+* Add cron access to send email
+
+2021.11.29 - version 1.7.3
+* Send url and image main product
+
+2021.11.23 - version 1.7.2
+* Fix background template email
+* Connected to trustedshops api
+* Add products reviews in email
+
+2021.11.09 - version 1.7.1
+* Open delay alert in mailbox
+
+2021.10.28 - version 1.7.0
+* Send delay mail to admin
+* Export csv for trustedshop
+
+2021.04.28 - version 1.6.0
+* Add button order in delay
+* Update order table view
+* Change color definition
+
+2021.03.09 - version 1.5.0
+* Add template email system
+* Add template review
+
+2021.03.01 - version 1.4.0
+* Update parser for better import
+* Ignore order when empty columns
+* Fix product list detection in alert
+* Hide delete comments button
+* Add ico no-review
+
+2021.02.08 - version 1.3.2
+* Update parser for date comment 2
+
+2021.01.25 - version 1.3.1
+* Change date Maq by date Enl Fdr
+* Remove file date comparison
+
+2021.01.18 - version 1.3.0
+* Edit date and comment vendor
+* Add day offset secured
+* Add "Fdr Blq" in csv
+* Update parser csv
+
+2021.01.13 - version 1.2.0
+* Add preview delay message
+* Add system delay by mail
+
+2021.01.11 - version 1.1.0"
+* Add system review by mail
+* Add icons alert notification
+
+2021.01.07 - version 1.0.0
+* Initial release

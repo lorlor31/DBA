@@ -1,0 +1,680 @@
+<script type="text/javascript" data-cfasync="false">
+'use strict';
+//LAYOUT.EDIT VIEW
+
+//load
+jQuery(function(){
+	hmenu_set_layout_order();
+	hmenu_find_toggle_elements();
+	hmenu_enable_horizontal_drag();
+	hmenu_position_center();
+	hmenu_set_widths();
+	hmenu_set_current_header_label('Currently Editing:',hmenu_global_menu_obj.menu.name);		
+});
+
+//setup layout and order page with all its data
+function hmenu_set_layout_order(){
+	
+	//page variables	
+	var m_orientation = hmenu_global_menu_obj.main_styles[0].orientation;	
+	var m_left_items = hmenu_global_menu_obj.menu.leftItems;
+	var m_center_items = hmenu_global_menu_obj.menu.centerItems;
+	var m_right_items = hmenu_global_menu_obj.menu.rightItems;
+	var m_logo = hmenu_global_menu_obj.main_styles[0].logo;
+	var m_search = hmenu_global_menu_obj.main_styles[0].search;
+	var m_arrows = hmenu_global_menu_obj.main_styles[0].arrows;
+	var m_devider = hmenu_global_menu_obj.main_styles[0].devider;
+	var m_group_devider = hmenu_global_menu_obj.main_styles[0].groupDevider;	
+	var m_menu = hmenu_global_menu_obj.main_styles[0].menu;
+	var m_social = hmenu_global_menu_obj.main_styles[0].social;
+	var m_cart = hmenu_global_menu_obj.main_styles[0].cart;	
+	var m_zindex = hmenu_global_menu_obj.main_styles[0].zindex;
+
+    //eyebrow
+    var m_eyebrow = hmenu_global_menu_obj.main_styles[0].eyebrow;
+    var m_eyeExcerpt = hmenu_global_menu_obj.main_styles[0].eyeExcerpt;
+    var m_eyeLoginUrl = hmenu_global_menu_obj.main_styles[0].eyeLoginUrl;
+    var m_eyeBackground = hmenu_global_menu_obj.main_styles[0].eyeBackground;
+    var m_eyeColor = hmenu_global_menu_obj.main_styles[0].eyeColor;
+    var m_eyeColorHover = hmenu_global_menu_obj.main_styles[0].eyeColorHover;
+    var m_eyePaddingLeft = hmenu_global_menu_obj.main_styles[0].eyePaddingLeft;
+    var m_eyePaddingRight = hmenu_global_menu_obj.main_styles[0].eyePaddingRight;
+	
+	//MENU SETTINGS
+	///////////////////////////////////////////////////
+	
+	//set orientation
+	if(m_orientation){
+		if(jQuery('#orientation_horizontal').val() == m_orientation){ 
+			jQuery('#orientation_horizontal').attr('checked', 'checked');
+		}
+		if(jQuery('#orientation_vertical').val() == m_orientation){ 
+			jQuery('#orientation_vertical').attr('checked', 'checked');
+		}
+	}
+	
+	//set logo
+	if(m_logo){
+		if(jQuery('#logo').val() == m_logo){ 
+			jQuery('#logo').attr('checked', 'checked');
+		}
+	}
+	
+	//set search
+	if(m_search){
+		if(jQuery('#search').val() == m_search){ 
+			jQuery('#search').attr('checked', 'checked');
+		}
+	}
+	
+	//set arrows
+	if(m_arrows){
+		if(jQuery('#arrows').val() == m_arrows){ 
+			jQuery('#arrows').attr('checked', 'checked');
+		}
+	}
+	
+	//set devider
+	if(m_devider){
+		if(jQuery('#devider').val() == m_devider){ 
+			jQuery('#devider').attr('checked', 'checked');
+		}
+	}
+	
+	//set group devider
+	if(m_group_devider){
+		if(jQuery('#groupDevider').val() == m_group_devider){ 
+			jQuery('#groupDevider').attr('checked', 'checked');
+		}
+	}
+	
+	//set menu
+	if(m_menu){
+		if(jQuery('#menu').val() == m_menu){ 
+			jQuery('#menu').attr('checked', 'checked');
+		}
+	}
+	
+	//set social
+	if(m_social){
+		if(jQuery('#social').val() == m_social){ 
+			jQuery('#social').attr('checked', 'checked');
+		}
+	}
+	
+	//set cart
+	if(m_cart){
+		if(jQuery('#cart').val() == m_cart){ 
+			jQuery('#cart').attr('checked', 'checked');
+		}
+	}
+	
+	//LAYOUT AND ORDER
+	///////////////////////////////////////////////////
+	
+	if(m_left_items){
+		var the_items = m_left_items.split(",");
+		var the_item = '';
+		jQuery(the_items).each(function(index, element) {
+            the_item += hmenu_return_item_html(element);
+        });
+		jQuery('.hero_position_left').html(the_item);
+	}
+	
+	if(m_center_items){
+		var the_items = m_center_items.split(",");
+		var the_item = '';
+		jQuery(the_items).each(function(index, element) {
+            the_item += hmenu_return_item_html(element);
+        });
+		jQuery('.hero_position_center').html(the_item);
+	}
+	
+	if(m_right_items){
+		var the_items = m_right_items.split(",");
+		var the_item = '';
+		jQuery(the_items).each(function(index, element) {
+            the_item += hmenu_return_item_html(element);
+        });
+		jQuery('.hero_position_right').html(the_item);
+	}
+	
+	//set logo
+	if(m_logo){
+		if(jQuery('#logo').val() == m_logo){ 
+			jQuery('.hero_sandbox_logo').show();
+			jQuery('.hero_sandbox_logo').addClass('hero_is_active');
+		}
+	}
+	
+	//set search
+	if(m_search){
+		if(jQuery('#search').val() == m_search){ 
+			jQuery('.hero_sandbox_search').show();
+			jQuery('.hero_sandbox_search').addClass('hero_is_active');
+		}
+	}
+	
+	//set menu
+	if(m_menu){
+		if(jQuery('#menu').val() == m_menu){ 
+			jQuery('.hero_sandbox_main').show();
+			jQuery('.hero_sandbox_main').addClass('hero_is_active');
+		}
+	}
+	
+	//set social
+	if(m_social){
+		if(jQuery('#social').val() == m_social){ 
+			jQuery('.hero_sandbox_social').show();
+			jQuery('.hero_sandbox_social').addClass('hero_is_active');
+		}
+	}
+	
+	//set cart
+	if(m_cart){
+		if(jQuery('#cart').val() == m_cart){ 
+			jQuery('.hero_sandbox_product').show();
+			jQuery('.hero_sandbox_product').addClass('hero_is_active');
+		}
+	}
+	
+	//ZINDEX
+	///////////////////////////////////////////////////
+	
+	//z-index
+	if(m_zindex){
+		jQuery('#zindex').val(m_zindex);
+	}
+
+    //EYEBROW
+    ///////////////////////////////////////////////////
+
+    //eyebrow
+    if(m_eyebrow){
+        if(jQuery('#eyebrow').val() == m_eyebrow){
+            jQuery('#eyebrow').attr('checked', 'checked');
+            jQuery('.hero_eye_brow').show();
+        } else {
+            jQuery('.hero_eye_brow').hide();
+        }
+    }
+
+    //excerpt
+    if(m_eyeExcerpt){
+        jQuery('#eyeExcerpt').val(m_eyeExcerpt);
+    }
+
+    //url
+    if(m_eyeLoginUrl){
+        jQuery('#eyeLoginUrl').val(m_eyeLoginUrl);
+    }
+
+    //bg color
+    if(m_eyeBackground){
+        jQuery('#eyeBackground').val(m_eyeBackground);
+    }
+
+    //text color
+    if(m_eyeColor){
+        jQuery('#eyeColor').val(m_eyeColor);
+    }
+
+    //text hover color
+    if(m_eyeColorHover){
+        jQuery('#eyeColorHover').val(m_eyeColorHover);
+    }
+
+    //text padding left
+    if(m_eyePaddingLeft){
+        jQuery('#eyePaddingLeft').val(m_eyePaddingLeft);
+    }
+
+    //text padding right
+    if(m_eyePaddingRight){
+        jQuery('#eyePaddingRight').val(m_eyePaddingRight);
+    }
+	
+	//switch components
+	hmenu_switch_components();
+	
+	//enable update settings, this enables the ability to change all data in the object
+	hmenu_enable_update_settings();
+	
+}
+
+//setup layout and order page with all its data
+function hmenu_enable_update_settings(){
+	
+	//all the controls
+	var control_horizontal = jQuery('#orientation_horizontal');
+	var control_vertical = jQuery('#orientation_vertical');
+	var control_logo = jQuery('#logo');
+	var control_search = jQuery('#search');
+	var control_arrows = jQuery('#arrows');
+	var control_groupDevider = jQuery('#groupDevider');
+	var control_menu = jQuery('#menu');
+	var control_social = jQuery('#social');
+	var control_cart = jQuery('#cart');
+	var control_deviders = jQuery('#devider');
+	var control_menu_location = jQuery('#menu_location');
+	var control_zindex = jQuery('#zindex');
+
+    //eyebrow
+    var control_eyebrow = jQuery('#eyebrow');
+    var control_eyeExcerpt = jQuery('#eyeExcerpt');
+    var control_eyeLoginUrl = jQuery('#eyeLoginUrl');
+    var control_eyeBackground = jQuery('#eyeBackground');
+    var control_eyeColor = jQuery('#eyeColor');
+    var control_eyeColorHover = jQuery('#eyeColorHover');
+    var control_eyePaddingLeft = jQuery('#eyePaddingLeft');
+    var control_eyePaddingRight = jQuery('#eyePaddingRight');
+	
+	//change: horizontal
+	jQuery(control_horizontal).on('change', function(){
+		hmenu_global_menu_obj.main_styles[0].orientation = jQuery(this).val();
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});
+	//change: vertical
+	jQuery(control_vertical).on('change', function(){
+		hmenu_global_menu_obj.main_styles[0].orientation = jQuery(this).val();
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});		
+	//change: logo
+	jQuery(control_logo).on('change', function(){
+		jQuery(this).prop('checked') ? hmenu_global_menu_obj.main_styles[0].logo = jQuery(this).val() : hmenu_global_menu_obj.main_styles[0].logo = 0;
+		jQuery(this).prop('checked') ? jQuery('.hero_sandbox_logo').show() : jQuery('.hero_sandbox_logo').hide();
+		jQuery(this).prop('checked') ? jQuery('.hero_sandbox_logo').addClass('hero_is_active') : jQuery('.hero_sandbox_logo').removeClass('hero_is_active');	
+		hmenu_set_widths();	
+		hmenu_position_center();	
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});
+	//change: search
+	jQuery(control_search).on('change', function(){
+		jQuery(this).prop('checked') ? hmenu_global_menu_obj.main_styles[0].search = jQuery(this).val() : hmenu_global_menu_obj.main_styles[0].search = 0;
+		jQuery(this).prop('checked') ? jQuery('.hero_sandbox_search').show() : jQuery('.hero_sandbox_search').hide();	
+		jQuery(this).prop('checked') ? jQuery('.hero_sandbox_search').addClass('hero_is_active') : jQuery('.hero_sandbox_search').removeClass('hero_is_active');
+		hmenu_set_widths();
+		hmenu_position_center();
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});
+	//change: arrows
+	jQuery(control_arrows).on('change', function(){
+		jQuery(this).prop('checked') ? hmenu_global_menu_obj.main_styles[0].arrows = jQuery(this).val() : hmenu_global_menu_obj.main_styles[0].arrows = 0;
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});
+	//change: group devider
+	jQuery(control_groupDevider).on('change', function(){
+		jQuery(this).prop('checked') ? hmenu_global_menu_obj.main_styles[0].groupDevider = jQuery(this).val() : hmenu_global_menu_obj.main_styles[0].groupDevider = 0;
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});
+	//change: menu
+	jQuery(control_menu).on('change', function(){
+		jQuery(this).prop('checked') ? hmenu_global_menu_obj.main_styles[0].menu = jQuery(this).val() : hmenu_global_menu_obj.main_styles[0].menu = 0;
+		jQuery(this).prop('checked') ? jQuery('.hero_sandbox_main').show() : jQuery('.hero_sandbox_main').hide();	
+		jQuery(this).prop('checked') ? jQuery('.hero_sandbox_main').addClass('hero_is_active') : jQuery('.hero_sandbox_main').removeClass('hero_is_active');
+		hmenu_set_widths();
+		hmenu_position_center();
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});
+	//change: social
+	jQuery(control_social).on('change', function(){
+		jQuery(this).prop('checked') ? hmenu_global_menu_obj.main_styles[0].social = jQuery(this).val() : hmenu_global_menu_obj.main_styles[0].social = 0;
+		jQuery(this).prop('checked') ? jQuery('.hero_sandbox_social').show() : jQuery('.hero_sandbox_social').hide();	
+		jQuery(this).prop('checked') ? jQuery('.hero_sandbox_social').addClass('hero_is_active') : jQuery('.hero_sandbox_social').removeClass('hero_is_active');
+		hmenu_set_widths();
+		hmenu_position_center();
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});
+	//change: cart
+	jQuery(control_cart).on('change', function(){
+		jQuery(this).prop('checked') ? hmenu_global_menu_obj.main_styles[0].cart = jQuery(this).val() : hmenu_global_menu_obj.main_styles[0].cart = 0;
+		jQuery(this).prop('checked') ? jQuery('.hero_sandbox_product').show() : jQuery('.hero_sandbox_product').hide();
+		jQuery(this).prop('checked') ? jQuery('.hero_sandbox_product').addClass('hero_is_active') : jQuery('.hero_sandbox_product').removeClass('hero_is_active');
+		hmenu_set_widths();
+		hmenu_position_center();
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});
+	//change: devider
+	jQuery(control_deviders).on('change', function(){
+		jQuery(this).prop('checked') ? hmenu_global_menu_obj.main_styles[0].devider = jQuery(this).val() : hmenu_global_menu_obj.main_styles[0].devider = 0;
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});		
+	//change: zindex
+	jQuery(control_zindex).on('change keyup', function(){
+		hmenu_global_menu_obj.main_styles[0].zindex = jQuery(this).val();
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});
+    //change: eyebrow
+    jQuery(control_eyebrow).on('change', function(){
+        jQuery(this).prop('checked') ? hmenu_global_menu_obj.main_styles[0].eyebrow = jQuery(this).val() : hmenu_global_menu_obj.main_styles[0].eyebrow = 0;
+        if(jQuery(this).prop('checked')){
+            jQuery('.hero_eye_brow').show();
+        } else {
+            jQuery('.hero_eye_brow').hide();
+        }
+        hmenu_flag_save_required('hmenu_save_clicked');
+    });
+    //change: eyeExcerpt
+    jQuery(control_eyeExcerpt).on('change keyup', function(){
+        hmenu_global_menu_obj.main_styles[0].eyeExcerpt = jQuery(this).val();
+        hmenu_flag_save_required('hmenu_save_clicked');
+    });
+    //change: eyeLoginUrl
+    jQuery(control_eyeLoginUrl).on('change keyup', function(){
+        hmenu_global_menu_obj.main_styles[0].eyeLoginUrl = jQuery(this).val();
+        hmenu_flag_save_required('hmenu_save_clicked');
+    });
+    //change: eyeBackground
+    jQuery(control_eyeBackground).on('change keyup', function(){
+        hmenu_global_menu_obj.main_styles[0].eyeBackground = jQuery(this).val();
+        hmenu_flag_save_required('hmenu_save_clicked');
+    });
+    //change: eyeColor
+    jQuery(control_eyeColor).on('change keyup', function(){
+        hmenu_global_menu_obj.main_styles[0].eyeColor = jQuery(this).val();
+        hmenu_flag_save_required('hmenu_save_clicked');
+    });
+    //change: eyeColorHover
+    jQuery(control_eyeColorHover).on('change keyup', function(){
+        hmenu_global_menu_obj.main_styles[0].eyeColorHover = jQuery(this).val();
+        hmenu_flag_save_required('hmenu_save_clicked');
+    });
+    //change: eyePaddingLeft
+    jQuery(control_eyePaddingLeft).on('change keyup', function(){
+        hmenu_global_menu_obj.main_styles[0].eyePaddingLeft = jQuery(this).val();
+        hmenu_flag_save_required('hmenu_save_clicked');
+    });
+    //change: eyePaddingRight
+    jQuery(control_eyePaddingRight).on('change keyup', function(){
+        hmenu_global_menu_obj.main_styles[0].eyePaddingRight = jQuery(this).val();
+        hmenu_flag_save_required('hmenu_save_clicked');
+    });
+}
+
+//return html
+function hmenu_return_item_html(element){
+	var hmenu_item_html = '';
+	switch(element){
+		case 'logo':
+			hmenu_item_html += '<li class="hero_sandbox_logo" data-id="'+element+'">Logo</li>';
+		break;
+		case 'main':
+			hmenu_item_html += '<li class="hero_sandbox_main" data-id="'+element+'">Main Navigation</li>';
+		break;
+		case 'product':
+			hmenu_item_html += '<li class="hero_sandbox_product" data-id="'+element+'">Cart</li>';
+		break;
+		case 'search':
+			hmenu_item_html += '<li class="hero_sandbox_search" data-id="'+element+'">Search</li>';
+		break;
+		case 'social':
+			hmenu_item_html += '<li class="hero_sandbox_social" data-id="'+element+'">Social</li>';
+		break;
+		default:
+			hmenu_item_html += '<li class="hero_sandbox_standard" data-id="'+element+'">'+element+'</li>';
+	}	
+	return(hmenu_item_html);
+}
+
+//example
+function hmenu_enable_horizontal_drag(){
+	
+	jQuery(".hero_main_sandbox ul").sortable({
+		placeholder: "hero_nav_place",
+		revert: true,
+		connectWith: ".connect_nav_items",
+		sort: function(event, ui){
+			ui.placeholder.html('<div class="herp_place_arrow"></div>');
+		},
+		change: function(event, ui){
+			hmenu_set_widths();
+		},
+		stop: function(event, ui){			
+			hmenu_position_center();
+			hmenu_set_widths();
+			hmenu_check_div_positions();
+		}
+	});
+	
+	jQuery( ".hero_main_sandbox" ).disableSelection();
+	
+}
+
+//check the div positions
+function hmenu_check_div_positions(){
+	var hero_position_left = jQuery('.hero_position_left');
+	var hero_position_center = jQuery('.hero_position_center');
+	var hero_position_right = jQuery('.hero_position_right');
+	var left = '';
+	var center = '';
+	var right = '';
+	jQuery(hero_position_left.children('li')).each(function(index, element) {
+        left += jQuery(this).data('id') + ",";
+    });
+	jQuery(hero_position_center.children('li')).each(function(index, element) {
+        center += jQuery(this).data('id') + ",";
+    });
+	jQuery(hero_position_right.children('li')).each(function(index, element) {
+        right += jQuery(this).data('id') + ",";
+    });
+	hmenu_global_menu_obj.menu.leftItems = left.slice(0, -1);
+	hmenu_global_menu_obj.menu.centerItems = center.slice(0, -1);
+	hmenu_global_menu_obj.menu.rightItems = right.slice(0, -1);
+	hmenu_flag_save_required('hmenu_save_clicked');
+}
+
+//reposition center div
+function hmenu_position_center(){
+	var center_holder_width = 0;
+	var margin_left = 0;
+	jQuery('.hero_position_center li').each(function(index, element) {
+		if(jQuery(this).hasClass('hero_is_active') || jQuery(this).hasClass('hero_nav_place')){
+			center_holder_width = center_holder_width + jQuery(this).width();
+		}
+    });
+	margin_left = center_holder_width / 2;
+	jQuery('.hero_position_center').animate({
+		'margin-left': '-' + margin_left
+	}, 500);
+}
+
+//set widths
+function hmenu_set_widths(){
+	jQuery('.hero_main_sandbox ul').each(function(index, element) {
+		var container_width = 0;
+		jQuery(this).children('li').each(function(index, element) {
+			if(jQuery(this).hasClass('hero_is_active') || jQuery(this).hasClass('hero_nav_place')){
+				container_width = container_width + jQuery(this).width();
+			}
+		});	
+		jQuery(this).css({
+			'width': container_width + 'px'
+		});	
+    });
+}
+</script>
+
+<div class="hero_views">
+    <div class="hero_col_12">
+    	<h2 class="hero_red size_18 weight_600 hero_col_8 hero_padding_bot_20">
+            Layout &amp; Order<br />
+            <strong class="size_11 hero_grey">Choose your menu structure by simply switching on or off what you need and drag and drop elements to create the layout you want.Items will snap left, right or center.</strong>
+        </h2>
+        <!-- START: FORM -->
+            <form>             	
+                <!-- START: ACTIVATION -->
+                    <div class="hero_section_holder hero_grey size_14">                    	
+                    	<div class="hero_sandbox_holder">
+                        	<div class="hero_sandbox_labels">
+                            	<div class="hero_sand_left rounded_3">Left</div>
+                            	<div class="hero_sand_center rounded_3">Center</div>
+                            	<div class="hero_sand_right rounded_3">Right</div>
+                            </div>
+							<div class="hero_eye_brow">
+								<div class="hero_eye_description">
+									This is an eye brow menu.
+								</div>
+								<div class="hero_eye_login">
+									Login / Logout
+								</div>
+							</div>
+                        	<div class="hero_main_sandbox">
+                            	<ul class="hero_position_left connect_nav_items">
+                                </ul>
+                            	<ul class="hero_position_center connect_nav_items"> 
+                                </ul>
+                                <ul class="hero_position_right connect_nav_items">
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="hero_col_12">
+                            <div class="hero_col_12">
+                                Select which items you want activated on your navigation. 
+                            </div>
+                        </div>
+                        <div class="hero_col_2">   
+                            <div class="hero_field_wrap">                         	
+                                <label><h2 class="size_12 hero_green">Logo</h2></label>
+                                <div class="hero_switch_position_right"><input type="checkbox" data-size="sml" id="logo" name="logo" value="1"></div>
+                            </div>
+                        </div>
+                        <div class="hero_col_2">
+                            <div class="hero_field_wrap">  
+                                <label><h2 class="size_12 hero_green">Menu</h2></label>
+                                <div class="hero_switch_position_right"><input type="checkbox" data-size="sml" id="menu" name="menu" value="1"></div>
+                            </div>                                 
+                        </div>
+                        <div class="hero_col_2">   
+                            <div class="hero_field_wrap">                         	
+                                <label><h2 class="size_12 hero_green">Search</h2></label>
+                                <div class="hero_switch_position_right"><input type="checkbox" data-size="sml" id="search" name="search" value="1"></div> 
+                            </div>
+                        </div>
+                        <div class="hero_col_2">
+                            <div class="hero_field_wrap">  
+                                <label><h2 class="size_12 hero_green">Social</h2></label>
+                                <div class="hero_switch_position_right"><input type="checkbox" data-size="sml" id="social" name="social" value="1"></div>
+                            </div>                                 
+                        </div>
+                        <div class="hero_col_2">
+                           <div class="hero_field_wrap">  
+                                <label><h2 class="size_12 hero_green">WooCart</h2></label>
+                                <div class="hero_switch_position_right"><input type="checkbox" data-size="sml" id="cart" name="cart" value="1"></div>
+                            </div>                                 
+                        </div>
+                    </div>
+                <!-- END: ACTIVATION -->      
+                <!-- START: ACTIVATION -->
+                    <div class="hero_section_holder hero_grey size_14">
+                    	<div class="hero_col_12">
+                            <div class="hero_col_8">
+                                <label>
+                                    <h2 class="size_18 hero_red weight_600">Menu z-index</h2>
+                                    <p class="size_12 hero_grey">Set Menu Z-index.</p>
+                                </label>
+                            </div>
+                            <div class="hero_col_4">
+                                <input type="text" data-size="sml" id="zindex" name="zindex" value="100" onKeyPress="return hmenu_num_only(event);" >
+                            </div>
+                        </div>
+                    </div>
+                <!-- END: ACTIVATION -->
+				<!-- START: ACTIVATION -->
+					<div class="hero_section_holder hero_grey size_14">
+						<div class="hero_section_toggle" data-toggle-section="main_responsive">
+							<div class="hero_col_12">
+								<div class="hero_col_8">
+									<label>
+										<h2 class="size_18 hero_red weight_600">Enable eyebrow</h2>
+										<p class="size_12 hero_grey">Enable menu eyebrow menu.</p>
+									</label>
+								</div>
+								<div class="hero_col_4">
+									<input type="checkbox" data-size="lrg" id="eyebrow" name="eyebrow" value="1" data-toggler="true">
+								</div>
+							</div>
+							<div class="hero_col_12">
+								<div class="hero_col_8">
+									<label>
+										<h2 class="size_14 hero_green">Eyebrow text</h2>
+										<p class="size_12 hero_grey">Set a excerpt for the eyebrow menu.</p>
+									</label>
+								</div>
+								<div class="hero_col_4">
+									<input type="text" data-size="lrg" id="eyeExcerpt" name="eyeExcerpt" >
+								</div>
+							</div>
+							<div class="hero_col_12">
+								<div class="hero_col_8">
+									<label>
+										<h2 class="size_14 hero_green">Eyebrow login url</h2>
+										<p class="size_12 hero_grey">Set the login url.</p>
+									</label>
+								</div>
+								<div class="hero_col_4">
+									<input type="text" data-size="lrg" id="eyeLoginUrl" name="eyeLoginUrl" >
+								</div>
+							</div>
+							<div class="hero_col_12">
+								<div class="hero_col_8">
+									<label>
+										<h2 class="size_14 hero_green">Eyebrow background color</h2>
+										<p class="size_12 hero_grey">Set the background color of your eyebrow menu.</p>
+									</label>
+								</div>
+								<div class="hero_col_4">
+									<input type="text" id="eyeBackground" class="color_picker" name="eyeBackground" value="#2B2B2B">
+								</div>
+							</div>
+							<div class="hero_col_12">
+								<div class="hero_col_8">
+									<label>
+										<h2 class="size_14 hero_green">Eyebrow text color</h2>
+										<p class="size_12 hero_grey">Set the text color for the eyebrow menu.</p>
+									</label>
+								</div>
+								<div class="hero_col_4">
+									<input type="text" id="eyeColor" class="color_picker" name="eyeColor" value="#EEEEEE">
+								</div>
+							</div>
+							<div class="hero_col_12">
+								<div class="hero_col_8">
+									<label>
+										<h2 class="size_14 hero_green">Eyebrow hover text color</h2>
+										<p class="size_12 hero_grey">Set the hover text color for the eyebrow menu.</p>
+									</label>
+								</div>
+								<div class="hero_col_4">
+									<input type="text" id="eyeColorHover" class="color_picker" name="eyeColorHover" value="#FFFFFF">
+								</div>
+							</div>
+							<div class="hero_col_12">
+								<div class="hero_col_8">
+									<label>
+										<h2 class="size_14 hero_green">Eyebrow padding left</h2>
+										<p class="size_12 hero_grey">Set the left padding for the eyebrow menu.</p>
+									</label>
+								</div>
+								<div class="hero_col_4">
+									<input type="text" data-hero_type="px" data-size="med" id="eyePaddingLeft" name="eyePaddingLeft">
+								</div>
+							</div>
+							<div class="hero_col_12">
+								<div class="hero_col_8">
+									<label>
+										<h2 class="size_14 hero_green">Eyebrow padding right</h2>
+										<p class="size_12 hero_grey">Set the right padding for the eyebrow menu.</p>
+									</label>
+								</div>
+								<div class="hero_col_4">
+									<input type="text" data-hero_type="px" data-size="med" id="eyePaddingRight" name="eyePaddingRight">
+								</div>
+							</div>
+						</div>
+					</div>
+				<!-- END: ACTIVATION -->
+			</form>
+        <!-- END: FORM -->
+    </div>
+</div>

@@ -1,0 +1,38 @@
+button.wbs-ajax-add-to-cart {
+    display: inline-block !important;
+}
+
+button[name="add-to-cart"]:not(.wbs-ajax-add-to-cart):not(.pisol_single_buy_now),
+button.single_add_to_cart_button:not(.wbs-ajax-add-to-cart):not(.pisol_single_buy_now) {
+    /*display: none !important;*/
+}
+
+.woocommerce-boost-sales .single_add_to_cart_button {
+    display: inline-block !important;
+}
+
+.woocommerce-boost-sales button[name="add-to-cart"]:not(.wbs-ajax-add-to-cart), .woocommerce-boost-sales button.single_add_to_cart_button:not(.wbs-ajax-add-to-cart) {
+    display: inline-block !important;
+}
+
+.wbs-current-product-title {
+    padding-left: 10px;
+}
+
+.wbs-added-product-row {
+    display: flex;
+    padding-left: 10px;
+}
+
+.wbs-added-product-title {
+    flex-grow: 1;
+}
+
+.wbs-added-product-price {
+    white-space: nowrap;
+    text-align: right;
+}
+
+.woocommerce-grouped__btn {
+    display: none;
+}

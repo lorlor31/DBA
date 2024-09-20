@@ -1,0 +1,1807 @@
+<script type="text/javascript" data-cfasync="false">
+'use strict';
+//STYLING.MEGA VIEW
+
+//load
+jQuery(function(){	
+	//functions
+	var hmenu_fonts = [
+		'fontFamily_0',
+		'fontFamily_1',
+		'fontFamily_2',
+		'fontFamily_3',
+		'wooPriceFamily',
+		'wooPriceOldFamily',
+		'wooPriceSaleFamily'
+	];
+	hmenu_populate_fonts(hmenu_fonts);
+	//set data
+	hmenu_set_mega_styles();	
+	hmenu_find_toggle_elements();
+	hmenu_find_small_toggle_elements();
+	hmenu_find_image_toggle();
+	hmenu_goto_main_nav();
+	hmenu_set_current_header_label('Currently Editing:',hmenu_global_menu_obj.menu.name);
+	hmenu_bind_ref_listener();
+});
+
+//mega style reference
+function hmenu_bind_ref_listener(){
+	jQuery('.toggle_visual').off().on('click', function(){
+		var div_height =  jQuery(this).attr('data-height');
+		
+		if(!jQuery(this).attr('data-toggle') || jQuery(this).attr('data-toggle') == 'close'){
+			jQuery('#'+jQuery(this).attr('data-to-toggle')).stop().animate({
+				'height': div_height
+			}, 500);
+			jQuery(this).attr('data-toggle', 'open');
+		} else {
+			jQuery(this).attr('data-toggle', 'close');
+			jQuery('#'+jQuery(this).attr('data-to-toggle')).stop().animate({
+				'height': 0
+			}, 500);
+		}
+		
+	});
+}
+
+//add more button
+function hmenu_goto_main_nav(){
+	//load core view
+	jQuery('#goto_main_nav').on('click', function(){	
+		hmenu_reload_sub_view('menu_sub_main_navicons', 'menus/','styling.main');
+	});
+}
+
+//set dropdown mega styles
+function hmenu_set_mega_styles(){
+	
+	//page variables	
+	var ms_width_type = hmenu_global_menu_obj.mega_styles[0].widthType;
+	var ms_width = hmenu_global_menu_obj.mega_styles[0].width;
+	
+	var ms_padding = hmenu_global_menu_obj.mega_styles[0].padding;
+	
+	var ms_border = hmenu_global_menu_obj.mega_styles[0].border;
+	var ms_border_color = hmenu_global_menu_obj.mega_styles[0].borderColor;
+	var ms_border_transparency = hmenu_global_menu_obj.mega_styles[0].borderTransparency;
+	var ms_border_type = hmenu_global_menu_obj.mega_styles[0].borderType;
+	var ms_border_radius = hmenu_global_menu_obj.mega_styles[0].borderRadius;
+	
+	var ms_shadow = hmenu_global_menu_obj.mega_styles[0].shadow;
+	var ms_shadow_radius = hmenu_global_menu_obj.mega_styles[0].shadowRadius;
+	var ms_shadow_color = hmenu_global_menu_obj.mega_styles[0].shadowColor;
+	var ms_shadow_transparency = hmenu_global_menu_obj.mega_styles[0].shadowTransparency;
+	
+	var ms_drop_start_color = hmenu_global_menu_obj.mega_styles[0].bgDropStartColor;
+	var ms_drop_gradient = hmenu_global_menu_obj.mega_styles[0].bgDropGradient;
+	var ms_drop_end_color = hmenu_global_menu_obj.mega_styles[0].bgDropEndColor;
+	var ms_drop_gradient_path = hmenu_global_menu_obj.mega_styles[0].bgDropGradientPath;
+	var ms_drop_transparency = hmenu_global_menu_obj.mega_styles[0].bgDropTransparency;
+	
+	var ms_hover_start_color = hmenu_global_menu_obj.mega_styles[0].bgHoverStartColor;
+	var ms_hover_gradient = hmenu_global_menu_obj.mega_styles[0].bgHoverGradient;
+	var ms_hover_end_color = hmenu_global_menu_obj.mega_styles[0].bgHoverEndColor;
+	var ms_hover_gradient_path = hmenu_global_menu_obj.mega_styles[0].bgHoverGradientPath;
+	var ms_hover_transparency = hmenu_global_menu_obj.mega_styles[0].bgHoverTransparency;
+	
+	var ms_arrows = hmenu_global_menu_obj.mega_styles[0].arrows;
+	var ms_arrows_transparency = hmenu_global_menu_obj.mega_styles[0].arrowTransparency;
+	var ms_arrow_color = hmenu_global_menu_obj.mega_styles[0].arrowColor;
+	
+	var ms_devider = hmenu_global_menu_obj.mega_styles[0].devider;
+	var ms_devider_transparency = hmenu_global_menu_obj.mega_styles[0].deviderTransparency;
+	var ms_devider_color = hmenu_global_menu_obj.mega_styles[0].deviderColor;
+	
+	var ms_font_hover_color = hmenu_global_menu_obj.mega_styles[0].fontHoverColor;
+	var ms_font_hover_decoration = hmenu_global_menu_obj.mega_styles[0].fontHoverDecoration;
+	
+	//head
+	var ms_font_family_head = hmenu_global_menu_obj.mega_font_styles[0].fontFamily;
+	var ms_font_color_head = hmenu_global_menu_obj.mega_font_styles[0].fontColor;
+	var ms_font_size_head = hmenu_global_menu_obj.mega_font_styles[0].fontSize;
+	var ms_font_sizing_head = hmenu_global_menu_obj.mega_font_styles[0].fontSizing;
+	var ms_font_weight_head = hmenu_global_menu_obj.mega_font_styles[0].fontWeight;
+	
+	//body
+	var ms_font_family_body = hmenu_global_menu_obj.mega_font_styles[1].fontFamily;
+	var ms_font_color_body = hmenu_global_menu_obj.mega_font_styles[1].fontColor;
+	var ms_font_size_body = hmenu_global_menu_obj.mega_font_styles[1].fontSize;
+	var ms_font_sizing_body = hmenu_global_menu_obj.mega_font_styles[1].fontSizing;
+	var ms_font_weight_body = hmenu_global_menu_obj.mega_font_styles[1].fontWeight;
+	
+	//list
+	var ms_font_family_list = hmenu_global_menu_obj.mega_font_styles[2].fontFamily;
+	var ms_font_color_list = hmenu_global_menu_obj.mega_font_styles[2].fontColor;
+	var ms_font_size_list = hmenu_global_menu_obj.mega_font_styles[2].fontSize;
+	var ms_font_sizing_list = hmenu_global_menu_obj.mega_font_styles[2].fontSizing;
+	var ms_font_weight_list = hmenu_global_menu_obj.mega_font_styles[2].fontWeight;
+	
+	//descriptions
+	var ms_font_family_desc = hmenu_global_menu_obj.mega_font_styles[3].fontFamily;
+	var ms_font_color_desc = hmenu_global_menu_obj.mega_font_styles[3].fontColor;
+	var ms_font_size_desc = hmenu_global_menu_obj.mega_font_styles[3].fontSize;
+	var ms_font_sizing_desc = hmenu_global_menu_obj.mega_font_styles[3].fontSizing;
+	var ms_font_weight_desc = hmenu_global_menu_obj.mega_font_styles[3].fontWeight;
+	
+	//woo commerce	
+	var wooPriceFamily = hmenu_global_menu_obj.mega_styles[0].wooPriceFamily;
+	var wooPriceWeight = hmenu_global_menu_obj.mega_styles[0].wooPriceWeight;
+	var wooPriceSize = hmenu_global_menu_obj.mega_styles[0].wooPriceSize;
+	var wooPriceSizing = hmenu_global_menu_obj.mega_styles[0].wooPriceSizing;
+	var wooPriceColor = hmenu_global_menu_obj.mega_styles[0].wooPriceColor;
+	
+	///////////////
+	///////////////
+	
+	//set font family
+	if(wooPriceFamily){
+		jQuery('#wooPriceFamily option').each(function(index, element) {
+           if(jQuery(this).val() == wooPriceFamily){
+			   jQuery(this).attr('selected', 'selected')
+		   }
+        });
+	}
+	
+	hmenu_update_select_component(jQuery('#wooPriceFamily'));
+	
+	//set font weight
+	if(wooPriceWeight){
+		jQuery('#wooPriceWeight option').each(function(index, element) {
+           if(jQuery(this).val() == wooPriceWeight){
+			   jQuery(this).attr('selected', 'selected')
+		   }
+        });
+	}
+	
+	//set font size
+	if(wooPriceSize){
+		jQuery('#wooPriceSize').val(wooPriceSize);
+	}
+	
+	//set font sizing
+	if(wooPriceSizing){
+		jQuery('#wooPriceSizing option').each(function(index, element) {
+           if(jQuery(this).val() == wooPriceSizing){
+			   jQuery(this).attr('selected', 'selected')
+		   }
+        });
+	}
+	
+	//set font color
+	if(wooPriceColor){
+		jQuery('#wooPriceColor').val(wooPriceColor);
+	}
+	
+	///////////////
+	///////////////
+	
+	var wooPriceOldFamily = hmenu_global_menu_obj.mega_styles[0].wooPriceOldFamily;
+	var wooPriceOldWeight = hmenu_global_menu_obj.mega_styles[0].wooPriceOldWeight;
+	var wooPriceOldSize = hmenu_global_menu_obj.mega_styles[0].wooPriceOldSize;
+	var wooPriceOldSizing = hmenu_global_menu_obj.mega_styles[0].wooPriceOldSizing;
+	var wooPriceOldColor = hmenu_global_menu_obj.mega_styles[0].wooPriceOldColor;
+	
+	///////////////
+	///////////////
+	
+	//set font family
+	if(wooPriceOldFamily){
+		jQuery('#wooPriceOldFamily option').each(function(index, element) {
+           if(jQuery(this).val() == wooPriceOldFamily){
+			   jQuery(this).attr('selected', 'selected')
+		   }
+        });
+	}
+	
+	hmenu_update_select_component(jQuery('#wooPriceOldFamily'));
+	
+	//set font weight
+	if(wooPriceOldWeight){
+		jQuery('#wooPriceOldWeight option').each(function(index, element) {
+           if(jQuery(this).val() == wooPriceOldWeight){
+			   jQuery(this).attr('selected', 'selected')
+		   }
+        });
+	}
+	
+	//set font size
+	if(wooPriceOldSize){
+		jQuery('#wooPriceOldSize').val(wooPriceOldSize);
+	}
+	
+	//set font sizing
+	if(wooPriceOldSizing){
+		jQuery('#wooPriceOldSizing option').each(function(index, element) {
+           if(jQuery(this).val() == wooPriceOldSizing){
+			   jQuery(this).attr('selected', 'selected')
+		   }
+        });
+	}
+	
+	//set font color
+	if(wooPriceOldColor){
+		jQuery('#wooPriceOldColor').val(wooPriceOldColor);
+	}
+	
+	///////////////
+	///////////////
+	
+	var wooPriceSaleFamily = hmenu_global_menu_obj.mega_styles[0].wooPriceSaleFamily;
+	var wooPriceSaleWeight = hmenu_global_menu_obj.mega_styles[0].wooPriceSaleWeight;
+	var wooPriceSaleSize = hmenu_global_menu_obj.mega_styles[0].wooPriceSaleSize;
+	var wooPriceSaleSizing = hmenu_global_menu_obj.mega_styles[0].wooPriceSaleSizing;
+	var wooPriceSaleColor = hmenu_global_menu_obj.mega_styles[0].wooPriceSaleColor;
+	
+	///////////////
+	///////////////
+	
+	//set font family
+	if(wooPriceSaleFamily){
+		jQuery('#wooPriceSaleFamily option').each(function(index, element) {
+           if(jQuery(this).val() == wooPriceSaleFamily){
+			   jQuery(this).attr('selected', 'selected')
+		   }
+        });
+	}
+	
+	hmenu_update_select_component(jQuery('#wooPriceSaleFamily'));
+	
+	//set font weight
+	if(wooPriceSaleWeight){
+		jQuery('#wooPriceSaleWeight option').each(function(index, element) {
+           if(jQuery(this).val() == wooPriceSaleWeight){
+			   jQuery(this).attr('selected', 'selected')
+		   }
+        });
+	}
+	
+	//set font size
+	if(wooPriceSaleSize){
+		jQuery('#wooPriceSaleSize').val(wooPriceSaleSize);
+	}
+	
+	//set font sizing
+	if(wooPriceSaleSizing){
+		jQuery('#wooPriceSaleSizing option').each(function(index, element) {
+           if(jQuery(this).val() == wooPriceSaleSizing){
+			   jQuery(this).attr('selected', 'selected')
+		   }
+        });
+	}
+	
+	//set font color
+	if(wooPriceSaleColor){
+		jQuery('#wooPriceSaleColor').val(wooPriceSaleColor);
+	}
+	
+	///////////////
+	///////////////
+	
+	var wooBtnText = hmenu_global_menu_obj.mega_styles[0].wooBtnText;
+	var wooBtnFontFamily = hmenu_global_menu_obj.mega_styles[0].wooBtnFontFamily;
+	var wooBtnFontColor = hmenu_global_menu_obj.mega_styles[0].wooBtnFontColor;
+	var wooBtnFontSize = hmenu_global_menu_obj.mega_styles[0].wooBtnFontSize;
+	var wooBtnFontSizing = hmenu_global_menu_obj.mega_styles[0].wooBtnFontSizing;
+	var wooBtnFontWeight = hmenu_global_menu_obj.mega_styles[0].wooBtnFontWeight;
+	var wooBtnFontDecoration = hmenu_global_menu_obj.mega_styles[0].wooBtnFontDecoration;
+	
+	///////////////
+	///////////////
+	
+	//set text
+	if(wooBtnText){
+		jQuery('#wooBtnText').val(wooBtnText);
+	}
+	
+	//set font family
+	if(wooBtnFontFamily){
+		jQuery('#wooBtnFontFamily option').each(function(index, element) {
+           if(jQuery(this).val() == wooBtnFontFamily){
+			   jQuery(this).attr('selected', 'selected')
+		   }
+        });
+	}
+	
+	hmenu_update_select_component(jQuery('#wooBtnFontFamily'));
+	
+	//set font color
+	if(wooBtnFontColor){
+		jQuery('#wooBtnFontColor').val(wooBtnFontColor);
+	}
+	
+	//set font size
+	if(wooBtnFontSize){
+		jQuery('#wooBtnFontSize').val(wooBtnFontSize);
+	}
+	
+	//set font sizing
+	if(wooBtnFontSizing){
+		jQuery('#wooBtnFontSizing option').each(function(index, element) {
+           if(jQuery(this).val() == wooBtnFontSizing){
+			   jQuery(this).attr('selected', 'selected')
+		   }
+        });
+	}
+	
+	//set font weight
+	if(wooBtnFontWeight){
+		jQuery('#wooBtnFontWeight option').each(function(index, element) {
+           if(jQuery(this).val() == wooBtnFontWeight){
+			   jQuery(this).attr('selected', 'selected')
+		   }
+        });
+	}
+	
+	//set font decoration
+	if(wooBtnFontDecoration){
+		jQuery('#wooBtnFontDecoration option').each(function(index, element) {
+           if(jQuery(this).val() == wooBtnFontDecoration){
+			   jQuery(this).attr('selected', 'selected')
+		   }
+        });
+	}
+	
+	///////////////
+	///////////////
+	
+	
+	//BACKGROUND COLOR
+	///////////////////////////////////////////////////
+	
+	//set drop down gradient
+	if(ms_drop_gradient){
+		if(jQuery('#bgDropGradient').val() == ms_drop_gradient){ 
+			jQuery('#bgDropGradient').attr('checked', 'checked');
+		}
+	}
+	
+	//set drop down color
+	if(ms_drop_start_color){
+		jQuery('#bgDropStartColor').val(ms_drop_start_color);
+	}
+	
+	//set drop down end color
+	if(ms_drop_end_color){
+		jQuery('#bgDropEndColor').val(ms_drop_end_color);
+	}
+	
+	//set drop down gradient path
+	if(ms_drop_gradient_path){
+		jQuery('#bgDropGradientPath option').each(function(index, element) {
+           if(jQuery(this).val() == ms_drop_gradient_path){
+			   jQuery(this).attr('selected', 'selected')
+		   }
+        });
+	}
+	
+	//set drop down transparency
+	if(ms_drop_transparency){
+		jQuery('#bgDropTransparency option').each(function(index, element) {
+           if(jQuery(this).val() == ms_drop_transparency){
+			   jQuery(this).attr('selected', 'selected')
+		   }
+        });
+	}
+	
+	//set drop down gradient
+	if(ms_hover_gradient){
+		if(jQuery('#bgHoverGradient').val() == ms_hover_gradient){ 
+			jQuery('#bgHoverGradient').attr('checked', 'checked');
+		}
+	}
+	
+	//set drop down color
+	if(ms_hover_start_color){
+		jQuery('#bgHoverStartColor').val(ms_hover_start_color);
+	}
+	
+	//set drop down end color
+	if(ms_hover_end_color){
+		jQuery('#bgHoverEndColor').val(ms_hover_end_color);
+	}
+	
+	//set drop down gradient path
+	if(ms_hover_gradient_path){
+		jQuery('#bgHoverGradientPath option').each(function(index, element) {
+           if(jQuery(this).val() == ms_hover_gradient_path){
+			   jQuery(this).attr('selected', 'selected')
+		   }
+        });
+	}
+	
+	//set drop down transparency
+	if(ms_hover_transparency){
+		jQuery('#bgHoverTransparency option').each(function(index, element) {
+           if(jQuery(this).val() == ms_hover_transparency){
+			   jQuery(this).attr('selected', 'selected')
+		   }
+        });
+	}
+	
+	//FONTS
+	///////////////////////////////////////////////////
+		
+	//set hover font color
+	if(ms_font_hover_color){
+		jQuery('#fontHoverColor').val(ms_font_hover_color);
+	}	
+	
+	//set hover decoration
+	if(ms_font_hover_decoration){
+		jQuery('#fontHoverDecoration option').each(function(index, element) {
+           if(jQuery(this).val() == ms_font_hover_decoration){
+			   jQuery(this).attr('selected', 'selected')
+		   }
+        });
+	}
+	
+	//FONTS - done abit differently on mega, because of the amount of font styles, im looping through each one and setting them according to the correct index
+	jQuery(hmenu_global_menu_obj.mega_font_styles).each(function(index, element) {
+        
+		//set vars
+		var fam = hmenu_global_menu_obj.mega_font_styles[index].fontFamily;
+		var color = hmenu_global_menu_obj.mega_font_styles[index].fontColor;
+		var size = hmenu_global_menu_obj.mega_font_styles[index].fontSize;
+		var sizing = hmenu_global_menu_obj.mega_font_styles[index].fontSizing;
+		var weight = hmenu_global_menu_obj.mega_font_styles[index].fontWeight;
+		
+		//set font family
+		if(fam){
+			jQuery('#fontFamily_'+index+' option').each(function(idx, el) {
+			   if(jQuery(this).val() == fam){
+				   jQuery(this).attr('selected', 'selected')
+			   }
+			});
+		}
+		
+		hmenu_update_select_component(jQuery('#fontFamily_'+index));
+		
+		//set font color
+		if(color){
+			jQuery('#fontColor_'+index).val(color);
+		}	
+		
+		//set font size
+		if(size){
+			jQuery('#fontSize_'+index).val(size);
+		}
+		
+		//set font sizing
+		if(sizing){
+			jQuery('#fontSizing_'+index+' option').each(function(index, element) {
+			   if(jQuery(this).val() == sizing){
+				   jQuery(this).attr('selected', 'selected')
+			   }
+			});
+		}
+		
+		//set font weight
+		if(weight){
+			jQuery('#fontWeight_'+index+' option').each(function(index, element) {
+			   if(jQuery(this).val() == weight){
+				   jQuery(this).attr('selected', 'selected')
+			   }
+			});
+		}
+		
+    });
+	
+	//DROPWDOWN WIDTHS
+	///////////////////////////////////////////////////
+	
+	//set menu dimensions
+	if(ms_width_type){
+		if(jQuery('#ms_width_type_custom').val() == ms_width_type){ 
+			jQuery('#ms_width_type_custom').attr('checked', 'checked');
+		}
+		if(jQuery('#ms_width_type_widest').val() == ms_width_type){ 
+			jQuery('#ms_width_type_widest').attr('checked', 'checked');
+		}
+	}
+	
+	//set custom width
+	if(ms_width){
+		jQuery('#width').val(ms_width);
+	}
+	
+	//PADDING
+	///////////////////////////////////////////////////
+		
+	//set padding
+	if(ms_padding){
+		var padding_array = new Array();
+		padding_array = ms_padding.split(',');
+		jQuery('.ms_padding').each(function(index, element) {
+            jQuery(this).val(padding_array[index]);
+        });
+	}
+	
+	//SHADOW
+	///////////////////////////////////////////////////
+		
+	//set shadow
+	if(ms_shadow){
+		if(jQuery('#shadow').val() == ms_shadow){ 
+			jQuery('#shadow').attr('checked', 'checked');
+		}
+	}
+	
+	//set radius
+	if(ms_shadow_radius){
+		var shadow_array = new Array();
+		shadow_array = ms_shadow_radius.split(',');
+		jQuery('.ms_shadow_radius').each(function(index, element) {
+            jQuery(this).val(shadow_array[index]);
+        });
+	}
+	
+	//shadow color
+	if(ms_shadow_color){
+		jQuery('#shadowColor').val(ms_shadow_color);
+	}
+	
+	//set drop down transparency
+	if(ms_shadow_transparency){
+		jQuery('#shadowTransparency option').each(function(index, element) {
+           if(jQuery(this).val() == ms_shadow_transparency){
+			   jQuery(this).attr('selected', 'selected')
+		   }
+        });
+	}
+	
+	//BORDER
+	///////////////////////////////////////////////////
+	
+	//set border
+	if(ms_border){
+		if(jQuery('#border').val() == ms_border){ 
+			jQuery('#border').attr('checked', 'checked');
+		}
+	}
+	
+	//set hover transparency
+	if(ms_border_transparency){
+		jQuery('#borderTransparency option').each(function(index, element) {
+           if(jQuery(this).val() == ms_border_transparency){
+			   jQuery(this).attr('selected', 'selected')
+		   }
+        });
+	}
+	
+	//set hover menu color
+	if(ms_border_color){
+		jQuery('#borderColor').val(ms_border_color);
+	}
+	
+	//set border type
+	if(ms_border_type){
+		jQuery('#borderType option').each(function(index, element) {
+           if(jQuery(this).val() == ms_border_type){
+			   jQuery(this).attr('selected', 'selected')
+		   }
+        });
+	}
+	
+	//set hover menu color
+	if(ms_border_radius){
+		var radius_array = new Array();
+		radius_array = ms_border_radius.split(',');
+		jQuery('.ms_border_radius').each(function(index, element) {
+            jQuery(this).val(radius_array[index]);
+        });
+	}
+	
+	//ARROWS
+	///////////////////////////////////////////////////
+	
+	//set arrows
+	if(ms_arrows){
+		if(jQuery('#arrows').val() == ms_arrows){ 
+			jQuery('#arrows').attr('checked', 'checked');
+		}
+	}
+	
+	//arrow tranparency
+	if(ms_arrows_transparency){
+		jQuery('#arrowTransparency option').each(function(index, element) {
+           if(jQuery(this).val() == ms_arrows_transparency){
+			   jQuery(this).attr('selected', 'selected')
+		   }
+        });
+	}
+	
+	//arrow color
+	if(ms_arrow_color){
+		jQuery('#arrowColor').val(ms_arrow_color);
+	}
+	
+	//DEVIDERS
+	///////////////////////////////////////////////////
+	
+	//set devider
+	if(ms_devider){
+		if(jQuery('#devider').val() == ms_devider){ 
+			jQuery('#devider').attr('checked', 'checked');
+		}
+	}
+	
+	//devider tranparency
+	if(ms_devider_transparency){
+		jQuery('#deviderTransparency option').each(function(index, element) {
+           if(jQuery(this).val() == ms_devider_transparency){
+			   jQuery(this).attr('selected', 'selected')
+		   }
+        });
+	}
+	
+	//arrow color
+	if(ms_devider_color){
+		jQuery('#deviderColor').val(ms_devider_color);
+	}
+	
+	//switch components
+	hmenu_switch_components();
+	
+	//enable update settings
+	hmenu_enable_update_settings();
+}
+
+//enable update settings
+function hmenu_enable_update_settings(){
+	
+	var control_wooPriceFamily = jQuery('#wooPriceFamily');
+	var control_wooPriceWeight = jQuery('#wooPriceWeight');
+	var control_wooPriceSize = jQuery('#wooPriceSize');
+	var control_wooPriceSizing = jQuery('#wooPriceSizing');
+	var control_wooPriceColor = jQuery('#wooPriceColor');
+	
+	//change: font family
+	jQuery('.wooPriceFamily .hero_dropdown .hero_drop_row').on('click', function(){
+		jQuery(control_wooPriceFamily).trigger('change');		
+	});	
+	jQuery(control_wooPriceFamily).on('change', function(){
+		hmenu_global_menu_obj.mega_styles[0].wooPriceFamily = jQuery(this).children('option:selected').val();
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});	
+	
+	//change: font weight
+	jQuery('.wooPriceWeight .hero_dropdown .hero_drop_row').on('click', function(){
+		jQuery(control_wooPriceWeight).trigger('change');		
+	});	
+	jQuery(control_wooPriceWeight).on('change', function(){
+		hmenu_global_menu_obj.mega_styles[0].wooPriceWeight = jQuery(this).children('option:selected').val();
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});	
+	
+	//change: font size
+	jQuery(control_wooPriceSize).on('change keyup', function(){
+		hmenu_global_menu_obj.mega_styles[0].wooPriceSize = jQuery(this).val();
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});
+	
+	//change: font sizing
+	jQuery('.wooPriceSizing .hero_dropdown .hero_drop_row').on('click', function(){
+		jQuery(control_wooPriceSizing).trigger('change');		
+	});	
+	jQuery(control_wooPriceSizing).on('change', function(){
+		hmenu_global_menu_obj.mega_styles[0].wooPriceSizing = jQuery(this).children('option:selected').val();
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});
+	
+	//change: font color
+	jQuery(control_wooPriceColor).on('change keyup', function(){
+		hmenu_global_menu_obj.mega_styles[0].wooPriceColor = jQuery(this).val();
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});
+	
+	var control_wooPriceOldFamily = jQuery('#wooPriceOldFamily');
+	var control_wooPriceOldWeight = jQuery('#wooPriceOldWeight');
+	var control_wooPriceOldSize = jQuery('#wooPriceOldSize');
+	var control_wooPriceOldSizing = jQuery('#wooPriceOldSizing');
+	var control_wooPriceOldColor = jQuery('#wooPriceOldColor');
+	
+	//change: font family
+	jQuery('.wooPriceOldFamily .hero_dropdown .hero_drop_row').on('click', function(){
+		jQuery(control_wooPriceOldFamily).trigger('change');		
+	});	
+	jQuery(control_wooPriceOldFamily).on('change', function(){
+		hmenu_global_menu_obj.mega_styles[0].wooPriceOldFamily = jQuery(this).children('option:selected').val();
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});	
+	
+	//change: font weight
+	jQuery('.wooPriceOldWeight .hero_dropdown .hero_drop_row').on('click', function(){
+		jQuery(control_wooPriceOldWeight).trigger('change');		
+	});	
+	jQuery(control_wooPriceOldWeight).on('change', function(){
+		hmenu_global_menu_obj.mega_styles[0].wooPriceOldWeight = jQuery(this).children('option:selected').val();
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});	
+	
+	//change: font size
+	jQuery(control_wooPriceOldSize).on('change keyup', function(){
+		hmenu_global_menu_obj.mega_styles[0].wooPriceOldSize = jQuery(this).val();
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});
+	
+	//change: font sizing
+	jQuery('.wooPriceOldSizing .hero_dropdown .hero_drop_row').on('click', function(){
+		jQuery(control_wooPriceOldSizing).trigger('change');		
+	});	
+	jQuery(control_wooPriceOldSizing).on('change', function(){
+		hmenu_global_menu_obj.mega_styles[0].wooPriceOldSizing = jQuery(this).children('option:selected').val();
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});
+	
+	//change: font color
+	jQuery(control_wooPriceOldColor).on('change keyup', function(){
+		hmenu_global_menu_obj.mega_styles[0].wooPriceOldColor = jQuery(this).val();
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});
+	
+	var control_wooPriceSaleFamily = jQuery('#wooPriceSaleFamily');
+	var control_wooPriceSaleWeight = jQuery('#wooPriceSaleWeight');
+	var control_wooPriceSaleSize = jQuery('#wooPriceSaleSize');
+	var control_wooPriceSaleSizing = jQuery('#wooPriceSaleSizing');
+	var control_wooPriceSaleColor = jQuery('#wooPriceSaleColor');
+	
+	//change: font family
+	jQuery('.wooPriceSaleFamily .hero_dropdown .hero_drop_row').on('click', function(){
+		jQuery(control_wooPriceSaleFamily).trigger('change');		
+	});	
+	jQuery(control_wooPriceSaleFamily).on('change', function(){
+		hmenu_global_menu_obj.mega_styles[0].wooPriceSaleFamily = jQuery(this).children('option:selected').val();
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});	
+	
+	//change: font weight
+	jQuery('.wooPriceSaleWeight .hero_dropdown .hero_drop_row').on('click', function(){
+		jQuery(control_wooPriceSaleWeight).trigger('change');		
+	});	
+	jQuery(control_wooPriceSaleWeight).on('change', function(){
+		hmenu_global_menu_obj.mega_styles[0].wooPriceSaleWeight = jQuery(this).children('option:selected').val();
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});	
+	
+	//change: font size
+	jQuery(control_wooPriceSaleSize).on('change keyup', function(){
+		hmenu_global_menu_obj.mega_styles[0].wooPriceSaleSize = jQuery(this).val();
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});
+	
+	//change: font sizing
+	jQuery('.wooPriceSaleSizing .hero_dropdown .hero_drop_row').on('click', function(){
+		jQuery(control_wooPriceSaleSizing).trigger('change');		
+	});	
+	jQuery(control_wooPriceSaleSizing).on('change', function(){
+		hmenu_global_menu_obj.mega_styles[0].wooPriceSaleSizing = jQuery(this).children('option:selected').val();
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});
+	
+	//change: font color
+	jQuery(control_wooPriceSaleColor).on('change keyup', function(){
+		hmenu_global_menu_obj.mega_styles[0].wooPriceSaleColor = jQuery(this).val();
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});
+	
+	var control_wooBtnText = jQuery('#wooBtnText');
+	var control_wooBtnFontFamily = jQuery('#wooBtnFontFamily');
+	var control_wooBtnFontColor = jQuery('#wooBtnFontColor');
+	var control_wooBtnFontSize = jQuery('#wooBtnFontSize');
+	var control_wooBtnFontSizing = jQuery('#wooBtnFontSizing');
+	var control_wooBtnFontWeight = jQuery('#wooBtnFontWeight');
+	var control_wooBtnFontDecoration = jQuery('#wooBtnFontDecoration');
+	
+	//change: font text
+	jQuery(control_wooBtnText).on('change keyup', function(){
+		hmenu_global_menu_obj.mega_styles[0].wooBtnText = jQuery(this).val();
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});
+	
+	//change: font family
+	jQuery('.wooBtnFontFamily .hero_dropdown .hero_drop_row').on('click', function(){
+		jQuery(control_wooBtnFontFamily).trigger('change');		
+	});	
+	jQuery(control_wooBtnFontFamily).on('change', function(){
+		hmenu_global_menu_obj.mega_styles[0].wooBtnFontFamily = jQuery(this).children('option:selected').val();
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});	
+	
+	//change: font color
+	jQuery(control_wooBtnFontColor).on('change keyup', function(){
+		hmenu_global_menu_obj.mega_styles[0].wooBtnFontColor = jQuery(this).val();
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});
+	
+	//change: font size
+	jQuery(control_wooBtnFontSize).on('change keyup', function(){
+		hmenu_global_menu_obj.mega_styles[0].wooBtnFontSize = jQuery(this).val();
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});
+	
+	//change: font sizing
+	jQuery('.wooBtnFontSizing .hero_dropdown .hero_drop_row').on('click', function(){
+		jQuery(control_wooBtnFontSizing).trigger('change');		
+	});	
+	jQuery(control_wooBtnFontSizing).on('change', function(){
+		hmenu_global_menu_obj.mega_styles[0].wooBtnFontSizing = jQuery(this).children('option:selected').val();
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});	
+	
+	//change: font weight
+	jQuery('.wooBtnFontWeight .hero_dropdown .hero_drop_row').on('click', function(){
+		jQuery(control_wooBtnFontWeight).trigger('change');		
+	});	
+	jQuery(control_wooBtnFontWeight).on('change', function(){
+		hmenu_global_menu_obj.mega_styles[0].wooBtnFontWeight = jQuery(this).children('option:selected').val();
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});	
+	
+	//change: font decoration
+	jQuery('.wooBtnFontDecoration .hero_dropdown .hero_drop_row').on('click', function(){
+		jQuery(control_wooBtnFontDecoration).trigger('change');		
+	});	
+	jQuery(control_wooBtnFontDecoration).on('change', function(){
+		hmenu_global_menu_obj.mega_styles[0].wooBtnFontDecoration = jQuery(this).children('option:selected').val();
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});	
+	
+	///////////////////////////////////////////////////////////////////
+	///////////////////////////////////////////////////////////////////
+	
+	
+	var control_width_custom = jQuery('#ms_width_type_custom');
+	var control_width_widest = jQuery('#ms_width_type_widest');
+	var control_width = jQuery('#width');
+	
+	//change: full
+	jQuery(control_width_custom).on('change', function(){
+		hmenu_global_menu_obj.mega_styles[0].widthType = jQuery(this).val();
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});
+	//change: fixed
+	jQuery(control_width_widest).on('change', function(){
+		hmenu_global_menu_obj.mega_styles[0].widthType = jQuery(this).val();
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});
+	//change: width
+	jQuery(control_width).on('change keyup', function(){
+		hmenu_global_menu_obj.mega_styles[0].width = jQuery(this).val();
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});
+	
+	var control_bgDropGradient = jQuery('#bgDropGradient');
+	var control_bgDropStartColor = jQuery('#bgDropStartColor');
+	var control_bgDropEndColor = jQuery('#bgDropEndColor');
+	var control_bgDropGradientPath = jQuery('#bgDropGradientPath');
+	var control_bgDropTransparency = jQuery('#bgDropTransparency');
+	
+	//change: gradient bg
+	jQuery(control_bgDropGradient).on('change', function(){
+		jQuery(this).prop('checked') ? hmenu_global_menu_obj.mega_styles[0].bgDropGradient = jQuery(this).val() : hmenu_global_menu_obj.mega_styles[0].bgDropGradient = 0;
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});
+	
+	//change: start color
+	jQuery(control_bgDropStartColor).on('change keyup', function(){
+		hmenu_global_menu_obj.mega_styles[0].bgDropStartColor = jQuery(this).val();
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});
+	
+	//change: end color
+	jQuery(control_bgDropEndColor).on('change keyup', function(){
+		hmenu_global_menu_obj.mega_styles[0].bgDropEndColor = jQuery(this).val();
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});
+	
+	//change: gradient path
+	jQuery('.bgDropGradientPath .hero_dropdown .hero_drop_row').on('click', function(){
+		jQuery(control_bgDropGradientPath).trigger('change');		
+	});	
+	jQuery(control_bgDropGradientPath).on('change', function(){
+		hmenu_global_menu_obj.mega_styles[0].bgDropGradientPath = jQuery(this).children('option:selected').val();
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});		
+	
+	//change: gradient path
+	jQuery('.bgDropTransparency .hero_dropdown .hero_drop_row').on('click', function(){
+		jQuery(control_bgDropTransparency).trigger('change');		
+	});		
+	jQuery(control_bgDropTransparency).on('change', function(){
+		hmenu_global_menu_obj.mega_styles[0].bgDropTransparency = jQuery(this).children('option:selected').val();
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});	
+	
+	var control_bgHoverGradient = jQuery('#bgHoverGradient');
+	var control_bgHoverStartColor = jQuery('#bgHoverStartColor');
+	var control_bgHoverEndColor = jQuery('#bgHoverEndColor');
+	var control_bgHoverGradientPath = jQuery('#bgHoverGradientPath');
+	var control_bgHoverTransparency = jQuery('#bgHoverTransparency');
+	
+	//change: gradient bg
+	jQuery(control_bgHoverGradient).on('change', function(){
+		jQuery(this).prop('checked') ? hmenu_global_menu_obj.mega_styles[0].bgHoverGradient = jQuery(this).val() : hmenu_global_menu_obj.mega_styles[0].bgHoverGradient = 0;
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});
+	
+	//change: start color
+	jQuery(control_bgHoverStartColor).on('change keyup', function(){
+		hmenu_global_menu_obj.mega_styles[0].bgHoverStartColor = jQuery(this).val();
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});
+	
+	//change: end color
+	jQuery(control_bgHoverEndColor).on('change keyup', function(){
+		hmenu_global_menu_obj.mega_styles[0].bgHoverEndColor = jQuery(this).val();
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});
+	
+	//change: gradient path
+	jQuery('.bgHoverGradientPath .hero_dropdown .hero_drop_row').on('click', function(){
+		jQuery(control_bgHoverGradientPath).trigger('change');		
+	});	
+	jQuery(control_bgHoverGradientPath).on('change', function(){
+		hmenu_global_menu_obj.mega_styles[0].bgHoverGradientPath = jQuery(this).children('option:selected').val();
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});		
+	
+	//change: gradient path
+	jQuery('.bgHoverTransparency .hero_dropdown .hero_drop_row').on('click', function(){
+		jQuery(control_bgHoverTransparency).trigger('change');		
+	});		
+	jQuery(control_bgHoverTransparency).on('change', function(){
+		hmenu_global_menu_obj.mega_styles[0].bgHoverTransparency = jQuery(this).children('option:selected').val();
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});	
+	
+	var control_fontHoverColor = jQuery('#fontHoverColor');
+	var control_fontHoverDecoration = jQuery('#fontHoverDecoration');
+	
+	//change: hover font color
+	jQuery(control_fontHoverColor).on('change keyup', function(){
+		hmenu_global_menu_obj.mega_styles[0].fontHoverColor = jQuery(this).val();
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});
+	
+	//change: font hover decoration
+	jQuery('.fontHoverDecoration .hero_dropdown .hero_drop_row').on('click', function(){
+		jQuery(control_fontHoverDecoration).trigger('change');		
+	});	
+	jQuery(control_fontHoverDecoration).on('change', function(){
+		hmenu_global_menu_obj.mega_styles[0].fontHoverDecoration = jQuery(this).children('option:selected').val();
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});	
+	
+	//FONTS - done abit differently on mega, because of the amount of font styles, im looping through each one and setting them according to the correct index
+	jQuery(hmenu_global_menu_obj.mega_font_styles).each(function(index, element) {
+        
+		//set vars
+		var control_fam = jQuery('#fontFamily_'+index);
+		var control_color = jQuery('#fontColor_'+index);
+		var control_size = jQuery('#fontSize_'+index);
+		var control_sizing = jQuery('#fontSizing_'+index);
+		var control_weight = jQuery('#fontWeight_'+index);
+		
+		//change: font family
+		jQuery('.fontFamily_'+index+' .hero_dropdown .hero_drop_row').on('click', function(){
+			jQuery(control_fam).trigger('change');		
+		});	
+		jQuery(control_fam).on('change', function(){
+			hmenu_global_menu_obj.mega_font_styles[index].fontFamily = jQuery(this).children('option:selected').val();
+			hmenu_flag_save_required('hmenu_save_clicked');
+		});	
+		
+		//change: font weight
+		jQuery('.fontWeight_'+index+' .hero_dropdown .hero_drop_row').on('click', function(){
+			jQuery(control_weight).trigger('change');		
+		});	
+		jQuery(control_weight).on('change', function(){
+			hmenu_global_menu_obj.mega_font_styles[index].fontWeight = jQuery(this).children('option:selected').val();
+			hmenu_flag_save_required('hmenu_save_clicked');
+		});	
+		
+		//change: font size
+		jQuery(control_size).on('change keyup', function(){
+			hmenu_global_menu_obj.mega_font_styles[index].fontSize = jQuery(this).val();
+			hmenu_flag_save_required('hmenu_save_clicked');
+		});
+		
+		//change: font sizing
+		jQuery('.fontSizing_'+index+' .hero_dropdown .hero_drop_row').on('click', function(){
+			jQuery(control_sizing).trigger('change');		
+		});	
+		jQuery(control_sizing).on('change', function(){
+			hmenu_global_menu_obj.mega_font_styles[index].fontSizing = jQuery(this).children('option:selected').val();
+			hmenu_flag_save_required('hmenu_save_clicked');
+		});
+		
+		//change: font color
+		jQuery(control_color).on('change keyup', function(){
+			hmenu_global_menu_obj.mega_font_styles[index].fontColor = jQuery(this).val();
+			hmenu_flag_save_required('hmenu_save_clicked');
+		});
+		
+    });
+	
+	//change: shadow radius
+	jQuery('.ms_padding').on('change keyup', function(){
+		var the_padding = '';
+		jQuery('.ms_padding').each(function(index, element) {
+			if(jQuery(this).val()){
+				the_padding += jQuery(this).val() + ',';
+			} else {
+				the_padding += 0 + ',';
+			}
+        });		
+		hmenu_global_menu_obj.mega_styles[0].padding = the_padding.slice(0, -1);
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});
+	
+	var control_shadow = jQuery('#shadow');	
+	var control_shadow_distance = jQuery('#shadow_distance');
+	var control_shadow_blur = jQuery('#shadow_blur');
+	var control_shadowColor = jQuery('#shadowColor');
+	var control_shadowTransparency = jQuery('#shadowTransparency');
+	
+	//change: shadow enable
+	jQuery(control_shadow).on('change', function(){
+		jQuery(this).prop('checked') ? hmenu_global_menu_obj.mega_styles[0].shadow = jQuery(this).val() : hmenu_global_menu_obj.mega_styles[0].shadow = 0;
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});
+	
+	//change: shadow radius
+	jQuery('.ms_shadow_radius').on('change keyup', function(){
+		var the_shadow_radius = '';
+		jQuery('.ms_shadow_radius').each(function(index, element) {
+			if(jQuery(this).val()){
+				the_shadow_radius += jQuery(this).val() + ',';
+			} else {
+				the_shadow_radius += 0 + ',';
+			}
+        });		
+		hmenu_global_menu_obj.mega_styles[0].shadowRadius = the_shadow_radius.slice(0, -1);
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});
+	
+	//change: shadow color
+	jQuery(control_shadowColor).on('change keyup', function(){
+		hmenu_global_menu_obj.mega_styles[0].shadowColor = jQuery(this).val();
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});
+	
+	//change: border transparency
+	jQuery('.shadowTransparency .hero_dropdown .hero_drop_row').on('click', function(){
+		jQuery(control_shadowTransparency).trigger('change');		
+	});	
+	jQuery(control_shadowTransparency).on('change', function(){
+		hmenu_global_menu_obj.mega_styles[0].shadowTransparency = jQuery(this).children('option:selected').val();
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});	
+	
+	var control_border = jQuery('#border');
+	var control_borderTransparency = jQuery('#borderTransparency');
+	var control_borderColor = jQuery('#borderColor');	
+	var control_borderType = jQuery('#borderType');	
+	var control_border_radius_top = jQuery('#border_radius_top');
+	var control_border_radius_top_right = jQuery('#border_radius_top_right');
+	var control_border_radius_bottom_right = jQuery('#border_radius_bottom_right');
+	var control_border_radius_bottom_left = jQuery('#border_radius_bottom_left');
+	
+	//change: border enable
+	jQuery(control_border).on('change', function(){
+		jQuery(this).prop('checked') ? hmenu_global_menu_obj.mega_styles[0].border = jQuery(this).val() : hmenu_global_menu_obj.mega_styles[0].border = 0;
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});
+	
+	//change: border transparency
+	jQuery('.borderTransparency .hero_dropdown .hero_drop_row').on('click', function(){
+		jQuery(control_borderTransparency).trigger('change');		
+	});	
+	jQuery(control_borderTransparency).on('change', function(){
+		hmenu_global_menu_obj.mega_styles[0].borderTransparency = jQuery(this).children('option:selected').val();
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});	
+	
+	//change: border color
+	jQuery(control_borderColor).on('change keyup', function(){
+		hmenu_global_menu_obj.mega_styles[0].borderColor = jQuery(this).val();
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});
+	
+	//change: border type
+	jQuery('.borderType .hero_dropdown .hero_drop_row').on('click', function(){
+		jQuery(control_borderType).trigger('change');		
+	});	
+	jQuery(control_borderType).on('change', function(){
+		hmenu_global_menu_obj.mega_styles[0].borderType = jQuery(this).children('option:selected').val();
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});	
+	
+	//change: border radius
+	jQuery('.ms_border_radius').on('change keyup', function(){
+		var the_border_radius = '';
+		jQuery('.ms_border_radius').each(function(index, element) {
+			if(jQuery(this).val()){
+				the_border_radius += jQuery(this).val() + ',';
+			} else {
+				the_border_radius += 0 + ',';
+			}
+        });		
+		hmenu_global_menu_obj.mega_styles[0].borderRadius = the_border_radius.slice(0, -1);
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});
+	
+	var control_arrows = jQuery('#arrows');
+	var control_arrowTransparency = jQuery('#arrowTransparency');
+	var control_arrowColor = jQuery('#arrowColor');
+	
+	//change: enable arrows
+	jQuery(control_arrows).on('change', function(){
+		jQuery(this).prop('checked') ? hmenu_global_menu_obj.mega_styles[0].arrows = jQuery(this).val() : hmenu_global_menu_obj.mega_styles[0].arrows = 0;
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});
+	
+	//change: arrow transparency
+	jQuery('.arrowTransparency .hero_dropdown .hero_drop_row').on('click', function(){
+		jQuery(control_arrowTransparency).trigger('change');		
+	});	
+	jQuery(control_arrowTransparency).on('change', function(){
+		hmenu_global_menu_obj.mega_styles[0].arrowTransparency = jQuery(this).children('option:selected').val();
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});
+	
+	//change: sticky color arrow
+	jQuery(control_arrowColor).on('change keyup', function(){
+		hmenu_global_menu_obj.mega_styles[0].arrowColor = jQuery(this).val();
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});	
+	
+	var control_devider = jQuery('#devider');
+	var control_deviderTransparency = jQuery('#deviderTransparency');
+	var control_deviderColor = jQuery('#deviderColor');
+	
+	//change: enable devider
+	jQuery(control_devider).on('change', function(){
+		jQuery(this).prop('checked') ? hmenu_global_menu_obj.mega_styles[0].devider = jQuery(this).val() : hmenu_global_menu_obj.mega_styles[0].devider = 0;
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});
+	
+	//change: devider transparency
+	jQuery('.deviderTransparency .hero_dropdown .hero_drop_row').on('click', function(){
+		jQuery(control_deviderTransparency).trigger('change');		
+	});	
+	jQuery(control_deviderTransparency).on('change', function(){
+		hmenu_global_menu_obj.mega_styles[0].deviderTransparency = jQuery(this).children('option:selected').val();
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});
+	
+	//change: sticky color arrow
+	jQuery(control_deviderColor).on('change keyup', function(){
+		hmenu_global_menu_obj.mega_styles[0].deviderColor = jQuery(this).val();
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});	
+	
+}
+</script>
+<div class="hero_views">
+    <div class="hero_col_12">
+    	<h2 class="hero_red size_18 weight_600">
+            Background color<br />
+            <strong class="size_11 hero_grey">Choose the background color for your mega menus.</strong>
+        </h2>
+        <!-- START: FORM -->
+            <form>      	
+                <!-- START: ACTIVATION -->
+                    <div class="hero_section_holder hero_grey size_14"> 
+                        <label><h2 class="size_14 hero_green">Default background color | Gradients</h2></label><div class="hero_switch_position"><input type="checkbox" data-size="sml" id="bgDropGradient" name="bgDropGradient" value="1" data-smltoggler="menuGradientToggle"></div>
+                        <p class="size_12 hero_grey">This will be the mega menu background color.</p>
+                        <div class="hero_col_12">
+                            <div class="hero_col_2">
+                            	<label>Start color</label>
+                            	<input type="text" id="bgDropStartColor" class="color_picker" name="bgDropStartColor" value="#DC4551">
+                            </div>
+                            <div class="menuGradientToggle">
+                                <div class="hero_col_2">
+                                	<label>End color</label>
+                                    <input type="text" id="bgDropEndColor" class="color_picker" name="bgDropEndColor" value="#DC4551">
+                                </div>
+                                <div class="hero_col_3">
+                                	<label>Gradient direction</label>
+                                    <select data-size="lrg" id="bgDropGradientPath" name="bgDropGradientPath">
+                                        <option value="vertical">Vertical</option>
+                                        <option value="horizontal">Horizontal</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="hero_col_2">
+                            	<label>Transparency</label>
+                            	<select data-size="lrg" id="bgDropTransparency" name="bgDropTransparency">
+                                	<option value="0.0">0%</option>
+                                    <option value="0.1">10%</option>
+                                    <option value="0.2">20%</option>
+                                    <option value="0.3">30%</option>
+                                    <option value="0.4">40%</option>
+                                    <option value="0.5">50%</option>
+                                    <option value="0.6">60%</option>
+                                    <option value="0.7">70%</option>
+                                    <option value="0.8">80%</option>
+                                    <option value="0.9">90%</option>
+                                    <option value="1.0">100%</option>
+                                </select>
+                            </div>
+                        </div>
+                        <label><h2 class="size_14 hero_green">Hover background color | Gradients</h2></label><div class="hero_switch_position"><input type="checkbox" data-size="sml" id="bgHoverGradient" name="bgHoverGradient" value="1" data-smltoggler="menuHoverGradientToggle"></div>
+                        <p class="size_12 hero_grey">This will be the mega menu background hover color.</p>
+                        <div class="hero_col_12">
+                            <div class="hero_col_2">
+                            	<label>Start color</label>
+                            	<input type="text" id="bgHoverStartColor" class="color_picker" name="bgHoverStartColor">
+                            </div>
+                            <div class="menuHoverGradientToggle">
+                                <div class="hero_col_2">
+                                	<label>End color</label>
+                                    <input type="text" id="bgHoverEndColor" class="color_picker" name="bgHoverEndColor">
+                                </div>
+                                <div class="hero_col_3">
+                                	<label>Gradient direction</label>
+                                    <select data-size="lrg" id="bgHoverGradientPath" name="bgHoverGradientPath">
+                                        <option value="value_1">Vertical</option>
+                                        <option value="value_2">Horizontal</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="hero_col_2">
+                            	<label>Transparency</label>
+                            	<select data-size="lrg" id="bgHoverTransparency" name="bgHoverTransparency">
+                                	<option value="0.0">0%</option>
+                                    <option value="0.1">10%</option>
+                                    <option value="0.2">20%</option>
+                                    <option value="0.3">30%</option>
+                                    <option value="0.4">40%</option>
+                                    <option value="0.5">50%</option>
+                                    <option value="0.6">60%</option>
+                                    <option value="0.7">70%</option>
+                                    <option value="0.8">80%</option>
+                                    <option value="0.9">90%</option>
+                                    <option value="1.0">100%</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                <!-- END: ACTIVATION --> 
+                <!-- START: ACTIVATION -->
+                    <div class="hero_section_holder hero_grey size_14">
+                    	<div class="hero_col_12">
+                            <h2 class="size_18 hero_red weight_600">Fonts</h2>
+                            <p class="size_12 hero_grey">Click here for a <a class="toggle_visual hero_green size_12" data-height="400" data-toggle="close" data-to-toggle="mega_style_ref">visual reference</a>.</p>
+                            <div class="hmenu_mega_ref" id="mega_style_ref"></div>
+                        </div>  
+                    	<label><h2 class="size_14 hero_green">Main headings</h2></label>
+                        <p class="size_12 hero_grey">This will style your mega menu headings.</p>
+                        <div class="hero_col_12">
+                            <div class="hero_col_3">
+                            	<label>Font family</label>
+                            	<select data-size="lrg" id="fontFamily_0" name="fontFamily_0" data-height="200">
+                                    <option value="arial">Arial</option>
+                                    <option value="times">Times New Roman</option>
+                                    <option value="chiller">Chiller</option>
+                                </select>
+                            </div>
+                             <div class="hero_col_2">
+                             	<label>Font weight</label>
+                            	<select data-size="lrg" id="fontWeight_0" name="fontWeight_0">
+                                    <option value="bold">Bold</option>
+                                    <option value="lighter">Lighter</option>
+                                    <option value="inherit">Inherit</option>
+                                    <option value="normal">Normal</option>
+                                </select>
+                            </div>
+                             <div class="hero_col_2">
+                             	<label>Font size</label>
+                            	<input type="text" data-size="lrg" class="hero_int_only" maxlength="2" id="fontSize_0" name="fontSize_0">
+                            </div>
+                             <div class="hero_col_2">
+                             	<label>Font sizing</label>
+                            	<select data-size="lrg" id="fontSizing_0" name="fontSizing_0">
+                                    <option>px</option>
+                                    <option>em</option>
+                                </select>
+                            </div>
+                             <div class="hero_col_2">
+                             	<label>Font color</label>
+                            	<input type="text" id="fontColor_0" class="color_picker" name="fontColor_0" value="#DC4551">
+                            </div>
+                        </div>
+                        <label><h2 class="size_14 hero_green">Body</h2></label>
+                        <p class="size_12 hero_grey">This will style your mega menu body text.</p>
+                        <div class="hero_col_12">
+                            <div class="hero_col_3">
+                            	<label>Font family</label>
+                            	<select data-size="lrg" id="fontFamily_1" name="fontFamily_1" data-height="200">
+                                    <option value="arial">Arial</option>
+                                    <option value="times">Times New Roman</option>
+                                    <option value="chiller">Chiller</option>
+                                </select>
+                            </div>
+                             <div class="hero_col_2">
+                             	<label>Font weight</label>
+                            	<select data-size="lrg" id="fontWeight_1" name="fontWeight_1">
+                                    <option value="bold">Bold</option>
+                                    <option value="lighter">Lighter</option>
+                                    <option value="inherit">Inherit</option>
+                                    <option value="normal">Normal</option>
+                                </select>
+                            </div>
+                             <div class="hero_col_2">
+                             	<label>Font size</label>
+                            	<input type="text" data-size="lrg" class="hero_int_only" maxlength="2" id="fontSize_1" name="fontSize_1">
+                            </div>
+                             <div class="hero_col_2">
+                             	<label>Font sizing</label>
+                            	<select data-size="lrg" id="fontSizing_1" name="fontSizing_1">
+                                    <option>px</option>
+                                    <option>em</option>
+                                </select>
+                            </div>
+                             <div class="hero_col_2">
+                             	<label>Font color</label>
+                            	<input type="text" id="fontColor_1" class="color_picker" name="fontColor_1" value="#DC4551">
+                            </div>
+                        </div>
+                        <label><h2 class="size_14 hero_green">List menu item</h2></label>
+                        <p class="size_12 hero_grey">This will style your mega menu list items.</p>
+                        <div class="hero_col_12">
+                            <div class="hero_col_3">
+                            	<label>Font family</label>
+                            	<select data-size="lrg" id="fontFamily_2" name="fontFamily_2" data-height="200">
+                                    <option value="arial">Arial</option>
+                                    <option value="times">Times New Roman</option>
+                                    <option value="chiller">Chiller</option>
+                                </select>
+                            </div>
+                             <div class="hero_col_2">
+                             	<label>Font weight</label>
+                            	<select data-size="lrg" id="fontWeight_2" name="fontWeight_2">
+                                    <option value="bold">Bold</option>
+                                    <option value="lighter">Lighter</option>
+                                    <option value="inherit">Inherit</option>
+                                    <option value="normal">Normal</option>
+                                </select>
+                            </div>
+                             <div class="hero_col_2">
+                             	<label>Font size</label>
+                            	<input type="text" data-size="lrg" class="hero_int_only" maxlength="2" id="fontSize_2" name="fontSize_2">
+                            </div>
+                             <div class="hero_col_2">
+                             	<label>Font sizing</label>
+                            	<select data-size="lrg" id="fontSizing_2" name="fontSizing_2">
+                                    <option>px</option>
+                                    <option>em</option>
+                                </select>
+                            </div>
+                             <div class="hero_col_2">
+                             	<label>Font color</label>
+                            	<input type="text" id="fontColor_2" class="color_picker" name="fontColor_2" value="#DC4551">
+                            </div>
+                        </div>
+                        <label><h2 class="size_14 hero_green">List menu description</h2></label>
+                        <p class="size_12 hero_grey">This will style your mega menu list descriptions.</p>
+                        <div class="hero_col_12">
+                            <div class="hero_col_3">
+                            	<label>Font family</label>
+                            	<select data-size="lrg" id="fontFamily_3" name="fontFamily_3" data-height="200">
+                                    <option value="arial">Arial</option>
+                                    <option value="times">Times New Roman</option>
+                                    <option value="chiller">Chiller</option>
+                                </select>
+                            </div>
+                             <div class="hero_col_2">
+                             	<label>Font weight</label>
+                            	<select data-size="lrg" id="fontWeight_3" name="fontWeight_3">
+                                    <option value="bold">Bold</option>
+                                    <option value="lighter">Lighter</option>
+                                    <option value="inherit">Inherit</option>
+                                    <option value="normal">Normal</option>
+                                </select>
+                            </div>
+                             <div class="hero_col_2">
+                             	<label>Font size</label>
+                            	<input type="text" data-size="lrg" class="hero_int_only" maxlength="2" id="fontSize_3" name="fontSize_3">
+                            </div>
+                             <div class="hero_col_2">
+                             	<label>Font sizing</label>
+                            	<select data-size="lrg" id="fontSizing_3" name="fontSizing_3">
+                                    <option>px</option>
+                                    <option>em</option>
+                                </select>
+                            </div>
+                             <div class="hero_col_2">
+                             	<label>Font color</label>
+                            	<input type="text" id="fontColor_3" class="color_picker" name="fontColor_3" value="#DC4551">
+                            </div>
+                        </div>
+                        <label><h2 class="size_14 hero_green">Hover font color</h2></label>
+                        <p class="size_12 hero_grey">This will style the text hover color.</p>
+                        <div class="hero_col_12">
+                            <div class="hero_col_2">
+                            	<input type="text" id="fontHoverColor" class="color_picker" name="fontHoverColor" value="#DC4551">
+                            </div>
+                        </div>
+                    </div>
+                <!-- END: ACTIVATION -->
+                <!-- START: ACTIVATION -->
+                    <div class="hero_section_holder hero_grey size_14">
+                    	<div class="hero_col_12">
+                            <h2 class="size_18 hero_red weight_600">WooCommerce Styling</h2>
+                        </div>  
+                    	<!-- PRICE STYLING -->
+                        <label><h2 class="size_14 hero_green">Price font size and color</h2></label>
+                        <p class="size_12 hero_grey">This will style the price for the product.</p>
+                        <div class="hero_col_12">
+                           	<div class="hero_col_3">
+                                <label>Font Family</label>
+                            	<select data-size="lrg" id="wooPriceFamily" name="wooPriceFamily" data-height="200">
+                                    <option value="arial">Arial</option>
+                                    <option value="times">Times New Roman</option>
+                                    <option value="chiller">Chiller</option>
+                                </select>
+                            </div>
+                            <div class="hero_col_2">
+                                <label>Font Weight</label>
+                            	<select data-size="lrg" id="wooPriceWeight" name="wooPriceWeight">
+                                    <option value="bold">Bold</option>
+                                    <option value="lighter">Lighter</option>
+                                    <option value="inherit">Inherit</option>
+                                    <option value="normal">Normal</option>
+                                </select>
+                            </div>
+                            <div class="hero_col_2">
+                                <label>Font Size</label>
+                            	<input type="text" data-size="lrg" class="hero_int_only" maxlength="2" id="wooPriceSize" name="wooPriceSize">
+                            </div>
+                            <div class="hero_col_2">
+                                <label>Font Sizing</label>
+                            	<select data-size="lrg" id="wooPriceSizing" name="wooPriceSizing">
+                                    <option>px</option>
+                                    <option>em</option>
+                                </select>
+                            </div>
+                            <div class="hero_col_2">
+                                <label>Font Color</label>
+                            	<input type="text" id="wooPriceColor" class="color_picker" name="wooPriceColor" value="#DC4551">
+                            </div>
+                        </div>
+                        <!-- OLD PRICE STYLING -->
+                        <label><h2 class="size_14 hero_green">Old Price font size and color</h2></label>
+                        <p class="size_12 hero_grey">This will style the price for the product.</p>
+                        <div class="hero_col_12">
+                           	<div class="hero_col_3">
+                                <label>Font Family</label>
+                            	<select data-size="lrg" id="wooPriceOldFamily" name="wooPriceOldFamily" data-height="200">
+                                    <option value="arial">Arial</option>
+                                    <option value="times">Times New Roman</option>
+                                    <option value="chiller">Chiller</option>
+                                </select>
+                            </div>
+                            <div class="hero_col_2">
+                                <label>Font Weight</label>
+                            	<select data-size="lrg" id="wooPriceOldWeight" name="wooPriceOldWeight">
+                                    <option value="bold">Bold</option>
+                                    <option value="lighter">Lighter</option>
+                                    <option value="inherit">Inherit</option>
+                                    <option value="normal">Normal</option>
+                                </select>
+                            </div>
+                            <div class="hero_col_2">
+                                <label>Font Size</label>
+                            	<input type="text" data-size="lrg" class="hero_int_only" maxlength="2" id="wooPriceOldSize" name="wooPriceOldSize">
+                            </div>
+                            <div class="hero_col_2">
+                                <label>Font Sizing</label>
+                            	<select data-size="lrg" id="wooPriceOldSizing" name="wooPriceOldSizing">
+                                    <option>px</option>
+                                    <option>em</option>
+                                </select>
+                            </div>
+                            <div class="hero_col_2">
+                                <label>Font Color</label>
+                            	<input type="text" id="wooPriceOldColor" class="color_picker" name="wooPriceOldColor" value="#DC4551">
+                            </div>
+                        </div>
+                        <!-- SALE PRICE STYLING -->
+                        <label><h2 class="size_14 hero_green">Sale Price font size and color</h2></label>
+                        <p class="size_12 hero_grey">This will style the price for the product.</p>
+                        <div class="hero_col_12">
+                           	<div class="hero_col_3">
+                                <label>Font Family</label>
+                            	<select data-size="lrg" id="wooPriceSaleFamily" name="wooPriceSaleFamily" data-height="200">
+                                    <option value="arial">Arial</option>
+                                    <option value="times">Times New Roman</option>
+                                    <option value="chiller">Chiller</option>
+                                </select>
+                            </div>
+                            <div class="hero_col_2">
+                                <label>Font Weight</label>
+                            	<select data-size="lrg" id="wooPriceSaleWeight" name="wooPriceSaleWeight">
+                                    <option value="bold">Bold</option>
+                                    <option value="lighter">Lighter</option>
+                                    <option value="inherit">Inherit</option>
+                                    <option value="normal">Normal</option>
+                                </select>
+                            </div>
+                            <div class="hero_col_2">
+                                <label>Font Size</label>
+                            	<input type="text" data-size="lrg" class="hero_int_only" maxlength="2" id="wooPriceSaleSize" name="wooPriceSaleSize">
+                            </div>
+                            <div class="hero_col_2">
+                                <label>Font Sizing</label>
+                            	<select data-size="lrg" id="wooPriceSaleSizing" name="wooPriceSaleSizing">
+                                    <option>px</option>
+                                    <option>em</option>
+                                </select>
+                            </div>
+                            <div class="hero_col_2">
+                                <label>Font Color</label>
+                            	<input type="text" id="wooPriceSaleColor" class="color_picker" name="wooPriceSaleColor" value="#DC4551">
+                            </div>
+                        </div>
+                        <!-- BUTTON STYLING -->
+                        <label><h2 class="size_14 hero_green">Button Text</h2></label>
+                        <p class="size_12 hero_grey">Set the text for your button.</p>
+                        <div class="hero_col_12">
+                            <label>Text</label>
+                            <input type="text" data-size="lrg" id="wooBtnText" name="wooBtnText">
+                        </div>
+                        <label><h2 class="size_14 hero_green">Button font size and color</h2></label>
+                        <p class="size_12 hero_grey">This will style the text link for the product.</p>
+                        <div class="hero_col_12">
+                           	<div class="hero_col_3">
+                                <label>Font Family</label>
+                            	<select data-size="lrg" id="wooBtnFontFamily" name="wooBtnFontFamily" data-height="200">
+                                    <option value="arial">Arial</option>
+                                    <option value="times">Times New Roman</option>
+                                    <option value="chiller">Chiller</option>
+                                </select>
+                            </div>
+                            <div class="hero_col_2">
+                                <label>Font Weight</label>
+                            	<select data-size="lrg" id="wooBtnFontWeight" name="wooBtnFontWeight">
+                                    <option value="bold">Bold</option>
+                                    <option value="lighter">Lighter</option>
+                                    <option value="inherit">Inherit</option>
+                                    <option value="normal">Normal</option>
+                                </select>
+                            </div>
+                            <div class="hero_col_2">
+                                <label>Font Size</label>
+                            	<input type="text" data-size="lrg" class="hero_int_only" maxlength="2" id="wooBtnFontSize" name="wooBtnFontSize">
+                            </div>
+                            <div class="hero_col_2">
+                                <label>Font Sizing</label>
+                            	<select data-size="lrg" id="wooBtnFontSizing" name="wooBtnFontSizing">
+                                    <option>px</option>
+                                    <option>em</option>
+                                </select>
+                            </div>
+                            <div class="hero_col_2">
+                                <label>Font Color</label>
+                            	<input type="text" id="wooBtnFontColor" class="color_picker" name="wooBtnFontColor" value="#DC4551">
+                            </div>
+                        </div>
+                        <label><h2 class="size_14 hero_green">Button text decoration</h2></label>
+                        <p class="size_12 hero_grey">This will style the text decoration link for the product.</p>
+                        <div class="hero_col_12">
+                           	<div class="hero_col_3">
+                                <label>Font Decoration</label>
+                            	<select data-size="lrg" id="wooBtnFontDecoration" name="wooBtnFontDecoration" data-height="200">
+                                    <option value="inherit">inherit</option>
+                                    <option value="line-through">line-through</option>
+                                    <option value="none">none</option>
+                                    <option value="overline">overline</option>
+                                    <option value="underline">underline</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                <!-- END: ACTIVATION --> 
+                <!-- START: ACTIVATION -->
+                    <div class="hero_section_holder hero_grey size_14"> 
+                    	<div class="hero_col_8">
+                            <h2 class="size_18 hero_red weight_600">Dropdown width</h2>
+                            <p class="size_12 hero_grey">The width of the mega menu is determined by the width of your menu bar dimensions. <br>This can be found in Styling &rsaquo; Main Navigation</p>
+                        </div>
+                        <div class="hero_col_4"> 
+                        	<div class="hero_button_auto green_button rounded_3" id="goto_main_nav">View dimensions</div>
+                        </div>
+                    </div>
+                <!-- END: ACTIVATION -->   
+                <!-- START: ACTIVATION -->
+                    <div class="hero_section_holder hero_grey size_14"> 
+                        <div class="hero_col_6">
+                            <label>
+                                <h2 class="size_18 hero_red weight_600">Padding</h2>
+                                <p class="size_12 hero_grey">This will add padding to the mega menu.</p>
+                            </label>
+                            <div class="hero_col_12">
+                                <div class="hero_col_3">
+                                	<label>Top</label>
+                                    <input type="text" data-size="lrg" data-hero_type="px" id="paddingTop" name="paddingTop" class="ms_padding">
+                                </div>
+                                <div class="hero_col_3">
+                                	<label>Right</label>
+                                    <input type="text" data-size="lrg" data-hero_type="px" id="paddingRight" name="paddingRight" class="ms_padding">
+                                </div>
+                                <div class="hero_col_3">
+                                	<label>Bottom</label>
+                                    <input type="text" data-size="lrg" data-hero_type="px" id="paddingBottom" name="paddingBottom" class="ms_padding">
+                                </div>
+                                <div class="hero_col_3">
+                                	<label>Left</label>
+                                    <input type="text" data-size="lrg" data-hero_type="px" id="paddingLeft" name="paddingLeft" class="ms_padding">
+                                </div>
+                            </div>  
+                        </div>
+                        <div class="hero_col_6">
+                            <div class="hero_mega_padding_example"></div>
+                        </div>                                              
+                    </div>
+                <!-- END: ACTIVATION -->  
+                <!-- START: ACTIVATION -->
+                    <div class="hero_section_holder hero_grey size_14">    
+                    	<div class="hero_section_toggle" data-toggle-section="main_responsive">                    
+                            <div class="hero_col_12">
+                                <div class="hero_col_8">
+                                    <label>
+                                        <h2 class="size_18 hero_red weight_600">Menu shadow</h2>
+                                        <p class="size_12 hero_grey">This will add a shadow to your mega menu. (Not supported in older browsers)</p>
+                                    </label>
+                                </div>
+                                <div class="hero_col_4">
+                                    <input type="checkbox" data-size="lrg" id="shadow" name="shadow" value="1" data-toggler="true">
+                                </div>
+                            </div>
+                            <div class="hero_col_12">
+                                <div class="hero_col_2">
+                                    <label>Shadow distance</label>
+                                    <input type="text" data-size="lrg" data-hero_type="px" id="shadow_distance" name="shadow_distance" class="ms_shadow_radius">
+                                </div>
+                                <div class="hero_col_2">
+                                    <label>Shadow blur</label>
+                                    <input type="text" data-size="lrg" data-hero_type="px" id="shadow_blur" name="shadow_blur" class="ms_shadow_radius">
+                                </div>
+                                <div class="hero_col_2">
+                                    <label>Transparency</label>
+                                    <select data-size="lrg" id="shadowTransparency" name="shadowTransparency" data-height="150">
+                                        <option value="0.1">10%</option>
+                                        <option value="0.2">20%</option>
+                                        <option value="0.3">30%</option>
+                                        <option value="0.4">40%</option>
+                                        <option value="0.5">50%</option>
+                                        <option value="0.6">60%</option>
+                                        <option value="0.7">70%</option>
+                                        <option value="0.8">80%</option>
+                                        <option value="0.9">90%</option>
+                                        <option value="1.0">100%</option>
+                                    </select>
+                                </div>
+                                <div class="hero_col_2">
+                                    <label>Color</label>
+                                    <input type="text" id="shadowColor" class="color_picker" name="shadowColor" value="#DC4551">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <!-- END: ACTIVATION -->
+                <!-- START: ACTIVATION -->
+                    <div class="hero_section_holder hero_grey size_14">                        
+                        <div class="hero_section_toggle" data-toggle-section="main_responsive">
+                            <div class="hero_col_12">
+                                <div class="hero_col_8">
+                                    <label>
+                                        <h2 class="size_18 hero_red weight_600">Border around mega menu</h2>
+                                        <p class="size_12 hero_grey">This will add a border to your mega menu.</p>
+                                    </label>
+                                </div>
+                                <div class="hero_col_4">
+                                    <input type="checkbox" data-size="lrg" id="border" name="border" value="1" data-toggler="true">
+                                </div>
+                            </div>
+                            <div class="hero_col_12">
+                                <div class="hero_col_2">
+                                    <label>Transparency</label>
+                                    <select data-size="lrg" id="borderTransparency" name="borderTransparency" data-height="150">
+                                        <option value="0.1">10%</option>
+                                        <option value="0.2">20%</option>
+                                        <option value="0.3">30%</option>
+                                        <option value="0.4">40%</option>
+                                        <option value="0.5">50%</option>
+                                        <option value="0.6">60%</option>
+                                        <option value="0.7">70%</option>
+                                        <option value="0.8">80%</option>
+                                        <option value="0.9">90%</option>
+                                        <option value="1.0">100%</option>
+                                    </select>
+                                </div>
+                                <div class="hero_col_2">
+                                    <label>Border color</label>
+                                    <input type="text" id="borderColor" class="color_picker" name="borderColor" value="#DC4551">
+                                </div>
+                                <div class="hero_col_4">
+                                	<label>Border type</label>
+                                    <select data-size="lrg" id="borderType" name="borderType">
+                                        <option value="border-top">Border top</option>
+                                        <option value="border-bottom">Border bottom</option>
+                                        <option value="border-left">Border left</option>
+                                        <option value="border-right">Border right</option>
+                                        <option value="border">Border arround</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="hero_col_12">
+                            	<label class="hero_col_12">
+                                    <h2 class="size_14 hero_green">Border radius</h2>
+                                </label>
+                                <p class="size_12 hero_grey">This will allow you to add rounded corners to your mega menu.</p>
+                                <div class="hero_col_2">
+                                    <label>Top left</label>
+                                    <input type="text" data-size="lrg" data-hero_type="px" id="border_radius_top" class="ms_border_radius" name="border_radius_top">
+                                </div>
+                                <div class="hero_col_2">
+                                    <label>Top right</label>
+                                    <input type="text" data-size="lrg" data-hero_type="px" id="border_radius_top_right" class="ms_border_radius" name="border_radius_top_right">
+                                </div>
+                                <div class="hero_col_2">
+                                    <label>Bottom right</label>
+                                    <input type="text" data-size="lrg" data-hero_type="px" id="border_radius_bottom_right" class="ms_border_radius" name="border_radius_bottom_right">
+                                </div>
+                                <div class="hero_col_2">
+                                    <label>Bottom left</label>
+                                    <input type="text" data-size="lrg" data-hero_type="px" id="border_radius_bottom_left" class="ms_border_radius" name="border_radius_bottom_left">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <!-- END: ACTIVATION --> 
+                <!-- START: ACTIVATION -->
+                    <div class="hero_section_holder hero_grey size_14"> 
+                    	<div class="hero_section_toggle" data-toggle-section="main_responsive">       
+                            <div class="hero_col_12">
+                            	<div class="hero_col_8">
+                                    <label>
+                                        <h2 class="size_18 hero_red weight_600">Mega column divider</h2>
+                                        <p class="size_12 hero_grey">This will enable a line divider between your mega menu columns.</p>
+                                    </label>
+                                </div>
+                                <div class="hero_col_4">
+                                    <input type="checkbox" data-size="lrg" id="devider" name="devider" value="1" data-toggler="true">
+                                </div>
+                            </div>
+                            <div class="hero_col_12">
+                                <div class="hero_col_2">
+                                    <label>Transparency</label>
+                                    <select data-size="lrg" id="deviderTransparency" name="deviderTransparency" data-height="50">
+                                        <option value="0.1">10%</option>
+                                        <option value="0.2">20%</option>
+                                        <option value="0.3">30%</option>
+                                        <option value="0.4">40%</option>
+                                        <option value="0.5">50%</option>
+                                        <option value="0.6">60%</option>
+                                        <option value="0.7">70%</option>
+                                        <option value="0.8">80%</option>
+                                        <option value="0.9">90%</option>
+                                        <option value="1.0">100%</option>
+                                    </select>
+                                </div>
+                                <div class="hero_col_2">
+                                    <label>Divider color</label>
+                                    <input type="text" id="deviderColor" class="color_picker" name="deviderColor" value="#DC4551">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <!-- END: ACTIVATION -->            
+            </form>
+        <!-- END: FORM -->
+    </div>
+</div>

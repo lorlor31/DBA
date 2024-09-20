@@ -1,0 +1,90 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+	<head>
+		<title>Email</title>	
+	</head>
+	<body>
+	<style type="text/css">
+		table{			
+			max-width: 700px;	
+			width:100%;
+		}
+		.row{
+			text-align: center;
+		}
+		tr{			
+			height: 10%;
+		}
+		.star{
+			color: #ffeb00;
+			font-size: 30px;
+			letter-spacing: -2px;
+			text-align: center;
+			margin: 5px;
+			border: 3px solid #36a736;
+			border-radius: 15px;	
+			padding: 15px;
+		}
+		.reclamation{
+			font-size: 16px;
+			text-align: center;
+			margin: 5px;
+			border: 3px solid #b31616;
+			border-radius: 15px;	
+			padding: 15px;
+			padding-bottom: 26px;
+			padding-top: 26px;		
+		}
+		p{
+			font-family: Arial ;
+			
+		}
+		.strong{
+			font-weight: bold;
+			font-size: 12px;
+		}
+		.small-text{
+			font-size: 12px;
+		}
+		@media (max-width: 192px) {
+			.reclamation{
+			font-size: 15px;
+			padding: 15px;
+			}
+		}
+			
+		}
+		</style>
+		<div class="container">
+			<div> 
+				<p style="font-family: Arial ;">Bonjour, <br> <br> Toute l’équipe Armoire PLUS vous remercie pour votre dernière commande. <br> <br>
+							Pour améliorer nos services, nous aimerions avoir votre retour d'expérience. <br>
+				</p>
+			</div>
+			<div class="image" >
+				<table style="max-width: 600px;	width:100%;">
+					<tr style="height: 10%;">
+						<td class="row"  style="text-align: center;margin:0 auto;">
+							<p class="strong" style="font-family: Arial ;font-weight: bold;font-size: 16px;">Notre bonne étoile c'est vous !</p> 
+							<p class="small-text" style="font-family: Arial ;font-size: 16px;">Je laisse 5 étoiles en partageant <br> mon expérience</p> 
+						
+						</td>
+						<td class="row" style="text-align: center;margin:0 auto;"> 
+							<p class="strong" style="font-family: Arial ;font-weight: bold;font-size: 16px;">Un problème ?</p>  
+							<p class="small-text" style="font-family: Arial ;font-size: 16px;"> Informez nous afin que nous vous présentions une solution</p> 
+						</td>
+					</tr>
+					<tr style="height: 10%;">
+						<td class="rectangle-g" style="width:40%;"> <a href="{{ url_review }}" style="text-decoration:none;"> <p class="star" style="font-family: Arial ;width:80%;height:40px;color: #ffd400;font-size: 30px;letter-spacing: -2px;text-align: center;margin: 5px auto;border: 3px solid #36a736;border-radius: 15px;padding: 15px;">★★★★★</p>  </a> </td>
+						<td class="rectangle-d" style="width:40%;"> <a href="{{ url_mailto }}" style="text-decoration:none;color:black;"> <p class="reclamation" style="font-family: Arial ;width:80%;font-size: 16px;text-align: center;margin: 5px auto;border: 3px solid #b31616;border-radius: 15px;padding: 26px 15px;line-height:1.125em" >Réclamation</p> </a> </td>
+					</tr>
+				</table >
+			</div>
+			<div> 
+				<p style="font-family: Arial ;">Nous vous remercions par avance pour votre temps et restons à votre service. <br> <br>
+					A très bientôt sur <a href="https://www.armoireplus.fr/">Armoireplus.fr</a>, <br> <br>
+					L’équipe Armoire Plus			
+				</p>
+			</div>
+		</div>
+	</body>
+</html>
