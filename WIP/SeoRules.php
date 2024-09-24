@@ -30,6 +30,19 @@ class SeoRules
 
     private $noValue = '0';
 
+    // private $instances = [] ;
+    
+    // Modif Nico pour update 
+    private static $instances = array();
+
+    public function __construct()
+    {
+        self::$instances[] = $this;
+        // error_log(print_r($this));  
+        if($this){
+            $this->registerHooks();
+        }
+    }		
     public function registerHooks()
     {
         add_action( 'admin_print_scripts', array( $this, 'includeAdminJs' ) );
@@ -50,7 +63,11 @@ class SeoRules
         add_action( 'restrict_manage_posts', [$this, 'restrictManagePosts'], 999 );
 
         add_action( 'wp_ajax_wpc-validate-seo-rules', [ $this, 'ajaxValidateSeoRules' ] );
-
+    }
+    // Modif Nico pour update 
+    public static function getAllInstances()
+    {
+        return self::$instances;
     }
 
     public function ajaxValidateSeoRules()
@@ -776,7 +793,10 @@ class SeoRules
         if( ! $this->verifyNonce( $nonce ) ) {
             return $post_id;
         }
-
+//NB MODIF NON PERDUREE :  VERSION PRECEDENTE DU PLUGIN N'UTILISAIT PAS LE MEME ARGUMENT 'manage options' a été remplacé par flrt_plugin_user_caps() 
+// if( ! current_user_can( 'manage_options' ) ) {
+//     return $post_id;
+// }
         if( ! current_user_can( flrt_plugin_user_caps() ) ) {
             return $post_id;
         }
@@ -1097,6 +1117,7 @@ class SeoRules
         $valid          = true;
         $filterFields   = Container::instance()->getFilterFieldsService();
 
+        //NB MODIF NON PERDUREE :  VERSION PRECEDENTE DU PLUGIN N'UTILISAIT PAS LE MEME ARGUMENT 'manage options' a été remplacé par flrt_plugin_user_caps() 
         // Check permissions
         if( ! current_user_can( flrt_plugin_user_caps() ) ) {
             $filterFields->pushError(202);
@@ -1217,7 +1238,7 @@ class SeoRules
                 $sql[] = implode(",", $LANG_IN );
                 $sql[] = ")";
             }
-
+// MODIF SUR LA NV VERSION
             // Allow to validate SEO Rules translated with Polylang
             if( flrt_pll_pro_active() && defined('FLRT_ALLOW_PLL_TRANSLATIONS') && FLRT_ALLOW_PLL_TRANSLATIONS ){
                 $post_data      = Container::instance()->getThePost();

@@ -51,7 +51,6 @@ use FilterEverything\Filter\Pro\Admin\SeoRules;
         $lien_page = 0;
         echo '<ul>';
         $allRules = SeoRules::getAllInstances();
-
             $rules = $allRules[0]->getRules();
             if ($rules  != false){
             $i = 0;
@@ -80,7 +79,7 @@ use FilterEverything\Filter\Pro\Admin\SeoRules;
                 }
                 $i ++;
             }
-        }                                                                                                                                                                     
+            }                                                                                                                                                                 
         if ($lien_page == 0){
             echo'<script>
                 var element = document.getElementById("block-17");
