@@ -1,0 +1,1025 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2021-11-24 07:16-1000\n"
+"PO-Revision-Date: 2020-11-06 17:00-0800\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.4.3\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: __;_e;esc_html_e;esc_attr_e\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: includes/Admin/OneTeamSoftware.php:221
+msgid "Our Plugins"
+msgstr ""
+
+#: includes/Admin/OneTeamSoftware.php:247
+msgid "About Us"
+msgstr ""
+
+#: includes/Admin/OneTeamSoftware.php:255
+msgid "Contact Us"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:158
+msgid "Settings"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:183
+#: includes/MarketplaceCart/MarketplaceCart.php:511
+msgid "Marketplace Cart"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:513
+msgid "Do you have any questions or requests?"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:515
+msgid "We are here to help you!"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:516
+msgid "Will you recommend <strong>Marketplace Cart</strong> plugin to others?"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:518
+msgid "Please take 1 minute to leave your review"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:522
+msgid "License Key"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:524
+msgid "A valid license key is required for plugin to work"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:528
+msgid "Enable Marketplace Cart"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:529
+msgid "Enable Packages in Cart / Checkout Pages"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:530
+msgid ""
+"Redesigns Cart, Checkout and Order Review pages to show contents grouped "
+"into packages with shipping method selection under each package"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:535
+msgid "CSS"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:536
+msgid "You can apply your custom styling by writing custom CSS here"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:540
+msgid "Package Name Settings"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:544
+msgid "Display Package Name"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:545
+msgid ""
+"Display package name as a title before package contents in Cart and checkout "
+"packages"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:550
+msgid "Custom Package name"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:551
+msgid ""
+"You can use the following placeholders: {packageIdx}, {packageName} to "
+"customize displayed package name"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:555
+msgid "Cart Notice Settings"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:559
+msgid "Cart Notice"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:560
+msgid ""
+"You can use {numberOfPackages} as a place holder for the number of packages "
+"in Cart. If empty then notice won't be displayed"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:564
+msgid "Display Cart Notice on Cart"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:565
+msgid "Display number of packages notice from above"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:569
+msgid "Display Cart Notice on Checkout"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:570
+msgid "Display number of packages notice from above on checkout page"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:574
+msgid "Cart Notice Location"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:576
+msgid "Before Packages"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:577
+msgid "After Packages"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:578
+msgid "Before & After Packages"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:580
+msgid "Select location of the number of packages notice"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:584
+msgid "Package Notice Settings"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:588
+msgid "Package Notice"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:589
+msgid ""
+"You can use {numberOfItems} as a place holder for the number of items in the "
+"package. If empty then notice won't be displayed"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:593
+msgid "Display Package Notice on Cart"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:594
+msgid "Display number of items in the package notice from above"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:598
+msgid "Display Package Notice on Checkout"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:599
+msgid ""
+"Display number of items in the package notice from above on checkout page"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:603
+msgid "Package Notice Location"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:605
+msgid "Before Package Contents"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:606
+#: includes/MarketplaceCart/MarketplaceCart.php:625
+msgid "After Package Contents"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:607
+msgid "Before & After Package Contents"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:609
+msgid "Select location of the number of items notice"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:613
+msgid "Shipping Method Selection Settings"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:617
+msgid "Choose Shipping Method on Checkout Page"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:618
+msgid "Allows to choose different shipping method on checkout page"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:623
+msgid "Shipping Method Location"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:626
+msgid "Inside Totals"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:628
+msgid "Select location of the shipping method selection"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:632
+msgid "Single Shipping Method Selection Location"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:634
+#: includes/MarketplaceCart/MarketplaceCart.php:672
+msgid "Same Row"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:635
+#: includes/MarketplaceCart/MarketplaceCart.php:673
+msgid "Next Row"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:637
+msgid ""
+"Single Shipping Method Selection can be either displayed on the same or next "
+"row"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:641
+msgid "Cart Layout Settings"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:645
+#: includes/MarketplaceCart/MarketplaceCart.php:693
+#: includes/MarketplaceCart/MarketplaceCart.php:786
+msgid "Enable / Disable"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:646
+msgid "Do you want to enable Cart layout customizations?"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:650
+msgid "Display Contents Before Cart Table"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:651
+msgid ""
+"Controls visibility of the contents that can be generated by theme or other "
+"plugin before the table on Cart Page"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:655
+msgid "Display Contents After Cart Table"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:656
+msgid ""
+"Controls visibility of the contents that can be generated by theme or other "
+"plugin after the table on Cart Page"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:660
+msgid "Display Contents After Cart Contents"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:661
+msgid ""
+"Controls visibility of the contents that can be generated by theme or other "
+"plugin after the contents on Cart Page"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:665
+msgid "Remove Button Text"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:666
+msgid "If text is empty then X icon will be displayed"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:670
+msgid "Cart Remove Button Location"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:675
+msgid "Remove button can be either displayed on the same or next row"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:679
+msgid "Cart Coupon Location"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:681
+msgid "After Cart Items"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:682
+msgid "After Cart Totals"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:683
+msgid "Do Not Display"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:685
+msgid "Select location of the coupon field"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:689
+msgid "Checkout Layout Settings"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:694
+msgid "Do you want to enable Checkout layout customizations?"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:698
+msgid "Display Contents Before Customer Details"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:699
+msgid ""
+"Controls visibility of the contents that can be generated by theme or other "
+"plugin before Customer Details on Checkout Page"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:703
+msgid "Display Contents After Customer Details"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:704
+msgid ""
+"Controls visibility of the contents that can be generated by theme or other "
+"plugin after Customer Details on Checkout Page"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:708
+msgid "Display Contents Before Order Review"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:709
+msgid ""
+"Controls visibility of the contents that can be generated by theme or other "
+"plugin before Order Review on Checkout Page"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:713
+msgid "Display Contents After Order Review"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:714
+msgid ""
+"Controls visibility of the contents that can be generated by theme or other "
+"plugin after Order Review on Checkout Page"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:718
+msgid "Display Contents After Checkout Form"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:719
+msgid ""
+"Controls visibility of the contents that can be generated by theme or other "
+"plugin after the Form on Checkout Page"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:723
+msgid "Display Order Notes"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:724
+msgid "Controls visibility of the order notes on Checkout Page"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:728
+msgid "Order Notes Location"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:730
+msgid "After Billing Form"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:731
+msgid "After Shipping Form"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:732
+#: includes/MarketplaceCart/MarketplaceCart.php:741
+msgid "After Checkout Items"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:733
+#: includes/MarketplaceCart/MarketplaceCart.php:742
+msgid "After Checkout Totals"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:735
+msgid "Select location of the order notes on Checkout Page"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:739
+msgid "Checkout Payment Location"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:745
+msgid "Select location of the payment button on Checkout Page"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:759
+msgid "Desktop Styles"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:760
+msgid ""
+"Desktop styles will be displayed for the screens with the width greater than "
+"979px"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:772
+msgid "Mobile Styles"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:773
+msgid ""
+"Mobile styles will be displayed for the screens with the width less than "
+"978px"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:787
+msgid "Do you want to enable the these apperance settings?"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:791
+msgid "Items Table Width"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:792
+msgid "It can be used to overwrite width of the Items Table"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:796
+msgid "Items Table Margin"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:797
+msgid ""
+"It can be used to overwrite margin of the Items Table. It can be defined as "
+"a single value (eg: 10px) or as a vector (top right bottom left), (eg: 10px "
+"5px 10px 5px)"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:801
+msgid "Package Table Margin"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:802
+msgid ""
+"It can be used to overwrite margin of the Package Table. It can be defined "
+"as a single value (eg: 10px) or as a vector (top right bottom left), (eg: "
+"10px 5px 10px 5px)"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:806
+msgid "Package Table Header Cell Padding"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:807
+msgid ""
+"It can be used to overwrite padding of the package table header columns. It "
+"can be defined as a single value (eg: 10px) or as a vector (top right bottom "
+"left), (eg: 10px 5px 10px 5px)"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:811
+msgid "Cart Item Cell Padding"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:812
+msgid ""
+"It can be used to overwrite padding of the Image, Name, Price, Quantity "
+"cells. It can be defined as a single value (eg: 10px) or as a vector (top "
+"right bottom left), (eg: 10px 5px 10px 5px)"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:816
+msgid "Image Width"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:817
+msgid "It can be used to overwrite product image width"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:821
+msgid "Image Height"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:822
+msgid "It can be used to overwrite product image height"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:826
+msgid "Name Column Width"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:827
+msgid "It can be used to overwrite width of the Product Name column"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:832
+msgid "Name Column Text Alignment"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:833
+msgid "It can be used to overwrite text alignment of the Product Name column"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:838
+msgid "Name Header Font Weight"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:839
+msgid "It can be used to overwrite font weight of the Product Name header"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:844
+msgid "Name Column Font Weight"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:845
+msgid "It can be used to overwrite font weight of the Product Name column"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:849
+msgid "Price Column Width"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:850
+msgid "It can be used to overwrite width of the Price column"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:855
+msgid "Price Column Text Alignment"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:856
+msgid "It can be used to overwrite text alignment of the Price column"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:861
+msgid "Price Header Font Weight"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:862
+msgid "It can be used to overwrite font weight of the Product Price header"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:867
+msgid "Price Column Font Weight"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:868
+msgid "It can be used to overwrite font weight of the Product Price column"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:872
+msgid "Quantity Column Width"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:873
+msgid "It can be used to overwrite width of the Quantity column"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:878
+msgid "Quantity Column Text Alignment"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:879
+msgid "It can be used to overwrite text alignment of the Quantity column"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:884
+msgid "Quantity Header Font Weight"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:885
+msgid "It can be used to overwrite font weight of the Product Quantity header"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:890
+msgid "Quantity Column Font Weight"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:891
+msgid "It can be used to overwrite font weight of the Product Quantity column"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:895
+msgid "Total Column Width"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:896
+msgid "It can be used to overwrite width of the Total column"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:901
+msgid "Total Column Text Alignment"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:902
+msgid "It can be used to overwrite text alignment of the Total column"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:907
+msgid "Total Header Font Weight"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:908
+msgid "It can be used to overwrite font weight of the Product Total header"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:913
+msgid "Total Column Font Weight"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:914
+msgid "It can be used to overwrite font weight of the Product Total column"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:918
+msgid "Package Subtotal Cell Padding"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:919
+msgid ""
+"It can be used to overwrite padding of the Package Subtotal. It can be "
+"defined as a single value (eg: 10px) or as a vector (top right bottom left), "
+"(eg: 10px 5px 10px 5px)"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:924
+msgid "Package Subtotal Text Alignment"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:925
+msgid "It can be used to overwrite text alignment of the Package Subtotal"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:930
+msgid "Package Subtotal Font Weight"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:931
+msgid "It can be used to overwrite font weight of the Package Subtotal"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:935
+msgid "Shipping Methods Selection Padding"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:936
+msgid ""
+"It can be used to overwrite padding of the Shipping Methods Selection. It "
+"can be defined as a single value (eg: 10px) or as a vector (top right bottom "
+"left), (eg: 10px 5px 10px 5px)"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:941
+msgid "Shipping Methods Selection Text Alignment"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:942
+msgid ""
+"It can be used to overwrite text alignment of the Shipping Methods Selection"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:946
+msgid "Totals Table Width"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:947
+msgid "It can be used to overwrite width of the Totals Table"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:951
+msgid "Totals Table Margin"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:952
+msgid ""
+"It can be used to overwrite margin of the Totals Table. It can be defined as "
+"a single value (eg: 10px) or as a vector (top right bottom left), (eg: 10px "
+"5px 10px 5px)"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:956
+msgid "Totals Header Top Padding"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:957
+msgid ""
+"It can be used to overwrite padding of the Totals Header. It can be defined "
+"as a single value (eg: 10px) or as a vector (top right bottom left), (eg: "
+"10px 5px 10px 5px)"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:962
+msgid "Totals Header Text Alignment"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:963
+msgid "It can be used to overwrite text alignment of the Totals Header"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:968
+msgid "Totals Header Font Weight"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:969
+msgid "It can be used to overwrite font weight of the Totals Header"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:973
+msgid "Totals Labels Padding"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:974
+msgid ""
+"It can be used to overwrite padding of the Totals Table Labels. It can be "
+"defined as a single value (eg: 10px) or as a vector (top right bottom left), "
+"(eg: 10px 5px 10px 5px)"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:979
+msgid "Totals Labels Text Alignment"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:980
+msgid "It can be used to overwrite text alignment of the Totals Table Labels"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:985
+msgid "Totals Labels Font Weight"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:986
+msgid "It can be used to overwrite font weight of the Totals Table Labels"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:990
+msgid "Totals Values Padding"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:991
+msgid ""
+"It can be used to overwrite padding of the Totals Table Values. It can be "
+"defined as a single value (eg: 10px) or as a vector (top right bottom left), "
+"(eg: 10px 5px 10px 5px)"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:996
+msgid "Totals Values Text Alignment"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:997
+msgid "It can be used to overwrite text alignment of the Totals Table Values"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:1002
+msgid "Totals Values Font Weight"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:1003
+msgid "It can be used to overwrite font weight of the Totals Table Values"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:1007
+msgid "Shipping Calculator Padding"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:1008
+msgid ""
+"It can be used to overwrite padding of the Shipping Calculator Container. It "
+"can be defined as a single value (eg: 10px) or as a vector (top right bottom "
+"left), (eg: 10px 5px 10px 5px)"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:1013
+msgid "Shipping Calculator Text Alignment"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:1014
+msgid ""
+"It can be used to overwrite text alignment of the Shipping Calculator "
+"Container"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:1018
+msgid "Shipping Calculator Form Margin"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:1019
+msgid ""
+"It can be used to overwrite margin of the Shipping Calculator Form. It can "
+"be defined as a single value (eg: 10px) or as a vector (top right bottom "
+"left), (eg: 10px 5px 10px 5px)"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:1023
+msgid "Checkout Button Container Padding"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:1024
+msgid ""
+"It can be used to overwrite padding of the Checkout Button Container. It can "
+"be defined as a single value (eg: 10px) or as a vector (top right bottom "
+"left), (eg: 10px 5px 10px 5px)"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:1029
+msgid "Checkout Button Container Text Alignment"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:1030
+msgid ""
+"It can be used to overwrite text alignment of the Checkout Button Container"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:1040
+#: includes/MarketplaceCart/MarketplaceCart.php:1050
+msgid "Default"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:1041
+msgid "Left"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:1042
+msgid "Center"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:1043
+msgid "Right"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:1060
+msgid "Inherit"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:1061
+msgid "Ligther"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:1062
+msgid "Normal"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:1063
+msgid "Bold"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:1064
+msgid "Bolder"
+msgstr ""
+
+#: includes/MarketplaceCart/MarketplaceCart.php:1231
+msgid "Remove this item"
+msgstr ""
+
+#: templates/cart/cart-coupon-field.php:7
+msgid "Coupon:"
+msgstr ""
+
+#: templates/cart/cart-coupon-field.php:7
+msgid "Coupon code"
+msgstr ""
+
+#: templates/cart/cart-coupon-field.php:7
+msgid "Apply coupon"
+msgstr ""
+
+#: templates/cart/cart-package.php:37
+msgid "&nbsp;"
+msgstr ""
+
+#: templates/cart/cart-package.php:38
+#: templates/checkout/review-order-package.php:33
+msgid "Product"
+msgstr ""
+
+#: templates/cart/cart-package.php:39 templates/cart/cart-package.php:110
+msgid "Price"
+msgstr ""
+
+#: templates/cart/cart-package.php:40 templates/cart/cart-package.php:116
+msgid "Quantity"
+msgstr ""
+
+#: templates/cart/cart-package.php:155
+#: templates/checkout/review-order-package.php:108
+#, php-format
+msgid "Subtotal (%s items):"
+msgstr ""
+
+#: templates/cart/cart-shipping-methods.php:7
+msgid "Choose preferred delivery option:"
+msgstr ""
+
+#: templates/cart/cart-shipping-methods.php:25
+msgid "Delivery method:"
+msgstr ""
+
+#: templates/cart/cart-shipping-methods.php:44
+msgid ""
+"There are no shipping methods available. Please ensure that your address has "
+"been entered correctly, or contact us if you need any help."
+msgstr ""
+
+#: templates/cart/cart-shipping-methods.php:46
+msgid "Enter your full address to see shipping costs."
+msgstr ""
+
+#: templates/cart/cart-shipping-total.php:14
+#: templates/cart/cart-shipping-total.php:15
+msgid "Shipping and Handling"
+msgstr ""
+
+#: templates/cart/cart-totals.php:23 templates/checkout/review-order.php:57
+msgid "Order summary"
+msgstr ""
+
+#: templates/cart/cart-totals.php:27 templates/cart/cart-totals.php:28
+#: templates/checkout/review-order.php:63
+#: templates/checkout/review-order.php:64
+msgid "Subtotal"
+msgstr ""
+
+#: templates/cart/cart-totals.php:49 templates/cart/cart-totals.php:50
+msgid "Shipping"
+msgstr ""
+
+#: templates/cart/cart-totals.php:50
+msgid "Calculated at checkout"
+msgstr ""
+
+#: templates/cart/cart-totals.php:65
+#, php-format
+msgid "(estimated for %s)"
+msgstr ""
+
+#: templates/cart/cart-totals.php:86 templates/cart/cart-totals.php:87
+#: templates/checkout/review-order-package.php:34
+#: templates/checkout/review-order-package.php:89
+#: templates/checkout/review-order.php:110
+#: templates/checkout/review-order.php:111
+msgid "Total"
+msgstr ""
+
+#: templates/cart/cart-update-button.php:6
+msgid "Update cart"
+msgstr ""
+
+#: templates/checkout/form-billing.php:33
+msgid "Billing &amp; Shipping"
+msgstr ""
+
+#: templates/checkout/form-billing.php:33
+#: templates/checkout/form-billing.php:37
+#: templates/checkout/form-shipping.php:34
+msgid "Change"
+msgstr ""
+
+#: templates/checkout/form-billing.php:37
+msgid "Billing details"
+msgstr ""
+
+#: templates/checkout/form-billing.php:75
+msgid "Create an account?"
+msgstr ""
+
+#: templates/checkout/form-checkout.php:26
+msgid "You must be logged in to checkout."
+msgstr ""
+
+#: templates/checkout/form-order-notes.php:17
+msgid "Additional information"
+msgstr ""
+
+#: templates/checkout/form-shipping.php:34
+msgid "Ship to a different address?"
+msgstr ""
+
+#: templates/checkout/payment.php:44
+msgid "Update totals"
+msgstr ""
+
+#: templates/checkout/review-order.php:23
+msgid "Place order"
+msgstr ""

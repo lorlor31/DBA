@@ -1,0 +1,1793 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: WooCommerce Dropshipping\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-03-11 18:45+0530\n"
+"PO-Revision-Date: 2024-03-20 16:27+0530\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: bg\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.4.2\n"
+"X-Loco-Version: 2.5.3; wp-5.7.2\n"
+"X-Domain: woocommerce-dropshipping\n"
+
+#: ali-api/ali-inc/aliprodfilter.inc.php:15
+msgid "Aliexpress Product"
+msgstr "Продукт Aliexpress"
+
+#: ali-api/ali-inc/aliprodfilter.inc.php:17
+msgid "Enable this option if this product is from Aliexpress"
+msgstr "Активирайте тази опция, ако този продукт е от Aliexpress"
+
+#: ali-api/class-wc-dropshipping-product-extra-fields.php:291
+msgid "Amazon Product ID"
+msgstr "ID на продукта на Amazon"
+
+#: ali-api/class-wc-dropshipping-product-extra-fields.php:361
+msgid "Amazon Affiliate ID"
+msgstr "ID на партньор на Amazon"
+
+#: ali-api/class-wc-dropshipping-product-extra-fields.php:392
+#: ali-api/class-wc-dropshipping-product-extra-fields.php:423
+msgid "Cost of goods"
+msgstr "Цена на стоки"
+
+#: ali-api/class-wc-dropshipping-product-extra-fields.php:425
+msgid "Cost of goods value included in the supplier email"
+msgstr "Стойността на цената на стоките е включена в имейла на доставчика"
+
+#: ali-api/class-wc-dropshipping-product-extra-fields.php:453
+msgid "AliExpress Orders"
+msgstr "Поръчки от AliExpress"
+
+#: ali-api/class-wc-dropshipping-product-extra-fields.php:454
+msgid "AliExpress Orders placed."
+msgstr "Направени поръчки от AliExpress."
+
+#: ali-api/class-wc-dropshipping-product-extra-fields.php:476
+msgid "AliExpress Supplier"
+msgstr "Доставчик на AliExpress"
+
+#: ali-api/class-wc-dropshipping-product-extra-fields.php:516
+msgid "Product URL"
+msgstr "URL адрес на продукта"
+
+#: ali-api/class-wc-dropshipping-product-extra-fields.php:517
+msgid "Enter URL to AliExpress Product"
+msgstr "Въведете URL на продукта AliExpress"
+
+#: ali-api/class-wc-dropshipping-product-extra-fields.php:522
+msgid "Store Name"
+msgstr "Име на магазина"
+
+#: ali-api/class-wc-dropshipping-product-extra-fields.php:523
+msgid "AliExpress Supplier Store Name"
+msgstr "Име на магазина на доставчик на AliExpress"
+
+#: ali-api/class-wc-dropshipping-product-extra-fields.php:532
+msgid "Store URL"
+msgstr "URL адрес на магазина"
+
+#: ali-api/class-wc-dropshipping-product-extra-fields.php:533
+msgid "AliExpress Supplier Store URL"
+msgstr "URL адрес на магазина на доставчик на AliExpress"
+
+#: ali-api/class-wc-dropshipping-product-extra-fields.php:542
+msgid "Store Price Range"
+msgstr "Ценови диапазон на магазина"
+
+#: ali-api/class-wc-dropshipping-product-extra-fields.php:543
+msgid "AliExpress Supplier Store Price Range"
+msgstr "Ценови диапазон на магазина на доставчик на AliExpress"
+
+#: ali-api/class-wc-dropshipping-product-extra-fields.php:552
+msgid "Currency"
+msgstr "Валута"
+
+#: ali-api/class-wc-dropshipping-product-extra-fields.php:613
+#: ali-api/class-wc-dropshipping-product-extra-fields.php:644
+msgid "Description - Type of Package"
+msgstr "Описание - Тип пакет"
+
+#: ali-api/class-wc-dropshipping-product-extra-fields.php:646
+msgid "Description - Type of Package value included in the supplier email"
+msgstr "Описание - Тип стойност на пакета, включен в имейла на доставчика"
+
+#: ali-api/class-wc-dropshipping-product-extra-fields.php:756
+msgid "Estimated Profit : "
+msgstr "Очаквана печалба:"
+
+#: ali-api/woocommerce_aliexpress.php:2491
+msgid "AliExpress Action"
+msgstr "AliExpress действие"
+
+#: ali-api/woocommerce_aliexpress.php:2532
+msgid "Place Order"
+msgstr "Направи поръчка"
+
+#: ali-api/woocommerce_aliexpress.php:2624
+msgid "AliExpress order status has been changed to "
+msgstr "Състоянието на поръчката AliExpress е променено на"
+
+#: ali-api/woocommerce_aliexpress.php:2789
+msgid "All Orders"
+msgstr "Всички поръчки"
+
+#: assets/js/jquery-ui.min.js:8
+msgid "'"
+msgstr ""
+
+#: inc/class-wc-dropshipping-admin.php:281
+msgid " Import Inventory .CSV"
+msgstr "Импортиране на инвентар .CSV"
+
+#: inc/class-wc-dropshipping-admin.php:428
+#: inc/class-wc-dropshipping-admin.php:510
+msgid " Account #"
+msgstr "Сметка #"
+
+#: inc/class-wc-dropshipping-admin.php:430
+msgid ""
+"Your store&apos;s account number with this supplier. Leave blank if you "
+"don&apos;t have an account number"
+msgstr ""
+"Номер на акаунта на вашия магазин при този доставчик. Оставете празно, ако "
+"нямате номер на сметка"
+
+#: inc/class-wc-dropshipping-admin.php:433
+#: inc/class-wc-dropshipping-admin.php:516
+msgid " Email Addresses"
+msgstr "Имейл адреси"
+
+#: inc/class-wc-dropshipping-admin.php:435
+msgid ""
+"When a customer purchases a product from you, the supplier will be sent an "
+"notification via email. List the supplier&apos;s email addresses that should "
+"be notified when a new order is placed."
+msgstr ""
+"Когато клиент закупи продукт от вас, доставчикът ще получи известие по "
+"имейл. Избройте имейл адресите на доставчика, които трябва да бъдат "
+"уведомени, когато се направи нова поръчка."
+
+#: inc/class-wc-dropshipping-admin.php:443
+#: inc/class-wc-dropshipping-admin.php:526
+msgid "Enable specific delivery location for the supplier."
+msgstr "Активиране на конкретно място за доставка за доставчика."
+
+#: inc/class-wc-dropshipping-admin.php:512
+msgid ""
+" Your store&apos;s account number with this supplier. Leave blank if you "
+"don&apos;t have an account number"
+msgstr ""
+"Номер на акаунта на вашия магазин при този доставчик. Оставете празно, ако "
+"нямате номер на сметка"
+
+#: inc/class-wc-dropshipping-admin.php:518
+msgid ""
+" When a customer purchases a product from you, the supplier will be sent an "
+"notification via email. List the supplier&apos;s email addresses that should "
+"be notified when a new order is placed."
+msgstr ""
+"Когато клиент закупи продукт от вас, доставчикът ще получи известие по "
+"имейл. Избройте имейл адресите на доставчика, които трябва да бъдат "
+"уведомени, когато се направи нова поръчка."
+
+#: inc/class-wc-dropshipping-admin.php:537
+msgid "Address line 1"
+msgstr "Адрес ред 1"
+
+#: inc/class-wc-dropshipping-admin.php:542
+msgid " Address line 2"
+msgstr "Адрес ред 2"
+
+#: inc/class-wc-dropshipping-admin.php:547
+msgid "City"
+msgstr "град"
+
+#: inc/class-wc-dropshipping-admin.php:552
+msgid "Country/State"
+msgstr "Държава/Щат"
+
+#: inc/class-wc-dropshipping-admin.php:557
+msgid "Postcode/ZIP"
+msgstr "Пощенски код/пощенски код"
+
+#: inc/class-wc-dropshipping-admin.php:564
+msgid "Supplier Inventory CSV Import Settings"
+msgstr "Настройки за импортиране на CSV инвентар на доставчика"
+
+#: inc/class-wc-dropshipping-admin.php:565
+msgid ""
+"(If you do not receive inventory statuses from your supplier in the form of "
+"a .CSV file, leave these settings blank)"
+msgstr ""
+"(Ако не получавате състояния на инвентара от вашия доставчик под формата на ."
+"CSV файл, оставете тези настройки празни)"
+
+#: inc/class-wc-dropshipping-admin.php:568
+msgid "CSV File Column Delimiter"
+msgstr "Разделител на колони на CSV файл"
+
+#: inc/class-wc-dropshipping-admin.php:570
+msgid ""
+"Please indicate what character is used to separate fields in the CSV file. "
+"Normally this is a comma"
+msgstr ""
+"Моля, посочете какъв знак се използва за разделяне на полетата в CSV файла. "
+"Обикновено това е запетая"
+
+#: inc/class-wc-dropshipping-admin.php:576
+msgid "CSV SKU Column #"
+msgstr "CSV SKU колона #"
+
+#: inc/class-wc-dropshipping-admin.php:578
+msgid ""
+"Please indicate which column in the CSV file corresponds to product SKUs. "
+"Note that this should be the same SKU that the manufacturer uses. "
+"WooCommerce Dropshipping will automatically add the SKU code for products "
+"from this suppler when you upload a .CSV file"
+msgstr ""
+"Моля, посочете коя колона в CSV файла съответства на SKU на продукта. Имайте "
+"предвид, че това трябва да е същата SKU, която производителят използва. "
+"WooCommerce Dropshipping автоматично ще добави SKU кода за продукти от този "
+"доставчик, когато качите .CSV файл"
+
+#: inc/class-wc-dropshipping-admin.php:584
+msgid "CSV Type"
+msgstr "Тип CSV"
+
+#: inc/class-wc-dropshipping-admin.php:598
+msgid "Please indicate how the .CSV file&apos;s data should be read. "
+msgstr "Моля, посочете как трябва да се четат данните от .CSV файла."
+
+#: inc/class-wc-dropshipping-admin.php:598
+msgid "Quantity on Hand "
+msgstr "Налично количество"
+
+#: inc/class-wc-dropshipping-admin.php:598
+msgid ""
+"- If your supplier sends you a .CSV file that contains the quantity that "
+"they have remaining in their inventory, you should use this method. Any "
+"number above zero indicates that the product is still in stock."
+msgstr ""
+"- Ако вашият доставчик ви изпрати .CSV файл, който съдържа количеството, "
+"което им остава в инвентара, трябва да използвате този метод. Всяко число "
+"над нула означава, че продуктът все още е в наличност."
+
+#: inc/class-wc-dropshipping-admin.php:598
+msgid " In-Stock Indicator "
+msgstr "Индикатор за наличност"
+
+#: inc/class-wc-dropshipping-admin.php:598
+msgid ""
+"- Use this method if your supplier sends you a .CSV file that includes a "
+"column indicating whether or not a product is in stock.  This is typically "
+"in either a Y/N or 1/0 format to indicate whether or not the product is in "
+"stock."
+msgstr ""
+"- Използвайте този метод, ако вашият доставчик ви изпрати .CSV файл, който "
+"включва колона, указваща дали продуктът е наличен или не. Това обикновено е "
+"във формат Y/N или 1/0, за да покаже дали продуктът е на склад или не."
+
+#: inc/class-wc-dropshipping-admin.php:601
+msgid "CSV Inventory Quantity Column #"
+msgstr "Колона № на количеството в CSV инвентара"
+
+#: inc/class-wc-dropshipping-admin.php:603
+msgid ""
+"Please indicate which column in the .CSV file corresponds to the quantity of "
+"inventory available"
+msgstr ""
+"Моля, посочете коя колона в .CSV файла отговаря на количеството налични "
+"инвентаризации"
+
+#: inc/class-wc-dropshipping-admin.php:608
+msgid "In-Stock Indicator Column #"
+msgstr "Колона № на индикатора за наличност"
+
+#: inc/class-wc-dropshipping-admin.php:610
+msgid ""
+"Please indicate which column in the .CSV file indicates whether or not a "
+"product is in stock"
+msgstr ""
+"Моля, посочете коя колона в .CSV файла показва дали продуктът е наличен или "
+"не"
+
+#: inc/class-wc-dropshipping-admin.php:614
+msgid "In-Stock Indicator Value"
+msgstr "Стойност на индикатора за наличност"
+
+#: inc/class-wc-dropshipping-admin.php:616
+msgid ""
+"Please input the value (ie. Y or 1) in the column defined above that "
+"indicates whether or not a product is in stock"
+msgstr ""
+"Моля, въведете стойността (т.е. Y или 1) в колоната, определена по-горе, "
+"която показва дали продуктът е наличен или не"
+
+#: inc/class-wc-dropshipping-admin.php:746
+msgid "Hi "
+msgstr ""
+
+#: inc/class-wc-dropshipping-admin.php:748
+msgid "Thanks For Registration"
+msgstr "Благодаря за регистрацията"
+
+#: inc/class-wc-dropshipping-admin.php:751
+msgid "Your User Name:&nbsp;"
+msgstr "Вашето потребителско име:&nbsp;"
+
+#: inc/class-wc-dropshipping-admin.php:752
+msgid "Your Password:&nbsp;"
+msgstr "Вашата парола:&nbsp;"
+
+#: inc/class-wc-dropshipping-admin.php:753
+msgid "Change Your Password Once you login"
+msgstr "Променете паролата си, след като влезете"
+
+#: inc/class-wc-dropshipping-admin.php:754
+msgid "Login URL: "
+msgstr "URL адрес за вход:"
+
+#: inc/class-wc-dropshipping-admin.php:764
+#: inc/class-wc-dropshipping-csv-import.php:672
+msgid "User already exists.  Password inherited."
+msgstr "Вече съществува потребител. Паролата е наследена."
+
+#: inc/class-wc-dropshipping-checkout.php:108
+msgid "Order Number"
+msgstr "Номер на поръчка"
+
+#: inc/class-wc-dropshipping-checkout.php:143
+msgid "Tracking Number"
+msgstr "Номер за проследяване"
+
+#: inc/class-wc-dropshipping-checkout.php:208
+msgid "POD"
+msgstr "POD"
+
+#: inc/class-wc-dropshipping-checkout.php:386
+msgid "Track Your Order"
+msgstr "Проследете поръчката си"
+
+#: inc/class-wc-dropshipping-checkout.php:388
+msgid "Shipping Date"
+msgstr "Дата на доставка"
+
+#: inc/class-wc-dropshipping-checkout.php:390
+#: inc/class-wc-dropshipping-product.php:121
+msgid "Tracking Number(s)"
+msgstr "Номер(а) за проследяване"
+
+#: inc/class-wc-dropshipping-checkout.php:392
+#: inc/class-wc-dropshipping-product.php:123
+msgid "Shipping Company"
+msgstr "Транспортна фирма"
+
+#: inc/class-wc-dropshipping-checkout.php:394
+#: inc/class-wc-dropshipping-product.php:125
+msgid "Notes"
+msgstr "Бележки"
+
+#: inc/class-wc-dropshipping-csv-import.php:259
+#: inc/class-wc-dropshipping-csv-import.php:431
+#: inc/class-wc-dropshipping-csv-import.php:448
+msgid "Supplier Id"
+msgstr "ID на доставчика"
+
+#: inc/class-wc-dropshipping-csv-import.php:260
+#: inc/class-wc-dropshipping-csv-import.php:432
+msgid "Supplier Name"
+msgstr "Име на доставчик"
+
+#: inc/class-wc-dropshipping-csv-import.php:261
+#: inc/class-wc-dropshipping-csv-import.php:433
+msgid "Supplier Slug"
+msgstr "Supplier Slug"
+
+#: inc/class-wc-dropshipping-csv-import.php:262
+#: inc/class-wc-dropshipping-csv-import.php:434
+msgid "Supplier Description"
+msgstr "Описание на доставчика"
+
+#: inc/class-wc-dropshipping-csv-import.php:263
+#: inc/class-wc-dropshipping-csv-import.php:435
+msgid "Supplier Email"
+msgstr "Имейл на доставчика"
+
+#: inc/class-wc-dropshipping-csv-import.php:264
+#: inc/class-wc-dropshipping-csv-import.php:436
+msgid "Supplier Account Number"
+msgstr "Номер на сметката на доставчика"
+
+#: inc/class-wc-dropshipping-orders.php:698
+#: inc/class-wc-dropshipping-orders.php:772
+#, php-format
+msgid "New Order #%1$s From %2$s"
+msgstr "Нова поръчка #%1$s от %2$s"
+
+#: inc/class-wc-dropshipping-orders.php:717
+msgid "To mark this order as shipped please click the following link:"
+msgstr ""
+"За да маркирате тази поръчка като изпратена, моля, щракнете върху следната "
+"връзка:"
+
+#: inc/class-wc-dropshipping-orders.php:717
+msgid "Mark as shipped"
+msgstr "Маркирайте като изпратено"
+
+#: inc/class-wc-dropshipping-orders.php:721
+#: inc/class-wc-dropshipping-orders.php:802
+msgid "View order in dashboard"
+msgstr "Вижте поръчката в таблото за управление"
+
+#: inc/class-wc-dropshipping-orders.php:768
+#, php-format
+msgid "Order #%s is completed"
+msgstr "Поръчка #%s е изпълнена"
+
+#: inc/class-wc-dropshipping-orders.php:770
+#, php-format
+msgid "Order #%s is cancelled"
+msgstr "Поръчка #%s е анулирана"
+
+#: inc/class-wc-dropshipping-orders.php:976
+msgid "Filter by Supplier"
+msgstr "Филтриране по доставчик"
+
+#: inc/class-wc-dropshipping-product.php:119
+msgid "Date"
+msgstr "Дата"
+
+#: inc/class-wc-dropshipping-settings.php:47 woocommerce-dropshipping.php:864
+#: woocommerce-dropshipping.php:865
+msgid "Dropshipping"
+msgstr "Дропшипинг"
+
+#: inc/class-wc-dropshipping-settings.php:1363
+msgid "AliExpress Settings"
+msgstr "Настройки на AliExpress"
+
+#: inc/class-wc-dropshipping-settings.php:1365
+#: inc/class-wc-dropshipping-settings.php:1486
+#: inc/class-wc-dropshipping-settings.php:1488
+msgid "Supplier Email Notifications"
+msgstr "Известия по имейл на доставчика"
+
+#: inc/class-wc-dropshipping-settings.php:1367
+#: inc/class-wc-dropshipping-settings.php:1547
+msgid "Packing Slips"
+msgstr "Опаковъчни листове"
+
+#: inc/class-wc-dropshipping-settings.php:1369
+#: inc/class-wc-dropshipping-settings.php:2238
+msgid "Customised Supplier Emails"
+msgstr "Персонализирани имейли на доставчици"
+
+#: inc/class-wc-dropshipping-settings.php:1371
+msgid "SMTP Options"
+msgstr "Опции за SMTP"
+
+#: inc/class-wc-dropshipping-settings.php:1373
+#: inc/class-wc-dropshipping-settings.php:2464
+msgid "Price Calculator"
+msgstr "Ценови калкулатор"
+
+#: inc/class-wc-dropshipping-settings.php:1380
+msgid "AliExpress Chrome Browser Extension (CBE) Settings"
+msgstr "Настройки на разширението за браузър Chrome (CBE) на AliExpress"
+
+#: inc/class-wc-dropshipping-settings.php:1386
+msgid "Enable Support for the AliExpress CBE:"
+msgstr "Активирайте поддръжката за AliExpress CBE:"
+
+#: inc/class-wc-dropshipping-settings.php:1407
+msgid "Generate AliExpress API Key:"
+msgstr "Генериране на API ключ на AliExpress:"
+
+#: inc/class-wc-dropshipping-settings.php:1410
+msgid "Generate AliExpress API Key"
+msgstr "Генериране на API ключ на AliExpress"
+
+#: inc/class-wc-dropshipping-settings.php:1429
+msgid "Price Markup Method:"
+msgstr "Метод на надценяване на цената:"
+
+#: inc/class-wc-dropshipping-settings.php:1455
+msgid "Percentage Offset"
+msgstr "Процентно отместване"
+
+#: inc/class-wc-dropshipping-settings.php:1469
+msgid "Markup Offset Value:"
+msgstr "Стойност на отместване на маркирането:"
+
+#: inc/class-wc-dropshipping-settings.php:1490
+msgid ""
+"When an order&apos;s status switches to processing, emails are sent to each "
+"supplier to notify them to ship their products."
+msgstr ""
+"Когато статусът на поръчка премине към обработка, имейлите се изпращат до "
+"всеки доставчик, за да бъдат уведомени да изпратят продуктите си."
+
+#: inc/class-wc-dropshipping-settings.php:1490
+msgid ""
+" You can set a custom message for the suppliers in the box below to be "
+"included in these emails."
+msgstr ""
+"Можете да зададете персонализирано съобщение за доставчиците в полето по-"
+"долу, което да бъде включено в тези имейли."
+
+#: inc/class-wc-dropshipping-settings.php:1494
+msgid "Email order note:"
+msgstr "Бележка за поръчка по имейл:"
+
+#: inc/class-wc-dropshipping-settings.php:1506
+msgid "Include 'View order' link in suppliers email:"
+msgstr "Включете връзката „Преглед на поръчката“ в имейла на доставчиците:"
+
+#: inc/class-wc-dropshipping-settings.php:1517
+msgid "Do not send renewal email to suppliers:"
+msgstr "Не изпращайте имейл за подновяване до доставчици:"
+
+#: inc/class-wc-dropshipping-settings.php:1527
+msgid ".CSV File Inventory Update Settings"
+msgstr "Настройки за актуализиране на инвентара на .CSV файлове"
+
+#: inc/class-wc-dropshipping-settings.php:1529
+msgid ""
+".These options relate to how your store processes data imported from CSV "
+"spreadsheet files, if you receive them from your supplier"
+msgstr ""
+".Тези опции се отнасят до това как вашият магазин обработва данни, "
+"импортирани от CSV файлове с електронни таблици, ако ги получите от вашия "
+"доставчик"
+
+#: inc/class-wc-dropshipping-settings.php:1535
+msgid "Inventory Buffer:"
+msgstr "Буфер за инвентаризация:"
+
+#: inc/class-wc-dropshipping-settings.php:1541
+msgid ""
+"If the supplier&apos;s stock falls below this number on an imported "
+"spreadsheet, the item will be considered out of stock in your store."
+msgstr ""
+"Ако наличността на доставчика падне под това число в импортирана електронна "
+"таблица, артикулът ще се счита за изчерпан във вашия магазин."
+
+#: inc/class-wc-dropshipping-settings.php:1553
+msgid "Attach PDF to supplier Email"
+msgstr "Прикачете PDF към имейла на доставчика"
+
+#: inc/class-wc-dropshipping-settings.php:1560
+msgid "Header"
+msgstr "Заглавка"
+
+#: inc/class-wc-dropshipping-settings.php:1564
+msgid "Option to view packing slip."
+msgstr "Възможност за преглед на опаковъчния лист."
+
+#: inc/class-wc-dropshipping-settings.php:1579
+msgid "Show logo in the header."
+msgstr "Показване на логото в заглавката."
+
+#: inc/class-wc-dropshipping-settings.php:1587
+#: inc/class-wc-dropshipping-settings.php:1638
+msgid "NOTE:"
+msgstr "ЗАБЕЛЕЖКА:"
+
+#: inc/class-wc-dropshipping-settings.php:1587
+msgid "For best results, please keep logo dimensions within 200x60 px"
+msgstr ""
+"За най-добри резултати, моля, поддържайте размерите на логото в рамките на "
+"200x60 px"
+
+#: inc/class-wc-dropshipping-settings.php:1593
+msgid "Url to Logo:"
+msgstr "Url към лого:"
+
+#: inc/class-wc-dropshipping-settings.php:1604
+msgid "Logo Width:"
+msgstr "Ширина на логото:"
+
+#: inc/class-wc-dropshipping-settings.php:1620
+msgid "Show order date beside order number."
+msgstr "Показване на датата на поръчката до номера на поръчката."
+
+#: inc/class-wc-dropshipping-settings.php:1630
+msgid "Show shipping information."
+msgstr "Показване на информация за доставка."
+
+#: inc/class-wc-dropshipping-settings.php:1638
+msgid ""
+"For best results, please make sure that any custom terms or phrases listed "
+"below are kept to a reasonable length. If your terms are too long, it may "
+"cause text wrapping and alignment issues with your packing slips."
+msgstr ""
+"За най-добри резултати, моля, уверете се, че всички персонализирани термини "
+"или фрази, изброени по-долу, са с разумна дължина. Ако условията ви са "
+"твърде дълги, това може да причини проблеми с обвиването на текста и "
+"подравняването на вашите опаковъчни листове."
+
+#: inc/class-wc-dropshipping-settings.php:1642
+msgid "Chosen Shipping Method Label:"
+msgstr "Етикет за избран метод на доставка:"
+
+#: inc/class-wc-dropshipping-settings.php:1653
+msgid "Payment Type Label:"
+msgstr "Етикет за тип плащане:"
+
+#: inc/class-wc-dropshipping-settings.php:1668
+msgid "Display the \"Customer Note\" into the Dropshipper packing slip."
+msgstr "Покажете „Бележката на клиента“ в опаковъчната бележка на Dropshipper."
+
+#: inc/class-wc-dropshipping-settings.php:1676
+msgid "Products"
+msgstr "Продукти"
+
+#: inc/class-wc-dropshipping-settings.php:1682
+msgid "Show product thumbnail image."
+msgstr "Показване на миниатюрно изображение на продукта."
+
+#: inc/class-wc-dropshipping-settings.php:1691
+msgid "Image Label:"
+msgstr "Етикет на изображението:"
+
+#: inc/class-wc-dropshipping-settings.php:1704
+msgid "SKU Label:"
+msgstr "SKU етикет:"
+
+#: inc/class-wc-dropshipping-settings.php:1714
+msgid "Product Label:"
+msgstr "Етикет на продукта:"
+
+#: inc/class-wc-dropshipping-settings.php:1724
+msgid "Quantity Label:"
+msgstr "Етикет за количество:"
+
+#: inc/class-wc-dropshipping-settings.php:1738
+msgid ""
+"Additional field in the \"Add/Edit Product\" to specify the \"Type of "
+"Package\""
+msgstr ""
+"Допълнително поле в \"Добавяне/Редактиране на продукт\" за указване на \"Тип "
+"пакет\""
+
+#: inc/class-wc-dropshipping-settings.php:1749
+msgid "Type Of Package Label:"
+msgstr "Тип етикет на опаковката:"
+
+#: inc/class-wc-dropshipping-settings.php:1764
+msgid "Show product prices."
+msgstr "Показване на цените на продуктите."
+
+#: inc/class-wc-dropshipping-settings.php:1774
+msgid "Price Label:"
+msgstr "Етикет на цената:"
+
+#: inc/class-wc-dropshipping-settings.php:1789
+msgid "Show Cost instead of Sell Price."
+msgstr "Показване на цена вместо продажна цена."
+
+#: inc/class-wc-dropshipping-settings.php:1799
+msgid "Show Tax Split."
+msgstr "Показване на данъчно разделение."
+
+#: inc/class-wc-dropshipping-settings.php:1811
+msgid "Company Details"
+msgstr "Данни за компанията"
+
+#: inc/class-wc-dropshipping-settings.php:1815
+msgid "Company Name:"
+msgstr "Име на компанията:"
+
+#: inc/class-wc-dropshipping-settings.php:1829
+msgid "Company Address Label:"
+msgstr "Етикет на фирмения адрес:"
+
+#: inc/class-wc-dropshipping-settings.php:1844
+msgid "Address:"
+msgstr "адрес:"
+
+#: inc/class-wc-dropshipping-settings.php:1854
+msgid "Customer Service Email:"
+msgstr "Имейл за обслужване на клиенти:"
+
+#: inc/class-wc-dropshipping-settings.php:1866
+msgid "Customer Service Phone Number:"
+msgstr "Телефонен номер за обслужване на клиенти:"
+
+#: inc/class-wc-dropshipping-settings.php:1880
+msgid "Show shipping address at the bottom."
+msgstr "Показване на адреса за доставка в долната част."
+
+#: inc/class-wc-dropshipping-settings.php:1890
+msgid "Shipping Address Label:"
+msgstr "Етикет с адрес за доставка:"
+
+#: inc/class-wc-dropshipping-settings.php:1905
+msgid "Show billing address at the bottom."
+msgstr "Показване на адреса за фактуриране в долната част."
+
+#: inc/class-wc-dropshipping-settings.php:1917
+msgid "Billing Address Label:"
+msgstr "Етикет на адреса за фактуриране:"
+
+#: inc/class-wc-dropshipping-settings.php:1939
+msgid "Footer"
+msgstr "Долен колонтитул"
+
+#: inc/class-wc-dropshipping-settings.php:1940
+msgid "Any additional comment to be displayed"
+msgstr "Всеки допълнителен коментар ще бъде показан"
+
+#: inc/class-wc-dropshipping-settings.php:1941
+msgid "Max length: 200 characters"
+msgstr "Максимална дължина: 200 символа"
+
+#: inc/class-wc-dropshipping-settings.php:1942
+msgid ""
+"NOTE: Please make sure this content as small as possible so that it fits "
+"properly at the bottom of PDF."
+msgstr ""
+"ЗАБЕЛЕЖКА: Моля, уверете се, че това съдържание е възможно най-малко, така "
+"че да пасва правилно в долната част на PDF."
+
+#: inc/class-wc-dropshipping-settings.php:1946
+msgid "Comments:"
+msgstr "коментари:"
+
+#: inc/class-wc-dropshipping-settings.php:1958
+msgid "Thank You Message:"
+msgstr "Благодарствено съобщение:"
+
+#: inc/class-wc-dropshipping-settings.php:1972
+msgid "Send Order Details to Suppliers"
+msgstr "Изпратете подробности за поръчката до доставчиците"
+
+#: inc/class-wc-dropshipping-settings.php:1978
+msgid "Do not send email notifications to supplier"
+msgstr "Не изпращайте имейл известия до доставчика"
+
+#: inc/class-wc-dropshipping-settings.php:1982
+msgid ""
+"This option controls whether or not you want to send a .CSV spreadsheet file "
+"as an attachment with the regular order notification emails that are sent to "
+"your suppliers"
+msgstr ""
+"Тази опция контролира дали искате или не да изпратите .CSV файл с електронна "
+"таблица като прикачен файл с обичайните имейли за известия за поръчки, които "
+"се изпращат до вашите доставчици"
+
+#: inc/class-wc-dropshipping-settings.php:1990
+msgid "Send CSV with Supplier Notifications"
+msgstr "Изпратете CSV с известия за доставчик"
+
+#: inc/class-wc-dropshipping-settings.php:2001
+msgid "Show the total price in the packing slip."
+msgstr "Покажете общата цена в опаковъчната бележка."
+
+#: inc/class-wc-dropshipping-settings.php:2011
+msgid "Hide the shipping cost in the packing slip."
+msgstr "Скрийте разходите за доставка в опаковъчната бележка."
+
+#: inc/class-wc-dropshipping-settings.php:2021
+msgid "Hide Tax in supplier email."
+msgstr "Скриване на данъка в имейла на доставчика."
+
+#: inc/class-wc-dropshipping-settings.php:2041
+msgid "Include the customer&apos;s phone number in the packing slip."
+msgstr "Включете телефонния номер на клиента в опаковъчната бележка."
+
+#: inc/class-wc-dropshipping-settings.php:2051
+msgid "Hide the supplier names on order confirmation emails."
+msgstr ""
+"Скрийте имената на доставчиците в имейлите за потвърждение на поръчката."
+
+#: inc/class-wc-dropshipping-settings.php:2061
+msgid "Show supplier names on product pages."
+msgstr "Показвайте имената на доставчиците на продуктовите страници."
+
+#: inc/class-wc-dropshipping-settings.php:2071
+msgid "Hide supplier names on the Order Details page."
+msgstr ""
+"Скрийте имената на доставчиците на страницата с подробности за поръчката."
+
+#: inc/class-wc-dropshipping-settings.php:2081
+msgid "Show \"Payment Type\" in the notification email."
+msgstr "Покажете „Тип плащане“ в имейла за известие."
+
+#: inc/class-wc-dropshipping-settings.php:2088
+msgid "Include \"Customer email\" into the Dropshipper packing slip."
+msgstr "Включете „имейл на клиента“ в опаковъчната бележка на Dropshipper."
+
+#: inc/class-wc-dropshipping-settings.php:2098
+msgid "Include store name in the order notification CSV filename."
+msgstr ""
+"Включете името на магазина в името на CSV файла за известие за поръчка."
+
+#: inc/class-wc-dropshipping-settings.php:2108
+msgid "Include the store&apos;s URL in the order notification CSV filename."
+msgstr ""
+"Включете URL адреса на магазина в името на CSV файла за известие за поръчка."
+
+#: inc/class-wc-dropshipping-settings.php:2118
+msgid "Send an additional email to the supplier when the order is completed."
+msgstr ""
+"Изпратете допълнителен имейл до доставчика, когато поръчката бъде завършена."
+
+#: inc/class-wc-dropshipping-settings.php:2128
+msgid ""
+"Allow suppliers to mark their orders as shipped by clicking a link on the "
+"email, without logging in to your store."
+msgstr ""
+"Позволете на доставчиците да маркират поръчките си като изпратени, като "
+"щракнете върху връзка в имейла, без да влизате във вашия магазин."
+
+#: inc/class-wc-dropshipping-settings.php:2138
+msgid ""
+"When an admin creates a new supplier, send registration details to the "
+"supplier&apos;s email."
+msgstr ""
+"Когато администратор създаде нов доставчик, изпратете регистрационни данни "
+"на имейла на доставчика."
+
+#: inc/class-wc-dropshipping-settings.php:2153
+msgid "Notify via email when suppliers open order notification emails."
+msgstr ""
+"Уведомявайте по имейл, когато доставчиците отворят имейли с известия за "
+"поръчки."
+
+#: inc/class-wc-dropshipping-settings.php:2165
+msgid "Use the standard WooCommerce mail format for email notification"
+msgstr ""
+"Използвайте стандартния пощенски формат на WooCommerce за известяване по "
+"имейл"
+
+#: inc/class-wc-dropshipping-settings.php:2175
+msgid "Include order number field on checkout."
+msgstr "Включете полето за номер на поръчката при плащане."
+
+#: inc/class-wc-dropshipping-settings.php:2185
+msgid ""
+"Don&apos;t cc: the store admin when sending order notification emails to "
+"suppliers."
+msgstr ""
+"Не копирайте: администратора на магазина, когато изпращате имейли с известия "
+"за поръчка до доставчици."
+
+#: inc/class-wc-dropshipping-settings.php:2198
+msgid ""
+"Hide Customer info in the Packing Slip, Order emails and Suppliers dashboard."
+msgstr ""
+"Скрийте информацията за клиента в опаковъчния лист, имейлите за поръчки и "
+"таблото за управление на доставчиците."
+
+#: inc/class-wc-dropshipping-settings.php:2208
+msgid ""
+"Hide Customer Contact info in the Packing Slip, Order emails and Suppliers "
+"dashboard."
+msgstr ""
+"Скрийте информацията за контакт с клиента в опаковъчния лист, имейлите за "
+"поръчки и таблото за управление на доставчиците."
+
+#: inc/class-wc-dropshipping-settings.php:2218
+#: inc/class-wc-dropshipping-settings.php:2229
+msgid ""
+"Enable store address as shipping address in Suppliers Order list dashboard."
+msgstr ""
+"Активирайте адреса на магазина като адрес за доставка в таблото за "
+"управление на списъка с поръчки на доставчици."
+
+#: inc/class-wc-dropshipping-settings.php:2240
+msgid "Dropshipping Pro plugin adds additional features. "
+msgstr "Плъгинът Dropshipping Pro добавя допълнителни функции."
+
+#: inc/class-wc-dropshipping-settings.php:2240
+msgid "Click here to find out more."
+msgstr "Щракнете тук, за да научите повече."
+
+#: inc/class-wc-dropshipping-settings.php:2258
+msgid "Packing Slip "
+msgstr "Опаковъчен лист"
+
+#: inc/class-wc-dropshipping-settings.php:2261
+msgid "Title Color:"
+msgstr "Цвят на заглавието:"
+
+#: inc/class-wc-dropshipping-settings.php:2272
+msgid "Title Font Size:"
+msgstr "Размер на шрифта на заглавието:"
+
+#: inc/class-wc-dropshipping-settings.php:2288
+msgid "Email "
+msgstr "електронна поща"
+
+#: inc/class-wc-dropshipping-settings.php:2292
+msgid "Background Color:"
+msgstr "Цвят на фона:"
+
+#: inc/class-wc-dropshipping-settings.php:2300
+msgid "Order Note Font Size :"
+msgstr "Размер на шрифта в бележката за поръчката:"
+
+#: inc/class-wc-dropshipping-settings.php:2307
+msgid "Order Note Font Color :"
+msgstr "Цвят на шрифта на бележката за поръчката:"
+
+#: inc/class-wc-dropshipping-settings.php:2316
+msgid "Footer Message Font Size :"
+msgstr "Размер на шрифта на съобщението в долния колонтитул:"
+
+#: inc/class-wc-dropshipping-settings.php:2324
+msgid "Footer Message Font Color :"
+msgstr "Цвят на шрифта на съобщението в долния колонтитул:"
+
+#: inc/class-wc-dropshipping-settings.php:2339
+msgid "Email Body "
+msgstr "Основен текст на имейла"
+
+#: inc/class-wc-dropshipping-settings.php:2342
+msgid "Font Size:"
+msgstr "Размер на шрифта:"
+
+#: inc/class-wc-dropshipping-settings.php:2350
+msgid "Font Color:"
+msgstr "Цвят на шрифта:"
+
+#: inc/class-wc-dropshipping-settings.php:2364
+msgid "Email Bottom "
+msgstr "Имейл отдолу"
+
+#: inc/class-wc-dropshipping-settings.php:2367
+msgid "Sub Heading Font Size:"
+msgstr "Размер на шрифта на подзаглавието:"
+
+#: inc/class-wc-dropshipping-settings.php:2375
+msgid "Sub Heading Font Color:"
+msgstr "Цвят на шрифта на подзаглавието:"
+
+#: inc/class-wc-dropshipping-settings.php:2383
+msgid "Sub Heading Content Font Size:"
+msgstr ""
+
+#: inc/class-wc-dropshipping-settings.php:2391
+msgid "Sub Heading Content Color:"
+msgstr "Цвят на съдържанието на подзаглавието:"
+
+#: inc/class-wc-dropshipping-settings.php:2412
+msgid "SMTP Options - SMTP is used for sending emails."
+msgstr "Опции за SMTP - SMTP се използва за изпращане на имейли."
+
+#: inc/class-wc-dropshipping-settings.php:2419
+msgid ""
+"Check this option if you are using SMTP to send emails from your WooCommerce "
+"store."
+msgstr ""
+"Отметнете тази опция, ако използвате SMTP за изпращане на имейли от вашия "
+"WooCommerce магазин."
+
+#: inc/class-wc-dropshipping-settings.php:2427
+msgid "Email Sender Information"
+msgstr "Информация за изпращача на имейл"
+
+#: inc/class-wc-dropshipping-settings.php:2428
+msgid ""
+"If left empty, emails sent from the store will use default WooCommerce "
+"settings."
+msgstr ""
+"Ако се остави празно, имейлите, изпратени от магазина, ще използват "
+"настройките по подразбиране на WooCommerce."
+
+#: inc/class-wc-dropshipping-settings.php:2435
+msgid "Emails sent from the store should show this sender name: "
+msgstr ""
+"Имейлите, изпратени от магазина, трябва да показват това име на подател:"
+
+#: inc/class-wc-dropshipping-settings.php:2446
+msgid "Emails sent from the store should show this sender email address:"
+msgstr ""
+"Имейлите, изпратени от магазина, трябва да показват този имейл адрес на "
+"подателя:"
+
+#: inc/class-wc-dropshipping-settings.php:2477
+msgid "Pricing and Profit Calculator"
+msgstr "Калкулатор за ценообразуване и печалба"
+
+#: inc/class-wc-dropshipping-settings.php:2484
+#: inc/class-wc-dropshipping-settings.php:2485
+#: inc/class-wc-dropshipping-settings.php:2486
+#: inc/class-wc-dropshipping-settings.php:2487
+#: inc/class-wc-dropshipping-settings.php:2488
+#: inc/class-wc-dropshipping-settings.php:2489
+#: inc/class-wc-dropshipping-settings.php:2490
+#: inc/class-wc-dropshipping-settings.php:2491
+msgid "Cost Of Product"
+msgstr "Цена на продукта"
+
+#: inc/class-wc-dropshipping-settings.php:2499
+msgid "Break Even Value"
+msgstr "Безпроблемна стойност"
+
+#: inc/class-wc-dropshipping-settings.php:2523
+msgid "Total Price"
+msgstr "Обща цена"
+
+#: inc/class-wc-dropshipping-settings.php:2533
+msgid "Cost Of Product "
+msgstr "Цена на продукта"
+
+#: inc/class-wc-dropshipping-settings.php:2542
+#: inc/class-wc-dropshipping-settings.php:2638
+msgid "Profit Margin"
+msgstr "Марж на печалбата"
+
+#: inc/class-wc-dropshipping-settings.php:2597
+msgid "Break Even Values"
+msgstr "Крайни стойности"
+
+#: inc/class-wc-dropshipping-settings.php:2602
+msgid "% Fee"
+msgstr "% Такса"
+
+#: inc/class-wc-dropshipping-settings.php:2616
+msgid "$ Fee"
+msgstr "$ Такса"
+
+#: inc/class-wc-dropshipping-settings.php:2644
+#: inc/class-wc-dropshipping-settings.php:2676
+#: inc/class-wc-dropshipping-settings.php:2770
+#: inc/class-wc-dropshipping-settings.php:2839
+msgid "% Profit"
+msgstr "% печалба"
+
+#: inc/class-wc-dropshipping-settings.php:2658
+#: inc/class-wc-dropshipping-settings.php:2690
+#: inc/class-wc-dropshipping-settings.php:2779
+#: inc/class-wc-dropshipping-settings.php:2845
+msgid "$ Profit"
+msgstr "$ печалба"
+
+#: inc/class-wc-dropshipping-settings.php:2716
+msgid "Dynamic Profit Margin"
+msgstr "Динамичен марж на печалбата"
+
+#: inc/class-wc-dropshipping-settings.php:2726
+msgid "Dynamic Profit Margin "
+msgstr "Динамичен марж на печалбата"
+
+#: inc/class-wc-dropshipping-settings.php:2754
+#: inc/class-wc-dropshipping-settings.php:2828
+msgid "From:"
+msgstr "от:"
+
+#: inc/class-wc-dropshipping-settings.php:2799
+#: inc/class-wc-dropshipping-settings.php:2870
+msgid "Change the range to lower value to add more rules."
+msgstr "Променете диапазона на по-ниска стойност, за да добавите още правила."
+
+#: inc/class-wc-dropshipping-settings.php:2811
+msgid "Product Cost Range"
+msgstr "Диапазон на разходите за продукти"
+
+#: inc/class-wc-dropshipping-settings.php:2833
+msgid "To:"
+msgstr "Да се:"
+
+#: templates/wc-dropshipping-dashboard.php:26
+msgid "WooCommerce Dropshipping Dashboard"
+msgstr "Табло за управление на Dropshipping на WooCommerce"
+
+#: woo-includes/template/woocommerce/emails/email-order-details.php:39
+#, php-format
+msgid "[Order #%s]"
+msgstr "[Поръчка # %s ]"
+
+#: woocommerce-dropshipping.php:133
+msgid "WooCommerce Dropshipping requires"
+msgstr "WooCommerce Dropshipping изисква"
+
+#: woocommerce-dropshipping.php:133
+msgid "to be installed on your server."
+msgstr "да се инсталира на вашия сървър."
+
+#: woocommerce-dropshipping.php:247
+msgid "WooCommerce Dropshipping"
+msgstr "WooCommerce Dropshipping"
+
+#: woocommerce-dropshipping.php:320 woocommerce-dropshipping.php:321
+msgid "Graph Reports"
+msgstr "Графични отчети"
+
+#: woocommerce-dropshipping.php:517
+#, php-format
+msgid "Please see the attached PDF. Thank you! - %s"
+msgstr "Моля, вижте прикачения PDF файл. Благодаря ти! - %s"
+
+#: woocommerce-dropshipping.php:525
+#, php-format
+msgid "We hope you enjoy your order. Thank you for shopping with %s"
+msgstr ""
+"Надяваме се да харесате поръчката си. Благодарим ви, че пазарувате с %s"
+
+#: woocommerce-dropshipping.php:582
+msgid "Settings"
+msgstr "Настройки"
+
+#: woocommerce-dropshipping.php:583
+msgid "Docs"
+msgstr "Документи"
+
+#: woocommerce-dropshipping.php:621
+msgid ""
+"Woocommerce Dropshipping activated successfully! In order for the plugin to "
+"work correctly. Visit"
+msgstr ""
+"Woocommerce Dropshipping активиран успешно! За да работи коректно плъгина. "
+"Посетете"
+
+#: woocommerce-dropshipping.php:623
+msgid "and hit the \"Save Changes\" button"
+msgstr "и натиснете бутона „Запазване на промените“."
+
+#: woocommerce-dropshipping.php:722 woocommerce-dropshipping.php:726
+msgid "Suppliers"
+msgstr "Доставчици"
+
+#: woocommerce-dropshipping.php:724
+msgid "Dropshipping Supplier"
+msgstr "Дропшипинг доставчик"
+
+#: woocommerce-dropshipping.php:728
+msgid "Search Dropshipping Suppliers"
+msgstr "Търсете дропшипинг доставчици"
+
+#: woocommerce-dropshipping.php:730
+msgid "All Dropshipping Suppliers"
+msgstr "Всички дропшипинг доставчици"
+
+#: woocommerce-dropshipping.php:732
+msgid "Edit Dropshipping Supplier"
+msgstr "Редактиране на доставчик на дропшипинг"
+
+#: woocommerce-dropshipping.php:734
+msgid "Update Dropshipping Supplier"
+msgstr "Актуализирайте доставчика на Dropshipping"
+
+#: woocommerce-dropshipping.php:736
+msgid "Add New Dropshipping Supplier"
+msgstr "Добавете нов дропшипинг доставчик"
+
+#: woocommerce-dropshipping.php:738
+msgid "New Dropshipping Supplier Name"
+msgstr "Ново име на доставчик за дропшипинг"
+
+#: woocommerce-dropshipping.php:740
+msgid "Popular Dropshipping Suppliers"
+msgstr "Популярни дропшипинг доставчици"
+
+#: woocommerce-dropshipping.php:742
+msgid "Separate Dropshipping Suppliers with commas"
+msgstr "Разделете доставчиците на дропшипинг със запетаи"
+
+#: woocommerce-dropshipping.php:744
+msgid "Add or remove Dropshipping Suppliers"
+msgstr "Добавете или премахнете дропшипинг доставчици"
+
+#: woocommerce-dropshipping.php:746
+msgid "Choose from the most used Dropshipping Suppliers"
+msgstr "Изберете от най-използваните дропшипинг доставчици"
+
+#: woocommerce-dropshipping.php:748
+msgid "No Dropshipping Suppliers found"
+msgstr "Няма намерени доставчици за дропшипинг"
+
+#: woocommerce-dropshipping.php:875 woocommerce-dropshipping.php:876
+msgid "Dashboard"
+msgstr "Табло"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:1704
+msgid "\""
+msgstr "\""
+
+#: /woocommerce-dropshipping/complete.php:116
+#: /woocommerce-dropshipping/packingslip.php:116
+#, php-format
+msgid "<strong>Supplier Account #</strong> %s"
+msgstr "<strong>Акаунт на доставчик #</strong> %s"
+
+#: /woocommerce-dropshipping/packingslip.php:84
+#, php-format
+msgid "[ %s Order # %s  ]"
+msgstr "[ %s Поръчка # %s ]"
+
+#: /woocommerce-dropshipping/complete.php:84
+#, php-format
+msgid "[ %s Order # %s is completed ]"
+msgstr "[ %s Поръчка # %s е изпълнена ]"
+
+#: /woocommerce-dropshipping/templates/wc-dropshipping-dashboard.php:56
+msgid "Account Information"
+msgstr "Информация за профила"
+
+#: /woocommerce-dropshipping/templates/wc-dropshipping-dashboard.php:103
+msgid "Active Affiliate Products"
+msgstr "Активни партньорски продукти"
+
+#: /woocommerce-dropshipping/templates/wc-dropshipping-dashboard.php:151
+msgid "Adjust Plugin Settings"
+msgstr "Коригирайте настройките на приставката"
+
+#: /woocommerce-dropshipping/templates/wc-dropshipping-dashboard.php:145
+msgid "Aliexpress Import"
+msgstr "Внос на Aliexpress"
+
+#: /woocommerce-dropshipping/templates/wc-dropshipping-dashboard.php:61
+msgid "Aliexpress Orders"
+msgstr "Поръчки от Aliexpress"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:1156
+msgid "API Key Mismatch!!"
+msgstr "Несъответствие на API ключ!!"
+
+#: /woocommerce-dropshipping/complete.php:1035
+#: /woocommerce-dropshipping/packingslip.php:1035
+msgid "Billing Address"
+msgstr "адрес на плащане"
+
+#: /woocommerce-dropshipping/complete.php:171
+#: /woocommerce-dropshipping/packingslip.php:171
+msgid "Chosen Shipping Method:"
+msgstr "Избран метод на доставка:"
+
+#: /woocommerce-dropshipping/complete.php:994
+#: /woocommerce-dropshipping/complete.php:1141
+#: /woocommerce-dropshipping/packingslip.php:994
+#: /woocommerce-dropshipping/packingslip.php:1141
+msgid "Company Address"
+msgstr "Адрес на компанията"
+
+#: /woocommerce-dropshipping/templates/wc-dropshipping-dashboard.php:96
+msgid "Completed Dropshipping Orders"
+msgstr "Завършени дропшипинг поръчки"
+
+#: /woocommerce-dropshipping/templates/wc-dropshipping-dashboard.php:152
+msgid "Configure packing slips, emails and more."
+msgstr "Конфигурирайте опаковъчни листове, имейли и други."
+
+#: /woocommerce-dropshipping/complete.php:246
+#: /woocommerce-dropshipping/packingslip.php:246
+#, php-format
+msgid "Customer Order Note : %s"
+msgstr "Забележка за клиентска поръчка: %s"
+
+#: /woocommerce-dropshipping/inc/class-wc-dropshipping-admin.php:548
+msgid "Dropshipping Notifications"
+msgstr "Известия за дропшипинг"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:1441
+msgid "Error. Product does not exist in woocommerce store."
+msgstr "Грешка. Продуктът не съществува в магазина на WooCommerce."
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:938
+msgid "Given parent categories id does not exist in product categories list."
+msgstr ""
+"Идентификационният номер на дадена родителска категория не съществува в "
+"списъка с продуктови категории."
+
+#: /woocommerce-dropshipping/templates/wc-dropshipping-dashboard.php:153
+msgid "Go to Settings"
+msgstr "Отидете в Настройки"
+
+#. Description of the plugin
+msgid ""
+"Handle dropshipping from your WooCommerce. Create a packing slip, and notify "
+"the vendor when an order is paid. Import inventory updates via CSV from your "
+"vendors."
+msgstr ""
+"Управлявайте дропшипинг от вашия WooCommerce. Създайте опаковъчна бележка и "
+"уведомете продавача, когато поръчката е платена. Импортирайте актуализации "
+"на инвентара чрез CSV от вашите доставчици."
+
+#. URI of the plugin
+msgid "http://woocommerce.com/products/woocommerce-dropshipping/"
+msgstr "http://woocommerce.com/products/woocommerce-dropshipping/"
+
+#. Author URI of the plugin
+msgid "https://opmc.com.au/"
+msgstr "https://opmc.com.au/"
+
+#: /woocommerce-dropshipping/complete.php:436
+#: /woocommerce-dropshipping/packingslip.php:436
+msgid "Image"
+msgstr "Изображение"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:652
+msgid "Image data is empty!"
+msgstr "Данните за изображението са празни!"
+
+#: /woocommerce-dropshipping/templates/wc-dropshipping-dashboard.php:147
+msgid "Install Now"
+msgstr "Инсталирай сега"
+
+#: /woocommerce-dropshipping/templates/wc-dropshipping-dashboard.php:146
+msgid "Install the extension to get started"
+msgstr "Инсталирайте разширението, за да започнете"
+
+#: /woocommerce-dropshipping/templates/wc-dropshipping-dashboard.php:126
+msgid "Low on Stock"
+msgstr "Ниско количество"
+
+#: /woocommerce-dropshipping/templates/wc-dropshipping-dashboard.php:159
+msgid "Manage Suppliers"
+msgstr "Управление на доставчици"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:1589
+msgid "Merchant store currency code not found!"
+msgstr "Кодът на валутата на магазина на търговец не е намерен!"
+
+#: /woocommerce-dropshipping/complete.php:829
+#: /woocommerce-dropshipping/packingslip.php:829
+msgid "Miscellaneous"
+msgstr "Разни"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:921
+msgid "Name parameter required."
+msgstr "Необходим е параметър за име."
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:850
+msgid "No categories found!"
+msgstr "Няма намерени категории!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:634
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:1165
+msgid "Oops! Something went wrong. Please try again!"
+msgstr "Опа! Нещо се обърка. Моля, опитайте отново!"
+
+#. Author of the plugin
+msgid "OPMC Australia Pty Ltd"
+msgstr "OPMC Australia Pty Ltd"
+
+#: /woocommerce-dropshipping/inc/class-wc-dropshipping-checkout.php:166
+#: /woocommerce-dropshipping/inc/class-wc-dropshipping-checkout.php:175
+msgid "Order number"
+msgstr "Номер на поръчка"
+
+#: /woocommerce-dropshipping/complete.php:234
+#: /woocommerce-dropshipping/packingslip.php:234
+msgid "Order Number :"
+msgstr "Номер на поръчка :"
+
+#: /woocommerce-dropshipping/templates/wc-dropshipping-dashboard.php:40
+msgid "Orders"
+msgstr "Поръчки"
+
+#: /woocommerce-dropshipping/templates/wc-dropshipping-dashboard.php:75
+msgid "Orders Completed"
+msgstr "Изпълнени поръчки"
+
+#: /woocommerce-dropshipping/templates/wc-dropshipping-dashboard.php:68
+msgid "Orders in Progress"
+msgstr "Поръчките се изпълняват"
+
+#: /woocommerce-dropshipping/templates/wc-dropshipping-dashboard.php:158
+msgid "Organise your store's products by their supplier."
+msgstr "Организирайте продуктите на вашия магазин по техния доставчик."
+
+#: /woocommerce-dropshipping/templates/wc-dropshipping-dashboard.php:35
+msgid "Out of Stock"
+msgstr "Изчерпано количество"
+
+#: /woocommerce-dropshipping/templates/wc-dropshipping-dashboard.php:82
+msgid "Out of Stock Listings"
+msgstr "Изчерпани обяви"
+
+#: /woocommerce-dropshipping/complete.php:196
+#: /woocommerce-dropshipping/complete.php:218
+#: /woocommerce-dropshipping/packingslip.php:196
+#: /woocommerce-dropshipping/packingslip.php:218
+msgid "Payment Type :"
+msgstr "Вид плащане :"
+
+#: /woocommerce-dropshipping/templates/wc-dropshipping-dashboard.php:89
+msgid "Pending Orders"
+msgstr "Чакащи поръчки"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:253
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:1202
+msgid "Please enter a valid Type (simple or variable)!"
+msgstr "Моля, въведете валиден тип (прост или променлив)!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:444
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:1393
+msgid "Please enter a valid URL for this AliExpress Product!"
+msgstr "Моля, въведете валиден URL за този продукт на AliExpress!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:448
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:1397
+msgid "Please enter a valid URL for this AliExpress Store!"
+msgstr "Моля, въведете валиден URL адрес за този AliExpress Store!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:1389
+msgid "Please enter AliExpress Store Name for this product!"
+msgstr "Моля, въведете името на AliExpress Store за този продукт!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:452
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:1401
+msgid "Please enter AliExpress Store Price Range for this product!"
+msgstr "Моля, въведете ценовия диапазон на AliExpress Store за този продукт!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:1232
+msgid "Please specify a list of valid categories in array format!"
+msgstr "Моля, посочете списък с валидни категории във формат на масив!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:1246
+msgid ""
+"Please specify a list of valid categories in array format. Categories array "
+"must contain a valid numeric id parameter!"
+msgstr ""
+"Моля, посочете списък с валидни категории във формат на масив. Масивът "
+"Categories трябва да съдържа валиден параметър с цифров идентификатор!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:1293
+msgid ""
+"Please specify a list of valid image URLs in array format. Images array must "
+"contain a valid image URL in src. Image type can be one of these: (jpg, gif, "
+"png, jpeg)."
+msgstr ""
+"Моля, посочете списък с валидни URL адреси на изображения във формат на "
+"масив. Масивът с изображения трябва да съдържа валиден URL адрес на "
+"изображение в src. Типът на изображението може да бъде един от следните: "
+"(jpg, gif, png, jpeg)."
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:1254
+msgid "Please specify a list of valid images URLs in array format!"
+msgstr ""
+"Моля, посочете списък с валидни URL адреси на изображения във формат на "
+"масив!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:283
+msgid "Please specify a valid category array format!"
+msgstr "Моля, посочете валиден формат на масив от категории!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:297
+msgid ""
+"Please specify a valid category array format. Categories array must contain "
+"a valid numeric id parameter!"
+msgstr ""
+"Моля, посочете валиден формат на масив от категории. Масивът Categories "
+"трябва да съдържа валиден параметър с цифров идентификатор!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:365
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:1314
+msgid ""
+"Please specify a valid list of Dimensions in array format. Dimensions array "
+"must contain a valid numeric length, width, and height parameters!"
+msgstr ""
+"Моля, посочете валиден списък с измерения във формат на масив. Масивът с "
+"размери трябва да съдържа валидни числени параметри за дължина, ширина и "
+"височина!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:1357
+msgid ""
+"Please specify a valid list of Tags array format. Tags array must contain a "
+"valid numeric id parameter!"
+msgstr ""
+"Моля, посочете валиден списък с формат на масив от етикети. Масивът от "
+"етикети трябва да съдържа валиден цифров параметър за идентификатор!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:394
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:1343
+msgid ""
+"Please specify a valid list of Tags in array format. Tags array must contain "
+"a valid numeric id parameter!"
+msgstr ""
+"Моля, посочете валиден списък с етикети във формат на масив. Масивът от "
+"етикети трябва да съдържа валиден цифров параметър за идентификатор!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:408
+msgid ""
+"Please specify a valid list of Tagsin array format. Tags array must contain "
+"a valid numeric id parameter!"
+msgstr ""
+"Моля, посочете валиден списък с етикети във формат на масив. Масивът от "
+"етикети трябва да съдържа валиден цифров параметър за идентификатор!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:386
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:1335
+msgid ""
+"Please specify a valid non-negative numeric height parameter within "
+"Dimensions array!"
+msgstr ""
+"Моля, посочете валиден неотрицателен цифров параметър за височина в масива "
+"Dimensions!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:373
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:1322
+msgid ""
+"Please specify a valid non-negative numeric length parameter within "
+"Dimensions array!"
+msgstr ""
+"Моля, посочете валиден неотрицателен цифров параметър за дължина в масива "
+"Dimensions!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:379
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:1328
+msgid ""
+"Please specify a valid non-negative numeric width parameter within "
+"Dimensions array!"
+msgstr ""
+"Моля, посочете валиден неотрицателен числов параметър за ширина в масива "
+"Dimensions!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:305
+msgid "Please specify valid URLs to images in array format!"
+msgstr "Моля, посочете валидни URL адреси към изображения във формат на масив!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:344
+msgid ""
+"Please specify valid URLs to images in array format. Images array must "
+"contain a valid image URL in src. Image type can be one of these: (jpg, gif, "
+"png, jpeg)."
+msgstr ""
+"Моля, посочете валидни URL адреси към изображения във формат на масив. "
+"Масивът с изображения трябва да съдържа валиден URL адрес на изображение в "
+"src. Типът на изображението може да бъде един от следните: (jpg, gif, png, "
+"jpeg)."
+
+#: /woocommerce-dropshipping/templates/wc-dropshipping-dashboard.php:140
+msgid "Plugin Setup"
+msgstr "Настройка на плъгина"
+
+#: /woocommerce-dropshipping/inc/class-wc-dropshipping-orders.php:732
+msgid "'New Order #%1$s From %2$s"
+msgstr "„Нова поръчка #%1$s от %2$s"
+
+#: /woocommerce-dropshipping/complete.php:614
+#: /woocommerce-dropshipping/complete.php:646
+#: /woocommerce-dropshipping/packingslip.php:614
+#: /woocommerce-dropshipping/packingslip.php:646
+msgid "Price"
+msgstr "Цена"
+
+#: /woocommerce-dropshipping/complete.php:488
+#: /woocommerce-dropshipping/packingslip.php:488
+msgid "Product"
+msgstr "Продукт"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:500
+msgid "Product already exists. Please select another product."
+msgstr "Продуктът вече съществува. Моля изберете друг продукт."
+
+#: /woocommerce-dropshipping/templates/wc-dropshipping-dashboard.php:45
+msgid "Projected Profit"
+msgstr "Прогнозна печалба"
+
+#: /woocommerce-dropshipping/templates/wc-dropshipping-dashboard.php:30
+msgid "Published Listings"
+msgstr "Публикувани обяви"
+
+#: /woocommerce-dropshipping/complete.php:512
+#: /woocommerce-dropshipping/packingslip.php:512
+msgid "Quantity"
+msgstr "Количество"
+
+#: /woocommerce-dropshipping/templates/wc-dropshipping-dashboard.php:50
+msgid "Recent Order Data"
+msgstr "Скорошни данни за поръчка"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:221
+msgid "Setting for price rate is not set"
+msgstr "Настройката за ценови курс не е зададена"
+
+#: /woocommerce-dropshipping/complete.php:1080
+#: /woocommerce-dropshipping/complete.php:1241
+#: /woocommerce-dropshipping/packingslip.php:1080
+#: /woocommerce-dropshipping/packingslip.php:1241
+msgid "Shipping Address"
+msgstr "Адрес за доставка"
+
+#: /woocommerce-dropshipping/complete.php:838
+#: /woocommerce-dropshipping/complete.php:848
+#: /woocommerce-dropshipping/packingslip.php:838
+#: /woocommerce-dropshipping/packingslip.php:848
+msgid "Shipping Cost"
+msgstr "Цена за доставка"
+
+#: /woocommerce-dropshipping/complete.php:464
+#: /woocommerce-dropshipping/packingslip.php:464
+msgid "SKU"
+msgstr "SKU"
+
+#: /woocommerce-dropshipping/complete.php:464
+#: /woocommerce-dropshipping/packingslip.php:464
+msgid "Customer Email : %s"
+msgstr "Имейл адрес на клиента: %s"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:1559
+msgid "Something went wrong. Please try again!"
+msgstr "Нещо се обърка. Моля, опитайте отново!"
+
+#: /woocommerce-dropshipping/complete.php:868
+#: /woocommerce-dropshipping/packingslip.php:868
+msgid "taxes"
+msgstr "данъци"
+
+#: /woocommerce-dropshipping/complete.php:1298
+msgid "Thank you!"
+msgstr "Благодаря ти!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:415
+msgid "The Attributes parameter must be in a valid array format!"
+msgstr "Параметърът Attributes трябва да бъде във валиден формат на масив!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:1364
+msgid "The Attributess parameter must be in a valid array format!"
+msgstr "Параметърът Attributess трябва да е във валиден формат на масив!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:879
+msgid "The Category Parent parameter is required and must be numeric value!"
+msgstr ""
+"Параметърът Category Parent е задължителен и трябва да бъде числова стойност!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:419
+msgid "The Default Attributes parameter must be in a valid array format!"
+msgstr ""
+"Параметърът Атрибути по подразбиране трябва да е във валиден формат на масив!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:1368
+msgid "The Default Attributess parameter must be in a valid array format!"
+msgstr ""
+"Параметърът Default Attributess трябва да бъде във валиден формат на масив!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:273
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:875
+msgid "The Description parameter is required!"
+msgstr "Параметърът Description е задължителен!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:957
+msgid "The Id parameter is required and must be a number!"
+msgstr "Параметърът Id е задължителен и трябва да бъде число!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:350
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:1299
+msgid ""
+"The Manage Stock parameter is required and must be a boolean (true/false) "
+"value!"
+msgstr ""
+"Параметърът Manage Stock е задължителен и трябва да бъде булева (true/false) "
+"стойност!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:871
+msgid "The Name parameter is required!"
+msgstr "Параметърът Име е задължителен!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:428
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:1377
+msgid ""
+"The Number Of Orders parameter must be a valid non-negative numeric value!"
+msgstr ""
+"Параметърът Брой поръчки трябва да бъде валидна неотрицателна числова "
+"стойност!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:2002
+msgid "The Order Id does not exist!"
+msgstr "ID на поръчката не съществува!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:977
+msgid "The order id does not exist."
+msgstr "ID на поръчката не съществува."
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:2007
+msgid "The Order Id parameter is required!"
+msgstr "Параметърът ID на поръчката е задължителен!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:2012
+msgid "The Order Status parameter is required!"
+msgstr "Параметърът Статус на поръчката е задължителен!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:261
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:1210
+msgid ""
+"The Price parameter is required and must be a valid non-negative numeric "
+"value!"
+msgstr ""
+"Параметърът Price е задължителен и трябва да бъде валидна неотрицателна "
+"числова стойност!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:265
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:1214
+msgid ""
+"The Regular Price parameter is required and must be a valid non-negative "
+"numeric value!"
+msgstr ""
+"Параметърът Редовна цена е задължителен и трябва да бъде валидна "
+"неотрицателна числова стойност!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:269
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:1218
+msgid "The Sale Price parameter must be a valid non-negative numeric value!"
+msgstr ""
+"Параметърът Продажна цена трябва да бъде валидна неотрицателна числова "
+"стойност!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:277
+msgid "The Short Description parameter is required!"
+msgstr "Параметърът Кратко описание е задължителен!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:257
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:1206
+msgid "The SKU parameter is required!"
+msgstr "Параметърът SKU е задължителен!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:354
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:1303
+msgid ""
+"The Stock Quantity parameter is required and must be a valid non-negative "
+"number!"
+msgstr ""
+"Параметърът Stock Quantity е задължителен и трябва да бъде валидно "
+"неотрицателно число!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:249
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:1198
+msgid "The Title parameter is required!"
+msgstr "Параметърът Title е задължителен!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:423
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:1372
+msgid "The Variations parameter must be in a valid array format!"
+msgstr "Параметърът Variations трябва да бъде във валиден формат на масив!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:358
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:1307
+msgid "The Weight parameter must be a valid non-negative numeric value!"
+msgstr ""
+"Параметърът Тегло трябва да бъде валидна неотрицателна числова стойност!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:1090
+msgid "The woo API key  parameter is required!"
+msgstr "Ключовият параметър на woo API е задължителен!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:1086
+msgid "The woo url parameter is required!"
+msgstr "Параметърът woo url е задължителен!"
+
+#: /woocommerce-dropshipping/complete.php:915
+#: /woocommerce-dropshipping/complete.php:932
+#: /woocommerce-dropshipping/packingslip.php:915
+#: /woocommerce-dropshipping/packingslip.php:932
+msgid "Total"
+msgstr "Обща сума"
+
+#: /woocommerce-dropshipping/complete.php:346
+#: /woocommerce-dropshipping/packingslip.php:346
+msgid "Tracking Number:"
+msgstr "Номер за проследяване:"
+
+#: /woocommerce-dropshipping/complete.php:543
+#: /woocommerce-dropshipping/complete.php:575
+#: /woocommerce-dropshipping/packingslip.php:543
+#: /woocommerce-dropshipping/packingslip.php:575
+msgid "Type Of Package"
+msgstr "Тип пакет"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:1160
+msgid "URL mismatch."
+msgstr "URL несъответствие."
+
+#: /woocommerce-dropshipping/woocommerce-dropshipping.php:159
+#, php-format
+msgid "We hope you enjoy your order. Thank you for shopping with %1$s"
+msgstr ""
+"Надяваме се да харесате поръчката си. Благодарим ви, че пазарувате с %1$s"
+
+#. 1: href link to Fileinfo extension php doc
+#: /woocommerce-dropshipping/woocommerce-dropshipping.php:55
+#, php-format
+msgid "WooCommerce Dropshipping requires %s to be installed on your server."
+msgstr ""
+"WooCommerce Dropshipping изисква %s да бъде инсталиран на вашия сървър."

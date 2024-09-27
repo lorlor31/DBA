@@ -1,0 +1,1716 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2024-03-11 18:45+0530\n"
+"PO-Revision-Date: 2024-03-20 16:52+0530\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ar\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.4.2\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-SearchPath-0: woocommerce-dropshipping\n"
+
+#: ali-api/ali-inc/aliprodfilter.inc.php:15
+msgid "Aliexpress Product"
+msgstr "منتج علي إكسبريس"
+
+#: ali-api/ali-inc/aliprodfilter.inc.php:17
+msgid "Enable this option if this product is from Aliexpress"
+msgstr "تمكين هذا الخيار إذا كان هذا المنتج من علي إكسبريس"
+
+#: ali-api/class-wc-dropshipping-product-extra-fields.php:291
+msgid "Amazon Product ID"
+msgstr "معرف المنتج على أمازون"
+
+#: ali-api/class-wc-dropshipping-product-extra-fields.php:361
+msgid "Amazon Affiliate ID"
+msgstr "معرف التابعة لأمازون"
+
+#: ali-api/class-wc-dropshipping-product-extra-fields.php:392
+#: ali-api/class-wc-dropshipping-product-extra-fields.php:423
+msgid "Cost of goods"
+msgstr "تكلفة البضائع"
+
+#: ali-api/class-wc-dropshipping-product-extra-fields.php:425
+msgid "Cost of goods value included in the supplier email"
+msgstr "قيمة تكلفة البضائع مضمنة في بريد المورد"
+
+#: ali-api/class-wc-dropshipping-product-extra-fields.php:453
+msgid "AliExpress Orders"
+msgstr "طلبات علي إكسبريس"
+
+#: ali-api/class-wc-dropshipping-product-extra-fields.php:454
+msgid "AliExpress Orders placed."
+msgstr "تم وضع طلبات علي إكسبريس."
+
+#: ali-api/class-wc-dropshipping-product-extra-fields.php:476
+msgid "AliExpress Supplier"
+msgstr "مورد علي إكسبريس"
+
+#: ali-api/class-wc-dropshipping-product-extra-fields.php:516
+msgid "Product URL"
+msgstr "رابط المنتج"
+
+#: ali-api/class-wc-dropshipping-product-extra-fields.php:517
+msgid "Enter URL to AliExpress Product"
+msgstr "أدخل رابط المنتج على علي إكسبريس"
+
+#: ali-api/class-wc-dropshipping-product-extra-fields.php:522
+msgid "Store Name"
+msgstr "اسم المتجر"
+
+#: ali-api/class-wc-dropshipping-product-extra-fields.php:523
+msgid "AliExpress Supplier Store Name"
+msgstr "اسم متجر مورد علي إكسبريس"
+
+#: ali-api/class-wc-dropshipping-product-extra-fields.php:532
+msgid "Store URL"
+msgstr "رابط المتجر"
+
+#: ali-api/class-wc-dropshipping-product-extra-fields.php:533
+msgid "AliExpress Supplier Store URL"
+msgstr "رابط متجر مورد علي إكسبريس"
+
+#: ali-api/class-wc-dropshipping-product-extra-fields.php:542
+msgid "Store Price Range"
+msgstr "نطاق السعر في المتجر"
+
+#: ali-api/class-wc-dropshipping-product-extra-fields.php:543
+msgid "AliExpress Supplier Store Price Range"
+msgstr "نطاق السعر في متجر مورد علي إكسبريس"
+
+#: ali-api/class-wc-dropshipping-product-extra-fields.php:552
+msgid "Currency"
+msgstr "العملة"
+
+#: ali-api/class-wc-dropshipping-product-extra-fields.php:613
+#: ali-api/class-wc-dropshipping-product-extra-fields.php:644
+msgid "Description - Type of Package"
+msgstr "وصف - نوع الحزمة"
+
+#: ali-api/class-wc-dropshipping-product-extra-fields.php:646
+msgid "Description - Type of Package value included in the supplier email"
+msgstr "قيمة وصف - نوع الحزمة مضمنة في بريد المورد"
+
+#: ali-api/class-wc-dropshipping-product-extra-fields.php:756
+msgid "Estimated Profit : "
+msgstr "الربح المقدر:"
+
+#: ali-api/woocommerce_aliexpress.php:2491
+msgid "AliExpress Action"
+msgstr "إجراء علي إكسبريس"
+
+#: ali-api/woocommerce_aliexpress.php:2532
+msgid "Place Order"
+msgstr "وضع الطلب"
+
+#: ali-api/woocommerce_aliexpress.php:2624
+msgid "AliExpress order status has been changed to "
+msgstr "تم تغيير حالة الطلب على علي إكسبريس إلى"
+
+#: ali-api/woocommerce_aliexpress.php:2789
+msgid "All Orders"
+msgstr "كل الطلبات"
+
+#: assets/js/jquery-ui.min.js:8
+msgid "'"
+msgstr "'"
+
+#: inc/class-wc-dropshipping-admin.php:281
+msgid " Import Inventory .CSV"
+msgstr " استيراد ملف .CSV للمخزون"
+
+#: inc/class-wc-dropshipping-admin.php:428 inc/class-wc-dropshipping-admin.php:510
+msgid " Account #"
+msgstr " رقم الحساب"
+
+#: inc/class-wc-dropshipping-admin.php:430
+msgid ""
+"Your store&apos;s account number with this supplier. Leave blank if you "
+"don&apos;t have an account number"
+msgstr "رقم حساب متجرك مع هذا المورد. اتركه فارغًا إذا لم يكن لديك رقم حساب"
+
+#: inc/class-wc-dropshipping-admin.php:433 inc/class-wc-dropshipping-admin.php:516
+msgid " Email Addresses"
+msgstr "عناوين البريد الإلكتروني"
+
+#: inc/class-wc-dropshipping-admin.php:435
+msgid ""
+"When a customer purchases a product from you, the supplier will be sent an "
+"notification via email. List the supplier&apos;s email addresses that should be "
+"notified when a new order is placed."
+msgstr ""
+"عندما يشتري العميل منتجًا منك، سيتم إرسال إشعار للمورد عبر البريد الإلكتروني. قم "
+"بقائمة عناوين بريد الكتروني للمورد التي يجب إعلامها عند وضع طلب جديد."
+
+#: inc/class-wc-dropshipping-admin.php:443 inc/class-wc-dropshipping-admin.php:526
+msgid "Enable specific delivery location for the supplier."
+msgstr "تمكين موقع التسليم المحدد للمورد."
+
+#: inc/class-wc-dropshipping-admin.php:512
+msgid ""
+" Your store&apos;s account number with this supplier. Leave blank if you "
+"don&apos;t have an account number"
+msgstr "رقم حساب متجرك مع هذا المورد. اتركه فارغًا إذا لم يكن لديك رقم حساب"
+
+#: inc/class-wc-dropshipping-admin.php:518
+msgid ""
+" When a customer purchases a product from you, the supplier will be sent an "
+"notification via email. List the supplier&apos;s email addresses that should be "
+"notified when a new order is placed."
+msgstr ""
+"عندما يشتري العميل منتجًا منك، سيتم إرسال إشعار إلى المورد عبر البريد "
+"الإلكتروني. قم بتحديد عناوين البريد الإلكتروني للمورد التي يجب أن يتم إرسال "
+"إشعار عند وضع طلب جديد."
+
+#: inc/class-wc-dropshipping-admin.php:537
+msgid "Address line 1"
+msgstr "العنوان الأول"
+
+#: inc/class-wc-dropshipping-admin.php:542
+msgid " Address line 2"
+msgstr "العنوان الثاني"
+
+#: inc/class-wc-dropshipping-admin.php:547
+msgid "City"
+msgstr "المدينة"
+
+#: inc/class-wc-dropshipping-admin.php:552
+msgid "Country/State"
+msgstr "البلد / الولاية"
+
+#: inc/class-wc-dropshipping-admin.php:557
+msgid "Postcode/ZIP"
+msgstr "الرمز البريدي / الرمز البريدي"
+
+#: inc/class-wc-dropshipping-admin.php:564
+msgid "Supplier Inventory CSV Import Settings"
+msgstr "إعدادات استيراد جدول البيانات الخاصة بالمورد من المخزون"
+
+#: inc/class-wc-dropshipping-admin.php:565
+msgid ""
+"(If you do not receive inventory statuses from your supplier in the form of a ."
+"CSV file, leave these settings blank)"
+msgstr ""
+"(إذا لم تتلقى حالات المخزون من موردك في شكل ملف .CSV، فاترك هذه الإعدادات فارغة)"
+
+#: inc/class-wc-dropshipping-admin.php:568
+msgid "CSV File Column Delimiter"
+msgstr "فاصل الأعمدة في ملف CSV"
+
+#: inc/class-wc-dropshipping-admin.php:570
+msgid ""
+"Please indicate what character is used to separate fields in the CSV file. "
+"Normally this is a comma"
+msgstr ""
+"يرجى تحديد الحرف المستخدم لفصل الحقول في ملف CSV. عادةً ما يكون هذا الفاصل فاصلة"
+
+#: inc/class-wc-dropshipping-admin.php:576
+msgid "CSV SKU Column #"
+msgstr "رقم العمود SKU في ملف CSV"
+
+#: inc/class-wc-dropshipping-admin.php:578
+msgid ""
+"Please indicate which column in the CSV file corresponds to product SKUs. Note "
+"that this should be the same SKU that the manufacturer uses. WooCommerce "
+"Dropshipping will automatically add the SKU code for products from this suppler "
+"when you upload a .CSV file"
+msgstr ""
+"يرجى تحديد العمود في ملف CSV الذي يتوافق مع معرفات SKU للمنتجات. يرجى ملاحظة "
+"أنه يجب أن يكون هذا هو نفس SKU الذي يستخدمه الشركة المصنعة. سيقوم WooCommerce "
+"Dropshipping تلقائيًا بإضافة رمز SKU للمنتجات من هذا المورد عند تحميل ملف .CSV"
+
+#: inc/class-wc-dropshipping-admin.php:584
+msgid "CSV Type"
+msgstr "نوع ملف CSV"
+
+#: inc/class-wc-dropshipping-admin.php:598
+msgid "Please indicate how the .CSV file&apos;s data should be read. "
+msgstr "يرجى تحديد كيفية قراءة بيانات ملف .CSV."
+
+#: inc/class-wc-dropshipping-admin.php:598
+msgid "Quantity on Hand "
+msgstr "الكمية المتاحة"
+
+#: inc/class-wc-dropshipping-admin.php:598
+msgid ""
+"- If your supplier sends you a .CSV file that contains the quantity that they "
+"have remaining in their inventory, you should use this method. Any number above "
+"zero indicates that the product is still in stock."
+msgstr ""
+"- إذا أرسل لك المورد ملف .CSV يحتوي على الكمية المتبقية في مخزونه، يجب عليك "
+"استخدام هذه الطريقة. أي عدد أكبر من الصفر يشير إلى أن المنتج متوفر بالمخزون."
+
+#: inc/class-wc-dropshipping-admin.php:598
+msgid " In-Stock Indicator "
+msgstr "مؤشر المخزون"
+
+#: inc/class-wc-dropshipping-admin.php:598
+msgid ""
+"- Use this method if your supplier sends you a .CSV file that includes a column "
+"indicating whether or not a product is in stock.  This is typically in either a "
+"Y/N or 1/0 format to indicate whether or not the product is in stock."
+msgstr ""
+"- استخدم هذه الطريقة إذا أرسل لك المورد ملف .CSV يتضمن عمودًا يشير ما إذا كان "
+"المنتج متوفرًا في المخزون أم لا. عادةً ما يكون هذا في تنسيق Y/N أو 1/0 للإشارة "
+"إلى ما إذا كان المنتج متوفرًا في المخزون أم لا."
+
+#: inc/class-wc-dropshipping-admin.php:601
+msgid "CSV Inventory Quantity Column #"
+msgstr "عدد العمود لكمية المخزون في ملف CSV"
+
+#: inc/class-wc-dropshipping-admin.php:603
+msgid ""
+"Please indicate which column in the .CSV file corresponds to the quantity of "
+"inventory available"
+msgstr "يرجى تحديد العمود في ملف CSV الذي يتوافق مع كمية المخزون المتاحة"
+
+#: inc/class-wc-dropshipping-admin.php:608
+msgid "In-Stock Indicator Column #"
+msgstr "عدد العمود لمؤشر المخزون في ملف CSV"
+
+#: inc/class-wc-dropshipping-admin.php:610
+msgid ""
+"Please indicate which column in the .CSV file indicates whether or not a "
+"product is in stock"
+msgstr ""
+"يرجى تحديد العمود في ملف CSV الذي يشير ما إذا كان المنتج متوفرًا في المخزون أم لا"
+
+#: inc/class-wc-dropshipping-admin.php:614
+msgid "In-Stock Indicator Value"
+msgstr "قيمة مؤشر المخزون"
+
+#: inc/class-wc-dropshipping-admin.php:616
+msgid ""
+"Please input the value (ie. Y or 1) in the column defined above that indicates "
+"whether or not a product is in stock"
+msgstr ""
+"يرجى إدخال القيمة (مثل Y أو 1) في العمود المحدد أعلاه الذي يشير ما إذا كان "
+"المنتج متوفرًا في المخزون"
+
+#: inc/class-wc-dropshipping-admin.php:746
+msgid "Hi "
+msgstr ""
+
+#: inc/class-wc-dropshipping-admin.php:748
+msgid "Thanks For Registration"
+msgstr "شكرًا للتسجيل"
+
+#: inc/class-wc-dropshipping-admin.php:751
+msgid "Your User Name:&nbsp;"
+msgstr "اسم المستخدم الخاص بك:&nbsp;"
+
+#: inc/class-wc-dropshipping-admin.php:752
+msgid "Your Password:&nbsp;"
+msgstr "كلمة المرور الخاصة بك:&nbsp;"
+
+#: inc/class-wc-dropshipping-admin.php:753
+msgid "Change Your Password Once you login"
+msgstr "قم بتغيير كلمة المرور بمجرد تسجيل الدخول"
+
+#: inc/class-wc-dropshipping-admin.php:754
+msgid "Login URL: "
+msgstr "عنوان URL لتسجيل الدخول: "
+
+#: inc/class-wc-dropshipping-admin.php:764
+#: inc/class-wc-dropshipping-csv-import.php:672
+msgid "User already exists.  Password inherited."
+msgstr "المستخدم موجود بالفعل. تمت إرث كلمة المرور."
+
+#: inc/class-wc-dropshipping-checkout.php:108
+msgid "Order Number"
+msgstr "رقم الطلب"
+
+#: inc/class-wc-dropshipping-checkout.php:143
+msgid "Tracking Number"
+msgstr "رقم التتبع"
+
+#: inc/class-wc-dropshipping-checkout.php:208
+msgid "POD"
+msgstr "إيصال التسليم"
+
+#: inc/class-wc-dropshipping-checkout.php:386
+msgid "Track Your Order"
+msgstr "تتبع طلبك"
+
+#: inc/class-wc-dropshipping-checkout.php:388
+msgid "Shipping Date"
+msgstr "تاريخ الشحن"
+
+#: inc/class-wc-dropshipping-checkout.php:390
+#: inc/class-wc-dropshipping-product.php:121
+msgid "Tracking Number(s)"
+msgstr "أرقام التتبع"
+
+#: inc/class-wc-dropshipping-checkout.php:392
+#: inc/class-wc-dropshipping-product.php:123
+msgid "Shipping Company"
+msgstr "شركة الشحن"
+
+#: inc/class-wc-dropshipping-checkout.php:394
+#: inc/class-wc-dropshipping-product.php:125
+msgid "Notes"
+msgstr "ملاحظات"
+
+#: inc/class-wc-dropshipping-csv-import.php:259
+#: inc/class-wc-dropshipping-csv-import.php:431
+#: inc/class-wc-dropshipping-csv-import.php:448
+msgid "Supplier Id"
+msgstr "معرف المورد"
+
+#: inc/class-wc-dropshipping-csv-import.php:260
+#: inc/class-wc-dropshipping-csv-import.php:432
+msgid "Supplier Name"
+msgstr "اسم المورد"
+
+#: inc/class-wc-dropshipping-csv-import.php:261
+#: inc/class-wc-dropshipping-csv-import.php:433
+msgid "Supplier Slug"
+msgstr "معرف المورد"
+
+#: inc/class-wc-dropshipping-csv-import.php:262
+#: inc/class-wc-dropshipping-csv-import.php:434
+msgid "Supplier Description"
+msgstr "وصف المورد"
+
+#: inc/class-wc-dropshipping-csv-import.php:263
+#: inc/class-wc-dropshipping-csv-import.php:435
+msgid "Supplier Email"
+msgstr "بريد المورد الإلكتروني"
+
+#: inc/class-wc-dropshipping-csv-import.php:264
+#: inc/class-wc-dropshipping-csv-import.php:436
+msgid "Supplier Account Number"
+msgstr "رقم حساب المورد"
+
+#: inc/class-wc-dropshipping-orders.php:698
+#: inc/class-wc-dropshipping-orders.php:772
+#, php-format
+msgid "New Order #%1$s From %2$s"
+msgstr "طلب جديد #%1$ss من %2$s"
+
+#: inc/class-wc-dropshipping-orders.php:717
+msgid "To mark this order as shipped please click the following link:"
+msgstr "لتحديد هذا الطلب كمرسل، يرجى النقر فوق الرابط التالي:"
+
+#: inc/class-wc-dropshipping-orders.php:717
+msgid "Mark as shipped"
+msgstr "وضع علامة كمرسل"
+
+#: inc/class-wc-dropshipping-orders.php:721
+#: inc/class-wc-dropshipping-orders.php:802
+msgid "View order in dashboard"
+msgstr "عرض الطلب في لوحة التحكم"
+
+#: inc/class-wc-dropshipping-orders.php:768
+#, php-format
+msgid "Order #%s is completed"
+msgstr "تم استكمال الطلب #%s"
+
+#: inc/class-wc-dropshipping-orders.php:770
+#, php-format
+msgid "Order #%s is cancelled"
+msgstr "تم إلغاء الطلب #%s"
+
+#: inc/class-wc-dropshipping-orders.php:976
+msgid "Filter by Supplier"
+msgstr "تصفية حسب المورد"
+
+#: inc/class-wc-dropshipping-product.php:119
+msgid "Date"
+msgstr "التاريخ"
+
+#: inc/class-wc-dropshipping-settings.php:47 woocommerce-dropshipping.php:864
+#: woocommerce-dropshipping.php:865
+msgid "Dropshipping"
+msgstr "الشحن المباشر"
+
+#: inc/class-wc-dropshipping-settings.php:1363
+msgid "AliExpress Settings"
+msgstr "إعدادات AliExpress"
+
+#: inc/class-wc-dropshipping-settings.php:1365
+#: inc/class-wc-dropshipping-settings.php:1486
+#: inc/class-wc-dropshipping-settings.php:1488
+msgid "Supplier Email Notifications"
+msgstr "إشعارات بريد المورد الإلكتروني"
+
+#: inc/class-wc-dropshipping-settings.php:1367
+#: inc/class-wc-dropshipping-settings.php:1547
+msgid "Packing Slips"
+msgstr "إيصالات التعبئة"
+
+#: inc/class-wc-dropshipping-settings.php:1369
+#: inc/class-wc-dropshipping-settings.php:2238
+msgid "Customised Supplier Emails"
+msgstr "بريد المورد المخصص"
+
+#: inc/class-wc-dropshipping-settings.php:1371
+msgid "SMTP Options"
+msgstr "خيارات SMTP"
+
+#: inc/class-wc-dropshipping-settings.php:1373
+#: inc/class-wc-dropshipping-settings.php:2464
+msgid "Price Calculator"
+msgstr "آلة حاسبة السعر"
+
+#: inc/class-wc-dropshipping-settings.php:1380
+msgid "AliExpress Chrome Browser Extension (CBE) Settings"
+msgstr "إعدادات امتداد متصفح Chrome لـ AliExpress (CBE)"
+
+#: inc/class-wc-dropshipping-settings.php:1386
+msgid "Enable Support for the AliExpress CBE:"
+msgstr "تمكين الدعم لـ AliExpress CBE:"
+
+#: inc/class-wc-dropshipping-settings.php:1407
+msgid "Generate AliExpress API Key:"
+msgstr "إنشاء مفتاح API لـ AliExpress:"
+
+#: inc/class-wc-dropshipping-settings.php:1410
+msgid "Generate AliExpress API Key"
+msgstr "إنشاء مفتاح API لـ AliExpress"
+
+#: inc/class-wc-dropshipping-settings.php:1429
+msgid "Price Markup Method:"
+msgstr "طريقة تسعير الأسعار:"
+
+#: inc/class-wc-dropshipping-settings.php:1455
+msgid "Percentage Offset"
+msgstr "نسبة الإزاحة"
+
+#: inc/class-wc-dropshipping-settings.php:1469
+msgid "Markup Offset Value:"
+msgstr "قيمة الزيادة المخصصة:"
+
+#: inc/class-wc-dropshipping-settings.php:1490
+msgid ""
+"When an order&apos;s status switches to processing, emails are sent to each "
+"supplier to notify them to ship their products."
+msgstr ""
+"عندما تتحول حالة الطلب إلى المعالجة، يتم إرسال رسائل البريد الإلكتروني إلى كل "
+"مورد لإخطاره بشحن منتجاته."
+
+#: inc/class-wc-dropshipping-settings.php:1490
+msgid ""
+" You can set a custom message for the suppliers in the box below to be included "
+"in these emails."
+msgstr ""
+"يمكنك تعيين رسالة مخصصة للموردين في المربع أدناه لتضمينها في هذه الرسائل "
+"الإلكترونية."
+
+#: inc/class-wc-dropshipping-settings.php:1494
+msgid "Email order note:"
+msgstr "ملاحظة الطلب عبر البريد الإلكتروني:"
+
+#: inc/class-wc-dropshipping-settings.php:1506
+msgid "Include 'View order' link in suppliers email:"
+msgstr "تضمين رابط 'عرض الطلب' في بريد الموردين:"
+
+#: inc/class-wc-dropshipping-settings.php:1517
+msgid "Do not send renewal email to suppliers:"
+msgstr "عدم إرسال رسالة بريد إلكتروني للتجديد إلى الموردين:"
+
+#: inc/class-wc-dropshipping-settings.php:1527
+msgid ".CSV File Inventory Update Settings"
+msgstr "إعدادات تحديث المخزون لملف .CSV"
+
+#: inc/class-wc-dropshipping-settings.php:1529
+msgid ""
+".These options relate to how your store processes data imported from CSV "
+"spreadsheet files, if you receive them from your supplier"
+msgstr ""
+".تتعلق هذه الخيارات بكيفية معالجة مخزنك للبيانات المستوردة من ملفات جداول "
+"بيانات CSV، إذا تلقيتها من موردك"
+
+#: inc/class-wc-dropshipping-settings.php:1535
+msgid "Inventory Buffer:"
+msgstr "فاصل المخزون:"
+
+#: inc/class-wc-dropshipping-settings.php:1541
+msgid ""
+"If the supplier&apos;s stock falls below this number on an imported "
+"spreadsheet, the item will be considered out of stock in your store."
+msgstr ""
+"إذا انخفض مخزون المورد إلى أقل من هذا الرقم في جدول بيانات مستورد، فسيتم اعتبار "
+"العنصر غير متوفر في متجرك."
+
+#: inc/class-wc-dropshipping-settings.php:1553
+msgid "Attach PDF to supplier Email"
+msgstr "إرفاق ملف PDF برسالة البريد الإلكتروني للمورد"
+
+#: inc/class-wc-dropshipping-settings.php:1560
+msgid "Header"
+msgstr "رأس الصفحة"
+
+#: inc/class-wc-dropshipping-settings.php:1564
+msgid "Option to view packing slip."
+msgstr "خيار عرض إيصال التعبئة والتغليف."
+
+#: inc/class-wc-dropshipping-settings.php:1579
+msgid "Show logo in the header."
+msgstr "إظهار الشعار في الرأس."
+
+#: inc/class-wc-dropshipping-settings.php:1587
+#: inc/class-wc-dropshipping-settings.php:1638
+msgid "NOTE:"
+msgstr "ملاحظة:"
+
+#: inc/class-wc-dropshipping-settings.php:1587
+msgid "For best results, please keep logo dimensions within 200x60 px"
+msgstr "للحصول على أفضل النتائج، يرجى الاحتفاظ بأبعاد الشعار ضمن 200x60 بكسل"
+
+#: inc/class-wc-dropshipping-settings.php:1593
+msgid "Url to Logo:"
+msgstr "رابط الشعار:"
+
+#: inc/class-wc-dropshipping-settings.php:1604
+msgid "Logo Width:"
+msgstr "عرض الشعار:"
+
+#: inc/class-wc-dropshipping-settings.php:1620
+msgid "Show order date beside order number."
+msgstr "إظهار تاريخ الطلب بجانب رقم الطلب."
+
+#: inc/class-wc-dropshipping-settings.php:1630
+msgid "Show shipping information."
+msgstr "إظهار معلومات الشحن."
+
+#: inc/class-wc-dropshipping-settings.php:1638
+msgid ""
+"For best results, please make sure that any custom terms or phrases listed "
+"below are kept to a reasonable length. If your terms are too long, it may cause "
+"text wrapping and alignment issues with your packing slips."
+msgstr ""
+"للحصول على أفضل النتائج، يرجى التأكد من أن أي شروط أو عبارات مخصصة مدرجة أدناه "
+"محتفظة بطول معقول. إذا كانت شروطك طويلة جدًا، فقد يتسبب ذلك في تغليف النصوص "
+"ومشاكل التوجيه في إيصالات التعبئة والتغليف الخاصة بك."
+
+#: inc/class-wc-dropshipping-settings.php:1642
+msgid "Chosen Shipping Method Label:"
+msgstr "تسمية طريقة الشحن المختارة:"
+
+#: inc/class-wc-dropshipping-settings.php:1653
+msgid "Payment Type Label:"
+msgstr "تسمية نوع الدفع:"
+
+#: inc/class-wc-dropshipping-settings.php:1668
+msgid "Display the \"Customer Note\" into the Dropshipper packing slip."
+msgstr "عرض \"ملاحظة العميل\" في إيصال التعبئة والتغليف للشحن المباشر."
+
+#: inc/class-wc-dropshipping-settings.php:1676
+msgid "Products"
+msgstr "المنتجات"
+
+#: inc/class-wc-dropshipping-settings.php:1682
+msgid "Show product thumbnail image."
+msgstr "عرض صورة مصغرة للمنتج."
+
+#: inc/class-wc-dropshipping-settings.php:1691
+msgid "Image Label:"
+msgstr "تسمية الصورة:"
+
+#: inc/class-wc-dropshipping-settings.php:1704
+msgid "SKU Label:"
+msgstr "تسمية SKU:"
+
+#: inc/class-wc-dropshipping-settings.php:1714
+msgid "Product Label:"
+msgstr "تسمية المنتج:"
+
+#: inc/class-wc-dropshipping-settings.php:1724
+msgid "Quantity Label:"
+msgstr "تسمية الكمية:"
+
+#: inc/class-wc-dropshipping-settings.php:1738
+msgid ""
+"Additional field in the \"Add/Edit Product\" to specify the \"Type of Package\""
+msgstr "حقل إضافي في \"إضافة/تحرير المنتج\" لتحديد \"نوع الحزمة\""
+
+#: inc/class-wc-dropshipping-settings.php:1749
+msgid "Type Of Package Label:"
+msgstr "تسمية نوع الحزمة:"
+
+#: inc/class-wc-dropshipping-settings.php:1764
+msgid "Show product prices."
+msgstr "عرض أسعار المنتجات."
+
+#: inc/class-wc-dropshipping-settings.php:1774
+msgid "Price Label:"
+msgstr "تسمية السعر:"
+
+#: inc/class-wc-dropshipping-settings.php:1789
+msgid "Show Cost instead of Sell Price."
+msgstr "عرض التكلفة بدلاً من سعر البيع."
+
+#: inc/class-wc-dropshipping-settings.php:1799
+msgid "Show Tax Split."
+msgstr "عرض تقسيم الضريبة."
+
+#: inc/class-wc-dropshipping-settings.php:1811
+msgid "Company Details"
+msgstr "تفاصيل الشركة"
+
+#: inc/class-wc-dropshipping-settings.php:1815
+msgid "Company Name:"
+msgstr "اسم الشركة:"
+
+#: inc/class-wc-dropshipping-settings.php:1829
+msgid "Company Address Label:"
+msgstr "تسمية عنوان الشركة:"
+
+#: inc/class-wc-dropshipping-settings.php:1844
+msgid "Address:"
+msgstr "العنوان:"
+
+#: inc/class-wc-dropshipping-settings.php:1854
+msgid "Customer Service Email:"
+msgstr "بريد الخدمة العملاء:"
+
+#: inc/class-wc-dropshipping-settings.php:1866
+msgid "Customer Service Phone Number:"
+msgstr "رقم هاتف خدمة العملاء:"
+
+#: inc/class-wc-dropshipping-settings.php:1880
+msgid "Show shipping address at the bottom."
+msgstr "عرض عنوان الشحن في الأسفل."
+
+#: inc/class-wc-dropshipping-settings.php:1890
+msgid "Shipping Address Label:"
+msgstr "تسمية عنوان الشحن:"
+
+#: inc/class-wc-dropshipping-settings.php:1905
+msgid "Show billing address at the bottom."
+msgstr "عرض عنوان الفوترة في الأسفل."
+
+#: inc/class-wc-dropshipping-settings.php:1917
+msgid "Billing Address Label:"
+msgstr "تسمية عنوان الفوترة:"
+
+#: inc/class-wc-dropshipping-settings.php:1939
+msgid "Footer"
+msgstr "تذييل"
+
+#: inc/class-wc-dropshipping-settings.php:1940
+msgid "Any additional comment to be displayed"
+msgstr "أي تعليق إضافي يجب عرضه"
+
+#: inc/class-wc-dropshipping-settings.php:1941
+msgid "Max length: 200 characters"
+msgstr "الحد الأقصى للطول: 200 حرف"
+
+#: inc/class-wc-dropshipping-settings.php:1942
+msgid ""
+"NOTE: Please make sure this content as small as possible so that it fits "
+"properly at the bottom of PDF."
+msgstr ""
+"ملاحظة: يرجى التأكد من جعل هذا المحتوى صغيرًا قدر الإمكان حتى يتناسب بشكل صحيح "
+"في أسفل ملف PDF."
+
+#: inc/class-wc-dropshipping-settings.php:1946
+msgid "Comments:"
+msgstr "التعليقات:"
+
+#: inc/class-wc-dropshipping-settings.php:1958
+msgid "Thank You Message:"
+msgstr "رسالة شكر:"
+
+#: inc/class-wc-dropshipping-settings.php:1972
+msgid "Send Order Details to Suppliers"
+msgstr "إرسال تفاصيل الطلب إلى الموردين"
+
+#: inc/class-wc-dropshipping-settings.php:1978
+msgid "Do not send email notifications to supplier"
+msgstr "لا ترسل إشعارات البريد الإلكتروني إلى المورد"
+
+#: inc/class-wc-dropshipping-settings.php:1982
+msgid ""
+"This option controls whether or not you want to send a .CSV spreadsheet file as "
+"an attachment with the regular order notification emails that are sent to your "
+"suppliers"
+msgstr ""
+"تحكم هذه الخيار في ما إذا كنت تريد أو لا تريد إرسال ملف جدول بيانات .CSV كمرفق "
+"مع رسائل البريد الإلكتروني لإشعارات الطلب العادية التي يتم إرسالها إلى مورديك"
+
+#: inc/class-wc-dropshipping-settings.php:1990
+msgid "Send CSV with Supplier Notifications"
+msgstr "إرسال ملف CSV مع إشعارات المورد"
+
+#: inc/class-wc-dropshipping-settings.php:2001
+msgid "Show the total price in the packing slip."
+msgstr "عرض السعر الإجمالي في إيصال التعبئة."
+
+#: inc/class-wc-dropshipping-settings.php:2011
+msgid "Hide the shipping cost in the packing slip."
+msgstr "إخفاء تكلفة الشحن في إيصال التعبئة."
+
+#: inc/class-wc-dropshipping-settings.php:2021
+msgid "Hide Tax in supplier email."
+msgstr "إخفاء الضريبة في بريد المورد."
+
+#: inc/class-wc-dropshipping-settings.php:2041
+msgid "Include the customer&apos;s phone number in the packing slip."
+msgstr "تضمين رقم هاتف العميل في إيصال التعبئة."
+
+#: inc/class-wc-dropshipping-settings.php:2051
+msgid "Hide the supplier names on order confirmation emails."
+msgstr "إخفاء أسماء الموردين في رسائل تأكيد الطلب."
+
+#: inc/class-wc-dropshipping-settings.php:2061
+msgid "Show supplier names on product pages."
+msgstr "إظهار أسماء الموردين على صفحات المنتجات."
+
+#: inc/class-wc-dropshipping-settings.php:2071
+msgid "Hide supplier names on the Order Details page."
+msgstr "إخفاء أسماء الموردين على صفحة تفاصيل الطلب."
+
+#: inc/class-wc-dropshipping-settings.php:2081
+msgid "Show \"Payment Type\" in the notification email."
+msgstr "إظهار \"نوع الدفع\" في رسالة الإشعار."
+
+#: inc/class-wc-dropshipping-settings.php:2088
+msgid "Include \"Customer email\" into the Dropshipper packing slip."
+msgstr "تضمين \"بريد العميل\" في إيصال التعبئة الخاص بالمشتري من السفينة."
+
+#: inc/class-wc-dropshipping-settings.php:2098
+msgid "Include store name in the order notification CSV filename."
+msgstr "تضمين اسم المتجر في اسم ملف CSV لإشعار الطلب."
+
+#: inc/class-wc-dropshipping-settings.php:2108
+msgid "Include the store&apos;s URL in the order notification CSV filename."
+msgstr "قم بتضمين عنوان URL للمتجر في اسم ملف CSV لإشعار الطلب."
+
+#: inc/class-wc-dropshipping-settings.php:2118
+msgid "Send an additional email to the supplier when the order is completed."
+msgstr "إرسال بريد إلكتروني إضافي إلى المورد عند اكتمال الطلب."
+
+#: inc/class-wc-dropshipping-settings.php:2128
+msgid ""
+"Allow suppliers to mark their orders as shipped by clicking a link on the "
+"email, without logging in to your store."
+msgstr ""
+"السماح للموردين بوضع علامة على طلباتهم كمشحونة عن طريق النقر فوق رابط في البريد "
+"الإلكتروني، دون تسجيل الدخول إلى متجرك."
+
+#: inc/class-wc-dropshipping-settings.php:2138
+msgid ""
+"When an admin creates a new supplier, send registration details to the "
+"supplier&apos;s email."
+msgstr ""
+"عندما يقوم أحد المسؤولين بإنشاء مورد جديد، أرسل تفاصيل التسجيل إلى البريد "
+"الإلكتروني للمورد."
+
+#: inc/class-wc-dropshipping-settings.php:2153
+msgid "Notify via email when suppliers open order notification emails."
+msgstr "إرسال إشعار عبر البريد الإلكتروني عندما يفتح الموردين رسائل إشعار الطلب."
+
+#: inc/class-wc-dropshipping-settings.php:2165
+msgid "Use the standard WooCommerce mail format for email notification"
+msgstr ""
+"استخدام تنسيق البريد الإلكتروني القياسي لـ WooCommerce لإشعار البريد الإلكتروني."
+
+#: inc/class-wc-dropshipping-settings.php:2175
+msgid "Include order number field on checkout."
+msgstr "تضمين حقل رقم الطلب عند الخروج."
+
+#: inc/class-wc-dropshipping-settings.php:2185
+msgid ""
+"Don&apos;t cc: the store admin when sending order notification emails to "
+"suppliers."
+msgstr ""
+"لا ترسل نسخة إلى: مسؤول المتجر عند إرسال رسائل بريد إلكتروني لإشعار الطلب إلى "
+"الموردين."
+
+#: inc/class-wc-dropshipping-settings.php:2198
+msgid ""
+"Hide Customer info in the Packing Slip, Order emails and Suppliers dashboard."
+msgstr "إخفاء معلومات العميل في إيصال التعبئة ورسائل الطلب ولوحة تحكم الموردين."
+
+#: inc/class-wc-dropshipping-settings.php:2208
+msgid ""
+"Hide Customer Contact info in the Packing Slip, Order emails and Suppliers "
+"dashboard."
+msgstr ""
+"إخفاء معلومات اتصال العميل في إيصال التعبئة ورسائل الطلب ولوحة تحكم الموردين."
+
+#: inc/class-wc-dropshipping-settings.php:2218
+#: inc/class-wc-dropshipping-settings.php:2229
+msgid ""
+"Enable store address as shipping address in Suppliers Order list dashboard."
+msgstr "تمكين عنوان المتجر كعنوان للشحن في لوحة تحكم قائمة أوامر الموردين."
+
+#: inc/class-wc-dropshipping-settings.php:2240
+msgid "Dropshipping Pro plugin adds additional features. "
+msgstr "يضيف إضافات إضافية لبرنامج إضافات الشحن."
+
+#: inc/class-wc-dropshipping-settings.php:2240
+msgid "Click here to find out more."
+msgstr "انقر هنا لمعرفة المزيد."
+
+#: inc/class-wc-dropshipping-settings.php:2258
+msgid "Packing Slip "
+msgstr "إيصال التعبئة "
+
+#: inc/class-wc-dropshipping-settings.php:2261
+msgid "Title Color:"
+msgstr "لون العنوان:"
+
+#: inc/class-wc-dropshipping-settings.php:2272
+msgid "Title Font Size:"
+msgstr "حجم الخط للعنوان:"
+
+#: inc/class-wc-dropshipping-settings.php:2288
+msgid "Email "
+msgstr "البريد الإلكتروني "
+
+#: inc/class-wc-dropshipping-settings.php:2292
+msgid "Background Color:"
+msgstr "لون الخلفية:"
+
+#: inc/class-wc-dropshipping-settings.php:2300
+msgid "Order Note Font Size :"
+msgstr "حجم الخط لملاحظة الطلب:"
+
+#: inc/class-wc-dropshipping-settings.php:2307
+msgid "Order Note Font Color :"
+msgstr "لون الخط لملاحظة الطلب:"
+
+#: inc/class-wc-dropshipping-settings.php:2316
+msgid "Footer Message Font Size :"
+msgstr "حجم الخط لرسالة التذييل:"
+
+#: inc/class-wc-dropshipping-settings.php:2324
+msgid "Footer Message Font Color :"
+msgstr "لون الخط لرسالة التذييل:"
+
+#: inc/class-wc-dropshipping-settings.php:2339
+msgid "Email Body "
+msgstr "محتوى البريد الإلكتروني "
+
+#: inc/class-wc-dropshipping-settings.php:2342
+msgid "Font Size:"
+msgstr "حجم الخط:"
+
+#: inc/class-wc-dropshipping-settings.php:2350
+msgid "Font Color:"
+msgstr "لون الخط:"
+
+#: inc/class-wc-dropshipping-settings.php:2364
+msgid "Email Bottom "
+msgstr "الجزء السفلي للبريد الإلكتروني "
+
+#: inc/class-wc-dropshipping-settings.php:2367
+msgid "Sub Heading Font Size:"
+msgstr "حجم الخط للعنوان الفرعي:"
+
+#: inc/class-wc-dropshipping-settings.php:2375
+msgid "Sub Heading Font Color:"
+msgstr "لون الخط للعنوان الفرعي:"
+
+#: inc/class-wc-dropshipping-settings.php:2383
+msgid "Sub Heading Content Font Size:"
+msgstr "حجم الخط لمحتوى العنوان الفرعي:"
+
+#: inc/class-wc-dropshipping-settings.php:2391
+msgid "Sub Heading Content Color:"
+msgstr "لون محتوى العنوان الفرعي:"
+
+#: inc/class-wc-dropshipping-settings.php:2412
+msgid "SMTP Options - SMTP is used for sending emails."
+msgstr "خيارات SMTP - يتم استخدام SMTP لإرسال الرسائل البريدية."
+
+#: inc/class-wc-dropshipping-settings.php:2419
+msgid ""
+"Check this option if you are using SMTP to send emails from your WooCommerce "
+"store."
+msgstr ""
+"قم بتحديد هذا الخيار إذا كنت تستخدم SMTP لإرسال رسائل البريد الإلكتروني من متجر "
+"WooCommerce الخاص بك."
+
+#: inc/class-wc-dropshipping-settings.php:2427
+msgid "Email Sender Information"
+msgstr "معلومات مرسل البريد الإلكتروني"
+
+#: inc/class-wc-dropshipping-settings.php:2428
+msgid ""
+"If left empty, emails sent from the store will use default WooCommerce settings."
+msgstr ""
+"إذا تركت فارغة، ستستخدم الرسائل البريدية المُرسلة من المتجر إعدادات WooCommerce "
+"الافتراضية."
+
+#: inc/class-wc-dropshipping-settings.php:2435
+msgid "Emails sent from the store should show this sender name: "
+msgstr "يجب أن تعرض الرسائل البريدية المُرسلة من المتجر اسم المُرسل هذا:"
+
+#: inc/class-wc-dropshipping-settings.php:2446
+msgid "Emails sent from the store should show this sender email address:"
+msgstr ""
+"يجب أن تعرض الرسائل البريدية المُرسلة من المتجر عنوان البريد الإلكتروني للمُرسل "
+"هذا:"
+
+#: inc/class-wc-dropshipping-settings.php:2477
+msgid "Pricing and Profit Calculator"
+msgstr "آلة حاسبة التسعير والربح"
+
+#: inc/class-wc-dropshipping-settings.php:2484
+#: inc/class-wc-dropshipping-settings.php:2485
+#: inc/class-wc-dropshipping-settings.php:2486
+#: inc/class-wc-dropshipping-settings.php:2487
+#: inc/class-wc-dropshipping-settings.php:2488
+#: inc/class-wc-dropshipping-settings.php:2489
+#: inc/class-wc-dropshipping-settings.php:2490
+#: inc/class-wc-dropshipping-settings.php:2491
+msgid "Cost Of Product"
+msgstr "تكلفة المنتج"
+
+#: inc/class-wc-dropshipping-settings.php:2499
+msgid "Break Even Value"
+msgstr "قيمة الوصول إلى التعادل"
+
+#: inc/class-wc-dropshipping-settings.php:2523
+msgid "Total Price"
+msgstr "السعر الإجمالي"
+
+#: inc/class-wc-dropshipping-settings.php:2533
+msgid "Cost Of Product "
+msgstr "تكلفة المنتج "
+
+#: inc/class-wc-dropshipping-settings.php:2542
+#: inc/class-wc-dropshipping-settings.php:2638
+msgid "Profit Margin"
+msgstr "هامش الربح"
+
+#: inc/class-wc-dropshipping-settings.php:2597
+msgid "Break Even Values"
+msgstr "قيم التعادل"
+
+#: inc/class-wc-dropshipping-settings.php:2602
+msgid "% Fee"
+msgstr "نسبة الرسوم"
+
+#: inc/class-wc-dropshipping-settings.php:2616
+msgid "$ Fee"
+msgstr "رسوم $"
+
+#: inc/class-wc-dropshipping-settings.php:2644
+#: inc/class-wc-dropshipping-settings.php:2676
+#: inc/class-wc-dropshipping-settings.php:2770
+#: inc/class-wc-dropshipping-settings.php:2839
+msgid "% Profit"
+msgstr "الربح %"
+
+#: inc/class-wc-dropshipping-settings.php:2658
+#: inc/class-wc-dropshipping-settings.php:2690
+#: inc/class-wc-dropshipping-settings.php:2779
+#: inc/class-wc-dropshipping-settings.php:2845
+msgid "$ Profit"
+msgstr "الربح $"
+
+#: inc/class-wc-dropshipping-settings.php:2716
+msgid "Dynamic Profit Margin"
+msgstr "هامش ربح ديناميكي"
+
+#: inc/class-wc-dropshipping-settings.php:2726
+msgid "Dynamic Profit Margin "
+msgstr "هامش الربح الديناميكي "
+
+#: inc/class-wc-dropshipping-settings.php:2754
+#: inc/class-wc-dropshipping-settings.php:2828
+msgid "From:"
+msgstr "من:"
+
+#: inc/class-wc-dropshipping-settings.php:2799
+#: inc/class-wc-dropshipping-settings.php:2870
+msgid "Change the range to lower value to add more rules."
+msgstr "قم بتغيير النطاق إلى قيمة أقل لإضافة المزيد من القواعد."
+
+#: inc/class-wc-dropshipping-settings.php:2811
+msgid "Product Cost Range"
+msgstr "نطاق تكلفة المنتج"
+
+#: inc/class-wc-dropshipping-settings.php:2833
+msgid "To:"
+msgstr "إلى:"
+
+#: templates/wc-dropshipping-dashboard.php:26
+msgid "WooCommerce Dropshipping Dashboard"
+msgstr "لوحة تحكم WooCommerce للشحن المباشر"
+
+#: woo-includes/template/woocommerce/emails/email-order-details.php:39
+#, php-format
+msgid "[Order #%s]"
+msgstr "[الطلب #%s]"
+
+#: woocommerce-dropshipping.php:133
+msgid "WooCommerce Dropshipping requires"
+msgstr "يتطلب الشحن المباشر في WooCommerce"
+
+#: woocommerce-dropshipping.php:133
+msgid "to be installed on your server."
+msgstr "أن يكون مثبتًا على خادمك."
+
+#: woocommerce-dropshipping.php:247
+msgid "WooCommerce Dropshipping"
+msgstr "التسوق الإلكتروني بواسطة ووكومرس"
+
+#: woocommerce-dropshipping.php:320 woocommerce-dropshipping.php:321
+msgid "Graph Reports"
+msgstr "تقارير الرسوم البيانية"
+
+#: woocommerce-dropshipping.php:517
+#, php-format
+msgid "Please see the attached PDF. Thank you! - %s"
+msgstr "الرجاء رؤية الملف PDF المرفق. شكرًا لك! - %s"
+
+#: woocommerce-dropshipping.php:525
+#, php-format
+msgid "We hope you enjoy your order. Thank you for shopping with %s"
+msgstr "نأمل أن تستمتع بطلبك. شكرًا لتسوقك مع %s"
+
+#: woocommerce-dropshipping.php:582
+msgid "Settings"
+msgstr "الإعدادات"
+
+#: woocommerce-dropshipping.php:583
+msgid "Docs"
+msgstr "المستندات"
+
+#: woocommerce-dropshipping.php:621
+msgid ""
+"Woocommerce Dropshipping activated successfully! In order for the plugin to "
+"work correctly. Visit"
+msgstr ""
+"تم تفعيل التسوق الإلكتروني بواسطة ووكومرس بنجاح! من أجل عمل الإضافة بشكل صحيح. "
+"قم بزيارة"
+
+#: woocommerce-dropshipping.php:623
+msgid "and hit the \"Save Changes\" button"
+msgstr "واضغط على زر \"حفظ التغييرات\""
+
+#: woocommerce-dropshipping.php:722 woocommerce-dropshipping.php:726
+msgid "Suppliers"
+msgstr "الموردين"
+
+#: woocommerce-dropshipping.php:724
+msgid "Dropshipping Supplier"
+msgstr "مورد التسوق الإلكتروني"
+
+#: woocommerce-dropshipping.php:728
+msgid "Search Dropshipping Suppliers"
+msgstr "البحث عن موردين التسوق الإلكتروني"
+
+#: woocommerce-dropshipping.php:730
+msgid "All Dropshipping Suppliers"
+msgstr "كل موردي التسوق الإلكتروني"
+
+#: woocommerce-dropshipping.php:732
+msgid "Edit Dropshipping Supplier"
+msgstr "تعديل مورد التسوق الإلكتروني"
+
+#: woocommerce-dropshipping.php:734
+msgid "Update Dropshipping Supplier"
+msgstr "تحديث مورد التسوق الإلكتروني"
+
+#: woocommerce-dropshipping.php:736
+msgid "Add New Dropshipping Supplier"
+msgstr "إضافة مورد جديد للتسوق الإلكتروني"
+
+#: woocommerce-dropshipping.php:738
+msgid "New Dropshipping Supplier Name"
+msgstr "اسم مورد جديد للتسوق الإلكتروني"
+
+#: woocommerce-dropshipping.php:740
+msgid "Popular Dropshipping Suppliers"
+msgstr "موردي التسوق الإلكتروني الشهيرين"
+
+#: woocommerce-dropshipping.php:742
+msgid "Separate Dropshipping Suppliers with commas"
+msgstr "افصل بين موردي التسوق الإلكتروني بفواصل"
+
+#: woocommerce-dropshipping.php:744
+msgid "Add or remove Dropshipping Suppliers"
+msgstr "أضف أو احذف موردي التسوق الإلكتروني"
+
+#: woocommerce-dropshipping.php:746
+msgid "Choose from the most used Dropshipping Suppliers"
+msgstr "اختر من بين موردي التسوق الإلكتروني الأكثر استخدامًا"
+
+#: woocommerce-dropshipping.php:748
+msgid "No Dropshipping Suppliers found"
+msgstr "لم يتم العثور على موردي التسوق الإلكتروني"
+
+#: woocommerce-dropshipping.php:875 woocommerce-dropshipping.php:876
+msgid "Dashboard"
+msgstr "لوحة التحكم"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:1704
+msgid "\""
+msgstr ""
+
+#: /woocommerce-dropshipping/complete.php:116
+#: /woocommerce-dropshipping/packingslip.php:116
+#, php-format
+msgid "<strong>Supplier Account #</strong> %s"
+msgstr "<strong>رقم حساب المورد</strong> %s"
+
+#: /woocommerce-dropshipping/packingslip.php:84
+#, php-format
+msgid "[ %s Order # %s  ]"
+msgstr "[ %s الطلب # %s ]"
+
+#: /woocommerce-dropshipping/complete.php:84
+#, php-format
+msgid "[ %s Order # %s is completed ]"
+msgstr "[ %s اكتمل الطلب # %s ]"
+
+#: /woocommerce-dropshipping/templates/wc-dropshipping-dashboard.php:56
+msgid "Account Information"
+msgstr "معلومات الحساب"
+
+#: /woocommerce-dropshipping/templates/wc-dropshipping-dashboard.php:103
+msgid "Active Affiliate Products"
+msgstr "المنتجات التابعة النشطة"
+
+#: /woocommerce-dropshipping/templates/wc-dropshipping-dashboard.php:151
+msgid "Adjust Plugin Settings"
+msgstr "ضبط إعدادات البرنامج المساعد"
+
+#: /woocommerce-dropshipping/templates/wc-dropshipping-dashboard.php:145
+msgid "Aliexpress Import"
+msgstr "استيراد علي اكسبريس"
+
+#: /woocommerce-dropshipping/templates/wc-dropshipping-dashboard.php:61
+msgid "Aliexpress Orders"
+msgstr "طلبات علي اكسبريس"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:1156
+msgid "API Key Mismatch!!"
+msgstr "عدم تطابق مفتاح واجهة برمجة التطبيقات!!"
+
+#: /woocommerce-dropshipping/complete.php:1035
+#: /woocommerce-dropshipping/packingslip.php:1035
+#, fuzzy
+#| msgid "Billing Address Label:"
+msgid "Billing Address"
+msgstr "تسمية عنوان الفوترة:"
+
+#: /woocommerce-dropshipping/complete.php:171
+#: /woocommerce-dropshipping/packingslip.php:171
+msgid "Chosen Shipping Method:"
+msgstr "طريقة الشحن المختارة:"
+
+#: /woocommerce-dropshipping/complete.php:994
+#: /woocommerce-dropshipping/complete.php:1141
+#: /woocommerce-dropshipping/packingslip.php:994
+#: /woocommerce-dropshipping/packingslip.php:1141
+msgid "Company Address"
+msgstr "عنوان الشركة"
+
+#: /woocommerce-dropshipping/templates/wc-dropshipping-dashboard.php:96
+msgid "Completed Dropshipping Orders"
+msgstr "أوامر دروبشيبينغ المكتملة"
+
+#: /woocommerce-dropshipping/templates/wc-dropshipping-dashboard.php:152
+msgid "Configure packing slips, emails and more."
+msgstr "قم بتكوين قسائم التعبئة ورسائل البريد الإلكتروني والمزيد."
+
+#: /woocommerce-dropshipping/complete.php:246
+#: /woocommerce-dropshipping/packingslip.php:246
+#, php-format
+msgid "Customer Order Note : %s"
+msgstr "ملاحظة طلب العميل : %s"
+
+#: /woocommerce-dropshipping/inc/class-wc-dropshipping-admin.php:548
+msgid "Dropshipping Notifications"
+msgstr "إخطارات دروبشيبينغ"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:1441
+msgid "Error. Product does not exist in woocommerce store."
+msgstr "خطأ. المنتج غير موجود في متجر woocommerce."
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:938
+msgid "Given parent categories id does not exist in product categories list."
+msgstr "معرف الفئات الأصلية غير موجود في قائمة فئات المنتجات."
+
+#: /woocommerce-dropshipping/templates/wc-dropshipping-dashboard.php:153
+msgid "Go to Settings"
+msgstr "اذهب للاعدادات"
+
+#. Description of the plugin
+msgid ""
+"Handle dropshipping from your WooCommerce. Create a packing slip, and notify "
+"the vendor when an order is paid. Import inventory updates via CSV from your "
+"vendors."
+msgstr ""
+"التعامل مع دروبشيبينغ من WooCommerce الخاص بك. أنشئ إيصال تعبئة وأخطر البائع "
+"عند دفع الطلب. استيراد تحديثات المخزون عبر ملف CSV من البائعين لديك."
+
+#. URI of the plugin
+msgid "http://woocommerce.com/products/woocommerce-dropshipping/"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://opmc.com.au/"
+msgstr ""
+
+#: /woocommerce-dropshipping/complete.php:436
+#: /woocommerce-dropshipping/packingslip.php:436
+msgid "Image"
+msgstr "صورة"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:652
+msgid "Image data is empty!"
+msgstr "بيانات الصورة فارغة!"
+
+#: /woocommerce-dropshipping/templates/wc-dropshipping-dashboard.php:147
+msgid "Install Now"
+msgstr "تثبيت الآن"
+
+#: /woocommerce-dropshipping/templates/wc-dropshipping-dashboard.php:146
+msgid "Install the extension to get started"
+msgstr "قم بتثبيت الامتداد للبدء"
+
+#: /woocommerce-dropshipping/templates/wc-dropshipping-dashboard.php:126
+msgid "Low on Stock"
+msgstr "انخفاض المخزون"
+
+#: /woocommerce-dropshipping/templates/wc-dropshipping-dashboard.php:159
+msgid "Manage Suppliers"
+msgstr "إدارة الموردين"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:1589
+msgid "Merchant store currency code not found!"
+msgstr "لم يتم العثور على رمز عملة متجر التاجر!"
+
+#: /woocommerce-dropshipping/complete.php:829
+#: /woocommerce-dropshipping/packingslip.php:829
+msgid "Miscellaneous"
+msgstr "متنوع"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:921
+msgid "Name parameter required."
+msgstr "معلمة الاسم مطلوبة."
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:850
+msgid "No categories found!"
+msgstr "لم يتم العثور على فئات!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:634
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:1165
+msgid "Oops! Something went wrong. Please try again!"
+msgstr "أُووبس! هناك خطأ ما. حاول مرة اخرى!"
+
+#. Author of the plugin
+msgid "OPMC Australia Pty Ltd"
+msgstr "أو بي إم سي أستراليا بي تي واي المحدودة"
+
+#: /woocommerce-dropshipping/inc/class-wc-dropshipping-checkout.php:166
+#: /woocommerce-dropshipping/inc/class-wc-dropshipping-checkout.php:175
+msgid "Order number"
+msgstr "رقم الأمر"
+
+#: /woocommerce-dropshipping/complete.php:234
+#: /woocommerce-dropshipping/packingslip.php:234
+msgid "Order Number :"
+msgstr "رقم الأمر :"
+
+#: /woocommerce-dropshipping/templates/wc-dropshipping-dashboard.php:40
+msgid "Orders"
+msgstr "طلبات"
+
+#: /woocommerce-dropshipping/templates/wc-dropshipping-dashboard.php:75
+msgid "Orders Completed"
+msgstr "الطلبات مكتملة"
+
+#: /woocommerce-dropshipping/templates/wc-dropshipping-dashboard.php:68
+msgid "Orders in Progress"
+msgstr "الطلبات قيد التقدم"
+
+#: /woocommerce-dropshipping/templates/wc-dropshipping-dashboard.php:158
+msgid "Organise your store's products by their supplier."
+msgstr "تنظيم منتجات متجرك حسب مورديها."
+
+#: /woocommerce-dropshipping/templates/wc-dropshipping-dashboard.php:35
+msgid "Out of Stock"
+msgstr "إنتهى من المخزن"
+
+#: /woocommerce-dropshipping/templates/wc-dropshipping-dashboard.php:82
+msgid "Out of Stock Listings"
+msgstr "قوائم خارج المخزون"
+
+#: /woocommerce-dropshipping/complete.php:196
+#: /woocommerce-dropshipping/complete.php:218
+#: /woocommerce-dropshipping/packingslip.php:196
+#: /woocommerce-dropshipping/packingslip.php:218
+msgid "Payment Type :"
+msgstr "نوع الدفع :"
+
+#: /woocommerce-dropshipping/templates/wc-dropshipping-dashboard.php:89
+msgid "Pending Orders"
+msgstr "الأوامر المعلقة"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:253
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:1202
+msgid "Please enter a valid Type (simple or variable)!"
+msgstr "الرجاء إدخال نوع صالح (بسيط أو متغير)!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:444
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:1393
+msgid "Please enter a valid URL for this AliExpress Product!"
+msgstr "الرجاء إدخال عنوان URL صالح لمنتج AliExpress هذا!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:448
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:1397
+msgid "Please enter a valid URL for this AliExpress Store!"
+msgstr "الرجاء إدخال عنوان URL صالح لمتجر AliExpress هذا!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:1389
+msgid "Please enter AliExpress Store Name for this product!"
+msgstr "الرجاء إدخال اسم متجر AliExpress لهذا المنتج!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:452
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:1401
+msgid "Please enter AliExpress Store Price Range for this product!"
+msgstr "الرجاء إدخال نطاق سعر متجر AliExpress لهذا المنتج!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:1232
+msgid "Please specify a list of valid categories in array format!"
+msgstr "يرجى تحديد قائمة الفئات الصالحة بتنسيق المصفوفة!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:1246
+msgid ""
+"Please specify a list of valid categories in array format. Categories array "
+"must contain a valid numeric id parameter!"
+msgstr ""
+"الرجاء تحديد قائمة الفئات الصالحة في تنسيق الصفيف. يجب أن تحتوي مجموعة الفئات "
+"على معلمة معرف رقمية صالحة!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:1293
+msgid ""
+"Please specify a list of valid image URLs in array format. Images array must "
+"contain a valid image URL in src. Image type can be one of these: (jpg, gif, "
+"png, jpeg)."
+msgstr ""
+"يرجى تحديد قائمة بعناوين URL الصالحة للصور بتنسيق المصفوفة. يجب أن تحتوي مجموعة "
+"الصور على عنوان URL صالح للصورة في src. يمكن أن يكون نوع الصورة أحد هذه "
+"الأنواع: (jpg، gif، png، jpeg)."
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:1254
+msgid "Please specify a list of valid images URLs in array format!"
+msgstr "يرجى تحديد قائمة بعناوين URL للصور الصالحة بتنسيق المصفوفة!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:283
+msgid "Please specify a valid category array format!"
+msgstr "الرجاء تحديد تنسيق صفيف فئة صالح!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:297
+msgid ""
+"Please specify a valid category array format. Categories array must contain a "
+"valid numeric id parameter!"
+msgstr ""
+"الرجاء تحديد تنسيق صفيف فئة صالح. يجب أن تحتوي مجموعة الفئات على معلمة معرف "
+"رقمية صالحة!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:365
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:1314
+msgid ""
+"Please specify a valid list of Dimensions in array format. Dimensions array "
+"must contain a valid numeric length, width, and height parameters!"
+msgstr ""
+"الرجاء تحديد قائمة صالحة للأبعاد بتنسيق الصفيف. يجب أن تحتوي مجموعة الأبعاد على "
+"معلمات رقمية صالحة للطول والعرض والارتفاع!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:1357
+msgid ""
+"Please specify a valid list of Tags array format. Tags array must contain a "
+"valid numeric id parameter!"
+msgstr ""
+"الرجاء تحديد قائمة صالحة بتنسيق مصفوفة العلامات. يجب أن تحتوي مجموعة العلامات "
+"على معلمة معرف رقمية صالحة!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:394
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:1343
+msgid ""
+"Please specify a valid list of Tags in array format. Tags array must contain a "
+"valid numeric id parameter!"
+msgstr ""
+"الرجاء تحديد قائمة صالحة من العلامات بتنسيق الصفيف. يجب أن تحتوي مجموعة "
+"العلامات على معلمة معرف رقمية صالحة!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:408
+msgid ""
+"Please specify a valid list of Tagsin array format. Tags array must contain a "
+"valid numeric id parameter!"
+msgstr ""
+"الرجاء تحديد قائمة صالحة بتنسيق صفيف العلامات. يجب أن تحتوي مجموعة العلامات على "
+"معلمة معرف رقمية صالحة!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:386
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:1335
+msgid ""
+"Please specify a valid non-negative numeric height parameter within Dimensions "
+"array!"
+msgstr "يرجى تحديد معلمة ارتفاع رقمية صالحة وغير سالبة ضمن مصفوفة الأبعاد!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:373
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:1322
+msgid ""
+"Please specify a valid non-negative numeric length parameter within Dimensions "
+"array!"
+msgstr "الرجاء تحديد معلمة طول رقمية صالحة غير سالبة ضمن مصفوفة الأبعاد!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:379
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:1328
+msgid ""
+"Please specify a valid non-negative numeric width parameter within Dimensions "
+"array!"
+msgstr "الرجاء تحديد معلمة عرض رقمية صالحة وغير سالبة ضمن مصفوفة الأبعاد!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:305
+msgid "Please specify valid URLs to images in array format!"
+msgstr "يرجى تحديد عناوين URL صالحة للصور بتنسيق المصفوفة!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:344
+msgid ""
+"Please specify valid URLs to images in array format. Images array must contain "
+"a valid image URL in src. Image type can be one of these: (jpg, gif, png, jpeg)."
+msgstr ""
+"يرجى تحديد عناوين URL صالحة للصور بتنسيق المصفوفة. يجب أن تحتوي مجموعة الصور "
+"على عنوان URL صالح للصورة في src. يمكن أن يكون نوع الصورة أحد هذه الأنواع: "
+"(jpg، gif، png، jpeg)."
+
+#: /woocommerce-dropshipping/templates/wc-dropshipping-dashboard.php:140
+msgid "Plugin Setup"
+msgstr "إعداد البرنامج المساعد"
+
+#: /woocommerce-dropshipping/inc/class-wc-dropshipping-orders.php:732
+msgid "'New Order #%1$s From %2$s"
+msgstr "'طلب جديد #%1$s من %2$s"
+
+#: /woocommerce-dropshipping/complete.php:614
+#: /woocommerce-dropshipping/complete.php:646
+#: /woocommerce-dropshipping/packingslip.php:614
+#: /woocommerce-dropshipping/packingslip.php:646
+msgid "Price"
+msgstr "سعر"
+
+#: /woocommerce-dropshipping/complete.php:488
+#: /woocommerce-dropshipping/packingslip.php:488
+msgid "Product"
+msgstr "منتج"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:500
+msgid "Product already exists. Please select another product."
+msgstr "المنتج موجود بالفعل. الرجاء تحديد منتج آخر."
+
+#: /woocommerce-dropshipping/templates/wc-dropshipping-dashboard.php:45
+msgid "Projected Profit"
+msgstr "الربح المتوقع"
+
+#: /woocommerce-dropshipping/templates/wc-dropshipping-dashboard.php:30
+msgid "Published Listings"
+msgstr "القوائم المنشورة"
+
+#: /woocommerce-dropshipping/complete.php:512
+#: /woocommerce-dropshipping/packingslip.php:512
+msgid "Quantity"
+msgstr "كمية"
+
+#: /woocommerce-dropshipping/templates/wc-dropshipping-dashboard.php:50
+msgid "Recent Order Data"
+msgstr "بيانات الطلب الأخيرة"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:221
+msgid "Setting for price rate is not set"
+msgstr "لم يتم تعيين الإعداد لسعر السعر"
+
+#: /woocommerce-dropshipping/complete.php:1080
+#: /woocommerce-dropshipping/complete.php:1241
+#: /woocommerce-dropshipping/packingslip.php:1080
+#: /woocommerce-dropshipping/packingslip.php:1241
+msgid "Shipping Address"
+msgstr "عنوان الشحن"
+
+#: /woocommerce-dropshipping/complete.php:838
+#: /woocommerce-dropshipping/complete.php:848
+#: /woocommerce-dropshipping/packingslip.php:838
+#: /woocommerce-dropshipping/packingslip.php:848
+msgid "Shipping Cost"
+msgstr "تكلفة الشحن"
+
+#: /woocommerce-dropshipping/complete.php:464
+#: /woocommerce-dropshipping/packingslip.php:464
+msgid "SKU"
+msgstr "رمز التخزين التعريفي"
+
+#: /woocommerce-dropshipping/complete.php:464
+#: /woocommerce-dropshipping/packingslip.php:464
+msgid "Customer Email : %s"
+msgstr "البريد الإلكتروني للعميل: %s"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:1559
+msgid "Something went wrong. Please try again!"
+msgstr "هناك خطأ ما. حاول مرة اخرى!"
+
+#: /woocommerce-dropshipping/complete.php:868
+#: /woocommerce-dropshipping/packingslip.php:868
+msgid "taxes"
+msgstr "الضرائب"
+
+#: /woocommerce-dropshipping/complete.php:1298
+msgid "Thank you!"
+msgstr "شكرًا لك!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:415
+msgid "The Attributes parameter must be in a valid array format!"
+msgstr "يجب أن تكون معلمة السمات بتنسيق صفيف صالح!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:1364
+msgid "The Attributess parameter must be in a valid array format!"
+msgstr "يجب أن تكون معلمة Attributess بتنسيق صفيف صالح!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:879
+msgid "The Category Parent parameter is required and must be numeric value!"
+msgstr "معلمة الفئة الأصل مطلوبة ويجب أن تكون ذات قيمة رقمية!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:419
+msgid "The Default Attributes parameter must be in a valid array format!"
+msgstr "يجب أن تكون معلمة السمات الافتراضية بتنسيق صفيف صالح!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:1368
+msgid "The Default Attributess parameter must be in a valid array format!"
+msgstr "يجب أن تكون معلمة السمات الافتراضية بتنسيق صفيف صالح!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:273
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:875
+msgid "The Description parameter is required!"
+msgstr "معلمة الوصف مطلوبة!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:957
+msgid "The Id parameter is required and must be a number!"
+msgstr "معلمة المعرف مطلوبة ويجب أن تكون رقمًا!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:350
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:1299
+msgid ""
+"The Manage Stock parameter is required and must be a boolean (true/false) value!"
+msgstr "معلمة إدارة المخزون مطلوبة ويجب أن تكون قيمة منطقية (صواب/خطأ)!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:871
+msgid "The Name parameter is required!"
+msgstr "معلمة الاسم مطلوبة!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:428
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:1377
+msgid "The Number Of Orders parameter must be a valid non-negative numeric value!"
+msgstr "يجب أن تكون معلمة \"عدد الطلبات\" قيمة رقمية صالحة وغير سالبة!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:2002
+msgid "The Order Id does not exist!"
+msgstr "معرف الطلب غير موجود!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:977
+msgid "The order id does not exist."
+msgstr "معرف الطلب غير موجود."
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:2007
+msgid "The Order Id parameter is required!"
+msgstr "معلمة معرف الطلب مطلوبة!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:2012
+msgid "The Order Status parameter is required!"
+msgstr "معلمة حالة الطلب مطلوبة!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:261
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:1210
+msgid ""
+"The Price parameter is required and must be a valid non-negative numeric value!"
+msgstr "معلمة السعر مطلوبة ويجب أن تكون قيمة رقمية صالحة وغير سالبة!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:265
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:1214
+msgid ""
+"The Regular Price parameter is required and must be a valid non-negative "
+"numeric value!"
+msgstr "معلمة السعر العادي مطلوبة ويجب أن تكون قيمة رقمية صالحة وغير سالبة!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:269
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:1218
+msgid "The Sale Price parameter must be a valid non-negative numeric value!"
+msgstr "يجب أن تكون معلمة سعر البيع قيمة رقمية صالحة وغير سالبة!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:277
+msgid "The Short Description parameter is required!"
+msgstr "معلمة الوصف القصير مطلوبة!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:257
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:1206
+msgid "The SKU parameter is required!"
+msgstr "معلمة SKU مطلوبة!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:354
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:1303
+msgid ""
+"The Stock Quantity parameter is required and must be a valid non-negative "
+"number!"
+msgstr "معلمة كمية المخزون مطلوبة ويجب أن تكون رقمًا صالحًا وغير سالبًا!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:249
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:1198
+msgid "The Title parameter is required!"
+msgstr "معلمة العنوان مطلوبة!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:423
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:1372
+msgid "The Variations parameter must be in a valid array format!"
+msgstr "يجب أن تكون معلمة الاختلافات بتنسيق صفيف صالح!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:358
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:1307
+msgid "The Weight parameter must be a valid non-negative numeric value!"
+msgstr "يجب أن تكون معلمة الوزن قيمة رقمية صالحة وغير سالبة!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:1090
+msgid "The woo API key  parameter is required!"
+msgstr "المعلمة الرئيسية woo API مطلوبة!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:1086
+msgid "The woo url parameter is required!"
+msgstr "معلمة woo url مطلوبة!"
+
+#: /woocommerce-dropshipping/complete.php:915
+#: /woocommerce-dropshipping/complete.php:932
+#: /woocommerce-dropshipping/packingslip.php:915
+#: /woocommerce-dropshipping/packingslip.php:932
+msgid "Total"
+msgstr "المجموع"
+
+#: /woocommerce-dropshipping/complete.php:346
+#: /woocommerce-dropshipping/packingslip.php:346
+msgid "Tracking Number:"
+msgstr "عدد تتبع:"
+
+#: /woocommerce-dropshipping/complete.php:543
+#: /woocommerce-dropshipping/complete.php:575
+#: /woocommerce-dropshipping/packingslip.php:543
+#: /woocommerce-dropshipping/packingslip.php:575
+msgid "Type Of Package"
+msgstr "نوع الحزمة"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:1160
+msgid "URL mismatch."
+msgstr "عنوان URL غير متطابق."
+
+#: /woocommerce-dropshipping/woocommerce-dropshipping.php:159
+#, php-format
+msgid "We hope you enjoy your order. Thank you for shopping with %1$s"
+msgstr "نأمل أن تستمتع بطلبك. شكرًا لك على التسوق مع %1$s"
+
+#. 1: href link to Fileinfo extension php doc
+#: /woocommerce-dropshipping/woocommerce-dropshipping.php:55
+#, php-format
+msgid "WooCommerce Dropshipping requires %s to be installed on your server."
+msgstr "يتطلب WooCommerce Dropshipping تثبيت %s على خادمك."

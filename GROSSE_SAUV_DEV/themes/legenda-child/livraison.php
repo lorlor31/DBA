@@ -948,6 +948,7 @@ if (!function_exists('process_ywapo_meta_data')) {
                 }
             }
         }
+        var_dump($addons_info);
         return $addons_info;
     }
 }

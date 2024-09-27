@@ -1,0 +1,1767 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WooCommerce Dropshipping\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-03-11 18:45+0530\n"
+"PO-Revision-Date: 2024-03-21 12:11+0530\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: da\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.4.2\n"
+"X-Loco-Version: 2.5.3; wp-5.7.2\n"
+"X-Domain: woocommerce-dropshipping\n"
+
+#: ali-api/ali-inc/aliprodfilter.inc.php:15
+msgid "Aliexpress Product"
+msgstr "Aliexpress produkt"
+
+#: ali-api/ali-inc/aliprodfilter.inc.php:17
+msgid "Enable this option if this product is from Aliexpress"
+msgstr "Aktiver denne mulighed, hvis dette produkt er fra Aliexpress"
+
+#: ali-api/class-wc-dropshipping-product-extra-fields.php:291
+msgid "Amazon Product ID"
+msgstr "Amazon produkt-id"
+
+#: ali-api/class-wc-dropshipping-product-extra-fields.php:361
+msgid "Amazon Affiliate ID"
+msgstr "Amazon Affiliate ID"
+
+#: ali-api/class-wc-dropshipping-product-extra-fields.php:392
+#: ali-api/class-wc-dropshipping-product-extra-fields.php:423
+msgid "Cost of goods"
+msgstr "Vareomkostninger"
+
+#: ali-api/class-wc-dropshipping-product-extra-fields.php:425
+msgid "Cost of goods value included in the supplier email"
+msgstr "Vareværdien inkluderet i leverandørens e-mail"
+
+#: ali-api/class-wc-dropshipping-product-extra-fields.php:453
+msgid "AliExpress Orders"
+msgstr "AliExpress ordrer"
+
+#: ali-api/class-wc-dropshipping-product-extra-fields.php:454
+msgid "AliExpress Orders placed."
+msgstr "AliExpress Ordrer afgivet."
+
+#: ali-api/class-wc-dropshipping-product-extra-fields.php:476
+msgid "AliExpress Supplier"
+msgstr "AliExpress leverandør"
+
+#: ali-api/class-wc-dropshipping-product-extra-fields.php:516
+msgid "Product URL"
+msgstr "Produkt URL"
+
+#: ali-api/class-wc-dropshipping-product-extra-fields.php:517
+msgid "Enter URL to AliExpress Product"
+msgstr "Indtast URL til AliExpress-produkt"
+
+#: ali-api/class-wc-dropshipping-product-extra-fields.php:522
+msgid "Store Name"
+msgstr "Butiksnavn"
+
+#: ali-api/class-wc-dropshipping-product-extra-fields.php:523
+msgid "AliExpress Supplier Store Name"
+msgstr "AliExpress leverandørbutiks navn"
+
+#: ali-api/class-wc-dropshipping-product-extra-fields.php:532
+msgid "Store URL"
+msgstr "Gem URL"
+
+#: ali-api/class-wc-dropshipping-product-extra-fields.php:533
+msgid "AliExpress Supplier Store URL"
+msgstr "AliExpress Supplier Store URL"
+
+#: ali-api/class-wc-dropshipping-product-extra-fields.php:542
+msgid "Store Price Range"
+msgstr "Butiks prisklasse"
+
+#: ali-api/class-wc-dropshipping-product-extra-fields.php:543
+msgid "AliExpress Supplier Store Price Range"
+msgstr "AliExpress Leverandør Butik Prisklasse"
+
+#: ali-api/class-wc-dropshipping-product-extra-fields.php:552
+msgid "Currency"
+msgstr "Betalingsmiddel"
+
+#: ali-api/class-wc-dropshipping-product-extra-fields.php:613
+#: ali-api/class-wc-dropshipping-product-extra-fields.php:644
+msgid "Description - Type of Package"
+msgstr "Beskrivelse - Pakketype"
+
+#: ali-api/class-wc-dropshipping-product-extra-fields.php:646
+msgid "Description - Type of Package value included in the supplier email"
+msgstr "Beskrivelse - Type pakkeværdi inkluderet i leverandørens e-mail"
+
+#: ali-api/class-wc-dropshipping-product-extra-fields.php:756
+msgid "Estimated Profit : "
+msgstr "Estimeret overskud:"
+
+#: ali-api/woocommerce_aliexpress.php:2491
+msgid "AliExpress Action"
+msgstr "AliExpress Action"
+
+#: ali-api/woocommerce_aliexpress.php:2532
+msgid "Place Order"
+msgstr "Angiv bestilling"
+
+#: ali-api/woocommerce_aliexpress.php:2624
+msgid "AliExpress order status has been changed to "
+msgstr "AliExpress ordrestatus er blevet ændret til"
+
+#: ali-api/woocommerce_aliexpress.php:2789
+msgid "All Orders"
+msgstr "Alle ordrer"
+
+#: assets/js/jquery-ui.min.js:8
+msgid "'"
+msgstr "'"
+
+#: inc/class-wc-dropshipping-admin.php:281
+msgid " Import Inventory .CSV"
+msgstr "Importer beholdning .CSV"
+
+#: inc/class-wc-dropshipping-admin.php:428
+#: inc/class-wc-dropshipping-admin.php:510
+msgid " Account #"
+msgstr "Konto #"
+
+#: inc/class-wc-dropshipping-admin.php:430
+msgid ""
+"Your store&apos;s account number with this supplier. Leave blank if you "
+"don&apos;t have an account number"
+msgstr ""
+"Din butiks kontonummer hos denne leverandør. Lad feltet stå tomt, hvis du "
+"ikke har et kontonummer"
+
+#: inc/class-wc-dropshipping-admin.php:433
+#: inc/class-wc-dropshipping-admin.php:516
+msgid " Email Addresses"
+msgstr "Email adresse"
+
+#: inc/class-wc-dropshipping-admin.php:435
+msgid ""
+"When a customer purchases a product from you, the supplier will be sent an "
+"notification via email. List the supplier&apos;s email addresses that should "
+"be notified when a new order is placed."
+msgstr ""
+"Når en kunde køber et produkt hos dig, vil leverandøren få tilsendt en "
+"meddelelse via e-mail. Angiv leverandørens e-mailadresser, der skal have "
+"besked, når en ny ordre afgives."
+
+#: inc/class-wc-dropshipping-admin.php:443
+#: inc/class-wc-dropshipping-admin.php:526
+msgid "Enable specific delivery location for the supplier."
+msgstr "Aktiver specifik leveringssted for leverandøren."
+
+#: inc/class-wc-dropshipping-admin.php:512
+msgid ""
+" Your store&apos;s account number with this supplier. Leave blank if you "
+"don&apos;t have an account number"
+msgstr ""
+"Din butiks kontonummer hos denne leverandør. Lad feltet stå tomt, hvis du "
+"ikke har et kontonummer"
+
+#: inc/class-wc-dropshipping-admin.php:518
+msgid ""
+" When a customer purchases a product from you, the supplier will be sent an "
+"notification via email. List the supplier&apos;s email addresses that should "
+"be notified when a new order is placed."
+msgstr ""
+"Når en kunde køber et produkt hos dig, vil leverandøren få tilsendt en "
+"meddelelse via e-mail. Angiv leverandørens e-mailadresser, der skal have "
+"besked, når en ny ordre afgives."
+
+#: inc/class-wc-dropshipping-admin.php:537
+msgid "Address line 1"
+msgstr "Adresse linie 1"
+
+#: inc/class-wc-dropshipping-admin.php:542
+msgid " Address line 2"
+msgstr "Adresselinje 2"
+
+#: inc/class-wc-dropshipping-admin.php:547
+msgid "City"
+msgstr "By"
+
+#: inc/class-wc-dropshipping-admin.php:552
+msgid "Country/State"
+msgstr "Land/stat"
+
+#: inc/class-wc-dropshipping-admin.php:557
+msgid "Postcode/ZIP"
+msgstr "Postnummer/postnummer"
+
+#: inc/class-wc-dropshipping-admin.php:564
+msgid "Supplier Inventory CSV Import Settings"
+msgstr "Indstillinger for CSV-import af leverandørbeholdning"
+
+#: inc/class-wc-dropshipping-admin.php:565
+msgid ""
+"(If you do not receive inventory statuses from your supplier in the form of "
+"a .CSV file, leave these settings blank)"
+msgstr ""
+"(Hvis du ikke modtager lagerstatusser fra din leverandør i form af en .CSV-"
+"fil, skal du lade disse indstillinger være tomme)"
+
+#: inc/class-wc-dropshipping-admin.php:568
+msgid "CSV File Column Delimiter"
+msgstr "CSV-fil kolonneafgrænser"
+
+#: inc/class-wc-dropshipping-admin.php:570
+msgid ""
+"Please indicate what character is used to separate fields in the CSV file. "
+"Normally this is a comma"
+msgstr ""
+"Angiv venligst hvilket tegn der bruges til at adskille felter i CSV-filen. "
+"Normalt er dette et komma"
+
+#: inc/class-wc-dropshipping-admin.php:576
+msgid "CSV SKU Column #"
+msgstr "CSV SKU kolonne #"
+
+#: inc/class-wc-dropshipping-admin.php:578
+msgid ""
+"Please indicate which column in the CSV file corresponds to product SKUs. "
+"Note that this should be the same SKU that the manufacturer uses. "
+"WooCommerce Dropshipping will automatically add the SKU code for products "
+"from this suppler when you upload a .CSV file"
+msgstr ""
+"Angiv venligst, hvilken kolonne i CSV-filen, der svarer til produkt-SKU'er. "
+"Bemærk, at dette skal være den samme SKU, som producenten bruger. "
+"WooCommerce Dropshipping tilføjer automatisk SKU-koden for produkter fra "
+"denne leverandør, når du uploader en .CSV-fil"
+
+#: inc/class-wc-dropshipping-admin.php:584
+msgid "CSV Type"
+msgstr "CSV-type"
+
+#: inc/class-wc-dropshipping-admin.php:598
+msgid "Please indicate how the .CSV file&apos;s data should be read. "
+msgstr "Angiv venligst, hvordan .CSV-filens data skal læses."
+
+#: inc/class-wc-dropshipping-admin.php:598
+msgid "Quantity on Hand "
+msgstr "Mængde ved hånden"
+
+#: inc/class-wc-dropshipping-admin.php:598
+msgid ""
+"- If your supplier sends you a .CSV file that contains the quantity that "
+"they have remaining in their inventory, you should use this method. Any "
+"number above zero indicates that the product is still in stock."
+msgstr ""
+"- Hvis din leverandør sender dig en .CSV-fil, der indeholder den mængde, de "
+"har tilbage på deres lager, skal du bruge denne metode. Ethvert tal over nul "
+"indikerer, at produktet stadig er på lager."
+
+#: inc/class-wc-dropshipping-admin.php:598
+msgid " In-Stock Indicator "
+msgstr "In-Stock Indikator"
+
+#: inc/class-wc-dropshipping-admin.php:598
+msgid ""
+"- Use this method if your supplier sends you a .CSV file that includes a "
+"column indicating whether or not a product is in stock.  This is typically "
+"in either a Y/N or 1/0 format to indicate whether or not the product is in "
+"stock."
+msgstr ""
+"- Brug denne metode, hvis din leverandør sender dig en .CSV-fil, der "
+"indeholder en kolonne, der angiver, om et produkt er på lager eller ej. "
+"Dette er typisk i enten J/N- eller 1/0-format for at angive, om produktet er "
+"på lager eller ej."
+
+#: inc/class-wc-dropshipping-admin.php:601
+msgid "CSV Inventory Quantity Column #"
+msgstr "CSV-beholdningsmængde kolonne #"
+
+#: inc/class-wc-dropshipping-admin.php:603
+msgid ""
+"Please indicate which column in the .CSV file corresponds to the quantity of "
+"inventory available"
+msgstr ""
+"Angiv venligst, hvilken kolonne i .CSV-filen, der svarer til den "
+"tilgængelige lagermængde"
+
+#: inc/class-wc-dropshipping-admin.php:608
+msgid "In-Stock Indicator Column #"
+msgstr "In-stock indikator kolonne #"
+
+#: inc/class-wc-dropshipping-admin.php:610
+msgid ""
+"Please indicate which column in the .CSV file indicates whether or not a "
+"product is in stock"
+msgstr ""
+"Angiv venligst, hvilken kolonne i .CSV-filen, der angiver, om et produkt er "
+"på lager eller ej"
+
+#: inc/class-wc-dropshipping-admin.php:614
+msgid "In-Stock Indicator Value"
+msgstr "In-Stock Indicator Værdi"
+
+#: inc/class-wc-dropshipping-admin.php:616
+msgid ""
+"Please input the value (ie. Y or 1) in the column defined above that "
+"indicates whether or not a product is in stock"
+msgstr ""
+"Indtast venligst værdien (dvs. Y eller 1) i kolonnen defineret ovenfor, der "
+"angiver, om et produkt er på lager eller ej"
+
+#: inc/class-wc-dropshipping-admin.php:746
+msgid "Hi "
+msgstr ""
+
+#: inc/class-wc-dropshipping-admin.php:748
+msgid "Thanks For Registration"
+msgstr "Tak for tilmeldingen"
+
+#: inc/class-wc-dropshipping-admin.php:751
+msgid "Your User Name:&nbsp;"
+msgstr "Dit brugernavn:"
+
+#: inc/class-wc-dropshipping-admin.php:752
+msgid "Your Password:&nbsp;"
+msgstr "Din adgangskode:"
+
+#: inc/class-wc-dropshipping-admin.php:753
+msgid "Change Your Password Once you login"
+msgstr "Skift din adgangskode, når du logger ind"
+
+#: inc/class-wc-dropshipping-admin.php:754
+msgid "Login URL: "
+msgstr "Login URL:"
+
+#: inc/class-wc-dropshipping-admin.php:764
+#: inc/class-wc-dropshipping-csv-import.php:672
+msgid "User already exists.  Password inherited."
+msgstr "Bruger eksistere allerede. Adgangskode arvet."
+
+#: inc/class-wc-dropshipping-checkout.php:108
+msgid "Order Number"
+msgstr "Ordrenummer"
+
+#: inc/class-wc-dropshipping-checkout.php:143
+msgid "Tracking Number"
+msgstr "Tracking nummer"
+
+#: inc/class-wc-dropshipping-checkout.php:208
+msgid "POD"
+msgstr "POD"
+
+#: inc/class-wc-dropshipping-checkout.php:386
+msgid "Track Your Order"
+msgstr "Spor din ordre"
+
+#: inc/class-wc-dropshipping-checkout.php:388
+msgid "Shipping Date"
+msgstr "Afsendelses-dato"
+
+#: inc/class-wc-dropshipping-checkout.php:390
+#: inc/class-wc-dropshipping-product.php:121
+msgid "Tracking Number(s)"
+msgstr "Sporingsnumre"
+
+#: inc/class-wc-dropshipping-checkout.php:392
+#: inc/class-wc-dropshipping-product.php:123
+msgid "Shipping Company"
+msgstr "Fragtfirma"
+
+#: inc/class-wc-dropshipping-checkout.php:394
+#: inc/class-wc-dropshipping-product.php:125
+msgid "Notes"
+msgstr "Noter"
+
+#: inc/class-wc-dropshipping-csv-import.php:259
+#: inc/class-wc-dropshipping-csv-import.php:431
+#: inc/class-wc-dropshipping-csv-import.php:448
+msgid "Supplier Id"
+msgstr "Leverandør-id"
+
+#: inc/class-wc-dropshipping-csv-import.php:260
+#: inc/class-wc-dropshipping-csv-import.php:432
+msgid "Supplier Name"
+msgstr "Leverandør Navn"
+
+#: inc/class-wc-dropshipping-csv-import.php:261
+#: inc/class-wc-dropshipping-csv-import.php:433
+msgid "Supplier Slug"
+msgstr "Leverandør Slug"
+
+#: inc/class-wc-dropshipping-csv-import.php:262
+#: inc/class-wc-dropshipping-csv-import.php:434
+msgid "Supplier Description"
+msgstr "Leverandørbeskrivelse"
+
+#: inc/class-wc-dropshipping-csv-import.php:263
+#: inc/class-wc-dropshipping-csv-import.php:435
+msgid "Supplier Email"
+msgstr "Leverandør e-mail"
+
+#: inc/class-wc-dropshipping-csv-import.php:264
+#: inc/class-wc-dropshipping-csv-import.php:436
+msgid "Supplier Account Number"
+msgstr "Leverandørkontonummer"
+
+#: inc/class-wc-dropshipping-orders.php:698
+#: inc/class-wc-dropshipping-orders.php:772
+#, php-format
+msgid "New Order #%1$s From %2$s"
+msgstr "Ny ordre #%1$s Fra %2$s"
+
+#: inc/class-wc-dropshipping-orders.php:717
+msgid "To mark this order as shipped please click the following link:"
+msgstr "Klik på følgende link for at markere denne ordre som afsendt:"
+
+#: inc/class-wc-dropshipping-orders.php:717
+msgid "Mark as shipped"
+msgstr "Marker som afsendt"
+
+#: inc/class-wc-dropshipping-orders.php:721
+#: inc/class-wc-dropshipping-orders.php:802
+msgid "View order in dashboard"
+msgstr "Se ordre i dashboard"
+
+#: inc/class-wc-dropshipping-orders.php:768
+#, php-format
+msgid "Order #%s is completed"
+msgstr "Ordre #%s er gennemført"
+
+#: inc/class-wc-dropshipping-orders.php:770
+#, php-format
+msgid "Order #%s is cancelled"
+msgstr "Ordre #%s er annulleret"
+
+#: inc/class-wc-dropshipping-orders.php:976
+msgid "Filter by Supplier"
+msgstr "Filtrer efter leverandør"
+
+#: inc/class-wc-dropshipping-product.php:119
+msgid "Date"
+msgstr "Dato"
+
+#: inc/class-wc-dropshipping-settings.php:47 woocommerce-dropshipping.php:864
+#: woocommerce-dropshipping.php:865
+msgid "Dropshipping"
+msgstr "Dropshipping"
+
+#: inc/class-wc-dropshipping-settings.php:1363
+msgid "AliExpress Settings"
+msgstr "AliExpress-indstillinger"
+
+#: inc/class-wc-dropshipping-settings.php:1365
+#: inc/class-wc-dropshipping-settings.php:1486
+#: inc/class-wc-dropshipping-settings.php:1488
+msgid "Supplier Email Notifications"
+msgstr "Leverandør-e-mailmeddelelser"
+
+#: inc/class-wc-dropshipping-settings.php:1367
+#: inc/class-wc-dropshipping-settings.php:1547
+msgid "Packing Slips"
+msgstr "Pakkesedler"
+
+#: inc/class-wc-dropshipping-settings.php:1369
+#: inc/class-wc-dropshipping-settings.php:2238
+msgid "Customised Supplier Emails"
+msgstr "Tilpassede leverandør-e-mails"
+
+#: inc/class-wc-dropshipping-settings.php:1371
+msgid "SMTP Options"
+msgstr "SMTP-indstillinger"
+
+#: inc/class-wc-dropshipping-settings.php:1373
+#: inc/class-wc-dropshipping-settings.php:2464
+msgid "Price Calculator"
+msgstr "Prisberegner"
+
+#: inc/class-wc-dropshipping-settings.php:1380
+msgid "AliExpress Chrome Browser Extension (CBE) Settings"
+msgstr "Indstillinger for AliExpress Chrome Browser Extension (CBE)."
+
+#: inc/class-wc-dropshipping-settings.php:1386
+msgid "Enable Support for the AliExpress CBE:"
+msgstr "Aktiver support til AliExpress CBE:"
+
+#: inc/class-wc-dropshipping-settings.php:1407
+msgid "Generate AliExpress API Key:"
+msgstr "Generer AliExpress API-nøgle:"
+
+#: inc/class-wc-dropshipping-settings.php:1410
+msgid "Generate AliExpress API Key"
+msgstr "Generer AliExpress API-nøgle:"
+
+#: inc/class-wc-dropshipping-settings.php:1429
+msgid "Price Markup Method:"
+msgstr "Prisopmærkningsmetode:"
+
+#: inc/class-wc-dropshipping-settings.php:1455
+msgid "Percentage Offset"
+msgstr "Forskydning i procent"
+
+#: inc/class-wc-dropshipping-settings.php:1469
+msgid "Markup Offset Value:"
+msgstr "Markup Offset-værdi:"
+
+#: inc/class-wc-dropshipping-settings.php:1490
+msgid ""
+"When an order&apos;s status switches to processing, emails are sent to each "
+"supplier to notify them to ship their products."
+msgstr ""
+"Når en ordres status skifter til behandling, sendes der e-mails til hver "
+"leverandør for at informere dem om at sende deres produkter."
+
+#: inc/class-wc-dropshipping-settings.php:1490
+msgid ""
+" You can set a custom message for the suppliers in the box below to be "
+"included in these emails."
+msgstr ""
+"Du kan indstille en brugerdefineret besked til leverandørerne i boksen "
+"nedenfor for at blive inkluderet i disse e-mails."
+
+#: inc/class-wc-dropshipping-settings.php:1494
+msgid "Email order note:"
+msgstr "E-mail ordrebemærkning:"
+
+#: inc/class-wc-dropshipping-settings.php:1506
+msgid "Include 'View order' link in suppliers email:"
+msgstr "Inkluder linket 'Se ordre' i leverandørens e-mail:"
+
+#: inc/class-wc-dropshipping-settings.php:1517
+msgid "Do not send renewal email to suppliers:"
+msgstr "Send ikke fornyelses-e-mail til leverandører:"
+
+#: inc/class-wc-dropshipping-settings.php:1527
+msgid ".CSV File Inventory Update Settings"
+msgstr "Indstillinger for opdatering af .CSV-filbeholdning"
+
+#: inc/class-wc-dropshipping-settings.php:1529
+msgid ""
+".These options relate to how your store processes data imported from CSV "
+"spreadsheet files, if you receive them from your supplier"
+msgstr ""
+".Disse muligheder relaterer sig til, hvordan din butik behandler data "
+"importeret fra CSV-regnearksfiler, hvis du modtager dem fra din leverandør"
+
+#: inc/class-wc-dropshipping-settings.php:1535
+msgid "Inventory Buffer:"
+msgstr "Lagerbuffer:"
+
+#: inc/class-wc-dropshipping-settings.php:1541
+msgid ""
+"If the supplier&apos;s stock falls below this number on an imported "
+"spreadsheet, the item will be considered out of stock in your store."
+msgstr ""
+"Hvis leverandørens lager falder til under dette tal på et importeret "
+"regneark, vil varen blive betragtet som udsolgt i din butik."
+
+#: inc/class-wc-dropshipping-settings.php:1553
+msgid "Attach PDF to supplier Email"
+msgstr "Vedhæft PDF til leverandørens e-mail"
+
+#: inc/class-wc-dropshipping-settings.php:1560
+msgid "Header"
+msgstr "Header"
+
+#: inc/class-wc-dropshipping-settings.php:1564
+msgid "Option to view packing slip."
+msgstr "Mulighed for at se følgeseddel."
+
+#: inc/class-wc-dropshipping-settings.php:1579
+msgid "Show logo in the header."
+msgstr "Vis logo i overskriften."
+
+#: inc/class-wc-dropshipping-settings.php:1587
+#: inc/class-wc-dropshipping-settings.php:1638
+msgid "NOTE:"
+msgstr "BEMÆRK:"
+
+#: inc/class-wc-dropshipping-settings.php:1587
+msgid "For best results, please keep logo dimensions within 200x60 px"
+msgstr ""
+"For de bedste resultater skal du holde logoets dimensioner inden for 200x60 "
+"px"
+
+#: inc/class-wc-dropshipping-settings.php:1593
+msgid "Url to Logo:"
+msgstr "URL til logo:"
+
+#: inc/class-wc-dropshipping-settings.php:1604
+msgid "Logo Width:"
+msgstr "Logobredde:"
+
+#: inc/class-wc-dropshipping-settings.php:1620
+msgid "Show order date beside order number."
+msgstr "Vis ordredato ved siden af ​​ordrenummer."
+
+#: inc/class-wc-dropshipping-settings.php:1630
+msgid "Show shipping information."
+msgstr "Vis forsendelsesoplysninger."
+
+#: inc/class-wc-dropshipping-settings.php:1638
+msgid ""
+"For best results, please make sure that any custom terms or phrases listed "
+"below are kept to a reasonable length. If your terms are too long, it may "
+"cause text wrapping and alignment issues with your packing slips."
+msgstr ""
+"For de bedste resultater skal du sørge for, at alle tilpassede udtryk eller "
+"sætninger, der er anført nedenfor, holdes i en rimelig længde. Hvis dine "
+"betingelser er for lange, kan det forårsage problemer med tekstombrydning og "
+"justering af dine følgesedler."
+
+#: inc/class-wc-dropshipping-settings.php:1642
+msgid "Chosen Shipping Method Label:"
+msgstr "Valgt forsendelsesmetode etiket:"
+
+#: inc/class-wc-dropshipping-settings.php:1653
+msgid "Payment Type Label:"
+msgstr "Betalingstype etiket:"
+
+#: inc/class-wc-dropshipping-settings.php:1668
+msgid "Display the \"Customer Note\" into the Dropshipper packing slip."
+msgstr "Vis \"kundenotatet\" på Dropshipper-pakkesedlen."
+
+#: inc/class-wc-dropshipping-settings.php:1676
+msgid "Products"
+msgstr "Produkter"
+
+#: inc/class-wc-dropshipping-settings.php:1682
+msgid "Show product thumbnail image."
+msgstr "Vis produktminiaturebillede."
+
+#: inc/class-wc-dropshipping-settings.php:1691
+msgid "Image Label:"
+msgstr "Billedetiket:"
+
+#: inc/class-wc-dropshipping-settings.php:1704
+msgid "SKU Label:"
+msgstr "SKU-mærke:"
+
+#: inc/class-wc-dropshipping-settings.php:1714
+msgid "Product Label:"
+msgstr "Produktetiket:"
+
+#: inc/class-wc-dropshipping-settings.php:1724
+msgid "Quantity Label:"
+msgstr "Mængdemærke:"
+
+#: inc/class-wc-dropshipping-settings.php:1738
+msgid ""
+"Additional field in the \"Add/Edit Product\" to specify the \"Type of "
+"Package\""
+msgstr ""
+"Yderligere felt i \"Tilføj/Rediger produkt\" for at angive \"Type of "
+"Package\""
+
+#: inc/class-wc-dropshipping-settings.php:1749
+msgid "Type Of Package Label:"
+msgstr "Type pakkeetiket:"
+
+#: inc/class-wc-dropshipping-settings.php:1764
+msgid "Show product prices."
+msgstr "Vis produktpriser."
+
+#: inc/class-wc-dropshipping-settings.php:1774
+msgid "Price Label:"
+msgstr "Prismærke:"
+
+#: inc/class-wc-dropshipping-settings.php:1789
+msgid "Show Cost instead of Sell Price."
+msgstr "Vis pris i stedet for salgspris."
+
+#: inc/class-wc-dropshipping-settings.php:1799
+msgid "Show Tax Split."
+msgstr "Vis skatteopdeling."
+
+#: inc/class-wc-dropshipping-settings.php:1811
+msgid "Company Details"
+msgstr "Virksomhedsoplysninger"
+
+#: inc/class-wc-dropshipping-settings.php:1815
+msgid "Company Name:"
+msgstr "Firmanavn:"
+
+#: inc/class-wc-dropshipping-settings.php:1829
+msgid "Company Address Label:"
+msgstr "Virksomhedens adressemærke:"
+
+#: inc/class-wc-dropshipping-settings.php:1844
+msgid "Address:"
+msgstr "Adresse:"
+
+#: inc/class-wc-dropshipping-settings.php:1854
+msgid "Customer Service Email:"
+msgstr "Kundeservice email:"
+
+#: inc/class-wc-dropshipping-settings.php:1866
+msgid "Customer Service Phone Number:"
+msgstr "Kundeservice telefonnummer:"
+
+#: inc/class-wc-dropshipping-settings.php:1880
+msgid "Show shipping address at the bottom."
+msgstr "Vis leveringsadresse nederst."
+
+#: inc/class-wc-dropshipping-settings.php:1890
+msgid "Shipping Address Label:"
+msgstr "Leveringsadresselabel:"
+
+#: inc/class-wc-dropshipping-settings.php:1905
+msgid "Show billing address at the bottom."
+msgstr "Vis leveringsadresse nederst."
+
+#: inc/class-wc-dropshipping-settings.php:1917
+msgid "Billing Address Label:"
+msgstr "Faktureringsadresseetiket:"
+
+#: inc/class-wc-dropshipping-settings.php:1939
+msgid "Footer"
+msgstr "Sidefod"
+
+#: inc/class-wc-dropshipping-settings.php:1940
+msgid "Any additional comment to be displayed"
+msgstr "Enhver yderligere kommentar skal vises"
+
+#: inc/class-wc-dropshipping-settings.php:1941
+msgid "Max length: 200 characters"
+msgstr "Max længde: 200 tegn"
+
+#: inc/class-wc-dropshipping-settings.php:1942
+msgid ""
+"NOTE: Please make sure this content as small as possible so that it fits "
+"properly at the bottom of PDF."
+msgstr ""
+"BEMÆRK: Sørg for, at dette indhold er så lille som muligt, så det passer "
+"ordentligt nederst i PDF."
+
+#: inc/class-wc-dropshipping-settings.php:1946
+msgid "Comments:"
+msgstr "Kommentarer:"
+
+#: inc/class-wc-dropshipping-settings.php:1958
+msgid "Thank You Message:"
+msgstr "Tak besked:"
+
+#: inc/class-wc-dropshipping-settings.php:1972
+msgid "Send Order Details to Suppliers"
+msgstr "Send ordreoplysninger til leverandører"
+
+#: inc/class-wc-dropshipping-settings.php:1978
+msgid "Do not send email notifications to supplier"
+msgstr "Send ikke e-mail notifikationer til leverandøren"
+
+#: inc/class-wc-dropshipping-settings.php:1982
+msgid ""
+"This option controls whether or not you want to send a .CSV spreadsheet file "
+"as an attachment with the regular order notification emails that are sent to "
+"your suppliers"
+msgstr ""
+"Denne mulighed styrer, om du vil sende en .CSV-regnearksfil som en vedhæftet "
+"fil med de almindelige ordremeddelelses-e-mails, der sendes til dine "
+"leverandører."
+
+#: inc/class-wc-dropshipping-settings.php:1990
+msgid "Send CSV with Supplier Notifications"
+msgstr "Send CSV med leverandørmeddelelser"
+
+#: inc/class-wc-dropshipping-settings.php:2001
+msgid "Show the total price in the packing slip."
+msgstr "Vis den samlede pris i følgesedlen."
+
+#: inc/class-wc-dropshipping-settings.php:2011
+msgid "Hide the shipping cost in the packing slip."
+msgstr "Skjul forsendelsesomkostningerne i følgesedlen."
+
+#: inc/class-wc-dropshipping-settings.php:2021
+msgid "Hide Tax in supplier email."
+msgstr "Skjul Skat i leverandørens e-mail."
+
+#: inc/class-wc-dropshipping-settings.php:2041
+msgid "Include the customer&apos;s phone number in the packing slip."
+msgstr "Inkluder kundens telefonnummer på følgesedlen."
+
+#: inc/class-wc-dropshipping-settings.php:2051
+msgid "Hide the supplier names on order confirmation emails."
+msgstr "Skjul leverandørnavnene på ordrebekræftelsesmails."
+
+#: inc/class-wc-dropshipping-settings.php:2061
+msgid "Show supplier names on product pages."
+msgstr "Vis leverandørnavne på produktsider."
+
+#: inc/class-wc-dropshipping-settings.php:2071
+msgid "Hide supplier names on the Order Details page."
+msgstr "Skjul leverandørnavne på siden Ordredetaljer."
+
+#: inc/class-wc-dropshipping-settings.php:2081
+msgid "Show \"Payment Type\" in the notification email."
+msgstr "Vis \"Betalingstype\" i underretningsmailen."
+
+#: inc/class-wc-dropshipping-settings.php:2088
+msgid "Include \"Customer email\" into the Dropshipper packing slip."
+msgstr "Inkluder \"Kunde-e-mail\" i Dropshipper-pakkesedlen."
+
+#: inc/class-wc-dropshipping-settings.php:2098
+msgid "Include store name in the order notification CSV filename."
+msgstr "Inkluder butiksnavn i ordremeddelelsens CSV-filnavn."
+
+#: inc/class-wc-dropshipping-settings.php:2108
+msgid "Include the store&apos;s URL in the order notification CSV filename."
+msgstr "Inkluder butikkens URL i ordremeddelelsens CSV-filnavn."
+
+#: inc/class-wc-dropshipping-settings.php:2118
+msgid "Send an additional email to the supplier when the order is completed."
+msgstr "Send en yderligere e-mail til leverandøren, når ordren er gennemført."
+
+#: inc/class-wc-dropshipping-settings.php:2128
+msgid ""
+"Allow suppliers to mark their orders as shipped by clicking a link on the "
+"email, without logging in to your store."
+msgstr ""
+"Tillad leverandører at markere deres ordrer som afsendt ved at klikke på et "
+"link på e-mailen uden at logge ind på din butik."
+
+#: inc/class-wc-dropshipping-settings.php:2138
+msgid ""
+"When an admin creates a new supplier, send registration details to the "
+"supplier&apos;s email."
+msgstr ""
+"Når en administrator opretter en ny leverandør, skal du sende "
+"registreringsoplysninger til leverandørens e-mail."
+
+#: inc/class-wc-dropshipping-settings.php:2153
+msgid "Notify via email when suppliers open order notification emails."
+msgstr ""
+"Giv besked via e-mail, når leverandører åbner e-mails med ordrebeskeder."
+
+#: inc/class-wc-dropshipping-settings.php:2165
+msgid "Use the standard WooCommerce mail format for email notification"
+msgstr "Brug standard WooCommerce-mail-format til e-mailbesked"
+
+#: inc/class-wc-dropshipping-settings.php:2175
+msgid "Include order number field on checkout."
+msgstr "Medtag ordrenummerfeltet ved kassen."
+
+#: inc/class-wc-dropshipping-settings.php:2185
+msgid ""
+"Don&apos;t cc: the store admin when sending order notification emails to "
+"suppliers."
+msgstr ""
+"Don't cc: butiksadministratoren, når du sender e-mails med ordrebeskeder til "
+"leverandører."
+
+#: inc/class-wc-dropshipping-settings.php:2198
+msgid ""
+"Hide Customer info in the Packing Slip, Order emails and Suppliers dashboard."
+msgstr ""
+"Skjul kundeoplysninger i pakkesedlen, bestillings-e-mails og leverandørers "
+"dashboard."
+
+#: inc/class-wc-dropshipping-settings.php:2208
+msgid ""
+"Hide Customer Contact info in the Packing Slip, Order emails and Suppliers "
+"dashboard."
+msgstr ""
+"Skjul kundekontaktoplysninger i pakkesedlen, bestillings-e-mails og "
+"leverandørers dashboard."
+
+#: inc/class-wc-dropshipping-settings.php:2218
+#: inc/class-wc-dropshipping-settings.php:2229
+msgid ""
+"Enable store address as shipping address in Suppliers Order list dashboard."
+msgstr ""
+"Aktiver butiksadresse som leveringsadresse i betjeningspanelet for "
+"leverandørers ordreliste."
+
+#: inc/class-wc-dropshipping-settings.php:2240
+msgid "Dropshipping Pro plugin adds additional features. "
+msgstr "Dropshipping Pro plugin tilføjer yderligere funktioner."
+
+#: inc/class-wc-dropshipping-settings.php:2240
+msgid "Click here to find out more."
+msgstr "Klik her for at finde ud af mere."
+
+#: inc/class-wc-dropshipping-settings.php:2258
+msgid "Packing Slip "
+msgstr "Pakkeseddel"
+
+#: inc/class-wc-dropshipping-settings.php:2261
+msgid "Title Color:"
+msgstr "Titelfarve:"
+
+#: inc/class-wc-dropshipping-settings.php:2272
+msgid "Title Font Size:"
+msgstr "Titelskriftstørrelse:"
+
+#: inc/class-wc-dropshipping-settings.php:2288
+msgid "Email "
+msgstr "E-mail"
+
+#: inc/class-wc-dropshipping-settings.php:2292
+msgid "Background Color:"
+msgstr "Baggrundsfarve:"
+
+#: inc/class-wc-dropshipping-settings.php:2300
+msgid "Order Note Font Size :"
+msgstr "Bestillingsnote skriftstørrelse:"
+
+#: inc/class-wc-dropshipping-settings.php:2307
+msgid "Order Note Font Color :"
+msgstr "Ordrebemærkning skrifttypefarve:"
+
+#: inc/class-wc-dropshipping-settings.php:2316
+msgid "Footer Message Font Size :"
+msgstr "Footer Message Font Størrelse:"
+
+#: inc/class-wc-dropshipping-settings.php:2324
+msgid "Footer Message Font Color :"
+msgstr "Footer Message Font Farve:"
+
+#: inc/class-wc-dropshipping-settings.php:2339
+msgid "Email Body "
+msgstr "E-mail brødtekst"
+
+#: inc/class-wc-dropshipping-settings.php:2342
+msgid "Font Size:"
+msgstr "Skriftstørrelse:"
+
+#: inc/class-wc-dropshipping-settings.php:2350
+msgid "Font Color:"
+msgstr "Skrift farve:"
+
+#: inc/class-wc-dropshipping-settings.php:2364
+msgid "Email Bottom "
+msgstr "E-mail nederst"
+
+#: inc/class-wc-dropshipping-settings.php:2367
+msgid "Sub Heading Font Size:"
+msgstr "Skriftstørrelse under overskrift:"
+
+#: inc/class-wc-dropshipping-settings.php:2375
+msgid "Sub Heading Font Color:"
+msgstr "Skriftfarve for underoverskrift:"
+
+#: inc/class-wc-dropshipping-settings.php:2383
+msgid "Sub Heading Content Font Size:"
+msgstr "Skriftstørrelse for underoverskriftsindhold:"
+
+#: inc/class-wc-dropshipping-settings.php:2391
+msgid "Sub Heading Content Color:"
+msgstr "Underoverskrifts indholdsfarve:"
+
+#: inc/class-wc-dropshipping-settings.php:2412
+msgid "SMTP Options - SMTP is used for sending emails."
+msgstr "SMTP-indstillinger - SMTP bruges til at sende e-mails."
+
+#: inc/class-wc-dropshipping-settings.php:2419
+msgid ""
+"Check this option if you are using SMTP to send emails from your WooCommerce "
+"store."
+msgstr ""
+"Marker denne mulighed, hvis du bruger SMTP til at sende e-mails fra din "
+"WooCommerce-butik."
+
+#: inc/class-wc-dropshipping-settings.php:2427
+msgid "Email Sender Information"
+msgstr "E-mail afsender oplysninger"
+
+#: inc/class-wc-dropshipping-settings.php:2428
+msgid ""
+"If left empty, emails sent from the store will use default WooCommerce "
+"settings."
+msgstr ""
+"Hvis de efterlades tomme, vil e-mails sendt fra butikken bruge standard "
+"WooCommerce-indstillinger."
+
+#: inc/class-wc-dropshipping-settings.php:2435
+msgid "Emails sent from the store should show this sender name: "
+msgstr "E-mails sendt fra butikken skal vise dette afsendernavn:"
+
+#: inc/class-wc-dropshipping-settings.php:2446
+msgid "Emails sent from the store should show this sender email address:"
+msgstr "E-mails sendt fra butikken skal vise denne afsender-e-mailadresse:"
+
+#: inc/class-wc-dropshipping-settings.php:2477
+msgid "Pricing and Profit Calculator"
+msgstr "Pris- og overskudsberegner"
+
+#: inc/class-wc-dropshipping-settings.php:2484
+#: inc/class-wc-dropshipping-settings.php:2485
+#: inc/class-wc-dropshipping-settings.php:2486
+#: inc/class-wc-dropshipping-settings.php:2487
+#: inc/class-wc-dropshipping-settings.php:2488
+#: inc/class-wc-dropshipping-settings.php:2489
+#: inc/class-wc-dropshipping-settings.php:2490
+#: inc/class-wc-dropshipping-settings.php:2491
+msgid "Cost Of Product"
+msgstr "Produktomkostninger"
+
+#: inc/class-wc-dropshipping-settings.php:2499
+msgid "Break Even Value"
+msgstr "Break Even-værdi"
+
+#: inc/class-wc-dropshipping-settings.php:2523
+msgid "Total Price"
+msgstr "Total pris"
+
+#: inc/class-wc-dropshipping-settings.php:2533
+msgid "Cost Of Product "
+msgstr "Produktomkostninger"
+
+#: inc/class-wc-dropshipping-settings.php:2542
+#: inc/class-wc-dropshipping-settings.php:2638
+msgid "Profit Margin"
+msgstr "Overskudsgrad"
+
+#: inc/class-wc-dropshipping-settings.php:2597
+msgid "Break Even Values"
+msgstr "Break Even-værdier"
+
+#: inc/class-wc-dropshipping-settings.php:2602
+msgid "% Fee"
+msgstr "% gebyr"
+
+#: inc/class-wc-dropshipping-settings.php:2616
+msgid "$ Fee"
+msgstr "$ Gebyr"
+
+#: inc/class-wc-dropshipping-settings.php:2644
+#: inc/class-wc-dropshipping-settings.php:2676
+#: inc/class-wc-dropshipping-settings.php:2770
+#: inc/class-wc-dropshipping-settings.php:2839
+msgid "% Profit"
+msgstr "% overskud"
+
+#: inc/class-wc-dropshipping-settings.php:2658
+#: inc/class-wc-dropshipping-settings.php:2690
+#: inc/class-wc-dropshipping-settings.php:2779
+#: inc/class-wc-dropshipping-settings.php:2845
+msgid "$ Profit"
+msgstr "$ Fortjeneste"
+
+#: inc/class-wc-dropshipping-settings.php:2716
+msgid "Dynamic Profit Margin"
+msgstr "Dynamisk overskudsmargin"
+
+#: inc/class-wc-dropshipping-settings.php:2726
+msgid "Dynamic Profit Margin "
+msgstr "Dynamisk overskudsmargin"
+
+#: inc/class-wc-dropshipping-settings.php:2754
+#: inc/class-wc-dropshipping-settings.php:2828
+msgid "From:"
+msgstr "Fra:"
+
+#: inc/class-wc-dropshipping-settings.php:2799
+#: inc/class-wc-dropshipping-settings.php:2870
+msgid "Change the range to lower value to add more rules."
+msgstr "Skift intervallet til lavere værdi for at tilføje flere regler."
+
+#: inc/class-wc-dropshipping-settings.php:2811
+msgid "Product Cost Range"
+msgstr "Produktomkostningsinterval"
+
+#: inc/class-wc-dropshipping-settings.php:2833
+msgid "To:"
+msgstr "Til:"
+
+#: templates/wc-dropshipping-dashboard.php:26
+msgid "WooCommerce Dropshipping Dashboard"
+msgstr "WooCommerce Dropshipping Dashboard"
+
+#: woo-includes/template/woocommerce/emails/email-order-details.php:39
+#, php-format
+msgid "[Order #%s]"
+msgstr "[Ordre:% s]"
+
+#: woocommerce-dropshipping.php:133
+msgid "WooCommerce Dropshipping requires"
+msgstr "WooCommerce Dropshipping kræver"
+
+#: woocommerce-dropshipping.php:133
+msgid "to be installed on your server."
+msgstr "skal installeres på din server."
+
+#: woocommerce-dropshipping.php:247
+msgid "WooCommerce Dropshipping"
+msgstr "WooCommerce Dropshipping"
+
+#: woocommerce-dropshipping.php:320 woocommerce-dropshipping.php:321
+msgid "Graph Reports"
+msgstr "Graf rapporter"
+
+#: woocommerce-dropshipping.php:517
+#, php-format
+msgid "Please see the attached PDF. Thank you! - %s"
+msgstr "Se venligst den vedhæftede PDF. Tak skal du have! - %s"
+
+#: woocommerce-dropshipping.php:525
+#, php-format
+msgid "We hope you enjoy your order. Thank you for shopping with %s"
+msgstr "Vi håber du bliver glad for din ordre. Tak, fordi du handlede med %s"
+
+#: woocommerce-dropshipping.php:582
+msgid "Settings"
+msgstr "Indstillinger"
+
+#: woocommerce-dropshipping.php:583
+msgid "Docs"
+msgstr "Dokumenter"
+
+#: woocommerce-dropshipping.php:621
+msgid ""
+"Woocommerce Dropshipping activated successfully! In order for the plugin to "
+"work correctly. Visit"
+msgstr ""
+"Woocommerce Dropshipping blev aktiveret med succes! For at plugin'et "
+"fungerer korrekt. Besøg"
+
+#: woocommerce-dropshipping.php:623
+msgid "and hit the \"Save Changes\" button"
+msgstr "og tryk på knappen \"Gem ændringer\""
+
+#: woocommerce-dropshipping.php:722 woocommerce-dropshipping.php:726
+msgid "Suppliers"
+msgstr "Leverandører"
+
+#: woocommerce-dropshipping.php:724
+msgid "Dropshipping Supplier"
+msgstr "Dropshipping leverandør"
+
+#: woocommerce-dropshipping.php:728
+msgid "Search Dropshipping Suppliers"
+msgstr "Søg efter Dropshipping-leverandører"
+
+#: woocommerce-dropshipping.php:730
+msgid "All Dropshipping Suppliers"
+msgstr "Alle Dropshipping-leverandører"
+
+#: woocommerce-dropshipping.php:732
+msgid "Edit Dropshipping Supplier"
+msgstr "Rediger Dropshipping-leverandør"
+
+#: woocommerce-dropshipping.php:734
+msgid "Update Dropshipping Supplier"
+msgstr "Opdater Dropshipping-leverandør"
+
+#: woocommerce-dropshipping.php:736
+msgid "Add New Dropshipping Supplier"
+msgstr "Tilføj ny Dropshipping-leverandør"
+
+#: woocommerce-dropshipping.php:738
+msgid "New Dropshipping Supplier Name"
+msgstr "Nyt Dropshipping-leverandørnavn"
+
+#: woocommerce-dropshipping.php:740
+msgid "Popular Dropshipping Suppliers"
+msgstr "Populære Dropshipping-leverandører"
+
+#: woocommerce-dropshipping.php:742
+msgid "Separate Dropshipping Suppliers with commas"
+msgstr "Adskil Dropshipping-leverandører med kommaer"
+
+#: woocommerce-dropshipping.php:744
+msgid "Add or remove Dropshipping Suppliers"
+msgstr "Tilføj eller fjern Dropshipping-leverandører"
+
+#: woocommerce-dropshipping.php:746
+msgid "Choose from the most used Dropshipping Suppliers"
+msgstr "Vælg mellem de mest brugte Dropshipping-leverandører"
+
+#: woocommerce-dropshipping.php:748
+msgid "No Dropshipping Suppliers found"
+msgstr "Ingen Dropshipping-leverandører fundet"
+
+#: woocommerce-dropshipping.php:875 woocommerce-dropshipping.php:876
+msgid "Dashboard"
+msgstr "Dashboard"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:1704
+msgid "\""
+msgstr "\""
+
+#: /woocommerce-dropshipping/complete.php:116
+#: /woocommerce-dropshipping/packingslip.php:116
+#, php-format
+msgid "<strong>Supplier Account #</strong> %s"
+msgstr "<strong>Leverandørkonto nr.</strong> %s"
+
+#: /woocommerce-dropshipping/packingslip.php:84
+#, php-format
+msgid "[ %s Order # %s  ]"
+msgstr "[ %s Ordre # %s ]"
+
+#: /woocommerce-dropshipping/complete.php:84
+#, php-format
+msgid "[ %s Order # %s is completed ]"
+msgstr "[ %s Ordre # %s er gennemført ]"
+
+#: /woocommerce-dropshipping/templates/wc-dropshipping-dashboard.php:56
+msgid "Account Information"
+msgstr "Kontooplysninger"
+
+#: /woocommerce-dropshipping/templates/wc-dropshipping-dashboard.php:103
+msgid "Active Affiliate Products"
+msgstr "Aktive tilknyttede produkter"
+
+#: /woocommerce-dropshipping/templates/wc-dropshipping-dashboard.php:151
+msgid "Adjust Plugin Settings"
+msgstr "Juster plugin-indstillinger"
+
+#: /woocommerce-dropshipping/templates/wc-dropshipping-dashboard.php:145
+msgid "Aliexpress Import"
+msgstr "Aliexpress import"
+
+#: /woocommerce-dropshipping/templates/wc-dropshipping-dashboard.php:61
+msgid "Aliexpress Orders"
+msgstr "Aliexpress ordrer"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:1156
+msgid "API Key Mismatch!!"
+msgstr "API-nøgle uoverensstemmelse!!"
+
+#: /woocommerce-dropshipping/complete.php:1035
+#: /woocommerce-dropshipping/packingslip.php:1035
+msgid "Billing Address"
+msgstr "Betalingsadresse"
+
+#: /woocommerce-dropshipping/complete.php:171
+#: /woocommerce-dropshipping/packingslip.php:171
+msgid "Chosen Shipping Method:"
+msgstr "Valgt forsendelsesmetode:"
+
+#: /woocommerce-dropshipping/complete.php:994
+#: /woocommerce-dropshipping/complete.php:1141
+#: /woocommerce-dropshipping/packingslip.php:994
+#: /woocommerce-dropshipping/packingslip.php:1141
+msgid "Company Address"
+msgstr "Virksomhedens adresse"
+
+#: /woocommerce-dropshipping/templates/wc-dropshipping-dashboard.php:96
+msgid "Completed Dropshipping Orders"
+msgstr "Afsluttede dropshipping-ordrer"
+
+#: /woocommerce-dropshipping/templates/wc-dropshipping-dashboard.php:152
+msgid "Configure packing slips, emails and more."
+msgstr "Konfigurer følgesedler, e-mails og mere."
+
+#: /woocommerce-dropshipping/complete.php:246
+#: /woocommerce-dropshipping/packingslip.php:246
+#, php-format
+msgid "Customer Order Note : %s"
+msgstr "Kundeordrebemærkning: %s"
+
+#: /woocommerce-dropshipping/inc/class-wc-dropshipping-admin.php:548
+msgid "Dropshipping Notifications"
+msgstr "Dropshipping-meddelelser"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:1441
+msgid "Error. Product does not exist in woocommerce store."
+msgstr "Fejl. Produktet findes ikke i woocommerce butik."
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:938
+msgid "Given parent categories id does not exist in product categories list."
+msgstr "Givet overordnet kategori-id findes ikke i produktkategorilisten."
+
+#: /woocommerce-dropshipping/templates/wc-dropshipping-dashboard.php:153
+msgid "Go to Settings"
+msgstr "Gå til Indstillinger"
+
+#. Description of the plugin
+msgid ""
+"Handle dropshipping from your WooCommerce. Create a packing slip, and notify "
+"the vendor when an order is paid. Import inventory updates via CSV from your "
+"vendors."
+msgstr ""
+"Håndter dropshipping fra din WooCommerce. Opret en følgeseddel, og underret "
+"leverandøren, når en ordre er betalt. Importer lageropdateringer via CSV fra "
+"dine leverandører."
+
+#. URI of the plugin
+msgid "http://woocommerce.com/products/woocommerce-dropshipping/"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://opmc.com.au/"
+msgstr ""
+
+#: /woocommerce-dropshipping/complete.php:436
+#: /woocommerce-dropshipping/packingslip.php:436
+msgid "Image"
+msgstr "Billede"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:652
+msgid "Image data is empty!"
+msgstr "Billeddata er tomme!"
+
+#: /woocommerce-dropshipping/templates/wc-dropshipping-dashboard.php:147
+msgid "Install Now"
+msgstr "Installer nu"
+
+#: /woocommerce-dropshipping/templates/wc-dropshipping-dashboard.php:146
+msgid "Install the extension to get started"
+msgstr "Installer udvidelsen for at komme i gang"
+
+#: /woocommerce-dropshipping/templates/wc-dropshipping-dashboard.php:126
+msgid "Low on Stock"
+msgstr "Lavt på lager"
+
+#: /woocommerce-dropshipping/templates/wc-dropshipping-dashboard.php:159
+msgid "Manage Suppliers"
+msgstr "Administrer leverandører"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:1589
+msgid "Merchant store currency code not found!"
+msgstr "Forhandlerens valutakode blev ikke fundet!"
+
+#: /woocommerce-dropshipping/complete.php:829
+#: /woocommerce-dropshipping/packingslip.php:829
+msgid "Miscellaneous"
+msgstr "Diverse"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:921
+msgid "Name parameter required."
+msgstr "Navneparameter påkrævet."
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:850
+msgid "No categories found!"
+msgstr "Ingen kategorier fundet!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:634
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:1165
+msgid "Oops! Something went wrong. Please try again!"
+msgstr "Ups! Noget gik galt. Prøv igen!"
+
+#. Author of the plugin
+msgid "OPMC Australia Pty Ltd"
+msgstr "OPMC Australia Pty Ltd"
+
+#: /woocommerce-dropshipping/inc/class-wc-dropshipping-checkout.php:166
+#: /woocommerce-dropshipping/inc/class-wc-dropshipping-checkout.php:175
+msgid "Order number"
+msgstr "Ordrenummer"
+
+#: /woocommerce-dropshipping/complete.php:234
+#: /woocommerce-dropshipping/packingslip.php:234
+msgid "Order Number :"
+msgstr "Ordrenummer :"
+
+#: /woocommerce-dropshipping/templates/wc-dropshipping-dashboard.php:40
+msgid "Orders"
+msgstr "Ordre"
+
+#: /woocommerce-dropshipping/templates/wc-dropshipping-dashboard.php:75
+msgid "Orders Completed"
+msgstr "Ordrer gennemført"
+
+#: /woocommerce-dropshipping/templates/wc-dropshipping-dashboard.php:68
+msgid "Orders in Progress"
+msgstr "Ordrer i gang"
+
+#: /woocommerce-dropshipping/templates/wc-dropshipping-dashboard.php:158
+msgid "Organise your store's products by their supplier."
+msgstr "Organiser din butiks produkter efter deres leverandør."
+
+#: /woocommerce-dropshipping/templates/wc-dropshipping-dashboard.php:35
+msgid "Out of Stock"
+msgstr "Udsolgt"
+
+#: /woocommerce-dropshipping/templates/wc-dropshipping-dashboard.php:82
+msgid "Out of Stock Listings"
+msgstr "Udsolgte lister"
+
+#: /woocommerce-dropshipping/complete.php:196
+#: /woocommerce-dropshipping/complete.php:218
+#: /woocommerce-dropshipping/packingslip.php:196
+#: /woocommerce-dropshipping/packingslip.php:218
+msgid "Payment Type :"
+msgstr "Betalings type :"
+
+#: /woocommerce-dropshipping/templates/wc-dropshipping-dashboard.php:89
+msgid "Pending Orders"
+msgstr "Afventende ordrer"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:253
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:1202
+msgid "Please enter a valid Type (simple or variable)!"
+msgstr "Indtast venligst en gyldig type (simpel eller variabel)!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:444
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:1393
+msgid "Please enter a valid URL for this AliExpress Product!"
+msgstr "Indtast venligst en gyldig URL for dette AliExpress-produkt!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:448
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:1397
+msgid "Please enter a valid URL for this AliExpress Store!"
+msgstr "Indtast venligst en gyldig URL for denne AliExpress Butik!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:1389
+msgid "Please enter AliExpress Store Name for this product!"
+msgstr "Indtast AliExpress butiksnavn for dette produkt!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:452
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:1401
+msgid "Please enter AliExpress Store Price Range for this product!"
+msgstr "Indtast AliExpress Butiks prisklasse for dette produkt!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:1232
+msgid "Please specify a list of valid categories in array format!"
+msgstr "Angiv venligst en liste over gyldige kategorier i array-format!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:1246
+msgid ""
+"Please specify a list of valid categories in array format. Categories array "
+"must contain a valid numeric id parameter!"
+msgstr ""
+"Angiv venligst en liste over gyldige kategorier i matrixformat. Kategorier-"
+"array skal indeholde en gyldig numerisk id-parameter!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:1293
+msgid ""
+"Please specify a list of valid image URLs in array format. Images array must "
+"contain a valid image URL in src. Image type can be one of these: (jpg, gif, "
+"png, jpeg)."
+msgstr ""
+"Angiv venligst en liste over gyldige billed-URL'er i matrixformat. Billed-"
+"array skal indeholde en gyldig billed-URL i src. Billedtypen kan være en af "
+"disse: (jpg, gif, png, jpeg)."
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:1254
+msgid "Please specify a list of valid images URLs in array format!"
+msgstr "Angiv venligst en liste over gyldige billeder-URL'er i array-format!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:283
+msgid "Please specify a valid category array format!"
+msgstr "Angiv venligst et gyldigt kategoriarray-format!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:297
+msgid ""
+"Please specify a valid category array format. Categories array must contain "
+"a valid numeric id parameter!"
+msgstr ""
+"Angiv venligst et gyldigt kategorimatrixformat. Kategorier-array skal "
+"indeholde en gyldig numerisk id-parameter!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:365
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:1314
+msgid ""
+"Please specify a valid list of Dimensions in array format. Dimensions array "
+"must contain a valid numeric length, width, and height parameters!"
+msgstr ""
+"Angiv venligst en gyldig liste over dimensioner i matrixformat. Dimensions "
+"array skal indeholde en gyldig numerisk længde, bredde og højde parametre!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:1357
+msgid ""
+"Please specify a valid list of Tags array format. Tags array must contain a "
+"valid numeric id parameter!"
+msgstr ""
+"Angiv venligst en gyldig liste over tags-arrayformat. Tags-array skal "
+"indeholde en gyldig numerisk id-parameter!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:394
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:1343
+msgid ""
+"Please specify a valid list of Tags in array format. Tags array must contain "
+"a valid numeric id parameter!"
+msgstr ""
+"Angiv venligst en gyldig liste over tags i array-format. Tags-array skal "
+"indeholde en gyldig numerisk id-parameter!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:408
+msgid ""
+"Please specify a valid list of Tagsin array format. Tags array must contain "
+"a valid numeric id parameter!"
+msgstr ""
+"Angiv venligst en gyldig liste over Tagsin-arrayformat. Tags-array skal "
+"indeholde en gyldig numerisk id-parameter!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:386
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:1335
+msgid ""
+"Please specify a valid non-negative numeric height parameter within "
+"Dimensions array!"
+msgstr ""
+"Angiv venligst en gyldig ikke-negativ numerisk højdeparameter i Dimensions-"
+"arrayet!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:373
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:1322
+msgid ""
+"Please specify a valid non-negative numeric length parameter within "
+"Dimensions array!"
+msgstr ""
+"Angiv venligst en gyldig ikke-negativ numerisk længdeparameter i Dimensions-"
+"array!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:379
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:1328
+msgid ""
+"Please specify a valid non-negative numeric width parameter within "
+"Dimensions array!"
+msgstr ""
+"Angiv venligst en gyldig ikke-negativ numerisk breddeparameter i Dimensions-"
+"array!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:305
+msgid "Please specify valid URLs to images in array format!"
+msgstr "Angiv venligst gyldige URL'er til billeder i array-format!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:344
+msgid ""
+"Please specify valid URLs to images in array format. Images array must "
+"contain a valid image URL in src. Image type can be one of these: (jpg, gif, "
+"png, jpeg)."
+msgstr ""
+"Angiv venligst gyldige URL'er til billeder i array-format. Billed-array skal "
+"indeholde en gyldig billed-URL i src. Billedtypen kan være en af disse: "
+"(jpg, gif, png, jpeg)."
+
+#: /woocommerce-dropshipping/templates/wc-dropshipping-dashboard.php:140
+msgid "Plugin Setup"
+msgstr "Plugin opsætning"
+
+#: /woocommerce-dropshipping/inc/class-wc-dropshipping-orders.php:732
+msgid "'New Order #%1$s From %2$s"
+msgstr "'Ny ordre #%1$s Fra %2$s"
+
+#: /woocommerce-dropshipping/complete.php:614
+#: /woocommerce-dropshipping/complete.php:646
+#: /woocommerce-dropshipping/packingslip.php:614
+#: /woocommerce-dropshipping/packingslip.php:646
+msgid "Price"
+msgstr "Pris"
+
+#: /woocommerce-dropshipping/complete.php:488
+#: /woocommerce-dropshipping/packingslip.php:488
+msgid "Product"
+msgstr "Produkt"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:500
+msgid "Product already exists. Please select another product."
+msgstr "Produktet findes allerede. Vælg venligst et andet produkt."
+
+#: /woocommerce-dropshipping/templates/wc-dropshipping-dashboard.php:45
+msgid "Projected Profit"
+msgstr "Forventet overskud"
+
+#: /woocommerce-dropshipping/templates/wc-dropshipping-dashboard.php:30
+msgid "Published Listings"
+msgstr "Udgivet Listings"
+
+#: /woocommerce-dropshipping/complete.php:512
+#: /woocommerce-dropshipping/packingslip.php:512
+msgid "Quantity"
+msgstr "Antal"
+
+#: /woocommerce-dropshipping/templates/wc-dropshipping-dashboard.php:50
+msgid "Recent Order Data"
+msgstr "Seneste ordredata"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:221
+msgid "Setting for price rate is not set"
+msgstr "Indstilling for prissats er ikke fastsat"
+
+#: /woocommerce-dropshipping/complete.php:1080
+#: /woocommerce-dropshipping/complete.php:1241
+#: /woocommerce-dropshipping/packingslip.php:1080
+#: /woocommerce-dropshipping/packingslip.php:1241
+msgid "Shipping Address"
+msgstr "Forsendelsesadresse"
+
+#: /woocommerce-dropshipping/complete.php:838
+#: /woocommerce-dropshipping/complete.php:848
+#: /woocommerce-dropshipping/packingslip.php:838
+#: /woocommerce-dropshipping/packingslip.php:848
+msgid "Shipping Cost"
+msgstr "Forsendelsesomkostninger"
+
+#: /woocommerce-dropshipping/complete.php:464
+#: /woocommerce-dropshipping/packingslip.php:464
+msgid "SKU"
+msgstr "SKU"
+
+#: /woocommerce-dropshipping/complete.php:464
+#: /woocommerce-dropshipping/packingslip.php:464
+msgid "Customer Email : %s"
+msgstr "Kunde-e-mail : %s"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:1559
+msgid "Something went wrong. Please try again!"
+msgstr "Noget gik galt. Prøv igen!"
+
+#: /woocommerce-dropshipping/complete.php:868
+#: /woocommerce-dropshipping/packingslip.php:868
+msgid "taxes"
+msgstr "skatter"
+
+#: /woocommerce-dropshipping/complete.php:1298
+msgid "Thank you!"
+msgstr "Tak skal du have!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:415
+msgid "The Attributes parameter must be in a valid array format!"
+msgstr "Attributter-parameteren skal være i et gyldigt array-format!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:1364
+msgid "The Attributess parameter must be in a valid array format!"
+msgstr "Attribut-parameteren skal være i et gyldigt array-format!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:879
+msgid "The Category Parent parameter is required and must be numeric value!"
+msgstr ""
+"Parameteren Category Parent er påkrævet og skal være en numerisk værdi!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:419
+msgid "The Default Attributes parameter must be in a valid array format!"
+msgstr "Parameteren Default Attributes skal være i et gyldigt matrixformat!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:1368
+msgid "The Default Attributess parameter must be in a valid array format!"
+msgstr "Parameteren Default Attributes skal være i et gyldigt matrixformat!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:273
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:875
+msgid "The Description parameter is required!"
+msgstr "Parameteren Beskrivelse er påkrævet!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:957
+msgid "The Id parameter is required and must be a number!"
+msgstr "Id-parameteren er påkrævet og skal være et tal!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:350
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:1299
+msgid ""
+"The Manage Stock parameter is required and must be a boolean (true/false) "
+"value!"
+msgstr ""
+"Parameteren Administrer aktie er påkrævet og skal være en boolesk (sand/"
+"falsk) værdi!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:871
+msgid "The Name parameter is required!"
+msgstr "Navn-parameteren er påkrævet!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:428
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:1377
+msgid ""
+"The Number Of Orders parameter must be a valid non-negative numeric value!"
+msgstr ""
+"Parameteren Antal ordrer skal være en gyldig ikke-negativ numerisk værdi!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:2002
+msgid "The Order Id does not exist!"
+msgstr "Ordre-id'et findes ikke!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:977
+msgid "The order id does not exist."
+msgstr "Ordre-id'et findes ikke."
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:2007
+msgid "The Order Id parameter is required!"
+msgstr "Ordre-id-parameteren er påkrævet!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:2012
+msgid "The Order Status parameter is required!"
+msgstr "Parameteren Ordrestatus er påkrævet!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:261
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:1210
+msgid ""
+"The Price parameter is required and must be a valid non-negative numeric "
+"value!"
+msgstr ""
+"Parameteren Pris er påkrævet og skal være en gyldig ikke-negativ numerisk "
+"værdi!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:265
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:1214
+msgid ""
+"The Regular Price parameter is required and must be a valid non-negative "
+"numeric value!"
+msgstr ""
+"Parameteren Normalpris er påkrævet og skal være en gyldig ikke-negativ "
+"numerisk værdi!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:269
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:1218
+msgid "The Sale Price parameter must be a valid non-negative numeric value!"
+msgstr "Parameteren Salgspris skal være en gyldig ikke-negativ numerisk værdi!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:277
+msgid "The Short Description parameter is required!"
+msgstr "Parameteren Kort beskrivelse er påkrævet!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:257
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:1206
+msgid "The SKU parameter is required!"
+msgstr "SKU-parameteren er påkrævet!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:354
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:1303
+msgid ""
+"The Stock Quantity parameter is required and must be a valid non-negative "
+"number!"
+msgstr ""
+"Parameteren Lagermængde er påkrævet og skal være et gyldigt ikke-negativt "
+"tal!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:249
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:1198
+msgid "The Title parameter is required!"
+msgstr "Titel parameteren er påkrævet!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:423
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:1372
+msgid "The Variations parameter must be in a valid array format!"
+msgstr "Variationsparameteren skal være i et gyldigt matrixformat!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:358
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:1307
+msgid "The Weight parameter must be a valid non-negative numeric value!"
+msgstr "Parameteren Vægt skal være en gyldig ikke-negativ numerisk værdi!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:1090
+msgid "The woo API key  parameter is required!"
+msgstr "Woo API-nøgleparameteren er påkrævet!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:1086
+msgid "The woo url parameter is required!"
+msgstr "Woo url parameteren er påkrævet!"
+
+#: /woocommerce-dropshipping/complete.php:915
+#: /woocommerce-dropshipping/complete.php:932
+#: /woocommerce-dropshipping/packingslip.php:915
+#: /woocommerce-dropshipping/packingslip.php:932
+msgid "Total"
+msgstr "Total"
+
+#: /woocommerce-dropshipping/complete.php:346
+#: /woocommerce-dropshipping/packingslip.php:346
+msgid "Tracking Number:"
+msgstr "Tracking nummer:"
+
+#: /woocommerce-dropshipping/complete.php:543
+#: /woocommerce-dropshipping/complete.php:575
+#: /woocommerce-dropshipping/packingslip.php:543
+#: /woocommerce-dropshipping/packingslip.php:575
+msgid "Type Of Package"
+msgstr "Pakketype"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:1160
+msgid "URL mismatch."
+msgstr "URL-uoverensstemmelse."
+
+#: /woocommerce-dropshipping/woocommerce-dropshipping.php:159
+#, php-format
+msgid "We hope you enjoy your order. Thank you for shopping with %1$s"
+msgstr "Vi håber du bliver glad for din ordre. Tak, fordi du handlede med %1$s"
+
+#. 1: href link to Fileinfo extension php doc
+#: /woocommerce-dropshipping/woocommerce-dropshipping.php:55
+#, php-format
+msgid "WooCommerce Dropshipping requires %s to be installed on your server."
+msgstr "WooCommerce Dropshipping kræver, at %s er installeret på din server."
+
+#~ msgid "<h1>Order #"
+#~ msgstr "<h1>Ordre nr."

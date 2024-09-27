@@ -1,0 +1,19 @@
+{
+  "name": "yith/yith-composite-products-for-woocommerce",
+  "description": "YITH Composite Products for WooCommerce Premium",
+  "type": "wordpress-plugin",
+  "license": "GPL-3.0-or-later",
+  "prefer-stable": true,
+  "minimum-stability": "dev",
+  "require-dev": {
+    "wp-coding-standards/wpcs": "^2.3",
+    "squizlabs/php_codesniffer": "^3.6",
+    "dealerdirect/phpcodesniffer-composer-installer": "^0.7.1",
+    "phpcompatibility/phpcompatibility-wp": "^2.1.2"
+  },
+  "scripts": {
+    "phpcs": "phpcs -s -p --colors",
+    "phpcs-summary": "phpcs -p --colors --report=summary",
+    "phpcbf": "phpcbf -s -p"
+  }
+}

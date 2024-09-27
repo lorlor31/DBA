@@ -1,0 +1,1787 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2024-03-11 18:45+0530\n"
+"PO-Revision-Date: 2024-03-20 18:52+0530\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.4.2\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-SearchPath-0: woocommerce-dropshipping\n"
+
+#: ali-api/ali-inc/aliprodfilter.inc.php:15
+msgid "Aliexpress Product"
+msgstr "Товар Aliexpress"
+
+#: ali-api/ali-inc/aliprodfilter.inc.php:17
+msgid "Enable this option if this product is from Aliexpress"
+msgstr "Включите эту опцию, если этот товар с Aliexpress."
+
+#: ali-api/class-wc-dropshipping-product-extra-fields.php:291
+msgid "Amazon Product ID"
+msgstr "Идентификатор продукта Amazon"
+
+#: ali-api/class-wc-dropshipping-product-extra-fields.php:361
+msgid "Amazon Affiliate ID"
+msgstr "Идентификатор партнера Amazon"
+
+#: ali-api/class-wc-dropshipping-product-extra-fields.php:392
+#: ali-api/class-wc-dropshipping-product-extra-fields.php:423
+msgid "Cost of goods"
+msgstr "Стоимость товаров"
+
+#: ali-api/class-wc-dropshipping-product-extra-fields.php:425
+msgid "Cost of goods value included in the supplier email"
+msgstr "Стоимость товара включена в электронное письмо поставщика"
+
+#: ali-api/class-wc-dropshipping-product-extra-fields.php:453
+msgid "AliExpress Orders"
+msgstr "Заказы на AliExpress"
+
+#: ali-api/class-wc-dropshipping-product-extra-fields.php:454
+msgid "AliExpress Orders placed."
+msgstr "Заказы на AliExpress размещены."
+
+#: ali-api/class-wc-dropshipping-product-extra-fields.php:476
+msgid "AliExpress Supplier"
+msgstr "Поставщик AliExpress"
+
+#: ali-api/class-wc-dropshipping-product-extra-fields.php:516
+msgid "Product URL"
+msgstr "URL-адрес продукта"
+
+#: ali-api/class-wc-dropshipping-product-extra-fields.php:517
+msgid "Enter URL to AliExpress Product"
+msgstr "Введите URL-адрес продукта AliExpress"
+
+#: ali-api/class-wc-dropshipping-product-extra-fields.php:522
+msgid "Store Name"
+msgstr "Название магазина"
+
+#: ali-api/class-wc-dropshipping-product-extra-fields.php:523
+msgid "AliExpress Supplier Store Name"
+msgstr "Название магазина поставщика AliExpress"
+
+#: ali-api/class-wc-dropshipping-product-extra-fields.php:532
+msgid "Store URL"
+msgstr "URL-адрес магазина"
+
+#: ali-api/class-wc-dropshipping-product-extra-fields.php:533
+msgid "AliExpress Supplier Store URL"
+msgstr "URL-адрес магазина поставщиков AliExpress"
+
+#: ali-api/class-wc-dropshipping-product-extra-fields.php:542
+msgid "Store Price Range"
+msgstr "Диапазон цен в магазине"
+
+#: ali-api/class-wc-dropshipping-product-extra-fields.php:543
+msgid "AliExpress Supplier Store Price Range"
+msgstr "Ценовой диапазон магазина поставщиков AliExpress"
+
+#: ali-api/class-wc-dropshipping-product-extra-fields.php:552
+msgid "Currency"
+msgstr "Валюта"
+
+#: ali-api/class-wc-dropshipping-product-extra-fields.php:613
+#: ali-api/class-wc-dropshipping-product-extra-fields.php:644
+msgid "Description - Type of Package"
+msgstr "Описание - Тип упаковки"
+
+#: ali-api/class-wc-dropshipping-product-extra-fields.php:646
+msgid "Description - Type of Package value included in the supplier email"
+msgstr ""
+"Описание — тип стоимости пакета, указанный в электронном письме поставщика."
+
+#: ali-api/class-wc-dropshipping-product-extra-fields.php:756
+msgid "Estimated Profit : "
+msgstr "Предполагаемая прибыль:"
+
+#: ali-api/woocommerce_aliexpress.php:2491
+msgid "AliExpress Action"
+msgstr "AliExpress действие"
+
+#: ali-api/woocommerce_aliexpress.php:2532
+msgid "Place Order"
+msgstr "Разместить заказ"
+
+#: ali-api/woocommerce_aliexpress.php:2624
+msgid "AliExpress order status has been changed to "
+msgstr "Статус заказа на AliExpress изменился на"
+
+#: ali-api/woocommerce_aliexpress.php:2789
+msgid "All Orders"
+msgstr "Все заказы"
+
+#: assets/js/jquery-ui.min.js:8
+msgid "'"
+msgstr ""
+
+#: inc/class-wc-dropshipping-admin.php:281
+msgid " Import Inventory .CSV"
+msgstr "Импортировать инвентарь в формате .CSV"
+
+#: inc/class-wc-dropshipping-admin.php:428
+#: inc/class-wc-dropshipping-admin.php:510
+msgid " Account #"
+msgstr "Счет #"
+
+#: inc/class-wc-dropshipping-admin.php:430
+msgid ""
+"Your store&apos;s account number with this supplier. Leave blank if you "
+"don&apos;t have an account number"
+msgstr ""
+"Номер счета вашего магазина у этого поставщика. Оставьте поле пустым, если у "
+"вас нет номера счета."
+
+#: inc/class-wc-dropshipping-admin.php:433
+#: inc/class-wc-dropshipping-admin.php:516
+msgid " Email Addresses"
+msgstr "Адрес электронной почты"
+
+#: inc/class-wc-dropshipping-admin.php:435
+msgid ""
+"When a customer purchases a product from you, the supplier will be sent an "
+"notification via email. List the supplier&apos;s email addresses that should "
+"be notified when a new order is placed."
+msgstr ""
+"Когда клиент покупает у вас продукт, поставщику будет отправлено уведомление "
+"по электронной почте. Перечислите адреса электронной почты поставщика, "
+"которые должны быть уведомлены при размещении нового заказа."
+
+#: inc/class-wc-dropshipping-admin.php:443
+#: inc/class-wc-dropshipping-admin.php:526
+msgid "Enable specific delivery location for the supplier."
+msgstr "Включите определенное место доставки для поставщика."
+
+#: inc/class-wc-dropshipping-admin.php:512
+msgid ""
+" Your store&apos;s account number with this supplier. Leave blank if you "
+"don&apos;t have an account number"
+msgstr ""
+"Номер счета вашего магазина у этого поставщика. Оставьте поле пустым, если у "
+"вас нет номера счета."
+
+#: inc/class-wc-dropshipping-admin.php:518
+msgid ""
+" When a customer purchases a product from you, the supplier will be sent an "
+"notification via email. List the supplier&apos;s email addresses that should "
+"be notified when a new order is placed."
+msgstr ""
+"Когда клиент покупает у вас продукт, поставщику будет отправлено уведомление "
+"по электронной почте. Перечислите адреса электронной почты поставщика, "
+"которые должны быть уведомлены при размещении нового заказа."
+
+#: inc/class-wc-dropshipping-admin.php:537
+msgid "Address line 1"
+msgstr "Адресная строка 1"
+
+#: inc/class-wc-dropshipping-admin.php:542
+msgid " Address line 2"
+msgstr "Адресная строка 2"
+
+#: inc/class-wc-dropshipping-admin.php:547
+msgid "City"
+msgstr "Город"
+
+#: inc/class-wc-dropshipping-admin.php:552
+msgid "Country/State"
+msgstr "Штат"
+
+#: inc/class-wc-dropshipping-admin.php:557
+msgid "Postcode/ZIP"
+msgstr "Почтовый индекс / Почтовый индекс"
+
+#: inc/class-wc-dropshipping-admin.php:564
+msgid "Supplier Inventory CSV Import Settings"
+msgstr "Настройки импорта CSV-файла инвентаря поставщика"
+
+#: inc/class-wc-dropshipping-admin.php:565
+msgid ""
+"(If you do not receive inventory statuses from your supplier in the form of "
+"a .CSV file, leave these settings blank)"
+msgstr ""
+"(Если вы не получаете статусы запасов от поставщика в виде файла .CSV, "
+"оставьте эти настройки пустыми.)"
+
+#: inc/class-wc-dropshipping-admin.php:568
+msgid "CSV File Column Delimiter"
+msgstr "Разделитель столбцов CSV-файла"
+
+#: inc/class-wc-dropshipping-admin.php:570
+msgid ""
+"Please indicate what character is used to separate fields in the CSV file. "
+"Normally this is a comma"
+msgstr ""
+"Укажите, какой символ используется для разделения полей в файле CSV. Обычно "
+"это запятая"
+
+#: inc/class-wc-dropshipping-admin.php:576
+msgid "CSV SKU Column #"
+msgstr "Артикул CSV, столбец №"
+
+#: inc/class-wc-dropshipping-admin.php:578
+msgid ""
+"Please indicate which column in the CSV file corresponds to product SKUs. "
+"Note that this should be the same SKU that the manufacturer uses. "
+"WooCommerce Dropshipping will automatically add the SKU code for products "
+"from this suppler when you upload a .CSV file"
+msgstr ""
+"Укажите, какой столбец в CSV-файле соответствует артикулу продукта. Обратите "
+"внимание, что это должен быть тот же SKU, который использует производитель. "
+"WooCommerce Dropshipping автоматически добавит код SKU для продуктов от "
+"этого поставщика при загрузке файла .CSV."
+
+#: inc/class-wc-dropshipping-admin.php:584
+msgid "CSV Type"
+msgstr "Тип CSV"
+
+#: inc/class-wc-dropshipping-admin.php:598
+msgid "Please indicate how the .CSV file&apos;s data should be read. "
+msgstr "Укажите, как следует читать данные файла .CSV."
+
+#: inc/class-wc-dropshipping-admin.php:598
+msgid "Quantity on Hand "
+msgstr "Количество в наличии"
+
+#: inc/class-wc-dropshipping-admin.php:598
+msgid ""
+"- If your supplier sends you a .CSV file that contains the quantity that "
+"they have remaining in their inventory, you should use this method. Any "
+"number above zero indicates that the product is still in stock."
+msgstr ""
+"- Если ваш поставщик отправляет вам файл .CSV, содержащий количество, "
+"оставшееся у него на складе, вам следует использовать этот метод. Любое "
+"число выше нуля означает, что товар еще есть на складе."
+
+#: inc/class-wc-dropshipping-admin.php:598
+msgid " In-Stock Indicator "
+msgstr "Индикатор наличия на складе"
+
+#: inc/class-wc-dropshipping-admin.php:598
+msgid ""
+"- Use this method if your supplier sends you a .CSV file that includes a "
+"column indicating whether or not a product is in stock.  This is typically "
+"in either a Y/N or 1/0 format to indicate whether or not the product is in "
+"stock."
+msgstr ""
+"– Используйте этот метод, если ваш поставщик отправляет вам файл .CSV, в "
+"котором есть столбец, указывающий, есть ли товар на складе. Обычно это "
+"формат Y/N или 1/0, указывающий, есть ли товар на складе."
+
+#: inc/class-wc-dropshipping-admin.php:601
+msgid "CSV Inventory Quantity Column #"
+msgstr "Столбец количества запасов CSV #"
+
+#: inc/class-wc-dropshipping-admin.php:603
+msgid ""
+"Please indicate which column in the .CSV file corresponds to the quantity of "
+"inventory available"
+msgstr ""
+"Укажите, какой столбец в файле .CSV соответствует количеству доступного "
+"товара."
+
+#: inc/class-wc-dropshipping-admin.php:608
+msgid "In-Stock Indicator Column #"
+msgstr "Столбец индикатора наличия на складе #"
+
+#: inc/class-wc-dropshipping-admin.php:610
+msgid ""
+"Please indicate which column in the .CSV file indicates whether or not a "
+"product is in stock"
+msgstr ""
+"Укажите, какой столбец в файле .CSV указывает на наличие товара на складе."
+
+#: inc/class-wc-dropshipping-admin.php:614
+msgid "In-Stock Indicator Value"
+msgstr "Значение индикатора наличия на складе"
+
+#: inc/class-wc-dropshipping-admin.php:616
+msgid ""
+"Please input the value (ie. Y or 1) in the column defined above that "
+"indicates whether or not a product is in stock"
+msgstr ""
+"Введите значение (например, Y или 1) в столбец, определенный выше, который "
+"указывает, есть ли товар на складе."
+
+#: inc/class-wc-dropshipping-admin.php:746
+msgid "Hi "
+msgstr "Привет"
+
+#: inc/class-wc-dropshipping-admin.php:748
+msgid "Thanks For Registration"
+msgstr "Спасибо за регистрацию"
+
+#: inc/class-wc-dropshipping-admin.php:751
+msgid "Your User Name:&nbsp;"
+msgstr "Ваше имя пользователя:&nbsp;"
+
+#: inc/class-wc-dropshipping-admin.php:752
+msgid "Your Password:&nbsp;"
+msgstr "Ваш пароль:&nbsp;"
+
+#: inc/class-wc-dropshipping-admin.php:753
+msgid "Change Your Password Once you login"
+msgstr "Измените свой пароль после входа в систему"
+
+#: inc/class-wc-dropshipping-admin.php:754
+msgid "Login URL: "
+msgstr "URL-адрес входа:"
+
+#: inc/class-wc-dropshipping-admin.php:764
+#: inc/class-wc-dropshipping-csv-import.php:672
+msgid "User already exists.  Password inherited."
+msgstr "Пользователь уже существует. Пароль унаследован."
+
+#: inc/class-wc-dropshipping-checkout.php:108
+msgid "Order Number"
+msgstr "Номер заказа"
+
+#: inc/class-wc-dropshipping-checkout.php:143
+msgid "Tracking Number"
+msgstr "Идентификационный номер"
+
+#: inc/class-wc-dropshipping-checkout.php:208
+msgid "POD"
+msgstr "ПОД"
+
+#: inc/class-wc-dropshipping-checkout.php:386
+msgid "Track Your Order"
+msgstr "Отследить ваш заказ"
+
+#: inc/class-wc-dropshipping-checkout.php:388
+msgid "Shipping Date"
+msgstr "Дата отгрузки"
+
+#: inc/class-wc-dropshipping-checkout.php:390
+#: inc/class-wc-dropshipping-product.php:121
+msgid "Tracking Number(s)"
+msgstr "Номер(а) отслеживания"
+
+#: inc/class-wc-dropshipping-checkout.php:392
+#: inc/class-wc-dropshipping-product.php:123
+msgid "Shipping Company"
+msgstr "Транспортная компания"
+
+#: inc/class-wc-dropshipping-checkout.php:394
+#: inc/class-wc-dropshipping-product.php:125
+msgid "Notes"
+msgstr "Примечания"
+
+#: inc/class-wc-dropshipping-csv-import.php:259
+#: inc/class-wc-dropshipping-csv-import.php:431
+#: inc/class-wc-dropshipping-csv-import.php:448
+msgid "Supplier Id"
+msgstr "ID поставщика"
+
+#: inc/class-wc-dropshipping-csv-import.php:260
+#: inc/class-wc-dropshipping-csv-import.php:432
+msgid "Supplier Name"
+msgstr "Название поставщика"
+
+#: inc/class-wc-dropshipping-csv-import.php:261
+#: inc/class-wc-dropshipping-csv-import.php:433
+msgid "Supplier Slug"
+msgstr "Slug поставщика"
+
+#: inc/class-wc-dropshipping-csv-import.php:262
+#: inc/class-wc-dropshipping-csv-import.php:434
+msgid "Supplier Description"
+msgstr "Описание поставщика"
+
+#: inc/class-wc-dropshipping-csv-import.php:263
+#: inc/class-wc-dropshipping-csv-import.php:435
+msgid "Supplier Email"
+msgstr "Электронная почта поставщика"
+
+#: inc/class-wc-dropshipping-csv-import.php:264
+#: inc/class-wc-dropshipping-csv-import.php:436
+msgid "Supplier Account Number"
+msgstr "Номер счета поставщика"
+
+#: inc/class-wc-dropshipping-orders.php:698
+#: inc/class-wc-dropshipping-orders.php:772
+#, php-format
+msgid "New Order #%1$s From %2$s"
+msgstr "Новый заказ #%1$s от %2$s"
+
+#: inc/class-wc-dropshipping-orders.php:717
+msgid "To mark this order as shipped please click the following link:"
+msgstr ""
+"Чтобы отметить этот заказ как отправленный, пожалуйста, нажмите следующую "
+"ссылку:"
+
+#: inc/class-wc-dropshipping-orders.php:717
+msgid "Mark as shipped"
+msgstr "Отметить как отправленный"
+
+#: inc/class-wc-dropshipping-orders.php:721
+#: inc/class-wc-dropshipping-orders.php:802
+msgid "View order in dashboard"
+msgstr "Посмотреть заказ в панели управления"
+
+#: inc/class-wc-dropshipping-orders.php:768
+#, php-format
+msgid "Order #%s is completed"
+msgstr "Заказ #%s завершен"
+
+#: inc/class-wc-dropshipping-orders.php:770
+#, php-format
+msgid "Order #%s is cancelled"
+msgstr "Заказ #%s отменен"
+
+#: inc/class-wc-dropshipping-orders.php:976
+msgid "Filter by Supplier"
+msgstr "Фильтровать по поставщику"
+
+#: inc/class-wc-dropshipping-product.php:119
+msgid "Date"
+msgstr "Дата"
+
+#: inc/class-wc-dropshipping-settings.php:47 woocommerce-dropshipping.php:864
+#: woocommerce-dropshipping.php:865
+msgid "Dropshipping"
+msgstr "Дропшиппинг"
+
+#: inc/class-wc-dropshipping-settings.php:1363
+msgid "AliExpress Settings"
+msgstr "Настройки AliExpress"
+
+#: inc/class-wc-dropshipping-settings.php:1365
+#: inc/class-wc-dropshipping-settings.php:1486
+#: inc/class-wc-dropshipping-settings.php:1488
+msgid "Supplier Email Notifications"
+msgstr "Уведомления по электронной почте от поставщика"
+
+#: inc/class-wc-dropshipping-settings.php:1367
+#: inc/class-wc-dropshipping-settings.php:1547
+msgid "Packing Slips"
+msgstr "Упаковочные листы"
+
+#: inc/class-wc-dropshipping-settings.php:1369
+#: inc/class-wc-dropshipping-settings.php:2238
+msgid "Customised Supplier Emails"
+msgstr "Настроенные электронные письма от поставщика"
+
+#: inc/class-wc-dropshipping-settings.php:1371
+msgid "SMTP Options"
+msgstr "Параметры SMTP"
+
+#: inc/class-wc-dropshipping-settings.php:1373
+#: inc/class-wc-dropshipping-settings.php:2464
+msgid "Price Calculator"
+msgstr "Калькулятор цен"
+
+#: inc/class-wc-dropshipping-settings.php:1380
+msgid "AliExpress Chrome Browser Extension (CBE) Settings"
+msgstr "Настройки расширения для браузера Chrome AliExpress (CBE)"
+
+#: inc/class-wc-dropshipping-settings.php:1386
+msgid "Enable Support for the AliExpress CBE:"
+msgstr "Включить поддержку AliExpress CBE:"
+
+#: inc/class-wc-dropshipping-settings.php:1407
+msgid "Generate AliExpress API Key:"
+msgstr "Создать ключ API AliExpress:"
+
+#: inc/class-wc-dropshipping-settings.php:1410
+msgid "Generate AliExpress API Key"
+msgstr "Создать ключ API AliExpress"
+
+#: inc/class-wc-dropshipping-settings.php:1429
+msgid "Price Markup Method:"
+msgstr "Метод наценки цен:"
+
+#: inc/class-wc-dropshipping-settings.php:1455
+msgid "Percentage Offset"
+msgstr "Процентное смещение"
+
+#: inc/class-wc-dropshipping-settings.php:1469
+msgid "Markup Offset Value:"
+msgstr "Значение наценки"
+
+#: inc/class-wc-dropshipping-settings.php:1490
+msgid ""
+"When an order&apos;s status switches to processing, emails are sent to each "
+"supplier to notify them to ship their products."
+msgstr ""
+"Когда статус заказа переключается на обработку, электронные письма "
+"отправляются каждому поставщику с уведомлением о необходимости отправки их "
+"товаров."
+
+#: inc/class-wc-dropshipping-settings.php:1490
+msgid ""
+" You can set a custom message for the suppliers in the box below to be "
+"included in these emails."
+msgstr ""
+"Вы можете установить настраиваемое сообщение для поставщиков в поле ниже, "
+"чтобы включить его в эти письма."
+
+#: inc/class-wc-dropshipping-settings.php:1494
+msgid "Email order note:"
+msgstr "Примечание к заказу по электронной почте:"
+
+#: inc/class-wc-dropshipping-settings.php:1506
+msgid "Include 'View order' link in suppliers email:"
+msgstr "Включить ссылку 'Просмотр заказа' в электронной почте поставщика:"
+
+#: inc/class-wc-dropshipping-settings.php:1517
+msgid "Do not send renewal email to suppliers:"
+msgstr "Не отправлять поставщикам электронную почту о продлении:"
+
+#: inc/class-wc-dropshipping-settings.php:1527
+msgid ".CSV File Inventory Update Settings"
+msgstr "Настройки обновления инвентаря файла CSV"
+
+#: inc/class-wc-dropshipping-settings.php:1529
+msgid ""
+".These options relate to how your store processes data imported from CSV "
+"spreadsheet files, if you receive them from your supplier"
+msgstr ""
+".Эти параметры относятся к тому, как ваш магазин обрабатывает данные, "
+"импортированные из файла CSV, если вы получаете их от своего поставщика"
+
+#: inc/class-wc-dropshipping-settings.php:1535
+msgid "Inventory Buffer:"
+msgstr "Буфер инвентаря:"
+
+#: inc/class-wc-dropshipping-settings.php:1541
+msgid ""
+"If the supplier&apos;s stock falls below this number on an imported "
+"spreadsheet, the item will be considered out of stock in your store."
+msgstr ""
+"Если запас поставщика упадет ниже этого числа в импортированной таблице, "
+"товар будет считаться отсутствующим в вашем магазине."
+
+#: inc/class-wc-dropshipping-settings.php:1553
+msgid "Attach PDF to supplier Email"
+msgstr "Прикрепить PDF к поставщику по электронной почте"
+
+#: inc/class-wc-dropshipping-settings.php:1560
+msgid "Header"
+msgstr "Заголовок"
+
+#: inc/class-wc-dropshipping-settings.php:1564
+msgid "Option to view packing slip."
+msgstr "Возможность просмотра упаковочного листа."
+
+#: inc/class-wc-dropshipping-settings.php:1579
+msgid "Show logo in the header."
+msgstr "Показать логотип в заголовке."
+
+#: inc/class-wc-dropshipping-settings.php:1587
+#: inc/class-wc-dropshipping-settings.php:1638
+msgid "NOTE:"
+msgstr "ПРИМЕЧАНИЕ:"
+
+#: inc/class-wc-dropshipping-settings.php:1587
+msgid "For best results, please keep logo dimensions within 200x60 px"
+msgstr ""
+"Для лучших результатов, пожалуйста, сохраняйте размеры логотипа в пределах "
+"200x60 пикселей"
+
+#: inc/class-wc-dropshipping-settings.php:1593
+msgid "Url to Logo:"
+msgstr "URL-адрес логотипа:"
+
+#: inc/class-wc-dropshipping-settings.php:1604
+msgid "Logo Width:"
+msgstr "Ширина логотипа:"
+
+#: inc/class-wc-dropshipping-settings.php:1620
+msgid "Show order date beside order number."
+msgstr "Показывать дату заказа рядом с номером заказа."
+
+#: inc/class-wc-dropshipping-settings.php:1630
+msgid "Show shipping information."
+msgstr "Показывать информацию о доставке."
+
+#: inc/class-wc-dropshipping-settings.php:1638
+msgid ""
+"For best results, please make sure that any custom terms or phrases listed "
+"below are kept to a reasonable length. If your terms are too long, it may "
+"cause text wrapping and alignment issues with your packing slips."
+msgstr ""
+"Для лучших результатов убедитесь, что любые пользовательские термины или "
+"фразы, перечисленные ниже, сохраняют разумную длину. Если ваши термины "
+"слишком длинные, это может привести к оборачиванию текста и проблемам с "
+"выравниванием на вашем упаковочном листе."
+
+#: inc/class-wc-dropshipping-settings.php:1642
+msgid "Chosen Shipping Method Label:"
+msgstr "Метка выбранного метода доставки:"
+
+#: inc/class-wc-dropshipping-settings.php:1653
+msgid "Payment Type Label:"
+msgstr "Метка типа оплаты:"
+
+#: inc/class-wc-dropshipping-settings.php:1668
+msgid "Display the \"Customer Note\" into the Dropshipper packing slip."
+msgstr "Отображение «Примечания клиента» в упаковочном листе Dropshipper."
+
+#: inc/class-wc-dropshipping-settings.php:1676
+msgid "Products"
+msgstr "Товары"
+
+#: inc/class-wc-dropshipping-settings.php:1682
+msgid "Show product thumbnail image."
+msgstr "Показывать миниатюру изображения товара."
+
+#: inc/class-wc-dropshipping-settings.php:1691
+msgid "Image Label:"
+msgstr "Метка изображения:"
+
+#: inc/class-wc-dropshipping-settings.php:1704
+msgid "SKU Label:"
+msgstr "Метка SKU:"
+
+#: inc/class-wc-dropshipping-settings.php:1714
+msgid "Product Label:"
+msgstr "Метка товара:"
+
+#: inc/class-wc-dropshipping-settings.php:1724
+msgid "Quantity Label:"
+msgstr "Метка количества:"
+
+#: inc/class-wc-dropshipping-settings.php:1738
+msgid ""
+"Additional field in the \"Add/Edit Product\" to specify the \"Type of "
+"Package\""
+msgstr ""
+"Дополнительное поле в разделе «Добавить/Редактировать товар», чтобы указать "
+"«Тип Упаковки»"
+
+#: inc/class-wc-dropshipping-settings.php:1749
+msgid "Type Of Package Label:"
+msgstr "Метка типа упаковки:"
+
+#: inc/class-wc-dropshipping-settings.php:1764
+msgid "Show product prices."
+msgstr "Показывать цены на товары."
+
+#: inc/class-wc-dropshipping-settings.php:1774
+msgid "Price Label:"
+msgstr "Метка цены:"
+
+#: inc/class-wc-dropshipping-settings.php:1789
+msgid "Show Cost instead of Sell Price."
+msgstr "Показывать стоимость вместо цены продажи."
+
+#: inc/class-wc-dropshipping-settings.php:1799
+msgid "Show Tax Split."
+msgstr "Показывать разбивку налога."
+
+#: inc/class-wc-dropshipping-settings.php:1811
+msgid "Company Details"
+msgstr "Информация о компании"
+
+#: inc/class-wc-dropshipping-settings.php:1815
+msgid "Company Name:"
+msgstr "Название компании:"
+
+#: inc/class-wc-dropshipping-settings.php:1829
+msgid "Company Address Label:"
+msgstr "Метка адреса компании:"
+
+#: inc/class-wc-dropshipping-settings.php:1844
+msgid "Address:"
+msgstr "Адрес:"
+
+#: inc/class-wc-dropshipping-settings.php:1854
+msgid "Customer Service Email:"
+msgstr "Электронная почта службы поддержки клиентов:"
+
+#: inc/class-wc-dropshipping-settings.php:1866
+msgid "Customer Service Phone Number:"
+msgstr "Номер телефона службы поддержки клиентов:"
+
+#: inc/class-wc-dropshipping-settings.php:1880
+msgid "Show shipping address at the bottom."
+msgstr "Показывать адрес доставки внизу."
+
+#: inc/class-wc-dropshipping-settings.php:1890
+msgid "Shipping Address Label:"
+msgstr "Метка адреса доставки:"
+
+#: inc/class-wc-dropshipping-settings.php:1905
+msgid "Show billing address at the bottom."
+msgstr "Показывать адрес выставления счета внизу."
+
+#: inc/class-wc-dropshipping-settings.php:1917
+msgid "Billing Address Label:"
+msgstr "Метка адреса выставления счета:"
+
+#: inc/class-wc-dropshipping-settings.php:1939
+msgid "Footer"
+msgstr "Нижний колонтитул"
+
+#: inc/class-wc-dropshipping-settings.php:1940
+msgid "Any additional comment to be displayed"
+msgstr "Любой дополнительный комментарий для отображения"
+
+#: inc/class-wc-dropshipping-settings.php:1941
+msgid "Max length: 200 characters"
+msgstr "Максимальная длина: 200 символов"
+
+#: inc/class-wc-dropshipping-settings.php:1942
+msgid ""
+"NOTE: Please make sure this content as small as possible so that it fits "
+"properly at the bottom of PDF."
+msgstr ""
+"ПРИМЕЧАНИЕ: Убедитесь, что этот контент как можно меньше, чтобы он правильно "
+"помещался внизу PDF."
+
+#: inc/class-wc-dropshipping-settings.php:1946
+msgid "Comments:"
+msgstr "Комментарии:"
+
+#: inc/class-wc-dropshipping-settings.php:1958
+msgid "Thank You Message:"
+msgstr "Спасибо за сообщение:"
+
+#: inc/class-wc-dropshipping-settings.php:1972
+msgid "Send Order Details to Suppliers"
+msgstr "Отправить детали заказа поставщикам"
+
+#: inc/class-wc-dropshipping-settings.php:1978
+msgid "Do not send email notifications to supplier"
+msgstr "Не отправлять уведомления по электронной почте поставщику"
+
+#: inc/class-wc-dropshipping-settings.php:1982
+msgid ""
+"This option controls whether or not you want to send a .CSV spreadsheet file "
+"as an attachment with the regular order notification emails that are sent to "
+"your suppliers"
+msgstr ""
+"Эта опция управляет тем, хотите ли вы отправлять файл .CSV в виде вложения с "
+"регулярными уведомлениями по заказу, отправляемыми вашим поставщикам"
+
+#: inc/class-wc-dropshipping-settings.php:1990
+msgid "Send CSV with Supplier Notifications"
+msgstr "Отправить CSV с уведомлениями поставщиков"
+
+#: inc/class-wc-dropshipping-settings.php:2001
+msgid "Show the total price in the packing slip."
+msgstr "Показать общую стоимость в упаковочном листе."
+
+#: inc/class-wc-dropshipping-settings.php:2011
+msgid "Hide the shipping cost in the packing slip."
+msgstr "Скрыть стоимость доставки в упаковочном листе."
+
+#: inc/class-wc-dropshipping-settings.php:2021
+msgid "Hide Tax in supplier email."
+msgstr "Скрыть налог в электронной почте поставщика."
+
+#: inc/class-wc-dropshipping-settings.php:2041
+msgid "Include the customer&apos;s phone number in the packing slip."
+msgstr "Включить номер телефона клиента в упаковочный лист."
+
+#: inc/class-wc-dropshipping-settings.php:2051
+msgid "Hide the supplier names on order confirmation emails."
+msgstr ""
+"Скрыть имена поставщиков в электронных письмах с подтверждением заказа."
+
+#: inc/class-wc-dropshipping-settings.php:2061
+msgid "Show supplier names on product pages."
+msgstr "Показывать имена поставщиков на страницах товаров."
+
+#: inc/class-wc-dropshipping-settings.php:2071
+msgid "Hide supplier names on the Order Details page."
+msgstr "Скрыть имена поставщиков на странице деталей заказа."
+
+#: inc/class-wc-dropshipping-settings.php:2081
+msgid "Show \"Payment Type\" in the notification email."
+msgstr "Показывать \"Тип оплаты\" в уведомлении по электронной почте."
+
+#: inc/class-wc-dropshipping-settings.php:2088
+msgid "Include \"Customer email\" into the Dropshipper packing slip."
+msgstr "Включить \"Электронную почту клиента\" в пакет дропшиппера."
+
+#: inc/class-wc-dropshipping-settings.php:2098
+msgid "Include store name in the order notification CSV filename."
+msgstr "Включить имя магазина в имя файла уведомления о заказе CSV."
+
+#: inc/class-wc-dropshipping-settings.php:2108
+msgid "Include the store&apos;s URL in the order notification CSV filename."
+msgstr "Включить URL магазина в имя файла уведомления о заказе CSV."
+
+#: inc/class-wc-dropshipping-settings.php:2118
+msgid "Send an additional email to the supplier when the order is completed."
+msgstr "Отправить дополнительное письмо поставщику, когда заказ завершен."
+
+#: inc/class-wc-dropshipping-settings.php:2128
+msgid ""
+"Allow suppliers to mark their orders as shipped by clicking a link on the "
+"email, without logging in to your store."
+msgstr ""
+"Разрешить поставщикам отмечать свои заказы как отправленные, щелкая по "
+"ссылке в письме, без входа в ваш магазин."
+
+#: inc/class-wc-dropshipping-settings.php:2138
+msgid ""
+"When an admin creates a new supplier, send registration details to the "
+"supplier&apos;s email."
+msgstr ""
+"Когда админ создает нового поставщика, отправлять детали регистрации на "
+"электронную почту поставщика."
+
+#: inc/class-wc-dropshipping-settings.php:2153
+msgid "Notify via email when suppliers open order notification emails."
+msgstr ""
+"Уведомлять по электронной почте, когда поставщики открывают уведомления о "
+"заказе."
+
+#: inc/class-wc-dropshipping-settings.php:2165
+msgid "Use the standard WooCommerce mail format for email notification"
+msgstr ""
+"Используйте стандартный почтовый формат WooCommerce для уведомлений по "
+"электронной почте."
+
+#: inc/class-wc-dropshipping-settings.php:2175
+msgid "Include order number field on checkout."
+msgstr "Включить поле номера заказа при оформлении."
+
+#: inc/class-wc-dropshipping-settings.php:2185
+msgid ""
+"Don&apos;t cc: the store admin when sending order notification emails to "
+"suppliers."
+msgstr ""
+"Не отправлять копию администратору магазина при отправке уведомлений о "
+"заказе поставщикам."
+
+#: inc/class-wc-dropshipping-settings.php:2198
+msgid ""
+"Hide Customer info in the Packing Slip, Order emails and Suppliers dashboard."
+msgstr ""
+"Скрыть информацию о клиенте в пакете, электронных письмах о заказе и панели "
+"поставщиков."
+
+#: inc/class-wc-dropshipping-settings.php:2208
+msgid ""
+"Hide Customer Contact info in the Packing Slip, Order emails and Suppliers "
+"dashboard."
+msgstr ""
+"Скрыть контактную информацию клиента в пакете, электронных письмах о заказе "
+"и панели поставщиков."
+
+#: inc/class-wc-dropshipping-settings.php:2218
+#: inc/class-wc-dropshipping-settings.php:2229
+msgid ""
+"Enable store address as shipping address in Suppliers Order list dashboard."
+msgstr ""
+"Включить адрес магазина как адрес доставки в панели управления списком "
+"заказов поставщиков."
+
+#: inc/class-wc-dropshipping-settings.php:2240
+msgid "Dropshipping Pro plugin adds additional features. "
+msgstr "Плагин Dropshipping Pro добавляет дополнительные функции."
+
+#: inc/class-wc-dropshipping-settings.php:2240
+msgid "Click here to find out more."
+msgstr "Нажмите здесь, чтобы узнать больше."
+
+#: inc/class-wc-dropshipping-settings.php:2258
+msgid "Packing Slip "
+msgstr "Упаковочный лист"
+
+#: inc/class-wc-dropshipping-settings.php:2261
+msgid "Title Color:"
+msgstr "Цвет заголовка:"
+
+#: inc/class-wc-dropshipping-settings.php:2272
+msgid "Title Font Size:"
+msgstr "Размер шрифта заголовка:"
+
+#: inc/class-wc-dropshipping-settings.php:2288
+msgid "Email "
+msgstr "Электронная почта"
+
+#: inc/class-wc-dropshipping-settings.php:2292
+msgid "Background Color:"
+msgstr "Цвет фона:"
+
+#: inc/class-wc-dropshipping-settings.php:2300
+msgid "Order Note Font Size :"
+msgstr "Размер шрифта заметки к заказу:"
+
+#: inc/class-wc-dropshipping-settings.php:2307
+msgid "Order Note Font Color :"
+msgstr "Цвет шрифта заметки к заказу:"
+
+#: inc/class-wc-dropshipping-settings.php:2316
+msgid "Footer Message Font Size :"
+msgstr "Размер шрифта нижнего сообщения:"
+
+#: inc/class-wc-dropshipping-settings.php:2324
+msgid "Footer Message Font Color :"
+msgstr "Цвет шрифта нижнего сообщения:"
+
+#: inc/class-wc-dropshipping-settings.php:2339
+msgid "Email Body "
+msgstr "Тело электронной почты"
+
+#: inc/class-wc-dropshipping-settings.php:2342
+msgid "Font Size:"
+msgstr "Размер шрифта:"
+
+#: inc/class-wc-dropshipping-settings.php:2350
+msgid "Font Color:"
+msgstr "Цвет шрифта:"
+
+#: inc/class-wc-dropshipping-settings.php:2364
+msgid "Email Bottom "
+msgstr "Нижняя часть электронной почты"
+
+#: inc/class-wc-dropshipping-settings.php:2367
+msgid "Sub Heading Font Size:"
+msgstr "Размер шрифта подзаголовка:"
+
+#: inc/class-wc-dropshipping-settings.php:2375
+msgid "Sub Heading Font Color:"
+msgstr "Цвет шрифта подзаголовка:"
+
+#: inc/class-wc-dropshipping-settings.php:2383
+msgid "Sub Heading Content Font Size:"
+msgstr "Размер шрифта содержимого подзаголовка:"
+
+#: inc/class-wc-dropshipping-settings.php:2391
+msgid "Sub Heading Content Color:"
+msgstr "Цвет содержимого подзаголовка:"
+
+#: inc/class-wc-dropshipping-settings.php:2412
+msgid "SMTP Options - SMTP is used for sending emails."
+msgstr "Параметры SMTP - SMTP используется для отправки электронных писем."
+
+#: inc/class-wc-dropshipping-settings.php:2419
+msgid ""
+"Check this option if you are using SMTP to send emails from your WooCommerce "
+"store."
+msgstr ""
+"Установите этот параметр, если вы используете SMTP для отправки электронных "
+"писем из вашего магазина WooCommerce."
+
+#: inc/class-wc-dropshipping-settings.php:2427
+msgid "Email Sender Information"
+msgstr "Информация об отправителе электронной почты"
+
+#: inc/class-wc-dropshipping-settings.php:2428
+msgid ""
+"If left empty, emails sent from the store will use default WooCommerce "
+"settings."
+msgstr ""
+"Если оставить пустым, электронные письма, отправленные из магазина, будут "
+"использовать настройки WooCommerce по умолчанию."
+
+#: inc/class-wc-dropshipping-settings.php:2435
+msgid "Emails sent from the store should show this sender name: "
+msgstr ""
+"Электронные письма, отправленные из магазина, должны показывать это имя "
+"отправителя:"
+
+#: inc/class-wc-dropshipping-settings.php:2446
+msgid "Emails sent from the store should show this sender email address:"
+msgstr ""
+"Электронные письма, отправленные из магазина, должны показывать этот адрес "
+"электронной почты отправителя:"
+
+#: inc/class-wc-dropshipping-settings.php:2477
+msgid "Pricing and Profit Calculator"
+msgstr "Калькулятор цен и прибыли"
+
+#: inc/class-wc-dropshipping-settings.php:2484
+#: inc/class-wc-dropshipping-settings.php:2485
+#: inc/class-wc-dropshipping-settings.php:2486
+#: inc/class-wc-dropshipping-settings.php:2487
+#: inc/class-wc-dropshipping-settings.php:2488
+#: inc/class-wc-dropshipping-settings.php:2489
+#: inc/class-wc-dropshipping-settings.php:2490
+#: inc/class-wc-dropshipping-settings.php:2491
+msgid "Cost Of Product"
+msgstr "Стоимость товара"
+
+#: inc/class-wc-dropshipping-settings.php:2499
+msgid "Break Even Value"
+msgstr "Значение безубыточности"
+
+#: inc/class-wc-dropshipping-settings.php:2523
+msgid "Total Price"
+msgstr "Общая стоимость"
+
+#: inc/class-wc-dropshipping-settings.php:2533
+msgid "Cost Of Product "
+msgstr "Стоимость товара"
+
+#: inc/class-wc-dropshipping-settings.php:2542
+#: inc/class-wc-dropshipping-settings.php:2638
+msgid "Profit Margin"
+msgstr "Маржа прибыли"
+
+#: inc/class-wc-dropshipping-settings.php:2597
+msgid "Break Even Values"
+msgstr "Значения безубыточности"
+
+#: inc/class-wc-dropshipping-settings.php:2602
+msgid "% Fee"
+msgstr "% Сбор"
+
+#: inc/class-wc-dropshipping-settings.php:2616
+msgid "$ Fee"
+msgstr "$ Сбор"
+
+#: inc/class-wc-dropshipping-settings.php:2644
+#: inc/class-wc-dropshipping-settings.php:2676
+#: inc/class-wc-dropshipping-settings.php:2770
+#: inc/class-wc-dropshipping-settings.php:2839
+msgid "% Profit"
+msgstr "% Прибыль"
+
+#: inc/class-wc-dropshipping-settings.php:2658
+#: inc/class-wc-dropshipping-settings.php:2690
+#: inc/class-wc-dropshipping-settings.php:2779
+#: inc/class-wc-dropshipping-settings.php:2845
+msgid "$ Profit"
+msgstr "$ Прибыль"
+
+#: inc/class-wc-dropshipping-settings.php:2716
+msgid "Dynamic Profit Margin"
+msgstr "Динамическая маржа прибыли"
+
+#: inc/class-wc-dropshipping-settings.php:2726
+msgid "Dynamic Profit Margin "
+msgstr "Динамическая маржа прибыли "
+
+#: inc/class-wc-dropshipping-settings.php:2754
+#: inc/class-wc-dropshipping-settings.php:2828
+msgid "From:"
+msgstr "От:"
+
+#: inc/class-wc-dropshipping-settings.php:2799
+#: inc/class-wc-dropshipping-settings.php:2870
+msgid "Change the range to lower value to add more rules."
+msgstr ""
+"Измените диапазон на более низкое значение, чтобы добавить больше правил."
+
+#: inc/class-wc-dropshipping-settings.php:2811
+msgid "Product Cost Range"
+msgstr "Диапазон стоимости товара"
+
+#: inc/class-wc-dropshipping-settings.php:2833
+msgid "To:"
+msgstr "До:"
+
+#: templates/wc-dropshipping-dashboard.php:26
+msgid "WooCommerce Dropshipping Dashboard"
+msgstr "Панель управления WooCommerce Dropshipping"
+
+#: woo-includes/template/woocommerce/emails/email-order-details.php:39
+#, php-format
+msgid "[Order #%s]"
+msgstr "[Заказ #%s]"
+
+#: woocommerce-dropshipping.php:133
+msgid "WooCommerce Dropshipping requires"
+msgstr "Для работы WooCommerce Dropshipping необходим"
+
+#: woocommerce-dropshipping.php:133
+msgid "to be installed on your server."
+msgstr "быть установленным на вашем сервере."
+
+#: woocommerce-dropshipping.php:247
+msgid "WooCommerce Dropshipping"
+msgstr "WooCommerce Dropshipping"
+
+#: woocommerce-dropshipping.php:320 woocommerce-dropshipping.php:321
+msgid "Graph Reports"
+msgstr "Отчеты о графиках"
+
+#: woocommerce-dropshipping.php:517
+#, php-format
+msgid "Please see the attached PDF. Thank you! - %s"
+msgstr "Пожалуйста, ознакомьтесь с прикрепленным PDF. Спасибо! - %s"
+
+#: woocommerce-dropshipping.php:525
+#, php-format
+msgid "We hope you enjoy your order. Thank you for shopping with %s"
+msgstr "Надеемся, что вам понравится ваш заказ. Спасибо за покупку в %s"
+
+#: woocommerce-dropshipping.php:582
+msgid "Settings"
+msgstr "Настройки"
+
+#: woocommerce-dropshipping.php:583
+msgid "Docs"
+msgstr "Документация"
+
+#: woocommerce-dropshipping.php:621
+msgid ""
+"Woocommerce Dropshipping activated successfully! In order for the plugin to "
+"work correctly. Visit"
+msgstr ""
+"Включение Woocommerce Dropshipping прошло успешно! Для корректной работы "
+"плагина посетите"
+
+#: woocommerce-dropshipping.php:623
+msgid "and hit the \"Save Changes\" button"
+msgstr "и нажмите кнопку \"Сохранить изменения\""
+
+#: woocommerce-dropshipping.php:722 woocommerce-dropshipping.php:726
+msgid "Suppliers"
+msgstr "Поставщики"
+
+#: woocommerce-dropshipping.php:724
+msgid "Dropshipping Supplier"
+msgstr "Поставщик для дропшиппинга"
+
+#: woocommerce-dropshipping.php:728
+msgid "Search Dropshipping Suppliers"
+msgstr "Поиск поставщиков для дропшиппинга"
+
+#: woocommerce-dropshipping.php:730
+msgid "All Dropshipping Suppliers"
+msgstr "Все поставщики для дропшиппинга"
+
+#: woocommerce-dropshipping.php:732
+msgid "Edit Dropshipping Supplier"
+msgstr "Редактировать поставщика для дропшиппинга"
+
+#: woocommerce-dropshipping.php:734
+msgid "Update Dropshipping Supplier"
+msgstr "Обновить поставщика для дропшиппинга"
+
+#: woocommerce-dropshipping.php:736
+msgid "Add New Dropshipping Supplier"
+msgstr "Добавить нового поставщика для дропшиппинга"
+
+#: woocommerce-dropshipping.php:738
+msgid "New Dropshipping Supplier Name"
+msgstr "Новое имя поставщика для дропшиппинга"
+
+#: woocommerce-dropshipping.php:740
+msgid "Popular Dropshipping Suppliers"
+msgstr "Популярные поставщики для дропшиппинга"
+
+#: woocommerce-dropshipping.php:742
+msgid "Separate Dropshipping Suppliers with commas"
+msgstr "Разделите поставщиков для дропшиппинга запятыми"
+
+#: woocommerce-dropshipping.php:744
+msgid "Add or remove Dropshipping Suppliers"
+msgstr "Добавьте или удалите поставщиков для дропшиппинга"
+
+#: woocommerce-dropshipping.php:746
+msgid "Choose from the most used Dropshipping Suppliers"
+msgstr "Выберите из самых популярных поставщиков для дропшиппинга"
+
+#: woocommerce-dropshipping.php:748
+msgid "No Dropshipping Suppliers found"
+msgstr "Поставщики для дропшиппинга не найдены"
+
+#: woocommerce-dropshipping.php:875 woocommerce-dropshipping.php:876
+msgid "Dashboard"
+msgstr "Панель управления"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:1704
+msgid "\""
+msgstr ""
+
+#: /woocommerce-dropshipping/complete.php:116
+#: /woocommerce-dropshipping/packingslip.php:116
+#, php-format
+msgid "<strong>Supplier Account #</strong> %s"
+msgstr "<strong>Учетная запись поставщика №</strong> %s"
+
+#: /woocommerce-dropshipping/packingslip.php:84
+#, php-format
+msgid "[ %s Order # %s  ]"
+msgstr "[ %s Заказ # %s ]"
+
+#: /woocommerce-dropshipping/complete.php:84
+#, php-format
+msgid "[ %s Order # %s is completed ]"
+msgstr "[ %s Заказ № %s завершен ]"
+
+#: /woocommerce-dropshipping/templates/wc-dropshipping-dashboard.php:56
+msgid "Account Information"
+msgstr "Информация Об Учетной Записи"
+
+#: /woocommerce-dropshipping/templates/wc-dropshipping-dashboard.php:103
+msgid "Active Affiliate Products"
+msgstr "Активные партнерские продукты"
+
+#: /woocommerce-dropshipping/templates/wc-dropshipping-dashboard.php:151
+msgid "Adjust Plugin Settings"
+msgstr "Отрегулируйте настройки плагина"
+
+#: /woocommerce-dropshipping/templates/wc-dropshipping-dashboard.php:145
+msgid "Aliexpress Import"
+msgstr "Алиэкспресс Импорт"
+
+#: /woocommerce-dropshipping/templates/wc-dropshipping-dashboard.php:61
+msgid "Aliexpress Orders"
+msgstr "Заказы выполнены"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:1156
+msgid "API Key Mismatch!!"
+msgstr "Несоответствие ключей API!!"
+
+#: /woocommerce-dropshipping/complete.php:1035
+#: /woocommerce-dropshipping/packingslip.php:1035
+msgid "Billing Address"
+msgstr "Адрес для выставления счета"
+
+#: /woocommerce-dropshipping/complete.php:171
+#: /woocommerce-dropshipping/packingslip.php:171
+msgid "Chosen Shipping Method:"
+msgstr "Выбранный способ доставки:"
+
+#: /woocommerce-dropshipping/complete.php:994
+#: /woocommerce-dropshipping/complete.php:1141
+#: /woocommerce-dropshipping/packingslip.php:994
+#: /woocommerce-dropshipping/packingslip.php:1141
+msgid "Company Address"
+msgstr "Адрес компании"
+
+#: /woocommerce-dropshipping/templates/wc-dropshipping-dashboard.php:96
+msgid "Completed Dropshipping Orders"
+msgstr "Выполненные заказы по дропшиппингу"
+
+#: /woocommerce-dropshipping/templates/wc-dropshipping-dashboard.php:152
+msgid "Configure packing slips, emails and more."
+msgstr "Настройте отборочные накладные, электронную почту и многое другое."
+
+#: /woocommerce-dropshipping/complete.php:246
+#: /woocommerce-dropshipping/packingslip.php:246
+#, php-format
+msgid "Customer Order Note : %s"
+msgstr "Примечание к заказу клиента: %s"
+
+#: /woocommerce-dropshipping/inc/class-wc-dropshipping-admin.php:548
+msgid "Dropshipping Notifications"
+msgstr "Уведомления о дропшиппинге"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:1441
+msgid "Error. Product does not exist in woocommerce store."
+msgstr "Ошибка. Товар не существует в магазине woocommerce."
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:938
+msgid "Given parent categories id does not exist in product categories list."
+msgstr ""
+"Указанный идентификатор родительской категории не существует в списке "
+"категорий продуктов."
+
+#: /woocommerce-dropshipping/templates/wc-dropshipping-dashboard.php:153
+msgid "Go to Settings"
+msgstr "Перейдите в настройки"
+
+#. Description of the plugin
+msgid ""
+"Handle dropshipping from your WooCommerce. Create a packing slip, and notify "
+"the vendor when an order is paid. Import inventory updates via CSV from your "
+"vendors."
+msgstr ""
+"Управляйте дропшиппингом из вашего WooCommerce. Создайте отборочную "
+"накладную и уведомите поставщика об оплате заказа. Импортируйте обновления "
+"запасов через CSV от ваших поставщиков."
+
+#. URI of the plugin
+msgid "http://woocommerce.com/products/woocommerce-dropshipping/"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://opmc.com.au/"
+msgstr ""
+
+#: /woocommerce-dropshipping/complete.php:436
+#: /woocommerce-dropshipping/packingslip.php:436
+msgid "Image"
+msgstr "Изображение"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:652
+msgid "Image data is empty!"
+msgstr "Данные изображения пусты!"
+
+#: /woocommerce-dropshipping/templates/wc-dropshipping-dashboard.php:147
+msgid "Install Now"
+msgstr "Установите сейчас"
+
+#: /woocommerce-dropshipping/templates/wc-dropshipping-dashboard.php:146
+msgid "Install the extension to get started"
+msgstr "Установите расширение, чтобы начать"
+
+#: /woocommerce-dropshipping/templates/wc-dropshipping-dashboard.php:126
+msgid "Low on Stock"
+msgstr "Мало на складе"
+
+#: /woocommerce-dropshipping/templates/wc-dropshipping-dashboard.php:159
+msgid "Manage Suppliers"
+msgstr "Управление поставщиками"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:1589
+msgid "Merchant store currency code not found!"
+msgstr "Код валюты торгового магазина не найден!"
+
+#: /woocommerce-dropshipping/complete.php:829
+#: /woocommerce-dropshipping/packingslip.php:829
+msgid "Miscellaneous"
+msgstr "Разнообразный"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:921
+msgid "Name parameter required."
+msgstr "Требуется параметр имени."
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:850
+msgid "No categories found!"
+msgstr "Категории не найдены!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:634
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:1165
+msgid "Oops! Something went wrong. Please try again!"
+msgstr "Упс! Что-то пошло не так. Пожалуйста, попробуйте еще раз!"
+
+#. Author of the plugin
+msgid "OPMC Australia Pty Ltd"
+msgstr "OPMC Australia Pty Ltd."
+
+#: /woocommerce-dropshipping/inc/class-wc-dropshipping-checkout.php:166
+#: /woocommerce-dropshipping/inc/class-wc-dropshipping-checkout.php:175
+msgid "Order number"
+msgstr "Номер заказа"
+
+#: /woocommerce-dropshipping/complete.php:234
+#: /woocommerce-dropshipping/packingslip.php:234
+msgid "Order Number :"
+msgstr "Номер заказа :"
+
+#: /woocommerce-dropshipping/templates/wc-dropshipping-dashboard.php:40
+msgid "Orders"
+msgstr "Заказы"
+
+#: /woocommerce-dropshipping/templates/wc-dropshipping-dashboard.php:75
+msgid "Orders Completed"
+msgstr "Заказы выполнены"
+
+#: /woocommerce-dropshipping/templates/wc-dropshipping-dashboard.php:68
+msgid "Orders in Progress"
+msgstr "Заказы в работе"
+
+#: /woocommerce-dropshipping/templates/wc-dropshipping-dashboard.php:158
+msgid "Organise your store's products by their supplier."
+msgstr "Организуйте товары вашего магазина по поставщикам."
+
+#: /woocommerce-dropshipping/templates/wc-dropshipping-dashboard.php:35
+msgid "Out of Stock"
+msgstr "Распродано"
+
+#: /woocommerce-dropshipping/templates/wc-dropshipping-dashboard.php:82
+msgid "Out of Stock Listings"
+msgstr "Нет в наличии"
+
+#: /woocommerce-dropshipping/complete.php:196
+#: /woocommerce-dropshipping/complete.php:218
+#: /woocommerce-dropshipping/packingslip.php:196
+#: /woocommerce-dropshipping/packingslip.php:218
+msgid "Payment Type :"
+msgstr "Способ оплаты :"
+
+#: /woocommerce-dropshipping/templates/wc-dropshipping-dashboard.php:89
+msgid "Pending Orders"
+msgstr "Заказы в ожидании"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:253
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:1202
+msgid "Please enter a valid Type (simple or variable)!"
+msgstr "Пожалуйста, введите действительный тип (простой или переменный)!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:444
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:1393
+msgid "Please enter a valid URL for this AliExpress Product!"
+msgstr ""
+"Пожалуйста, введите действительный URL-адрес этого продукта AliExpress!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:448
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:1397
+msgid "Please enter a valid URL for this AliExpress Store!"
+msgstr ""
+"Пожалуйста, введите действительный URL-адрес этого магазина AliExpress!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:1389
+msgid "Please enter AliExpress Store Name for this product!"
+msgstr "Пожалуйста, введите название магазина AliExpress для этого продукта!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:452
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:1401
+msgid "Please enter AliExpress Store Price Range for this product!"
+msgstr "Пожалуйста, укажите диапазон цен на этот товар в магазине AliExpress!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:1232
+msgid "Please specify a list of valid categories in array format!"
+msgstr ""
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:1246
+msgid ""
+"Please specify a list of valid categories in array format. Categories array "
+"must contain a valid numeric id parameter!"
+msgstr ""
+"Укажите список допустимых категорий в формате массива. Массив категорий "
+"должен содержать действительный числовой параметр идентификатора!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:1293
+msgid ""
+"Please specify a list of valid image URLs in array format. Images array must "
+"contain a valid image URL in src. Image type can be one of these: (jpg, gif, "
+"png, jpeg)."
+msgstr ""
+"Укажите список допустимых URL-адресов изображений в формате массива. Массив "
+"изображений должен содержать действительный URL-адрес изображения в src. Тип "
+"изображения может быть одним из следующих: (jpg, gif, png, jpeg)."
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:1254
+msgid "Please specify a list of valid images URLs in array format!"
+msgstr "Укажите список допустимых URL-адресов изображений в формате массива!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:283
+msgid "Please specify a valid category array format!"
+msgstr "Пожалуйста, укажите действительный формат массива категорий!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:297
+msgid ""
+"Please specify a valid category array format. Categories array must contain "
+"a valid numeric id parameter!"
+msgstr ""
+"Укажите действительный формат массива категорий. Массив категорий должен "
+"содержать действительный числовой параметр идентификатора!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:365
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:1314
+msgid ""
+"Please specify a valid list of Dimensions in array format. Dimensions array "
+"must contain a valid numeric length, width, and height parameters!"
+msgstr ""
+"Укажите действительный список измерений в формате массива. Массив размеров "
+"должен содержать допустимые числовые параметры длины, ширины и высоты!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:1357
+msgid ""
+"Please specify a valid list of Tags array format. Tags array must contain a "
+"valid numeric id parameter!"
+msgstr ""
+"Укажите действительный список форматов массива тегов. Массив тегов должен "
+"содержать допустимый числовой параметр идентификатора!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:394
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:1343
+msgid ""
+"Please specify a valid list of Tags in array format. Tags array must contain "
+"a valid numeric id parameter!"
+msgstr ""
+"Укажите действительный список тегов в формате массива. Массив тегов должен "
+"содержать допустимый числовой параметр идентификатора!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:408
+msgid ""
+"Please specify a valid list of Tagsin array format. Tags array must contain "
+"a valid numeric id parameter!"
+msgstr ""
+"Укажите действительный список тегов в формате массива. Массив тегов должен "
+"содержать допустимый числовой параметр идентификатора!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:386
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:1335
+msgid ""
+"Please specify a valid non-negative numeric height parameter within "
+"Dimensions array!"
+msgstr ""
+"Укажите действительный неотрицательный числовой параметр высоты в массиве "
+"размеров!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:373
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:1322
+msgid ""
+"Please specify a valid non-negative numeric length parameter within "
+"Dimensions array!"
+msgstr ""
+"Укажите допустимый неотрицательный числовой параметр длины в массиве "
+"измерений!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:379
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:1328
+msgid ""
+"Please specify a valid non-negative numeric width parameter within "
+"Dimensions array!"
+msgstr ""
+"Укажите допустимый неотрицательный числовой параметр ширины в массиве "
+"размеров!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:305
+msgid "Please specify valid URLs to images in array format!"
+msgstr ""
+"Пожалуйста, указывайте действительные URL-адреса изображений в формате "
+"массива!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:344
+msgid ""
+"Please specify valid URLs to images in array format. Images array must "
+"contain a valid image URL in src. Image type can be one of these: (jpg, gif, "
+"png, jpeg)."
+msgstr ""
+"Укажите действительные URL-адреса изображений в формате массива. Массив "
+"изображений должен содержать действительный URL-адрес изображения в src. Тип "
+"изображения может быть одним из следующих: (jpg, gif, png, jpeg)."
+
+#: /woocommerce-dropshipping/templates/wc-dropshipping-dashboard.php:140
+msgid "Plugin Setup"
+msgstr "Настройка плагина"
+
+#: /woocommerce-dropshipping/inc/class-wc-dropshipping-orders.php:732
+msgid "'New Order #%1$s From %2$s"
+msgstr "'Новый заказ #%1$s от %2$s"
+
+#: /woocommerce-dropshipping/complete.php:614
+#: /woocommerce-dropshipping/complete.php:646
+#: /woocommerce-dropshipping/packingslip.php:614
+#: /woocommerce-dropshipping/packingslip.php:646
+msgid "Price"
+msgstr "Цена"
+
+#: /woocommerce-dropshipping/complete.php:488
+#: /woocommerce-dropshipping/packingslip.php:488
+msgid "Product"
+msgstr "Продукт"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:500
+msgid "Product already exists. Please select another product."
+msgstr "Товар уже существует. Пожалуйста, выберите другой продукт."
+
+#: /woocommerce-dropshipping/templates/wc-dropshipping-dashboard.php:45
+msgid "Projected Profit"
+msgstr "Прогнозируемая прибыль"
+
+#: /woocommerce-dropshipping/templates/wc-dropshipping-dashboard.php:30
+msgid "Published Listings"
+msgstr "Опубликованные списки"
+
+#: /woocommerce-dropshipping/complete.php:512
+#: /woocommerce-dropshipping/packingslip.php:512
+msgid "Quantity"
+msgstr "Количество"
+
+#: /woocommerce-dropshipping/templates/wc-dropshipping-dashboard.php:50
+msgid "Recent Order Data"
+msgstr "Данные о последних заказах"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:221
+msgid "Setting for price rate is not set"
+msgstr "Настройка ценового тарифа не установлена."
+
+#: /woocommerce-dropshipping/complete.php:1080
+#: /woocommerce-dropshipping/complete.php:1241
+#: /woocommerce-dropshipping/packingslip.php:1080
+#: /woocommerce-dropshipping/packingslip.php:1241
+msgid "Shipping Address"
+msgstr "Shipping Address"
+
+#: /woocommerce-dropshipping/complete.php:838
+#: /woocommerce-dropshipping/complete.php:848
+#: /woocommerce-dropshipping/packingslip.php:838
+#: /woocommerce-dropshipping/packingslip.php:848
+msgid "Shipping Cost"
+msgstr "Стоимость доставки"
+
+#: /woocommerce-dropshipping/complete.php:464
+#: /woocommerce-dropshipping/packingslip.php:464
+msgid "SKU"
+msgstr "Артикул"
+
+#: /woocommerce-dropshipping/complete.php:464
+#: /woocommerce-dropshipping/packingslip.php:464
+msgid "Customer Email : %s"
+msgstr "Электронная почта клиента: %s"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:1559
+msgid "Something went wrong. Please try again!"
+msgstr "Что-то пошло не так. Пожалуйста, попробуйте еще раз!"
+
+#: /woocommerce-dropshipping/complete.php:868
+#: /woocommerce-dropshipping/packingslip.php:868
+msgid "taxes"
+msgstr "налоги"
+
+#: /woocommerce-dropshipping/complete.php:1298
+msgid "Thank you!"
+msgstr "Спасибо!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:415
+msgid "The Attributes parameter must be in a valid array format!"
+msgstr "Параметр Attributes должен иметь допустимый формат массива!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:1364
+msgid "The Attributess parameter must be in a valid array format!"
+msgstr "Параметр Attributess должен иметь допустимый формат массива!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:879
+msgid "The Category Parent parameter is required and must be numeric value!"
+msgstr ""
+"Параметр «Родительская категория» является обязательным и должен иметь "
+"числовое значение!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:419
+msgid "The Default Attributes parameter must be in a valid array format!"
+msgstr ""
+"Параметр «Атрибуты по умолчанию» должен иметь допустимый формат массива!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:1368
+msgid "The Default Attributess parameter must be in a valid array format!"
+msgstr "Параметр Default Attributess должен иметь допустимый формат массива!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:273
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:875
+msgid "The Description parameter is required!"
+msgstr "Параметр Описание обязателен!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:957
+msgid "The Id parameter is required and must be a number!"
+msgstr "Параметр Id является обязательным и должен быть числом!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:350
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:1299
+msgid ""
+"The Manage Stock parameter is required and must be a boolean (true/false) "
+"value!"
+msgstr ""
+"Параметр «Управление запасами» является обязательным и должен иметь "
+"логическое значение (истина/ложь)!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:871
+msgid "The Name parameter is required!"
+msgstr "Параметр Имя является обязательным!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:428
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:1377
+msgid ""
+"The Number Of Orders parameter must be a valid non-negative numeric value!"
+msgstr ""
+"Параметр «Количество ордеров» должен иметь допустимое неотрицательное "
+"числовое значение!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:2002
+msgid "The Order Id does not exist!"
+msgstr "Идентификатор заказа не существует!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:977
+msgid "The order id does not exist."
+msgstr "Идентификатор заказа не существует."
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:2007
+msgid "The Order Id parameter is required!"
+msgstr "Параметр Order Id обязателен!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:2012
+msgid "The Order Status parameter is required!"
+msgstr "Параметр Статус заказа обязателен!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:261
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:1210
+msgid ""
+"The Price parameter is required and must be a valid non-negative numeric "
+"value!"
+msgstr ""
+"Параметр «Цена» является обязательным и должен иметь допустимое "
+"неотрицательное числовое значение!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:265
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:1214
+msgid ""
+"The Regular Price parameter is required and must be a valid non-negative "
+"numeric value!"
+msgstr ""
+"Параметр «Обычная цена» является обязательным и должен иметь допустимое "
+"неотрицательное числовое значение!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:269
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:1218
+msgid "The Sale Price parameter must be a valid non-negative numeric value!"
+msgstr ""
+"Параметр «Цена продажи» должен иметь допустимое неотрицательное числовое "
+"значение!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:277
+msgid "The Short Description parameter is required!"
+msgstr "Параметр Краткое описание является обязательным!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:257
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:1206
+msgid "The SKU parameter is required!"
+msgstr "Параметр SKU обязателен!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:354
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:1303
+msgid ""
+"The Stock Quantity parameter is required and must be a valid non-negative "
+"number!"
+msgstr ""
+"Параметр «Количество запасов» является обязательным и должен представлять "
+"собой допустимое неотрицательное число!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:249
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:1198
+msgid "The Title parameter is required!"
+msgstr "Параметр Title является обязательным!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:423
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:1372
+msgid "The Variations parameter must be in a valid array format!"
+msgstr "Параметр Variations должен иметь допустимый формат массива!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:358
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:1307
+msgid "The Weight parameter must be a valid non-negative numeric value!"
+msgstr ""
+"Параметр «Вес» должен быть допустимым неотрицательным числовым значением!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:1090
+msgid "The woo API key  parameter is required!"
+msgstr "Требуется параметр ключа API woo!"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:1086
+msgid "The woo url parameter is required!"
+msgstr "Параметр woo url является обязательным!"
+
+#: /woocommerce-dropshipping/complete.php:915
+#: /woocommerce-dropshipping/complete.php:932
+#: /woocommerce-dropshipping/packingslip.php:915
+#: /woocommerce-dropshipping/packingslip.php:932
+msgid "Total"
+msgstr "Общий"
+
+#: /woocommerce-dropshipping/complete.php:346
+#: /woocommerce-dropshipping/packingslip.php:346
+msgid "Tracking Number:"
+msgstr "Идентификационный номер:"
+
+#: /woocommerce-dropshipping/complete.php:543
+#: /woocommerce-dropshipping/complete.php:575
+#: /woocommerce-dropshipping/packingslip.php:543
+#: /woocommerce-dropshipping/packingslip.php:575
+msgid "Type Of Package"
+msgstr "Тип упаковки"
+
+#: /woocommerce-dropshipping/ali-api/woocommerce_aliexpress.php:1160
+msgid "URL mismatch."
+msgstr "Несоответствие URL."
+
+#: /woocommerce-dropshipping/woocommerce-dropshipping.php:159
+#, php-format
+msgid "We hope you enjoy your order. Thank you for shopping with %1$s"
+msgstr ""
+"Мы надеемся, что вам понравится ваш заказ. Благодарим за покупки у %1$s"
+
+#. 1: href link to Fileinfo extension php doc
+#: /woocommerce-dropshipping/woocommerce-dropshipping.php:55
+#, php-format
+msgid "WooCommerce Dropshipping requires %s to be installed on your server."
+msgstr ""
+"WooCommerce Dropshipping требует, чтобы %s был установлен на вашем сервере."

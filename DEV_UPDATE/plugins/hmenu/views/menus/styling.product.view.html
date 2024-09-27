@@ -1,0 +1,143 @@
+<script type="text/javascript" data-cfasync="false">
+'use strict';
+//STYLING.STANDARD VIEW
+
+//load
+jQuery(function(){
+	//functions
+	hmenu_set_main_styles();	
+	hmenu_find_toggle_elements();	
+	hmenu_set_current_header_label('Currently Editing:',hmenu_global_menu_obj.menu.name);
+});
+
+//set dropdown standard styles
+function hmenu_set_main_styles(){
+	
+	var ps_cart = hmenu_global_menu_obj.main_styles[0].cart;
+	var ps_icon_size = hmenu_global_menu_obj.main_styles[0].iconProductSize;
+	var ps_icon_color = hmenu_global_menu_obj.main_styles[0].iconProductColor;
+	var ps_icon_hover_color = hmenu_global_menu_obj.main_styles[0].iconProductHoverColor;
+	
+	//DEVIDERS
+	///////////////////////////////////////////////////
+	
+	//set cart
+	if(ps_cart){
+		if(jQuery('#cart').val() == ps_cart){ 
+			jQuery('#cart').attr('checked', 'checked');
+		}
+	}
+	
+	//devider tranparency
+	if(ps_icon_size){
+		jQuery('#iconProductSize option').each(function(index, element) {
+           if(jQuery(this).val() == ps_icon_size){
+			   jQuery(this).attr('selected', 'selected')
+		   }
+        });
+	}
+	
+	//color
+	if(ps_icon_color){
+		jQuery('#iconProductColor').val(ps_icon_color);
+	}
+	
+	//hover color
+	if(ps_icon_hover_color){
+		jQuery('#iconProductHoverColor').val(ps_icon_hover_color);
+	}
+	
+	//switch components
+	hmenu_switch_components();
+	
+	//enable update settings
+	hmenu_enable_update_settings();
+	
+}
+
+//enable update settings
+function hmenu_enable_update_settings(){	
+	
+	var control_cart = jQuery('#cart');
+	var control_iconSize = jQuery('#iconProductSize');
+	var control_iconColor = jQuery('#iconProductColor');
+	var control_iconHoverColor = jQuery('#iconProductHoverColor');
+	
+	//change: enable cart
+	jQuery(control_cart).on('change', function(){
+		jQuery(this).prop('checked') ? hmenu_global_menu_obj.main_styles[0].cart = jQuery(this).val() : hmenu_global_menu_obj.main_styles[0].cart = 0;
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});
+	
+	//change: size
+	jQuery('.iconSize .hero_dropdown .hero_drop_row').on('click', function(){
+		jQuery(control_iconSize).trigger('change');		
+	});	
+	jQuery(control_iconSize).on('change', function(){
+		hmenu_global_menu_obj.main_styles[0].iconProductSize = jQuery(this).children('option:selected').val();
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});
+	
+	//change: color
+	jQuery(control_iconColor).on('change keyup', function(){
+		hmenu_global_menu_obj.main_styles[0].iconProductColor = jQuery(this).val();
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});	
+	
+	//change: hover color
+	jQuery(control_iconHoverColor).on('change keyup', function(){
+		hmenu_global_menu_obj.main_styles[0].iconProductHoverColor = jQuery(this).val();
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});	
+	
+}
+
+</script>
+<div class="hero_views">
+    <div class="hero_col_12">
+    	<h2 class="hero_red size_18 weight_600">
+            Woo Cart Icon Styling<br />
+            <strong class="size_11 hero_grey">Set the styling your your Woo Cart icon.</strong>
+        </h2>
+        <!-- START: FORM -->
+            <form>
+                <!-- START: ACTIVATION -->
+                    <div class="hero_section_holder hero_grey size_14"> 
+                    	<div class="hero_section_toggle" data-toggle-section="main_responsive">       
+                            <div class="hero_col_12">
+                            	<div class="hero_col_8">
+                                    <label>
+                                        <h2 class="size_18 hero_red weight_600">Woo Cart</h2>
+                                        <p class="size_12 hero_grey">Choose your color and size for the Woo Cart icon.</p>
+                                    </label>
+                                </div>
+                                <div class="hero_col_4">
+                                    <input type="checkbox" data-size="lrg" id="cart" name="cart" value="1" data-toggler="true">
+                                </div>
+                            </div>
+                            <div class="hero_col_12">
+                                <div class="hero_col_2">
+                                    <label>Icon Size</label>
+                                    <select data-size="lrg" id="iconProductSize" name="iconProductSize">
+                                        <option value="xsmall" selected="selected">x-small</option>
+                                        <option value="small">small</option>
+                                        <option value="medium">medium</option>
+                                        <option value="large">large</option>
+                                    </select>
+                                </div>
+                                <div class="hero_col_2">
+                                    <label>Icon color</label>
+                                    <input type="text" id="iconProductColor" class="color_picker" name="iconProductColor" value="#DC4551">
+                                </div>
+                                <div class="hero_col_2">
+                                    <label>Icon Hover color</label>
+                                    <input type="text" id="iconProductHoverColor" class="color_picker" name="iconProductHoverColor" value="#DC4551">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <!-- END: ACTIVATION -->            
+            </form>
+        <!-- END: FORM -->
+    </div>
+</div>

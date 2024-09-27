@@ -1,0 +1,495 @@
+<script type="text/javascript" data-cfasync="false">
+'use strict';
+//MENUS VIEW CORE
+
+var hmenu_global_menu_obj;
+var hmenu_global_google_fonts;
+var hmenu_global_users;
+
+var hmenu_global_responsive_check = true;
+
+//load
+jQuery(function () {
+	hmenu_bind_insert_menu_listener();
+	hmenu_load_google_fonts();
+	hmenu_get_users();
+});
+
+//get users
+function hmenu_get_users() {
+	jQuery.ajax({
+		url: hmenu_ajax_url,
+		type: "POST",
+		data: {
+			'action': 'hmenu_get_users'
+		},
+		dataType: "json"
+	}).done(function (data) {
+		//files generated
+		hmenu_global_users = data;
+	}).fail(function () {
+	});
+}
+
+//load google fonts
+function hmenu_load_google_fonts() {
+
+	jQuery.ajax({
+		url: 'https://www.googleapis.com/webfonts/v1/webfonts?key=AIzaSyCe3XGw8IKuzIXe7bL6ZQc1xbe3MX5DR-s',
+		type: "GET",
+		dataType: "json"
+	}).done(function (data) {
+		hmenu_global_google_fonts = data.items;
+	}).fail(function () {
+		//error
+	});
+
+}
+
+//populate google fonts
+function hmenu_populate_fonts(fonts) {
+
+	//populate selct boxes according to array above
+	jQuery(fonts).each(function (idx, elm) {
+
+		var the_fonts = '';
+
+		var default_fonts = ['inherit', 'Arial', 'Verdana', 'Times New Roman', 'Times', 'Trebuchet MS', 'sans-serif', 'serif'];
+
+		jQuery(default_fonts).each(function (index, element) {
+			the_fonts += "<option value='" + element + "'>" + element + "</option>";
+		});
+
+		jQuery(hmenu_global_google_fonts).each(function (index, element) {
+			the_fonts += "<option value='" + element.family + "'>" + element.family + "</option>";
+		});
+
+		jQuery('#' + elm).html(the_fonts);
+
+		hmenu_update_select_component(jQuery('#' + elm));
+
+	});
+
+}
+
+//bind static font load
+var hmenu_global_font_object;
+var hmenu_global_social_object;
+var hmenu_global_full_object;
+
+function hmenu_load_json_font_object(type_to_load, location) {
+	jQuery.getJSON(hmenu_plugin_url + '_static_fonts/font_object.js', function (data) {
+		//attach to global menu object(s)
+		if (type_to_load == 'social') {
+			hmenu_global_font_object = data.font.splice(0, 1);
+		} else {
+			hmenu_global_font_object = data.font.slice(0, -1);
+		}
+		hmenu_execute_font_load(type_to_load, location);
+	});
+}
+
+//bind font load
+function hmenu_execute_font_load(type_to_load, location) {
+	jQuery.ajax({
+		url: hmenu_ajax_url,
+		type: "POST",
+		data: {
+			'icons': type_to_load,
+			'action': 'hmenu_load_fonts'
+		},
+		dataType: "json"
+	}).done(function (data) {
+		var font_obj;
+		font_obj = data.font;
+		if (data) {
+			hmenu_global_font_object = jQuery.merge(hmenu_global_font_object, font_obj);
+			hmenu_font_func_execute(type_to_load, location, hmenu_global_font_object);
+		} else {
+			hmenu_font_func_execute(type_to_load, location, hmenu_global_font_object);
+		}
+	}).fail(function () {
+		hmenu_font_func_execute(type_to_load, location, hmenu_global_font_object);
+	});
+}
+
+//function to house all the tiny functions required for the font packs
+function hmenu_font_func_execute(type_to_load, location, global_font_object) {
+	hmenu_load_styles(global_font_object);
+	if (location === 'normal') {
+		hmenu_load_select(global_font_object);
+		hmenu_load_icons(0, type_to_load); ///load default
+		hmenu_load_icons_click();
+	} else if (location === 'structure') {
+		hmenu_load_icon_select(global_font_object);
+		hmenu_filter_global_icons();
+		hmenu_load_global_icons(0); ///load default
+	}
+}
+
+//load icons
+function hmenu_load_icons(idx, type) {
+
+	var icon_html = '';
+
+	jQuery(hmenu_global_font_object[idx].icons).each(function (index, element) {
+		icon_html += '<div class="icon_item icon_' + hmenu_global_font_object[idx].fontName + '_' + element.iconContent + ' rounded_3" data-class="icon_' + hmenu_global_font_object[idx].fontName + '_' + element.iconContent + '"></div>'
+	});
+
+	jQuery('.icons_load_here').html(icon_html);
+
+	if (type == 'social') {
+		hmenu_insert_menu_icon();
+	}
+}
+
+//load edit content
+function hmenu_load_edit(json) {
+	//get menu object
+	jQuery.ajax({
+		url: hmenu_ajax_url,
+		type: "POST",
+		data: {
+			'id': json.menuId,
+			'action': 'hmenu_load_menu_object'
+		},
+		dataType: "json"
+	}).done(function (data) {
+		hmenu_global_menu_obj = data;
+		hmenu_manual_load_view('dropdown_menus');
+		//unlock core view
+		hmenu_unlock_core_view_reload();
+		//highlight active
+		setTimeout(function () {
+			jQuery('.hero_sub #sub_item_row_' + hmenu_global_menu_obj.menu.menuId).addClass('active_sidebar_elem');
+		}, 400);
+		//generate files
+	}).fail(function (event) {
+		//page error		
+	});
+}
+
+//num only
+function hmenu_num_only(evt) {
+	evt = (evt) ? evt : window.event;
+	var charCode = (evt.which) ? evt.which : evt.keyCode;
+	if (charCode == 37 || charCode == 45) {
+		return true;
+	} else if (charCode > 31 && (charCode < 48 || charCode > 57)) {
+		return false;
+	}
+	return true;
+}
+
+//check media inputs
+function hmenu_check_media_inputs() {
+
+	//check responsive inputs
+	var input_one = parseInt(jQuery('#siteResponsiveOne').val());
+	var input_two = parseInt(jQuery('#siteResponsiveTwo').val());
+	var input_three = parseInt(jQuery('#siteResponsiveThree').val());
+
+	var reset_height_one = 768;
+	var reset_height_two = 992;
+	var reset_height_three = 1200;
+
+	var error_count = 0;
+	var error_message = 'You have an error, please check below: </br>';
+
+	if (input_one >= 320 && input_one < input_two) {
+		jQuery('#siteResponsiveOne').removeClass('has-error');
+		reset_height_one = input_one;
+	} else {
+		error_count++;
+		jQuery('#siteResponsiveOne').addClass('has-error');
+		error_message += '<span>Please make sure your Mobile resolution is bigger than 320px and smaller than your Tablet resolution.</span>';
+	}
+
+	if (input_two > input_one && input_two < input_three) {
+		jQuery('#siteResponsiveTwo').removeClass('has-error');
+		reset_height_two = input_two;
+	} else {
+		error_count++;
+		jQuery('#siteResponsiveTwo').addClass('has-error');
+		error_message += '<span>Please make sure your Tablet resolution is bigger than your Mobile resolution and smaller than your Large resolution.</span>';
+	}
+
+	if (input_three > input_two) {
+		jQuery('#siteResponsiveThree').removeClass('has-error');
+		reset_height_three = input_three;
+	} else {
+		error_count++;
+		jQuery('#siteResponsiveThree').addClass('has-error');
+		error_message += '<span>Please make sure your Large resolution is bigger than your Tablet resolution.</span>';
+	}
+
+	var save_status;
+
+	if (error_count == 0) {
+		save_status = true;
+		jQuery('.hmenu_site_responsive').animate({
+			height: 0
+		});
+	} else {
+		jQuery('.hmenu_site_responsive_inner').html(error_message);
+		var hmenu_the_height = jQuery('.hmenu_site_responsive_inner').height() + 30;
+		jQuery('.hmenu_site_responsive').animate({
+			height: hmenu_the_height
+		}, 100);
+		save_status = false;
+	}
+
+	hmenu_global_responsive_check = save_status;
+
+	if (!hmenu_global_responsive_check) {
+		hmenu_global_menu_obj.main_styles[0].siteResponsiveOne = 768;
+		hmenu_global_menu_obj.main_styles[0].siteResponsiveTwo = 992;
+		hmenu_global_menu_obj.main_styles[0].siteResponsiveThree = 1200;
+	} else {
+		hmenu_global_menu_obj.main_styles[0].siteResponsiveOne = reset_height_one;
+		hmenu_global_menu_obj.main_styles[0].siteResponsiveTwo = reset_height_two;
+		hmenu_global_menu_obj.main_styles[0].siteResponsiveThree = reset_height_three;
+	}
+
+}
+
+var hmenu_object_to_save;
+var hmenu_nav_temp_object;
+var hmenu_nav_object;
+var hmenu_sty_object;
+var hmenu_the_id;
+
+//save event callback
+function hmenu_save_clicked(json) {
+
+	//NAV SAVE
+
+	hmenu_nav_temp_object = '{"menu":[], "nav_items": []}';
+	hmenu_nav_object = JSON.parse(hmenu_nav_temp_object);
+
+	hmenu_nav_object.menu = hmenu_global_menu_obj.menu;
+	hmenu_nav_object.nav_items = hmenu_global_menu_obj.nav_items;
+
+	if (json.status) {
+		jQuery('.hmenu_structure_loader').fadeIn();
+	}
+
+	//store menu id
+	hmenu_the_id = hmenu_nav_object.menu.menuId;
+
+	//DEFAULT SAVE
+	hmenu_sty_object = jQuery.extend(true, {}, hmenu_global_menu_obj);
+	delete hmenu_sty_object['nav_items'];
+
+	//run the save
+	hmenu_process_save(json, hmenu_sty_object, 'default', true, hmenu_the_id);
+
+	//run the save
+	hmenu_process_save(json, hmenu_nav_object, 'navigation_structure', false, hmenu_the_id);
+
+}
+
+function hmenu_process_save(json, object_to_save, save_type, generate, menu_id) {
+
+	//stringyfy
+	var string_object = JSON.stringify(object_to_save);
+
+	//send update object
+	jQuery.ajax({
+		url: hmenu_ajax_url,
+		type: "POST",
+		data: {
+			'obj': string_object,
+			'action': 'hmenu_send_update_object',
+			'save': save_type
+		},
+		dataType: "json"
+	}).done(function (data) {
+		if (json.status && generate == false) { //generate was added here to the condition to stop "navigation sctructure saving" from running more than once.
+			hmenu_reload_object(menu_id, 'menu_structure');
+		}
+		if (json.status_social && generate == true) {
+			hmenu_reload_object(menu_id, 'menu_social');
+		}
+		//generate files
+		if (generate) {
+			hmenu_generate_files(hmenu_global_menu_obj);
+			hmenu_show_message('success', 'Menu Saved', 'Saved process complete, menu ready to use.');
+		}
+	}).fail(function (event) {
+		//page error
+	});
+}
+
+//nav save event callback
+function hmenu_reload_object(menu_id, type) {
+	var menu_structure_status;
+	//get menu object
+	jQuery.ajax({
+		url: hmenu_ajax_url,
+		type: "POST",
+		data: {
+			'id': menu_id,
+			'action': 'hmenu_load_menu_object'
+		},
+		dataType: "json"
+	}).done(function (data) {
+		if (type == 'menu_structure') {
+			hmenu_global_menu_obj = data;
+			jQuery('.sort').html('');
+			hmenu_get_nav();
+			hmenu_switch_components();
+			menu_structure_status = false;
+			//generate files
+			hmenu_generate_files(hmenu_global_menu_obj);
+			jQuery('.hmenu_structure_loader').fadeOut();
+		} else if (type == 'menu_social') {
+			hmenu_global_menu_obj = data;
+			jQuery('.hero_icon_sort_holder').html('');
+			hmenu_get_social_items();
+			hmenu_switch_components();
+			//generate files
+			hmenu_generate_files(hmenu_global_menu_obj);
+		}
+	}).fail(function (event) {
+		//page error
+	});
+}
+
+//load styles
+function hmenu_load_styles(obj) {
+
+	jQuery(obj).each(function (index, element) {
+
+		var font_family = element.fontName;
+
+		if (font_family === 'hero_default_solid' || font_family === 'hero_default_thin' || font_family === 'hero_default_social') {
+			//do nothing
+		} else {
+			//check if stylesheet exist
+			if (jQuery('#' + font_family).length) {
+				//dont add stylesheet again
+			} else {
+
+				//load google fonts API
+				var hmenu_css_font_file = hmenu_plugin_url + "_fonts/" + font_family + ".css";
+
+				var css_font_file = document.createElement("link");
+				css_font_file.rel = "stylesheet";
+				css_font_file.type = "text/css";
+				css_font_file.id = font_family;
+				css_font_file.href = hmenu_css_font_file;
+				document.head.appendChild(css_font_file);
+
+			}
+		}
+
+	});
+
+}
+
+//load select
+function hmenu_load_icon_select(obj) {
+
+	var select_html = '';
+	jQuery(obj).each(function (index, element) {
+		//build styles
+		select_html += '<option value="' + index + '">' + element.fontPackName + '</option>';
+	});
+	jQuery('#icon_select').append(select_html);
+	hmenu_update_select_component(jQuery('#icon_select'));
+
+}
+
+//load select click to filter the icons
+function hmenu_filter_global_icons() {
+
+	var the_options = jQuery('#icon_select');
+	jQuery(the_options).each(function (index, element) {
+		jQuery(this).on('click', function () {
+			hmenu_load_global_icons(jQuery(this).val());
+		});
+	});
+
+}
+
+//global
+var hmenu_input_link_id = 0;
+
+//load icons
+function hmenu_load_global_icons(idx) {
+
+	var icon_html = '';
+	jQuery(hmenu_global_font_object[idx].icons).each(function (index, element) {
+		icon_html += '<div class="global_icon_item icon_' + hmenu_global_font_object[idx].fontName + '_' + element.iconContent + ' rounded_3" data-content="icon_' + hmenu_global_font_object[idx].fontName + '_' + element.iconContent + '"></div>'
+	});
+	jQuery('.icons_load_global').html(icon_html);
+	hmenu_enable_icon_item_select(hmenu_input_link_id);
+
+}
+
+//open panel
+function hmenu_enable_icon_select() {
+
+	jQuery('.hero_open_icons').off().on('click', function () {
+		var the_input_link = jQuery(this).data('input-link');
+		if (jQuery(this).attr('data-panel-toggle') == 'close') {
+			jQuery(this).attr('data-panel-toggle', 'open');
+			jQuery('.hero_side_icon_panel').attr('data-input-link', jQuery(this).attr('data-input-link'));
+			jQuery('.hero_side_icon_panel').animate({
+				'right': 0
+			}, 400);
+			hmenu_input_link_id = jQuery(this).attr('data-input-link')
+			hmenu_enable_icon_item_select();
+		} else if (jQuery(this).attr('data-panel-toggle') == 'open') {
+			jQuery(this).attr('data-panel-toggle', 'close');
+			jQuery('.hero_side_icon_panel').animate({
+				'right': -300
+			}, 400);
+		}
+	});
+	jQuery('.hero_selected_icon').off().on('click', function () {
+		//trigger
+		jQuery('.main_holder').find('[data-load-link=' + jQuery(this).attr('data-trigger') + ']').trigger('click');
+	});
+
+}
+
+//set the icon of your nav/list item
+function hmenu_enable_icon_item_select() {
+	jQuery('.global_icon_item ').off().on('click', function () {
+		jQuery("#" + hmenu_input_link_id).val(jQuery(this).data('content'));
+		jQuery("#" + hmenu_input_link_id).trigger('change');
+		hmenu_disable_icon_select();
+	});
+}
+
+//close panel
+function hmenu_disable_icon_select() {
+
+	jQuery('.hero_open_icons').attr('data-panel-toggle', 'close');
+	jQuery('.hero_side_icon_panel').animate({
+		'right': -300
+	}, 400);
+
+}
+
+//generate files
+function hmenu_generate_files(hmenu_global_menu_obj) {
+
+	jQuery.ajax({
+		url: hmenu_ajax_url,
+		type: "POST",
+		data: {
+			'menu_id': hmenu_global_menu_obj['menu'].menuId,
+			'action': 'hmenu_generate'
+		},
+		dataType: "json"
+	}).done(function (data) {
+		//files generated
+	}).fail(function () {
+	});
+
+}
+</script>
+<div class="hero_viewport"></div>

@@ -1,0 +1,21 @@
+.armoireplus-custom-desc-box{
+		color: #232323;
+		padding: 0px 10px 5px 10px;
+		font-size: 0.75rem;
+		text-align: left;
+		border-radius: 3px;
+		letter-spacing: .05em;
+		margin:-10px 0 5px 0px;
+}
+
+@media (max-width: 480px){
+	.armoireplus-custom-desc-box{
+		margin: -10px 0 15px 0px;
+		text-align: center;
+	}
+	
+	.products-grid .product .product-name
+	{
+		min-height: auto !important;
+	}
+}

@@ -1,0 +1,55 @@
+[26-Sep-2024 10:14:44 UTC] WooCommerce is loaded.
+[26-Sep-2024 10:14:44 UTC] WooCommerce is loaded.
+[26-Sep-2024 10:14:44 UTC] Hook woocommerce_order_before_calculate_totals registered.
+[26-Sep-2024 10:14:44 UTC] Hook woocommerce_order_before_calculate_totals registered.
+[26-Sep-2024 10:14:45 UTC] WooCommerce is loaded.
+[26-Sep-2024 10:14:45 UTC] Hook woocommerce_order_before_calculate_totals registered.
+[26-Sep-2024 10:15:29 UTC] WooCommerce is loaded.
+[26-Sep-2024 10:15:29 UTC] Hook woocommerce_order_before_calculate_totals registered.
+[26-Sep-2024 10:15:30 UTC] WooCommerce is loaded.
+[26-Sep-2024 10:15:30 UTC] Hook woocommerce_order_before_calculate_totals registered.
+[26-Sep-2024 10:15:30 UTC] macléPourRetrouverMaVariable: Array
+[26-Sep-2024 10:15:32 UTC] WooCommerce is loaded.
+[26-Sep-2024 10:15:32 UTC] Hook woocommerce_order_before_calculate_totals registered.
+[26-Sep-2024 10:15:32 UTC] WooCommerce is loaded.
+[26-Sep-2024 10:15:32 UTC] Hook woocommerce_order_before_calculate_totals registered.
+[26-Sep-2024 10:15:32 UTC] Suppliers in cart: Vinco
+[26-Sep-2024 10:15:32 UTC] Suppliers in cart for AJAX: Vinco
+[26-Sep-2024 10:15:32 UTC] No exclusion found for postcode 75013
+[26-Sep-2024 10:15:32 UTC] AJAX check exclusion status: Not excluded
+[26-Sep-2024 10:15:50 UTC] WooCommerce is loaded.
+[26-Sep-2024 10:15:50 UTC] Hook woocommerce_order_before_calculate_totals registered.
+[26-Sep-2024 10:15:51 UTC] WooCommerce is loaded.
+[26-Sep-2024 10:15:51 UTC] Hook woocommerce_order_before_calculate_totals registered.
+[26-Sep-2024 10:15:51 UTC] Erreur d’événement de replanification de tâche pour le crochet wxp_shipment_mail_event. Code d’erreur : invalid_schedule. Message d’erreur : L’évènement planifié n’existe pas.. Données : {"schedule":"wxp_shipment_event","args":{"queue":[]},"interval":900}
+[26-Sep-2024 10:15:51 UTC] macléPourRetrouverMaVariable: Array
+[26-Sep-2024 10:15:52 UTC] WooCommerce is loaded.
+[26-Sep-2024 10:15:52 UTC] Hook woocommerce_order_before_calculate_totals registered.
+[26-Sep-2024 10:15:52 UTC] WooCommerce is loaded.
+[26-Sep-2024 10:15:52 UTC] Hook woocommerce_order_before_calculate_totals registered.
+[26-Sep-2024 10:15:53 UTC] Suppliers in cart: Vinco
+[26-Sep-2024 10:15:53 UTC] Suppliers in cart for AJAX: Vinco
+[26-Sep-2024 10:15:53 UTC] No exclusion found for postcode 75013
+[26-Sep-2024 10:15:53 UTC] AJAX check exclusion status: Not excluded
+[26-Sep-2024 10:16:44 UTC] WooCommerce is loaded.
+[26-Sep-2024 10:16:44 UTC] Hook woocommerce_order_before_calculate_totals registered.
+[26-Sep-2024 10:16:45 UTC] WooCommerce is loaded.
+[26-Sep-2024 10:16:45 UTC] Hook woocommerce_order_before_calculate_totals registered.
+[26-Sep-2024 10:16:46 UTC] WooCommerce is loaded.
+[26-Sep-2024 10:16:46 UTC] Hook woocommerce_order_before_calculate_totals registered.
+[26-Sep-2024 10:16:46 UTC] Erreur d’événement de replanification de tâche pour le crochet wxp_shipment_mail_event. Code d’erreur : invalid_schedule. Message d’erreur : L’évènement planifié n’existe pas.. Données : {"schedule":"wxp_shipment_event","args":{"queue":[]},"interval":900}
+[26-Sep-2024 10:16:46 UTC] WooCommerce is loaded.
+[26-Sep-2024 10:16:46 UTC] Hook woocommerce_order_before_calculate_totals registered.
+[26-Sep-2024 10:17:22 UTC] WooCommerce is loaded.
+[26-Sep-2024 10:17:22 UTC] Hook woocommerce_order_before_calculate_totals registered.
+[26-Sep-2024 10:17:23 UTC] WooCommerce is loaded.
+[26-Sep-2024 10:17:23 UTC] Hook woocommerce_order_before_calculate_totals registered.
+[26-Sep-2024 10:17:23 UTC] macléPourRetrouverMaVariable: Array
+[26-Sep-2024 10:17:24 UTC] WooCommerce is loaded.
+[26-Sep-2024 10:17:24 UTC] Hook woocommerce_order_before_calculate_totals registered.
+[26-Sep-2024 10:17:24 UTC] WooCommerce is loaded.
+[26-Sep-2024 10:17:24 UTC] Hook woocommerce_order_before_calculate_totals registered.
+[26-Sep-2024 10:17:25 UTC] Suppliers in cart: Vinco
+[26-Sep-2024 10:17:25 UTC] Suppliers in cart for AJAX: Vinco
+[26-Sep-2024 10:17:25 UTC] No exclusion found for postcode 75013
+[26-Sep-2024 10:17:25 UTC] AJAX check exclusion status: Not excluded

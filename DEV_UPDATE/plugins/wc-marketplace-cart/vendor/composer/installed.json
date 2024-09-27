@@ -1,0 +1,328 @@
+{
+    "packages": [
+        {
+            "name": "oneteamsoftware/php-autoloader",
+            "version": "1.0.1",
+            "version_normalized": "1.0.1.0",
+            "source": {
+                "type": "git",
+                "url": "git@gitlab.com:oneteamsoftware/php-autoloader.git",
+                "reference": "84e9d1d832fb4d63dd149efcfb4424a617ea640e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://gitlab.com/api/v4/projects/oneteamsoftware%2Fphp-autoloader/repository/archive.zip?sha=84e9d1d832fb4d63dd149efcfb4424a617ea640e",
+                "reference": "84e9d1d832fb4d63dd149efcfb4424a617ea640e",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.3 || ^8.0"
+            },
+            "require-dev": {
+                "dmitryrechkin/php-phpunit-bootstrap": "^1.0",
+                "dmitryrechkin/php-standard": "^1.0"
+            },
+            "time": "2022-10-20T02:28:33+00:00",
+            "type": "php-autoloader",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "1.0.x-dev"
+                }
+            },
+            "installation-source": "source",
+            "autoload": {
+                "psr-4": {
+                    "OneTeamSoftware\\": "src/"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "DmitryRechkin\\Tests\\": "tests/"
+                }
+            },
+            "license": [
+                "Copyright: © 2022 FlexRC, Canada. Any usage / copying / extension or modification without prior authorization is prohibited."
+            ],
+            "authors": [
+                {
+                    "name": "OneTeamSoftware",
+                    "email": "info@1teamsoftware.com",
+                    "homepage": "https://1teamsoftware.com"
+                }
+            ],
+            "description": "Autoloads php code and supports phar",
+            "install-path": "../oneteamsoftware/php-autoloader"
+        },
+        {
+            "name": "oneteamsoftware/php-logger",
+            "version": "1.0.1",
+            "version_normalized": "1.0.1.0",
+            "source": {
+                "type": "git",
+                "url": "git@gitlab.com:oneteamsoftware/php-logger.git",
+                "reference": "1fb05d8cb236082a94dbdbcc692bf6cf120309b4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://gitlab.com/api/v4/projects/oneteamsoftware%2Fphp-logger/repository/archive.zip?sha=1fb05d8cb236082a94dbdbcc692bf6cf120309b4",
+                "reference": "1fb05d8cb236082a94dbdbcc692bf6cf120309b4",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.3 || ^8.0"
+            },
+            "require-dev": {
+                "dmitryrechkin/php-phpunit-bootstrap": "^1.0",
+                "dmitryrechkin/php-standard": "^1.0"
+            },
+            "time": "2024-03-28T04:58:20+00:00",
+            "type": "php-logger",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "1.0.x-dev"
+                }
+            },
+            "installation-source": "source",
+            "autoload": {
+                "psr-4": {
+                    "OneTeamSoftware\\": "src/"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "OneTeamSoftware\\Tests\\": "tests/"
+                }
+            },
+            "license": [
+                "Copyright: © 2022 FlexRC, Canada. Any usage / copying / extension or modification without prior authorization is prohibited."
+            ],
+            "authors": [
+                {
+                    "name": "OneTeamSoftware",
+                    "email": "info@1teamsoftware.com",
+                    "homepage": "https://1teamsoftware.com"
+                }
+            ],
+            "description": "Framework that helps to log what is going on in your code",
+            "install-path": "../oneteamsoftware/php-logger"
+        },
+        {
+            "name": "oneteamsoftware/php-mutex",
+            "version": "1.0.1",
+            "version_normalized": "1.0.1.0",
+            "source": {
+                "type": "git",
+                "url": "git@gitlab.com:oneteamsoftware/php-mutex.git",
+                "reference": "d217fe4964b2aa08c7ea983cfb01cdc22a90f276"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://gitlab.com/api/v4/projects/oneteamsoftware%2Fphp-mutex/repository/archive.zip?sha=d217fe4964b2aa08c7ea983cfb01cdc22a90f276",
+                "reference": "d217fe4964b2aa08c7ea983cfb01cdc22a90f276",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.3 || ^8.0"
+            },
+            "require-dev": {
+                "dmitryrechkin/php-phpunit-bootstrap": "^1.0",
+                "dmitryrechkin/php-standard": "^1.0"
+            },
+            "time": "2024-04-18T04:26:56+00:00",
+            "type": "php-mutex",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "1.0.x-dev"
+                }
+            },
+            "installation-source": "source",
+            "autoload": {
+                "psr-4": {
+                    "OneTeamSoftware\\": "src/"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "DmitryRechkin\\Tests\\": "tests/"
+                }
+            },
+            "license": [
+                "Copyright: © 2024 FlexRC, Canada. Any usage / copying / extension or modification without prior authorization is prohibited."
+            ],
+            "authors": [
+                {
+                    "name": "OneTeamSoftware",
+                    "email": "info@1teamsoftware.com",
+                    "homepage": "https://1teamsoftware.com"
+                }
+            ],
+            "description": "Mutex library",
+            "install-path": "../oneteamsoftware/php-mutex"
+        },
+        {
+            "name": "oneteamsoftware/php-wc-logger",
+            "version": "1.0.3",
+            "version_normalized": "1.0.3.0",
+            "source": {
+                "type": "git",
+                "url": "git@gitlab.com:oneteamsoftware/php-wc-logger.git",
+                "reference": "fbc27ddde1bcf6290cb9c59a9988fd9f170acd8a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://gitlab.com/api/v4/projects/oneteamsoftware%2Fphp-wc-logger/repository/archive.zip?sha=fbc27ddde1bcf6290cb9c59a9988fd9f170acd8a",
+                "reference": "fbc27ddde1bcf6290cb9c59a9988fd9f170acd8a",
+                "shasum": ""
+            },
+            "require": {
+                "oneteamsoftware/php-logger": "~1.0.0",
+                "php": "^7.3 || ^8.0"
+            },
+            "require-dev": {
+                "dmitryrechkin/php-phpunit-bootstrap": "^1.0",
+                "dmitryrechkin/php-standard": "^1.0"
+            },
+            "time": "2024-03-28T04:53:42+00:00",
+            "type": "php-wc-logger",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "1.0.x-dev"
+                }
+            },
+            "installation-source": "source",
+            "autoload": {
+                "psr-4": {
+                    "OneTeamSoftware\\": "src/"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "DmitryRechkin\\Tests\\": "tests/"
+                }
+            },
+            "license": [
+                "Copyright: © 2022 FlexRC, Canada. Any usage / copying / extension or modification without prior authorization is prohibited."
+            ],
+            "authors": [
+                {
+                    "name": "OneTeamSoftware",
+                    "email": "info@1teamsoftware.com",
+                    "homepage": "https://1teamsoftware.com"
+                }
+            ],
+            "description": "Logger for WooCommerce",
+            "install-path": "../oneteamsoftware/php-wc-logger"
+        },
+        {
+            "name": "oneteamsoftware/php-wp-oneteamsoftware-autoloader",
+            "version": "1.0.1",
+            "version_normalized": "1.0.1.0",
+            "source": {
+                "type": "git",
+                "url": "git@gitlab.com:oneteamsoftware/php-wp-oneteamsoftware-autoloader.git",
+                "reference": "07585ab47cc1551702a0f40678103bbc9b7d1aa1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://gitlab.com/api/v4/projects/oneteamsoftware%2Fphp-wp-oneteamsoftware-autoloader/repository/archive.zip?sha=07585ab47cc1551702a0f40678103bbc9b7d1aa1",
+                "reference": "07585ab47cc1551702a0f40678103bbc9b7d1aa1",
+                "shasum": ""
+            },
+            "require": {
+                "oneteamsoftware/php-autoloader": "~1.0.0",
+                "php": "^7.3 || ^8.0"
+            },
+            "require-dev": {
+                "dmitryrechkin/php-phpunit-bootstrap": "^1.0",
+                "dmitryrechkin/php-standard": "^1.0"
+            },
+            "time": "2022-11-06T19:56:25+00:00",
+            "type": "php-wp-oneteamsoftware-autoloader",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "1.0.x-dev"
+                }
+            },
+            "installation-source": "source",
+            "autoload": {
+                "psr-4": {
+                    "OneTeamSoftware\\": "src/"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "DmitryRechkin\\Tests\\": "tests/"
+                }
+            },
+            "license": [
+                "Copyright: © 2022 FlexRC, Canada. Any usage / copying / extension or modification without prior authorization is prohibited."
+            ],
+            "authors": [
+                {
+                    "name": "OneTeamSoftware",
+                    "email": "info@1teamsoftware.com",
+                    "homepage": "https://1teamsoftware.com"
+                }
+            ],
+            "description": "Configures autoloader for WP plugins",
+            "install-path": "../oneteamsoftware/php-wp-oneteamsoftware-autoloader"
+        },
+        {
+            "name": "oneteamsoftware/php-wp-pluginlife-client",
+            "version": "1.0.8",
+            "version_normalized": "1.0.8.0",
+            "source": {
+                "type": "git",
+                "url": "git@gitlab.com:oneteamsoftware/php-wp-pluginlife-client.git",
+                "reference": "7db934a1466a53bcb95bb7297e2137e0f75a5d58"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://gitlab.com/api/v4/projects/oneteamsoftware%2Fphp-wp-pluginlife-client/repository/archive.zip?sha=7db934a1466a53bcb95bb7297e2137e0f75a5d58",
+                "reference": "7db934a1466a53bcb95bb7297e2137e0f75a5d58",
+                "shasum": ""
+            },
+            "require": {
+                "oneteamsoftware/php-logger": "~1.0.0",
+                "oneteamsoftware/php-mutex": "^1.0",
+                "php": "^7.3 || ^8.0"
+            },
+            "require-dev": {
+                "dmitryrechkin/php-phpunit-bootstrap": "^1.0",
+                "dmitryrechkin/php-standard": "^1.0"
+            },
+            "time": "2024-04-27T02:59:25+00:00",
+            "type": "php-wp-pluginlife-client",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "1.0.x-dev"
+                }
+            },
+            "installation-source": "source",
+            "autoload": {
+                "psr-4": {
+                    "OneTeamSoftware\\": "src/"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "OneTeamSoftware\\Tests\\": "tests/"
+                }
+            },
+            "license": [
+                "Copyright: © 2024 FlexRC, Canada. Any usage / copying / extension or modification without prior authorization is prohibited."
+            ],
+            "authors": [
+                {
+                    "name": "OneTeamSoftware",
+                    "email": "info@1teamsoftware.com",
+                    "homepage": "https://1teamsoftware.com"
+                }
+            ],
+            "description": "WordPress Client for PluginLife Server",
+            "install-path": "../oneteamsoftware/php-wp-pluginlife-client"
+        }
+    ],
+    "dev": false,
+    "dev-package-names": []
+}

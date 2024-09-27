@@ -48,6 +48,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 				<?php foreach ( $available_methods as $method ) : ?>
 					<li>
 						<?php
+						echo 'coucou';
 							printf( '<input type="radio" name="shipping_method[%1$d]" data-index="%1$d" id="shipping_method_%1$d_%2$s" value="%3$s" class="shipping_method" %4$s />
 								<label for="shipping_method_%1$d_%2$s">%5$s</label>',
 								$index, sanitize_title( $method->id ), esc_attr( $method->id ), checked( $method->id, $chosen_method, false ), wc_cart_totals_shipping_method_label( $method ) );

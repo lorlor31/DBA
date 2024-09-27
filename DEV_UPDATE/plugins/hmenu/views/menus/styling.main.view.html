@@ -1,0 +1,2493 @@
+<script type="text/javascript" data-cfasync="false">
+'use strict';
+//STYLING.MAIN VIEW
+
+//load
+jQuery(function () {
+
+    hmenu_console_log("LOAD: " + hmenu_plugin_url);		
+	//functions
+	hmenu_get_presets();
+	//populate fonts
+	var hmenu_fonts = [
+		'fontFamily'
+	];
+	hmenu_populate_fonts(hmenu_fonts);
+	//set data
+	hmenu_set_main_styles();
+	hmenu_find_toggle_elements();
+	hmenu_find_small_toggle_elements();
+	hmenu_find_image_toggle();
+	hmenu_set_current_header_label('Currently Editing:', hmenu_global_menu_obj.menu.name);
+});
+
+//global variables
+var hmenu_ms_presetSlug;
+
+//setup set main styles form data
+function hmenu_set_main_styles() {
+
+	//page variables	
+	var m_menu_logo = hmenu_global_menu_obj.main_styles[0].logo;
+	var m_menu_logo_url = hmenu_global_menu_obj.main_styles[0].logoUrl;
+	var m_menu_logo_height = hmenu_global_menu_obj.main_styles[0].logoHeight;
+
+	var m_menu_mobile_logo = hmenu_global_menu_obj.main_styles[0].mobileLogo;
+	var m_menu_mobile_logo_url = hmenu_global_menu_obj.main_styles[0].mobileLogoUrl;
+	var m_menu_mobile_logo_height = hmenu_global_menu_obj.main_styles[0].mobileLogoHeight;
+
+	var m_menu_search = hmenu_global_menu_obj.main_styles[0].search;
+	var m_menu_menu = hmenu_global_menu_obj.main_styles[0].menu;
+	var m_menu_social = hmenu_global_menu_obj.main_styles[0].social;
+	var m_menu_cart = hmenu_global_menu_obj.main_styles[0].cart;
+	var ms_menu_bar_dimentions = hmenu_global_menu_obj.main_styles[0].menuBarDimentions;
+	var ms_menu_bar_width = hmenu_global_menu_obj.main_styles[0].menuBarWidth;
+	var ms_menu_bar_height = hmenu_global_menu_obj.main_styles[0].menuBarHeight;
+	var ms_nav_bar_dimentions = hmenu_global_menu_obj.main_styles[0].navBarDimentions;
+	var ms_nav_bar_width = hmenu_global_menu_obj.main_styles[0].navBarWidth;
+	var ms_border = hmenu_global_menu_obj.main_styles[0].border;
+	var ms_border_color = hmenu_global_menu_obj.main_styles[0].borderColor;
+	var ms_border_trasparency = hmenu_global_menu_obj.main_styles[0].borderTransparency;
+	var ms_border_type = hmenu_global_menu_obj.main_styles[0].borderType;
+	var ms_border_radius = hmenu_global_menu_obj.main_styles[0].borderRadius;
+	var ms_shadow = hmenu_global_menu_obj.main_styles[0].shadow;
+	var ms_shadow_radius = hmenu_global_menu_obj.main_styles[0].shadowRadius;
+	var ms_shadow_color = hmenu_global_menu_obj.main_styles[0].shadowColor;
+	var ms_shadow_transparency = hmenu_global_menu_obj.main_styles[0].shadowTransparency;
+	var ms_menu_start_color = hmenu_global_menu_obj.main_styles[0].bgMenuStartColor;
+	var ms_menu_gradient = hmenu_global_menu_obj.main_styles[0].bgMenuGradient;
+	var ms_menu_end_color = hmenu_global_menu_obj.main_styles[0].bgMenuEndColor;
+	var ms_menu_gradient_path = hmenu_global_menu_obj.main_styles[0].bgMenuGradientPath;
+	var ms_menu_transparency = hmenu_global_menu_obj.main_styles[0].bgMenuTransparency;
+	var ms_hover_start_color = hmenu_global_menu_obj.main_styles[0].bgHoverStartColor;
+	var ms_hover_type = hmenu_global_menu_obj.main_styles[0].bgHoverType;
+	var ms_hover_gradient = hmenu_global_menu_obj.main_styles[0].bgHoverGradient;
+	var ms_hover_end_color = hmenu_global_menu_obj.main_styles[0].bgHoverEndColor;
+	var ms_hover_gradient_path = hmenu_global_menu_obj.main_styles[0].bgHoverGradientPath;
+	var ms_hover_transparency = hmenu_global_menu_obj.main_styles[0].bgHoverTransparency;
+	var ms_padding_left = hmenu_global_menu_obj.main_styles[0].paddingLeft;
+	var ms_padding_right = hmenu_global_menu_obj.main_styles[0].paddingRight;
+	var ms_orientation = hmenu_global_menu_obj.main_styles[0].orientation;
+	var ms_vertical_width = hmenu_global_menu_obj.main_styles[0].verticalWidth;
+	var ms_animation = hmenu_global_menu_obj.main_styles[0].animation;
+	var ms_animation_duration = hmenu_global_menu_obj.main_styles[0].animationDuration;
+	var ms_animation_trigger = hmenu_global_menu_obj.main_styles[0].animationTrigger;
+	var ms_animation_timeout = hmenu_global_menu_obj.main_styles[0].animationTimeout;
+	var ms_sticky = hmenu_global_menu_obj.main_styles[0].sticky;
+	var ms_sticky_logo_active = hmenu_global_menu_obj.main_styles[0].stickyLogoActive;
+	var ms_sticky_logo_url = hmenu_global_menu_obj.main_styles[0].stickyUrl;
+	var ms_sticky_activate = hmenu_global_menu_obj.main_styles[0].stickyActivate;
+	var ms_sticky_height = hmenu_global_menu_obj.main_styles[0].stickyHeight;
+	var ms_sticky_start = hmenu_global_menu_obj.main_styles[0].bgStickyStart;
+	var ms_sticky_hover_color = hmenu_global_menu_obj.main_styles[0].bgStickyHoverColor;
+	var ms_sticky_transparency = hmenu_global_menu_obj.main_styles[0].stickyTransparency;
+	var ms_sticky_font_color = hmenu_global_menu_obj.main_styles[0].stickyFontColor;
+	var ms_sticky_font_hover_color = hmenu_global_menu_obj.main_styles[0].stickyFontHoverColor;
+	var ms_sticky_font_size = hmenu_global_menu_obj.main_styles[0].stickyFontSize;
+	var ms_sticky_font_sizing = hmenu_global_menu_obj.main_styles[0].stickyFontSizing;
+	var ms_sticky_font_weight = hmenu_global_menu_obj.main_styles[0].stickyFontWeight;
+
+	var ms_devider = hmenu_global_menu_obj.main_styles[0].devider;
+	var ms_devider_transparency = hmenu_global_menu_obj.main_styles[0].deviderTransparency;
+	var ms_devider_color = hmenu_global_menu_obj.main_styles[0].deviderColor;
+	var ms_devider_sizing = hmenu_global_menu_obj.main_styles[0].deviderSizing;
+
+	var ms_group_devider = hmenu_global_menu_obj.main_styles[0].groupDevider;
+	var ms_group_transparency = hmenu_global_menu_obj.main_styles[0].groupTransparency;
+	var ms_group_color = hmenu_global_menu_obj.main_styles[0].groupColor;
+	var ms_group_sizing = hmenu_global_menu_obj.main_styles[0].groupSizing;
+
+	var ms_responsive = hmenu_global_menu_obj.main_styles[0].responsive;
+	var ms_responsive_transform = hmenu_global_menu_obj.main_styles[0].responsiveTransform;
+	var ms_responsive_label = hmenu_global_menu_obj.main_styles[0].responsiveLabel;
+	var ms_icons = hmenu_global_menu_obj.main_styles[0].icons;
+	var ms_icons_color = hmenu_global_menu_obj.main_styles[0].iconsColor;
+	var ms_arrows = hmenu_global_menu_obj.main_styles[0].arrows;
+	var ms_arrow_transparency = hmenu_global_menu_obj.main_styles[0].arrowTransparency;
+	var ms_arrow_color = hmenu_global_menu_obj.main_styles[0].arrowColor;
+	var ms_font_family = hmenu_global_menu_obj.main_styles[0].fontFamily;
+	var ms_font_color = hmenu_global_menu_obj.main_styles[0].fontColor;
+	var ms_font_hover_color = hmenu_global_menu_obj.main_styles[0].fontHoverColor;
+	var ms_font_size = hmenu_global_menu_obj.main_styles[0].fontSize;
+	var ms_font_sizing = hmenu_global_menu_obj.main_styles[0].fontSizing;
+	var ms_font_weight = hmenu_global_menu_obj.main_styles[0].fontWeight;
+	var ms_font_decoration = hmenu_global_menu_obj.main_styles[0].fontDecoration;
+	var ms_zindex = hmenu_global_menu_obj.main_styles[0].zindex;
+	var ms_preset = hmenu_global_menu_obj.main_styles[0].preset;
+
+	//set global variable
+	hmenu_ms_presetSlug = hmenu_global_menu_obj.main_styles[0].presetSlug;
+
+	//logo padding left
+	var ms_logo_padding_left = hmenu_global_menu_obj.main_styles[0].logoPaddingLeft;
+	var ms_logo_padding_right = hmenu_global_menu_obj.main_styles[0].logoPaddingRight;
+	var ms_logo_mobile_padding_left = hmenu_global_menu_obj.main_styles[0].mobileLogoPaddingLeft;
+	var ms_logo_sticky_padding_left = hmenu_global_menu_obj.main_styles[0].stickyLogoPaddingLeft;
+
+	var ms_bg_main_image = hmenu_global_menu_obj.main_styles[0].bgMainImage;
+	var ms_bg_main_image_url = hmenu_global_menu_obj.main_styles[0].bgMainImageUrl;
+	var ms_bg_main_image_position = hmenu_global_menu_obj.main_styles[0].bgMainImagePosition;
+	var ms_bg_main_image_repeat = hmenu_global_menu_obj.main_styles[0].bgMainImageRepeat;
+
+	//logo url settings
+	var ms_logo_link = hmenu_global_menu_obj.main_styles[0].logoLink;
+	var ms_logo_alt = hmenu_global_menu_obj.main_styles[0].logoAlt;
+	var ms_logo_target = hmenu_global_menu_obj.main_styles[0].logoLinkTarget;
+
+	//MENU BAR DIMENTIONS
+	///////////////////////////////////////////////////
+
+	//set menu dimensions
+	if (ms_menu_bar_dimentions) {
+		if (jQuery('#menu_dimension_full').val() == ms_menu_bar_dimentions) {
+			jQuery('#menu_dimension_full').attr('checked', 'checked');
+			hmenu_switch_class('full');
+			jQuery('#menuBarWidth').prop('disabled', true).addClass('hmenu_disable_input');
+		}
+		if (jQuery('#menu_dimension_fixed').val() == ms_menu_bar_dimentions) {
+			jQuery('#menu_dimension_fixed').attr('checked', 'checked');
+			hmenu_switch_class('fixed');
+			jQuery('#menuBarWidth').prop('disabled', false).removeClass('hmenu_disable_input');
+		}
+	}
+
+	//set menu width
+	if (ms_menu_bar_width) {
+		jQuery('#menuBarWidth').val(ms_menu_bar_width);
+	}
+
+	//set menu height
+	if (ms_menu_bar_height) {
+		jQuery('#menuBarHeight').val(ms_menu_bar_height);
+	}
+
+	//NAV DIMENTIONS
+	///////////////////////////////////////////////////
+
+	//set nav dimensions
+	if (ms_nav_bar_dimentions) {
+		if (jQuery('#nav_dimension_full').val() == ms_nav_bar_dimentions) {
+			jQuery('#nav_dimension_full').attr('checked', 'checked');
+			jQuery('#navBarWidth').prop('disabled', true).addClass('hmenu_disable_input');
+		}
+		if (jQuery('#nav_dimension_fixed').val() == ms_nav_bar_dimentions) {
+			jQuery('#nav_dimension_fixed').attr('checked', 'checked');
+			jQuery('#navBarWidth').prop('disabled', false).removeClass('hmenu_disable_input');
+		}
+	}
+
+	//set nav height
+	if (ms_menu_bar_height) {
+		jQuery('#navBarWidth').val(ms_nav_bar_width);
+	}
+
+	//PRESETS
+	///////////////////////////////////////////////////
+
+	//set preset
+	if (ms_preset) {
+		if (jQuery('#preset').val() == ms_preset) {
+			jQuery('#preset').attr('checked', 'checked');
+		}
+	}
+
+	//BACKGROUND COLOR
+	///////////////////////////////////////////////////
+
+	//set menu gradient
+	if (ms_menu_gradient) {
+		if (jQuery('#bgMenuGradient').val() == ms_menu_gradient) {
+			jQuery('#bgMenuGradient').attr('checked', 'checked');
+		}
+	}
+
+	//set menu color
+	if (ms_menu_start_color) {
+		jQuery('#bgMenuStartColor').val(ms_menu_start_color);
+	}
+
+	//set menu end color
+	if (ms_menu_end_color) {
+		jQuery('#bgMenuEndColor').val(ms_menu_end_color);
+	}
+
+	//set gradient path
+	if (ms_menu_gradient_path) {
+		jQuery('#bgMenuGradientPath option').each(function (index, element) {
+			if (jQuery(this).val() == ms_menu_gradient_path) {
+				jQuery(this).attr('selected', 'selected')
+			}
+		});
+	}
+
+	//set transparency
+	if (ms_menu_transparency) {
+		jQuery('#bgMenuTransparency option').each(function (index, element) {
+			if (jQuery(this).val() == ms_menu_transparency) {
+				jQuery(this).attr('selected', 'selected')
+			}
+		});
+	}
+
+	//set bg image
+	if (ms_bg_main_image) {
+		if (jQuery('#bgMainImage').val() == ms_bg_main_image) {
+			jQuery('#bgMainImage').attr('checked', 'checked');
+		}
+	}
+
+	//set bg image logo url
+	if (ms_bg_main_image_url) {
+		jQuery('#bgMainImageUrl').val(ms_bg_main_image_url);
+		jQuery('.hero_main_background').css('background-image', 'url(' + ms_bg_main_image_url + ')');
+	}
+
+	//set bg image position
+	if (ms_bg_main_image_position) {
+		jQuery('#bgMainImagePosition option').each(function (index, element) {
+			if (jQuery(this).val() == ms_bg_main_image_position) {
+				jQuery(this).attr('selected', 'selected');
+			}
+		});
+	}
+
+	//set bg image repeat
+	if (ms_bg_main_image_repeat) {
+		jQuery('#bgMainImageRepeat option').each(function (index, element) {
+			if (jQuery(this).val() == ms_bg_main_image_repeat) {
+				jQuery(this).attr('selected', 'selected');
+			}
+		});
+	}
+
+	//BACKGROUND HOVER COLOR
+	///////////////////////////////////////////////////
+
+	//set background hover type
+	if (ms_hover_type) {
+		if (jQuery('#nav_hover_background').val() == ms_hover_type) {
+			jQuery('#nav_hover_background').attr('checked', 'checked');
+			hmenu_show_hide_type(true, 'Hover background color | Gradients', 'This will be the menu background hover color.');
+		}
+		if (jQuery('#nav_hover_underline').val() == ms_hover_type) {
+			jQuery('#nav_hover_underline').attr('checked', 'checked');
+			hmenu_show_hide_type(false, 'Hover underline color', 'This will be the color of the underline.');
+		}
+		if (jQuery('#nav_hover_border').val() == ms_hover_type) {
+			jQuery('#nav_hover_border').attr('checked', 'checked');
+			hmenu_show_hide_type(false, 'Hover border color', 'This will be the color of the border.');
+		}
+	}
+
+	//set menu gradient
+	if (ms_hover_gradient) {
+		if (jQuery('#bgHoverGradient').val() == ms_hover_gradient) {
+			jQuery('#bgHoverGradient').attr('checked', 'checked');
+		}
+	}
+
+	//set hover menu color
+	if (ms_hover_start_color) {
+		jQuery('#bgHoverStartColor').val(ms_hover_start_color);
+	}
+
+	//set hover color end
+	if (ms_hover_end_color) {
+		jQuery('#bgHoverEndColor').val(ms_hover_end_color);
+	}
+
+	//set hover gradient path
+	if (ms_hover_gradient_path) {
+		jQuery('#bgHoverGradientPath option').each(function (index, element) {
+			if (jQuery(this).val() == ms_hover_gradient_path) {
+				jQuery(this).attr('selected', 'selected')
+			}
+		});
+	}
+
+	//set hover transparency
+	if (ms_hover_transparency) {
+		jQuery('#bgHoverTransparency option').each(function (index, element) {
+			if (jQuery(this).val() == ms_hover_transparency) {
+				jQuery(this).attr('selected', 'selected')
+			}
+		});
+	}
+
+	//BORDER
+	///////////////////////////////////////////////////
+
+	//set border
+	if (ms_border) {
+		if (jQuery('#border').val() == ms_border) {
+			jQuery('#border').attr('checked', 'checked');
+		}
+	}
+
+	//set hover transparency
+	if (ms_border_trasparency) {
+		jQuery('#borderTransparency option').each(function (index, element) {
+			if (jQuery(this).val() == ms_border_trasparency) {
+				jQuery(this).attr('selected', 'selected')
+			}
+		});
+	}
+
+	//set hover menu color
+	if (ms_border_color) {
+		jQuery('#borderColor').val(ms_border_color);
+	}
+
+	//set border type
+	if (ms_border_type) {
+		jQuery('#borderType option').each(function (index, element) {
+			if (jQuery(this).val() == ms_border_type) {
+				jQuery(this).attr('selected', 'selected')
+			}
+		});
+	}
+
+	//set radius
+	if (ms_border_radius) {
+		var radius_array = new Array();
+		radius_array = ms_border_radius.split(',');
+		jQuery('.ms_border_radius').each(function (index, element) {
+			jQuery(this).val(radius_array[index]);
+		});
+	}
+
+	//FONTS
+	///////////////////////////////////////////////////
+
+	//set font family
+	if (ms_font_family) {
+		jQuery('#fontFamily option').each(function (index, element) {
+			if (jQuery(this).val() == ms_font_family) {
+				jQuery(this).attr('selected', 'selected')
+			}
+		});
+	}
+
+	hmenu_update_select_component(jQuery('#fontFamily'));
+
+	//set font color
+	if (ms_font_color) {
+		jQuery('#fontColor').val(ms_font_color);
+	}
+
+	//set hover font color
+	if (ms_font_hover_color) {
+		jQuery('#fontHoverColor').val(ms_font_hover_color);
+	}
+
+	//set font size
+	if (ms_font_size) {
+		jQuery('#fontSize').val(ms_font_size);
+	}
+
+	//set font sizing
+	if (ms_font_sizing) {
+		jQuery('#fontSizing option').each(function (index, element) {
+			if (jQuery(this).val() == ms_font_sizing) {
+				jQuery(this).attr('selected', 'selected')
+			}
+		});
+	}
+
+	//set font weight
+	if (ms_font_weight) {
+		jQuery('#fontWeight option').each(function (index, element) {
+			if (jQuery(this).val() == ms_font_weight) {
+				jQuery(this).attr('selected', 'selected')
+			}
+		});
+	}
+
+	//LOGO PADDING
+	///////////////////////////////////////////////////
+
+	//set logo padding left
+	if (ms_logo_padding_left) {
+		jQuery('#logoPaddingLeft').val(ms_logo_padding_left);
+	}
+
+	//set logo padding right
+	if (ms_logo_padding_right) {
+		jQuery('#logoPaddingRight').val(ms_logo_padding_right);
+	}
+
+	//set mobile logo padding left
+	if (ms_logo_mobile_padding_left) {
+		jQuery('#mobileLogoPaddingLeft').val(ms_logo_mobile_padding_left);
+	}
+
+	//set sticky logo padding left
+	if (ms_logo_sticky_padding_left) {
+		jQuery('#stickyLogoPaddingLeft').val(ms_logo_mobile_padding_left);
+	}
+
+	//LOGO URL
+	///////////////////////////////////////////////////
+
+	//logo link
+	if (ms_logo_link) {
+		jQuery('#logoLink').val(ms_logo_link);
+	}
+
+	//logo alt
+	if (ms_logo_alt) {
+		jQuery('#logoAlt').val(ms_logo_alt);
+	}
+
+	//logo link target
+	if (ms_logo_target) {
+		jQuery('#logoLinkTarget option').each(function (index, element) {
+			if (jQuery(this).val() == ms_logo_target) {
+				jQuery(this).attr('selected', 'selected')
+			}
+		});
+	}
+
+	//MAIN LOGO
+	///////////////////////////////////////////////////
+
+	//set logo
+	if (m_menu_logo) {
+		if (jQuery('#logo').val() == m_menu_logo) {
+			jQuery('#logo').attr('checked', 'checked');
+		}
+	}
+
+	//set logo url
+	if (m_menu_logo_url) {
+		jQuery('#logoUrl').val(m_menu_logo_url);
+		jQuery('.hero_main_logo').css('background-image', 'url(' + m_menu_logo_url + ')');
+	}
+
+	//set logo height %
+	if (m_menu_logo_height) {
+		jQuery('#logoHeight').val(m_menu_logo_height);
+	}
+
+	//MOBILE LOGO
+	///////////////////////////////////////////////////
+
+	//set mobile logo
+	if (m_menu_mobile_logo) {
+		if (jQuery('#mobileLogo').val() == m_menu_mobile_logo) {
+			jQuery('#mobileLogo').attr('checked', 'checked');
+		}
+	}
+
+	//set mobile logo url
+	if (m_menu_mobile_logo_url) {
+		jQuery('#mobileLogoUrl').val(m_menu_mobile_logo_url);
+		jQuery('.hero_mobile_logo').css('background-image', 'url(' + m_menu_mobile_logo_url + ')');
+	}
+
+	//set mobile logo height %
+	if (m_menu_mobile_logo_height) {
+		jQuery('#mobileLogoHeight').val(m_menu_mobile_logo_height);
+	}
+
+	//PADDING
+	///////////////////////////////////////////////////
+
+	//set padding left
+	if (ms_padding_left) {
+		jQuery('#paddingLeft').val(ms_padding_left);
+	}
+
+	//set padding right
+	if (ms_padding_right) {
+		jQuery('#paddingRight').val(ms_padding_right);
+	}
+
+	//SHADOW
+	///////////////////////////////////////////////////
+
+	//set shadow
+	if (ms_shadow) {
+		if (jQuery('#shadow').val() == ms_shadow) {
+			jQuery('#shadow').attr('checked', 'checked');
+		}
+	}
+
+	//set radius
+	if (ms_shadow_radius) {
+		var shadow_array = new Array();
+		shadow_array = ms_shadow_radius.split(',');
+		jQuery('.ms_shadow_radius').each(function (index, element) {
+			jQuery(this).val(shadow_array[index]);
+		});
+	}
+
+	//set transparency
+	if (ms_shadow_transparency) {
+		jQuery('#shadowTransparency option').each(function (index, element) {
+			if (jQuery(this).val() == ms_shadow_transparency) {
+				jQuery(this).attr('selected', 'selected')
+			}
+		});
+	}
+
+	//shadow color
+	if (ms_shadow_color) {
+		jQuery('#shadowColor').val(ms_shadow_color);
+	}
+
+	//STICKY MENU
+	///////////////////////////////////////////////////
+
+	//set sticky
+	if (ms_sticky) {
+		if (jQuery('#sticky').val() == ms_sticky) {
+			jQuery('#sticky').attr('checked', 'checked');
+		}
+	}
+
+	//set sticky logo active
+	if (ms_sticky_logo_active) {
+		if (jQuery('#stickyLogoActive').val() == ms_sticky_logo_active) {
+			jQuery('#stickyLogoActive').attr('checked', 'checked');
+		}
+	}
+
+	//sticky URL
+	if (ms_sticky_logo_url) {
+		jQuery('#stickyUrl').val(ms_sticky_logo_url);
+		jQuery('.hero_main_sticky_logo').css('background-image', 'url(' + ms_sticky_logo_url + ')');
+	}
+
+	//sticky activate
+	if (ms_sticky_activate) {
+		jQuery('#stickyActivate').val(ms_sticky_activate);
+	}
+
+	//sticky menu height
+	if (ms_sticky_height) {
+		jQuery('#stickyHeight').val(ms_sticky_height);
+	}
+
+	//sticky color
+	if (ms_sticky_start) {
+		jQuery('#bgStickyStart').val(ms_sticky_start);
+	}
+
+	//sticky hover color
+	if (ms_sticky_hover_color) {
+		jQuery('#bgStickyHoverColor').val(ms_sticky_hover_color);
+	}
+
+	//arrow tranparency
+	if (ms_sticky_transparency) {
+		jQuery('#stickyTransparency option').each(function (index, element) {
+			if (jQuery(this).val() == ms_sticky_transparency) {
+				jQuery(this).attr('selected', 'selected')
+			}
+		});
+	}
+
+	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	//set font color
+	if (ms_sticky_font_color) {
+		jQuery('#stickyFontColor').val(ms_sticky_font_color);
+	}
+
+	//set hover font color
+	if (ms_sticky_font_hover_color) {
+		jQuery('#stickyFontHoverColor').val(ms_sticky_font_hover_color);
+	}
+
+	//set font size
+	if (ms_sticky_font_size) {
+		jQuery('#stickyFontSize').val(ms_sticky_font_size);
+	}
+
+	//set font sizing
+	if (ms_sticky_font_sizing) {
+		jQuery('#stickyFontSizing option').each(function (index, element) {
+			if (jQuery(this).val() == ms_sticky_font_sizing) {
+				jQuery(this).attr('selected', 'selected')
+			}
+		});
+	}
+
+	//set font weight
+	if (ms_sticky_font_weight) {
+		jQuery('#stickyFontWeight option').each(function (index, element) {
+			if (jQuery(this).val() == ms_sticky_font_weight) {
+				jQuery(this).attr('selected', 'selected')
+			}
+		});
+	}
+
+	//ARROWS
+	///////////////////////////////////////////////////
+
+	//set arrows
+	if (ms_arrows) {
+		if (jQuery('#arrows').val() == ms_arrows) {
+			jQuery('#arrows').attr('checked', 'checked');
+		}
+	}
+
+	//arrow tranparency
+	if (ms_arrow_transparency) {
+		jQuery('#arrowTransparency option').each(function (index, element) {
+			if (jQuery(this).val() == ms_arrow_transparency) {
+				jQuery(this).attr('selected', 'selected')
+			}
+		});
+	}
+
+	//arrow color
+	if (ms_arrow_color) {
+		jQuery('#arrowColor').val(ms_arrow_color);
+	}
+
+	//DEVIDERS
+	///////////////////////////////////////////////////
+
+	//devider tranparency
+
+	if (ms_devider) {
+		if (jQuery('#devider').val() == ms_devider) {
+			jQuery('#devider').attr('checked', 'checked');
+		}
+	}
+
+	if (ms_devider_transparency) {
+		jQuery('#deviderTransparency option').each(function (index, element) {
+			if (jQuery(this).val() == ms_devider_transparency) {
+				jQuery(this).attr('selected', 'selected')
+			}
+		});
+	}
+
+	//arrow color
+	if (ms_devider_color) {
+		jQuery('#deviderColor').val(ms_devider_color);
+	}
+
+	//devider sizing
+	if (ms_devider_sizing) {
+		jQuery('#deviderSizing option').each(function (index, element) {
+			if (jQuery(this).val() == ms_devider_sizing) {
+				jQuery(this).attr('selected', 'selected')
+			}
+		});
+	}
+
+	//devider tranparency
+
+	if (ms_group_devider) {
+		if (jQuery('#groupDevider').val() == ms_group_devider) {
+			jQuery('#groupDevider').attr('checked', 'checked');
+		}
+	}
+
+	if (ms_group_transparency) {
+		jQuery('#groupTransparency option').each(function (index, element) {
+			if (jQuery(this).val() == ms_group_transparency) {
+				jQuery(this).attr('selected', 'selected')
+			}
+		});
+	}
+
+	//arrow color
+	if (ms_group_color) {
+		jQuery('#groupColor').val(ms_group_color);
+	}
+
+	//devider sizing
+	if (ms_group_sizing) {
+		jQuery('#groupSizing option').each(function (index, element) {
+			if (jQuery(this).val() == ms_group_sizing) {
+				jQuery(this).attr('selected', 'selected')
+			}
+		});
+	}
+
+	//switch components
+	hmenu_switch_components();
+
+	//enable update settings
+	hmenu_enable_update_settings();
+
+}
+
+//switch the classes
+function hmenu_switch_class(type) {
+	if (type == 'full') {
+		jQuery('#nav_change_one').removeClass('nav_full_two');
+		jQuery('#nav_change_two').removeClass('nav_fixed_two');
+		jQuery('#nav_change_one').addClass('nav_full_width');
+		jQuery('#nav_change_two').addClass('nav_fixed_width');
+	} else {
+		jQuery('#nav_change_one').removeClass('nav_full_width');
+		jQuery('#nav_change_two').removeClass('nav_fixed_width');
+		jQuery('#nav_change_one').addClass('nav_full_two');
+		jQuery('#nav_change_two').addClass('nav_fixed_two');
+	}
+}
+
+//show hide the type of contentn displayed for hover type
+function hmenu_show_hide_type(status, text, subtext) {
+
+	//change text
+	jQuery('.hero_main_text').html(text);
+	//change sub text
+	jQuery('.hero_sub_text').html(subtext);
+
+	if (status) {
+		jQuery('.hero_main_gradient_toggle').show();
+		if (hmenu_global_menu_obj.main_styles[0].bgHoverGradient > 0) {
+			jQuery('.hero_main_gradient_display').show();
+		}
+	} else {
+		jQuery('.hero_main_gradient_toggle').hide();
+		jQuery('.hero_main_gradient_display').attr('style', 'display: none !important');
+	}
+
+}
+
+//setup layout and order page with all its data
+function hmenu_enable_update_settings() {
+
+	//all the controls	
+	var control_menu_dimension_full = jQuery('#menu_dimension_full');
+	var control_menu_dimension_fixed = jQuery('#menu_dimension_fixed');
+
+	//change: full
+	jQuery(control_menu_dimension_full).on('change', function () {
+		hmenu_global_menu_obj.main_styles[0].menuBarDimentions = jQuery(this).val();
+		hmenu_switch_class(jQuery(this).val());
+		jQuery('#menuBarWidth').attr('disabled', true).addClass('hmenu_disable_input');
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});
+	//change: fixed
+	jQuery(control_menu_dimension_fixed).on('change', function () {
+		hmenu_global_menu_obj.main_styles[0].menuBarDimentions = jQuery(this).val();
+		hmenu_switch_class(jQuery(this).val());
+		jQuery('#menuBarWidth').attr('disabled', false).removeClass('hmenu_disable_input');
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});
+
+	var control_menuBarWidth = jQuery('#menuBarWidth');
+	var control_menuBarHeight = jQuery('#menuBarHeight');
+
+	//change: width
+	jQuery(control_menuBarWidth).on('change keyup', function () {
+		hmenu_global_menu_obj.main_styles[0].menuBarWidth = jQuery(this).val();
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});
+
+	//change: height
+	jQuery(control_menuBarHeight).on('change keyup', function () {
+		hmenu_global_menu_obj.main_styles[0].menuBarHeight = jQuery(this).val();
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});
+
+	var control_nav_dimension_full = jQuery('#nav_dimension_full');
+	var control_nav_dimension_fixed = jQuery('#nav_dimension_fixed');
+
+	//change: nav bar full
+	jQuery(control_nav_dimension_full).on('change', function () {
+		hmenu_global_menu_obj.main_styles[0].navBarDimentions = jQuery(this).val();
+		jQuery('#navBarWidth').prop('disabled', true).addClass('hmenu_disable_input');
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});
+
+	//change: nav bar fixed
+	jQuery(control_nav_dimension_fixed).on('change', function () {
+		hmenu_global_menu_obj.main_styles[0].navBarDimentions = jQuery(this).val();
+		jQuery('#navBarWidth').prop('disabled', false).removeClass('hmenu_disable_input');
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});
+
+	var control_navBarWidth = jQuery('#navBarWidth');
+
+	//change: nav bar width
+	jQuery(control_navBarWidth).on('change keyup', function () {
+		hmenu_global_menu_obj.main_styles[0].navBarWidth = jQuery(this).val();
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});
+
+	var control_preset = jQuery('#preset');
+
+	//change: preset enable
+	jQuery(control_preset).on('change', function () {
+		jQuery(this).prop('checked') ? hmenu_global_menu_obj.main_styles[0].preset = jQuery(this).val() : hmenu_global_menu_obj.main_styles[0].preset = 0;
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});
+
+	var control_bgMenuGradient = jQuery('#bgMenuGradient');
+	var control_bgMenuStartColor = jQuery('#bgMenuStartColor');
+	var control_bgMenuEndColor = jQuery('#bgMenuEndColor');
+	var control_bgMenuGradientPath = jQuery('#bgMenuGradientPath');
+	var control_bgMenuTransparency = jQuery('#bgMenuTransparency');
+
+	//change: gradient bg
+	jQuery(control_bgMenuGradient).on('change', function () {
+		jQuery(this).prop('checked') ? hmenu_global_menu_obj.main_styles[0].bgMenuGradient = jQuery(this).val() : hmenu_global_menu_obj.main_styles[0].bgMenuGradient = 0;
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});
+
+	//change: start color
+	jQuery(control_bgMenuStartColor).on('change keyup', function () {
+		hmenu_global_menu_obj.main_styles[0].bgMenuStartColor = jQuery(this).val();
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});
+
+	//change: end color
+	jQuery(control_bgMenuEndColor).on('change keyup', function () {
+		hmenu_global_menu_obj.main_styles[0].bgMenuEndColor = jQuery(this).val();
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});
+
+	//change: gradient path
+	jQuery('.bgMenuGradientPath .hero_dropdown .hero_drop_row').on('click', function () {
+		jQuery(control_bgMenuGradientPath).trigger('change');
+	});
+	jQuery(control_bgMenuGradientPath).on('change', function () {
+		hmenu_global_menu_obj.main_styles[0].bgMenuGradientPath = jQuery(this).children('option:selected').val();
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});
+
+	//change: gradient path
+	jQuery('.bgMenuTransparency .hero_dropdown .hero_drop_row').on('click', function () {
+		jQuery(control_bgMenuTransparency).trigger('change');
+	});
+	jQuery(control_bgMenuTransparency).on('change', function () {
+		hmenu_global_menu_obj.main_styles[0].bgMenuTransparency = jQuery(this).children('option:selected').val();
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});
+
+	var control_nav_hover_background = jQuery('#nav_hover_background');
+	var control_nav_hover_underline = jQuery('#nav_hover_underline');
+	var control_nav_hover_border = jQuery('#nav_hover_border');
+
+	//change: bg
+	jQuery(control_nav_hover_background).on('change', function () {
+		hmenu_global_menu_obj.main_styles[0].bgHoverType = jQuery(this).val();
+		hmenu_show_hide_type(true, 'Hover background color | Gradients', 'This will be the menu background hover color.');
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});
+	//change: underline
+	jQuery(control_nav_hover_underline).on('change', function () {
+		hmenu_global_menu_obj.main_styles[0].bgHoverType = jQuery(this).val();
+		hmenu_show_hide_type(false, 'Hover underline color', 'This will be the color of the underline.');
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});
+	//change: border
+	jQuery(control_nav_hover_border).on('change', function () {
+		hmenu_global_menu_obj.main_styles[0].bgHoverType = jQuery(this).val();
+		hmenu_show_hide_type(false, 'Hover border color', 'This will be the color of the border.');
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});
+
+
+	var control_bgHoverGradient = jQuery('#bgHoverGradient');
+	var control_bgHoverStartColor = jQuery('#bgHoverStartColor');
+	var control_bgHoverEndColor = jQuery('#bgHoverEndColor');
+	var control_bgHoverGradientPath = jQuery('#bgHoverGradientPath');
+	var control_bgHoverTransparency = jQuery('#bgHoverTransparency');
+
+	//change: gradient bg
+	jQuery(control_bgHoverGradient).on('change', function () {
+		jQuery(this).prop('checked') ? hmenu_global_menu_obj.main_styles[0].bgHoverGradient = jQuery(this).val() : hmenu_global_menu_obj.main_styles[0].bgHoverGradient = 0;
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});
+
+	//change: start color
+	jQuery(control_bgHoverStartColor).on('change keyup', function () {
+		hmenu_global_menu_obj.main_styles[0].bgHoverStartColor = jQuery(this).val();
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});
+
+	//change: end color
+	jQuery(control_bgHoverEndColor).on('change keyup', function () {
+		hmenu_global_menu_obj.main_styles[0].bgHoverEndColor = jQuery(this).val();
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});
+
+	//change: gradient path
+	jQuery('.bgHoverGradientPath .hero_dropdown .hero_drop_row').on('click', function () {
+		jQuery(control_bgHoverGradientPath).trigger('change');
+	});
+	jQuery(control_bgHoverGradientPath).on('change', function () {
+		hmenu_global_menu_obj.main_styles[0].bgHoverGradientPath = jQuery(this).children('option:selected').val();
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});
+
+	//change: gradient path
+	jQuery('.bgHoverTransparency .hero_dropdown .hero_drop_row').on('click', function () {
+		jQuery(control_bgHoverTransparency).trigger('change');
+	});
+	jQuery(control_bgHoverTransparency).on('change', function () {
+		hmenu_global_menu_obj.main_styles[0].bgHoverTransparency = jQuery(this).children('option:selected').val();
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});
+
+	var control_main_bg_image = jQuery('#bgMainImage');
+	var control_main_bg_url = jQuery('#bgMainImageUrl');
+	var control_main_bg_position = jQuery('#bgMainImagePosition');
+	var control_main_bg_repeat = jQuery('#bgMainImageRepeat');
+
+	//change: main image enable
+	jQuery(control_main_bg_image).on('change', function () {
+		jQuery(this).prop('checked') ? hmenu_global_menu_obj.main_styles[0].bgMainImage = jQuery(this).val() : hmenu_global_menu_obj.main_styles[0].bgMainImage = 0;
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});
+
+	//change: main image URL
+	jQuery(control_main_bg_url).on('change keyup', function () {
+		hmenu_global_menu_obj.main_styles[0].bgMainImageUrl = jQuery(this).val();
+		jQuery('.hero_main_background').css('background-image', 'url(' + jQuery(this).val() + ')');
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});
+
+	//change: main image position
+	jQuery('.bgMainImagePosition .hero_dropdown .hero_drop_row').on('click', function () {
+		jQuery(control_main_bg_position).trigger('change');
+	});
+	jQuery(control_main_bg_position).on('change', function () {
+		hmenu_global_menu_obj.main_styles[0].bgMainImagePosition = jQuery(this).children('option:selected').val();
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});
+
+	//change: main image repeat
+	jQuery('.bgMainImageRepeat .hero_dropdown .hero_drop_row').on('click', function () {
+		jQuery(control_main_bg_repeat).trigger('change');
+	});
+	jQuery(control_main_bg_repeat).on('change', function () {
+		hmenu_global_menu_obj.main_styles[0].bgMainImageRepeat = jQuery(this).children('option:selected').val();
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});
+
+	var control_border = jQuery('#border');
+	var control_borderTransparency = jQuery('#borderTransparency');
+	var control_borderColor = jQuery('#borderColor');
+	var control_borderType = jQuery('#borderType');
+	var control_border_radius_top = jQuery('#border_radius_top');
+	var control_border_radius_top_right = jQuery('#border_radius_top_right');
+	var control_border_radius_bottom_right = jQuery('#border_radius_bottom_right');
+	var control_border_radius_bottom_left = jQuery('#border_radius_bottom_left');
+
+	//change: border enable
+	jQuery(control_border).on('change', function () {
+		jQuery(this).prop('checked') ? hmenu_global_menu_obj.main_styles[0].border = jQuery(this).val() : hmenu_global_menu_obj.main_styles[0].border = 0;
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});
+
+	//change: border transparency
+	jQuery('.borderTransparency .hero_dropdown .hero_drop_row').on('click', function () {
+		jQuery(control_borderTransparency).trigger('change');
+	});
+	jQuery(control_borderTransparency).on('change', function () {
+		hmenu_global_menu_obj.main_styles[0].borderTransparency = jQuery(this).children('option:selected').val();
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});
+
+	//change: border color
+	jQuery(control_borderColor).on('change keyup', function () {
+		hmenu_global_menu_obj.main_styles[0].borderColor = jQuery(this).val();
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});
+
+	//change: border type
+	jQuery('.borderType .hero_dropdown .hero_drop_row').on('click', function () {
+		jQuery(control_borderType).trigger('change');
+	});
+	jQuery(control_borderType).on('change', function () {
+		hmenu_global_menu_obj.main_styles[0].borderType = jQuery(this).children('option:selected').val();
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});
+
+	//change: border radius
+	jQuery('.ms_border_radius').on('change keyup', function () {
+		var the_border_radius = '';
+		jQuery('.ms_border_radius').each(function (index, element) {
+			if (jQuery(this).val()) {
+				the_border_radius += jQuery(this).val() + ',';
+			} else {
+				the_border_radius += 0 + ',';
+			}
+		});
+		hmenu_global_menu_obj.main_styles[0].borderRadius = the_border_radius.slice(0, -1);
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});
+
+
+	var control_fontFamily = jQuery('#fontFamily');
+	var control_fontWeight = jQuery('#fontWeight');
+	var control_fontSize = jQuery('#fontSize');
+	var control_fontSizing = jQuery('#fontSizing');
+	var control_fontColor = jQuery('#fontColor');
+	var control_fontHoverColor = jQuery('#fontHoverColor');
+
+	//change: font family
+	jQuery('.fontFamily .hero_dropdown .hero_drop_row').on('click', function () {
+		jQuery(control_fontFamily).trigger('change');
+	});
+	jQuery(control_fontFamily).on('change', function () {
+		hmenu_global_menu_obj.main_styles[0].fontFamily = jQuery(this).children('option:selected').val();
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});
+
+	//change: font weight
+	jQuery('.fontWeight .hero_dropdown .hero_drop_row').on('click', function () {
+		jQuery(control_fontWeight).trigger('change');
+	});
+	jQuery(control_fontWeight).on('change', function () {
+		hmenu_global_menu_obj.main_styles[0].fontWeight = jQuery(this).children('option:selected').val();
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});
+
+	//change: font size
+	jQuery(control_fontSize).on('change keyup', function () {
+		hmenu_global_menu_obj.main_styles[0].fontSize = jQuery(this).val();
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});
+
+	//change: font sizing
+	jQuery('.fontSizing .hero_dropdown .hero_drop_row').on('click', function () {
+		jQuery(control_fontSizing).trigger('change');
+	});
+	jQuery(control_fontSizing).on('change', function () {
+		hmenu_global_menu_obj.main_styles[0].fontSizing = jQuery(this).children('option:selected').val();
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});
+
+	//change: font color
+	jQuery(control_fontColor).on('change keyup', function () {
+		hmenu_global_menu_obj.main_styles[0].fontColor = jQuery(this).val();
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});
+
+	//change: hover font color
+	jQuery(control_fontHoverColor).on('change keyup', function () {
+		hmenu_global_menu_obj.main_styles[0].fontHoverColor = jQuery(this).val();
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});
+
+	var control_logo_padding_left = jQuery('#logoPaddingLeft');
+	var control_logo_padding_right = jQuery('#logoPaddingRight');
+	var control_logo_mobile_padding_left = jQuery('#mobileLogoPaddingLeft');
+	var control_logo_sticky_padding_left = jQuery('#stickyLogoPaddingLeft');
+
+	//change: logo padding left
+	jQuery(control_logo_padding_left).on('change keyup', function () {
+		hmenu_global_menu_obj.main_styles[0].logoPaddingLeft = jQuery(this).val();
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});
+
+	//change: logo padding right
+	jQuery(control_logo_padding_right).on('change keyup', function () {
+		hmenu_global_menu_obj.main_styles[0].logoPaddingRight = jQuery(this).val();
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});
+
+	//change: logo mobile padding left
+	jQuery(control_logo_mobile_padding_left).on('change keyup', function () {
+		hmenu_global_menu_obj.main_styles[0].mobileLogoPaddingLeft = jQuery(this).val();
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});
+
+	//change: logo sticky padding left
+	jQuery(control_logo_sticky_padding_left).on('change keyup', function () {
+		hmenu_global_menu_obj.main_styles[0].stickyLogoPaddingLeft = jQuery(this).val();
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});
+
+	var control_logo_link = jQuery('#logoLink');
+	var control_logo_alt = jQuery('#logoAlt');
+	var control_logo_target = jQuery('#logoLinkTarget');
+
+	//change: logo link
+	jQuery(control_logo_link).on('change keyup', function () {
+		hmenu_global_menu_obj.main_styles[0].logoLink = jQuery(this).val();
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});
+	//change: logo alt
+	jQuery(control_logo_alt).on('change keyup', function () {
+		hmenu_global_menu_obj.main_styles[0].logoAlt = jQuery(this).val();
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});
+	//change: logo link target
+	jQuery('.logoLinkTarget .hero_dropdown .hero_drop_row').on('click', function () {
+		jQuery(control_logo_target).trigger('change');
+	});
+	jQuery(control_logo_target).on('change', function () {
+		hmenu_global_menu_obj.main_styles[0].logoLinkTarget = jQuery(this).children('option:selected').val();
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});
+
+	var control_logo = jQuery('#logo');
+	var control_logoUrl = jQuery('#logoUrl');
+	var control_logoHeight = jQuery('#logoHeight');
+
+	//change: logo enable
+	jQuery(control_logo).on('change', function () {
+		jQuery(this).prop('checked') ? hmenu_global_menu_obj.main_styles[0].logo = jQuery(this).val() : hmenu_global_menu_obj.main_styles[0].logo = 0;
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});
+
+	//change: logo URL
+	jQuery(control_logoUrl).on('change keyup', function () {
+		hmenu_global_menu_obj.main_styles[0].logoUrl = jQuery(this).val();
+		jQuery('.hero_main_logo').css('background-image', 'url(' + jQuery(this).val() + ')');
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});
+
+	//change: logo Height
+	jQuery(control_logoHeight).on('change keyup', function () {
+		hmenu_global_menu_obj.main_styles[0].logoHeight = jQuery(this).val();
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});
+
+	var control_mobile_logo = jQuery('#mobileLogo');
+	var control_mobile_logoUrl = jQuery('#mobileLogoUrl');
+	var control_mobile_logoHeight = jQuery('#mobileLogoHeight');
+
+	//change: logo mobile enable
+	jQuery(control_mobile_logo).on('change', function () {
+		jQuery(this).prop('checked') ? hmenu_global_menu_obj.main_styles[0].mobileLogo = jQuery(this).val() : hmenu_global_menu_obj.main_styles[0].mobileLogo = 0;
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});
+
+	//change: logo mobile URL
+	jQuery(control_mobile_logoUrl).on('change keyup', function () {
+		hmenu_global_menu_obj.main_styles[0].mobileLogoUrl = jQuery(this).val();
+		jQuery('.hero_mobile_logo').css('background-image', 'url(' + jQuery(this).val() + ')');
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});
+
+	//change: logo mobile Height
+	jQuery(control_mobile_logoHeight).on('change keyup', function () {
+		hmenu_global_menu_obj.main_styles[0].mobileLogoHeight = jQuery(this).val();
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});
+
+	var control_paddingLeft = jQuery('#paddingLeft');
+	var control_paddingRight = jQuery('#paddingRight');
+
+	//change: padding left
+	jQuery(control_paddingLeft).on('change keyup', function () {
+		hmenu_global_menu_obj.main_styles[0].paddingLeft = jQuery(this).val();
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});
+
+	//change: padding right
+	jQuery(control_paddingRight).on('change keyup', function () {
+		hmenu_global_menu_obj.main_styles[0].paddingRight = jQuery(this).val();
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});
+
+	var control_shadow = jQuery('#shadow');
+	var control_shadow_distance = jQuery('#shadow_distance');
+	var control_shadow_blur = jQuery('#shadow_blur');
+	var control_shadowColor = jQuery('#shadowColor');
+	var control_shadowTransparency = jQuery('#shadowTransparency');
+
+	//change: shadow enable
+	jQuery(control_shadow).on('change', function () {
+		jQuery(this).prop('checked') ? hmenu_global_menu_obj.main_styles[0].shadow = jQuery(this).val() : hmenu_global_menu_obj.main_styles[0].shadow = 0;
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});
+
+	//change: shadow radius
+	jQuery('.ms_shadow_radius').on('change keyup', function () {
+		var the_shadow_radius = '';
+		jQuery('.ms_shadow_radius').each(function (index, element) {
+			if (jQuery(this).val()) {
+				the_shadow_radius += jQuery(this).val() + ',';
+			} else {
+				the_shadow_radius += 0 + ',';
+			}
+		});
+		hmenu_global_menu_obj.main_styles[0].shadowRadius = the_shadow_radius.slice(0, -1);
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});
+
+	//change: shadow color
+	jQuery(control_shadowColor).on('change keyup', function () {
+		hmenu_global_menu_obj.main_styles[0].shadowColor = jQuery(this).val();
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});
+
+	//change: shadow transparency
+	jQuery('.shadowTransparency .hero_dropdown .hero_drop_row').on('click', function () {
+		jQuery(control_shadowTransparency).trigger('change');
+	});
+	jQuery(control_shadowTransparency).on('change', function () {
+		hmenu_global_menu_obj.main_styles[0].shadowTransparency = jQuery(this).children('option:selected').val();
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});
+
+	var control_sticky = jQuery('#sticky');
+	var control_stickyHeight = jQuery('#stickyHeight');
+	var control_stickyActivate = jQuery('#stickyActivate');
+	var control_stickyTransparency = jQuery('#stickyTransparency');
+	var control_bgStickyStart = jQuery('#bgStickyStart');
+	var control_bgStickyHoverColor = jQuery('#bgStickyHoverColor');
+	var control_stickyLogoActive = jQuery('#stickyLogoActive');
+	var control_stickyUrl = jQuery('#stickyUrl');
+
+	//change: enable sticky
+	jQuery(control_sticky).on('change', function () {
+		jQuery(this).prop('checked') ? hmenu_global_menu_obj.main_styles[0].sticky = jQuery(this).val() : hmenu_global_menu_obj.main_styles[0].sticky = 0;
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});
+
+	//change: sticky height
+	jQuery(control_stickyHeight).on('change keyup', function () {
+		hmenu_global_menu_obj.main_styles[0].stickyHeight = jQuery(this).val();
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});
+
+	//change: sticky activate
+	jQuery(control_stickyActivate).on('change keyup', function () {
+		hmenu_global_menu_obj.main_styles[0].stickyActivate = jQuery(this).val();
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});
+
+	//change: sticky transparency
+	jQuery('.stickyTransparency .hero_dropdown .hero_drop_row').on('click', function () {
+		jQuery(control_stickyTransparency).trigger('change');
+	});
+	jQuery(control_stickyTransparency).on('change', function () {
+		hmenu_global_menu_obj.main_styles[0].stickyTransparency = jQuery(this).children('option:selected').val();
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});
+
+	//change: sticky bg
+	jQuery(control_bgStickyStart).on('change keyup', function () {
+		hmenu_global_menu_obj.main_styles[0].bgStickyStart = jQuery(this).val();
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});
+
+	//sticky bg hover
+	jQuery(control_bgStickyHoverColor).on('change keyup', function () {
+		hmenu_global_menu_obj.main_styles[0].bgStickyHoverColor = jQuery(this).val();
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});
+
+	//change: enable logo sticky
+	jQuery(control_stickyLogoActive).on('change', function () {
+		jQuery(this).prop('checked') ? hmenu_global_menu_obj.main_styles[0].stickyLogoActive = jQuery(this).val() : hmenu_global_menu_obj.main_styles[0].stickyLogoActive = 0;
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});
+
+	//change: sticky url
+	jQuery(control_stickyUrl).on('change keyup', function () {
+		hmenu_global_menu_obj.main_styles[0].stickyUrl = jQuery(this).val();
+		jQuery('.hero_main_sticky_logo').css('background-image', 'url(' + jQuery(this).val() + ')');
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});
+
+	var control_sticky_fontWeight = jQuery('#stickyFontWeight');
+	var control_sticky_fontSize = jQuery('#stickyFontSize');
+	var control_sticky_fontSizing = jQuery('#stickyFontSizing');
+	var control_sticky_fontColor = jQuery('#stickyFontColor');
+	var control_sticky_fontHoverColor = jQuery('#stickyFontHoverColor');
+
+	//change: font weight
+	jQuery('.stickyFontWeight .hero_dropdown .hero_drop_row').on('click', function () {
+		jQuery(control_sticky_fontWeight).trigger('change');
+	});
+	jQuery(control_sticky_fontWeight).on('change', function () {
+		hmenu_global_menu_obj.main_styles[0].stickyFontWeight = jQuery(this).children('option:selected').val();
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});
+
+	//change: font size
+	jQuery(control_sticky_fontSize).on('change keyup', function () {
+		hmenu_global_menu_obj.main_styles[0].stickyFontSize = jQuery(this).val();
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});
+
+	//change: font sizing
+	jQuery('.stickyFontSizing .hero_dropdown .hero_drop_row').on('click', function () {
+		jQuery(control_sticky_fontSizing).trigger('change');
+	});
+	jQuery(control_sticky_fontSizing).on('change', function () {
+		hmenu_global_menu_obj.main_styles[0].stickyFontSizing = jQuery(this).children('option:selected').val();
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});
+
+	//change: font color
+	jQuery(control_sticky_fontColor).on('change keyup', function () {
+		hmenu_global_menu_obj.main_styles[0].stickyFontColor = jQuery(this).val();
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});
+
+	//change: hover font color
+	jQuery(control_sticky_fontHoverColor).on('change keyup', function () {
+		hmenu_global_menu_obj.main_styles[0].stickyFontHoverColor = jQuery(this).val();
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});
+
+	var control_arrows = jQuery('#arrows');
+	var control_arrowTransparency = jQuery('#arrowTransparency');
+	var control_arrowColor = jQuery('#arrowColor');
+
+	//change: enable arrows
+	jQuery(control_arrows).on('change', function () {
+		jQuery(this).prop('checked') ? hmenu_global_menu_obj.main_styles[0].arrows = jQuery(this).val() : hmenu_global_menu_obj.main_styles[0].arrows = 0;
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});
+
+	//change: arrow transparency
+	jQuery('.arrowTransparency .hero_dropdown .hero_drop_row').on('click', function () {
+		jQuery(control_arrowTransparency).trigger('change');
+	});
+	jQuery(control_arrowTransparency).on('change', function () {
+		hmenu_global_menu_obj.main_styles[0].arrowTransparency = jQuery(this).children('option:selected').val();
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});
+
+	//change: sticky color arrow
+	jQuery(control_arrowColor).on('change keyup', function () {
+		hmenu_global_menu_obj.main_styles[0].arrowColor = jQuery(this).val();
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});
+
+	var control_devider = jQuery('#devider');
+	var control_deviderTransparency = jQuery('#deviderTransparency');
+	var control_deviderColor = jQuery('#deviderColor');
+	var control_deviderSizing = jQuery('#deviderSizing');
+
+	//change: enable line devider
+	jQuery(control_devider).on('change', function () {
+		jQuery(this).prop('checked') ? hmenu_global_menu_obj.main_styles[0].devider = jQuery(this).val() : hmenu_global_menu_obj.main_styles[0].devider = 0;
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});
+
+	//change: devider transparency
+	jQuery('.deviderTransparency .hero_dropdown .hero_drop_row').on('click', function () {
+		jQuery(control_deviderTransparency).trigger('change');
+	});
+	jQuery(control_deviderTransparency).on('change', function () {
+		hmenu_global_menu_obj.main_styles[0].deviderTransparency = jQuery(this).children('option:selected').val();
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});
+
+	//change: devider color
+	jQuery(control_deviderColor).on('change keyup', function () {
+		hmenu_global_menu_obj.main_styles[0].deviderColor = jQuery(this).val();
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});
+
+	//change: devider sizing
+	jQuery('.deviderSizing .hero_dropdown .hero_drop_row').on('click', function () {
+		jQuery(control_deviderSizing).trigger('change');
+	});
+	jQuery(control_deviderSizing).on('change', function () {
+		hmenu_global_menu_obj.main_styles[0].deviderSizing = jQuery(this).children('option:selected').val();
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});
+
+	var control_groupDevider = jQuery('#groupDevider');
+	var control_groupTransparency = jQuery('#groupTransparency');
+	var control_groupColor = jQuery('#groupColor');
+	var control_groupSizing = jQuery('#groupSizing');
+
+	//change: enable group devider
+	jQuery(control_groupDevider).on('change', function () {
+		jQuery(this).prop('checked') ? hmenu_global_menu_obj.main_styles[0].groupDevider = jQuery(this).val() : hmenu_global_menu_obj.main_styles[0].groupDevider = 0;
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});
+
+	//change: devider transparency
+	jQuery('.deviderTransparency .hero_dropdown .hero_drop_row').on('click', function () {
+		jQuery(control_groupTransparency).trigger('change');
+	});
+	jQuery(control_groupTransparency).on('change', function () {
+		hmenu_global_menu_obj.main_styles[0].groupTransparency = jQuery(this).children('option:selected').val();
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});
+
+	//change: devider color
+	jQuery(control_groupColor).on('change keyup', function () {
+		hmenu_global_menu_obj.main_styles[0].groupColor = jQuery(this).val();
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});
+
+	//change: devider sizing
+	jQuery('.groupSizing .hero_dropdown .hero_drop_row').on('click', function () {
+		jQuery(control_groupSizing).trigger('change');
+	});
+	jQuery(control_groupSizing).on('change', function () {
+		hmenu_global_menu_obj.main_styles[0].groupSizing = jQuery(this).children('option:selected').val();
+		hmenu_flag_save_required('hmenu_save_clicked');
+	});
+
+}
+
+//get presets
+function hmenu_get_presets() {
+	jQuery.ajax({
+		url: hmenu_ajax_url,
+		type: "POST",
+		data: {
+			'action': 'hmenu_load_presets'
+		},
+		dataType: "json"
+	}).done(function (data) {
+		hmenu_preset_html(data);
+	}).fail(function () {
+		//page error
+	});
+}
+
+//preset html
+function hmenu_preset_html(data) {
+	var html = '';
+	jQuery(data).each(function (index, element) {
+		html += '<div class="hero_preset_color rounded_20" data-slug="' + element.slug + '" data-name="' + element.presetName + '" data-preset="' + element.presetId + '" data-color-one="' + element.bgColor + '" data-color-two="' + element.hoverColor + '" data-color-font="' + element.textColor + '" data-color-icon="' + element.iconColor + '">';
+		html += '<div class="hero_prehmenu_set_one rounded_left_20"></div>';
+		html += '<div class="hero_preset_two rounded_right_20"></div>';
+		html += '</div>';
+	});
+	jQuery('.hero_preset_holder').html(html);
+	hmenu_set_presets();
+}
+
+//set presets
+function hmenu_set_presets() {
+
+	//show colors
+	jQuery('.hero_preset_color').each(function (index, element) {
+		if (jQuery(this).data('slug') == hmenu_ms_presetSlug) {
+			jQuery(this).addClass('hero_preset_active');
+			jQuery('.hero_preset_selection').html(jQuery(this).data('name'));
+		} else {
+			jQuery(this).removeClass('hero_preset_active');
+		}
+		var color_one = jQuery(this).data('color-one');
+		var color_two = jQuery(this).data('color-two');
+		jQuery(this).children('.hero_prehmenu_set_one').css({
+			'background-color': color_one
+		});
+		jQuery(this).children('.hero_preset_two').css({
+			'background-color': color_two
+		});
+	});
+
+	//click
+	jQuery('.hero_preset_color').off().on('click', function () {
+		hmenu_global_menu_obj.main_styles[0].presetSlug = jQuery(this).data('slug');
+		hmenu_ms_presetSlug = jQuery(this).data('slug');
+		hmenu_flag_save_required('hmenu_save_clicked');
+		hmenu_change_colors(jQuery(this).data('color-one'), jQuery(this).data('color-two'), jQuery(this).data('color-font'), jQuery(this).data('color-icon'));
+		hmenu_set_presets();
+	});
+
+}
+
+//change colors
+function hmenu_change_colors(primary_color, secondary_color, third_color, forth_color) {
+
+	//set main navigation styles
+	hmenu_global_menu_obj.main_styles[0].bgMenuStartColor = primary_color;
+	jQuery('#bgMenuStartColor').val(primary_color);
+	jQuery('#bgMenuStartColor').trigger('change');
+
+	hmenu_global_menu_obj.main_styles[0].bgMenuEndColor = secondary_color;
+	jQuery('#bgMenuEndColor').val(secondary_color);
+	jQuery('#bgMenuEndColor').trigger('change');
+
+	hmenu_global_menu_obj.main_styles[0].bgHoverStartColor = secondary_color;
+	jQuery('#bgHoverStartColor').val(secondary_color);
+	jQuery('#bgHoverStartColor').trigger('change');
+
+	hmenu_global_menu_obj.main_styles[0].bgHoverEndColor = primary_color;
+	jQuery('#bgHoverEndColor').val(primary_color);
+	jQuery('#bgHoverEndColor').trigger('change');
+
+	hmenu_global_menu_obj.main_styles[0].fontColor = third_color;
+	jQuery('#fontColor').val(third_color);
+	jQuery('#fontColor').trigger('change');
+
+	hmenu_global_menu_obj.main_styles[0].arrowColor = third_color;
+	jQuery('#arrowColor').val(third_color);
+	jQuery('#arrowColor').trigger('change');
+
+	hmenu_global_menu_obj.main_styles[0].deviderColor = third_color;
+	jQuery('#deviderColor').val(third_color);
+	jQuery('#deviderColor').trigger('change');
+
+	hmenu_global_menu_obj.main_styles[0].groupColor = third_color;
+	jQuery('#groupColor').val(third_color);
+	jQuery('#groupColor').trigger('change');
+
+	hmenu_global_menu_obj.main_styles[0].fontHoverColor = forth_color;
+	jQuery('#fontHoverColor').val(forth_color);
+	jQuery('#fontHoverColor').trigger('change');
+
+	hmenu_global_menu_obj.main_styles[0].bgStickyStart = secondary_color;
+	jQuery('#bgStickyStart').val(secondary_color);
+	jQuery('#bgStickyStart').trigger('change');
+
+	hmenu_global_menu_obj.main_styles[0].bgStickyHoverColor = secondary_color;
+	jQuery('#bgStickyHoverColor').val(secondary_color);
+	jQuery('#bgStickyHoverColor').trigger('change');
+
+	hmenu_global_menu_obj.main_styles[0].stickyFontColor = third_color;
+	jQuery('#stickyFontColor').val(third_color);
+	jQuery('#stickyFontColor').trigger('change');
+
+	hmenu_global_menu_obj.main_styles[0].stickyFontHoverColor = third_color;
+	jQuery('#stickyFontHoverColor').val(third_color);
+	jQuery('#stickyFontHoverColor').trigger('change');
+
+	//set drop down styles
+	hmenu_global_menu_obj.dropdown_styles[0].bgDropStartColor = primary_color;
+	hmenu_global_menu_obj.dropdown_styles[0].bgDropEndColor = secondary_color;
+	hmenu_global_menu_obj.dropdown_styles[0].bgHoverStartColor = secondary_color;
+	hmenu_global_menu_obj.dropdown_styles[0].bgHoverEndColor = primary_color;
+	hmenu_global_menu_obj.dropdown_styles[0].fontColor = third_color;
+	hmenu_global_menu_obj.dropdown_styles[0].fontHoverColor = forth_color;
+	hmenu_global_menu_obj.dropdown_styles[0].arrowColor = third_color;
+	hmenu_global_menu_obj.dropdown_styles[0].deviderColor = third_color;
+
+	//set mega styles
+	hmenu_global_menu_obj.mega_styles[0].bgDropStartColor = primary_color;
+	hmenu_global_menu_obj.mega_styles[0].bgDropEndColor = secondary_color;
+	hmenu_global_menu_obj.mega_styles[0].bgHoverStartColor = secondary_color;
+	hmenu_global_menu_obj.mega_styles[0].bgHoverEndColor = primary_color;
+	hmenu_global_menu_obj.mega_font_styles[0].fontColor = third_color;
+	hmenu_global_menu_obj.mega_font_styles[1].fontColor = forth_color;
+	hmenu_global_menu_obj.mega_font_styles[2].fontColor = third_color;
+	hmenu_global_menu_obj.mega_font_styles[3].fontColor = forth_color;
+	hmenu_global_menu_obj.mega_styles[0].deviderColor = third_color;
+	hmenu_global_menu_obj.mega_styles[0].borderColor = third_color;
+	hmenu_global_menu_obj.mega_styles[0].fontHoverColor = third_color;
+
+	//set search styles
+	hmenu_global_menu_obj.search_styles[0].fontColor = third_color;
+	hmenu_global_menu_obj.search_styles[0].borderColor = third_color;
+
+	//product styles
+	hmenu_global_menu_obj.main_styles[0].iconProductColor = third_color;
+	hmenu_global_menu_obj.main_styles[0].iconProductHoverColor = forth_color;
+
+
+}
+	
+</script>
+<div class="hero_views">
+    <div class="hero_col_12">
+    	<h2 class="hero_red size_18 weight_600">
+            Menu bar dimensions<br />
+            <strong class="size_11 hero_grey">Choose between a navigation bar that runs the full width of the screen, or at a fixed width. (Bound by theme container)</strong>
+        </h2>
+        <!-- START: FORM -->
+            <form>      	
+                <!-- START: ACTIVATION -->
+                    <div class="hero_section_holder hero_grey size_14">
+                        <div class="hero_col_4">
+                            <label><h2 class="size_14 hero_green">Full width</h2></label><div class="hero_switch_position"><input type="radio" data-size="sml" id="menu_dimension_full" name="menu_dimentions" value="full" data-toggleimage="true"></div>
+                            <div class="search_type menu_full_width image_menu_dimension_full"></div>
+                        </div>
+                        <div class="hero_col_4">
+                            <label><h2 class="size_14 hero_green">Fixed width</h2></label><div class="hero_switch_position"><input type="radio" data-size="sml" id="menu_dimension_fixed" name="menu_dimentions" value="fixed" data-toggleimage="true"></div>
+                            <div class="search_type menu_fixed_width image_menu_dimension_fixed"></div>
+                        </div>
+                        <div class="hero_col_12">
+                            <div class="hero_col_3">
+                            	<label>Menu width</label>
+                            	<input type="text" data-size="lrg" data-hero_type="px" id="menuBarWidth" name="menuBarWidth" value="100%">
+                            </div>
+                            <div class="hero_col_3">
+                            	<label>Menu height</label>
+                            	<input type="text" data-size="lrg" data-hero_type="px" id="menuBarHeight" name="menuBarHeight" value="100px">
+                            </div>
+                        </div>
+                    </div>
+                <!-- END: ACTIVATION -->
+                <!-- START: ACTIVATION -->
+                    <div class="hero_section_holder hero_grey size_14"> 
+                    	<div class="hero_col_12">
+                            <h2 class="size_18 hero_red weight_600">Navigation width</h2>
+                            <p class="size_12 hero_grey">Choose between navigation items that run the full width of the menu bar as indicated above, or at a fixed width in the middle of the menu bar.</p>
+                        </div>                   	
+                        <div class="hero_col_4">
+                            <label><h2 class="size_14 hero_green">Full width</h2></label><div class="hero_switch_position"><input type="radio" data-size="sml" id="nav_dimension_full" name="nav_dimentions" value="full" data-toggleimage="true"></div>
+                            <div class="search_type nav_full_width image_nav_dimension_full" id="nav_change_one"></div>
+                        </div>
+                        <div class="hero_col_4">
+                            <label><h2 class="size_14 hero_green">Fixed width</h2></label><div class="hero_switch_position"><input type="radio" data-size="sml" id="nav_dimension_fixed" name="nav_dimentions" value="fixed" data-toggleimage="true"></div>
+                            <div class="search_type nav_fixed_width image_nav_dimension_fixed" id="nav_change_two"></div>
+                        </div>
+                        <div class="hero_col_12">
+                            <div class="hero_col_3">
+                            	<label>Navigation width</label>
+                            	<input type="text" data-size="lrg" data-hero_type="px" id="navBarWidth" name="navBarWidth" value="100%">
+                            </div>
+                        </div>
+                    </div>
+                <!-- END: ACTIVATION -->               
+                <!-- START: ACTIVATION -->
+                    <div class="hero_section_holder hero_grey size_14"> 
+                    	<div class="hero_section_toggle" data-toggle-section="main_responsive">                       
+                            <div class="hero_col_12">
+                                <div class="hero_col_8">
+                                    <label>
+                                        <h2 class="size_18 hero_red weight_600">Color presets</h2>
+                                        <p class="size_12 hero_grey">Use preset colors if you dont want to use your own. This will filter down to the subnavigation as well. This will affect all background styling and text coloring.</p>
+                                    </label>
+                                </div>
+                                <div class="hero_col_4">
+                                    <input type="checkbox" data-size="lrg" id="preset" name="preset" value="1" data-toggler="true">
+                                </div>
+                            </div>
+                            <div class="hero_col_12">
+                                <div class="hero_preset_holder">
+                                    <!-- LOAD PRESETS -->
+                                </div>
+                            </div>
+                            <div class="hero_col_12">
+                                <h2 class="size_14 hero_green">Current selection</h2>
+                                <p class="size_12 hero_grey hero_preset_selection">Dark purple navigation with light purple hover and white text.</p>
+                            </div>
+                        </div>
+                    </div>
+                <!-- END: ACTIVATION --> 
+                <!-- START: ACTIVATION -->
+                    <div class="hero_section_holder hero_grey size_14"> 
+                    	<div class="hero_col_12">
+                            <h2 class="size_18 hero_red weight_600">Background color</h2>
+                        </div>                   	
+                        <label><h2 class="size_14 hero_green">Default background color | Gradients</h2></label><div class="hero_switch_position"><input type="checkbox" data-size="sml" id="bgMenuGradient" name="bgMenuGradient" value="1" data-smltoggler="menuGradientToggle"></div>
+                        <p class="size_12 hero_grey">This will be the menu background color.</p>
+                        <div class="hero_col_12">
+                            <div class="hero_col_2">
+                                <label>Start color</label>
+                            	<input type="text" id="bgMenuStartColor" class="color_picker" name="bgMenuStartColor" value="#DC4551">
+                            </div>
+                            <div class="menuGradientToggle">
+                                <div class="hero_col_2">
+                                	<label>End color</label>
+                                    <input type="text" id="bgMenuEndColor" class="color_picker" name="bgMenuEndColor" value="#DC4551">
+                                </div>
+                                <div class="hero_col_3">                                
+                                	<label>Gradient direction</label>
+                                    <select data-size="lrg" id="bgMenuGradientPath" name="bgMenuGradientPath">
+                                        <option value="vertical">Vertical</option>
+                                        <option value="horizontal">Horizontal</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="hero_col_2">
+                                <label>Transparency</label>
+                            	<select data-size="lrg" id="bgMenuTransparency" name="bgMenuTransparency">
+                                 	<option value="0.0">0%</option>
+                                    <option value="0.1">10%</option>
+                                    <option value="0.2">20%</option>
+                                    <option value="0.3">30%</option>
+                                    <option value="0.4">40%</option>
+                                    <option value="0.5">50%</option>
+                                    <option value="0.6">60%</option>
+                                    <option value="0.7">70%</option>
+                                    <option value="0.8">80%</option>
+                                    <option value="0.9">90%</option>
+                                    <option value="1.0">100%</option>
+                                </select>
+                            </div>
+                        </div>                      
+                    </div>
+                <!-- END: ACTIVATION --> 
+                <!-- START: ACTIVATION -->
+                    <div class="hero_section_holder hero_grey size_14">    
+                    	<div class="hero_section_toggle" data-toggle-section="main_responsive">                    
+                            <div class="hero_col_12">
+                                <div class="hero_col_8">
+                                    <label>
+                                        <h2 class="size_18 hero_red weight_600">Background image</h2>
+                                        <p class="size_12 hero_grey">This will add a background image to your main navigation.</p>
+                                    </label>
+                                </div>
+                                <div class="hero_col_4">
+                                    <input type="checkbox" data-size="lrg" id="bgMainImage" name="bgMainImage" value="1" data-toggler="true">
+                                </div>
+                            </div>
+                            <div class="hero_col_12">
+                                <div class="hero_col_8">
+                                    <div class="hero_button_auto green_button rounded_3 hero_media_uploader" data-connect-with="bgMainImageUrl" data-multiple="false" data-size="full">Add background image</div>
+                                </div>
+                                <div class="hero_col_4">
+                                    <div class="hero_main_background rounded_3"></div>
+                                </div>
+                            </div>
+                            <div class="hero_col_12">
+                                <div class="hero_col_8">
+                            		<label><h2 class="size_14 hero_green">Background image url</h2></label>
+                        			<p class="size_12 hero_grey">This is the source url for your background image.</p>
+                                </div>
+                                <div class="hero_col_4">
+                                    <input type="text" data-size="lrg" data-hero_type="img" id="bgMainImageUrl" name="bgMainImageUrl" value="#">
+                                </div>
+                            </div>
+                            <div class="hero_col_12">
+                                <div class="hero_col_8">
+                            		<label><h2 class="size_14 hero_green">Background position</h2></label>
+                                    <p class="size_12 hero_grey">Set the position for your main navigation background image.</p>
+                                </div>
+                                <div class="hero_col_4">
+                                    <select data-size="lrg" id="bgMainImagePosition" name="bgMainImagePosition">
+                                        <option value="center" selected="selected">Center</option>
+                                        <option value="left">Left</option>
+                                        <option value="right">Right</option>
+                                        <option value="bottom right">Bottom, Right</option>
+                                        <option value="bottom left">Bottom, Left</option>
+                                        <option value="top right">Top, Right</option>
+                                        <option value="top left">Top, Left</option>                        
+                                    </select> 
+                                </div>
+                            </div>
+                            <div class="hero_col_12">
+                                <div class="hero_col_8">
+                            		<label><h2 class="size_14 hero_green">Background repeat</h2></label>
+                                    <p class="size_12 hero_grey">Set the repeat for your main navigation background image.</p>
+                                </div>
+                                <div class="hero_col_4">
+                                    <select data-size="lrg" id="bgMainImageRepeat" name="bgMainImageRepeat">
+                                        <option value="inherit">Inherit</option>
+                                        <option value="no-repeat">No Repeat</option>   
+                                        <option value="repeat">Repeat</option>       
+                                        <option value="repeat-x">Repeat X</option>   
+                                        <option value="repeat-y">Repeat Y</option>           
+                                    </select> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <!-- END: ACTIVATION --> 
+                <!-- START: ACTIVATION -->
+                    <div class="hero_section_holder hero_grey size_14"> 
+                    	<div class="hero_col_12">
+                            <h2 class="size_18 hero_red weight_600">Hover type and color</h2>
+                        </div>  
+                        <div class="hero_col_12">
+                        	<div class="hero_col_4">
+                            	<label><h2 class="size_14 hero_green">Background hover</h2></label><div class="hero_switch_position"><input type="radio" data-size="sml" id="nav_hover_background" name="nav_hover_type" value="background" data-toggleimage="true"></div>
+                                <div class="search_type hover_bg image_nav_hover_background"></div>
+                            </div>
+                        	<div class="hero_col_4">
+                            	<label><h2 class="size_14 hero_green">Underline</h2></label><div class="hero_switch_position"><input type="radio" data-size="sml" id="nav_hover_underline" name="nav_hover_type" value="underline" data-toggleimage="true"></div>
+                                <div class="search_type hover_underline image_nav_hover_underline"></div>
+                            </div>
+                        	<div class="hero_col_4">
+                            	<label><h2 class="size_14 hero_green">Border</h2></label><div class="hero_switch_position"><input type="radio" data-size="sml" id="nav_hover_border" name="nav_hover_type" value="border" data-toggleimage="true"></div>
+                                <div class="search_type hover_border image_nav_hover_border"></div>
+                            </div>
+                        </div>                        
+                        <label>
+                            <h2 class="size_14 hero_green hero_main_text">
+                            	Hover background color | Gradients
+                            </h2>
+                        </label>
+                        <div class="hero_switch_position hero_main_gradient_toggle"><input type="checkbox" data-size="sml" id="bgHoverGradient" name="bgHoverGradient" value="1" data-smltoggler="menuHoverGradientToggle"></div>
+                        <p class="size_12 hero_grey hero_sub_text">This will be the menu text hover color and size.</p>
+                        <div class="hero_col_12">
+                            <div class="hero_col_2">
+                            	<label>Start color</label>
+                            	<input type="text" id="bgHoverStartColor" class="color_picker" name="bgHoverStartColor" value="#DC4551">
+                            </div>
+                            <div class="menuHoverGradientToggle hero_main_gradient_display">
+                                <div class="hero_col_2">
+                                	<label>End color</label>
+                                    <input type="text" id="bgHoverEndColor" class="color_picker" name="bgHoverEndColor" value="#DC4551">
+                                </div>
+                                <div class="hero_col_3">
+                                	<label>Gradient direction</label>
+                                    <select data-size="lrg" id="bgHoverGradientPath" name="bgHoverGradientPath">
+                                        <option value="vertical">Vertical</option>
+                                        <option value="horizontal">Horizontal</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="hero_col_2">
+                            	<label>Transparency</label>
+                            	<select data-size="lrg" id="bgHoverTransparency" name="bgHoverTransparency">
+                                	<option value="0.0">0%</option>
+                                    <option value="0.1">10%</option>
+                                    <option value="0.2">20%</option>
+                                    <option value="0.3">30%</option>
+                                    <option value="0.4">40%</option>
+                                    <option value="0.5">50%</option>
+                                    <option value="0.6">60%</option>
+                                    <option value="0.7">70%</option>
+                                    <option value="0.8">80%</option>
+                                    <option value="0.9">90%</option>
+                                    <option value="1.0">100%</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                <!-- END: ACTIVATION -->
+                <!-- START: ACTIVATION -->
+                    <div class="hero_section_holder hero_grey size_14">                        
+                        <div class="hero_section_toggle" data-toggle-section="main_responsive">
+                            <div class="hero_col_12">
+                                <div class="hero_col_8">
+                                    <label>
+                                        <h2 class="size_18 hero_red weight_600">Border around menu bar</h2>
+                                        <p class="size_12 hero_grey">This will add a border to your navigation bar.</p>
+                                    </label>
+                                </div>
+                                <div class="hero_col_4">
+                                    <input type="checkbox" data-size="lrg" id="border" name="border" value="1" data-toggler="true">
+                                </div>
+                            </div>
+                            <div class="hero_col_12">
+                                <div class="hero_col_2">
+                                    <label>Transparency</label>
+                                    <select data-size="lrg" id="borderTransparency" name="borderTransparency">
+                                        <option value="0.1">10%</option>
+                                        <option value="0.2">20%</option>
+                                        <option value="0.3">30%</option>
+                                        <option value="0.4">40%</option>
+                                        <option value="0.5">50%</option>
+                                        <option value="0.6">60%</option>
+                                        <option value="0.7">70%</option>
+                                        <option value="0.8">80%</option>
+                                        <option value="0.9">90%</option>
+                                        <option value="1.0">100%</option>
+                                    </select>
+                                </div>
+                                <div class="hero_col_2">
+                                    <label>Border color</label>
+                                    <input type="text" id="borderColor" class="color_picker" name="borderColor" value="#DC4551">
+                                </div>
+                                <div class="hero_col_4">
+                                	<label>Border type</label>
+                                    <select data-size="lrg" id="borderType" name="borderType">
+                                        <option value="border-top">Border top</option>
+                                        <option value="border-bottom">Border bottom</option>
+                                        <option value="border-left">Border left</option>
+                                        <option value="border-right">Border right</option>
+                                        <option value="border">Border arround</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="hero_col_12">
+                            	<label class="hero_col_12">
+                                    <h2 class="size_14 hero_green">Border radius</h2>
+                                </label>
+                                <p class="size_12 hero_grey">This will allow you to add rounded corners to your menu.</p>
+                                <div class="hero_col_2">
+                                    <label>Top left</label>
+                                    <input type="text" data-size="lrg" data-hero_type="px" id="border_radius_top" class="ms_border_radius" name="border_radius_top">
+                                </div>
+                                <div class="hero_col_2">
+                                    <label>Top right</label>
+                                    <input type="text" data-size="lrg" data-hero_type="px" id="border_radius_top_right" class="ms_border_radius" name="border_radius_top_right">
+                                </div>
+                                <div class="hero_col_2">
+                                    <label>Bottom right</label>
+                                    <input type="text" data-size="lrg" data-hero_type="px" id="border_radius_bottom_right" class="ms_border_radius" name="border_radius_bottom_right">
+                                </div>
+                                <div class="hero_col_2">
+                                    <label>Bottom left</label>
+                                    <input type="text" data-size="lrg" data-hero_type="px" id="border_radius_bottom_left" class="ms_border_radius" name="border_radius_bottom_left">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <!-- END: ACTIVATION -->   
+                <!-- START: ACTIVATION -->
+                    <div class="hero_section_holder hero_grey size_14">
+                    	<div class="hero_col_12">
+                            <h2 class="size_18 hero_red weight_600">Fonts</h2>
+                        </div>  
+                    	<label><h2 class="size_14 hero_green">Font size and color</h2></label>
+                        <p class="size_12 hero_grey">This will style the main navigation items.</p>
+                        <div class="hero_col_12">
+                            <div class="hero_col_3">
+                             	<label>Font family</label>
+                            	<select data-size="lrg" id="fontFamily" name="fontFamily" data-height="200">
+                                    <option value="arial">Arial</option>
+                                </select>
+                            </div>
+                             <div class="hero_col_2">
+                             	<label>Font weight</label>
+                            	<select data-size="lrg" id="fontWeight" name="fontWeight">
+                                    <option value="bold">Bold</option>
+                                    <option value="lighter">Lighter</option>
+                                    <option value="inherit">Inherit</option>
+                                    <option value="normal">Normal</option>
+                                </select>
+                            </div>
+                             <div class="hero_col_2">
+                             	<label>Font size</label>
+                            	<input type="text" data-size="lrg" class="hero_int_only" maxlength="2" id="fontSize" name="fontSize">
+                            </div>
+                             <div class="hero_col_2">
+                             	<label>Font sizing</label>
+                            	<select data-size="lrg" id="fontSizing" name="fontSizing">
+                                    <option>px</option>
+                                    <option>em</option>
+                                </select>
+                            </div>
+                             <div class="hero_col_2">
+                             	<label>Font color</label>
+                            	<input type="text" id="fontColor" class="color_picker" name="fontColor" value="#DC4551">
+                            </div>
+                        </div>
+                        <label><h2 class="size_14 hero_green">Hover font color</h2></label>
+                        <p class="size_12 hero_grey">This will style the main navigation hover text color.</p>
+                        <div class="hero_col_12">
+                            <div class="hero_col_2">
+                            	<label>Font hover color</label>
+                            	<input type="text" id="fontHoverColor" class="color_picker" name="fontHoverColor" value="#DC4551">
+                            </div>
+                        </div>
+                    </div>
+                <!-- END: ACTIVATION --> 
+                <!-- START: ACTIVATION -->
+                    <div class="hero_section_holder hero_grey size_14"> 
+                        <div class="hero_col_6">
+                            <label>
+                                <h2 class="size_18 hero_red weight_600">Padding</h2>
+                                <p class="size_12 hero_grey">This will add padding to the left and right of each nav item.</p>
+                            </label>
+                            <div class="hero_col_12">
+                                <div class="hero_col_3">
+                                	<label>Left</label>
+                                    <input type="text" data-size="lrg" data-hero_type="px" id="paddingLeft" name="paddingLeft">
+                                </div>
+                                <div class="hero_col_3">
+                                	<label>Right</label>
+                                    <input type="text" data-size="lrg" data-hero_type="px" id="paddingRight" name="paddingRight">
+                                </div>
+                            </div>  
+                        </div>
+                        <div class="hero_col_6">
+                            <div class="hero_padding_example"></div>
+                        </div>                                              
+                    </div>
+                <!-- END: ACTIVATION -->  
+                <!-- START: ACTIVATION -->
+                    <div class="hero_section_holder hero_grey size_14">    
+                    	<div class="hero_section_toggle" data-toggle-section="main_responsive">                    
+                            <div class="hero_col_12">
+                                <div class="hero_col_8">
+                                    <label>
+                                        <h2 class="size_18 hero_red weight_600">Menu shadow</h2>
+                                        <p class="size_12 hero_grey">This will add a shadow to your menu bar. (Not supported in older browsers)</p>
+                                    </label>
+                                </div>
+                                <div class="hero_col_4">
+                                    <input type="checkbox" data-size="lrg" id="shadow" name="shadow" value="1" data-toggler="true">
+                                </div>
+                            </div>
+                            <div class="hero_col_12">
+                                <div class="hero_col_2">
+                                    <label>Shadow distance</label>
+                                    <input type="text" data-size="lrg" data-hero_type="px" id="shadow_distance" name="shadow_distance" class="ms_shadow_radius">
+                                </div>
+                                <div class="hero_col_2">
+                                    <label>Shadow blur</label>
+                                    <input type="text" data-size="lrg" data-hero_type="px" id="shadow_blur" name="shadow_blur" class="ms_shadow_radius">
+                                </div>
+                                <div class="hero_col_2">
+                                    <label>Transparency</label>
+                                    <select data-size="lrg" id="shadowTransparency" name="shadowTransparency">
+                                        <option value="0.1">10%</option>
+                                        <option value="0.2">20%</option>
+                                        <option value="0.3">30%</option>
+                                        <option value="0.4">40%</option>
+                                        <option value="0.5">50%</option>
+                                        <option value="0.6">60%</option>
+                                        <option value="0.7">70%</option>
+                                        <option value="0.8">80%</option>
+                                        <option value="0.9">90%</option>
+                                        <option value="1.0">100%</option>
+                                    </select>
+                                </div>
+                                <div class="hero_col_2">
+                                    <label>Color</label>
+                                    <input type="text" id="shadowColor" class="color_picker" name="shadowColor" value="#DC4551">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <!-- END: ACTIVATION -->
+                <!-- START: ACTIVATION -->
+                    <div class="hero_section_holder hero_grey size_14">
+                    	<div class="hero_col_12">
+                            <div class="hero_col_8">
+                                <label>
+                                    <h2 class="size_18 hero_red weight_600">Logo url settings</h2>
+                                    <p class="size_12 hero_grey">Set the hyperlink/url and target for your logo. Default hyperlink/url will link to home page.</p>
+                                </label>
+                            </div>
+                            <div class="hero_col_4">
+                                
+                            </div>
+                        </div>
+                        <div class="hero_col_12">
+                            <div class="hero_col_8">
+                                <label>
+                                    <h2 class="size_14 hero_green">Logo url</h2>
+                                    <p class="size_12 hero_grey">Set the hyperlink/url for your logo.</p>
+                                </label>
+                            </div>
+                            <div class="hero_col_4">
+                                <input type="text" data-size="lrg" id="logoLink" name="logoLink" >
+                            </div>
+                        </div>
+                        <div class="hero_col_12">
+                            <div class="hero_col_8">
+                                <label>
+                                    <h2 class="size_14 hero_green">Logo alt</h2>
+                                    <p class="size_12 hero_grey">Set alt attribute for the logo.</p>
+                                </label>
+                            </div>
+                            <div class="hero_col_4">
+                                <input type="text" data-size="lrg" id="logoAlt" name="logoAlt" >
+                            </div>
+                        </div>
+                        <div class="hero_col_12">
+                            <div class="hero_col_8">
+                                <label>
+                                    <h2 class="size_14 hero_green">Logo url target</h2>
+                                    <p class="size_12 hero_grey">Set the target for your logo url.</p>
+                                </label>
+                            </div>
+                            <div class="hero_col_4">
+                                <select data-size="lrg" id="logoLinkTarget" name="logoLinkTarget">
+                                    <option value="_blank">New Page</option>
+                                    <option value="_self">Same Window</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                <!-- END: ACTIVATION -->
+                <!-- START: ACTIVATION -->
+                    <div class="hero_section_holder hero_grey size_14">                        
+                        <div class="hero_section_toggle" data-toggle-section="main_responsive">
+                            <div class="hero_col_12">
+                                <div class="hero_col_8">
+                                    <label>
+                                        <h2 class="size_18 hero_red weight_600">Main logo</h2>
+                                        <p class="size_12 hero_grey">This is the logo that will be displayed on your navigation bar. For best results, use a png.</p>
+                                    </label>
+                                </div>
+                                <div class="hero_col_4">
+                                    <input type="checkbox" data-size="lrg" id="logo" name="logo" value="1" data-toggler="true">
+                                </div>
+                            </div>
+                            <div class="hero_col_12">
+                                <div class="hero_col_8">
+                            		<div class="hero_button_auto green_button rounded_3 hero_media_uploader" data-connect-with="logoUrl" data-multiple="false">Add logo</div>
+                                </div>
+                                <div class="hero_col_4">
+                                    <div class="hero_main_logo rounded_3"></div>
+                                </div>
+                            </div>
+                            <div class="hero_col_12">
+                                <div class="hero_col_8">
+                            		<label><h2 class="size_14 hero_green">Logo source url</h2></label>
+                        			<p class="size_12 hero_grey">This is the source url for your logo, you can also make use of your own url.</p>
+                                </div>
+                                <div class="hero_col_4">
+                                    <input type="text" data-size="lrg" data-hero_type="img" id="logoUrl" name="logoUrl" value="#">
+                                </div>
+                            </div>
+                            <div class="hero_col_12">
+                                <div class="hero_col_8">
+                            		<label><h2 class="size_14 hero_green">Max logo height (%)</h2></label>
+                        			<p class="size_12 hero_grey">This determines the height of your logo in percentage (%)</p>
+                                </div>
+                                <div class="hero_col_4">
+                                    <input type="text" data-size="lrg" data-hero_type="perc" id="logoHeight" name="logoHeight">
+                                </div>
+                            </div>
+                            <div class="hero_col_12">
+                                <div class="hero_col_8">
+                            		<label><h2 class="size_14 hero_green">Logo padding left</h2></label>
+                        			<p class="size_12 hero_grey">This adds padding to your logo on the left side.</p>
+                                </div>
+                                <div class="hero_col_4">
+                                    <input type="text" data-size="lrg" data-hero_type="px" id="logoPaddingLeft" name="logoPaddingLeft">
+                                </div>
+                            </div>
+                            <div class="hero_col_12">
+                                <div class="hero_col_8">
+                            		<label><h2 class="size_14 hero_green">Logo padding right</h2></label>
+                        			<p class="size_12 hero_grey">This adds padding to your logo on the right side.</p>
+                                </div>
+                                <div class="hero_col_4">
+                                    <input type="text" data-size="lrg" data-hero_type="px" id="logoPaddingRight" name="logoPaddingRight">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <!-- END: ACTIVATION --> 
+                <!-- START: ACTIVATION -->
+                    <div class="hero_section_holder hero_grey size_14">                        
+                        <div class="hero_section_toggle" data-toggle-section="main_responsive">
+                            <div class="hero_col_12">
+                                <div class="hero_col_8">
+                                    <label>
+                                        <h2 class="size_18 hero_red weight_600">Mobile logo</h2>
+                                        <p class="size_12 hero_grey">This is the logo for you mobile device. For best results, use a png.</p>
+                                    </label>
+                                </div>
+                                <div class="hero_col_4">
+                                    <input type="checkbox" data-size="lrg" id="mobileLogo" name="mobileLogo" value="1" data-toggler="true">
+                                </div>
+                            </div>
+                            <div class="hero_col_12">
+                                <div class="hero_col_8">
+                            		<div class="hero_button_auto green_button rounded_3 hero_media_uploader" data-connect-with="mobileLogoUrl" data-multiple="false">Add logo</div>
+                                </div>
+                                <div class="hero_col_4">
+                                    <div class="hero_mobile_logo rounded_3"></div>
+                                </div>
+                            </div>
+                            <div class="hero_col_12">
+                                <div class="hero_col_8">
+                            		<label><h2 class="size_14 hero_green">Logo url</h2></label>
+                        			<p class="size_12 hero_grey">This is the source url for your mobile logo, you can also make use of your own url.</p>
+                                </div>
+                                <div class="hero_col_4">
+                                    <input type="text" data-size="lrg" data-hero_type="img" id="mobileLogoUrl" name="mobileLogoUrl" value="#">
+                                </div>
+                            </div>
+                            <div class="hero_col_12">
+                                <div class="hero_col_8">
+                            		<label><h2 class="size_14 hero_green">Max mobile logo height (%)</h2></label>
+                        			<p class="size_12 hero_grey">This determines the height of your mobile logo in percentage (%)</p>
+                                </div>
+                                <div class="hero_col_4">
+                                    <input type="text" data-size="lrg" data-hero_type="perc" id="mobileLogoHeight" name="mobileLogoHeight">
+                                </div>
+                            </div>
+                            <div class="hero_col_12">
+                                <div class="hero_col_8">
+                            		<label><h2 class="size_14 hero_green">Mobile logo padding left</h2></label>
+                        			<p class="size_12 hero_grey">This adds padding to your mobile logo on the left side.</p>
+                                </div>
+                                <div class="hero_col_4">
+                                    <input type="text" data-size="lrg" data-hero_type="px" id="mobileLogoPaddingLeft" name="mobileLogoPaddingLeft">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <!-- END: ACTIVATION -->      
+                <!-- START: ACTIVATION -->
+                    <div class="hero_section_holder hero_grey size_14">
+                    	<div class="hero_section_toggle" data-toggle-section="main_responsive">
+                            <div class="hero_col_12">
+                                <div class="hero_col_8">
+                                    <label>
+                                        <h2 class="size_18 hero_red weight_600">Sticky menu</h2>
+                                        <p class="size_12 hero_grey">This enables your menu bar to be sticky. Also known as fixed navigation.</p>
+                                    </label>
+                                </div>
+                                <div class="hero_col_4">
+                                    <input type="checkbox" data-size="lrg" id="sticky" name="sticky" value="1" data-toggler="true">
+                                </div>
+                            </div>
+                            <div class="hero_col_12">
+                                <div class="hero_col_8">
+                                    <label>
+                                        <h2 class="size_14 hero_green">Sticky menu height</h2>
+                                        <p class="size_12 hero_grey">This will be the height of the menu bar when you scroll.</p>
+                                    </label>
+                                </div>
+                                <div class="hero_col_4">
+                                    <input type="text" data-size="lrg" data-hero_type="px" id="stickyHeight" name="stickyHeight">
+                                </div>
+                            </div>
+                            <div class="hero_col_12">
+                                <div class="hero_col_8">
+                                    <label>
+                                        <h2 class="size_14 hero_green">Activation distance</h2>
+                                        <p class="size_12 hero_grey">Determines the distance needed to scroll before sticky menu is activated.</p>
+                                    </label>
+                                </div>
+                                <div class="hero_col_4">
+                                    <input type="text" data-size="lrg" data-hero_type="px" id="stickyActivate" name="stickyActivate">
+                                </div>
+                            </div>
+                            <div class="hero_col_12">
+                                <div class="hero_col_8">
+                                    <label>
+                                        <h2 class="size_14 hero_green">Sticky Menu Transparency</h2>
+                                        <p class="size_12 hero_grey">Set the transparency of your sticky menu.</p>
+                                    </label>
+                                </div>
+                                <div class="hero_col_4">
+                                    <select data-size="med" id="stickyTransparency" name="stickyTransparency">
+                                    	<option value="0.0">0%</option>
+                                        <option value="0.1">10%</option>
+                                        <option value="0.2">20%</option>
+                                        <option value="0.3">30%</option>
+                                        <option value="0.4">40%</option>
+                                        <option value="0.5">50%</option>
+                                        <option value="0.6">60%</option>
+                                        <option value="0.7">70%</option>
+                                        <option value="0.8">80%</option>
+                                        <option value="0.9">90%</option>
+                                        <option value="1.0">100%</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="hero_col_12">
+                                <div class="hero_col_8">
+                                    <label>
+                                        <h2 class="size_14 hero_green">Sticky Menu Color</h2>
+                                        <p class="size_12 hero_grey">Set the background color of your sticky menu.</p>
+                                    </label>
+                                </div>
+                                <div class="hero_col_4">
+                                    <input type="text" id="bgStickyStart" class="color_picker" name="bgStickyStart" value="#DC4551">
+                                </div>
+                            </div>
+							<div class="hero_col_12">
+								<div class="hero_col_8">
+									<label>
+										<h2 class="size_14 hero_green">Sticky Menu Hover Color</h2>
+										<p class="size_12 hero_grey">Set the hover color of your sticky menu. (This depends on the hover type selected above)</p>
+									</label>
+								</div>
+								<div class="hero_col_4">
+									<input type="text" id="bgStickyHoverColor" class="color_picker" name="bgStickyHoverColor" value="#DC4551">
+								</div>
+							</div>
+                            <div class="hero_col_12">
+                                <div class="hero_col_8">
+                                    <label>
+                                        <h2 class="size_14 hero_green">Sticky menu logo</h2> 
+                                        <p class="size_12 hero_grey">This is the logo that will be displayed when sticky is activated.</p>
+                                    </label>
+                                </div>
+                                <div class="hero_col_4">
+                                	<input type="checkbox" data-size="sml" id="stickyLogoActive" name="stickyLogoActive" value="1">                                    
+                                </div>                                
+                            </div>
+                            <div class="hero_col_12">                                
+                                <div class="hero_col_8">
+                            		<div class="hero_button_auto green_button rounded_3 hero_media_uploader" data-connect-with="stickyUrl">Add logo</div>
+                                </div>
+                                <div class="hero_col_4">
+                                    <div class="hero_main_sticky_logo rounded_3"></div>
+                                </div>
+                            </div>
+                            <div class="hero_col_12">
+                                <div class="hero_col_8">
+                                    <label>
+                                        <h2 class="size_14 hero_green">Sticky menu logo URL</h2>
+                                        <p class="size_12 hero_grey">This is the source url for your sticky logo, you can also make use of your own url.</p>
+                                    </label>
+                                </div>
+                                <div class="hero_col_4">
+                                    <input type="text" data-size="lrg" data-hero_type="img" id="stickyUrl" name="stickyUrl" value="#">
+                                </div>
+                            </div>
+                            <div class="hero_col_12">
+                                <div class="hero_col_8">
+                            		<label><h2 class="size_14 hero_green">Sticky logo padding left</h2></label>
+                        			<p class="size_12 hero_grey">This adds padding to your sticky logo on the left side.</p>
+                                </div>
+                                <div class="hero_col_4">
+                                    <input type="text" data-size="lrg" data-hero_type="px" id="stickyLogoPaddingLeft" name="stickyLogoPaddingLeft">
+                                </div>
+                            </div>
+                            <div class="hero_col_12">
+                                <div class="hero_col_8">
+                                    <label>
+                                        <h2 class="size_18 hero_red weight_600">Sticky menu font and size</h2>
+                                        <p class="size_12 hero_grey">Setup the sticky menu font sizing and color.</p>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="hero_col_11">
+                            	<label><h2 class="size_14 hero_green">Sticky menu font size and color</h2></label>
+                            	<p class="size_12 hero_grey">This will style the sticky navigation items.</p>                 
+                            </div>
+                            <div class="hero_col_12">                            	               
+                                <div class="hero_col_2">
+                             		<label>Font weight</label>
+                                    <select data-size="lrg" id="stickyFontWeight" name="stickyFontWeight">
+                                        <option value="bolder">Bolder</option>
+                                        <option value="bold">Bold</option>
+                                        <option value="lighter">Lighter</option>
+                                        <option value="inherit">Inherit</option>
+                                        <option value="normal">Normal</option>
+                                    </select>
+                                </div>
+                                <div class="hero_col_2">
+                             		<label>Font size</label>
+                                    <input type="text" data-size="lrg" class="hero_int_only" maxlength="2" id="stickyFontSize" name="stickyFontSize">
+                                </div>
+                                 <div class="hero_col_2">
+                             		<label>Font sizing</label>
+                                    <select data-size="lrg" id="stickyFontSizing" name="stickyFontSizing">
+                                        <option>px</option>
+                                        <option>em</option>
+                                    </select>
+                                </div>
+                                <div class="hero_col_2">
+                             		<label>Font color</label>
+                                    <input type="text" id="stickyFontColor" class="color_picker" name="stickyFontColor" value="#DC4551">
+                                </div>
+                            </div>
+                            <div class="hero_col_11">
+                            	<label><h2 class="size_14 hero_green">Sticky menu hover font color</h2></label>
+                                <p class="size_12 hero_grey">This will style the sticky navigation hover text color.</p>
+                            </div>
+                           	<div class="hero_col_12">
+                                <div class="hero_col_2">
+                                    <input type="text" id="stickyFontHoverColor" class="color_picker" name="stickyFontHoverColor" value="#DC4551">
+                                </div>                                
+                            </div>
+                        </div>
+                    </div>
+                <!-- END: ACTIVATION --> 
+                <!-- START: ACTIVATION -->
+                    <div class="hero_section_holder hero_grey size_14">  
+                    	<div class="hero_section_toggle" data-toggle-section="main_responsive">                      
+                            <div class="hero_col_12">
+                                <div class="hero_col_8">
+                                    <label>
+                                        <h2 class="size_18 hero_red weight_600">Arrows for navigation</h2>
+                                        <p class="size_12 hero_grey">This will enable a small dropdown arrow on each navigation item.</p>
+                                    </label>
+                                </div>
+                                <div class="hero_col_4">
+                                    <input type="checkbox" data-size="lrg" id="arrows" name="arrows" value="1" data-toggler="true">
+                                </div>
+                            </div>
+                            <div class="hero_col_12">
+                                <div class="hero_col_2">
+                                    <label>Transparency</label>
+                                    <select data-size="lrg" id="arrowTransparency" name="arrowTransparency" data-height="150">
+                                        <option value="0.1">10%</option>
+                                        <option value="0.2">20%</option>
+                                        <option value="0.3">30%</option>
+                                        <option value="0.4">40%</option>
+                                        <option value="0.5">50%</option>
+                                        <option value="0.6">60%</option>
+                                        <option value="0.7">70%</option>
+                                        <option value="0.8">80%</option>
+                                        <option value="0.9">90%</option>
+                                        <option value="1.0">100%</option>
+                                    </select>
+                                </div>
+                                <div class="hero_col_2">
+                                    <label>Arrow color</label>
+                                    <input type="text" id="arrowColor" class="color_picker" name="arrowColor" value="#DC4551">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <!-- END: ACTIVATION -->   
+                <!-- START: ACTIVATION -->
+                    <div class="hero_section_holder hero_grey size_14">
+                    	<div class="hero_section_toggle" data-toggle-section="main_line_devider"> 
+                            <div class="hero_col_12">
+                                <div class="hero_col_8">
+                                    <label>
+                                        <h2 class="size_18 hero_red weight_600">Line divider styling</h2>
+                                        <p class="size_12 hero_grey">This will enable a line divider between your navigational items.</p>
+                                    </label>
+                                </div>
+                                <div class="hero_col_4">
+                                    <input type="checkbox" data-size="lrg" id="devider" name="devider" value="1" data-toggler="true">
+                                </div>
+                            </div>
+                            <div class="hero_col_12">
+                                <div class="hero_col_2">
+                                    <label>Transparency</label>
+                                    <select data-size="lrg" id="deviderTransparency" name="deviderTransparency" data-height="150">
+                                        <option value="0.1">10%</option>
+                                        <option value="0.2">20%</option>
+                                        <option value="0.3">30%</option>
+                                        <option value="0.4">40%</option>
+                                        <option value="0.5">50%</option>
+                                        <option value="0.6">60%</option>
+                                        <option value="0.7">70%</option>
+                                        <option value="0.8">80%</option>
+                                        <option value="0.9">90%</option>
+                                        <option value="1.0">100%</option>
+                                    </select>
+                                </div>
+                                <div class="hero_col_2">
+                                    <label>Divider color</label>
+                                    <input type="text" id="deviderColor" class="color_picker" name="deviderColor" value="#DC4551">
+                                </div>
+                                <div class="hero_col_3">
+                                    <label>Sizing</label>
+                                    <select data-size="lrg" id="deviderSizing" name="deviderSizing">
+                                        <option value="small">Small</option>
+                                        <option value="full">Full</option>
+                                    </select>
+                                </div>
+                                <div class="hero_col_5">
+                                    <div class="hero_line_example"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <!-- END: ACTIVATION --> 
+                <!-- START: ACTIVATION -->
+                    <div class="hero_section_holder hero_grey size_14">
+                    	<div class="hero_section_toggle" data-toggle-section="main_grp_devider"> 
+                            <div class="hero_col_12">
+                                <div class="hero_col_8">
+                                    <label>
+                                        <h2 class="size_18 hero_red weight_600">Group divider styling</h2>
+                                        <p class="size_12 hero_grey">This will enable a group line divider between your navigational sections: <br>eg Navigation, Search, Social, Logo and Woo Cart .</p>
+                                    </label>
+                                </div>
+                                <div class="hero_col_4">
+                                    <input type="checkbox" data-size="lrg" id="groupDevider" name="groupDevider" value="1" data-toggler="true">
+                                </div>
+                            </div>
+                            <div class="hero_col_12">
+                                <div class="hero_col_2">
+                                    <label>Transparency</label>
+                                    <select data-size="lrg" id="groupTransparency" name="groupTransparency" data-height="50">
+                                        <option value="0.1">10%</option>
+                                        <option value="0.2">20%</option>
+                                        <option value="0.3">30%</option>
+                                        <option value="0.4">40%</option>
+                                        <option value="0.5">50%</option>
+                                        <option value="0.6">60%</option>
+                                        <option value="0.7">70%</option>
+                                        <option value="0.8">80%</option>
+                                        <option value="0.9">90%</option>
+                                        <option value="1.0">100%</option>
+                                    </select>
+                                </div>
+                                <div class="hero_col_2">
+                                    <label>Divider color</label>
+                                    <input type="text" id="groupColor" class="color_picker" name="groupColor" value="#DC4551">
+                                </div>
+                                <div class="hero_col_3">
+                                    <label>Sizing</label>
+                                    <select data-size="lrg" id="groupSizing" name="groupSizing">
+                                        <option value="small">Small</option>
+                                        <option value="full">Full</option>
+                                    </select>
+                                </div>
+                                <div class="hero_col_5">
+                                    <div class="hero_grp_example"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <!-- END: ACTIVATION -->               
+            </form>
+        <!-- END: FORM -->
+    </div>
+</div>

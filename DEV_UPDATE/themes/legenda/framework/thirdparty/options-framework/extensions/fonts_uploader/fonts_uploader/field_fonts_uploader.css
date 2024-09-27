@@ -1,0 +1,153 @@
+.et_fonts-section .add-form,
+.et_fonts-section input[type="submit"],
+.et_fonts-section input[type="file"] {
+	color: #555;
+    background: #f7f7f7;
+    -webkit-box-shadow: 0 1px 0 #ccc;
+    box-shadow: 0 1px 0 #ccc;
+    vertical-align: top;
+    border: 1px solid #ccc;
+    display: inline-block;
+    border-radius: 3px;
+    padding: 4px 10px;
+    line-height: 18px; 
+    text-transform: capitalize;
+    font-size: 13px;
+    cursor: pointer;
+}
+.et_fonts-section .add-form:hover,
+.et_fonts-section input:hover,
+.et_fonts-section .add-form:focus,
+.et_fonts-section input:focus,
+.et_fonts-section .add-form:hover:focus,
+.et_fonts-section input:hover:focus {
+	outline: none; 
+}
+.et_fonts-section .form-table {
+	display: none; 
+}
+.et_fonts-section input[type="file"] {
+	display: inline-block;
+	/* font-size: 0; */
+	padding: 10px 0 10px 10px;   
+	line-height: 17px;
+}
+html[dir="rtl"] .et_fonts-section input[type="file"] {
+    padding-right: 10px;
+    padding-left: 0;
+}
+.et-file-zone label {
+	display: block;
+	font-size: 15px; 
+	margin-bottom: 7px; 
+}
+.et_fonts-section .et_font-preview {
+	width: 100%;
+    border: 1px dotted lightgray;
+    max-width: 850px;
+    padding: 10px;
+    font-size: 10pt;
+    line-height: 24px; 
+    height: auto;
+    margin: 5px 0 10px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.et_fonts-section details,
+.et_fonts-section details:hover,
+.et_fonts-section details:focus {
+	outline: none;
+}
+.et_fonts-section details ul {
+	padding-top: 10px;
+}
+.et_fonts-section li.et_font-removing{
+	opacity: 0.7;
+}
+.et_fonts-section li.et_font-removing,
+.et_fonts-section li.et_font-removed,
+.et_fonts-section li.et_font-removed-fail {
+	display: inline-block;
+	position: relative;
+}
+.et_fonts-section li.et_font-removed {
+	opacity: 0;
+}
+.et_fonts-section li.et_font-removed-fail .et_font-error {
+	display: block;
+	margin: 20px 0; 
+}
+.et_fonts-section .et-loader svg .outline {
+	stroke: rgba(0,183,229,0.9);
+ }
+.et_fonts-section details summary {
+	font-size: 17px;  
+}
+.et_fonts-section details summary:hover,
+.et_fonts-section details summary:focus,
+.et_fonts-section details summary:hover:focus {
+	outline: none; 
+}
+.et_fonts-section details li {
+	font-size: 14px; 
+	margin: 5px 0;
+}
+.et_fonts-section .et-loader {
+	position: absolute;
+	top: 54%;
+	left: 35%;
+	transform: translateY(-50%);
+}
+.et_fonts-section .et-loader svg {
+	position: relative;
+	top: 0;
+	left: 0;
+	margin-left: 0;
+}
+.et_fonts-section .et_fonts-info .et_font-name {
+	font-size: 14px; 
+	margin-right: 5px;
+}
+html[dir="rtl"] .et_fonts-section .et_fonts-info .et_font-name {
+    margin-right: 0;
+    margin-left: 5px;
+}
+.et_fonts-section .et_font-error {
+	padding: 20px;
+    border: 2px solid #d64646;
+    text-align: center;
+    font-size: 20px;
+    background: #f7f7f7; 
+}
+ .et_fonts-section .et_fonts-notifications {
+ 	text-align: center;
+ 	margin-bottom: 0; 
+ }
+ .et_fonts-section .et_fonts-notifications table {
+ 	text-align: center;
+ 	margin: 0 auto; 
+ }
+ .et_fonts-section .et_fonts-notifications tbody th, 
+ .et_fonts-section .et_fonts-notifications tbody td {
+ 	line-height: 24px;
+    font-size: 14px;
+    padding: 10px 7px;  
+ }
+ @media screen and (min-width: 2170px) {
+	 .et_fonts-section .et_fonts-notifications {
+	 	margin-right: 40px;
+	 	width: 40%;
+	 	margin-bottom: 0;
+	 	float: right;
+	 }
+	 html[dir="rtl"] .et_fonts-section .et_fonts-notifications {
+	    float: left;
+	    margin-right: 0;
+	    margin-left: 40px;
+    }   
+	 .et_fonts-section .et_fonts-notifications table {
+	 	width: 100%;
+	 }
+ }

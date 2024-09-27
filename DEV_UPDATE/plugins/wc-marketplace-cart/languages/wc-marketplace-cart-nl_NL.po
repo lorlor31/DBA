@@ -1,0 +1,1161 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: wc-marketplace-cart\n"
+"POT-Creation-Date: 2020-11-06 19:21-0800\n"
+"PO-Revision-Date: 2020-11-07 15:58+0000\n"
+"Last-Translator: Gia Marquez\n"
+"Language-Team: Dutch\n"
+"Language: nl-NL\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-SearchPath-0: .\n"
+"Report-Msgid-Bugs-To: \n"
+"X-Loco-Version: 2.4.4; wp-5.5.3"
+
+#: includes/Admin/OneTeamSoftware.php:219
+msgid "Our Excellent Plugins"
+msgstr "Onze uitstekende plug-ins"
+
+#: includes/Admin/OneTeamSoftware.php:245
+msgid "About Us"
+msgstr "Over ons"
+
+#: includes/Admin/OneTeamSoftware.php:253
+msgid "Contact Us"
+msgstr "Contact Opnemen"
+
+#: includes/MarketplaceCart.php:157
+msgid "Settings"
+msgstr "Instellingen"
+
+#: includes/MarketplaceCart.php:182 includes/MarketplaceCart.php:521
+msgid "Marketplace Cart"
+msgstr "Marketplace Cart"
+
+#: includes/MarketplaceCart.php:523
+msgid "Do you have any questions or requests?"
+msgstr "Heeft u vragen of verzoeken?"
+
+#: includes/MarketplaceCart.php:525
+msgid "We are here to help you!"
+msgstr "We zijn er om u te helpen!"
+
+#: includes/MarketplaceCart.php:526
+msgid "Will you recommend <strong>Marketplace Cart</strong> plugin to others?"
+msgstr "Zou u <strong>Marketplace Cart</strong> plugin aan aanderen aanraden?"
+
+#: includes/MarketplaceCart.php:528
+msgid "Please take 1 minute to leave your review"
+msgstr "Neem alstublieft 1 minuut de tijd om uw recensie achter te laten"
+
+#: includes/MarketplaceCart.php:532
+msgid "License Key"
+msgstr "Licentiesleutel"
+
+#: includes/MarketplaceCart.php:534
+msgid "A valid license key is required for plugin to work"
+msgstr ""
+"Een geldige licentie sleutel is vereist voor de plugin om te functioneren"
+
+#: includes/MarketplaceCart.php:538
+msgid "Enable Marketplace Cart"
+msgstr "Schakel Marketplace Cart in"
+
+#: includes/MarketplaceCart.php:539
+msgid "Enable Packages in Cart / Checkout Pages"
+msgstr "Schakel pakketten in winkelwagen / afrekenpagina's in"
+
+#: includes/MarketplaceCart.php:540
+msgid ""
+"Redesigns Cart, Checkout and Order Review pages to show contents grouped "
+"into packages with shipping method selection under each package"
+msgstr ""
+"Herontwerp van de Winkelwagen, Afreken- en Bestelling beoordelingspagina, om "
+"de inhoud gegroepeerd in pakketten weer te geven met een selectie van "
+"verzendmethoden onder elk pakket"
+
+#: includes/MarketplaceCart.php:545
+msgid "CSS"
+msgstr "CSS"
+
+#: includes/MarketplaceCart.php:546
+msgid "You can apply your custom styling by writing custom CSS here"
+msgstr ""
+"U kunt uw aangepaste stijl toepassen door hier aangepaste CSS te schrijven"
+
+#: includes/MarketplaceCart.php:550
+msgid "Package Name Settings"
+msgstr "Pakketnaam Instellingen"
+
+#: includes/MarketplaceCart.php:554
+msgid "Display Package Name"
+msgstr "Pakketnaam weergeven"
+
+#: includes/MarketplaceCart.php:555
+msgid ""
+"Display package name as a title before package contents in Cart and checkout "
+"packages"
+msgstr ""
+"Geef de pakketnaam weer als een titel vóór de inhoud van het pakket in "
+"winkelwagen en afrekenpakketten"
+
+#: includes/MarketplaceCart.php:560
+msgid "Custom Package name"
+msgstr "Aangepaste pakketnaam"
+
+#: includes/MarketplaceCart.php:561
+msgid ""
+"You can use the following placeholders: {packageIdx}, {packageName} to "
+"customize displayed package name"
+msgstr ""
+"U kunt de volgende placeholders gebruiken: {packageIdx}, {packageName} om de "
+"weergegeven pakketnamen aan te passen"
+
+#: includes/MarketplaceCart.php:565
+msgid "Cart Notice Settings"
+msgstr "Winkelmand Meldingsinstellingen"
+
+#: includes/MarketplaceCart.php:569
+msgid "Cart Notice"
+msgstr "Winkelmand Melding"
+
+#: includes/MarketplaceCart.php:570
+msgid ""
+"You can use {numberOfPackages} as a place holder for the number of packages "
+"in Cart. If empty then notice won't be displayed"
+msgstr ""
+"U kunt {numberOfPackages} gebruiken als plaatshouder voor het aantal "
+"pakketten in de Winkelwagen. Indien leeg, wordt de melding niet weergegeven"
+
+#: includes/MarketplaceCart.php:574
+msgid "Display Cart Notice on Cart"
+msgstr "Toon Winkelwagenmelding op Winkelwagen"
+
+#: includes/MarketplaceCart.php:575
+msgid "Display number of packages notice from above"
+msgstr "Geef het aantal pakketten weer van bovenaf"
+
+#: includes/MarketplaceCart.php:579
+msgid "Display Cart Notice on Checkout"
+msgstr "Toon winkelwagenmelding bij het afrekenen"
+
+#: includes/MarketplaceCart.php:580
+msgid "Display number of packages notice from above on checkout page"
+msgstr "Geef het aantal pakketten weer van bovenaf op de afrekenpagina"
+
+#: includes/MarketplaceCart.php:584
+msgid "Cart Notice Location"
+msgstr "Winkelmand Melding Positie"
+
+#: includes/MarketplaceCart.php:586
+msgid "Before Packages"
+msgstr "Voor Pakketten"
+
+#: includes/MarketplaceCart.php:587
+msgid "After Packages"
+msgstr "Na Pakketten"
+
+#: includes/MarketplaceCart.php:588
+msgid "Before & After Packages"
+msgstr "Voor & Na Paketten"
+
+#: includes/MarketplaceCart.php:590
+msgid "Select location of the number of packages notice"
+msgstr "Selecteer de positie voor de kennisgeving voor het aantal pakketten"
+
+#: includes/MarketplaceCart.php:594
+msgid "Package Notice Settings"
+msgstr "Instellingen voor Pakketmededelingen"
+
+#: includes/MarketplaceCart.php:598
+msgid "Package Notice"
+msgstr "Pakketmededeling"
+
+#: includes/MarketplaceCart.php:599
+msgid ""
+"You can use {numberOfItems} as a place holder for the number of items in the "
+"package. If empty then notice won't be displayed"
+msgstr ""
+"U kunt {numberOfItems} gebruiken als plaatshouder voor het aantal items in "
+"het pakket. Indien leeg, wordt de melding niet weergegeven"
+
+#: includes/MarketplaceCart.php:603
+msgid "Display Package Notice on Cart"
+msgstr "Toon pakketmededeling op winkelwagen"
+
+#: includes/MarketplaceCart.php:604
+msgid "Display number of items in the package notice from above"
+msgstr "Geef het aantal artikelen in de pakketmededeling van bovenaf weer"
+
+#: includes/MarketplaceCart.php:608
+msgid "Display Package Notice on Checkout"
+msgstr "Pakketmelding weergeven bij het afrekenen"
+
+#: includes/MarketplaceCart.php:609
+msgid ""
+"Display number of items in the package notice from above on checkout page"
+msgstr ""
+"Geef het aantal items in de pakketmededeling van bovenaf op de afrekenpagina "
+"weer"
+
+#: includes/MarketplaceCart.php:613
+msgid "Package Notice Location"
+msgstr "Pakketmededeling Positie"
+
+#: includes/MarketplaceCart.php:615
+msgid "Before Package Contents"
+msgstr "Voor Pakket Inhoud"
+
+#: includes/MarketplaceCart.php:616 includes/MarketplaceCart.php:635
+msgid "After Package Contents"
+msgstr "Na Pakket Inhoud"
+
+#: includes/MarketplaceCart.php:617
+msgid "Before & After Package Contents"
+msgstr "Voor & Na Pakket Inhoud"
+
+#: includes/MarketplaceCart.php:619
+msgid "Select location of the number of items notice"
+msgstr "Selecteer de positie van de kennisgeving van het aantal items"
+
+#: includes/MarketplaceCart.php:623
+msgid "Shipping Method Selection Settings"
+msgstr "Verzendmethode Selectie instellingen"
+
+#: includes/MarketplaceCart.php:627
+msgid "Choose Shipping Method on Checkout Page"
+msgstr "Kies Verzendmethode op Afrekenscherm"
+
+#: includes/MarketplaceCart.php:628
+msgid "Allows to choose different shipping method on checkout page"
+msgstr ""
+"Bied de mogelijkheid om een andere verzenmethode te kiezen op het "
+"afrekenscherm"
+
+#: includes/MarketplaceCart.php:633
+msgid "Shipping Method Location"
+msgstr "Verzendmethode Positie"
+
+#: includes/MarketplaceCart.php:636
+msgid "Inside Totals"
+msgstr "Binnen totalen"
+
+#: includes/MarketplaceCart.php:638
+msgid "Select location of the shipping method selection"
+msgstr "Selecteer de positie van de verzendmethode"
+
+#: includes/MarketplaceCart.php:642
+msgid "Single Shipping Method Selection Location"
+msgstr "Selectie van een enkele verzendmethode Positie"
+
+#: includes/MarketplaceCart.php:644 includes/MarketplaceCart.php:682
+msgid "Same Row"
+msgstr "Dezelfde rij"
+
+#: includes/MarketplaceCart.php:645 includes/MarketplaceCart.php:683
+msgid "Next Row"
+msgstr "Volgende regel"
+
+#: includes/MarketplaceCart.php:647
+msgid ""
+"Single Shipping Method Selection can be either displayed on the same or next "
+"row"
+msgstr ""
+"Selectie van een enkele verzendmethode kan op dezelfde of de volgende rij "
+"worden weergegeven"
+
+#: includes/MarketplaceCart.php:651
+msgid "Cart Layout Settings"
+msgstr "Winkelmand Layout Instellingen"
+
+#: includes/MarketplaceCart.php:655 includes/MarketplaceCart.php:703 
+#: includes/MarketplaceCart.php:796
+msgid "Enable / Disable"
+msgstr "Inschakelen / Uitschakelen"
+
+#: includes/MarketplaceCart.php:656
+msgid "Do you want to enable Cart layout customizations?"
+msgstr "Wilt u aanpassingen aan de winkelwagen layout inschakelen?"
+
+#: includes/MarketplaceCart.php:660
+msgid "Display Contents Before Cart Table"
+msgstr "Inhoud weergeven vóór winkelwagentabel"
+
+#: includes/MarketplaceCart.php:661
+msgid ""
+"Controls visibility of the contents that can be generated by theme or other "
+"plugin before the table on Cart Page"
+msgstr ""
+"Regelt de zichtbaarheid van de inhoud die kan worden gegenereerd op basis "
+"van een het thema of een andere plug-in vóór de tabel op de winkelwagenpagina"
+
+#: includes/MarketplaceCart.php:665
+msgid "Display Contents After Cart Table"
+msgstr "Inhoud weergeven na winkelwagentabel"
+
+#: includes/MarketplaceCart.php:666
+msgid ""
+"Controls visibility of the contents that can be generated by theme or other "
+"plugin after the table on Cart Page"
+msgstr ""
+"Regelt de zichtbaarheid van de inhoud die kan worden gegenereerd op het "
+"thema of een andere plug-in na de tabel op de winkelwagenpagina"
+
+#: includes/MarketplaceCart.php:670
+msgid "Display Contents After Cart Contents"
+msgstr "Inhoud weergeven na inhoud winkelwagen"
+
+#: includes/MarketplaceCart.php:671
+msgid ""
+"Controls visibility of the contents that can be generated by theme or other "
+"plugin after the contents on Cart Page"
+msgstr ""
+"Regelt de zichtbaarheid van de inhoud die kan worden gegenereerd door het "
+"thema of andere plug-in na de inhoud op de winkelwagenpagina"
+
+#: includes/MarketplaceCart.php:675
+msgid "Remove Button Text"
+msgstr "Text voor Verwijderknop"
+
+#: includes/MarketplaceCart.php:676
+msgid "If text is empty then X icon will be displayed"
+msgstr "Als de tekst leeg is, wordt het X-pictogram weergegeven"
+
+#: includes/MarketplaceCart.php:680
+msgid "Cart Remove Button Location"
+msgstr "Uit Winkelmand Verwijderen Knop Positie"
+
+#: includes/MarketplaceCart.php:685
+msgid "Remove button can be either displayed on the same or next row"
+msgstr "De Verwijderknop kan op dezelfde of de volgende rij worden weergegeven"
+
+#: includes/MarketplaceCart.php:689
+msgid "Cart Coupon Location"
+msgstr "Winkelmand Kortingscode Positie"
+
+#: includes/MarketplaceCart.php:691
+msgid "After Cart Items"
+msgstr "Na Winkelwagen Artikelen"
+
+#: includes/MarketplaceCart.php:692
+msgid "After Cart Totals"
+msgstr "Na Winkelwagen Totalen"
+
+#: includes/MarketplaceCart.php:693
+msgid "Do Not Display"
+msgstr "Niet Weergeven"
+
+#: includes/MarketplaceCart.php:695
+msgid "Select location of the coupon field"
+msgstr "Selecteer de positie van het couponveld"
+
+#: includes/MarketplaceCart.php:699
+msgid "Checkout Layout Settings"
+msgstr "Afrekenscherm Indelingsinstellingen"
+
+#: includes/MarketplaceCart.php:704
+msgid "Do you want to enable Checkout layout customizations?"
+msgstr "Wilt u lay-outaanpassingen voor de afrekenpagina inschakelen?"
+
+#: includes/MarketplaceCart.php:708
+msgid "Display Contents Before Customer Details"
+msgstr "Inhoud weergeven vóór klantgegevens"
+
+#: includes/MarketplaceCart.php:709
+msgid ""
+"Controls visibility of the contents that can be generated by theme or other "
+"plugin before Customer Details on Checkout Page"
+msgstr ""
+"Regelt de zichtbaarheid van de inhoud die kan worden gegenereerd door het "
+"thema of andere plug-in vóór klantgegevens op de afrekenpagina"
+
+#: includes/MarketplaceCart.php:713
+msgid "Display Contents After Customer Details"
+msgstr "Inhoud weergeven na klantgegevens"
+
+#: includes/MarketplaceCart.php:714
+msgid ""
+"Controls visibility of the contents that can be generated by theme or other "
+"plugin after Customer Details on Checkout Page"
+msgstr ""
+"Regelt de zichtbaarheid van de inhoud die kan worden gegenereerd door het "
+"thema of een andere plug-in na klantgegevens op de afrekenpagina"
+
+#: includes/MarketplaceCart.php:718 includes/MarketplaceCart.php:723
+msgid "Display Contents Before Order Review"
+msgstr "Inhoud weergeven vóór beoordeling van bestelling"
+
+#: includes/MarketplaceCart.php:719
+msgid ""
+"Controls visibility of the contents that can be generated by theme or other "
+"plugin before Order Review on Checkout Page"
+msgstr ""
+"Regelt de zichtbaarheid van de inhoud die kan worden gegenereerd op basis "
+"van het thema of andere plug-in voordat de bestelling wordt beoordeeld op de "
+"afrekenpagina"
+
+#: includes/MarketplaceCart.php:724
+msgid ""
+"Controls visibility of the contents that can be generated by theme or other "
+"plugin after Order Review on Checkout Page"
+msgstr ""
+"Regelt de zichtbaarheid van de inhoud die kan worden gegenereerd op basis "
+"van het thema of andere plug-in na bestelling beoordeling op de afrekenpagina"
+
+#: includes/MarketplaceCart.php:728
+msgid "Display Contents After Checkout Form"
+msgstr "Inhoud weergeven na afrekenformulier"
+
+#: includes/MarketplaceCart.php:729
+msgid ""
+"Controls visibility of the contents that can be generated by theme or other "
+"plugin after the Form on Checkout Page"
+msgstr ""
+"Regelt de zichtbaarheid van de inhoud die kan worden gegenereerd door het "
+"thema of andere plug-in na de formulier op de afrekenpagina"
+
+#: includes/MarketplaceCart.php:733
+msgid "Display Order Notes"
+msgstr "Geef ordernotities weer"
+
+#: includes/MarketplaceCart.php:734
+msgid "Controls visibility of the order notes on Checkout Page"
+msgstr "Regelt de zichtbaarheid van de bestelnotities op de afrekenpagina"
+
+#: includes/MarketplaceCart.php:738
+msgid "Order Notes Location"
+msgstr "Bestel notities positie"
+
+#: includes/MarketplaceCart.php:740
+msgid "After Billing Form"
+msgstr "Na Factuurformulier"
+
+#: includes/MarketplaceCart.php:741
+msgid "After Shipping Form"
+msgstr "Na Verzendformulier"
+
+#: includes/MarketplaceCart.php:742 includes/MarketplaceCart.php:751
+msgid "After Checkout Items"
+msgstr "Na af te rekenen Artikelen"
+
+#: includes/MarketplaceCart.php:743 includes/MarketplaceCart.php:752
+msgid "After Checkout Totals"
+msgstr "Na af te rekenen Totalen"
+
+#: includes/MarketplaceCart.php:745
+msgid "Select location of the order notes on Checkout Page"
+msgstr "Selecteer de positie van de bestelnotities op de afrekenpagina"
+
+#: includes/MarketplaceCart.php:749
+msgid "Checkout Payment Location"
+msgstr "Afrekenen Betaalmethode Positie"
+
+#: includes/MarketplaceCart.php:755
+msgid "Select location of the payment button on Checkout Page"
+msgstr "Selecteer de positie van de betalingsknop op de afrekenpagina"
+
+#: includes/MarketplaceCart.php:769
+msgid "Desktop Styles"
+msgstr "Desktop Stijlen"
+
+#: includes/MarketplaceCart.php:770
+msgid ""
+"Desktop styles will be displayed for the screens with the width greater than "
+"979px"
+msgstr ""
+"Desktop stijlen worden weergegeven voor schermen met een breedte groter dan "
+"979 px"
+
+#: includes/MarketplaceCart.php:782
+msgid "Mobile Styles"
+msgstr "Mobieleweergave Stijlen"
+
+#: includes/MarketplaceCart.php:783
+msgid ""
+"Mobile styles will be displayed for the screens with the width less than "
+"978px"
+msgstr ""
+"Mobieleweergave stijlen worden getoond op schermen met een breedte die "
+"kleiner is dan 978px"
+
+#: includes/MarketplaceCart.php:797
+msgid "Do you want to enable the these apperance settings?"
+msgstr "Wilt u deze uiterlijkinstellingen inschakelen?"
+
+#: includes/MarketplaceCart.php:801
+msgid "Items Table Width"
+msgstr "Artikel Tabel Breedte"
+
+#: includes/MarketplaceCart.php:802
+msgid "It can be used to overwrite width of the Items Table"
+msgstr ""
+"Het kan worden gebruikt om de breedte van de artikel tabel te overschrijven"
+
+#: includes/MarketplaceCart.php:806
+msgid "Items Table Margin"
+msgstr "Artikel Tabel Rand"
+
+#: includes/MarketplaceCart.php:807
+msgid ""
+"It can be used to overwrite margin of the Items Table. It can be defined as "
+"a single value (eg: 10px) or as a vector (top right bottom left), (eg: 10px "
+"5px 10px 5px)"
+msgstr ""
+"Het kan worden gebruikt om de marge van de itemtabel te overschrijven. Het "
+"kan worden gedefinieerd als een enkele waarde (bijvoorbeeld: 10px) of als "
+"een vector (top right bottom left), (eg: 10px 5px 10px 5px)"
+
+#: includes/MarketplaceCart.php:811
+msgid "Package Table Margin"
+msgstr "Paketten Tabel Rand"
+
+#: includes/MarketplaceCart.php:812
+msgid ""
+"It can be used to overwrite margin of the Package Table. It can be defined "
+"as a single value (eg: 10px) or as a vector (top right bottom left), (eg: "
+"10px 5px 10px 5px)"
+msgstr ""
+"Het kan worden gebruikt om de marge van de pakkettabel te overschrijven. Het "
+"kan worden gedefinieerd als een enkele waarde (bijvoorbeeld: 10px) of als "
+"vectoren (top right bottom left), (eg: 10px 5px 10px 5px)"
+
+#: includes/MarketplaceCart.php:816
+msgid "Package Table Header Cell Padding"
+msgstr "Pakket Subtotaal koptekst celopvulling"
+
+#: includes/MarketplaceCart.php:817
+msgid ""
+"It can be used to overwrite padding of the package table header columns. It "
+"can be defined as a single value (eg: 10px) or as a vector (top right bottom "
+"left), (eg: 10px 5px 10px 5px)"
+msgstr ""
+"Het kan worden gebruikt om de opvulling van de koptekstkolommen van de "
+"pakkettabel te overschrijven. Het kan worden gedefinieerd als een enkele "
+"waarde (bijvoorbeeld: 10px) of als vectoren (top right bottom left), (eg: "
+"10px 5px 10px 5px)"
+
+#: includes/MarketplaceCart.php:821
+msgid "Cart Item Cell Padding"
+msgstr "Winkelwagen Item Celopvulling"
+
+#: includes/MarketplaceCart.php:822
+msgid ""
+"It can be used to overwrite padding of the Image, Name, Price, Quantity "
+"cells. It can be defined as a single value (eg: 10px) or as a vector (top "
+"right bottom left), (eg: 10px 5px 10px 5px)"
+msgstr ""
+"Het kan worden gebruikt om de opvulling van de cellen Afbeelding, Naam, "
+"Prijs en Aantal te overschrijven. Het kan worden gedefinieerd als een enkele "
+"waarde (bijvoorbeeld: 10px) of als vectoren (top right bottom left), (eg: "
+"10px 5px 10px 5px)"
+
+#: includes/MarketplaceCart.php:826
+msgid "Image Width"
+msgstr "Afbeeldingsbreedte"
+
+#: includes/MarketplaceCart.php:827
+msgid "It can be used to overwrite product image width"
+msgstr ""
+"Het kan worden gebruikt om de breedte van de productafbeelding te "
+"overschrijven"
+
+#: includes/MarketplaceCart.php:831
+msgid "Image Height"
+msgstr "Afbeelding Hoogte"
+
+#: includes/MarketplaceCart.php:832
+msgid "It can be used to overwrite product image height"
+msgstr ""
+"Het kan worden gebruikt om de hoogte van de productafbeelding te "
+"overschrijven"
+
+#: includes/MarketplaceCart.php:836
+msgid "Name Column Width"
+msgstr "Naamkolom Breedte"
+
+#: includes/MarketplaceCart.php:837
+msgid "It can be used to overwrite width of the Product Name column"
+msgstr ""
+"Het kan worden gebruikt om de breedte van de kolom Productnaam te "
+"overschrijven"
+
+#: includes/MarketplaceCart.php:842
+msgid "Name Column Text Alignment"
+msgstr "Naamkolom Tekstuitlijning"
+
+#: includes/MarketplaceCart.php:843
+msgid "It can be used to overwrite text alignment of the Product Name column"
+msgstr ""
+"Het kan worden gebruikt om de tekstuitlijning van de kolom Productnaam te "
+"overschrijven"
+
+#: includes/MarketplaceCart.php:848
+msgid "Name Header Font Weight"
+msgstr "Naam koptekst lettergrootte"
+
+#: includes/MarketplaceCart.php:849
+msgid "It can be used to overwrite font weight of the Product Name header"
+msgstr ""
+"Het kan worden gebruikt om het lettergrootte van de productnaamkop te "
+"overschrijven"
+
+#: includes/MarketplaceCart.php:854
+msgid "Name Column Font Weight"
+msgstr "Naamkolom lettergrootte"
+
+#: includes/MarketplaceCart.php:855
+msgid "It can be used to overwrite font weight of the Product Name column"
+msgstr ""
+"Het kan worden gebruikt om het lettergrootte van de kolom Productnaam te "
+"overschrijven"
+
+#: includes/MarketplaceCart.php:859
+msgid "Price Column Width"
+msgstr "Prijskolom breedte"
+
+#: includes/MarketplaceCart.php:860
+msgid "It can be used to overwrite width of the Price column"
+msgstr ""
+"Het kan worden gebruikt om de breedte van de kolom Prijs te overschrijven"
+
+#: includes/MarketplaceCart.php:865
+msgid "Price Column Text Alignment"
+msgstr "Prijskolom tekstuitlijning"
+
+#: includes/MarketplaceCart.php:866
+msgid "It can be used to overwrite text alignment of the Price column"
+msgstr ""
+"Het kan worden gebruikt om de tekstuitlijning van de kolom Prijs te "
+"overschrijven"
+
+#: includes/MarketplaceCart.php:871
+msgid "Price Header Font Weight"
+msgstr "Prijs koptekst lettergrootte"
+
+#: includes/MarketplaceCart.php:872
+msgid "It can be used to overwrite font weight of the Product Price header"
+msgstr ""
+"Het kan worden gebruikt om het lettergrootte van de productprijskop te "
+"overschrijven"
+
+#: includes/MarketplaceCart.php:877
+msgid "Price Column Font Weight"
+msgstr "Prijskolom lettergrootte"
+
+#: includes/MarketplaceCart.php:878
+msgid "It can be used to overwrite font weight of the Product Price column"
+msgstr ""
+"Het kan worden gebruikt om het lettergrootte van de kolom Productprijs te "
+"overschrijven"
+
+#: includes/MarketplaceCart.php:882
+msgid "Quantity Column Width"
+msgstr "Aantallen Kolom Breedte"
+
+#: includes/MarketplaceCart.php:883
+msgid "It can be used to overwrite width of the Quantity column"
+msgstr ""
+"Het kan worden gebruikt om de breedte van de kolom Hoeveelheid te "
+"overschrijven"
+
+#: includes/MarketplaceCart.php:888
+msgid "Quantity Column Text Alignment"
+msgstr "Aantallen kolom tekstuitlijning"
+
+#: includes/MarketplaceCart.php:889
+msgid "It can be used to overwrite text alignment of the Quantity column"
+msgstr ""
+"Het kan worden gebruikt om de tekstuitlijning van de kolom Aantal te "
+"overschrijven"
+
+#: includes/MarketplaceCart.php:894
+msgid "Quantity Header Font Weight"
+msgstr "Aantallen Header lettergrootte"
+
+#: includes/MarketplaceCart.php:895
+msgid "It can be used to overwrite font weight of the Product Quantity header"
+msgstr ""
+"Het kan worden gebruikt om het lettergrootte van de kop Producthoeveelheid "
+"te overschrijven"
+
+#: includes/MarketplaceCart.php:900
+msgid "Quantity Column Font Weight"
+msgstr "Aantallen kolom lettergrootte"
+
+#: includes/MarketplaceCart.php:901
+msgid "It can be used to overwrite font weight of the Product Quantity column"
+msgstr ""
+"Het kan worden gebruikt om het lettergrootte van de kolom Producthoeveelheid "
+"te overschrijven"
+
+#: includes/MarketplaceCart.php:905
+msgid "Total Column Width"
+msgstr "Totalenkolom Breedte"
+
+#: includes/MarketplaceCart.php:906
+msgid "It can be used to overwrite width of the Total column"
+msgstr ""
+"Het kan worden gebruikt om de breedte van de kolom Totaal te overschrijven"
+
+#: includes/MarketplaceCart.php:911
+msgid "Total Column Text Alignment"
+msgstr "Totalenkolom tekstuitlijning"
+
+#: includes/MarketplaceCart.php:912
+msgid "It can be used to overwrite text alignment of the Total column"
+msgstr ""
+"Het kan worden gebruikt om de tekstuitlijning van de kolom Totaal te "
+"overschrijven"
+
+#: includes/MarketplaceCart.php:917
+msgid "Total Header Font Weight"
+msgstr "Totalaal koptekst lettergrootte"
+
+#: includes/MarketplaceCart.php:918
+msgid "It can be used to overwrite font weight of the Product Total header"
+msgstr ""
+"Het kan worden gebruikt om het lettergrootte van de Product Total-koptekst "
+"te overschrijven"
+
+#: includes/MarketplaceCart.php:923
+msgid "Total Column Font Weight"
+msgstr "Totalenkolom lettertype"
+
+#: includes/MarketplaceCart.php:924
+msgid "It can be used to overwrite font weight of the Product Total column"
+msgstr ""
+"Het kan worden gebruikt om het lettergrootte van de kolom Producttotaal te "
+"overschrijven"
+
+#: includes/MarketplaceCart.php:928
+msgid "Package Subtotal Cell Padding"
+msgstr "Pakket Subtotaal Celopvulling"
+
+#: includes/MarketplaceCart.php:929
+msgid ""
+"It can be used to overwrite padding of the Package Subtotal. It can be "
+"defined as a single value (eg: 10px) or as a vector (top right bottom left), "
+"(eg: 10px 5px 10px 5px)"
+msgstr ""
+"Het kan worden gebruikt om de opvulling van het pakket-subtotaal te "
+"overschrijven. Het kan worden gedefinieerd als een enkele waarde "
+"(bijvoorbeeld: 10px) of als vectoren (top right bottom left), (eg: 10px 5px "
+"10px 5px)"
+
+#: includes/MarketplaceCart.php:934
+msgid "Package Subtotal Text Alignment"
+msgstr "Pakket Subtotaal tekstuitlijning"
+
+#: includes/MarketplaceCart.php:935
+msgid "It can be used to overwrite text alignment of the Package Subtotal"
+msgstr ""
+"Het kan worden gebruikt om de tekstuitlijning van het pakket-subtotaal te "
+"overschrijven"
+
+#: includes/MarketplaceCart.php:940
+msgid "Package Subtotal Font Weight"
+msgstr "Pakket Subtotaal lettergrootte"
+
+#: includes/MarketplaceCart.php:941
+msgid "It can be used to overwrite font weight of the Package Subtotal"
+msgstr ""
+"Het kan worden gebruikt om het lettergrootte van het pakket-subtotaal te "
+"overschrijven"
+
+#: includes/MarketplaceCart.php:945
+msgid "Shipping Methods Selection Padding"
+msgstr "Verzendmethode Selectie opvulling"
+
+#: includes/MarketplaceCart.php:946
+msgid ""
+"It can be used to overwrite padding of the Shipping Methods Selection. It "
+"can be defined as a single value (eg: 10px) or as a vector (top right bottom "
+"left), (eg: 10px 5px 10px 5px)"
+msgstr ""
+"Het kan worden gebruikt om de opvulling van de selectie van verzendmethoden "
+"te overschrijven. Het kan worden gedefinieerd als een enkele waarde "
+"(bijvoorbeeld: 10px) of als vectoren (top right bottom left), (eg: 10px 5px "
+"10px 5px)"
+
+#: includes/MarketplaceCart.php:951
+msgid "Shipping Methods Selection Text Alignment"
+msgstr "Verzendmethode Selectie tekstuitlijning"
+
+#: includes/MarketplaceCart.php:952
+msgid ""
+"It can be used to overwrite text alignment of the Shipping Methods Selection"
+msgstr ""
+"Het kan worden gebruikt om de tekstuitlijning van de selectie van "
+"verzendmethoden te overschrijven"
+
+#: includes/MarketplaceCart.php:956
+msgid "Totals Table Width"
+msgstr "Totalen Tabel Breedte"
+
+#: includes/MarketplaceCart.php:957
+msgid "It can be used to overwrite width of the Totals Table"
+msgstr ""
+"Het kan worden gebruikt om de breedte van de totaaltabel te overschrijven"
+
+#: includes/MarketplaceCart.php:961
+msgid "Totals Table Margin"
+msgstr "Totalen Tabel Rand"
+
+#: includes/MarketplaceCart.php:962
+msgid ""
+"It can be used to overwrite margin of the Totals Table. It can be defined as "
+"a single value (eg: 10px) or as a vector (top right bottom left), (eg: 10px "
+"5px 10px 5px)"
+msgstr ""
+"Het kan worden gebruikt om de marge van de totaaltabel te overschrijven. Het "
+"kan worden gedefinieerd als een enkele waarde (bijvoorbeeld: 10px) of als "
+"vectoren (top right bottom left), (eg: 10px 5px 10px 5px)"
+
+#: includes/MarketplaceCart.php:966
+msgid "Totals Header Top Padding"
+msgstr "Totalen koptekst Top opvulling"
+
+#: includes/MarketplaceCart.php:967
+msgid ""
+"It can be used to overwrite padding of the Totals Header. It can be defined "
+"as a single value (eg: 10px) or as a vector (top right bottom left), (eg: "
+"10px 5px 10px 5px)"
+msgstr ""
+"Het kan worden gebruikt om de opvulling van de totalenkop te overschrijven. "
+"Het kan worden gedefinieerd als een enkele waarde (bijvoorbeeld: 10px) of "
+"als vectoren (top right bottom left), (eg: 10px 5px 10px 5px)"
+
+#: includes/MarketplaceCart.php:972
+msgid "Totals Header Text Alignment"
+msgstr "Totalen koptekstijtlijning"
+
+#: includes/MarketplaceCart.php:973
+msgid "It can be used to overwrite text alignment of the Totals Header"
+msgstr ""
+"Het kan worden gebruikt om de tekstuitlijning van de koptekst Totalen te "
+"overschrijven"
+
+#: includes/MarketplaceCart.php:978
+msgid "Totals Header Font Weight"
+msgstr "Totalen koptekst lettergrootte"
+
+#: includes/MarketplaceCart.php:979
+msgid "It can be used to overwrite font weight of the Totals Header"
+msgstr ""
+"Het kan worden gebruikt om het lettergrootte van de koptekst totalen te "
+"overschrijven"
+
+#: includes/MarketplaceCart.php:983
+msgid "Totals Labels Padding"
+msgstr "Totalen Labels Opvulling"
+
+#: includes/MarketplaceCart.php:984
+msgid ""
+"It can be used to overwrite padding of the Totals Table Labels. It can be "
+"defined as a single value (eg: 10px) or as a vector (top right bottom left), "
+"(eg: 10px 5px 10px 5px)"
+msgstr ""
+"Het kan worden gebruikt om de opvulling van de totalen-tabellabels te "
+"overschrijven. Het kan worden gedefinieerd als een enkele waarde "
+"(bijvoorbeeld: 10px) of als vectoren (top right bottom left), (eg: 10px 5px "
+"10px 5px)"
+
+#: includes/MarketplaceCart.php:989
+msgid "Totals Labels Text Alignment"
+msgstr "Totalen Label tekstuitlijning"
+
+#: includes/MarketplaceCart.php:990
+msgid "It can be used to overwrite text alignment of the Totals Table Labels"
+msgstr ""
+"Het kan worden gebruikt om de tekstuitlijning van de totalen-tabellabels te "
+"overschrijven"
+
+#: includes/MarketplaceCart.php:995
+msgid "Totals Labels Font Weight"
+msgstr "Totalen Labels lettergrootte"
+
+#: includes/MarketplaceCart.php:996
+msgid "It can be used to overwrite font weight of the Totals Table Labels"
+msgstr ""
+"Het kan worden gebruikt om het lettergrootte van de totalen-tabellabels te "
+"overschrijven"
+
+#: includes/MarketplaceCart.php:1000
+msgid "Totals Values Padding"
+msgstr "Totalen Waarden Opvulling"
+
+#: includes/MarketplaceCart.php:1001
+msgid ""
+"It can be used to overwrite padding of the Totals Table Values. It can be "
+"defined as a single value (eg: 10px) or as a vector (top right bottom left), "
+"(eg: 10px 5px 10px 5px)"
+msgstr ""
+"Het kan worden gebruikt om de opvulling van de totalen-tabelwaarden te "
+"overschrijven. Het kan worden gedefinieerd als een enkele waarde "
+"(bijvoorbeeld: 10px) of als vectoren (top right bottom left), (eg: 10px 5px "
+"10px 5px)"
+
+#: includes/MarketplaceCart.php:1006
+msgid "Totals Values Text Alignment"
+msgstr "Tekstuitlijning voor waarden van Totalen"
+
+#: includes/MarketplaceCart.php:1007
+msgid "It can be used to overwrite text alignment of the Totals Table Values"
+msgstr ""
+"Het kan worden gebruikt om de tekstuitlijning van de totalen-tabelwaarden te "
+"overschrijven"
+
+#: includes/MarketplaceCart.php:1012
+msgid "Totals Values Font Weight"
+msgstr "Lettergrootte voor waarden van Totalen"
+
+#: includes/MarketplaceCart.php:1013
+msgid "It can be used to overwrite font weight of the Totals Table Values"
+msgstr ""
+"Het kan worden gebruikt om het lettergrootte van de totalen-tabelwaarden te "
+"overschrijven"
+
+#: includes/MarketplaceCart.php:1017
+msgid "Shipping Calculator Padding"
+msgstr "Shipping Calculator Opvulling"
+
+#: includes/MarketplaceCart.php:1018
+msgid ""
+"It can be used to overwrite padding of the Shipping Calculator Container. It "
+"can be defined as a single value (eg: 10px) or as a vector (top right bottom "
+"left), (eg: 10px 5px 10px 5px)"
+msgstr ""
+"Het kan worden gebruikt om de opvulling van de Shipping Calculator Container "
+"te overschrijven. Het kan worden gedefinieerd als een enkele waarde "
+"(bijvoorbeeld: 10px) of als vectoren (top right bottom left), (eg: 10px 5px "
+"10px 5px)"
+
+#: includes/MarketplaceCart.php:1023
+msgid "Shipping Calculator Text Alignment"
+msgstr "Shipping Calculator tekstuitlijning"
+
+#: includes/MarketplaceCart.php:1024
+msgid ""
+"It can be used to overwrite text alignment of the Shipping Calculator "
+"Container"
+msgstr ""
+"Het kan worden gebruikt om de tekstuitlijning van de Shipping Calculator "
+"Container te overschrijven"
+
+#: includes/MarketplaceCart.php:1028
+msgid "Shipping Calculator Form Margin"
+msgstr "Shipping Calculator Forumlier Rand"
+
+#: includes/MarketplaceCart.php:1029
+msgid ""
+"It can be used to overwrite margin of the Shipping Calculator Form. It can "
+"be defined as a single value (eg: 10px) or as a vector (top right bottom "
+"left), (eg: 10px 5px 10px 5px)"
+msgstr ""
+"Het kan worden gebruikt om de marge van het verzendcalculatorformulier te "
+"overschrijven. Het kan worden gedefinieerd als een enkele waarde "
+"(bijvoorbeeld: 10px) of als vectoren (top right bottom left), (eg: 10px 5px "
+"10px 5px)"
+
+#: includes/MarketplaceCart.php:1033
+msgid "Checkout Button Container Padding"
+msgstr "Afrekenknop Container Opvulling"
+
+#: includes/MarketplaceCart.php:1034
+msgid ""
+"It can be used to overwrite padding of the Checkout Button Container. It can "
+"be defined as a single value (eg: 10px) or as a vector (top right bottom "
+"left), (eg: 10px 5px 10px 5px)"
+msgstr ""
+"Het kan worden gebruikt om de opvulling van de Checkout-knopcontainer te "
+"overschrijven. Het kan worden gedefinieerd als een enkele waarde "
+"(bijvoorbeeld: 10px) of als vectoren (top right bottom left), (eg: 10px 5px "
+"10px 5px)"
+
+#: includes/MarketplaceCart.php:1039
+msgid "Checkout Button Container Text Alignment"
+msgstr "Afrekenknop Container Tekstuitlijning"
+
+#: includes/MarketplaceCart.php:1040
+msgid ""
+"It can be used to overwrite text alignment of the Checkout Button Container"
+msgstr ""
+"Het kan worden gebruikt om de tekstuitlijning van de Afrekenknop Container "
+"te overschrijven"
+
+#: includes/MarketplaceCart.php:1050 includes/MarketplaceCart.php:1060
+msgid "Default"
+msgstr "Standaard"
+
+#: includes/MarketplaceCart.php:1051
+msgid "Left"
+msgstr "Links"
+
+#: includes/MarketplaceCart.php:1052
+msgid "Center"
+msgstr "Centreren"
+
+#: includes/MarketplaceCart.php:1053
+msgid "Right"
+msgstr "Rechts"
+
+#: includes/MarketplaceCart.php:1070
+msgid "Inherit"
+msgstr "Overerving"
+
+#: includes/MarketplaceCart.php:1071
+msgid "Ligther"
+msgstr "Lichter"
+
+#: includes/MarketplaceCart.php:1072
+msgid "Normal"
+msgstr "Normaal"
+
+#: includes/MarketplaceCart.php:1073
+msgid "Bold"
+msgstr "Vetgedrukt"
+
+#: includes/MarketplaceCart.php:1074
+msgid "Bolder"
+msgstr "Vetter Gedrukt"
+
+#: includes/MarketplaceCart.php:1241
+msgid "Remove this item"
+msgstr "Verwijder dit artikel"
+
+#: templates/cart/cart-coupon-field.php:7
+msgid "Coupon:"
+msgstr "Kortingscode:"
+
+#: templates/cart/cart-coupon-field.php:7
+msgid "Coupon code"
+msgstr "Couponcode"
+
+#: templates/cart/cart-coupon-field.php:7
+msgid "Apply coupon"
+msgstr "Waardebon toepassen"
+
+#: templates/cart/cart-package.php:37
+msgid "&nbsp;"
+msgstr "&nbsp;"
+
+#: templates/cart/cart-package.php:38 
+#: templates/checkout/review-order-package.php:33
+msgid "Product"
+msgstr "Product"
+
+#: templates/cart/cart-package.php:39 templates/cart/cart-package.php:110
+msgid "Price"
+msgstr "Prijs"
+
+#: templates/cart/cart-package.php:40 templates/cart/cart-package.php:116
+msgid "Quantity"
+msgstr "Aantal"
+
+#: templates/cart/cart-package.php:155 
+#: templates/checkout/review-order-package.php:108
+#, php-format
+msgid "Subtotal (%s items):"
+msgstr "Subtotaal (%s items):"
+
+#: templates/cart/cart-shipping-methods.php:7
+msgid "Choose preferred delivery option:"
+msgstr "Kies gewenste bezorgmethode:"
+
+#: templates/cart/cart-shipping-methods.php:25
+msgid "Delivery method:"
+msgstr "Bezorg Methode:"
+
+#: templates/cart/cart-shipping-methods.php:44
+msgid ""
+"There are no shipping methods available. Please ensure that your address has "
+"been entered correctly, or contact us if you need any help."
+msgstr ""
+"Er zijn geen verzendmethoden beschikbaar. Zorg ervoor dat uw adres correct "
+"is ingevoerd, of neem contact met ons op als u hulp nodig heeft."
+
+#: templates/cart/cart-shipping-methods.php:46
+msgid "Enter your full address to see shipping costs."
+msgstr "Voer uw volledige adres in om de verzendkosten te zien."
+
+#: templates/cart/cart-shipping-total.php:14 
+#: templates/cart/cart-shipping-total.php:15
+msgid "Shipping and Handling"
+msgstr "Verzending en afhandeling"
+
+#: templates/cart/cart-totals.php:23 templates/checkout/review-order.php:57
+msgid "Order summary"
+msgstr "Overzicht bestelling"
+
+#: templates/cart/cart-totals.php:27 templates/cart/cart-totals.php:28 
+#: templates/checkout/review-order.php:63 
+#: templates/checkout/review-order.php:64
+msgid "Subtotal"
+msgstr "Subtotaal"
+
+#: templates/cart/cart-totals.php:49 templates/cart/cart-totals.php:50
+msgid "Shipping"
+msgstr "Verzending"
+
+#: templates/cart/cart-totals.php:50
+msgid "Calculated at checkout"
+msgstr "Berekend tijdens het afrekenen"
+
+#: templates/cart/cart-totals.php:65
+#, php-format
+msgid "(estimated for %s)"
+msgstr "(schatting voor %s)"
+
+#: templates/cart/cart-totals.php:86 templates/cart/cart-totals.php:87 
+#: templates/checkout/review-order-package.php:34 
+#: templates/checkout/review-order-package.php:89 
+#: templates/checkout/review-order.php:110 
+#: templates/checkout/review-order.php:111
+msgid "Total"
+msgstr "Totaal"
+
+#: templates/cart/cart-update-button.php:6
+msgid "Update cart"
+msgstr "Winkelmand Bijwerken"
+
+#: templates/checkout/form-billing.php:33
+msgid "Billing &amp; Shipping"
+msgstr "Facturatie & Verzending"
+
+#: templates/checkout/form-billing.php:33 
+#: templates/checkout/form-billing.php:37
+msgid "Change"
+msgstr "Aanpassen"
+
+#: templates/checkout/form-billing.php:37
+msgid "Billing details"
+msgstr "Facturatie gegevens"
+
+#: templates/checkout/form-billing.php:75
+msgid "Create an account?"
+msgstr "Account aanmaken?"
+
+#: templates/checkout/form-checkout.php:26
+msgid "You must be logged in to checkout."
+msgstr "U moet ingelogd zijn om te kunnen afrekenen."
+
+#: templates/checkout/form-order-notes.php:17
+msgid "Additional information"
+msgstr "Extra informatie"
+
+#: templates/checkout/form-shipping.php:34
+msgid "Ship to a different address?"
+msgstr "Verzenden naar een ander adres?"
+
+#: templates/checkout/payment.php:44
+msgid "Update totals"
+msgstr "Totalen Bijwerken"
+
+#: templates/checkout/review-order.php:23
+msgid "Place order"
+msgstr "Bestelling Plaatsen"

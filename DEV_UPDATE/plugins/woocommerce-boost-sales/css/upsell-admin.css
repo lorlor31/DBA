@@ -1,0 +1,9 @@
+p.search-box {
+    padding: 0 10px;
+}
+
+.button.btn-delete-upsells {
+    color: red;
+    background: white;
+    border-color: red;
+}

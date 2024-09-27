@@ -1,0 +1,13 @@
+.wc-block-cart-items__row.yith-wapo-is-individual .wc-block-components-product-metadata__description,
+.wc-block-components-order-summary-item.yith-wapo-is-individual .wc-block-components-product-metadata__description{
+    display: none;
+}
+
+.wc-block-cart-items__row.yith-wapo-is-individual .wc-block-cart-item__product .price.wc-block-components-product-price,
+.wc-block-components-order-summary-item.yith-wapo-is-individual .wc-block-components-order-summary-item__description .price.wc-block-components-product-price {
+    display: none;
+}
+
+.wc-block-cart .yith-wapo-edit-addons-link .yith-wapo-edit-product-cart{
+    font-size: 15px;
+}

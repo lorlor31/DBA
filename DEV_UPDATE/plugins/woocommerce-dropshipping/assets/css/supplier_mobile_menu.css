@@ -1,0 +1,44 @@
+@media (max-width: 680px){
+	#adminmenuwrap {
+	    display: block!important;
+	    max-width: 56px!important;
+	    width: 100%!important;
+	}
+	.auto-fold #adminmenu {
+	    max-width: 60px!important;
+	}
+	.auto-fold #adminmenu .wp-menu-name {
+	    position: static!important;
+	    display: none!important;
+	}
+	#collapse-menu {
+	    display: block !important;
+	}
+	#wpcontent{
+		padding-left: 67px!important;
+	}
+}
+/*
+#taxonomy-dropship_supplier{
+	width: 15%;
+   } */
+
+   .wp-core-ui .button, .wp-core-ui .button-primary, .wp-core-ui .button-secondary{ 
+    font-size: .7rem !important;
+    line-height: 25px !important;
+    text-align: center !important;
+	/* white-space: pre-wrap !important; */
+    padding: 0.2rem 0.5rem !important;
+  }
+
+
+  .table-bordered{
+	width: 100%;
+    border-spacing: 0;
+  }
+
+  table.table.table-bordered tr th, td {
+    padding: 0.3rem;
+    border: 1px solid #dddddd;
+    /* margin: 0; */
+}

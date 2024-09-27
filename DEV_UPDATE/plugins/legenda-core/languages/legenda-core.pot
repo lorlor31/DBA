@@ -1,0 +1,2439 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Legenda Core\n"
+"POT-Creation-Date: 2024-09-22 13:11+0300\n"
+"PO-Revision-Date: 2020-02-05 17:13+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"X-Generator: Poedit 3.4.4\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-WPHeader: legenda-core.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: inc/functions.php:45
+msgid "Product Video"
+msgstr ""
+
+#: inc/functions.php:54
+msgid "Upload your Video in 3 formats: MP4, OGG and WEBM"
+msgstr ""
+
+#: inc/functions.php:83
+msgid "Delete image"
+msgstr ""
+
+#: inc/functions.php:83 inc/functions.php:152
+msgid "Delete"
+msgstr ""
+
+#: inc/functions.php:94
+msgid "Add product gallery video"
+msgstr ""
+
+#: inc/functions.php:97
+msgid "Or you can use YouTube or Vimeo iframe code"
+msgstr ""
+
+#: inc/functions.php:128
+msgid "Add Images to Product Gallery"
+msgstr ""
+
+#: inc/functions.php:130
+msgid "Add to gallery"
+msgstr ""
+
+#: inc/functions.php:152
+msgid "Delete video"
+msgstr ""
+
+#: inc/functions.php:263
+msgid "Dashboard"
+msgstr ""
+
+#: inc/functions.php:270
+msgid "Install Plugins"
+msgstr ""
+
+#: inc/functions.php:278
+msgid "Theme Options"
+msgstr ""
+
+#: inc/import.php:41
+msgid ""
+"The Auto importing script could not be loaded. Please use the wordpress "
+"importer and import the XML file that is located in your themes folder "
+"manually."
+msgstr ""
+
+#: inc/import.php:85
+msgid "Error while importing"
+msgstr ""
+
+#: inc/import.php:93
+msgid "\"nonce\" check was failed"
+msgstr ""
+
+#: inc/import.php:100
+msgid " was not set!"
+msgstr ""
+
+#: inc/import.php:105
+msgid " functions must be activated"
+msgstr ""
+
+#: inc/import.php:107 inc/import.php:109
+msgid " function must be activated"
+msgstr ""
+
+#: inc/import.php:129
+msgid "file is not writable"
+msgstr ""
+
+#: inc/import.php:144
+msgid "Please install or activate Revolution slider plugin"
+msgstr ""
+
+#: inc/import.php:175
+msgid "Revolution slider installed successfully!"
+msgstr ""
+
+#: inc/import.php:177
+msgid "Revolution slider was not installed!"
+msgstr ""
+
+#: inc/plugin-compatibilty.php:34
+msgid "Attention!"
+msgstr ""
+
+#: inc/plugin-compatibilty.php:37
+msgid "Legenda Core plugin conflicts with the following plugins:"
+msgstr ""
+
+#: inc/plugin-compatibilty.php:49
+msgid "Keep enabled only plugin that comes bundled with activated theme."
+msgstr ""
+
+#: inc/plugin-compatibilty.php:75
+msgid "Please, activate Legenda theme to use Legenda Core plugin"
+msgstr ""
+
+#: inc/post-types/brands.php:9
+msgctxt ""
+msgid "Brands"
+msgstr ""
+
+#: inc/post-types/brands.php:10
+msgctxt ""
+msgid "Brand"
+msgstr ""
+
+#: inc/post-types/brands.php:11
+msgid "Search Brands"
+msgstr ""
+
+#: inc/post-types/brands.php:12
+msgid "All Brands"
+msgstr ""
+
+#: inc/post-types/brands.php:13
+msgid "Parent Brand"
+msgstr ""
+
+#: inc/post-types/brands.php:14
+msgid "Parent Brand:"
+msgstr ""
+
+#: inc/post-types/brands.php:15
+msgid "Edit Brand"
+msgstr ""
+
+#: inc/post-types/brands.php:16
+msgid "Update Brand"
+msgstr ""
+
+#: inc/post-types/brands.php:17
+msgid "Add New Brand"
+msgstr ""
+
+#: inc/post-types/brands.php:18
+msgid "New Brand Name"
+msgstr ""
+
+#: inc/post-types/brands.php:19
+msgid "Brands"
+msgstr ""
+
+#: inc/post-types/portfolio.php:14
+msgctxt "post type general name"
+msgid "Projects"
+msgstr ""
+
+#: inc/post-types/portfolio.php:15
+msgctxt "post type singular name"
+msgid "Project"
+msgstr ""
+
+#: inc/post-types/portfolio.php:16
+msgctxt "project"
+msgid "Add New"
+msgstr ""
+
+#: inc/post-types/portfolio.php:17
+msgid "Add New Project"
+msgstr ""
+
+#: inc/post-types/portfolio.php:18
+msgid "Edit Project"
+msgstr ""
+
+#: inc/post-types/portfolio.php:19
+msgid "New Project"
+msgstr ""
+
+#: inc/post-types/portfolio.php:20
+msgid "View Project"
+msgstr ""
+
+#: inc/post-types/portfolio.php:21
+msgid "Search Projects"
+msgstr ""
+
+#: inc/post-types/portfolio.php:22
+msgid "No projects found"
+msgstr ""
+
+#: inc/post-types/portfolio.php:23
+msgid "No projects found in Trash"
+msgstr ""
+
+#: inc/post-types/portfolio.php:49
+msgctxt "taxonomy general name"
+msgid "Tags"
+msgstr ""
+
+#: inc/post-types/portfolio.php:50
+msgctxt "taxonomy singular name"
+msgid "Tag"
+msgstr ""
+
+#: inc/post-types/portfolio.php:51 inc/post-types/portfolio.php:73
+msgid "Search Types"
+msgstr ""
+
+#: inc/post-types/portfolio.php:52
+msgid "All Tags"
+msgstr ""
+
+#: inc/post-types/portfolio.php:53
+msgid "Parent Tag"
+msgstr ""
+
+#: inc/post-types/portfolio.php:54
+msgid "Parent Tag:"
+msgstr ""
+
+#: inc/post-types/portfolio.php:55
+msgid "Edit Tags"
+msgstr ""
+
+#: inc/post-types/portfolio.php:56
+msgid "Update Tag"
+msgstr ""
+
+#: inc/post-types/portfolio.php:57
+msgid "Add New Tag"
+msgstr ""
+
+#: inc/post-types/portfolio.php:58
+msgid "New Tag Name"
+msgstr ""
+
+#: inc/post-types/portfolio.php:71
+msgctxt "taxonomy general name"
+msgid "Portfolio Categories"
+msgstr ""
+
+#: inc/post-types/portfolio.php:72
+msgctxt "taxonomy singular name"
+msgid "Category"
+msgstr ""
+
+#: inc/post-types/portfolio.php:74
+msgid "All Categories"
+msgstr ""
+
+#: inc/post-types/portfolio.php:75
+msgid "Parent Category"
+msgstr ""
+
+#: inc/post-types/portfolio.php:76
+msgid "Parent Category:"
+msgstr ""
+
+#: inc/post-types/portfolio.php:77
+msgid "Edit Categories"
+msgstr ""
+
+#: inc/post-types/portfolio.php:78
+msgid "Update Category"
+msgstr ""
+
+#: inc/post-types/portfolio.php:79
+msgid "Add New Category"
+msgstr ""
+
+#: inc/post-types/portfolio.php:80
+msgid "New Category Name"
+msgstr ""
+
+#: inc/post-types/staticblocks.php:14
+msgctxt "post type general name"
+msgid "Static Blocks"
+msgstr ""
+
+#: inc/post-types/staticblocks.php:15
+msgctxt "post type singular name"
+msgid "Block"
+msgstr ""
+
+#: inc/post-types/staticblocks.php:16
+msgctxt "static block"
+msgid "Add New"
+msgstr ""
+
+#: inc/post-types/staticblocks.php:17
+#: inc/testimonials/classes/class-woothemes-testimonials-taxonomy.php:104
+#: inc/testimonials/classes/class-woothemes-testimonials.php:80
+#, php-format
+msgid "Add New %s"
+msgstr ""
+
+#: inc/post-types/staticblocks.php:17 inc/post-types/staticblocks.php:18
+#: inc/post-types/staticblocks.php:19 inc/post-types/staticblocks.php:20
+#: inc/post-types/staticblocks.php:21 inc/post-types/staticblocks.php:22
+#: inc/post-types/staticblocks.php:23 inc/post-types/staticblocks.php:24
+#: inc/post-types/staticblocks.php:26
+msgid "Static Blocks"
+msgstr ""
+
+#: inc/post-types/staticblocks.php:18
+#: inc/testimonials/classes/class-woothemes-testimonials-taxonomy.php:102
+#: inc/testimonials/classes/class-woothemes-testimonials.php:81
+#, php-format
+msgid "Edit %s"
+msgstr ""
+
+#: inc/post-types/staticblocks.php:19
+#: inc/testimonials/classes/class-woothemes-testimonials.php:82
+#, php-format
+msgid "New %s"
+msgstr ""
+
+#: inc/post-types/staticblocks.php:20
+#: inc/testimonials/classes/class-woothemes-testimonials-taxonomy.php:99
+#: inc/testimonials/classes/class-woothemes-testimonials.php:83
+#, php-format
+msgid "All %s"
+msgstr ""
+
+#: inc/post-types/staticblocks.php:21
+#: inc/testimonials/classes/class-woothemes-testimonials.php:84
+#, php-format
+msgid "View %s"
+msgstr ""
+
+#: inc/post-types/staticblocks.php:22
+#: inc/testimonials/classes/class-woothemes-testimonials-taxonomy.php:98
+#: inc/testimonials/classes/class-woothemes-testimonials.php:85
+#, php-format
+msgid "Search %s"
+msgstr ""
+
+#: inc/post-types/staticblocks.php:23
+#: inc/testimonials/classes/class-woothemes-testimonials.php:86
+#, php-format
+msgid "No %s Found"
+msgstr ""
+
+#: inc/post-types/staticblocks.php:24
+#: inc/testimonials/classes/class-woothemes-testimonials.php:87
+#, php-format
+msgid "No %s Found In Trash"
+msgstr ""
+
+#: inc/post-types/staticblocks.php:51 inc/shortcodes/et_brands.php:86
+#: inc/shortcodes/et_instagram.php:70 inc/shortcodes/et_twitter_slider.php:190
+#: inc/shortcodes/etheme_product_categories.php:172
+#: inc/shortcodes/etheme_products.php:194
+#: inc/shortcodes/etheme_products.php:215 inc/shortcodes/single_post.php:110
+#: inc/shortcodes/teaser_box.php:56 inc/shortcodes/vc/vc_posts_grid.php:111
+#: inc/shortcodes/vc/vc_posts_slider.php:68 inc/shortcodes/vc/vc_tab.php:11
+#: inc/testimonials/classes/class-woothemes-widget-testimonials.php:250
+#: inc/widgets/etheme_widget_brands.php:103
+msgid "Title"
+msgstr ""
+
+#: inc/post-types/staticblocks.php:52
+msgid "Shortcode"
+msgstr ""
+
+#: inc/post-types/staticblocks.php:53 inc/shortcodes/etheme_products.php:191
+#: inc/shortcodes/vc/vc_posts_grid.php:111
+#: inc/shortcodes/vc/vc_posts_slider.php:68
+msgid "Date"
+msgstr ""
+
+#: inc/shortcodes/banner.php:79
+msgid "Banner Image"
+msgstr ""
+
+#: inc/shortcodes/banner.php:84
+msgid "Banner size"
+msgstr ""
+
+#: inc/shortcodes/banner.php:86 inc/shortcodes/team_member.php:149
+#: inc/shortcodes/teaser_box.php:68
+msgid "Enter image size. Example in pixels: 200x100 (Width x Height)."
+msgstr ""
+
+#: inc/shortcodes/banner.php:90
+msgid "Link"
+msgstr ""
+
+#: inc/shortcodes/banner.php:108
+msgid "Vertical text centering"
+msgstr ""
+
+#: inc/shortcodes/banner.php:110
+msgid "Enable"
+msgstr ""
+
+#: inc/shortcodes/banner.php:110 inc/shortcodes/vc/vc_gallery.php:24
+msgid "Disable"
+msgstr ""
+
+#: inc/shortcodes/banner.php:114
+msgid "Banner style"
+msgstr ""
+
+#: inc/shortcodes/banner.php:116
+msgid "dark with border"
+msgstr ""
+
+#: inc/shortcodes/banner.php:120
+msgid "Font style"
+msgstr ""
+
+#: inc/shortcodes/banner.php:122
+msgid "light"
+msgstr ""
+
+#: inc/shortcodes/banner.php:122
+msgid "dark"
+msgstr ""
+
+#: inc/shortcodes/banner.php:126
+msgid "Hover effect"
+msgstr ""
+
+#: inc/shortcodes/banner.php:128
+msgid "zoom"
+msgstr ""
+
+#: inc/shortcodes/banner.php:128
+msgid "fade"
+msgstr ""
+
+#: inc/shortcodes/banner.php:132 inc/shortcodes/countdown.php:118
+#: inc/shortcodes/et_brands.php:118 inc/shortcodes/et_twitter_slider.php:224
+#: inc/shortcodes/etheme_product_categories.php:228
+#: inc/shortcodes/etheme_search.php:77 inc/shortcodes/icon.php:52
+#: inc/shortcodes/icon_box.php:121 inc/shortcodes/ptable.php:53
+#: inc/shortcodes/single_post.php:126 inc/shortcodes/team_member.php:195
+#: inc/shortcodes/teaser_box.php:86
+msgid "Extra Class"
+msgstr ""
+
+#: inc/shortcodes/banner.php:134 inc/shortcodes/countdown.php:120
+#: inc/shortcodes/icon.php:54 inc/shortcodes/icon_box.php:123
+#: inc/shortcodes/ptable.php:55 inc/shortcodes/single_post.php:128
+#: inc/shortcodes/team_member.php:197 inc/shortcodes/teaser_box.php:88
+#: inc/shortcodes/vc/vc_button.php:52 inc/shortcodes/vc/vc_gallery.php:67
+#: inc/shortcodes/vc/vc_posts_grid.php:125
+#: inc/shortcodes/vc/vc_posts_slider.php:82 inc/shortcodes/vc/vc_tabs.php:31
+msgid ""
+"If you wish to style particular content element differently, then use this "
+"field to add a class name and then refer to it in your css file."
+msgstr ""
+
+#: inc/shortcodes/banner.php:138
+msgid "CSS box"
+msgstr ""
+
+#: inc/shortcodes/banner.php:140
+msgid "Design Options"
+msgstr ""
+
+#: inc/shortcodes/contact_form.php:21
+msgid "Name and Surname"
+msgstr ""
+
+#: inc/shortcodes/contact_form.php:28
+msgid "Email"
+msgstr ""
+
+#: inc/shortcodes/contact_form.php:35
+msgid "Website"
+msgstr ""
+
+#: inc/shortcodes/contact_form.php:43
+msgid "Message"
+msgstr ""
+
+#: inc/shortcodes/contact_form.php:52
+msgid "Sending..."
+msgstr ""
+
+#: inc/shortcodes/contact_form.php:53
+msgid "Send message"
+msgstr ""
+
+#: inc/shortcodes/countdown.php:32
+msgid "days"
+msgstr ""
+
+#: inc/shortcodes/countdown.php:37
+msgid "hours"
+msgstr ""
+
+#: inc/shortcodes/countdown.php:42
+msgid "minutes"
+msgstr ""
+
+#: inc/shortcodes/countdown.php:47
+msgid "seconds"
+msgstr ""
+
+#: inc/shortcodes/countdown.php:70
+msgid "Year"
+msgstr ""
+
+#: inc/shortcodes/countdown.php:75
+msgid "Month"
+msgstr ""
+
+#: inc/shortcodes/countdown.php:78
+msgid "January"
+msgstr ""
+
+#: inc/shortcodes/countdown.php:79
+msgid "February"
+msgstr ""
+
+#: inc/shortcodes/countdown.php:80
+msgid "March"
+msgstr ""
+
+#: inc/shortcodes/countdown.php:81
+msgid "April"
+msgstr ""
+
+#: inc/shortcodes/countdown.php:82
+msgid "May"
+msgstr ""
+
+#: inc/shortcodes/countdown.php:83
+msgid "June"
+msgstr ""
+
+#: inc/shortcodes/countdown.php:84
+msgid "July"
+msgstr ""
+
+#: inc/shortcodes/countdown.php:85
+msgid "August"
+msgstr ""
+
+#: inc/shortcodes/countdown.php:86
+msgid "September"
+msgstr ""
+
+#: inc/shortcodes/countdown.php:87
+msgid "October"
+msgstr ""
+
+#: inc/shortcodes/countdown.php:88
+msgid "November"
+msgstr ""
+
+#: inc/shortcodes/countdown.php:89
+msgid "December"
+msgstr ""
+
+#: inc/shortcodes/countdown.php:94
+msgid "Day"
+msgstr ""
+
+#: inc/shortcodes/countdown.php:99
+msgid "Hour"
+msgstr ""
+
+#: inc/shortcodes/countdown.php:104
+msgid "Minutes"
+msgstr ""
+
+#: inc/shortcodes/countdown.php:109
+msgid "Color scheme"
+msgstr ""
+
+#: inc/shortcodes/countdown.php:112 inc/shortcodes/et_twitter_slider.php:219
+msgid "Light"
+msgstr ""
+
+#: inc/shortcodes/countdown.php:113 inc/shortcodes/et_twitter_slider.php:218
+#: inc/shortcodes/vc/vc_cta_button.php:20
+msgid "Dark"
+msgstr ""
+
+#: inc/shortcodes/et_brands.php:28 inc/widgets/etheme_widget_brands.php:25
+msgid ""
+"To use this widget enable \"brands\" in the module section of theme options"
+msgstr ""
+
+#: inc/shortcodes/et_brands.php:40 inc/shortcodes/et_brands.php:42
+#: inc/widgets/etheme_widget_brands.php:78
+#, php-format
+msgid "View all products from %s"
+msgstr ""
+
+#: inc/shortcodes/et_brands.php:91
+#: inc/shortcodes/etheme_product_categories.php:188
+#: inc/shortcodes/testimonials.php:22 inc/widgets/testimonials.php:25
+msgid "Display type"
+msgstr ""
+
+#: inc/shortcodes/et_brands.php:94 inc/shortcodes/et_instagram.php:133
+#: inc/shortcodes/etheme_product_categories.php:192
+#: inc/shortcodes/etheme_products.php:246 inc/shortcodes/testimonials.php:26
+#: inc/widgets/testimonials.php:29
+msgid "Slider"
+msgstr ""
+
+#: inc/shortcodes/et_brands.php:95
+#: inc/shortcodes/etheme_product_categories.php:191
+#: inc/shortcodes/etheme_products.php:246 inc/shortcodes/testimonials.php:27
+#: inc/shortcodes/vc/vc_posts_grid.php:73 inc/widgets/testimonials.php:30
+msgid "Grid"
+msgstr ""
+
+#: inc/shortcodes/et_brands.php:100
+msgid "Number of columns"
+msgstr ""
+
+#: inc/shortcodes/et_brands.php:113
+msgid "Maximum number of brands to display"
+msgstr ""
+
+#: inc/shortcodes/et_instagram.php:75
+msgid "Choose Instagram account"
+msgstr ""
+
+#: inc/shortcodes/et_instagram.php:76
+msgid "Add Instagram account?"
+msgstr ""
+
+#: inc/shortcodes/et_instagram.php:82
+msgid "Hashtag"
+msgstr ""
+
+#: inc/shortcodes/et_instagram.php:87
+msgid "Numer of photos"
+msgstr ""
+
+#: inc/shortcodes/et_instagram.php:92
+msgid "Photo size"
+msgstr ""
+
+#: inc/shortcodes/et_instagram.php:95
+msgid "Thumbnail"
+msgstr ""
+
+#: inc/shortcodes/et_instagram.php:96
+msgid "Medium"
+msgstr ""
+
+#: inc/shortcodes/et_instagram.php:97 inc/shortcodes/icon_box.php:116
+#: inc/shortcodes/vc/config.php:8
+msgid "Large"
+msgstr ""
+
+#: inc/shortcodes/et_instagram.php:102
+#: inc/shortcodes/etheme_product_categories.php:198
+#: inc/shortcodes/etheme_products.php:257
+msgid "Columns"
+msgstr ""
+
+#: inc/shortcodes/et_instagram.php:114
+msgid "Open links in"
+msgstr ""
+
+#: inc/shortcodes/et_instagram.php:117
+msgid "Current window (_self)"
+msgstr ""
+
+#: inc/shortcodes/et_instagram.php:118
+msgid "New window (_blank)"
+msgstr ""
+
+#: inc/shortcodes/et_instagram.php:123
+msgid "Link text"
+msgstr ""
+
+#: inc/shortcodes/et_instagram.php:128
+msgid "Additional information"
+msgstr ""
+
+#: inc/shortcodes/et_instagram.php:142 inc/shortcodes/etheme_products.php:270
+msgid "Number of items on desktop"
+msgstr ""
+
+#: inc/shortcodes/et_instagram.php:148 inc/shortcodes/etheme_products.php:276
+msgid "Number of items on notebook"
+msgstr ""
+
+#: inc/shortcodes/et_instagram.php:154 inc/shortcodes/etheme_products.php:282
+msgid "Number of items on tablet"
+msgstr ""
+
+#: inc/shortcodes/et_instagram.php:160 inc/shortcodes/etheme_products.php:288
+msgid "Number of items on phones"
+msgstr ""
+
+#: inc/shortcodes/et_instagram.php:166
+msgid "Without spacing"
+msgstr ""
+
+#: inc/shortcodes/et_instagram.php:169 inc/shortcodes/etheme_search.php:26
+#: inc/shortcodes/etheme_search.php:36 inc/shortcodes/etheme_search.php:46
+#: inc/shortcodes/etheme_search.php:56 inc/shortcodes/etheme_search.php:66
+msgid "Yes"
+msgstr ""
+
+#: inc/shortcodes/et_twitter_slider.php:18
+msgid "Not enough information"
+msgstr ""
+
+#: inc/shortcodes/et_twitter_slider.php:78 inc/widgets/etheme_twitter.php:61
+#, php-format
+msgid "Please, enter %1$sConsumer key%2$s and %1$sConsumer secret%2$s"
+msgstr ""
+
+#: inc/shortcodes/et_twitter_slider.php:97 inc/widgets/etheme_twitter.php:80
+msgid "Please, enter Username"
+msgstr ""
+
+#: inc/shortcodes/et_twitter_slider.php:112 inc/widgets/etheme_twitter.php:95
+msgid "Twitter not return 200"
+msgstr ""
+
+#: inc/shortcodes/et_twitter_slider.php:123 inc/widgets/etheme_twitter.php:106
+msgid "Twitter did not return any data"
+msgstr ""
+
+#: inc/shortcodes/et_twitter_slider.php:195
+msgid "User account name"
+msgstr ""
+
+#: inc/shortcodes/et_twitter_slider.php:200
+msgid "Consumer Key"
+msgstr ""
+
+#: inc/shortcodes/et_twitter_slider.php:205
+msgid "Consumer Secret"
+msgstr ""
+
+#: inc/shortcodes/et_twitter_slider.php:210
+#: inc/shortcodes/etheme_products.php:300 inc/shortcodes/testimonials.php:16
+#: inc/widgets/et_recent_comments.php:26
+#: inc/widgets/et_recent_posts_widget.php:26 inc/widgets/testimonials.php:19
+msgid "Limit"
+msgstr ""
+
+#: inc/shortcodes/et_twitter_slider.php:215
+msgid "Choose color scheme "
+msgstr ""
+
+#: inc/shortcodes/etheme_featured.php:11
+msgid "Featured Products"
+msgstr ""
+
+#: inc/shortcodes/etheme_new.php:12
+msgid "Latest Products"
+msgstr ""
+
+#: inc/shortcodes/etheme_product_categories.php:177
+msgid "Number of categories"
+msgstr ""
+
+#: inc/shortcodes/etheme_product_categories.php:182
+msgid "Parent ID"
+msgstr ""
+
+#: inc/shortcodes/etheme_product_categories.php:184
+msgid ""
+"Get direct children of this term (only terms whose explicit parent is this "
+"value). If 0 is passed, only top-level terms are returned. Default is an "
+"empty string."
+msgstr ""
+
+#: inc/shortcodes/etheme_product_categories.php:193
+msgid "Menu"
+msgstr ""
+
+#: inc/shortcodes/etheme_product_categories.php:204
+msgid "Large Desktops"
+msgstr ""
+
+#: inc/shortcodes/etheme_product_categories.php:210
+msgid "Desktops"
+msgstr ""
+
+#: inc/shortcodes/etheme_product_categories.php:216
+msgid "Tablets"
+msgstr ""
+
+#: inc/shortcodes/etheme_product_categories.php:222
+msgid "Phones"
+msgstr ""
+
+#: inc/shortcodes/etheme_products.php:192
+#: inc/shortcodes/vc/vc_posts_grid.php:111
+#: inc/shortcodes/vc/vc_posts_slider.php:68
+msgid "ID"
+msgstr ""
+
+#: inc/shortcodes/etheme_products.php:193
+#: inc/shortcodes/vc/vc_posts_grid.php:111
+#: inc/shortcodes/vc/vc_posts_slider.php:68
+msgid "Author"
+msgstr ""
+
+#: inc/shortcodes/etheme_products.php:195
+#: inc/shortcodes/vc/vc_posts_grid.php:111
+#: inc/shortcodes/vc/vc_posts_slider.php:68
+msgid "Modified"
+msgstr ""
+
+#: inc/shortcodes/etheme_products.php:196
+#: inc/shortcodes/vc/vc_posts_grid.php:111
+#: inc/shortcodes/vc/vc_posts_slider.php:68
+msgid "Random"
+msgstr ""
+
+#: inc/shortcodes/etheme_products.php:197
+#: inc/shortcodes/vc/vc_posts_grid.php:111
+#: inc/shortcodes/vc/vc_posts_slider.php:68
+msgid "Comment count"
+msgstr ""
+
+#: inc/shortcodes/etheme_products.php:198
+#: inc/shortcodes/vc/vc_posts_grid.php:111
+#: inc/shortcodes/vc/vc_posts_slider.php:68
+msgid "Menu order"
+msgstr ""
+
+#: inc/shortcodes/etheme_products.php:203
+#: inc/shortcodes/vc/vc_posts_grid.php:118
+#: inc/shortcodes/vc/vc_posts_slider.php:75
+#: inc/testimonials/classes/class-woothemes-widget-testimonials.php:265
+msgid "Descending"
+msgstr ""
+
+#: inc/shortcodes/etheme_products.php:204
+#: inc/shortcodes/vc/vc_posts_grid.php:118
+#: inc/shortcodes/vc/vc_posts_slider.php:75
+#: inc/testimonials/classes/class-woothemes-widget-testimonials.php:264
+msgid "Ascending"
+msgstr ""
+
+#: inc/shortcodes/etheme_products.php:220
+msgid "IDs"
+msgstr ""
+
+#: inc/shortcodes/etheme_products.php:225
+msgid "SKUs"
+msgstr ""
+
+#: inc/shortcodes/etheme_products.php:230
+#: inc/shortcodes/vc/vc_posts_grid.php:109
+#: inc/shortcodes/vc/vc_posts_slider.php:66
+#: inc/shortcodes/vc/vc_posts_slider.php:73
+msgid "Order by"
+msgstr ""
+
+#: inc/shortcodes/etheme_products.php:233
+#, php-format
+msgid "Select how to sort retrieved products. More at %s."
+msgstr ""
+
+#: inc/shortcodes/etheme_products.php:237
+#: inc/shortcodes/vc/vc_posts_grid.php:116
+msgid "Order way"
+msgstr ""
+
+#: inc/shortcodes/etheme_products.php:240
+#: inc/shortcodes/vc/vc_posts_grid.php:119
+#: inc/shortcodes/vc/vc_posts_slider.php:76
+#, php-format
+msgid "Designates the ascending or descending order. More at %s."
+msgstr ""
+
+#: inc/shortcodes/etheme_products.php:244 inc/shortcodes/team_member.php:160
+msgid "Display Type"
+msgstr ""
+
+#: inc/shortcodes/etheme_products.php:246
+msgid "Slider full width (LOOK BOOK)"
+msgstr ""
+
+#: inc/shortcodes/etheme_products.php:251
+msgid "Static block for the first slide of the LOOK BOOK"
+msgstr ""
+
+#: inc/shortcodes/etheme_products.php:263
+msgid "Product view"
+msgstr ""
+
+#: inc/shortcodes/etheme_products.php:266 inc/shortcodes/teaser_box.php:82
+#: inc/shortcodes/vc/vc_cta_button.php:17 inc/shortcodes/vc/vc_separator.php:11
+#: inc/shortcodes/vc/vc_tabs.php:22
+msgid "Default"
+msgstr ""
+
+#: inc/shortcodes/etheme_products.php:266
+msgid "Advanced"
+msgstr ""
+
+#: inc/shortcodes/etheme_products.php:294
+msgid "Products type"
+msgstr ""
+
+#: inc/shortcodes/etheme_products.php:296
+#: inc/testimonials/classes/class-woothemes-widget-testimonials.php:228
+msgid "All"
+msgstr ""
+
+#: inc/shortcodes/etheme_products.php:296
+msgid "Featured"
+msgstr ""
+
+#: inc/shortcodes/etheme_products.php:296
+msgid "New"
+msgstr ""
+
+#: inc/shortcodes/etheme_products.php:296
+msgid "Sale"
+msgstr ""
+
+#: inc/shortcodes/etheme_products.php:296
+msgid "Recently viewed"
+msgstr ""
+
+#: inc/shortcodes/etheme_products.php:296
+msgid "Bestsellings"
+msgstr ""
+
+#: inc/shortcodes/etheme_products.php:305
+msgid "Categories IDs"
+msgstr ""
+
+#: inc/shortcodes/etheme_search.php:22 inc/widgets/etheme_widget_search.php:58
+msgid "Search for products"
+msgstr ""
+
+#: inc/shortcodes/etheme_search.php:27 inc/shortcodes/etheme_search.php:37
+#: inc/shortcodes/etheme_search.php:47 inc/shortcodes/etheme_search.php:57
+#: inc/shortcodes/etheme_search.php:67 inc/shortcodes/vc/config.php:17
+msgid "No"
+msgstr ""
+
+#: inc/shortcodes/etheme_search.php:32 inc/widgets/etheme_widget_search.php:59
+msgid "Display images for products"
+msgstr ""
+
+#: inc/shortcodes/etheme_search.php:42 inc/widgets/etheme_widget_search.php:60
+msgid "Search for posts"
+msgstr ""
+
+#: inc/shortcodes/etheme_search.php:52 inc/widgets/etheme_widget_search.php:61
+msgid "Search in portfolio"
+msgstr ""
+
+#: inc/shortcodes/etheme_search.php:62 inc/widgets/etheme_widget_search.php:62
+msgid "Search for pages"
+msgstr ""
+
+#: inc/shortcodes/etheme_search.php:72 inc/widgets/etheme_widget_search.php:64
+msgid "Number of items from each section"
+msgstr ""
+
+#: inc/shortcodes/icon.php:36 inc/shortcodes/icon_box.php:68
+#: inc/shortcodes/vc/vc_tab.php:17
+msgid "Icon"
+msgstr ""
+
+#: inc/shortcodes/icon.php:41 inc/shortcodes/vc/vc_button.php:43
+msgid "Size"
+msgstr ""
+
+#: inc/shortcodes/icon.php:43
+msgid "For example: 64"
+msgstr ""
+
+#: inc/shortcodes/icon.php:47
+msgid "Color"
+msgstr ""
+
+#: inc/shortcodes/icon_box.php:63
+msgid "Box title"
+msgstr ""
+
+#: inc/shortcodes/icon_box.php:73
+msgid "Icon Color"
+msgstr ""
+
+#: inc/shortcodes/icon_box.php:78
+msgid "Background Color"
+msgstr ""
+
+#: inc/shortcodes/icon_box.php:83
+msgid "Icon Color [HOVER]"
+msgstr ""
+
+#: inc/shortcodes/icon_box.php:88
+msgid "Background Color [HOVER]"
+msgstr ""
+
+#: inc/shortcodes/icon_box.php:94 inc/shortcodes/teaser_box.php:73
+#: inc/shortcodes/vc/vc_cta_button.php:6
+msgid "Text"
+msgstr ""
+
+#: inc/shortcodes/icon_box.php:96 inc/shortcodes/teaser_box.php:75
+#: inc/shortcodes/vc/vc_cta_button.php:8
+msgid "Click edit button to change this text."
+msgstr ""
+
+#: inc/shortcodes/icon_box.php:97 inc/shortcodes/teaser_box.php:76
+#: inc/shortcodes/vc/vc_cta_button.php:9
+msgid "Enter your content."
+msgstr ""
+
+#: inc/shortcodes/icon_box.php:101
+msgid "Icon Position"
+msgstr ""
+
+#: inc/shortcodes/icon_box.php:105
+msgid "Top"
+msgstr ""
+
+#: inc/shortcodes/icon_box.php:106
+msgid "Left"
+msgstr ""
+
+#: inc/shortcodes/icon_box.php:111
+msgid "Icon Style"
+msgstr ""
+
+#: inc/shortcodes/icon_box.php:114
+msgid "Encircled"
+msgstr ""
+
+#: inc/shortcodes/icon_box.php:115 inc/shortcodes/vc/config.php:8
+msgid "Small"
+msgstr ""
+
+#: inc/shortcodes/portfolio/portfolio.php:10
+#: inc/shortcodes/portfolio/portfolio_grid.php:11
+msgid "Please, active legenda theme to use this shortcode"
+msgstr ""
+
+#: inc/shortcodes/ptable.php:47 inc/shortcodes/teaser_box.php:80
+msgid "Style"
+msgstr ""
+
+#: inc/shortcodes/ptable.php:49
+msgid "default"
+msgstr ""
+
+#: inc/shortcodes/ptable.php:49
+msgid "Style 2"
+msgstr ""
+
+#: inc/shortcodes/share.php:6
+msgid "Social"
+msgstr ""
+
+#: inc/shortcodes/share.php:27
+msgid "Check this out: "
+msgstr ""
+
+#: inc/shortcodes/single_post.php:37
+msgid "View more posts"
+msgstr ""
+
+#: inc/shortcodes/single_post.php:60
+msgid "Posted on"
+msgstr ""
+
+#: inc/shortcodes/single_post.php:62
+msgid "at"
+msgstr ""
+
+#: inc/shortcodes/single_post.php:65
+#: inc/widgets/etheme_widget_recent_comments.php:67
+#: inc/widgets/etheme_widget_recent_entries.php:60
+msgid "by"
+msgstr ""
+
+#: inc/shortcodes/single_post.php:69
+msgid "Read More"
+msgstr ""
+
+#: inc/shortcodes/single_post.php:81
+msgid "Sorry, no posts matched your criteria."
+msgstr ""
+
+#: inc/shortcodes/single_post.php:115
+msgid "Post ID"
+msgstr ""
+
+#: inc/shortcodes/single_post.php:120
+msgid "Show more posts link"
+msgstr ""
+
+#: inc/shortcodes/single_post.php:122 inc/shortcodes/testimonials.php:45
+#: inc/shortcodes/vc/vc_posts_grid.php:47
+#: inc/shortcodes/vc/vc_posts_grid.php:53 inc/widgets/testimonials.php:48
+msgid "Show"
+msgstr ""
+
+#: inc/shortcodes/single_post.php:122 inc/shortcodes/testimonials.php:44
+#: inc/shortcodes/vc/vc_posts_grid.php:34
+#: inc/shortcodes/vc/vc_posts_grid.php:47
+#: inc/shortcodes/vc/vc_posts_grid.php:53 inc/widgets/testimonials.php:47
+msgid "Hide"
+msgstr ""
+
+#: inc/shortcodes/team_member.php:56
+msgid "Social Profiles"
+msgstr ""
+
+#: inc/shortcodes/team_member.php:96
+msgid "Email:"
+msgstr ""
+
+#: inc/shortcodes/team_member.php:127
+msgid "Member name"
+msgstr ""
+
+#: inc/shortcodes/team_member.php:132
+msgid "Member email"
+msgstr ""
+
+#: inc/shortcodes/team_member.php:137
+msgid "Position"
+msgstr ""
+
+#: inc/shortcodes/team_member.php:142
+msgid "Avatar"
+msgstr ""
+
+#: inc/shortcodes/team_member.php:147 inc/shortcodes/teaser_box.php:66
+#: inc/shortcodes/vc/vc_gallery.php:37
+msgid "Image size"
+msgstr ""
+
+#: inc/shortcodes/team_member.php:154
+msgid "Member information"
+msgstr ""
+
+#: inc/shortcodes/team_member.php:156
+msgid "Member description"
+msgstr ""
+
+#: inc/shortcodes/team_member.php:164
+msgid "Vertical"
+msgstr ""
+
+#: inc/shortcodes/team_member.php:165
+msgid "Horizontal"
+msgstr ""
+
+#: inc/shortcodes/team_member.php:170
+msgid "Twitter link"
+msgstr ""
+
+#: inc/shortcodes/team_member.php:175
+msgid "Facebook link"
+msgstr ""
+
+#: inc/shortcodes/team_member.php:180
+msgid "Linkedin"
+msgstr ""
+
+#: inc/shortcodes/team_member.php:185
+msgid "Skype name"
+msgstr ""
+
+#: inc/shortcodes/team_member.php:190
+msgid "Instagram"
+msgstr ""
+
+#: inc/shortcodes/teaser_box.php:61
+#: inc/testimonials/classes/class-woothemes-testimonials.php:161
+msgid "Image"
+msgstr ""
+
+#: inc/shortcodes/teaser_box.php:82
+msgid "Bordered"
+msgstr ""
+
+#: inc/shortcodes/testimonials.php:18 inc/widgets/testimonials.php:21
+msgid "How many testimonials to show? Enter number."
+msgstr ""
+
+#: inc/shortcodes/testimonials.php:32 inc/widgets/testimonials.php:35
+msgid "Interval"
+msgstr ""
+
+#: inc/shortcodes/testimonials.php:34 inc/widgets/testimonials.php:37
+msgid "Interval between slides. In milliseconds. Default: 10000"
+msgstr ""
+
+#: inc/shortcodes/testimonials.php:39 inc/widgets/testimonials.php:42
+msgid "Show Control Navigation"
+msgstr ""
+
+#: inc/shortcodes/testimonials.php:50
+#: inc/testimonials/classes/class-woothemes-testimonials-taxonomy.php:72
+#: inc/widgets/testimonials.php:53
+msgid "Category"
+msgstr ""
+
+#: inc/shortcodes/testimonials.php:52 inc/widgets/testimonials.php:55
+msgid "Display testimonials from category."
+msgstr ""
+
+#: inc/shortcodes/vc/config.php:5
+msgid "Grey"
+msgstr ""
+
+#: inc/shortcodes/vc/config.php:5
+msgid "Blue"
+msgstr ""
+
+#: inc/shortcodes/vc/config.php:5
+msgid "Turquoise"
+msgstr ""
+
+#: inc/shortcodes/vc/config.php:5
+msgid "Green"
+msgstr ""
+
+#: inc/shortcodes/vc/config.php:5
+msgid "Orange"
+msgstr ""
+
+#: inc/shortcodes/vc/config.php:5
+msgid "Red"
+msgstr ""
+
+#: inc/shortcodes/vc/config.php:5
+msgid "Black"
+msgstr ""
+
+#: inc/shortcodes/vc/config.php:8
+msgid "Regular size"
+msgstr ""
+
+#: inc/shortcodes/vc/config.php:8
+msgid "Mini"
+msgstr ""
+
+#: inc/shortcodes/vc/config.php:10
+msgid "Same window"
+msgstr ""
+
+#: inc/shortcodes/vc/config.php:10
+msgid "New window"
+msgstr ""
+
+#: inc/shortcodes/vc/config.php:14
+msgid "CSS Animation"
+msgstr ""
+
+#: inc/shortcodes/vc/config.php:17
+msgid "Top to bottom"
+msgstr ""
+
+#: inc/shortcodes/vc/config.php:17
+msgid "Bottom to top"
+msgstr ""
+
+#: inc/shortcodes/vc/config.php:17
+msgid "Left to right"
+msgstr ""
+
+#: inc/shortcodes/vc/config.php:17
+msgid "Right to left"
+msgstr ""
+
+#: inc/shortcodes/vc/config.php:17
+msgid "Appear from center"
+msgstr ""
+
+#: inc/shortcodes/vc/config.php:18
+msgid ""
+"Select type of animation if you want this element to be animated when it "
+"enters into the browsers viewport. Note: Works only in modern browsers."
+msgstr ""
+
+#: inc/shortcodes/vc/vc_accordion_tab.php:7 inc/shortcodes/vc/vc_tab.php:34
+msgid "Section"
+msgstr ""
+
+#: inc/shortcodes/vc/vc_accordion_tab.php:14 inc/shortcodes/vc/vc_tab.php:45
+msgid "Empty section. Edit page to add content here."
+msgstr ""
+
+#: inc/shortcodes/vc/vc_button.php:6 inc/shortcodes/vc/vc_button.php:10
+#: inc/shortcodes/vc/vc_button.php:66 inc/shortcodes/vc/vc_cta_button.php:25
+#: inc/shortcodes/vc/vc_cta_button.php:27
+msgid "Text on the button"
+msgstr ""
+
+#: inc/shortcodes/vc/vc_button.php:11 inc/shortcodes/vc/vc_cta_button.php:28
+msgid "Text on the button."
+msgstr ""
+
+#: inc/shortcodes/vc/vc_button.php:15 inc/shortcodes/vc/vc_cta_button.php:32
+msgid "URL (Link)"
+msgstr ""
+
+#: inc/shortcodes/vc/vc_button.php:17 inc/shortcodes/vc/vc_cta_button.php:34
+msgid "Button link."
+msgstr ""
+
+#: inc/shortcodes/vc/vc_button.php:21
+msgid "Target"
+msgstr ""
+
+#: inc/shortcodes/vc/vc_button.php:28 inc/shortcodes/vc/vc_separator.php:7
+msgid "Type"
+msgstr ""
+
+#: inc/shortcodes/vc/vc_button.php:31
+msgid "Button type."
+msgstr ""
+
+#: inc/shortcodes/vc/vc_button.php:46
+msgid "Button size."
+msgstr ""
+
+#: inc/shortcodes/vc/vc_button.php:50 inc/shortcodes/vc/vc_gallery.php:65
+#: inc/shortcodes/vc/vc_posts_grid.php:123
+#: inc/shortcodes/vc/vc_posts_slider.php:80 inc/shortcodes/vc/vc_tabs.php:29
+msgid "Extra class name"
+msgstr ""
+
+#: inc/shortcodes/vc/vc_cta_button.php:13
+msgid "Block Style"
+msgstr ""
+
+#: inc/shortcodes/vc/vc_cta_button.php:18
+msgid "Filled"
+msgstr ""
+
+#: inc/shortcodes/vc/vc_cta_button.php:19
+msgid "Without Border"
+msgstr ""
+
+#: inc/shortcodes/vc/vc_cta_button.php:38
+msgid "Button position"
+msgstr ""
+
+#: inc/shortcodes/vc/vc_cta_button.php:40
+msgid "Align right"
+msgstr ""
+
+#: inc/shortcodes/vc/vc_cta_button.php:40
+msgid "Align left"
+msgstr ""
+
+#: inc/shortcodes/vc/vc_cta_button.php:41
+msgid "Select button alignment."
+msgstr ""
+
+#: inc/shortcodes/vc/vc_gallery.php:3
+msgid "Image Gallery"
+msgstr ""
+
+#: inc/shortcodes/vc/vc_gallery.php:5 inc/shortcodes/vc/vc_posts_grid.php:38
+#: inc/shortcodes/vc/vc_tabs.php:10
+msgid "Content"
+msgstr ""
+
+#: inc/shortcodes/vc/vc_gallery.php:9 inc/shortcodes/vc/vc_posts_grid.php:6
+#: inc/shortcodes/vc/vc_posts_slider.php:6 inc/shortcodes/vc/vc_tabs.php:14
+#: inc/widgets/et_recent_comments.php:20
+#: inc/widgets/et_recent_posts_widget.php:20
+msgid "Widget title"
+msgstr ""
+
+#: inc/shortcodes/vc/vc_gallery.php:11 inc/shortcodes/vc/vc_posts_grid.php:8
+#: inc/shortcodes/vc/vc_posts_slider.php:8 inc/shortcodes/vc/vc_tabs.php:16
+#: inc/widgets/et_recent_comments.php:22
+#: inc/widgets/et_recent_posts_widget.php:22
+msgid "What text use as a widget title. Leave blank if no title is needed."
+msgstr ""
+
+#: inc/shortcodes/vc/vc_gallery.php:15
+msgid "Gallery type"
+msgstr ""
+
+#: inc/shortcodes/vc/vc_gallery.php:17
+msgid "Flex slider fade"
+msgstr ""
+
+#: inc/shortcodes/vc/vc_gallery.php:17
+msgid "Flex slider slide"
+msgstr ""
+
+#: inc/shortcodes/vc/vc_gallery.php:17
+msgid "Nivo slider"
+msgstr ""
+
+#: inc/shortcodes/vc/vc_gallery.php:17
+msgid "Carousel"
+msgstr ""
+
+#: inc/shortcodes/vc/vc_gallery.php:17
+msgid "Image grid"
+msgstr ""
+
+#: inc/shortcodes/vc/vc_gallery.php:18
+msgid "Select gallery type."
+msgstr ""
+
+#: inc/shortcodes/vc/vc_gallery.php:22
+msgid "Auto rotate slides"
+msgstr ""
+
+#: inc/shortcodes/vc/vc_gallery.php:25
+msgid "Auto rotate slides each X seconds."
+msgstr ""
+
+#: inc/shortcodes/vc/vc_gallery.php:30
+msgid "Images"
+msgstr ""
+
+#: inc/shortcodes/vc/vc_gallery.php:33
+msgid "Select images from media library."
+msgstr ""
+
+#: inc/shortcodes/vc/vc_gallery.php:39
+msgid ""
+"Enter image size. Example: thumbnail, medium, large, full or other sizes "
+"defined by current theme. Alternatively enter image size in pixels: 200x100 "
+"(Width x Height). Leave empty to use 'thumbnail' size."
+msgstr ""
+
+#: inc/shortcodes/vc/vc_gallery.php:43
+msgid "On click"
+msgstr ""
+
+#: inc/shortcodes/vc/vc_gallery.php:45
+msgid "Open prettyPhoto"
+msgstr ""
+
+#: inc/shortcodes/vc/vc_gallery.php:45
+msgid "Do nothing"
+msgstr ""
+
+#: inc/shortcodes/vc/vc_gallery.php:45
+msgid "Open custom link"
+msgstr ""
+
+#: inc/shortcodes/vc/vc_gallery.php:46
+msgid "What to do when slide is clicked?"
+msgstr ""
+
+#: inc/shortcodes/vc/vc_gallery.php:50
+msgid "Custom links"
+msgstr ""
+
+#: inc/shortcodes/vc/vc_gallery.php:52
+msgid "Enter links for each slide here. Divide links with linebreaks (Enter)."
+msgstr ""
+
+#: inc/shortcodes/vc/vc_gallery.php:57
+msgid "Custom link target"
+msgstr ""
+
+#: inc/shortcodes/vc/vc_gallery.php:59
+msgid "Select where to open  custom links."
+msgstr ""
+
+#: inc/shortcodes/vc/vc_posts_grid.php:12
+msgid "Columns count"
+msgstr ""
+
+#: inc/shortcodes/vc/vc_posts_grid.php:16
+msgid "Select columns count."
+msgstr ""
+
+#: inc/shortcodes/vc/vc_posts_grid.php:20
+#: inc/shortcodes/vc/vc_posts_slider.php:18
+msgid "Post types"
+msgstr ""
+
+#: inc/shortcodes/vc/vc_posts_grid.php:22
+#: inc/shortcodes/vc/vc_posts_slider.php:20
+msgid "Select post types to populate posts from."
+msgstr ""
+
+#: inc/shortcodes/vc/vc_posts_grid.php:26
+msgid "Teasers count"
+msgstr ""
+
+#: inc/shortcodes/vc/vc_posts_grid.php:28
+msgid "How many teasers to show? Enter number or word \"All\"."
+msgstr ""
+
+#: inc/shortcodes/vc/vc_posts_grid.php:32
+msgid "Pagination"
+msgstr ""
+
+#: inc/shortcodes/vc/vc_posts_grid.php:34
+msgid "Show Pagination"
+msgstr ""
+
+#: inc/shortcodes/vc/vc_posts_grid.php:40
+#: inc/shortcodes/vc/vc_posts_slider.php:35
+msgid "Teaser (Excerpt)"
+msgstr ""
+
+#: inc/shortcodes/vc/vc_posts_grid.php:40
+msgid "Full Content"
+msgstr ""
+
+#: inc/shortcodes/vc/vc_posts_grid.php:41
+#: inc/shortcodes/vc/vc_posts_grid.php:74
+msgid "Teaser layout template."
+msgstr ""
+
+#: inc/shortcodes/vc/vc_posts_grid.php:45
+msgid "'Posted by' block"
+msgstr ""
+
+#: inc/shortcodes/vc/vc_posts_grid.php:51
+msgid "Hover mask"
+msgstr ""
+
+#: inc/shortcodes/vc/vc_posts_grid.php:57
+msgid "Layout"
+msgstr ""
+
+#: inc/shortcodes/vc/vc_posts_grid.php:59
+msgid "Title + Thumbnail + Text"
+msgstr ""
+
+#: inc/shortcodes/vc/vc_posts_grid.php:59
+msgid "Thumbnail + Title + Text"
+msgstr ""
+
+#: inc/shortcodes/vc/vc_posts_grid.php:59
+msgid "Thumbnail + Text"
+msgstr ""
+
+#: inc/shortcodes/vc/vc_posts_grid.php:59
+msgid "Thumbnail + Title"
+msgstr ""
+
+#: inc/shortcodes/vc/vc_posts_grid.php:59
+msgid "Thumbnail only"
+msgstr ""
+
+#: inc/shortcodes/vc/vc_posts_grid.php:59
+msgid "Title + Text"
+msgstr ""
+
+#: inc/shortcodes/vc/vc_posts_grid.php:60
+#: inc/shortcodes/vc/vc_posts_grid.php:67
+msgid "Teaser layout."
+msgstr ""
+
+#: inc/shortcodes/vc/vc_posts_grid.php:64
+msgid "Border"
+msgstr ""
+
+#: inc/shortcodes/vc/vc_posts_grid.php:66
+msgid "Show border"
+msgstr ""
+
+#: inc/shortcodes/vc/vc_posts_grid.php:66
+msgid "Without border"
+msgstr ""
+
+#: inc/shortcodes/vc/vc_posts_grid.php:71
+msgid "Teaser grid layout"
+msgstr ""
+
+#: inc/shortcodes/vc/vc_posts_grid.php:73
+msgid "Grid with filter"
+msgstr ""
+
+#: inc/shortcodes/vc/vc_posts_grid.php:78
+msgid "Taxonomies"
+msgstr ""
+
+#: inc/shortcodes/vc/vc_posts_grid.php:81
+msgid "Select taxonomies from."
+msgstr ""
+
+#: inc/shortcodes/vc/vc_posts_grid.php:85
+#: inc/shortcodes/vc/vc_posts_slider.php:48
+msgid "Thumbnail size"
+msgstr ""
+
+#: inc/shortcodes/vc/vc_posts_grid.php:87
+msgid ""
+"Enter thumbnail size. Example: thumbnail, medium, large, full or other sizes "
+"defined by current theme. Alternatively enter image size in pixels: 200x100 "
+"(Width x Height)."
+msgstr ""
+
+#: inc/shortcodes/vc/vc_posts_grid.php:91
+#: inc/shortcodes/vc/vc_posts_slider.php:54
+msgid "Post/Page IDs"
+msgstr ""
+
+#: inc/shortcodes/vc/vc_posts_grid.php:93
+msgid ""
+"Fill this field with page/posts IDs separated by commas (,) to retrieve only "
+"them. Use this in conjunction with \"Post types\" field."
+msgstr ""
+
+#: inc/shortcodes/vc/vc_posts_grid.php:97
+msgid "Exclude Post/Page IDs"
+msgstr ""
+
+#: inc/shortcodes/vc/vc_posts_grid.php:99
+msgid ""
+"Fill this field with page/posts IDs separated by commas (,) to exclude them "
+"from query."
+msgstr ""
+
+#: inc/shortcodes/vc/vc_posts_grid.php:103
+#: inc/shortcodes/vc/vc_posts_slider.php:60
+#: inc/testimonials/classes/class-woothemes-testimonials-taxonomy.php:73
+msgid "Categories"
+msgstr ""
+
+#: inc/shortcodes/vc/vc_posts_grid.php:105
+#: inc/shortcodes/vc/vc_posts_slider.php:62
+msgid ""
+"If you want to narrow output, enter category names here. Note: Only listed "
+"categories will be included. Divide categories with linebreaks (Enter)."
+msgstr ""
+
+#: inc/shortcodes/vc/vc_posts_grid.php:112
+#: inc/shortcodes/vc/vc_posts_slider.php:69
+#, php-format
+msgid "Select how to sort retrieved posts. More at %s."
+msgstr ""
+
+#: inc/shortcodes/vc/vc_posts_slider.php:12
+msgid "Slides count"
+msgstr ""
+
+#: inc/shortcodes/vc/vc_posts_slider.php:14
+msgid "How many slides to show? Enter number or word \"All\"."
+msgstr ""
+
+#: inc/shortcodes/vc/vc_posts_slider.php:24
+msgid "Output post date?"
+msgstr ""
+
+#: inc/shortcodes/vc/vc_posts_slider.php:26
+msgid "If selected, date will be printed before the teaser text."
+msgstr ""
+
+#: inc/shortcodes/vc/vc_posts_slider.php:27
+#: inc/shortcodes/vc/vc_posts_slider.php:44
+msgid "Yes, please"
+msgstr ""
+
+#: inc/shortcodes/vc/vc_posts_slider.php:31
+msgid "Description"
+msgstr ""
+
+#: inc/shortcodes/vc/vc_posts_slider.php:34
+msgid "No description"
+msgstr ""
+
+#: inc/shortcodes/vc/vc_posts_slider.php:37
+msgid "Some sliders support description text, what content use for it?"
+msgstr ""
+
+#: inc/shortcodes/vc/vc_posts_slider.php:41
+msgid "Output post title?"
+msgstr ""
+
+#: inc/shortcodes/vc/vc_posts_slider.php:43
+msgid "If selected, title will be printed before the teaser text."
+msgstr ""
+
+#: inc/shortcodes/vc/vc_posts_slider.php:50
+msgid "Enter thumbnail size. Example: 200x100 (Width x Height)."
+msgstr ""
+
+#: inc/shortcodes/vc/vc_posts_slider.php:56
+msgid ""
+"Fill this field with page/posts IDs separated by commas (,), to retrieve "
+"only them. Use this in conjunction with \"Post types\" field."
+msgstr ""
+
+#: inc/shortcodes/vc/vc_separator.php:12
+msgid "Double"
+msgstr ""
+
+#: inc/shortcodes/vc/vc_separator.php:13
+msgid "Dashed"
+msgstr ""
+
+#: inc/shortcodes/vc/vc_separator.php:14
+msgid "Dotted"
+msgstr ""
+
+#: inc/shortcodes/vc/vc_separator.php:15
+msgid "Double Dotted"
+msgstr ""
+
+#: inc/shortcodes/vc/vc_separator.php:16
+msgid "Double Dashed"
+msgstr ""
+
+#: inc/shortcodes/vc/vc_separator.php:17
+msgid "Horizontal break"
+msgstr ""
+
+#: inc/shortcodes/vc/vc_separator.php:18
+msgid "Space"
+msgstr ""
+
+#: inc/shortcodes/vc/vc_separator.php:23
+msgid "Height"
+msgstr ""
+
+#: inc/shortcodes/vc/vc_separator.php:29
+msgid "Extra class"
+msgstr ""
+
+#: inc/shortcodes/vc/vc_tab.php:3
+msgid "Tab"
+msgstr ""
+
+#: inc/shortcodes/vc/vc_tab.php:13
+msgid "Tab title."
+msgstr ""
+
+#: inc/shortcodes/vc/vc_tab.php:22
+msgid "Tab ID"
+msgstr ""
+
+#: inc/shortcodes/vc/vc_tabs.php:5
+msgid "Tabs"
+msgstr ""
+
+#: inc/shortcodes/vc/vc_tabs.php:20
+msgid "Tabs type"
+msgstr ""
+
+#: inc/shortcodes/vc/vc_tabs.php:23
+msgid "Accordion"
+msgstr ""
+
+#: inc/shortcodes/vc/vc_tabs.php:24
+msgid "Left bar"
+msgstr ""
+
+#: inc/shortcodes/vc/vc_tabs.php:25
+msgid "Right bar"
+msgstr ""
+
+#: inc/shortcodes/vc/vc_tabs.php:42
+msgid "Tab 1"
+msgstr ""
+
+#: inc/shortcodes/vc/vc_tabs.php:43
+msgid "Tab 2"
+msgstr ""
+
+#: inc/shortcodes/vc/vc_toggle.php:5
+msgid "Click to toggle"
+msgstr ""
+
+#: inc/testimonials/classes/class-woothemes-testimonials-taxonomy.php:96
+#, php-format
+msgctxt "taxonomy general name"
+msgid "%s"
+msgstr ""
+
+#: inc/testimonials/classes/class-woothemes-testimonials-taxonomy.php:97
+#, php-format
+msgctxt "taxonomy singular name"
+msgid "%s"
+msgstr ""
+
+#: inc/testimonials/classes/class-woothemes-testimonials-taxonomy.php:100
+#, php-format
+msgid "Parent %s"
+msgstr ""
+
+#: inc/testimonials/classes/class-woothemes-testimonials-taxonomy.php:101
+#, php-format
+msgid "Parent %s:"
+msgstr ""
+
+#: inc/testimonials/classes/class-woothemes-testimonials-taxonomy.php:103
+#, php-format
+msgid "Update %s"
+msgstr ""
+
+#: inc/testimonials/classes/class-woothemes-testimonials-taxonomy.php:105
+#, php-format
+msgid "New %s Name"
+msgstr ""
+
+#: inc/testimonials/classes/class-woothemes-testimonials-taxonomy.php:106
+#, php-format
+msgid "%s"
+msgstr ""
+
+#: inc/testimonials/classes/class-woothemes-testimonials.php:77
+msgctxt "post type general name"
+msgid "Testimonials"
+msgstr ""
+
+#: inc/testimonials/classes/class-woothemes-testimonials.php:78
+msgctxt "post type singular name"
+msgid "Testimonial"
+msgstr ""
+
+#: inc/testimonials/classes/class-woothemes-testimonials.php:79
+msgctxt "testimonial"
+msgid "Add New"
+msgstr ""
+
+#: inc/testimonials/classes/class-woothemes-testimonials.php:80
+#: inc/testimonials/classes/class-woothemes-testimonials.php:81
+#: inc/testimonials/classes/class-woothemes-testimonials.php:82
+#: inc/testimonials/classes/class-woothemes-testimonials.php:84
+msgid "Testimonial"
+msgstr ""
+
+#: inc/testimonials/classes/class-woothemes-testimonials.php:83
+#: inc/testimonials/classes/class-woothemes-testimonials.php:85
+#: inc/testimonials/classes/class-woothemes-testimonials.php:86
+#: inc/testimonials/classes/class-woothemes-testimonials.php:87
+#: inc/testimonials/classes/class-woothemes-testimonials.php:89
+#: inc/testimonials/classes/class-woothemes-widget-testimonials.php:45
+msgid "Testimonials"
+msgstr ""
+
+#: inc/testimonials/classes/class-woothemes-testimonials.php:195
+#, php-format
+msgid "Testimonial updated. %sView testimonial%s"
+msgstr ""
+
+#: inc/testimonials/classes/class-woothemes-testimonials.php:196
+msgid "Custom field updated."
+msgstr ""
+
+#: inc/testimonials/classes/class-woothemes-testimonials.php:197
+msgid "Custom field deleted."
+msgstr ""
+
+#: inc/testimonials/classes/class-woothemes-testimonials.php:198
+msgid "Testimonial updated."
+msgstr ""
+
+#: inc/testimonials/classes/class-woothemes-testimonials.php:200
+#, php-format
+msgid "Testimonial restored to revision from %s"
+msgstr ""
+
+#: inc/testimonials/classes/class-woothemes-testimonials.php:201
+#, php-format
+msgid "Testimonial published. %sView testimonial%s"
+msgstr ""
+
+#: inc/testimonials/classes/class-woothemes-testimonials.php:202
+msgid "Testimonial saved."
+msgstr ""
+
+#: inc/testimonials/classes/class-woothemes-testimonials.php:203
+#, php-format
+msgid "Testimonial submitted. %sPreview testimonial%s"
+msgstr ""
+
+#: inc/testimonials/classes/class-woothemes-testimonials.php:204
+#, php-format
+msgid "Testimonial scheduled for: %1$s. %2$sPreview testimonial%3$s"
+msgstr ""
+
+#: inc/testimonials/classes/class-woothemes-testimonials.php:206
+msgid "M j, Y @ G:i"
+msgstr ""
+
+#: inc/testimonials/classes/class-woothemes-testimonials.php:207
+#, php-format
+msgid "Testimonial draft updated. %sPreview testimonial%s"
+msgstr ""
+
+#: inc/testimonials/classes/class-woothemes-testimonials.php:221
+msgid "Testimonial Details"
+msgstr ""
+
+#: inc/testimonials/classes/class-woothemes-testimonials.php:320
+msgid "Enter the customer's name here"
+msgstr ""
+
+#: inc/testimonials/classes/class-woothemes-testimonials.php:346
+msgid "Gravatar E-mail Address"
+msgstr ""
+
+#: inc/testimonials/classes/class-woothemes-testimonials.php:347
+#, php-format
+msgid ""
+"Enter in an e-mail address, to use a %sGravatar%s, instead of using the "
+"\"Featured Image\"."
+msgstr ""
+
+#: inc/testimonials/classes/class-woothemes-testimonials.php:354
+msgid "Byline"
+msgstr ""
+
+#: inc/testimonials/classes/class-woothemes-testimonials.php:355
+msgid ""
+"Enter a byline for the customer giving this testimonial (for example: \"CEO "
+"of WooThemes\")."
+msgstr ""
+
+#: inc/testimonials/classes/class-woothemes-testimonials.php:362
+msgid "URL"
+msgstr ""
+
+#: inc/testimonials/classes/class-woothemes-testimonials.php:363
+msgid ""
+"Enter a URL that applies to this customer (for example: http://woothemes."
+"com/)."
+msgstr ""
+
+#: inc/testimonials/classes/class-woothemes-widget-testimonials.php:43
+msgid "Recent testimonials on your site."
+msgstr ""
+
+#: inc/testimonials/classes/class-woothemes-widget-testimonials.php:173
+msgid "Title (optional):"
+msgstr ""
+
+#: inc/testimonials/classes/class-woothemes-widget-testimonials.php:178
+msgid "Limit:"
+msgstr ""
+
+#: inc/testimonials/classes/class-woothemes-widget-testimonials.php:183
+msgid "Image Size (in pixels):"
+msgstr ""
+
+#: inc/testimonials/classes/class-woothemes-widget-testimonials.php:188
+msgid "Order By:"
+msgstr ""
+
+#: inc/testimonials/classes/class-woothemes-widget-testimonials.php:197
+msgid "Order Direction:"
+msgstr ""
+
+#: inc/testimonials/classes/class-woothemes-widget-testimonials.php:207
+msgid "Display Control Navigation"
+msgstr ""
+
+#: inc/testimonials/classes/class-woothemes-widget-testimonials.php:212
+msgid "Display Author"
+msgstr ""
+
+#: inc/testimonials/classes/class-woothemes-widget-testimonials.php:217
+msgid "Display Avatar"
+msgstr ""
+
+#: inc/testimonials/classes/class-woothemes-widget-testimonials.php:222
+msgid "Display URL"
+msgstr ""
+
+#: inc/testimonials/classes/class-woothemes-widget-testimonials.php:226
+msgid "Category:"
+msgstr ""
+
+#: inc/testimonials/classes/class-woothemes-widget-testimonials.php:234
+msgid "Specific ID (optional):"
+msgstr ""
+
+#: inc/testimonials/classes/class-woothemes-widget-testimonials.php:237
+msgid "Display a specific testimonial, rather than a list."
+msgstr ""
+
+#: inc/testimonials/classes/class-woothemes-widget-testimonials.php:248
+msgid "No Order"
+msgstr ""
+
+#: inc/testimonials/classes/class-woothemes-widget-testimonials.php:249
+msgid "Entry ID"
+msgstr ""
+
+#: inc/testimonials/classes/class-woothemes-widget-testimonials.php:251
+msgid "Date Added"
+msgstr ""
+
+#: inc/testimonials/classes/class-woothemes-widget-testimonials.php:252
+msgid "Specified Order Setting"
+msgstr ""
+
+#: inc/testimonials/classes/class-woothemes-widget-testimonials.php:253
+msgid "Random Order"
+msgstr ""
+
+#: inc/widgets/et_recent_comments.php:28
+msgid "How many comments to show? Enter number."
+msgstr ""
+
+#: inc/widgets/et_recent_posts_widget.php:28
+msgid "How many posts to show? Enter number."
+msgstr ""
+
+#: inc/widgets/etheme_flickr-widget.php:13
+msgid "8theme - Flickr Photos"
+msgstr ""
+
+#: inc/widgets/etheme_flickr-widget.php:16
+msgid "Flickr"
+msgstr ""
+
+#: inc/widgets/etheme_twitter.php:4
+msgid "Display most recent Twitter feed"
+msgstr ""
+
+#: inc/widgets/etheme_twitter.php:6 inc/widgets/etheme_twitter.php:9
+msgid "Twitter Feed"
+msgstr ""
+
+#: inc/widgets/etheme_twitter.php:50
+#: inc/widgets/etheme_widget_recent_comments.php:96
+#: inc/widgets/etheme_widget_recent_entries.php:97
+msgid "Title:"
+msgstr ""
+
+#: inc/widgets/etheme_twitter.php:51
+msgid "Username:"
+msgstr ""
+
+#: inc/widgets/etheme_twitter.php:52
+msgid "Customer Key:"
+msgstr ""
+
+#: inc/widgets/etheme_twitter.php:53
+msgid "Customer Secret:"
+msgstr ""
+
+#: inc/widgets/etheme_twitter.php:54
+msgid "Number of tweets:"
+msgstr ""
+
+#: inc/widgets/etheme_widget_brands.php:6
+msgid "Products Filter by brands"
+msgstr ""
+
+#: inc/widgets/etheme_widget_brands.php:7
+msgid "Brands Filter"
+msgstr ""
+
+#: inc/widgets/etheme_widget_brands.php:12
+msgid "8theme - Brands Filter"
+msgstr ""
+
+#: inc/widgets/etheme_widget_brands.php:38
+msgid "Any Brand"
+msgstr ""
+
+#: inc/widgets/etheme_widget_brands.php:104
+msgid "Show as a drop down"
+msgstr ""
+
+#: inc/widgets/etheme_widget_qr_code.php:5
+msgid ""
+"You can add a QR code image in sidebar to allow your users get quick access "
+"from their devices"
+msgstr ""
+
+#: inc/widgets/etheme_widget_qr_code.php:6
+msgid "QR Code"
+msgstr ""
+
+#: inc/widgets/etheme_widget_qr_code.php:11
+msgid "8theme - QR Code"
+msgstr ""
+
+#: inc/widgets/etheme_widget_qr_code.php:54
+msgid "Widget title:"
+msgstr ""
+
+#: inc/widgets/etheme_widget_qr_code.php:56
+msgid "Information to encode:"
+msgstr ""
+
+#: inc/widgets/etheme_widget_qr_code.php:58
+msgid "Image size:"
+msgstr ""
+
+#: inc/widgets/etheme_widget_qr_code.php:60
+msgid "Show in lightbox"
+msgstr ""
+
+#: inc/widgets/etheme_widget_qr_code.php:62
+msgid "Encode link to the current page"
+msgstr ""
+
+#: inc/widgets/etheme_widget_qr_code.php:64
+msgid "Additional information in widget"
+msgstr ""
+
+#: inc/widgets/etheme_widget_recent_comments.php:5
+msgid "The most recent comments (Etheme edit)"
+msgstr ""
+
+#: inc/widgets/etheme_widget_recent_comments.php:6
+msgid "Recent Comments"
+msgstr ""
+
+#: inc/widgets/etheme_widget_recent_comments.php:30
+msgid "8theme - Recent Comments"
+msgstr ""
+
+#: inc/widgets/etheme_widget_recent_comments.php:99
+msgid "Number of comments to show:"
+msgstr ""
+
+#: inc/widgets/etheme_widget_recent_entries.php:5
+msgid "The most recent posts on your blog (Etheme Edit)"
+msgstr ""
+
+#: inc/widgets/etheme_widget_recent_entries.php:6
+msgid "Recent Posts"
+msgstr ""
+
+#: inc/widgets/etheme_widget_recent_entries.php:15
+msgid "8theme - Recent Posts"
+msgstr ""
+
+#: inc/widgets/etheme_widget_recent_entries.php:100
+msgid "Number of posts to show:"
+msgstr ""
+
+#: inc/widgets/etheme_widget_recent_entries.php:102
+msgid "(at most 15)"
+msgstr ""
+
+#: inc/widgets/etheme_widget_satick_block.php:5
+msgid "Insert static block, that you created"
+msgstr ""
+
+#: inc/widgets/etheme_widget_satick_block.php:6
+msgid "Statick Block"
+msgstr ""
+
+#: inc/widgets/etheme_widget_satick_block.php:14
+msgid ""
+"To use this widget enable \"static blocks\" in the module section of theme "
+"options"
+msgstr ""
+
+#: inc/widgets/etheme_widget_satick_block.php:37
+msgid "Block name:"
+msgstr ""
+
+#: inc/widgets/etheme_widget_search.php:5
+msgid "AJAX Search form for Products, Posts, Portfolio and Pages"
+msgstr ""
+
+#: inc/widgets/etheme_widget_search.php:6
+msgid "Search From"
+msgstr ""
+
+#: inc/widgets/etheme_widget_search.php:31
+msgid "Please, activate Legenda theme to use this widget"
+msgstr ""
+
+#: inc/wordpress-importer/parsers.php:42 inc/wordpress-importer/parsers.php:72
+#: inc/wordpress-importer/parsers.php:80
+msgid "There was an error when reading this WXR file"
+msgstr ""
+
+#: inc/wordpress-importer/parsers.php:43
+msgid ""
+"Details are shown above. The importer will now try again with a different "
+"parser..."
+msgstr ""
+
+#: inc/wordpress-importer/parsers.php:84 inc/wordpress-importer/parsers.php:89
+#: inc/wordpress-importer/parsers.php:306
+#: inc/wordpress-importer/parsers.php:502
+msgid ""
+"This does not appear to be a WXR file, missing/invalid WXR version number"
+msgstr ""
+
+#: inc/wordpress-importer/wordpress-importer.php:132
+#: inc/wordpress-importer/wordpress-importer.php:141
+#: inc/wordpress-importer/wordpress-importer.php:192
+#: inc/wordpress-importer/wordpress-importer.php:196
+#: inc/wordpress-importer/wordpress-importer.php:205
+msgid "Sorry, there has been an error."
+msgstr ""
+
+#: inc/wordpress-importer/wordpress-importer.php:133
+msgid "The file does not exist, please try again."
+msgstr ""
+
+#: inc/wordpress-importer/wordpress-importer.php:176
+msgid "All done."
+msgstr ""
+
+#: inc/wordpress-importer/wordpress-importer.php:176
+msgid "Have fun!"
+msgstr ""
+
+#: inc/wordpress-importer/wordpress-importer.php:177
+msgid "Remember to update the passwords and roles of imported users."
+msgstr ""
+
+#: inc/wordpress-importer/wordpress-importer.php:197
+#, php-format
+msgid ""
+"The export file could not be found at <code>%s</code>. It is likely that "
+"this was caused by a permissions problem."
+msgstr ""
+
+#: inc/wordpress-importer/wordpress-importer.php:213
+#, php-format
+msgid ""
+"This WXR file (version %s) may not be supported by this version of the "
+"importer. Please consider updating."
+msgstr ""
+
+#: inc/wordpress-importer/wordpress-importer.php:238
+#, php-format
+msgid ""
+"Failed to import author %s. Their posts will be attributed to the current "
+"user."
+msgstr ""
+
+#: inc/wordpress-importer/wordpress-importer.php:264
+msgid "Assign Authors"
+msgstr ""
+
+#: inc/wordpress-importer/wordpress-importer.php:265
+msgid ""
+"To make it easier for you to edit and save the imported content, you may "
+"want to reassign the author of the imported item to an existing user of this "
+"site. For example, you may want to import all the entries as <code>admin</"
+"code>s entries."
+msgstr ""
+
+#: inc/wordpress-importer/wordpress-importer.php:267
+#, php-format
+msgid ""
+"If a new user is created by WordPress, a new password will be randomly "
+"generated and the new user&#8217;s role will be set as %s. Manually changing "
+"the new user&#8217;s details will be necessary."
+msgstr ""
+
+#: inc/wordpress-importer/wordpress-importer.php:277
+msgid "Import Attachments"
+msgstr ""
+
+#: inc/wordpress-importer/wordpress-importer.php:280
+msgid "Download and import file attachments"
+msgstr ""
+
+#: inc/wordpress-importer/wordpress-importer.php:284
+msgid "Submit"
+msgstr ""
+
+#: inc/wordpress-importer/wordpress-importer.php:297
+msgid "Import author:"
+msgstr ""
+
+#: inc/wordpress-importer/wordpress-importer.php:308
+msgid "or create new user with login name:"
+msgstr ""
+
+#: inc/wordpress-importer/wordpress-importer.php:311
+msgid "as a new user:"
+msgstr ""
+
+#: inc/wordpress-importer/wordpress-importer.php:319
+msgid "assign posts to an existing user:"
+msgstr ""
+
+#: inc/wordpress-importer/wordpress-importer.php:321
+msgid "or assign posts to an existing user:"
+msgstr ""
+
+#: inc/wordpress-importer/wordpress-importer.php:322
+msgid "- Select -"
+msgstr ""
+
+#: inc/wordpress-importer/wordpress-importer.php:372
+#, php-format
+msgid ""
+"Failed to create new user for %s. Their posts will be attributed to the "
+"current user."
+msgstr ""
+
+#: inc/wordpress-importer/wordpress-importer.php:424
+#, php-format
+msgid "Failed to import category %s"
+msgstr ""
+
+#: inc/wordpress-importer/wordpress-importer.php:467
+#, php-format
+msgid "Failed to import post tag %s"
+msgstr ""
+
+#: inc/wordpress-importer/wordpress-importer.php:516
+#: inc/wordpress-importer/wordpress-importer.php:738
+#, php-format
+msgid "Failed to import %s %s"
+msgstr ""
+
+#: inc/wordpress-importer/wordpress-importer.php:605
+#, php-format
+msgid "Failed to import &#8220;%s&#8221;: Invalid post type %s"
+msgstr ""
+
+#: inc/wordpress-importer/wordpress-importer.php:642
+#, php-format
+msgid "%s &#8220;%s&#8221; already exists."
+msgstr ""
+
+#: inc/wordpress-importer/wordpress-importer.php:704
+#, php-format
+msgid "Failed to import %s &#8220;%s&#8221;"
+msgstr ""
+
+#: inc/wordpress-importer/wordpress-importer.php:870
+msgid "Menu item skipped due to missing menu slug"
+msgstr ""
+
+#: inc/wordpress-importer/wordpress-importer.php:877
+#, php-format
+msgid "Menu item skipped due to invalid menu slug: %s"
+msgstr ""
+
+#: inc/wordpress-importer/wordpress-importer.php:940
+msgid "Fetching attachments is not enabled"
+msgstr ""
+
+#: inc/wordpress-importer/wordpress-importer.php:953
+msgid "Invalid file type"
+msgstr ""
+
+#: inc/wordpress-importer/wordpress-importer.php:1003
+msgid "Remote server did not respond"
+msgstr ""
+
+#: inc/wordpress-importer/wordpress-importer.php:1011
+#, php-format
+msgid "Remote server returned error response %1$d %2$s"
+msgstr ""
+
+#: inc/wordpress-importer/wordpress-importer.php:1018
+msgid "Remote file is incorrect size"
+msgstr ""
+
+#: inc/wordpress-importer/wordpress-importer.php:1023
+msgid "Zero size file downloaded"
+msgstr ""
+
+#: inc/wordpress-importer/wordpress-importer.php:1029
+#, php-format
+msgid "Remote file is too large, limit is %s"
+msgstr ""
+
+#: inc/wordpress-importer/wordpress-importer.php:1129
+msgid "Import WordPress"
+msgstr ""
+
+#: inc/wordpress-importer/wordpress-importer.php:1136
+#, php-format
+msgid ""
+"A new version of this importer is available. Please update to version %s to "
+"ensure compatibility with newer export files."
+msgstr ""
+
+#: inc/wordpress-importer/wordpress-importer.php:1151
+msgid ""
+"Howdy! Upload your WordPress eXtended RSS (WXR) file and we&#8217;ll import "
+"the posts, pages, comments, custom fields, categories, and tags into this "
+"site."
+msgstr ""
+
+#: inc/wordpress-importer/wordpress-importer.php:1152
+msgid "Choose a WXR (.xml) file to upload, then click Upload file and import."
+msgstr ""
+
+#: inc/wordpress-importer/wordpress-importer.php:1228
+msgid ""
+"Import <strong>posts, pages, comments, custom fields, categories, and tags</"
+"strong> from a WordPress export file."
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "Legenda Core"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "http://8theme.com"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Legenda Core Plugin for Legenda theme"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "8theme"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://themeforest.net/user/8theme"
+msgstr ""
