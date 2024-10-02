@@ -1,0 +1,1177 @@
+[28-Sep-2024 05:08:51 UTC] WooCommerce is loaded.
+[28-Sep-2024 05:08:51 UTC] Hook woocommerce_order_before_calculate_totals registered.
+[28-Sep-2024 05:08:52 UTC] coucou17
+[28-Sep-2024 05:08:52 UTC] coucou15
+[28-Sep-2024 05:08:52 UTC] Une erreur est survenue :
+string(14) "product-3648-1"
+
+[28-Sep-2024 05:08:52 UTC] WooCommerce is loaded.
+[28-Sep-2024 05:08:52 UTC] Hook woocommerce_order_before_calculate_totals registered.
+[28-Sep-2024 05:08:52 UTC] coucou4
+[28-Sep-2024 05:08:52 UTC] key value est  :
+string(21) "yith_wapo_product_img"
+int(0)
+
+[28-Sep-2024 05:08:52 UTC] key value est  :
+string(17) "yith_wapo_options"
+array(1) {
+  [0]=>
+  array(1) {
+    ["361-0"]=>
+    string(14) "product-3648-1"
+  }
+}
+
+[28-Sep-2024 05:08:52 UTC] key value est  :
+string(21) "yith_wapo_qty_options"
+array(3) {
+  ["361-0"]=>
+  string(1) "5"
+  ["361-1"]=>
+  string(1) "1"
+  ["361-2"]=>
+  string(1) "1"
+}
+
+[28-Sep-2024 05:08:52 UTC] key value est  :
+string(3) "key"
+string(32) "713c824aafbce631358df3e96e01212b"
+
+[28-Sep-2024 05:08:52 UTC] key value est  :
+string(10) "product_id"
+int(63990)
+
+[28-Sep-2024 05:08:52 UTC] key value est  :
+string(12) "variation_id"
+int(64019)
+
+[28-Sep-2024 05:08:52 UTC] key value est  :
+string(9) "variation"
+array(1) {
+  ["attribute_pa_coloris-caisson"]=>
+  string(10) "blanc-9010"
+}
+
+[28-Sep-2024 05:08:52 UTC] key value est  :
+string(8) "quantity"
+int(1)
+
+[28-Sep-2024 05:08:52 UTC] key value est  :
+string(9) "data_hash"
+string(32) "7f50d01365e97d4df3a4c8f56cf72a6f"
+
+[28-Sep-2024 05:08:52 UTC] key value est  :
+string(20) "yith_wapo_item_price"
+string(3) "299"
+
+[28-Sep-2024 05:08:52 UTC] key value est  :
+string(29) "yith_wapo_total_options_price"
+float(100)
+
+[28-Sep-2024 05:08:52 UTC] key value est  :
+string(13) "line_tax_data"
+array(2) {
+  ["subtotal"]=>
+  array(1) {
+    [1]=>
+    float(79.8)
+  }
+  ["total"]=>
+  array(1) {
+    [1]=>
+    float(79.8)
+  }
+}
+
+[28-Sep-2024 05:08:52 UTC] key value est  :
+string(13) "line_subtotal"
+float(399)
+
+[28-Sep-2024 05:08:52 UTC] key value est  :
+string(17) "line_subtotal_tax"
+float(79.8)
+
+[28-Sep-2024 05:08:52 UTC] key value est  :
+string(10) "line_total"
+float(399)
+
+[28-Sep-2024 05:08:52 UTC] key value est  :
+string(8) "line_tax"
+float(79.8)
+
+[28-Sep-2024 05:08:52 UTC] key value est  :
+string(4) "data"
+object(WC_Product_Variation)#4777 (14) {
+  ["id":protected]=>
+  int(64019)
+  ["data":protected]=>
+  array(52) {
+    ["name"]=>
+    string(74) "Armoire Rideaux - Archives & dossiers suspendus - H198 L120 - Série A ECO"
+    ["slug"]=>
+    string(65) "armoire-rideaux-archives-dossiers-suspendus-h198-l120-serie-a-eco"
+    ["date_created"]=>
+    object(WC_DateTime)#6665 (4) {
+      ["utc_offset":protected]=>
+      int(7200)
+      ["date"]=>
+      string(26) "2023-11-17 14:33:30.000000"
+      ["timezone_type"]=>
+      int(1)
+      ["timezone"]=>
+      string(6) "+00:00"
+    }
+    ["date_modified"]=>
+    object(WC_DateTime)#6644 (4) {
+      ["utc_offset":protected]=>
+      int(7200)
+      ["date"]=>
+      string(26) "2024-09-25 14:04:40.000000"
+      ["timezone_type"]=>
+      int(1)
+      ["timezone"]=>
+      string(6) "+00:00"
+    }
+    ["status"]=>
+    string(7) "publish"
+    ["featured"]=>
+    bool(false)
+    ["catalog_visibility"]=>
+    string(7) "visible"
+    ["description"]=>
+    string(10) "MC 1912 BL"
+    ["short_description"]=>
+    string(0) ""
+    ["sku"]=>
+    string(11) "amm198120BL"
+    ["global_unique_id"]=>
+    string(0) ""
+    ["price"]=>
+    string(3) "299"
+    ["regular_price"]=>
+    string(3) "335"
+    ["sale_price"]=>
+    string(3) "299"
+    ["date_on_sale_from"]=>
+    NULL
+    ["date_on_sale_to"]=>
+    NULL
+    ["total_sales"]=>
+    string(1) "0"
+    ["tax_status"]=>
+    string(7) "taxable"
+    ["tax_class"]=>
+    string(6) "parent"
+    ["manage_stock"]=>
+    bool(false)
+    ["stock_quantity"]=>
+    NULL
+    ["stock_status"]=>
+    string(7) "instock"
+    ["backorders"]=>
+    string(2) "no"
+    ["low_stock_amount"]=>
+    string(0) ""
+    ["sold_individually"]=>
+    bool(false)
+    ["weight"]=>
+    string(4) "78.5"
+    ["length"]=>
+    string(0) ""
+    ["width"]=>
+    string(0) ""
+    ["height"]=>
+    string(0) ""
+    ["upsell_ids"]=>
+    array(0) {
+    }
+    ["cross_sell_ids"]=>
+    array(8) {
+      [0]=>
+      int(3647)
+      [1]=>
+      int(45354)
+      [2]=>
+      int(2604)
+      [3]=>
+      int(2622)
+      [4]=>
+      int(2643)
+      [5]=>
+      int(685)
+      [6]=>
+      int(2488)
+      [7]=>
+      int(2604)
+    }
+    ["parent_id"]=>
+    int(63990)
+    ["reviews_allowed"]=>
+    bool(false)
+    ["purchase_note"]=>
+    string(0) ""
+    ["attributes"]=>
+    array(1) {
+      ["pa_coloris-caisson"]=>
+      string(10) "blanc-9010"
+    }
+    ["default_attributes"]=>
+    array(0) {
+    }
+    ["menu_order"]=>
+    int(1)
+    ["post_password"]=>
+    string(0) ""
+    ["virtual"]=>
+    bool(false)
+    ["downloadable"]=>
+    bool(false)
+    ["category_ids"]=>
+    array(0) {
+    }
+    ["tag_ids"]=>
+    array(0) {
+    }
+    ["shipping_class_id"]=>
+    int(0)
+    ["downloads"]=>
+    array(0) {
+    }
+    ["image_id"]=>
+    int(64024)
+    ["gallery_image_ids"]=>
+    array(0) {
+    }
+    ["download_limit"]=>
+    int(-1)
+    ["download_expiry"]=>
+    int(-1)
+    ["rating_counts"]=>
+    array(0) {
+    }
+    ["average_rating"]=>
+    int(0)
+    ["review_count"]=>
+    int(0)
+    ["attribute_summary"]=>
+    string(19) "Coloris: Blanc 9010"
+  }
+  ["changes":protected]=>
+  array(1) {
+    ["price"]=>
+    string(3) "399"
+  }
+  ["object_read":protected]=>
+  bool(true)
+  ["object_type":protected]=>
+  string(7) "product"
+  ["extra_data":protected]=>
+  array(0) {
+  }
+  ["default_data":protected]=>
+  array(52) {
+    ["name"]=>
+    string(0) ""
+    ["slug"]=>
+    string(0) ""
+    ["date_created"]=>
+    NULL
+    ["date_modified"]=>
+    NULL
+    ["status"]=>
+    bool(false)
+    ["featured"]=>
+    bool(false)
+    ["catalog_visibility"]=>
+    string(7) "visible"
+    ["description"]=>
+    string(0) ""
+    ["short_description"]=>
+    string(0) ""
+    ["sku"]=>
+    string(0) ""
+    ["global_unique_id"]=>
+    string(0) ""
+    ["price"]=>
+    string(0) ""
+    ["regular_price"]=>
+    string(0) ""
+    ["sale_price"]=>
+    string(0) ""
+    ["date_on_sale_from"]=>
+    NULL
+    ["date_on_sale_to"]=>
+    NULL
+    ["total_sales"]=>
+    string(1) "0"
+    ["tax_status"]=>
+    string(7) "taxable"
+    ["tax_class"]=>
+    string(6) "parent"
+    ["manage_stock"]=>
+    bool(false)
+    ["stock_quantity"]=>
+    NULL
+    ["stock_status"]=>
+    string(7) "instock"
+    ["backorders"]=>
+    string(2) "no"
+    ["low_stock_amount"]=>
+    string(0) ""
+    ["sold_individually"]=>
+    bool(false)
+    ["weight"]=>
+    string(0) ""
+    ["length"]=>
+    string(0) ""
+    ["width"]=>
+    string(0) ""
+    ["height"]=>
+    string(0) ""
+    ["upsell_ids"]=>
+    array(0) {
+    }
+    ["cross_sell_ids"]=>
+    array(0) {
+    }
+    ["parent_id"]=>
+    int(0)
+    ["reviews_allowed"]=>
+    bool(true)
+    ["purchase_note"]=>
+    string(0) ""
+    ["attributes"]=>
+    array(0) {
+    }
+    ["default_attributes"]=>
+    array(0) {
+    }
+    ["menu_order"]=>
+    int(0)
+    ["post_password"]=>
+    string(0) ""
+    ["virtual"]=>
+    bool(false)
+    ["downloadable"]=>
+    bool(false)
+    ["category_ids"]=>
+    array(0) {
+    }
+    ["tag_ids"]=>
+    array(0) {
+    }
+    ["shipping_class_id"]=>
+    int(0)
+    ["downloads"]=>
+    array(0) {
+    }
+    ["image_id"]=>
+    string(0) ""
+    ["gallery_image_ids"]=>
+    array(0) {
+    }
+    ["download_limit"]=>
+    int(-1)
+    ["download_expiry"]=>
+    int(-1)
+    ["rating_counts"]=>
+    array(0) {
+    }
+    ["average_rating"]=>
+    int(0)
+    ["review_count"]=>
+    int(0)
+    ["attribute_summary"]=>
+    string(0) ""
+  }
+  ["data_store":protected]=>
+  object(WC_Data_Store)#6709 (4) {
+    ["instance":"WC_Data_Store":private]=>
+    object(WC_Product_Variation_Data_Store_CPT)#6695 (6) {
+      ["meta_type":protected]=>
+      string(4) "post"
+      ["object_id_field_for_meta":protected]=>
+      string(0) ""
+      ["internal_meta_keys":protected]=>
+      array(71) {
+        [0]=>
+        string(5) "_name"
+        [1]=>
+        string(5) "_slug"
+        [2]=>
+        string(13) "_date_created"
+        [3]=>
+        string(14) "_date_modified"
+        [4]=>
+        string(7) "_status"
+        [5]=>
+        string(9) "_featured"
+        [6]=>
+        string(19) "_catalog_visibility"
+        [7]=>
+        string(12) "_description"
+        [8]=>
+        string(18) "_short_description"
+        [9]=>
+        string(4) "_sku"
+        [10]=>
+        string(17) "_global_unique_id"
+        [11]=>
+        string(6) "_price"
+        [12]=>
+        string(14) "_regular_price"
+        [13]=>
+        string(11) "_sale_price"
+        [14]=>
+        string(18) "_date_on_sale_from"
+        [15]=>
+        string(16) "_date_on_sale_to"
+        [16]=>
+        string(12) "_total_sales"
+        [17]=>
+        string(11) "_tax_status"
+        [18]=>
+        string(10) "_tax_class"
+        [19]=>
+        string(13) "_manage_stock"
+        [20]=>
+        string(15) "_stock_quantity"
+        [21]=>
+        string(13) "_stock_status"
+        [22]=>
+        string(11) "_backorders"
+        [23]=>
+        string(17) "_low_stock_amount"
+        [24]=>
+        string(18) "_sold_individually"
+        [25]=>
+        string(7) "_weight"
+        [26]=>
+        string(7) "_length"
+        [27]=>
+        string(6) "_width"
+        [28]=>
+        string(7) "_height"
+        [29]=>
+        string(11) "_upsell_ids"
+        [30]=>
+        string(15) "_cross_sell_ids"
+        [31]=>
+        string(10) "_parent_id"
+        [32]=>
+        string(16) "_reviews_allowed"
+        [33]=>
+        string(14) "_purchase_note"
+        [34]=>
+        string(11) "_attributes"
+        [35]=>
+        string(19) "_default_attributes"
+        [36]=>
+        string(11) "_menu_order"
+        [37]=>
+        string(14) "_post_password"
+        [38]=>
+        string(8) "_virtual"
+        [39]=>
+        string(13) "_downloadable"
+        [40]=>
+        string(13) "_category_ids"
+        [41]=>
+        string(8) "_tag_ids"
+        [42]=>
+        string(18) "_shipping_class_id"
+        [43]=>
+        string(10) "_downloads"
+        [44]=>
+        string(9) "_image_id"
+        [45]=>
+        string(18) "_gallery_image_ids"
+        [46]=>
+        string(15) "_download_limit"
+        [47]=>
+        string(16) "_download_expiry"
+        [48]=>
+        string(14) "_rating_counts"
+        [49]=>
+        string(15) "_average_rating"
+        [50]=>
+        string(13) "_review_count"
+        [51]=>
+        string(18) "_attribute_summary"
+        [52]=>
+        string(11) "_visibility"
+        [58]=>
+        string(22) "_sale_price_dates_from"
+        [59]=>
+        string(20) "_sale_price_dates_to"
+        [60]=>
+        string(11) "total_sales"
+        [64]=>
+        string(6) "_stock"
+        [74]=>
+        string(14) "_crosssell_ids"
+        [77]=>
+        string(19) "_product_attributes"
+        [83]=>
+        string(19) "_downloadable_files"
+        [84]=>
+        string(16) "_wc_rating_count"
+        [85]=>
+        string(18) "_wc_average_rating"
+        [86]=>
+        string(16) "_wc_review_count"
+        [87]=>
+        string(22) "_variation_description"
+        [88]=>
+        string(13) "_thumbnail_id"
+        [89]=>
+        string(11) "_file_paths"
+        [90]=>
+        string(22) "_product_image_gallery"
+        [91]=>
+        string(16) "_product_version"
+        [92]=>
+        string(12) "_wp_old_slug"
+        [93]=>
+        string(10) "_edit_last"
+        [94]=>
+        string(10) "_edit_lock"
+      }
+      ["must_exist_meta_keys":protected]=>
+      array(1) {
+        [0]=>
+        string(10) "_tax_class"
+      }
+      ["extra_data_saved":protected]=>
+      bool(false)
+      ["updated_props":protected]=>
+      array(0) {
+      }
+    }
+    ["stores":"WC_Data_Store":private]=>
+    array(38) {
+      ["coupon"]=>
+      string(24) "WC_Coupon_Data_Store_CPT"
+      ["customer"]=>
+      string(22) "WC_Customer_Data_Store"
+      ["customer-download"]=>
+      string(31) "WC_Customer_Download_Data_Store"
+      ["customer-download-log"]=>
+      string(35) "WC_Customer_Download_Log_Data_Store"
+      ["customer-session"]=>
+      string(30) "WC_Customer_Data_Store_Session"
+      ["order"]=>
+      string(23) "WC_Order_Data_Store_CPT"
+      ["order-refund"]=>
+      string(30) "WC_Order_Refund_Data_Store_CPT"
+      ["order-item"]=>
+      string(24) "WC_Order_Item_Data_Store"
+      ["order-item-coupon"]=>
+      string(31) "WC_Order_Item_Coupon_Data_Store"
+      ["order-item-fee"]=>
+      string(28) "WC_Order_Item_Fee_Data_Store"
+      ["order-item-product"]=>
+      string(32) "WC_Order_Item_Product_Data_Store"
+      ["order-item-shipping"]=>
+      string(33) "WC_Order_Item_Shipping_Data_Store"
+      ["order-item-tax"]=>
+      string(28) "WC_Order_Item_Tax_Data_Store"
+      ["payment-token"]=>
+      string(27) "WC_Payment_Token_Data_Store"
+      ["product"]=>
+      string(25) "WC_Product_Data_Store_CPT"
+      ["product-grouped"]=>
+      string(33) "WC_Product_Grouped_Data_Store_CPT"
+      ["product-variable"]=>
+      string(34) "WC_Product_Variable_Data_Store_CPT"
+      ["product-variation"]=>
+      string(35) "WC_Product_Variation_Data_Store_CPT"
+      ["shipping-zone"]=>
+      string(27) "WC_Shipping_Zone_Data_Store"
+      ["webhook"]=>
+      string(21) "WC_Webhook_Data_Store"
+      ["report-revenue-stats"]=>
+      string(63) "Automattic\WooCommerce\Admin\API\Reports\Orders\Stats\DataStore"
+      ["report-orders"]=>
+      string(57) "Automattic\WooCommerce\Admin\API\Reports\Orders\DataStore"
+      ["report-orders-stats"]=>
+      string(63) "Automattic\WooCommerce\Admin\API\Reports\Orders\Stats\DataStore"
+      ["report-products"]=>
+      string(59) "Automattic\WooCommerce\Admin\API\Reports\Products\DataStore"
+      ["report-variations"]=>
+      string(61) "Automattic\WooCommerce\Admin\API\Reports\Variations\DataStore"
+      ["report-products-stats"]=>
+      string(65) "Automattic\WooCommerce\Admin\API\Reports\Products\Stats\DataStore"
+      ["report-variations-stats"]=>
+      string(67) "Automattic\WooCommerce\Admin\API\Reports\Variations\Stats\DataStore"
+      ["report-categories"]=>
+      string(61) "Automattic\WooCommerce\Admin\API\Reports\Categories\DataStore"
+      ["report-taxes"]=>
+      string(56) "Automattic\WooCommerce\Admin\API\Reports\Taxes\DataStore"
+      ["report-taxes-stats"]=>
+      string(62) "Automattic\WooCommerce\Admin\API\Reports\Taxes\Stats\DataStore"
+      ["report-coupons"]=>
+      string(58) "Automattic\WooCommerce\Admin\API\Reports\Coupons\DataStore"
+      ["report-coupons-stats"]=>
+      string(64) "Automattic\WooCommerce\Admin\API\Reports\Coupons\Stats\DataStore"
+      ["report-downloads"]=>
+      string(60) "Automattic\WooCommerce\Admin\API\Reports\Downloads\DataStore"
+      ["report-downloads-stats"]=>
+      string(66) "Automattic\WooCommerce\Admin\API\Reports\Downloads\Stats\DataStore"
+      ["admin-note"]=>
+      string(44) "Automattic\WooCommerce\Admin\Notes\DataStore"
+      ["report-customers"]=>
+      string(60) "Automattic\WooCommerce\Admin\API\Reports\Customers\DataStore"
+      ["report-customers-stats"]=>
+      string(66) "Automattic\WooCommerce\Admin\API\Reports\Customers\Stats\DataStore"
+      ["report-stock-stats"]=>
+      string(62) "Automattic\WooCommerce\Admin\API\Reports\Stock\Stats\DataStore"
+    }
+    ["current_class_name":"WC_Data_Store":private]=>
+    string(35) "WC_Product_Variation_Data_Store_CPT"
+    ["object_type":"WC_Data_Store":private]=>
+    string(17) "product-variation"
+  }
+  ["cache_group":protected]=>
+  string(8) "products"
+  ["meta_data":protected]=>
+  array(9) {
+    [0]=>
+    object(WC_Meta_Data)#6710 (2) {
+      ["current_data":protected]=>
+      array(3) {
+        ["id"]=>
+        int(2877608)
+        ["key"]=>
+        string(12) "custom_field"
+        ["value"]=>
+        string(0) ""
+      }
+      ["data":protected]=>
+      array(3) {
+        ["id"]=>
+        int(2877608)
+        ["key"]=>
+        string(12) "custom_field"
+        ["value"]=>
+        string(0) ""
+      }
+    }
+    [1]=>
+    object(WC_Meta_Data)#6667 (2) {
+      ["current_data":protected]=>
+      array(3) {
+        ["id"]=>
+        int(2877609)
+        ["key"]=>
+        string(24) "custom_field_description"
+        ["value"]=>
+        string(0) ""
+      }
+      ["data":protected]=>
+      array(3) {
+        ["id"]=>
+        int(2877609)
+        ["key"]=>
+        string(24) "custom_field_description"
+        ["value"]=>
+        string(0) ""
+      }
+    }
+    [2]=>
+    object(WC_Meta_Data)#6643 (2) {
+      ["current_data":protected]=>
+      array(3) {
+        ["id"]=>
+        int(2877610)
+        ["key"]=>
+        string(21) "_woocommerce_gpf_data"
+        ["value"]=>
+        array(2) {
+          ["brand"]=>
+          string(5) "VINCO"
+          ["mpn"]=>
+          string(10) "MC 1912 BL"
+        }
+      }
+      ["data":protected]=>
+      array(3) {
+        ["id"]=>
+        int(2877610)
+        ["key"]=>
+        string(21) "_woocommerce_gpf_data"
+        ["value"]=>
+        array(2) {
+          ["brand"]=>
+          string(5) "VINCO"
+          ["mpn"]=>
+          string(10) "MC 1912 BL"
+        }
+      }
+    }
+    [3]=>
+    object(WC_Meta_Data)#6688 (2) {
+      ["current_data":protected]=>
+      array(3) {
+        ["id"]=>
+        int(2877611)
+        ["key"]=>
+        string(12) "_wc_cog_cost"
+        ["value"]=>
+        string(6) "235.00"
+      }
+      ["data":protected]=>
+      array(3) {
+        ["id"]=>
+        int(2877611)
+        ["key"]=>
+        string(12) "_wc_cog_cost"
+        ["value"]=>
+        string(6) "235.00"
+      }
+    }
+    [4]=>
+    object(WC_Meta_Data)#6660 (2) {
+      ["current_data":protected]=>
+      array(3) {
+        ["id"]=>
+        int(2877612)
+        ["key"]=>
+        string(20) "_wc_cog_default_cost"
+        ["value"]=>
+        string(2) "no"
+      }
+      ["data":protected]=>
+      array(3) {
+        ["id"]=>
+        int(2877612)
+        ["key"]=>
+        string(20) "_wc_cog_default_cost"
+        ["value"]=>
+        string(2) "no"
+      }
+    }
+    [5]=>
+    object(WC_Meta_Data)#6707 (2) {
+      ["current_data":protected]=>
+      array(3) {
+        ["id"]=>
+        int(2924381)
+        ["key"]=>
+        string(8) "supplier"
+        ["value"]=>
+        string(5) "Vinco"
+      }
+      ["data":protected]=>
+      array(3) {
+        ["id"]=>
+        int(2924381)
+        ["key"]=>
+        string(8) "supplier"
+        ["value"]=>
+        string(5) "Vinco"
+      }
+    }
+    [6]=>
+    object(WC_Meta_Data)#6659 (2) {
+      ["current_data":protected]=>
+      array(3) {
+        ["id"]=>
+        int(2924382)
+        ["key"]=>
+        string(10) "supplierid"
+        ["value"]=>
+        string(4) "2979"
+      }
+      ["data":protected]=>
+      array(3) {
+        ["id"]=>
+        int(2924382)
+        ["key"]=>
+        string(10) "supplierid"
+        ["value"]=>
+        string(4) "2979"
+      }
+    }
+    [7]=>
+    object(WC_Meta_Data)#6687 (2) {
+      ["current_data":protected]=>
+      array(2) {
+        ["key"]=>
+        string(15) "yith_wapo_price"
+        ["value"]=>
+        bool(true)
+      }
+      ["data":protected]=>
+      array(2) {
+        ["key"]=>
+        string(15) "yith_wapo_price"
+        ["value"]=>
+        bool(true)
+      }
+    }
+    [8]=>
+    object(WC_Meta_Data)#6691 (2) {
+      ["current_data":protected]=>
+      array(2) {
+        ["key"]=>
+        string(22) "yith_wapo_addons_price"
+        ["value"]=>
+        float(100)
+      }
+      ["data":protected]=>
+      array(2) {
+        ["key"]=>
+        string(22) "yith_wapo_addons_price"
+        ["value"]=>
+        float(100)
+      }
+    }
+  }
+  ["legacy_datastore_props":protected]=>
+  array(0) {
+  }
+  ["post_type":protected]=>
+  string(17) "product_variation"
+  ["supports":protected]=>
+  array(1) {
+    [0]=>
+    string(16) "ajax_add_to_cart"
+  }
+  ["parent_data":protected]=>
+  array(16) {
+    ["title"]=>
+    string(74) "Armoire Rideaux - Archives & dossiers suspendus - H198 L120 - Série A ECO"
+    ["status"]=>
+    string(7) "publish"
+    ["sku"]=>
+    string(9) "amm198120"
+    ["manage_stock"]=>
+    string(2) "no"
+    ["backorders"]=>
+    string(2) "no"
+    ["stock_quantity"]=>
+    int(0)
+    ["weight"]=>
+    string(0) ""
+    ["length"]=>
+    string(4) "1200"
+    ["width"]=>
+    string(3) "430"
+    ["height"]=>
+    string(4) "1980"
+    ["tax_class"]=>
+    string(0) ""
+    ["shipping_class_id"]=>
+    int(28)
+    ["image_id"]=>
+    int(64024)
+    ["purchase_note"]=>
+    string(0) ""
+    ["catalog_visibility"]=>
+    string(7) "visible"
+    ["global_unique_id"]=>
+    string(0) ""
+  }
+}
+
+[28-Sep-2024 05:08:52 UTC] raqcontent :
+NULL
+
+[28-Sep-2024 05:08:52 UTC] Une erreur est survenue :
+object(WC_Order_Item_Product)#6483 (15) {
+  ["id":protected]=>
+  int(65341)
+  ["data":protected]=>
+  array(11) {
+    ["order_id"]=>
+    int(65255)
+    ["name"]=>
+    string(74) "Armoire Rideaux - Archives & dossiers suspendus - H198 L120 - Série A ECO"
+    ["product_id"]=>
+    int(63990)
+    ["variation_id"]=>
+    int(64019)
+    ["quantity"]=>
+    int(1)
+    ["tax_class"]=>
+    string(0) ""
+    ["subtotal"]=>
+    string(3) "399"
+    ["subtotal_tax"]=>
+    string(4) "79.8"
+    ["total"]=>
+    string(3) "399"
+    ["total_tax"]=>
+    string(4) "79.8"
+    ["taxes"]=>
+    array(2) {
+      ["total"]=>
+      array(1) {
+        [1]=>
+        string(4) "79.8"
+      }
+      ["subtotal"]=>
+      array(1) {
+        [1]=>
+        string(4) "79.8"
+      }
+    }
+  }
+  ["changes":protected]=>
+  array(0) {
+  }
+  ["object_read":protected]=>
+  bool(true)
+  ["object_type":protected]=>
+  string(10) "order_item"
+  ["extra_data":protected]=>
+  array(9) {
+    ["product_id"]=>
+    int(0)
+    ["variation_id"]=>
+    int(0)
+    ["quantity"]=>
+    int(1)
+    ["tax_class"]=>
+    string(0) ""
+    ["subtotal"]=>
+    int(0)
+    ["subtotal_tax"]=>
+    int(0)
+    ["total"]=>
+    int(0)
+    ["total_tax"]=>
+    int(0)
+    ["taxes"]=>
+    array(2) {
+      ["subtotal"]=>
+      array(0) {
+      }
+      ["total"]=>
+      array(0) {
+      }
+    }
+  }
+  ["default_data":protected]=>
+  array(11) {
+    ["order_id"]=>
+    int(0)
+    ["name"]=>
+    string(0) ""
+    ["product_id"]=>
+    int(0)
+    ["variation_id"]=>
+    int(0)
+    ["quantity"]=>
+    int(1)
+    ["tax_class"]=>
+    string(0) ""
+    ["subtotal"]=>
+    int(0)
+    ["subtotal_tax"]=>
+    int(0)
+    ["total"]=>
+    int(0)
+    ["total_tax"]=>
+    int(0)
+    ["taxes"]=>
+    array(2) {
+      ["subtotal"]=>
+      array(0) {
+      }
+      ["total"]=>
+      array(0) {
+      }
+    }
+  }
+  ["data_store":protected]=>
+  object(WC_Data_Store)#6452 (4) {
+    ["instance":"WC_Data_Store":private]=>
+    object(WC_Order_Item_Product_Data_Store)#6449 (4) {
+      ["meta_type":protected]=>
+      string(10) "order_item"
+      ["object_id_field_for_meta":protected]=>
+      string(13) "order_item_id"
+      ["internal_meta_keys":protected]=>
+      array(9) {
+        [0]=>
+        string(11) "_product_id"
+        [1]=>
+        string(13) "_variation_id"
+        [2]=>
+        string(4) "_qty"
+        [3]=>
+        string(10) "_tax_class"
+        [4]=>
+        string(14) "_line_subtotal"
+        [5]=>
+        string(18) "_line_subtotal_tax"
+        [6]=>
+        string(11) "_line_total"
+        [7]=>
+        string(9) "_line_tax"
+        [8]=>
+        string(14) "_line_tax_data"
+      }
+      ["must_exist_meta_keys":protected]=>
+      array(0) {
+      }
+    }
+    ["stores":"WC_Data_Store":private]=>
+    array(38) {
+      ["coupon"]=>
+      string(24) "WC_Coupon_Data_Store_CPT"
+      ["customer"]=>
+      string(22) "WC_Customer_Data_Store"
+      ["customer-download"]=>
+      string(31) "WC_Customer_Download_Data_Store"
+      ["customer-download-log"]=>
+      string(35) "WC_Customer_Download_Log_Data_Store"
+      ["customer-session"]=>
+      string(30) "WC_Customer_Data_Store_Session"
+      ["order"]=>
+      string(23) "WC_Order_Data_Store_CPT"
+      ["order-refund"]=>
+      string(30) "WC_Order_Refund_Data_Store_CPT"
+      ["order-item"]=>
+      string(24) "WC_Order_Item_Data_Store"
+      ["order-item-coupon"]=>
+      string(31) "WC_Order_Item_Coupon_Data_Store"
+      ["order-item-fee"]=>
+      string(28) "WC_Order_Item_Fee_Data_Store"
+      ["order-item-product"]=>
+      string(32) "WC_Order_Item_Product_Data_Store"
+      ["order-item-shipping"]=>
+      string(33) "WC_Order_Item_Shipping_Data_Store"
+      ["order-item-tax"]=>
+      string(28) "WC_Order_Item_Tax_Data_Store"
+      ["payment-token"]=>
+      string(27) "WC_Payment_Token_Data_Store"
+      ["product"]=>
+      string(25) "WC_Product_Data_Store_CPT"
+      ["product-grouped"]=>
+      string(33) "WC_Product_Grouped_Data_Store_CPT"
+      ["product-variable"]=>
+      string(34) "WC_Product_Variable_Data_Store_CPT"
+      ["product-variation"]=>
+      string(35) "WC_Product_Variation_Data_Store_CPT"
+      ["shipping-zone"]=>
+      string(27) "WC_Shipping_Zone_Data_Store"
+      ["webhook"]=>
+      string(21) "WC_Webhook_Data_Store"
+      ["report-revenue-stats"]=>
+      string(63) "Automattic\WooCommerce\Admin\API\Reports\Orders\Stats\DataStore"
+      ["report-orders"]=>
+      string(57) "Automattic\WooCommerce\Admin\API\Reports\Orders\DataStore"
+      ["report-orders-stats"]=>
+      string(63) "Automattic\WooCommerce\Admin\API\Reports\Orders\Stats\DataStore"
+      ["report-products"]=>
+      string(59) "Automattic\WooCommerce\Admin\API\Reports\Products\DataStore"
+      ["report-variations"]=>
+      string(61) "Automattic\WooCommerce\Admin\API\Reports\Variations\DataStore"
+      ["report-products-stats"]=>
+      string(65) "Automattic\WooCommerce\Admin\API\Reports\Products\Stats\DataStore"
+      ["report-variations-stats"]=>
+      string(67) "Automattic\WooCommerce\Admin\API\Reports\Variations\Stats\DataStore"
+      ["report-categories"]=>
+      string(61) "Automattic\WooCommerce\Admin\API\Reports\Categories\DataStore"
+      ["report-taxes"]=>
+      string(56) "Automattic\WooCommerce\Admin\API\Reports\Taxes\DataStore"
+      ["report-taxes-stats"]=>
+      string(62) "Automattic\WooCommerce\Admin\API\Reports\Taxes\Stats\DataStore"
+      ["report-coupons"]=>
+      string(58) "Automattic\WooCommerce\Admin\API\Reports\Coupons\DataStore"
+      ["report-coupons-stats"]=>
+      string(64) "Automattic\WooCommerce\Admin\API\Reports\Coupons\Stats\DataStore"
+      ["report-downloads"]=>
+      string(60) "Automattic\WooCommerce\Admin\API\Reports\Downloads\DataStore"
+      ["report-downloads-stats"]=>
+      string(66) "Automattic\WooCommerce\Admin\API\Reports\Downloads\Stats\DataStore"
+      ["admin-note"]=>
+      string(44) "Automattic\WooCommerce\Admin\Notes\DataStore"
+      ["report-customers"]=>
+      string(60) "Automattic\WooCommerce\Admin\API\Reports\Customers\DataStore"
+      ["report-customers-stats"]=>
+      string(66) "Automattic\WooCommerce\Admin\API\Reports\Customers\Stats\DataStore"
+      ["report-stock-stats"]=>
+      string(62) "Automattic\WooCommerce\Admin\API\Reports\Stock\Stats\DataStore"
+    }
+    ["current_class_name":"WC_Data_Store":private]=>
+    string(32) "WC_Order_Item_Product_Data_Store"
+    ["object_type":"WC_Data_Store":private]=>
+    string(18) "order-item-product"
+  }
+  ["cache_group":protected]=>
+  string(11) "order-items"
+  ["meta_data":protected]=>
+  array(1) {
+    [0]=>
+    object(WC_Meta_Data)#6499 (2) {
+      ["current_data":protected]=>
+      array(3) {
+        ["key"]=>
+        string(18) "pa_coloris-caisson"
+        ["value"]=>
+        string(10) "blanc-9010"
+        ["id"]=>
+        int(527848)
+      }
+      ["data":protected]=>
+      array(3) {
+        ["key"]=>
+        string(18) "pa_coloris-caisson"
+        ["value"]=>
+        string(10) "blanc-9010"
+        ["id"]=>
+        int(527848)
+      }
+    }
+  }
+  ["legacy_datastore_props":protected]=>
+  array(0) {
+  }
+  ["legacy_values"]=>
+  NULL
+  ["legacy_cart_item_key"]=>
+  NULL
+  ["meta_type":protected]=>
+  string(10) "order_item"
+  ["legacy_package_key"]=>
+  NULL
+}
+
+[28-Sep-2024 05:08:52 UTC] coucou3
+[28-Sep-2024 05:08:52 UTC] Une erreur est survenue :
+int(63990)
+int(64019)
+int(1)
+int(399)
+
+[28-Sep-2024 05:08:52 UTC] coucou200
+[28-Sep-2024 05:08:52 UTC] coucou2000
+[28-Sep-2024 05:08:52 UTC] coucou300
+[28-Sep-2024 05:08:52 UTC] coucou6
+[28-Sep-2024 05:08:52 UTC] Une erreur est survenue :
+object(WC_Meta_Data)#6499 (2) {
+  ["current_data":protected]=>
+  array(3) {
+    ["key"]=>
+    string(18) "pa_coloris-caisson"
+    ["value"]=>
+    string(10) "blanc-9010"
+    ["id"]=>
+    int(527848)
+  }
+  ["data":protected]=>
+  array(3) {
+    ["key"]=>
+    string(18) "pa_coloris-caisson"
+    ["value"]=>
+    string(10) "blanc-9010"
+    ["id"]=>
+    int(527848)
+  }
+}
+
+[28-Sep-2024 05:08:52 UTC] coucou13

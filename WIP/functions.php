@@ -396,7 +396,29 @@ function nxover_option_delay($type, $opt, $method = '', $vinco = false, $order_i
         }
 
     $terms =wc_get_product_terms($p_id, 'pa_delai-dexpedition') ;
+//laure
+// Récupère les taxonomies associées au type de contenu 'product'
+$product_taxonomies = get_object_taxonomies('product', 'names');
 
+// Boucle à travers les taxonomies et récupère les termes associés au produit
+foreach ( $product_taxonomies as $taxonomy ) {
+    // Obtenir les termes associés au produit pour cette taxonomie
+    $terms = wp_get_object_terms( $p_id, $taxonomy );
+    
+    // Afficher les résultats
+    if ( !empty( $terms ) && !is_wp_error( $terms ) ) {
+        error_log(print_r('$taxonomy  est: ' . $taxonomy , true));
+
+        foreach ( $terms as $term ) {
+            echo "<li>" . $term->name . " (ID: " . $term->term_id . ")</li>";
+            error_log(print_r('$term->name est: ' . $term->name , true));
+            error_log(print_r('$term->id est: ' . $term->id , true));
+        }
+    } else {
+        error_log(print_r('Aucun terme trouvé pour la taxonomie: ' . $term->id , true));
+
+    }
+}
 
     ob_start();  
     var_dump($terms);
@@ -406,7 +428,7 @@ function nxover_option_delay($type, $opt, $method = '', $vinco = false, $order_i
         $delai = intval(preg_replace('/[^0-9.]/', '', wc_get_product_terms($cart_item['product_id'], 'pa_delai-dexpedition', array('fields' => 'names'))[0]));
         error_log(print_r('$delai est: ' . $delai, true));
 
-
+// fin laure
 
         nxover_log("delai");
         nxover_log(print_r($delai, true));

@@ -56,6 +56,7 @@ function nxover_WooCommerce_Product_Fees__get_fees($obj, $cart)
         return $fees;
 
     foreach ($cart->get_cart() as $cart_item => $item) {
+        error_log("macléPourRetrouverMaVariable: " . print_r($item, true));
 
         // base
         $item_data = [
@@ -83,6 +84,8 @@ function nxover_WooCommerce_Product_Fees__get_fees($obj, $cart)
 
         $qty_addon = $item['yith_wapo_qty_options'];
         $options = $item['yith_wapo_options'] ?? false;
+        error_log(print_r('testlaure', true));
+
         if ($options) {
             // nxover_log('options:');
             // nxover_log($options);
@@ -138,50 +141,45 @@ function nxover_WooCommerce_Product_Fees__get_fees($obj, $cart)
 
 function nxover_order_before_calculate_totals($and_taxes, $order)
 {
-    nxover_log('nxover_order_before_calculate_totals:');
-error_log("coucou4");
+    // nxover_log('nxover_order_before_calculate_totals called.');
+    error_log('coucou4');
+
     $total_et = 0;
-    
-    foreach($order->get_items() as $item)
-    {
+
+    foreach ($order->get_items() as $item) {
         $p      = $item->get_product();
         $qty    = $item->get_quantity();
         $p_id   = $item->get_product_id();
 
-        nxover_log("main item: $p_id");
-//         nxover_log("meta $p_id : ".get_post_meta($p_id, 'product-fee-amount', true));
-//         nxover_log("meta ".$item->get_variation_id()." : ".get_post_meta($item->get_variation_id(), 'product-fee-amount', true));
+        // nxover_log("Main item: $p_id");
+        // nxover_log("Quantity item: $qty");
 
-        if ($et = nxover_get_product_ecotax($p_id, $item->get_variation_id(), $qty, $item->get_total() / $qty))
-        {
-            nxover_log('ET = '.$et['amount']);
-//             nxover_log($item);
+        if ($et = nxover_get_product_ecotax($p_id, $item->get_variation_id(), $qty, $item->get_total() / $qty)) {
+            // nxover_log('ET = '.$et['amount']);
+            //             nxover_log($item);
             $total_et += $et['amount'];
         }
-        
-        if ($addons = nxover_get_order_item_addons($item))
-        {
-            foreach($addons as $p)
-            {
-                if ($et = nxover_get_product_ecotax($p['p_id'], 0, $p['qty']))
-                {
+
+        if ($addons = nxover_get_order_item_addons($item)) {
+            foreach ($addons as $p) {
+                // nxover_log('addon: '.$p['p_id']);
+
+                if ($et = nxover_get_product_ecotax($p['p_id'], 0, $qty)) {
                     // nxover_log('ET = '.$et['amount']);
+                    //                     nxover_log($p);
                     $total_et += $et['amount'];
                 }
             }
         }
     }
-    
-    if ($total_et > 0)
-    {
+
+    if ($total_et > 0) {
         $new = true;
-        
-        foreach($order->get_items('fee') as $item_id => $item) 
-        {
-            if ($item->get_name() == NXOVER_ECOTAX_FEE_NAME)
-            {
-                nxover_log('ET exists : '.$item->get_total());
-                nxover_log("replace : $total_et");
+
+        foreach ($order->get_items('fee') as $item_id => $item) {
+            if ($item->get_name() == NXOVER_ECOTAX_FEE_NAME) {
+                // nxover_log('ET exists : '.$item->get_total());
+                // nxover_log("replace : $total_et");
 
                 $item->set_total($total_et);
                 $item->save();
@@ -189,12 +187,11 @@ error_log("coucou4");
                 break;
             }
         }
-        
-        if ($new)
-        {
-            nxover_log('ET new');
-            nxover_log("create : $total_et");
-            
+
+        if ($new) {
+            // nxover_log('ET new');
+            // nxover_log("create : $total_et");
+
             $item = new WC_Order_Item_Fee();
             $item->set_name(NXOVER_ECOTAX_FEE_NAME);
             $item->set_total($total_et);
@@ -208,44 +205,33 @@ error_log("coucou4");
 function nxover_get_order_item_addons($item)
 {
     error_log('coucou6');
-    nxover_log("nxover_get_order_item_addons : ". print_r($item, true));
+
     $products = [];
 
     foreach ($item->get_meta_data() as $m) {
-		if ($m->key === '_ywapo_product_addon_qty') {
-            $addon_qtys = $m->value;
-        }
         if (nxover_is_ywapo_meta($m->key)) {
             foreach ($m->value as $opt) {
-				nxover_log("nxover_get_order_item_addons OPT : ".print_r($opt, true));
-                foreach ($opt as $k => $v) {      
+                foreach ($opt as $k => $v) {
                     if ($p_id = nxover_addon_id($v))
-						$opt_parts = explode('-', $k);
-						$qty_key = $opt_parts[0] . '-' . $opt_parts[1];
-						$qty = isset($addon_qtys[$qty_key]) ? $addon_qtys[$qty_key] : 1;
-						$products[] = [
-							'opt' => $opt_parts ,
-							'p_id' => $p_id,
-							'qty' =>  $qty
-						];
-
-				nxover_log("products tableau : ".print_r($products, true));
+                        $products[] = ['opt' => explode('-', $k), 'p_id' => $p_id];
+                }
             }
         }
     }
-}
-
 
     return $products;
 }
-
-
 
 function nxover_get_product_ecotax($p_id, $v_id, $qty, $price = 0)
 {
     error_log('coucou3');
 
-nxover_log('nxover_get_product_ecotax_qty '.$qty);
+ob_start();  
+var_dump($p_id, $v_id, $qty, $price);
+$output = ob_get_clean();
+$errorMessage = "Une erreur est survenue :\n" . $output;
+error_log($errorMessage);
+
     static $_wcpf = null;
 
     // nxover_log("nxover_get_product_ecotax($p_id, $v_id, $qty, $price)");
@@ -264,7 +250,6 @@ nxover_log('nxover_get_product_ecotax_qty '.$qty);
 
         $_wcpf
         &&
-        //NB get_fee_data récupère les fees sur les cart_item
         ($fee = $_wcpf->get_fee_data([
             'id'           => ($v_id ? $v_id : $p_id),
             'variation_id' => $v_id,
@@ -275,22 +260,28 @@ nxover_log('nxover_get_product_ecotax_qty '.$qty);
         &&
         $fee['name'] == NXOVER_ECOTAX_FEE_NAME
     ) {
-
+        error_log('coucou300');
+        echo "fee : "; print_r($fee);
         return $fee;
 
     }
     else {
         error_log('coucou400');
 
+        // nxover_log('** nope');
+        //         nxover_log($fee);
+        //         ob_start();
+        //         var_dump($fee['name'], NXOVER_ECOTAX_FEE_NAME);
+        //         nxover_log(ob_get_clean());
         return false;
     }
-
+    error_log('ecotaxnxover');
 
 }
 
 function nxover_cart_options_shipping_delay($item, $method)
 {
-    error_log('coucou8nxover_cart_options_shipping_delay');
+    error_log('coucou8');
 
     $delay = false;
 
@@ -306,7 +297,7 @@ function nxover_cart_options_shipping_delay($item, $method)
 
 function nxover_cart_options_manuf_delay($item)
 {
-    error_log('coucou9nxover_cart_options_manuf_delay');
+    error_log('coucou9');
 
     nxover_log('** nxover_cart_options_manuf_delay');
     $delay = false;
@@ -315,13 +306,6 @@ function nxover_cart_options_manuf_delay($item)
         foreach ($options as $opt) {
             if (($d = nxover_option_delay('M', $opt)) !== false)
                 $delay = max($d, (int) $delay);
-            //laure
-                ob_start();
-                var_dump($delay);
-                $output = ob_get_clean();
-                $message = 'delainxover:' . $output;
-                error_log($message);
-            //
         }
     }
     return $delay;
@@ -379,33 +363,19 @@ function get_product_taxonomy_term_nxover($p_id, $taxonomy)
 }
 function nxover_option_delay($type, $opt, $method = '', $vinco = false, $order_id = null, $add_exp = true)
 {
-    error_log('coucou11nxover_option_delay');
+    error_log('coucou11');
 
     $delay = false;
 
-
     foreach ($opt as $opt_id => $v) {
         $p_id = nxover_addon_id($v);
-        error_log(print_r('$p_id est: ' . $p_id, true));
         if ('product_variation' === get_post_type($p_id)) {
             $parent_id = wp_get_post_parent_id($p_id);
-            error_log(print_r('$parent_id  est: ' . $parent_id , true));
         } else {
             $parent_id = $p_id;
-            error_log(print_r('$parent_id  est: ' . $parent_id , true));
         }
 
-    $terms =wc_get_product_terms($p_id, 'pa_delai-dexpedition') ;
-
-
-    ob_start();  
-    var_dump($terms);
-    $output = ob_get_clean();
-    $errorMessage = "terms:\n" . $output;
-    error_log($errorMessage);
         $delai = intval(preg_replace('/[^0-9.]/', '', wc_get_product_terms($cart_item['product_id'], 'pa_delai-dexpedition', array('fields' => 'names'))[0]));
-        error_log(print_r('$delai est: ' . $delai, true));
-
 
 
         nxover_log("delai");
@@ -415,6 +385,7 @@ function nxover_option_delay($type, $opt, $method = '', $vinco = false, $order_i
             $d  = (int) preg_replace('/[^0-9.]/', '', $t[0]);
 
             // echo "   addon $p_id / ".$t[0]." / $d\n";
+
 
             if ($type == 'S') {
                 // $s  = get_post_meta($p_id, 'supplier', true);
@@ -434,6 +405,89 @@ function nxover_option_delay($type, $opt, $method = '', $vinco = false, $order_i
 
     return $delay;
 }
+
+/*
+function nxover_get_order_item_addons($item)
+{
+    $addons = [];
+    
+    foreach($item->get_meta_data() as $m)
+    {
+//         print_r($m);
+        
+        if (nxover_is_ywapo_meta($m->key))
+        {
+            foreach($m->value as $o)
+            {
+                foreach($o as $v)
+                {
+                    if (($p_id = nxover_addon_id($v)) && ($p = wc_get_product($p_id)))
+                        $addons[$p_id] = clone $p;
+                }
+            }
+        }
+    }
+    
+    return $addons;
+}
+*/
+
+/*
+function nxover_filter_qpdf_item($item, $html)
+{
+    $sku = [];
+    $opt = [];
+    
+    echo "<pre>meta:\n";
+    var_dump($item->get_meta_data(NXOVER_ADDON_META_KEY));
+    echo "all:\n";
+    var_dump($item->get_all_formatted_meta_data());
+    echo "</pre>";
+    
+    foreach($item->get_meta_data() as $m)
+    {
+        if ($m->key ==  '_ywraq_wc_ywapo')
+        {
+            foreach($m->value as $o)
+            {
+                foreach($o as $v)
+                {
+                    if ($p_id = nxover_addon_id($v))
+                        $opt[$p_id] = 1;
+                }
+            }
+        }
+
+        elseif ($i = stripos($m->key, '(optionnel)'))
+        {
+            $name = trim(preg_replace('/\d x (.*) \(\+[0-9.]+\s€\)/u', '$1', 
+                            html_entity_decode(strip_tags($m->value), ENT_QUOTES | ENT_SUBSTITUTE | ENT_HTML401, 'UTF-8')));
+                            
+            if ($p = nxover_product_by_name($name))
+                $sku[$p->get_id()] = ['sku' => $p->get_sku(), 'name' => $name, 'key' => trim(str_replace(substr($m->key, $i, strlen('(optionnel)')), '', $m->key))];
+        }
+    }
+        
+    if ($todo = array_intersect_key($sku, $opt))
+    {
+        $rowset = explode('<br>', $html);
+        foreach($todo as $p)
+        {
+            foreach($rowset as &$row)
+            {                
+                if (stripos($row, $p['key'].' (optionnel)') !== false)
+                {
+                    $row = preg_replace('/\s(\(\+\<span class.+&euro;.+\))/u', ' - '.$p['sku'].' $1', $row);
+                    break;
+                }
+            }
+        }
+        $html = implode('<br>', $rowset);
+    }
+    
+    return $html;
+}
+*/
 
 function nxover_filter_qpdf_item($item, $html)
 {
@@ -506,24 +560,16 @@ function nxover_product_by_name($name)
 
 function nxover_addon_id($meta_value)
 {
-    error_log('coucou15nxover_addon_id');
-    $addonId = null;
-    if (is_array($meta_value)) {
-        // Loop through each element of the array
-        foreach ($meta_value as $value) {
-            // Check if the element is a string and matches the product pattern
-            if (is_string($value) && preg_match('/product-(\d+)-.*/i', $value, $match)) {
-                $addonId = (int) $match[1]; // Extract the numeric ID
-                break; // Stop once a match is found
-            }
-        }
-    } elseif (is_string($meta_value)) {
-        // If $meta_value is a string, check the product pattern directly
-        $addonId = preg_match('/product-(\d+)-.*/i', $meta_value, $match) ? (int) $match[1] : null;
-    }
+    error_log('coucou15');
+    ob_start();
+    var_dump($meta_value);
+    $output = ob_get_clean();
+    $errorMessage = "Une erreur est survenue :\n" . $output;
+    error_log($errorMessage);
 
-    return $addonId;
+    return (preg_match('/product-(\d+)-.*/i', $meta_value, $match) ? (int) $match[1] : null);
 }
+
 function nxover_new_order_item($item_id, $cart_item, $cart_item_key) {}
 
 function nxover_woocommerce_checkout_create_order($order, $data) {}
@@ -546,11 +592,7 @@ function nxover_ywraq_from_cart_to_order_item($values, $cart_item_key, $item_id,
 {
     error_log('coucou17');
 
-
-        nxover_log("nxover_ywraq_from_cart_to_order_item");
-		
     $item = $order->get_item($item_id);
-        nxover_log(print_r($item, true));
 
     if (isset($values['yith_wapo_options'])) {
         foreach ($values['yith_wapo_options'] as $opt) {
@@ -622,9 +664,9 @@ function nxover_add_cart_item_data($cart_item_data, $product_id, $post_data = nu
     error_log('coucou20');
 
     if (0/*NXOVER_DEBUG*/) {
-        // echo "<pre>U\n";
-        // var_dump($post_data);
-        // print_r($cart_item_data);
+        echo "<pre>U\n";
+        var_dump($post_data);
+        print_r($cart_item_data);
         exit;
     }
 }
@@ -635,7 +677,7 @@ function nxover_uninstall() {}
 
 function nxover_log($x)
 {
-    error_log('coucou21-nxoverlog');
+    error_log('coucou21');
 
     static $fh = null;
 
