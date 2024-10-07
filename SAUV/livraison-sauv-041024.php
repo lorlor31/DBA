@@ -172,17 +172,10 @@ Class Livraison {
         if (array_key_exists($id, self::$cache)) {
             return self::$cache[$id];
         }
-        error_log(print_r('$id est: ' . $id, true));
-        error_log(print_r('$is_var est: ' . $is_var, true));
         $product = $is_var ? new WC_Product_Variation($id) : wc_get_product($id);
         if(!$product) {
             exit;
         }
-        ob_start();
-        var_dump($product);
-        $output = ob_get_clean();
-        $message = 'Produit:' . $output;
-        error_log($message);
         $sku = $product->get_sku();
         if (array_key_exists($sku, self::$stock)) {
             self::$cache[$id] = self::$stock[$sku];
@@ -197,8 +190,6 @@ Class Livraison {
             }
         }
         self::$cache[$id] = $delai + self::$decalage['fabrication'];
-        //laure
-        error_log(print_r('Dans getFabrication $delai est: ' . $delai, true));
         return $delai + self::$decalage['fabrication'];
     }
 
@@ -225,8 +216,6 @@ Class Livraison {
             $formule_id = self::$formule[$formule];
             $delai += self::$decalage[$formule_id];
         }
-        //laure
-        error_log(print_r('Dans getLIvraison $delai est: ' . $delai, true));
         return $delai;
     }
 
@@ -417,16 +406,6 @@ Class Livraison {
 					break;
 				}
 			} while (true);
-            // //laure
-// Démarrer la capture de sortie
-ob_start();  
-
-// Utiliser var_dump pour capturer les détails des variables
-var_dump($date_livraison_max);
-var_dump($date_livraison);
-
-// Récupérer et nettoyer le tampon
-$output = ob_get_clean();
 
 // Si les variables sont des objets DateTime, les formater en chaîne
 $date_livraison_max_str = ($date_livraison_max instanceof DateTime) ? $date_livraison_max->format('Y-m-d H:i:s') : $date_livraison_max;
@@ -952,6 +931,15 @@ if (!function_exists('process_ywapo_meta_data')) {
 			
             if (is_array($meta_item)) {
                 foreach ($meta_item as $meta_key => $meta_value) {
+                    // //laure
+                    // ob_start();  
+                    // var_dump($meta_key);
+                    // var_dump($meta_value);
+                    // $output = ob_get_clean();
+                    // $errorMessage = '  key - val :\n'. $output;
+                    // error_log($errorMessage);
+                    // //fin laure
+
                     if (strpos($meta_value, 'product-') === 0) {
 						$addon_id = explode('-', $meta_key)[0];
 						$addon_settings = get_addon_settings($addon_id);
@@ -1029,12 +1017,18 @@ if (!function_exists('process_addons_for_order_items')) {
         foreach ($item_order as $order_item) {
 
 			$order_item_id = $order_item->get_id();
-			error_log("order_item_id de process_addons_for_order_items " . $order_item_id );
-			$addons_simple = [];
+            //laure
+            // error_log('$order_item_id est ' . $order_item_id);
+            $addons_simple = [];
 			$addons_product = [];
             $meta_data_array = $order_item->get_meta_data();
             foreach ($meta_data_array as $meta_data) {
-					
+                //laure on a bien chaq meta
+                    // ob_start();
+                    // var_dump($meta_data);
+                    // $output = ob_get_clean();
+                    // $errorMessage = '   $meta_data est :\n' . $output;
+                    // error_log($errorMessage);
                 if (($meta_data->key === '_ywapo_meta_data') || ($meta_data->key ==='_ywraq_wc_ywapo')) {
                     $ywapo_meta_data = $meta_data->value;
 
@@ -1447,6 +1441,7 @@ function email_shipping_delay_order( $order, $sent_to_admin, $plain_text, $email
             $drop_order = w_c_dropshipping()->orders->get_order_info($order);
             $shipping_methods = $drop_order['order']->get_shipping_methods();
             $order_items = $order->get_items();
+
             foreach ( $shipping_methods as $shipping_method ) {
                 $html .= '<table style="width:100%;font-size:9pt;border:dashed 1px #d7d7d7;border-spacing:0;border-collapse:collapse;">';
                 $supplier_name = $references = '';
@@ -1462,12 +1457,22 @@ function email_shipping_delay_order( $order, $sent_to_admin, $plain_text, $email
                         $is_variation = $product->is_type('variation') ? true : false;
                         $attributes = $is_variation ? $product->get_variation_attributes() : [];
                         $product_id = $is_variation ? $product->get_parent_id() : $product->get_id();
+                        //laure  
+                        // error_log('$product_id est ' . $product_id); //OK
                         $image = wp_get_attachment_image_src( get_post_thumbnail_id( $product_id ), 'thumbnail' );
                         $image_tag = '<img src="' . $image[0] . '" width="60" height="60">';
                         $supplier_name = get_post_meta($item['product_id'], 'supplier', true);
 						$order_item_id = $item->get_id();
-						$addons_for_items = process_addons_for_order_items($order_items);
+                        //laure  
+                        error_log('$order_item_id est ' . $order_item_id);
 
+						$addons_for_items = process_addons_for_order_items($order_items);
+                        //laure  n'est pas lancé
+    ob_start();  
+    var_dump($addons_for_items);
+    $output = ob_get_clean();
+    $errorMessage = '  $addons_for_items est :\n'. $output;
+    error_log($errorMessage);
 						$references .= sizeof($attributes) > 0 ?
 							'<tr style="height:60px;vertical-align:center;"><td style="width:60px;padding:5px 10px 5px 0;background-color:#fcfcfc;">' . $image_tag . '</td><td style="padding:5px 0;background-color:#fcfcfc;"><span><b>' . $product->get_name('edit') . '</b><br><small style="color:#797979;">' . wc_get_formatted_variation($attributes, true) . '</small></span></td></tr>' :
 							'<tr style="height:60px;vertical-align:center;"><td style="width:60px;padding:5px 10px 5px 0;background-color:#fcfcfc;">' . $image_tag . '</td><td style="padding:5px 0;background-color:#fcfcfc;"><span><b>' . $product->get_name('edit') . '</b></span></td></tr>';

@@ -214,14 +214,37 @@ function nxover_get_order_item_addons($item)
     foreach ($item->get_meta_data() as $m) {
 		if ($m->key === '_ywapo_product_addon_qty') {
             $addon_qtys = $m->value;
+			nxover_log("addon_qtys 1 : ". print_r($addon_qtys, true));
+
         }
+
         if (nxover_is_ywapo_meta($m->key)) {
+			$ywapo_meta_data = $m->value;
+			$addons_info = process_ywapo_meta_data($ywapo_meta_data, $item->get_meta_data());
+			nxover_log("nxover_get_order_item_addons addons_info : ".print_r($addons_info, true));
+			$addon_qtys = $addons_info[0]['quantity'];
+			nxover_log("addon_qtys : ". print_r($addon_qtys, true));
+			nxover_log("ywapo_meta_data : ". print_r($ywapo_meta_data, true));
+					
             foreach ($m->value as $opt) {
+
+							// $addons_info = process_ywapo_meta_data($opt, $item->get_meta_data());
+							// nxover_log("nxover_get_order_item_addons addons_info : ".print_r($addons_info, true));
+							// $addon_qtys = $addons_info[0]['quantity'];
+							// nxover_log("addon_qtys : ". print_r($addon_qtys, true));
+				
+				
+				
 				nxover_log("nxover_get_order_item_addons OPT : ".print_r($opt, true));
                 foreach ($opt as $k => $v) {      
                     if ($p_id = nxover_addon_id($v))
 						$opt_parts = explode('-', $k);
+					nxover_log("nxover_get_order_item_addons opt_parts : ".print_r($opt_parts, true));
+					nxover_log("nxover_get_order_item_addons v : ".print_r($v, true));
 						$qty_key = $opt_parts[0] . '-' . $opt_parts[1];
+						nxover_log("nxover_get_order_item_addons qty_key : ".print_r($qty_key, true));
+						nxover_log("nxover_get_order_item_addons qty_key : ".print_r($qty_key, true));
+
 						$qty = isset($addon_qtys[$qty_key]) ? $addon_qtys[$qty_key] : 1;
 						$products[] = [
 							'opt' => $opt_parts ,
@@ -382,11 +405,11 @@ function nxover_option_delay($type, $opt, $method = '', $vinco = false, $order_i
     error_log('coucou11nxover_option_delay');
 
     $delay = false;
-
-
+    // Parcourir les options 
     foreach ($opt as $opt_id => $v) {
         $p_id = nxover_addon_id($v);
         error_log(print_r('$p_id est: ' . $p_id, true));
+        // Récupérer l'id du produit parent 
         if ('product_variation' === get_post_type($p_id)) {
             $parent_id = wp_get_post_parent_id($p_id);
             error_log(print_r('$parent_id  est: ' . $parent_id , true));
@@ -395,52 +418,17 @@ function nxover_option_delay($type, $opt, $method = '', $vinco = false, $order_i
             error_log(print_r('$parent_id  est: ' . $parent_id , true));
         }
 
-    $terms =wc_get_product_terms($p_id, 'pa_delai-dexpedition') ;
-//laure
-// Récupère les taxonomies associées au type de contenu 'product'
-$product_taxonomies = get_object_taxonomies('product', 'names');
-
-// Boucle à travers les taxonomies et récupère les termes associés au produit
-foreach ( $product_taxonomies as $taxonomy ) {
-    // Obtenir les termes associés au produit pour cette taxonomie
-    $terms = wp_get_object_terms( $p_id, $taxonomy );
-    
-    // Afficher les résultats
-    if ( !empty( $terms ) && !is_wp_error( $terms ) ) {
-        error_log(print_r('$taxonomy  est: ' . $taxonomy , true));
-
-        foreach ( $terms as $term ) {
-            echo "<li>" . $term->name . " (ID: " . $term->term_id . ")</li>";
-            error_log(print_r('$term->name est: ' . $term->name , true));
-            error_log(print_r('$term->id est: ' . $term->id , true));
-        }
-    } else {
-        error_log(print_r('Aucun terme trouvé pour la taxonomie: ' . $term->id , true));
-
-    }
-}
-
-    ob_start();  
-    var_dump($terms);
-    $output = ob_get_clean();
-    $errorMessage = "terms:\n" . $output;
-    error_log($errorMessage);
-        $delai = intval(preg_replace('/[^0-9.]/', '', wc_get_product_terms($cart_item['product_id'], 'pa_delai-dexpedition', array('fields' => 'names'))[0]));
-        error_log(print_r('$delai est: ' . $delai, true));
-
-// fin laure
-
-        nxover_log("delai");
-        nxover_log(print_r($delai, true));
+    // Récupérer le nb de semaines du délai d'expédition du produit parent de l'addon
+    $delay = intval(preg_replace('/[^0-9.]/', '', wp_get_post_terms( $parent_id, 'pa_delai-dexpedition'
+    , array( 'fields' => 'names' ) )[0] ) );
+        nxover_log("delay");
+        nxover_log(print_r($delay, true));
 
         if (($p_id = nxover_addon_id($v)) && ($t = get_the_terms($p_id, 'pa_delai-dexpedition', ['fields' => 'names']))) {
             $d  = (int) preg_replace('/[^0-9.]/', '', $t[0]);
-
-            // echo "   addon $p_id / ".$t[0]." / $d\n";
-
+            // echo "   addon $p_id / ".$t[0]." / $d\n";       
             if ($type == 'S') {
                 // $s  = get_post_meta($p_id, 'supplier', true);
-
                 // if ($vinco && strtolower($s) == 'vinco')
                 $d = Livraison::getInstance()->getLivraison($p_id, false, [], $d, $method, $order_id, $add_exp);
             } elseif ($type == 'M')

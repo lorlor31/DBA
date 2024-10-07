@@ -1,0 +1,538 @@
+[07-Oct-2024 08:56:33 UTC] salutsalutget_product_ugs
+[07-Oct-2024 08:56:34 UTC] salutsalutget_product_ugs
+[07-Oct-2024 08:56:34 UTC] coucou1
+[07-Oct-2024 08:56:34 UTC] coucou15nxover_addon_id
+[07-Oct-2024 08:56:34 UTC] $p_id est: 3648
+[07-Oct-2024 08:56:34 UTC] $qty_addonArray
+[07-Oct-2024 08:56:34 UTC] $optionsArray
+[07-Oct-2024 08:56:34 UTC] coucou2
+[07-Oct-2024 08:56:34 UTC] coucou15nxover_addon_id
+[07-Oct-2024 08:56:34 UTC] $p_id est: 3650
+[07-Oct-2024 08:56:34 UTC] $qty_addonArray
+[07-Oct-2024 08:56:34 UTC] $optionsArray
+[07-Oct-2024 08:56:34 UTC] coucou2
+[07-Oct-2024 08:56:34 UTC] coucou15nxover_addon_id
+[07-Oct-2024 08:56:34 UTC] $p_id est: 3651
+[07-Oct-2024 08:56:34 UTC] $qty_addonArray
+[07-Oct-2024 08:56:34 UTC] $optionsArray
+[07-Oct-2024 08:56:34 UTC] coucou2
+[07-Oct-2024 08:56:34 UTC] eske nxover est aplé affich front1
+[07-Oct-2024 08:56:34 UTC] coucou9nxover_cart_options_manuf_delay
+[07-Oct-2024 08:56:34 UTC] coucou21-nxoverlog
+[07-Oct-2024 08:56:34 UTC]    $opt est :\narray(1) {
+  ["361-0"]=>
+  string(14) "product-3648-1"
+}
+
+[07-Oct-2024 08:56:34 UTC] coucou11nxover_option_delay
+[07-Oct-2024 08:56:34 UTC] coucou15nxover_addon_id
+[07-Oct-2024 08:56:34 UTC] $p_id est: 3648
+[07-Oct-2024 08:56:34 UTC] $parent_id  est: 3647
+[07-Oct-2024 08:56:34 UTC] coucou21-nxoverlog
+[07-Oct-2024 08:56:34 UTC] coucou21-nxoverlog
+[07-Oct-2024 08:56:34 UTC] coucou15nxover_addon_id
+[07-Oct-2024 08:56:34 UTC] delainxover:int(8)
+
+[07-Oct-2024 08:56:34 UTC]    $opt est :\narray(1) {
+  ["361-1"]=>
+  string(14) "product-3650-1"
+}
+
+[07-Oct-2024 08:56:34 UTC] coucou11nxover_option_delay
+[07-Oct-2024 08:56:34 UTC] coucou15nxover_addon_id
+[07-Oct-2024 08:56:34 UTC] $p_id est: 3650
+[07-Oct-2024 08:56:34 UTC] $parent_id  est: 3647
+[07-Oct-2024 08:56:34 UTC] coucou21-nxoverlog
+[07-Oct-2024 08:56:34 UTC] coucou21-nxoverlog
+[07-Oct-2024 08:56:34 UTC] coucou15nxover_addon_id
+[07-Oct-2024 08:56:34 UTC] delainxover:int(8)
+
+[07-Oct-2024 08:56:34 UTC]    $opt est :\narray(1) {
+  ["361-2"]=>
+  string(14) "product-3651-1"
+}
+
+[07-Oct-2024 08:56:34 UTC] coucou11nxover_option_delay
+[07-Oct-2024 08:56:34 UTC] coucou15nxover_addon_id
+[07-Oct-2024 08:56:34 UTC] $p_id est: 3651
+[07-Oct-2024 08:56:34 UTC] $parent_id  est: 3647
+[07-Oct-2024 08:56:34 UTC] coucou21-nxoverlog
+[07-Oct-2024 08:56:34 UTC] coucou21-nxoverlog
+[07-Oct-2024 08:56:34 UTC] coucou15nxover_addon_id
+[07-Oct-2024 08:56:34 UTC] delainxover:int(8)
+
+[07-Oct-2024 08:56:34 UTC] $delai est 01
+[07-Oct-2024 08:56:34 UTC] eske nxover cart opt ship delay est aplé1
+[07-Oct-2024 08:56:34 UTC] coucou8nxover_cart_options_shipping_delay
+[07-Oct-2024 08:56:34 UTC]    $options est :\narray(3) {
+  [0]=>
+  array(1) {
+    ["361-0"]=>
+    string(14) "product-3648-1"
+  }
+  [1]=>
+  array(1) {
+    ["361-1"]=>
+    string(14) "product-3650-1"
+  }
+  [2]=>
+  array(1) {
+    ["361-2"]=>
+    string(14) "product-3651-1"
+  }
+}
+
+[07-Oct-2024 08:56:34 UTC]    $opt est :\narray(1) {
+  ["361-0"]=>
+  string(14) "product-3648-1"
+}
+
+[07-Oct-2024 08:56:34 UTC] coucou11nxover_option_delay
+[07-Oct-2024 08:56:34 UTC] coucou15nxover_addon_id
+[07-Oct-2024 08:56:34 UTC] $p_id est: 3648
+[07-Oct-2024 08:56:34 UTC] $parent_id  est: 3647
+[07-Oct-2024 08:56:34 UTC] coucou21-nxoverlog
+[07-Oct-2024 08:56:34 UTC] coucou21-nxoverlog
+[07-Oct-2024 08:56:34 UTC] coucou15nxover_addon_id
+[07-Oct-2024 08:56:34 UTC] coucou11nxover_option_delay
+[07-Oct-2024 08:56:34 UTC] coucou15nxover_addon_id
+[07-Oct-2024 08:56:34 UTC] $p_id est: 3648
+[07-Oct-2024 08:56:34 UTC] $parent_id  est: 3647
+[07-Oct-2024 08:56:34 UTC] coucou21-nxoverlog
+[07-Oct-2024 08:56:34 UTC] coucou21-nxoverlog
+[07-Oct-2024 08:56:34 UTC] coucou15nxover_addon_id
+[07-Oct-2024 08:56:34 UTC] coucou11nxover_option_delay
+[07-Oct-2024 08:56:34 UTC] coucou15nxover_addon_id
+[07-Oct-2024 08:56:34 UTC] $p_id est: 3648
+[07-Oct-2024 08:56:34 UTC] $parent_id  est: 3647
+[07-Oct-2024 08:56:34 UTC] coucou21-nxoverlog
+[07-Oct-2024 08:56:34 UTC] coucou21-nxoverlog
+[07-Oct-2024 08:56:34 UTC] coucou15nxover_addon_id
+[07-Oct-2024 08:56:34 UTC]    $opt est :\narray(1) {
+  ["361-1"]=>
+  string(14) "product-3650-1"
+}
+
+[07-Oct-2024 08:56:34 UTC] coucou11nxover_option_delay
+[07-Oct-2024 08:56:34 UTC] coucou15nxover_addon_id
+[07-Oct-2024 08:56:34 UTC] $p_id est: 3650
+[07-Oct-2024 08:56:34 UTC] $parent_id  est: 3647
+[07-Oct-2024 08:56:34 UTC] coucou21-nxoverlog
+[07-Oct-2024 08:56:34 UTC] coucou21-nxoverlog
+[07-Oct-2024 08:56:34 UTC] coucou15nxover_addon_id
+[07-Oct-2024 08:56:34 UTC] coucou11nxover_option_delay
+[07-Oct-2024 08:56:34 UTC] coucou15nxover_addon_id
+[07-Oct-2024 08:56:34 UTC] $p_id est: 3650
+[07-Oct-2024 08:56:34 UTC] $parent_id  est: 3647
+[07-Oct-2024 08:56:34 UTC] coucou21-nxoverlog
+[07-Oct-2024 08:56:34 UTC] coucou21-nxoverlog
+[07-Oct-2024 08:56:34 UTC] coucou15nxover_addon_id
+[07-Oct-2024 08:56:34 UTC] coucou11nxover_option_delay
+[07-Oct-2024 08:56:34 UTC] coucou15nxover_addon_id
+[07-Oct-2024 08:56:34 UTC] $p_id est: 3650
+[07-Oct-2024 08:56:34 UTC] $parent_id  est: 3647
+[07-Oct-2024 08:56:34 UTC] coucou21-nxoverlog
+[07-Oct-2024 08:56:34 UTC] coucou21-nxoverlog
+[07-Oct-2024 08:56:34 UTC] coucou15nxover_addon_id
+[07-Oct-2024 08:56:34 UTC]    $opt est :\narray(1) {
+  ["361-2"]=>
+  string(14) "product-3651-1"
+}
+
+[07-Oct-2024 08:56:34 UTC] coucou11nxover_option_delay
+[07-Oct-2024 08:56:34 UTC] coucou15nxover_addon_id
+[07-Oct-2024 08:56:34 UTC] $p_id est: 3651
+[07-Oct-2024 08:56:34 UTC] $parent_id  est: 3647
+[07-Oct-2024 08:56:34 UTC] coucou21-nxoverlog
+[07-Oct-2024 08:56:34 UTC] coucou21-nxoverlog
+[07-Oct-2024 08:56:34 UTC] coucou15nxover_addon_id
+[07-Oct-2024 08:56:34 UTC] coucou11nxover_option_delay
+[07-Oct-2024 08:56:34 UTC] coucou15nxover_addon_id
+[07-Oct-2024 08:56:34 UTC] $p_id est: 3651
+[07-Oct-2024 08:56:34 UTC] $parent_id  est: 3647
+[07-Oct-2024 08:56:34 UTC] coucou21-nxoverlog
+[07-Oct-2024 08:56:34 UTC] coucou21-nxoverlog
+[07-Oct-2024 08:56:34 UTC] coucou15nxover_addon_id
+[07-Oct-2024 08:56:34 UTC] coucou11nxover_option_delay
+[07-Oct-2024 08:56:34 UTC] coucou15nxover_addon_id
+[07-Oct-2024 08:56:34 UTC] $p_id est: 3651
+[07-Oct-2024 08:56:34 UTC] $parent_id  est: 3647
+[07-Oct-2024 08:56:34 UTC] coucou21-nxoverlog
+[07-Oct-2024 08:56:34 UTC] coucou21-nxoverlog
+[07-Oct-2024 08:56:34 UTC] coucou15nxover_addon_id
+[07-Oct-2024 08:56:34 UTC] nxover_cart_options_shipping_delay($cart_item, $method)) !== false8
+[07-Oct-2024 08:56:34 UTC] coucou8nxover_cart_options_shipping_delay
+[07-Oct-2024 08:56:34 UTC]    $options est :\narray(3) {
+  [0]=>
+  array(1) {
+    ["361-0"]=>
+    string(14) "product-3648-1"
+  }
+  [1]=>
+  array(1) {
+    ["361-1"]=>
+    string(14) "product-3650-1"
+  }
+  [2]=>
+  array(1) {
+    ["361-2"]=>
+    string(14) "product-3651-1"
+  }
+}
+
+[07-Oct-2024 08:56:34 UTC]    $opt est :\narray(1) {
+  ["361-0"]=>
+  string(14) "product-3648-1"
+}
+
+[07-Oct-2024 08:56:34 UTC] coucou11nxover_option_delay
+[07-Oct-2024 08:56:34 UTC] coucou15nxover_addon_id
+[07-Oct-2024 08:56:34 UTC] $p_id est: 3648
+[07-Oct-2024 08:56:34 UTC] $parent_id  est: 3647
+[07-Oct-2024 08:56:34 UTC] coucou21-nxoverlog
+[07-Oct-2024 08:56:34 UTC] coucou21-nxoverlog
+[07-Oct-2024 08:56:34 UTC] coucou15nxover_addon_id
+[07-Oct-2024 08:56:34 UTC] coucou11nxover_option_delay
+[07-Oct-2024 08:56:34 UTC] coucou15nxover_addon_id
+[07-Oct-2024 08:56:34 UTC] $p_id est: 3648
+[07-Oct-2024 08:56:34 UTC] $parent_id  est: 3647
+[07-Oct-2024 08:56:34 UTC] coucou21-nxoverlog
+[07-Oct-2024 08:56:34 UTC] coucou21-nxoverlog
+[07-Oct-2024 08:56:34 UTC] coucou15nxover_addon_id
+[07-Oct-2024 08:56:34 UTC] coucou11nxover_option_delay
+[07-Oct-2024 08:56:34 UTC] coucou15nxover_addon_id
+[07-Oct-2024 08:56:34 UTC] $p_id est: 3648
+[07-Oct-2024 08:56:34 UTC] $parent_id  est: 3647
+[07-Oct-2024 08:56:34 UTC] coucou21-nxoverlog
+[07-Oct-2024 08:56:34 UTC] coucou21-nxoverlog
+[07-Oct-2024 08:56:34 UTC] coucou15nxover_addon_id
+[07-Oct-2024 08:56:34 UTC]    $opt est :\narray(1) {
+  ["361-1"]=>
+  string(14) "product-3650-1"
+}
+
+[07-Oct-2024 08:56:34 UTC] coucou11nxover_option_delay
+[07-Oct-2024 08:56:34 UTC] coucou15nxover_addon_id
+[07-Oct-2024 08:56:34 UTC] $p_id est: 3650
+[07-Oct-2024 08:56:34 UTC] $parent_id  est: 3647
+[07-Oct-2024 08:56:34 UTC] coucou21-nxoverlog
+[07-Oct-2024 08:56:34 UTC] coucou21-nxoverlog
+[07-Oct-2024 08:56:34 UTC] coucou15nxover_addon_id
+[07-Oct-2024 08:56:34 UTC] coucou11nxover_option_delay
+[07-Oct-2024 08:56:34 UTC] coucou15nxover_addon_id
+[07-Oct-2024 08:56:34 UTC] $p_id est: 3650
+[07-Oct-2024 08:56:34 UTC] $parent_id  est: 3647
+[07-Oct-2024 08:56:34 UTC] coucou21-nxoverlog
+[07-Oct-2024 08:56:34 UTC] coucou21-nxoverlog
+[07-Oct-2024 08:56:34 UTC] coucou15nxover_addon_id
+[07-Oct-2024 08:56:34 UTC] coucou11nxover_option_delay
+[07-Oct-2024 08:56:34 UTC] coucou15nxover_addon_id
+[07-Oct-2024 08:56:34 UTC] $p_id est: 3650
+[07-Oct-2024 08:56:34 UTC] $parent_id  est: 3647
+[07-Oct-2024 08:56:34 UTC] coucou21-nxoverlog
+[07-Oct-2024 08:56:34 UTC] coucou21-nxoverlog
+[07-Oct-2024 08:56:34 UTC] coucou15nxover_addon_id
+[07-Oct-2024 08:56:34 UTC]    $opt est :\narray(1) {
+  ["361-2"]=>
+  string(14) "product-3651-1"
+}
+
+[07-Oct-2024 08:56:34 UTC] coucou11nxover_option_delay
+[07-Oct-2024 08:56:34 UTC] coucou15nxover_addon_id
+[07-Oct-2024 08:56:34 UTC] $p_id est: 3651
+[07-Oct-2024 08:56:34 UTC] $parent_id  est: 3647
+[07-Oct-2024 08:56:34 UTC] coucou21-nxoverlog
+[07-Oct-2024 08:56:34 UTC] coucou21-nxoverlog
+[07-Oct-2024 08:56:34 UTC] coucou15nxover_addon_id
+[07-Oct-2024 08:56:34 UTC] coucou11nxover_option_delay
+[07-Oct-2024 08:56:34 UTC] coucou15nxover_addon_id
+[07-Oct-2024 08:56:34 UTC] $p_id est: 3651
+[07-Oct-2024 08:56:34 UTC] $parent_id  est: 3647
+[07-Oct-2024 08:56:34 UTC] coucou21-nxoverlog
+[07-Oct-2024 08:56:34 UTC] coucou21-nxoverlog
+[07-Oct-2024 08:56:34 UTC] coucou15nxover_addon_id
+[07-Oct-2024 08:56:34 UTC] coucou11nxover_option_delay
+[07-Oct-2024 08:56:34 UTC] coucou15nxover_addon_id
+[07-Oct-2024 08:56:34 UTC] $p_id est: 3651
+[07-Oct-2024 08:56:34 UTC] $parent_id  est: 3647
+[07-Oct-2024 08:56:34 UTC] coucou21-nxoverlog
+[07-Oct-2024 08:56:34 UTC] coucou21-nxoverlog
+[07-Oct-2024 08:56:34 UTC] coucou15nxover_addon_id
+[07-Oct-2024 08:56:34 UTC] $o_delay est 08
+[07-Oct-2024 08:56:34 UTC] $delai est l90102
+[07-Oct-2024 08:56:34 UTC] $max_delai est 08
+[07-Oct-2024 08:56:34 UTC] salutsalutfourchette  
+[07-Oct-2024 08:56:34 UTC] $date_livraison est 2024-10-07 10:56:34
+[07-Oct-2024 08:56:34 UTC] $date_livraison_max est 2024-10-07 10:56:34
+[07-Oct-2024 08:56:34 UTC] $max_delai est 8
+[07-Oct-2024 08:56:34 UTC]    $order est :\nNULL
+
+[07-Oct-2024 08:56:34 UTC] Dates dans fourchette:
+Date livraison max: 2024-12-09 10:56:34
+Date livraison: 2024-12-04 10:56:34
+Details var_dump:
+NULL
+
+[07-Oct-2024 08:56:34 UTC] $delai est 01
+[07-Oct-2024 08:56:34 UTC] eske nxover cart opt ship delay est aplé1
+[07-Oct-2024 08:56:34 UTC] coucou8nxover_cart_options_shipping_delay
+[07-Oct-2024 08:56:34 UTC]    $options est :\narray(3) {
+  [0]=>
+  array(1) {
+    ["361-0"]=>
+    string(14) "product-3648-1"
+  }
+  [1]=>
+  array(1) {
+    ["361-1"]=>
+    string(14) "product-3650-1"
+  }
+  [2]=>
+  array(1) {
+    ["361-2"]=>
+    string(14) "product-3651-1"
+  }
+}
+
+[07-Oct-2024 08:56:34 UTC]    $opt est :\narray(1) {
+  ["361-0"]=>
+  string(14) "product-3648-1"
+}
+
+[07-Oct-2024 08:56:34 UTC] coucou11nxover_option_delay
+[07-Oct-2024 08:56:34 UTC] coucou15nxover_addon_id
+[07-Oct-2024 08:56:34 UTC] $p_id est: 3648
+[07-Oct-2024 08:56:34 UTC] $parent_id  est: 3647
+[07-Oct-2024 08:56:34 UTC] coucou21-nxoverlog
+[07-Oct-2024 08:56:34 UTC] coucou21-nxoverlog
+[07-Oct-2024 08:56:34 UTC] coucou15nxover_addon_id
+[07-Oct-2024 08:56:34 UTC] coucou11nxover_option_delay
+[07-Oct-2024 08:56:34 UTC] coucou15nxover_addon_id
+[07-Oct-2024 08:56:34 UTC] $p_id est: 3648
+[07-Oct-2024 08:56:34 UTC] $parent_id  est: 3647
+[07-Oct-2024 08:56:34 UTC] coucou21-nxoverlog
+[07-Oct-2024 08:56:34 UTC] coucou21-nxoverlog
+[07-Oct-2024 08:56:34 UTC] coucou15nxover_addon_id
+[07-Oct-2024 08:56:34 UTC] coucou11nxover_option_delay
+[07-Oct-2024 08:56:34 UTC] coucou15nxover_addon_id
+[07-Oct-2024 08:56:34 UTC] $p_id est: 3648
+[07-Oct-2024 08:56:34 UTC] $parent_id  est: 3647
+[07-Oct-2024 08:56:34 UTC] coucou21-nxoverlog
+[07-Oct-2024 08:56:34 UTC] coucou21-nxoverlog
+[07-Oct-2024 08:56:34 UTC] coucou15nxover_addon_id
+[07-Oct-2024 08:56:34 UTC]    $opt est :\narray(1) {
+  ["361-1"]=>
+  string(14) "product-3650-1"
+}
+
+[07-Oct-2024 08:56:34 UTC] coucou11nxover_option_delay
+[07-Oct-2024 08:56:34 UTC] coucou15nxover_addon_id
+[07-Oct-2024 08:56:34 UTC] $p_id est: 3650
+[07-Oct-2024 08:56:34 UTC] $parent_id  est: 3647
+[07-Oct-2024 08:56:34 UTC] coucou21-nxoverlog
+[07-Oct-2024 08:56:34 UTC] coucou21-nxoverlog
+[07-Oct-2024 08:56:34 UTC] coucou15nxover_addon_id
+[07-Oct-2024 08:56:34 UTC] coucou11nxover_option_delay
+[07-Oct-2024 08:56:34 UTC] coucou15nxover_addon_id
+[07-Oct-2024 08:56:34 UTC] $p_id est: 3650
+[07-Oct-2024 08:56:34 UTC] $parent_id  est: 3647
+[07-Oct-2024 08:56:34 UTC] coucou21-nxoverlog
+[07-Oct-2024 08:56:34 UTC] coucou21-nxoverlog
+[07-Oct-2024 08:56:34 UTC] coucou15nxover_addon_id
+[07-Oct-2024 08:56:34 UTC] coucou11nxover_option_delay
+[07-Oct-2024 08:56:34 UTC] coucou15nxover_addon_id
+[07-Oct-2024 08:56:34 UTC] $p_id est: 3650
+[07-Oct-2024 08:56:34 UTC] $parent_id  est: 3647
+[07-Oct-2024 08:56:34 UTC] coucou21-nxoverlog
+[07-Oct-2024 08:56:34 UTC] coucou21-nxoverlog
+[07-Oct-2024 08:56:34 UTC] coucou15nxover_addon_id
+[07-Oct-2024 08:56:34 UTC]    $opt est :\narray(1) {
+  ["361-2"]=>
+  string(14) "product-3651-1"
+}
+
+[07-Oct-2024 08:56:34 UTC] coucou11nxover_option_delay
+[07-Oct-2024 08:56:34 UTC] coucou15nxover_addon_id
+[07-Oct-2024 08:56:34 UTC] $p_id est: 3651
+[07-Oct-2024 08:56:34 UTC] $parent_id  est: 3647
+[07-Oct-2024 08:56:34 UTC] coucou21-nxoverlog
+[07-Oct-2024 08:56:34 UTC] coucou21-nxoverlog
+[07-Oct-2024 08:56:34 UTC] coucou15nxover_addon_id
+[07-Oct-2024 08:56:34 UTC] coucou11nxover_option_delay
+[07-Oct-2024 08:56:34 UTC] coucou15nxover_addon_id
+[07-Oct-2024 08:56:34 UTC] $p_id est: 3651
+[07-Oct-2024 08:56:34 UTC] $parent_id  est: 3647
+[07-Oct-2024 08:56:34 UTC] coucou21-nxoverlog
+[07-Oct-2024 08:56:34 UTC] coucou21-nxoverlog
+[07-Oct-2024 08:56:34 UTC] coucou15nxover_addon_id
+[07-Oct-2024 08:56:34 UTC] coucou11nxover_option_delay
+[07-Oct-2024 08:56:34 UTC] coucou15nxover_addon_id
+[07-Oct-2024 08:56:34 UTC] $p_id est: 3651
+[07-Oct-2024 08:56:34 UTC] $parent_id  est: 3647
+[07-Oct-2024 08:56:34 UTC] coucou21-nxoverlog
+[07-Oct-2024 08:56:34 UTC] coucou21-nxoverlog
+[07-Oct-2024 08:56:34 UTC] coucou15nxover_addon_id
+[07-Oct-2024 08:56:34 UTC] nxover_cart_options_shipping_delay($cart_item, $method)) !== false8
+[07-Oct-2024 08:56:34 UTC] coucou8nxover_cart_options_shipping_delay
+[07-Oct-2024 08:56:34 UTC]    $options est :\narray(3) {
+  [0]=>
+  array(1) {
+    ["361-0"]=>
+    string(14) "product-3648-1"
+  }
+  [1]=>
+  array(1) {
+    ["361-1"]=>
+    string(14) "product-3650-1"
+  }
+  [2]=>
+  array(1) {
+    ["361-2"]=>
+    string(14) "product-3651-1"
+  }
+}
+
+[07-Oct-2024 08:56:34 UTC]    $opt est :\narray(1) {
+  ["361-0"]=>
+  string(14) "product-3648-1"
+}
+
+[07-Oct-2024 08:56:34 UTC] coucou11nxover_option_delay
+[07-Oct-2024 08:56:34 UTC] coucou15nxover_addon_id
+[07-Oct-2024 08:56:34 UTC] $p_id est: 3648
+[07-Oct-2024 08:56:34 UTC] $parent_id  est: 3647
+[07-Oct-2024 08:56:34 UTC] coucou21-nxoverlog
+[07-Oct-2024 08:56:34 UTC] coucou21-nxoverlog
+[07-Oct-2024 08:56:34 UTC] coucou15nxover_addon_id
+[07-Oct-2024 08:56:34 UTC] coucou11nxover_option_delay
+[07-Oct-2024 08:56:34 UTC] coucou15nxover_addon_id
+[07-Oct-2024 08:56:34 UTC] $p_id est: 3648
+[07-Oct-2024 08:56:34 UTC] $parent_id  est: 3647
+[07-Oct-2024 08:56:34 UTC] coucou21-nxoverlog
+[07-Oct-2024 08:56:34 UTC] coucou21-nxoverlog
+[07-Oct-2024 08:56:34 UTC] coucou15nxover_addon_id
+[07-Oct-2024 08:56:34 UTC] coucou11nxover_option_delay
+[07-Oct-2024 08:56:34 UTC] coucou15nxover_addon_id
+[07-Oct-2024 08:56:34 UTC] $p_id est: 3648
+[07-Oct-2024 08:56:34 UTC] $parent_id  est: 3647
+[07-Oct-2024 08:56:34 UTC] coucou21-nxoverlog
+[07-Oct-2024 08:56:34 UTC] coucou21-nxoverlog
+[07-Oct-2024 08:56:34 UTC] coucou15nxover_addon_id
+[07-Oct-2024 08:56:34 UTC]    $opt est :\narray(1) {
+  ["361-1"]=>
+  string(14) "product-3650-1"
+}
+
+[07-Oct-2024 08:56:34 UTC] coucou11nxover_option_delay
+[07-Oct-2024 08:56:34 UTC] coucou15nxover_addon_id
+[07-Oct-2024 08:56:34 UTC] $p_id est: 3650
+[07-Oct-2024 08:56:34 UTC] $parent_id  est: 3647
+[07-Oct-2024 08:56:34 UTC] coucou21-nxoverlog
+[07-Oct-2024 08:56:34 UTC] coucou21-nxoverlog
+[07-Oct-2024 08:56:34 UTC] coucou15nxover_addon_id
+[07-Oct-2024 08:56:34 UTC] coucou11nxover_option_delay
+[07-Oct-2024 08:56:34 UTC] coucou15nxover_addon_id
+[07-Oct-2024 08:56:34 UTC] $p_id est: 3650
+[07-Oct-2024 08:56:34 UTC] $parent_id  est: 3647
+[07-Oct-2024 08:56:34 UTC] coucou21-nxoverlog
+[07-Oct-2024 08:56:34 UTC] coucou21-nxoverlog
+[07-Oct-2024 08:56:34 UTC] coucou15nxover_addon_id
+[07-Oct-2024 08:56:34 UTC] coucou11nxover_option_delay
+[07-Oct-2024 08:56:34 UTC] coucou15nxover_addon_id
+[07-Oct-2024 08:56:34 UTC] $p_id est: 3650
+[07-Oct-2024 08:56:34 UTC] $parent_id  est: 3647
+[07-Oct-2024 08:56:34 UTC] coucou21-nxoverlog
+[07-Oct-2024 08:56:34 UTC] coucou21-nxoverlog
+[07-Oct-2024 08:56:34 UTC] coucou15nxover_addon_id
+[07-Oct-2024 08:56:34 UTC]    $opt est :\narray(1) {
+  ["361-2"]=>
+  string(14) "product-3651-1"
+}
+
+[07-Oct-2024 08:56:34 UTC] coucou11nxover_option_delay
+[07-Oct-2024 08:56:34 UTC] coucou15nxover_addon_id
+[07-Oct-2024 08:56:34 UTC] $p_id est: 3651
+[07-Oct-2024 08:56:34 UTC] $parent_id  est: 3647
+[07-Oct-2024 08:56:34 UTC] coucou21-nxoverlog
+[07-Oct-2024 08:56:34 UTC] coucou21-nxoverlog
+[07-Oct-2024 08:56:34 UTC] coucou15nxover_addon_id
+[07-Oct-2024 08:56:34 UTC] coucou11nxover_option_delay
+[07-Oct-2024 08:56:34 UTC] coucou15nxover_addon_id
+[07-Oct-2024 08:56:34 UTC] $p_id est: 3651
+[07-Oct-2024 08:56:34 UTC] $parent_id  est: 3647
+[07-Oct-2024 08:56:34 UTC] coucou21-nxoverlog
+[07-Oct-2024 08:56:34 UTC] coucou21-nxoverlog
+[07-Oct-2024 08:56:34 UTC] coucou15nxover_addon_id
+[07-Oct-2024 08:56:34 UTC] coucou11nxover_option_delay
+[07-Oct-2024 08:56:34 UTC] coucou15nxover_addon_id
+[07-Oct-2024 08:56:34 UTC] $p_id est: 3651
+[07-Oct-2024 08:56:34 UTC] $parent_id  est: 3647
+[07-Oct-2024 08:56:34 UTC] coucou21-nxoverlog
+[07-Oct-2024 08:56:34 UTC] coucou21-nxoverlog
+[07-Oct-2024 08:56:34 UTC] coucou15nxover_addon_id
+[07-Oct-2024 08:56:34 UTC] $o_delay est 08
+[07-Oct-2024 08:56:34 UTC] $delai est l90101
+[07-Oct-2024 08:56:34 UTC] $max_delai est 08
+[07-Oct-2024 08:56:34 UTC] salutsalutfourchette  
+[07-Oct-2024 08:56:34 UTC] $date_livraison est 2024-10-07 10:56:34
+[07-Oct-2024 08:56:34 UTC] $date_livraison_max est 2024-10-07 10:56:34
+[07-Oct-2024 08:56:34 UTC] $max_delai est 8
+[07-Oct-2024 08:56:34 UTC]    $order est :\nNULL
+
+[07-Oct-2024 08:56:34 UTC] Dates dans fourchette:
+Date livraison max: 2024-12-09 10:56:34
+Date livraison: 2024-12-04 10:56:34
+Details var_dump:
+NULL
+
+[07-Oct-2024 08:56:34 UTC] eske nxover est aplé affich front1
+[07-Oct-2024 08:56:34 UTC] coucou9nxover_cart_options_manuf_delay
+[07-Oct-2024 08:56:34 UTC] coucou21-nxoverlog
+[07-Oct-2024 08:56:34 UTC]    $opt est :\narray(1) {
+  ["361-0"]=>
+  string(14) "product-3648-1"
+}
+
+[07-Oct-2024 08:56:34 UTC] coucou11nxover_option_delay
+[07-Oct-2024 08:56:34 UTC] coucou15nxover_addon_id
+[07-Oct-2024 08:56:34 UTC] $p_id est: 3648
+[07-Oct-2024 08:56:34 UTC] $parent_id  est: 3647
+[07-Oct-2024 08:56:34 UTC] coucou21-nxoverlog
+[07-Oct-2024 08:56:34 UTC] coucou21-nxoverlog
+[07-Oct-2024 08:56:34 UTC] coucou15nxover_addon_id
+[07-Oct-2024 08:56:34 UTC] delainxover:int(8)
+
+[07-Oct-2024 08:56:34 UTC]    $opt est :\narray(1) {
+  ["361-1"]=>
+  string(14) "product-3650-1"
+}
+
+[07-Oct-2024 08:56:34 UTC] coucou11nxover_option_delay
+[07-Oct-2024 08:56:34 UTC] coucou15nxover_addon_id
+[07-Oct-2024 08:56:34 UTC] $p_id est: 3650
+[07-Oct-2024 08:56:34 UTC] $parent_id  est: 3647
+[07-Oct-2024 08:56:34 UTC] coucou21-nxoverlog
+[07-Oct-2024 08:56:34 UTC] coucou21-nxoverlog
+[07-Oct-2024 08:56:34 UTC] coucou15nxover_addon_id
+[07-Oct-2024 08:56:34 UTC] delainxover:int(8)
+
+[07-Oct-2024 08:56:34 UTC]    $opt est :\narray(1) {
+  ["361-2"]=>
+  string(14) "product-3651-1"
+}
+
+[07-Oct-2024 08:56:34 UTC] coucou11nxover_option_delay
+[07-Oct-2024 08:56:34 UTC] coucou15nxover_addon_id
+[07-Oct-2024 08:56:34 UTC] $p_id est: 3651
+[07-Oct-2024 08:56:34 UTC] $parent_id  est: 3647
+[07-Oct-2024 08:56:34 UTC] coucou21-nxoverlog
+[07-Oct-2024 08:56:34 UTC] coucou21-nxoverlog
+[07-Oct-2024 08:56:34 UTC] coucou15nxover_addon_id
+[07-Oct-2024 08:56:34 UTC] delainxover:int(8)
+
+[07-Oct-2024 08:56:35 UTC] salutsalutget_product_ugs
+[07-Oct-2024 08:56:35 UTC] salutsalutIsAdmin
+[07-Oct-2024 08:56:36 UTC] Suppliers in cart: Vinco
+[07-Oct-2024 08:56:36 UTC] Suppliers in cart for AJAX: Vinco
+[07-Oct-2024 08:56:36 UTC] No exclusion found for postcode 94000
+[07-Oct-2024 08:56:36 UTC] AJAX check exclusion status: Not excluded

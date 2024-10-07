@@ -382,11 +382,11 @@ function nxover_option_delay($type, $opt, $method = '', $vinco = false, $order_i
     error_log('coucou11nxover_option_delay');
 
     $delay = false;
-
-
+    // Parcourir les options 
     foreach ($opt as $opt_id => $v) {
         $p_id = nxover_addon_id($v);
         error_log(print_r('$p_id est: ' . $p_id, true));
+        // Récupérer l'id du produit parent 
         if ('product_variation' === get_post_type($p_id)) {
             $parent_id = wp_get_post_parent_id($p_id);
             error_log(print_r('$parent_id  est: ' . $parent_id , true));
@@ -394,58 +394,18 @@ function nxover_option_delay($type, $opt, $method = '', $vinco = false, $order_i
             $parent_id = $p_id;
             error_log(print_r('$parent_id  est: ' . $parent_id , true));
         }
-    //laure
 
-    //Chercher les taxonomies de l'addon 
-
-// Récupère les taxonomies associées au type de contenu 'product'
-$product_taxonomies = get_object_taxonomies('product', 'names');
-
-// Boucle à travers les taxonomies et récupère les termes associés au produit
-foreach ( $product_taxonomies as $taxonomy ) {
-    // Obtenir les termes associés au produit pour cette taxonomie
-    $terms = wp_get_object_terms( $p_id, $taxonomy );
-    
-    // Afficher les résultats
-    if ( !empty( $terms ) && !is_wp_error( $terms ) ) {
-        error_log(print_r('$taxonomy  est: ' . $taxonomy , true));
-
-        foreach ( $terms as $term ) {
-            echo "<li>" . $term->name . " (ID: " . $term->term_id . ")</li>";
-            error_log(print_r('$term->name est: ' . $term->name , true));
-            error_log(print_r('$term->id est: ' . $term->id , true));
-        }
-    } else {
-        error_log(print_r('Aucun terme trouvé pour la taxonomie: ' . $term->id , true));
-
-    }
-}
-
-    $terms =wc_get_product_terms($p_id, 'pa_delai-dexpedition') ;
-
-
-    ob_start();  
-    var_dump($terms);
-    $output = ob_get_clean();
-    $errorMessage = "terms:\n" . $output;
-    error_log($errorMessage);
-        $delai = intval(preg_replace('/[^0-9.]/', '', wc_get_product_terms($cart_item['product_id'], 'pa_delai-dexpedition', array('fields' => 'names'))[0]));
-        error_log(print_r('$delai est: ' . $delai, true));
-
-
-
-        nxover_log("delai");
-        nxover_log(print_r($delai, true));
+    // Récupérer le nb de semaines du délai d'expédition du produit parent de l'addon
+    $delay = intval(preg_replace('/[^0-9.]/', '', wp_get_post_terms( $parent_id, 'pa_delai-dexpedition'
+    , array( 'fields' => 'names' ) )[0] ) );
+        nxover_log("delay");
+        nxover_log(print_r($delay, true));
 
         if (($p_id = nxover_addon_id($v)) && ($t = get_the_terms($p_id, 'pa_delai-dexpedition', ['fields' => 'names']))) {
             $d  = (int) preg_replace('/[^0-9.]/', '', $t[0]);
-
-            // echo "   addon $p_id / ".$t[0]." / $d\n";
-
-
+            // echo "   addon $p_id / ".$t[0]." / $d\n";       
             if ($type == 'S') {
                 // $s  = get_post_meta($p_id, 'supplier', true);
-
                 // if ($vinco && strtolower($s) == 'vinco')
                 $d = Livraison::getInstance()->getLivraison($p_id, false, [], $d, $method, $order_id, $add_exp);
             } elseif ($type == 'M')
@@ -461,89 +421,6 @@ foreach ( $product_taxonomies as $taxonomy ) {
 
     return $delay;
 }
-
-/*
-function nxover_get_order_item_addons($item)
-{
-    $addons = [];
-    
-    foreach($item->get_meta_data() as $m)
-    {
-//         print_r($m);
-        
-        if (nxover_is_ywapo_meta($m->key))
-        {
-            foreach($m->value as $o)
-            {
-                foreach($o as $v)
-                {
-                    if (($p_id = nxover_addon_id($v)) && ($p = wc_get_product($p_id)))
-                        $addons[$p_id] = clone $p;
-                }
-            }
-        }
-    }
-    
-    return $addons;
-}
-*/
-
-/*
-function nxover_filter_qpdf_item($item, $html)
-{
-    $sku = [];
-    $opt = [];
-    
-    echo "<pre>meta:\n";
-    var_dump($item->get_meta_data(NXOVER_ADDON_META_KEY));
-    echo "all:\n";
-    var_dump($item->get_all_formatted_meta_data());
-    echo "</pre>";
-    
-    foreach($item->get_meta_data() as $m)
-    {
-        if ($m->key ==  '_ywraq_wc_ywapo')
-        {
-            foreach($m->value as $o)
-            {
-                foreach($o as $v)
-                {
-                    if ($p_id = nxover_addon_id($v))
-                        $opt[$p_id] = 1;
-                }
-            }
-        }
-
-        elseif ($i = stripos($m->key, '(optionnel)'))
-        {
-            $name = trim(preg_replace('/\d x (.*) \(\+[0-9.]+\s€\)/u', '$1', 
-                            html_entity_decode(strip_tags($m->value), ENT_QUOTES | ENT_SUBSTITUTE | ENT_HTML401, 'UTF-8')));
-                            
-            if ($p = nxover_product_by_name($name))
-                $sku[$p->get_id()] = ['sku' => $p->get_sku(), 'name' => $name, 'key' => trim(str_replace(substr($m->key, $i, strlen('(optionnel)')), '', $m->key))];
-        }
-    }
-        
-    if ($todo = array_intersect_key($sku, $opt))
-    {
-        $rowset = explode('<br>', $html);
-        foreach($todo as $p)
-        {
-            foreach($rowset as &$row)
-            {                
-                if (stripos($row, $p['key'].' (optionnel)') !== false)
-                {
-                    $row = preg_replace('/\s(\(\+\<span class.+&euro;.+\))/u', ' - '.$p['sku'].' $1', $row);
-                    break;
-                }
-            }
-        }
-        $html = implode('<br>', $rowset);
-    }
-    
-    return $html;
-}
-*/
 
 function nxover_filter_qpdf_item($item, $html)
 {
@@ -656,7 +533,11 @@ function nxover_ywraq_from_cart_to_order_item($values, $cart_item_key, $item_id,
 {
     error_log('coucou17');
 
+
+        nxover_log("nxover_ywraq_from_cart_to_order_item");
+		
     $item = $order->get_item($item_id);
+        nxover_log(print_r($item, true));
 
     if (isset($values['yith_wapo_options'])) {
         foreach ($values['yith_wapo_options'] as $opt) {
